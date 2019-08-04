@@ -1,23 +1,77 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PyCon AU 2020</title>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500&display=swap" rel="stylesheet">
         <style>
             body {
                 background-color: black;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
+                background-image: url('hero-graphic.svg'), url('hero-photo.jpg');
+                background-size: 1280px 761px;
+                background-position: top center;
+                background-repeat: no-repeat;
+
+                color: white;
+                font-family: 'Catamaran', sans-serif;
+                font-size: 18px;
+                line-height: 1.2em;
+
+                padding-top: 570px;
+            }
+            #outer {
+                margin: 20px auto;
+                width: 640px;
+                max-width: 90%;
+            }
+            a {
+                color: inherit;
+            }
+            h2 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 33pt;
+                line-height: 1em;
+                margin-bottom: 50px;
+            }
+            #dates {
+                font-size: 57pt;
                 margin: 0;
                 padding: 0;
+                margin-top: 10px;
             }
-            img {
-                max-width: 90%;
-                max-height: 90%;
+            .sr-only {
+                position: absolute;
+                left: -10000px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            @media only screen and (max-width: 650px) {
+                body {
+                    background-size: 768px 456.6px;
+                    padding-top: 342px;
+                }
+                h2 {
+                    font-size: 15pt;
+                }
+                #dates {
+                    font-size: 35pt;
+                }
             }
         </style>
     </head>
     <body>
-        <img src='./2020-web-pre-reveal.svg' alt='2020' />
+        <h1 class='sr-only'>PyCon AU 2020</h1>
+        <div id='outer'>
+            <h2>
+                Adelaide Convention Centre
+                <div id='dates'>
+                    7–11 August
+                </div>
+            </h2>
+            Sign up to the <a href='https://lists.linux.org.au/mailman/listinfo/pycon-au-announce'>pyconau-announce mailing list</a> or <a href="https://twitter.com/pyconau">follow @PyConAU on Twitter</a> to hear more as it's announced!
+        </div>
     </body>
 </html>
