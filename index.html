@@ -1,39 +1,63 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title>PyCon AU 2020</title>
         <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
         <style>
             body {
                 background-color: black;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                margin: 0;
-                padding: 0;
+                background-image: url('hero.png');
+                background-size: 1280px 761px;
+                background-position: top center;
+                background-repeat: no-repeat;
+
                 color: white;
                 font-family: 'Catamaran', sans-serif;
+                font-size: 18px;
+                line-height: 1.2em;
+
+                padding-top: 570px;
             }
-            img {
-                max-width: 90%;
-                max-height: 90%;
-                width: 640px;
-            }
-            span {
-                margin: 20px;
+            #outer {
+                margin: 20px auto;
                 width: 640px;
                 max-width: 90%;
             }
             a {
                 color: inherit;
             }
+            h2 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 33pt;
+                line-height: 1em;
+            }
+            #dates {
+                font-size: 57pt;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+            }
+            .sr-only {
+                position: absolute;
+                left: -10000px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
         </style>
     </head>
     <body>
-        <img src='./2020-reveal-slide.png' alt='PyCon AU 2020, Adelaide Convention Centre, 7–11 August' />
-        <span>
+        <h1 class='sr-only'>PyCon AU 2020</h1>
+        <div id='outer'>
+            <h2>
+                Adelaide Convention Centre
+                <div id='dates'>
+                    7–11 August
+                </div>
+            </h2>
             Sign up to the <a href='https://lists.linux.org.au/mailman/listinfo/pycon-au-announce'>pyconau-announce mailing list</a> or <a href="https://twitter.com/pyconau">follow @PyConAU on Twitter</a> to keep up to date.
-        </span>
+        </div>
     </body>
 </html>
