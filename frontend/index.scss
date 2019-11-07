@@ -1,10 +1,23 @@
+@import "~reset-css/sass/_reset.scss";
 @import "~sheng/sheng.scss";
-@import url('https://fonts.googleapis.com/css?family=Catamaran|PT+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran|PT+Sans:400,700&display=swap');
 
-.content {
+$heading-font: 'PT Sans', sans-serif;
+$body-font: Catamaran, sans-serif;
+
+$wattle-leaf: #00B159;
+$wattle-leaf-headings: #008542;
+$wattle-flower: #FFC518;
+$wattle-flower-headings: #946F00;
+$desert-sand: #F36F3A;
+$desert-sand-headings: #D4450C;
+$red-centre: #E01D43;
+$lorikeet-blue: #5B57A5;
+
+main {
     @include sheng(
-        $heading-font-family: ('PT Sans', sans-serif),
-        $body-font-family: (Catamaran, sans-serif),
+        $heading-font-family: $heading-font,
+        $body-font-family: $body-font,
     );
     width: 33em;
     margin: 0 auto;
@@ -17,5 +30,48 @@
     h5,
     h6 {
       color: hsla(0, 0, 0, 0.9);
+    }
+}
+
+nav {
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        display: inline-block;
+        margin: 20px;
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &:nth-child(1) {
+            color: $wattle-leaf-headings;
+        }
+        &:nth-child(2) {
+            color: $wattle-flower-headings;
+        }
+        &:nth-child(3) {
+            color: $desert-sand-headings;
+        }
+        &:nth-child(4) {
+            color: $red-centre;
+        }
+        &:nth-child(5) {
+            color: $lorikeet-blue;
+        }
+    }
+    .dates {
+        color: $wattle-leaf-headings;
+        margin: 0 20px;
+        text-align: right;
+        .location {
+            font-weight: 400;
+        }
     }
 }
