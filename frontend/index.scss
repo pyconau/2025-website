@@ -19,8 +19,9 @@ main {
         $heading-font-family: $heading-font,
         $body-font-family: $body-font,
     );
-    width: 33em;
+    max-width: 33em;
     margin: 0 auto;
+    padding: 0 20px;
     color: hsla(0, 0, 0, 0.8);
 
     h1,
@@ -33,13 +34,30 @@ main {
     }
 }
 
+header {
+    background-color: $wattle-leaf;
+}
+
 nav {
     font-family: $heading-font;
     font-weight: bold;
     font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    display: grid;
+    grid-template: "logo nav dates" auto / max-content auto max-content;
+
+    
+    img {
+        grid-area: logo;
+        height: 73px;
+    }
+    
+    ul {
+        grid-area: nav;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
     li {
         display: inline-block;
         margin: 20px;
@@ -67,11 +85,31 @@ nav {
         }
     }
     .dates {
+        grid-area: dates;
         color: $wattle-leaf-headings;
-        margin: 0 20px;
+        margin: 10px 20px;
         text-align: right;
         .location {
             font-weight: 400;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-template: "logo dates" auto
+                        "nav nav" auto / auto auto;
+        font-size: 20px;
+        img {
+            height: 58px;
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        .dates {
+            font-size: 12px;
+        }
+    }
+    @media only screen and (max-width: 390px) {
+        img {
+            height: 45px;
         }
     }
 }
