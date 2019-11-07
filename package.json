@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel watch frontend/index.scss --no-hmr --out-dir assets/build",
+    "build": "parcel build frontend/index.scss --out-dir assets/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
