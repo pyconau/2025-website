@@ -5,7 +5,8 @@
         <title>{% block title %}PyCon AU 2020{% endblock %}</title>
     </head>
     <body>
-        <nav>
+        {% block nav %}
+        <nav class="{{ nav_class }}">
             <img src="{% asset 'Logo_Standard.svg' %}" />
             <ul>
                 <li><a href="/">Home</a></li>
@@ -17,6 +18,7 @@
                 <div class="location">Adelaide Convention Centre</div>
             </div>
         </nav>
+        {% endblock %}
         <main>
             {% block main %}
                 <h1>This is some example content!</h1>
@@ -24,4 +26,14 @@
             {% endblock %}
         </main>
     </body>
+    <script type='text/javascript'>
+        if (window.location.hash === "#debug") document.body.classList.add('debug')
+        const header = document.getElementById('header')
+        if (header){
+        window.addEventListener('resize', function(){
+            header.style.setProperty('--viewport-w', window.innerWidth)
+        }, {passive: true})
+        header.style.setProperty('--viewport-w', window.innerWidth)
+        }
+    </script>
 </html>

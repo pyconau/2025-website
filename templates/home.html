@@ -1,1 +1,14 @@
+{%- set nav_class = 'home' -%}
 {% extends '_base.html' %}
+{% block nav %}
+<header id='header'>
+<img src="{% asset('Logo_Reversed.svg') %}" />
+    <div class="rotated">
+        <article>
+            <h1>Help make Australia's peak<br />Python conference happen</h1>
+            <a href="#">Download the sponsorship prospectus</a>
+        </article>
+        {{ super() }}
+    </div>
+</header>
+{% endblock %}
