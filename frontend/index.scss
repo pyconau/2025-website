@@ -53,19 +53,17 @@ $logo-w-ratio: 2.85;
 
 header {
     background-color: $wattle-leaf;
-    --logo-h: 150;
-    --viewport-w: 960;
+    --logo-h: 150px;
     overflow: hidden;
     padding-bottom: 50px;
     img {
-        height: calc(var(--logo-h) * 1px);
+        height: calc(var(--logo-h));
         .debug &{
             border: 1px solid magenta;
         }
     }
     .rotated {
-        --tan-arg: calc((var(--logo-h) / (var(--viewport-w) - (#{$logo-w-ratio} * var(--logo-h)))));
-        transform: rotate(calc(-1 * #{tan(var(--tan-arg))})) translateY(calc(var(--viewport-w) * 0.5 * var(--tan-arg) * 1px - var(--logo-h) * 1px));
+        transform: rotate(-5deg) translateY(calc(-1*(50vw - var(--logo-h) * #{$logo-w-ratio})*0.08748866352));
         .debug &{
             border: 1px solid magenta;
         }

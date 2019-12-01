@@ -28,12 +28,5 @@
     </body>
     <script type='text/javascript'>
         if (window.location.hash === "#debug") document.body.classList.add('debug')
-        const header = document.getElementById('header')
-        if (header){
-        window.addEventListener('resize', function(){
-            header.style.setProperty('--viewport-w', window.innerWidth)
-        }, {passive: true})
-        header.style.setProperty('--viewport-w', window.innerWidth)
-        }
     </script>
 </html>
