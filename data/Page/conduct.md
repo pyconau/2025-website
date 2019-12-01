@@ -1,9 +1,9 @@
 ---
-title: Safety
+title: Conduct
 order: 999 # always rightmost link
 ---
 
-# Safety and code of conduct
+# Code of conduct
 
 All attendees of PyCon Australia 2020 will be asked to agree to be bound by a code of conduct as a condition of attendance.
 
