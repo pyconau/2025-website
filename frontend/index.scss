@@ -128,15 +128,17 @@ nav {
 
     &.home {
         grid-template: "nav dates" auto / auto max-content;
-        img {
+        #nav-logo {
             display: none;
         }
     }
 
     
-    img {
+    #nav-logo {
         grid-area: logo;
-        height: 73px;
+        img {
+            height: 73px;
+        }
     }
     
     ul {

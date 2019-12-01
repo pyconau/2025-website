@@ -1,2 +1,5 @@
 project-name: PyCon AU 2020
 base-path: /
+context:
+  dynamic:
+    pages: session.query(Page).all().order_by(Page.order).asc

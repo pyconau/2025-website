@@ -7,11 +7,11 @@
     <body>
         {% block nav %}
         <nav class="{{ nav_class }}">
-            <img src="{% asset 'Logo_Standard.svg' %}" />
+            <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard.svg' %}" /></a>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Test 1</a></li>
-                <li><a href="/">Test 2y</a></li>
+                {% for page in pages %}
+                <li><a href="{% url 'page', page %}">{{ page.title }}</a></li>
+                {% endfor %}
             </ul>
             <div class="dates">
                 7&ndash;11 August 2020
