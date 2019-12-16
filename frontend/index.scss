@@ -205,3 +205,41 @@ nav {
         }
     }
 }
+
+.mailing-list-signup-form {
+    display: flex;
+    > *:not(:last-child) {
+        margin-right: 5px;
+    }
+    input, button {
+        font-size: inherit;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    input {
+        flex: 1;
+        border: 2px solid $wattle-leaf;
+        &:invalid {
+            outline: 0 !important;
+            box-shadow: none !important;
+        }
+        &:invalid:focus {
+            border-color: $red-centre;
+        }
+        &:focus {
+            border-color: $lorikeet-blue;
+        }
+    }
+    button {
+        background-color: $wattle-leaf;
+        border: 0;
+        padding: 5px 15px;
+        color: white;
+        font-weight: bold;
+        &:focus {
+            outline: 0 !important;
+            border: 2px solid $lorikeet-blue;
+            padding: 3px 13px;
+        }
+    }
+}

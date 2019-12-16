@@ -2,13 +2,30 @@
 {% extends '_base.html' %}
 {% block nav %}
 <header id='header'>
-<img src="{% asset('Logo_Reversed.svg') %}" />
+<img src="{% asset('Logo_Reversed.svg') %}" alt="PyCon AU" role="heading" aria-level="1" />
     <div class="rotated">
         <article>
             <h1>Help make Australia's peak Python conference&nbsp;happen!</h1>
-            <a href="#">Download the sponsorship prospectus</a>
+            <a href="/sponsor">Sponsor PyCon Australia</a>
         </article>
         {{ super() }}
     </div>
 </header>
+{% endblock %}
+
+{% block main %}
+<h2>Sponsorship opportunities are now available!</h2>
+<p>
+    Sponsoring PyCon Australia puts your company front and centre with the Python community. You can see what's on offer by <a href="/sponsor">heading over to our sponsorship page</a>.
+</p>
+<h2>Find out more as it's announced!</h2>
+<p>
+    To find out about specialist tracks, our Call for Proposals, schedule announcement, invited speakers, and brand shiny new things we can't tell you about yet, sign up for our low-volume announcements&nbsp;list:
+</p>
+<form method='post' action='https://lists.linux.org.au/mailman/subscribe/pycon-au-announce' class='mailing-list-signup-form'>
+    <input type='email' name='email' required placeholder='snek@example.com'>
+    <button type='submit'>
+      Sign up
+    </button>
+</form>
 {% endblock %}
