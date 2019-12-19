@@ -31,7 +31,7 @@ The conference will provide copious amounts of table space, power, and internet 
 
 ## About PyCon AU
 
-PyCon AU (“PyCon AU”) is the national conference for the Python Programming Community, bringing together professional, student and enthusiast developers with a love for developing with Python.
+PyCon AU is the national conference for the Python Programming Community, bringing together professional, student and enthusiast developers with a love for developing with Python.
 
 PyCon AU informs the country’s Python developers with presentations, tutorials and panel sessions by experts and core developers of Python, as well as the libraries and frameworks that they rely on.
 
