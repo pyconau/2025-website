@@ -5,9 +5,9 @@ order: 999 # always rightmost link
 
 # Code of conduct
 
-All attendees of PyCon Australia 2020 will be asked to agree to be bound by a code of conduct as a condition of attendance.
+All attendees of PyCon AU 2020 will be asked to agree to be bound by a code of conduct as a condition of attendance.
 
-PyCon Australia aims to provide a fun, welcoming and professional environment so that diverse groups of people&thinsp;&mdash;&thinsp;regardless of age, race, gender identity or expression, background, disability, appearance, sexuality, walk of life, or religion&thinsp;&mdash;&thinsp;can get together to learn from and be inspired by each other about all things Python.
+PyCon AU aims to provide a fun, welcoming and professional environment so that diverse groups of people&thinsp;&mdash;&thinsp;regardless of age, race, gender identity or expression, background, disability, appearance, sexuality, walk of life, or religion&thinsp;&mdash;&thinsp;can get together to learn from and be inspired by each other about all things Python.
 
 We are a diverse community. Sometimes this means we need to work harder to ensure we’re creating an environment of trust and respect where all who come to participate feel comfortable and included.
 

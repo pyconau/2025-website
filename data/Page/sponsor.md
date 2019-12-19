@@ -3,9 +3,9 @@ title: Sponsor
 order: 2
 ---
 
-# Sponsor PyCon Australia
+# Sponsor PyCon AU
 
-PyCon Australia is the national conference for developers using the Python Programming Language. After two years in Sydney with over 700 attendees each year, it is Adelaide's turn to host, bringing the national and international Python community together for the 11th edition of PyCon Australia.
+PyCon AU is the national conference for developers using the Python Programming Language. After two years in Sydney with over 700 attendees each year, it is Adelaide's turn to host, bringing the national and international Python community together for the 11th edition of PyCon AU.
 
 Now is the perfect time to help contribute to this growing, vibrant developer community.
 

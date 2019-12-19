@@ -29,13 +29,13 @@ Development Sprints provide an unstructured location for projects and contributo
 
 The conference will provide copious amounts of table space, power, and internet connectivity.
 
-## About PyCon Australia
+## About PyCon AU
 
-PyCon Australia (“PyCon AU”) is the national conference for the Python Programming Community, bringing together professional, student and enthusiast developers with a love for developing with Python.
+PyCon AU (“PyCon AU”) is the national conference for the Python Programming Community, bringing together professional, student and enthusiast developers with a love for developing with Python.
 
-PyCon Australia informs the country’s Python developers with presentations, tutorials and panel sessions by experts and core developers of Python, as well as the libraries and frameworks that they rely on.
+PyCon AU informs the country’s Python developers with presentations, tutorials and panel sessions by experts and core developers of Python, as well as the libraries and frameworks that they rely on.
 
-PyCon Australia is held in two year blocks at the same city.
+PyCon AU is held in two year blocks at the same city.
 
 - 2010, 2011: Sydney, NSW
 - 2012, 2013: Hobart, TAS
