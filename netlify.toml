@@ -1,0 +1,15 @@
+[build]
+publish = "public/"
+command = """
+restore_home_cache ".pnpm-store" "pnpm store" &&
+restore_home_cache ".cache" "pip cache" &&
+restore_cwd_cache '.venv' 'python virtualenv' &&
+pip3 install -q poetry &&
+poetry config virtualenvs.in-project true &&
+poetry install &&
+npm install pnpm &&
+pnpm install &&
+pnpm run build &&
+poetry run statik &&
+cp _redirects public/
+"""

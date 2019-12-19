@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{% asset 'build/index.css' %}" />
+        <title>{% block title %}PyCon AU 2020{% endblock %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        {% block nav %}
+        <nav class="{{ nav_class }}">
+            <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard.svg' %}" /></a>
+            <ul>
+                {% for page in pages %}
+                <li><a href="{% url 'page', page %}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+            <div class="dates">
+                7&ndash;11 August 2020
+                <div class="location">Adelaide Convention Centre</div>
+            </div>
+        </nav>
+        {% endblock %}
+        <main>
+            {% block main %}
+                <h1>This is some example content!</h1>
+                <p>If you can see this, it probably means our static site generator is broken somehow.</p>
+            {% endblock %}
+        </main>
+    </body>
+    <script type='text/javascript'>
+        if (window.location.hash === "#debug") document.body.classList.add('debug')
+    </script>
+</html>
