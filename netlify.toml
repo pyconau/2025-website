@@ -7,9 +7,8 @@ restore_cwd_cache '.venv' 'python virtualenv' &&
 pip3 install -q poetry &&
 poetry config virtualenvs.in-project true &&
 poetry install &&
-npm install pnpm &&
-pnpm install &&
-pnpm run build &&
+npm install &&
+npm run build &&
 poetry run statik &&
 cp _redirects public/
 """
