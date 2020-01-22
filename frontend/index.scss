@@ -18,10 +18,11 @@ $red-centre: #E01D43;
 $lorikeet-blue: #5B57A5;
 
 main {
-    @include sheng(
-        $heading-font-family: $heading-font,
-        $body-font-family: $body-font,
-    );
+    @include sheng();
+    font-family: $body-font;
+    %sheng-heading {
+        font-family: $heading-font;
+    }
     max-width: 33em;
     margin: 0 auto;
     padding: 0 20px;
