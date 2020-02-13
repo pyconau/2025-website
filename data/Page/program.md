@@ -39,6 +39,7 @@ To propose a track, please email us at [program@pycon.org.au](mailto:program@pyc
 
 - What is the focus of the track?
 - Who will be running the track (including contact details)? You must have at least two organisers.
+    - **If you want to get involved but don't have a co-organiser**: we can't accept a formal proposal from one person, but email us anyway, and we'll do our best to put you in touch with someone.
 - Will you follow a “normal” track-of-talks structure, or a different structure?
 - Do you need any support from the PyCon AU committee, outside that outlined above?
 
