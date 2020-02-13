@@ -11,15 +11,15 @@ PyCon AU 2020 will be held in Adelaide, Australia, in the Adelaide Convention Ce
 - August 8&thinsp;&ndash;&thinsp;9: Conference Main Track
 - August 10&thinsp;&ndash;&thinsp;11: Development Sprints
 
-## Specialist Tracks
+## Specialist tracks
 
 The first day of PyCon AU is dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allow for more in-depth talks on the subject.
 
-## Conference Main Track
+## Conference main track
 
 The weekend of PyCon AU is the main conference event. We invite speakers from all backgrounds and levels of knowledge to share their experience and knowledge with our audience.
 
-## Development Sprints
+## Development sprints
 
 Following three days of talks, we hold space in our venue for two days of Development Sprints (sometimes shortened just to ‘Sprints’)
 
