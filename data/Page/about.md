@@ -44,4 +44,4 @@ PyCon AU is held in two year blocks at the same city.
 - 2018, 2019: Sydney, NSW
 - 2020, 2021: Adelaide, SA
 
-Videos from previous years can be watched on the PyConAU YouTube channel.
+Videos from previous years can be watched on the [PyConAU YouTube channel](https://www.youtube.com/user/PyConAU).
