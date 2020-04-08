@@ -1,6 +1,6 @@
 @import "~reset-css/sass/_reset.scss";
 @import "~sheng/sheng.scss";
-@import url('https://fonts.googleapis.com/css?family=Catamaran|PT+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,400i,700|PT+Sans:400,700&display=swap');
 
 $heading-font: 'PT Sans', sans-serif;
 $body-font: Catamaran, sans-serif;
@@ -241,6 +241,35 @@ nav {
             outline: 0 !important;
             border: 2px solid $lorikeet-blue;
             padding: 3px 13px;
+        }
+    }
+}
+
+#covid-quote {
+    font-size: (4/3) * 1em;
+    margin-bottom: 2em;
+    @media only screen and (min-width: 820px) {
+        width: 800px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .source {
+        font-size: 0.75em;
+        display: grid;
+        grid-template: "dash name" "dash title";
+        grid-template-columns: max-content auto;
+        .name {
+            grid-area: name;
+        }
+        .title {
+            grid-area: title;
+            font-size: 0.75em;
+        }
+        &:before {
+            content: "⸺";
+            grid-area: dash;
+            margin-right: 0.8ch;
         }
     }
 }
