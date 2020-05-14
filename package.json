@@ -20,7 +20,7 @@
   "homepage": "https://github.com/pyconau/2020-website#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.24.5"
+    "sass": "^1.26.5"
   },
   "dependencies": {
     "reset-css": "^5.0.1",
