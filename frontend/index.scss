@@ -278,6 +278,16 @@ nav {
     }
 }
 
+main hr {
+    background: hsla(0, 0, 0, 0.4);
+    height: 2px;
+    margin: 5em;
+}
+
+small {
+    font-size: 0.75em;
+}
+
 // putting the footer at the bottom
 body {
     min-height: 100vh;
