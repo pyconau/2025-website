@@ -42,18 +42,7 @@ main {
     z-index: 1;
 }
 
-$jaunt: 5;
-
-$logo-w-ratio: 2.85;
-
-@function tan($argi) {
-    $arg: "(#{$argi})";
-    $t1: $arg;
-    $t2: "(1/3) * #{$arg} * #{$arg} * #{$arg}";
-    $t3: "(2/15) * #{$arg} * #{$arg} * #{$arg} * #{$arg} * #{$arg}";
-    $t4: "(17/315) * #{$arg} * #{$arg} * #{$arg} * #{$arg} * #{$arg} * #{$arg} * #{$arg}";  
-    @return "((#{$t1} + #{$t2} + #{$t3} + #{$t4}) * 1rad)";     
-}
+$logo-w-ratio: 3.577;
 
 header {
     background-color: $wattle-leaf;
@@ -76,7 +65,8 @@ header {
         }
     }
     .rotated {
-        transform: rotate(-5deg) translateY(calc((50vw - var(--logo-h) * #{$logo-w-ratio}) * -0.08748866352));
+        transform-origin: calc(var(--logo-h) * #{$logo-w-ratio}) top;
+        transform: rotate(-5deg);
         .debug &{
             border: 1px solid magenta;
         }

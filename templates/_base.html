@@ -10,7 +10,7 @@
         <div id='everything-except-footer'>
         {% block nav %}
         <nav class="{{ nav_class }}">
-            <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard.svg' %}" /></a>
+            <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard_PyConline.svg' %}" /></a>
             <ul>
                 {% for page in pages %}
                 <li><a href="{% url 'page', page %}">{{ page.title }}</a></li>
