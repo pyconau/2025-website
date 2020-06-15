@@ -1,2 +1,5 @@
 path: /
 template: home
+context:
+  dynamic:
+    latest_news: session.query(News).order_by(News.published.desc()).first()

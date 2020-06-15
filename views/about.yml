@@ -1,0 +1,6 @@
+path: /about/
+template: about
+context:
+  dynamic:
+    news: session.query(News).order_by(News.published.desc()).all()
+    page: session.query(Page).filter(Page.pk == 'about').one()
