@@ -1,5 +1,5 @@
 path:
   template: /{{ page.pk }}
   for-each:
-    page: session.query(Page).all()
+    page: session.query(Page).filter(~Page.pk.in_('about',)).all()
 template: page

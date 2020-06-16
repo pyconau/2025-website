@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% import '_macros.html' as m %}
+{% block main %}
+<h1>News &amp; Announcements</h1>
+<ul style="list-style-type: none;">
+    {% for post in news %}
+    <li style="margin-bottom:1em;">
+        <p>
+            <a href="{% url "news_post", post %}">{{ post.title }}</a>
+            <br />
+            {%- if loop.first -%}<b>Latest News</b> &mdash; {% endif %}<small>Published {{ post.published.strftime("%d %B, %Y") }}</small>
+        </p>
+    </li>
+    {% endfor %}
+  </ul>
+  
+{% endblock %}
