@@ -5,7 +5,7 @@ order: 3
 
 ## PyConline AU — Specialist Tracks
 
-Specialist Tracks are focused, themed “mini-conferences” that are curated by members of the community. This year we will have five fantastic tracks:
+Specialist tracks are focused, themed “mini-conferences” that are curated by members of the community. This year we will have five fantastic tracks:
 
 * **DjangoCon Australia**: returning for their eighth year, this track is all things Django. Stories and fairy tales about Django, web development in Python, ponies, and unicorns 🦄!
 * **Security and Privacy**: How (and why) to be safe on the Big, Scary Internet, and avoid being the next headline data breach.
