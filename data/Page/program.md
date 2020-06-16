@@ -19,7 +19,7 @@ PyConline AU's Call for Proposals will encompass submissions to all Specialist T
 
 To learn more about the submitting to a specialist track, [check out our CFP](/speak).
 
-## PyConline AU — Main Conference
+## Main conference
 The program has not been announced yet.
 
 Submissions to speak at PyConline AU 2020 can be made through our [CFP](/speak).
