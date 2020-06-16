@@ -1,5 +1,5 @@
 ---
-title: Program
+title: Speak
 order: 3
 ---
 
@@ -9,7 +9,7 @@ We’d love you to present at the most online PyCon AU ever!
 
 We’re looking for talks on everything Python, open source, and tech-related. If it would be of interest to someone, anyone, in the Python community, it’s of interest to us!
 
-PyConline AU's call for proposals (CFP) is open until **CLOSE DATE, anywhere on earth** (UTC-12; that is, midday UTC or 9:30pm Adelaide time on the following day). You can submit to the main conference and specialist tracks through the same process.
+PyConline AU's call for proposals (CFP) is open until **CLOSE DATE, anywhere on earth** (UTC-12; that is, midday UTC or 9:30pm Adelaide time on the following day). You can submit to the main conference and [specialist tracks](/program) through the same process.
 
 If you are looking for how to submit a talk, mentoring, or speaker benefits, you will find all of that information in our submission portal. A large button linking to the portal in a calming, brand-appropriate green colour has been placed below for your convenience.
 
