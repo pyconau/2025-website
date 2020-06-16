@@ -17,7 +17,7 @@ Specialist tracks are focused, themed “mini-conferences” that are curated by
 
 PyConline AU's Call for Proposals will encompass submissions to all Specialist Tracks. You can submit your talk to the main conference and the Specialist Tracks with one click.
 
-To learn more about the submitting to a Specialist Track, check out our [CFP](/speak).
+To learn more about the submitting to a specialist track, [check out our CFP](/speak).
 
 ## PyConline AU — Main Conference
 The program has not been announced yet.
