@@ -14,4 +14,4 @@ Then:
 
 From there, the [Statik documentation](https://github.com/thanethomson/statik/wiki) will be the place to look for most things.
 
-Deployment is automated, and runs on Netlify; see the `netlify.toml` for details.
+Deployment is automated, and runs on Netlify; see the `netlify.toml` for details. When you file a pull request against this repo, Netlify will build the site (provided the original branch is also inside this repo; sorry, folks outside the core team). A "check" will come up with the name **deploy/netlify**; click Details next to it to go to the preview for that PR.

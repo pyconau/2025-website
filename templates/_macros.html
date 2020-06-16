@@ -1,0 +1,16 @@
+{%- macro news(post) %}
+<h1>{{ post.title }}</h1>
+<small>Published {{ post.published.strftime("%d %B, %Y") }}</small>
+{% if post.ytid %}
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube-nocookie.com/embed/{{ post.ytid }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="ytembed"
+></iframe>
+{% endif %}
+{{ post.content }}
+{%- endmacro %}
