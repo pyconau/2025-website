@@ -1,0 +1,7 @@
+path: /news
+context:
+  dynamic:
+    news: session.query(News).order_by(News.published.desc()).all()
+template: news_index
+
+
