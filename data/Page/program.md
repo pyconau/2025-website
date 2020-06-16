@@ -7,7 +7,7 @@ order: 3
 
 Specialist Tracks are focused, themed “mini-conferences” that are curated by members of the community. This year we will have five fantastic tracks:
 
-* **DjancoCon Australia**: returning for their eighth year, this track is all things Django. Stories and fairy tales about Django, web development in Python, ponies, and unicorns 🦄!
+* **DjangoCon Australia**: returning for their eighth year, this track is all things Django. Stories and fairy tales about Django, web development in Python, ponies, and unicorns 🦄!
 * **Security and Privacy**: How (and why) to be safe on the Big, Scary Internet, and avoid being the next headline data breach.
 * **Education**: Learn about learning, teach about teaching, and educate about education
 * **Data Science & Analytics**: Data and number crunching, analysis and visualisation, machine learning, and how those things affect us human beings.
