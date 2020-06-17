@@ -20,7 +20,7 @@ You can learn more about the specialist tracks and their topics on our updated p
 
 ## Call for proposals (CFP)
 Today we are also opening our CFP!
-Submissions to speak at PyConline AU 2020 will be accepted from now until **12 July, anywhere on earth (UTC+12)**. For those of you in Adelaide Australia that is 9:30pm the day after.
+Submissions to speak at PyConline AU 2020 will be accepted from now until **12 July, anywhere on earth (UTC+12)**. For those of you in Adelaide, Australia that is 9:30pm the day after.
 
 
 We welcome submissions from everybody, including those:
