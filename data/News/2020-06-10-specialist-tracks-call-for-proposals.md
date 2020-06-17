@@ -46,6 +46,6 @@ To discuss this announcement and the CFP in more detail, please join us this eve
     Stay safe,<br>
     <b>Benno Rice</b><br>
     he/him<br>
-    CFP Committee Chair<br>
+    Program Chair<br>
     PyConline AU 2020
 </p>
