@@ -14,7 +14,7 @@ PyConline AU's call for proposals (CFP) is open until **CLOSE DATE, anywhere on 
 If you are looking for how to submit a talk, mentoring, or speaker benefits, you will find all of that information in our submission portal. A large button linking to the portal in a calming, brand-appropriate green colour has been placed below for your convenience.
 
 <div class='center-content'>
-    <a href="https://pretalx.com/pycon-au-2020/" class='btn btn-chonk'>
+    <a href="https://pretalx.com/pycon-au-2020/cfp" class='btn btn-chonk'>
         Submit to PyCon AU
     </a>
 </div>
