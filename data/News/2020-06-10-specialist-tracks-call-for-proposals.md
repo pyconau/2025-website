@@ -24,11 +24,12 @@ Submissions to speak at PyConline AU 2020 will be accepted from now until **12 J
 
 
 We welcome submissions from everybody, including those:
-who have never given a conference talk before,
-who are new to Python,
-who have built interesting things in Python, 
-who have helped build Python, and
-who have expertise to share with our community from fields outside of Python (and outside of technology).
+
+* who have never given a conference talk before,
+* who are new to Python,
+* who have built interesting things in Python, 
+* who have helped build Python, and
+* who have expertise to share with our community from fields outside of Python (and outside of technology).
 
 If you’ve never presented at a conference before and you think you might like to try it, we want to hear from you! PyConline AU actively welcomes and encourages new speakers to the conference. As with prior years, we will have speaking mentors on hand to work with you to develop your proposal and talk content so that you can give the best talk possible.
 
