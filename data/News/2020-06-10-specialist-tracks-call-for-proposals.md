@@ -6,7 +6,7 @@ ytid: pWyTTH44TAs
 
 Starting today, PyConline AU’s 2020 call for proposals (CFP) will be open for submissions running all month until **12 July, anywhere on earth (UTC+12)**. Alongside this announcement, we’re also officially publishing our specialist tracks.
 
-## Specialist Tracks
+## Specialist tracks
 Historically at PyCon AU, we dedicate a day to our specialist tracks, and PyConline AU will be similar again this year. These are focused, themed “mini-conferences” that are curated by members of the community.
 We’re excited to share that after receiving several proposals for specialist tracks, this year we will have five fantastic tracks:
 
