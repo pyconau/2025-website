@@ -1,0 +1,16 @@
+{%- macro sponsor(s) %}
+{% if s.website %}<a href="{{s.url}}">{% endif %}
+<img src='{% asset "sponsor-logos/" + s.logo %}' class="sponsorlogo" alt='{{s.title}}'>{% if s.website %}</a>{% endif %}
+<p>{{s.content}}</p>
+
+{# social engagement links #}
+{% if s.twitter or s.website %}<p>{% endif %}
+{% if s.website %}
+    <a href="{{s.website}}">Visit {{s.website | replace("https://", "") | replace("http://", "") }}</a>
+{% endif %}
+{% if s.twitter and s.website %} | {% endif %}
+{% if s.twitter %}
+    <a href="https://twitter.com/{{s.twitter}}">Follow @{{s.twitter}} on Twitter</a>
+{% endif %}
+{% if s.twitter or s.website %}</p>{% endif %}
+{%- endmacro %}

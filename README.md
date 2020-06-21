@@ -15,3 +15,18 @@ Then:
 From there, the [Statik documentation](https://github.com/thanethomson/statik/wiki) will be the place to look for most things.
 
 Deployment is automated, and runs on Netlify; see the `netlify.toml` for details. When you file a pull request against this repo, Netlify will build the site (provided the original branch is also inside this repo; sorry, folks outside the core team). A "check" will come up with the name **deploy/netlify**; click Details next to it to go to the preview for that PR.
+
+## Local development issues
+
+Are you on macOS Catalina and getting hundreds of `API_UNAVAILABLE`/`clang` issues when running `poetry install`?
+
+Try [this tip](https://github.com/gorakhargosh/watchdog/issues/628#issuecomment-581480649):
+ 
+ * Check how many SDKs you have installed in `/Library/Developer/CommandLineTools/SDKs`. 
+ * If you have both `MacOSX10.14.sdk` and `MacOSX10.15.sdk`:
+ 
+    ```
+    rm -rf /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
+    ```
+    
+ * Then try `poetry install` again.
