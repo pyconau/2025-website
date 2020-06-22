@@ -6,4 +6,4 @@ website: https://buildkite.com
 twitter: buildkite
 ---
 
-Buildkite is a platform for running fast, secure, and scalable continuous integration pipelines on your own infrastructure.
+Buildkite is the fastest, most reliable way to deploy and test code at any scale. Our self-hosted agents work with any source code tool, language and platform. 
