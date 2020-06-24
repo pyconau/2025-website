@@ -9,14 +9,15 @@
 {{m.sponsor(s)}}
 {% endfor %}
 <hr>
+{% if platinum | length == 1 %}Platinum sponsorship opportunities still available! Apply to be a Platinum Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>{% endif %}
 
-<h1>Digital Sponsors</h1>
+<h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
 {% for s in digital %}
 {{m.sponsor(s)}}
 {% endfor %}
-{% if digital | length == 0 %}Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.{% endif %}
-
 <hr>
+Digital sponsorship opportunities still available! Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>
+
 <h1>Auspice</h1>
 {% for s in auspice %}
 {{m.sponsor(s)}}
