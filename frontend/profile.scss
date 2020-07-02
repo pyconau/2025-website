@@ -1,0 +1,24 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 75px;
+        height: 75px;
+        border-radius: 1000px;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    b {
+        font-size: 4 / 3 * 1em;
+    }
+}
+
+.profile-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+}

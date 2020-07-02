@@ -14,3 +14,22 @@
 {% endif %}
 {{ post.content }}
 {%- endmacro %}
+
+{%- macro profile(person) %}
+<div class="profile">
+    <img src="{% asset('people/{}.jpg'.format(person.pk)) %}">
+    <div class="details">
+        <b>{{ person.title or "" }} {{ person.name }}</b>
+        <small>
+            {{ person.pronouns or "" }}
+            {% if person.pronouns and person.twitter %}&bull;{% endif %}
+            {% if person.twitter %}
+                <a href="https://twitter.com/{{ person.twitter }}">
+                    @{{ person.twitter }}
+                </a>
+            {% endif %}
+        </small>
+        <span>{{ person.role }}</span>
+    </div>
+</div>
+{%- endmacro %}
