@@ -1,0 +1,26 @@
+{% extends '_base.html' %}
+{% import '_sponsor.html' as m %}
+{% block main %}
+<h1>Sponsor PyConline AU</h1>
+<p>To find out more about the sponsorship opportunities available, <a href="/assets/prospectus.pdf">download our sponsorship prospectus</a>. Once you've picked a sponsorship opportunity, <a href="mailto:sponsorship@pycon.org.au">get in touch via sponsorship@pycon.org.au</a>.</p>
+
+<h1>Platinum Sponsor{% if platinum | length != 1 %}s{% endif %}</h1>
+{% for s in platinum %}
+{{m.sponsor(s)}}
+{% endfor %}
+<hr>
+{% if platinum | length == 1 %}Platinum sponsorship opportunities still available! Apply to be a Platinum Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>{% endif %}
+
+<h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
+{% for s in digital %}
+{{m.sponsor(s)}}
+{% endfor %}
+<hr>
+Digital sponsorship opportunities still available! Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>
+
+<h1>Auspice</h1>
+{% for s in auspice %}
+{{m.sponsor(s)}}
+{% endfor %}
+
+{% endblock %}

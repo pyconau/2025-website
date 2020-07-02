@@ -12,9 +12,11 @@
         <nav class="{{ nav_class }}">
             <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard_PyConline.svg' %}" /></a>
             <ul>
-                {% for page in pages %}
-                <li><a href="{% url 'page', page %}">{{ page.title }}</a></li>
-                {% endfor %}
+                <li><a href="/about">About</a></li>
+                <li><a href="/sponsor">Sponsor</a></li>
+                <li><a href="/program">Program</a></li>
+                <li><a href="/speak">Speak</a></li>
+                <li><a href="/conduct">Conduct</a></li>
             </ul>
             <div class="dates">
                 4&ndash;6 September 2020
