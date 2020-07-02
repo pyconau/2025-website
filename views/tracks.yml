@@ -1,0 +1,5 @@
+path:
+  template: /program/{{track.slug}}
+  for-each:
+    track: session.query(Track).all()
+template: track
