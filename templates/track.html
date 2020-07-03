@@ -1,0 +1,45 @@
+{% extends '_base.html' %}
+{% import '_macros.html' as m %}
+{% block main %}
+<h1 style="color: {{track.color}}">{{track.name}} {{track.emoji}}</h1>
+<i>{{track.summary}}</i>
+<br>
+{% if track.website %}<br>Learn more about the {{track.name}} track at <a href="{[track.website}}">{{track.website}}</a>{% endif %}
+
+<br>
+<br>
+<p><a href="https://pretalx.com/pycon-au-2020/cfp" class='btn btn-chonk'>Submit a talk for {{track.name}}</a></p>
+<hr>
+<h2>What should I submit to the {{track.name}} CFP?</h2>
+
+{% if track.stream %}
+Watch the PyConline AU Stream for {{track.name}}: 
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube-nocookie.com/embed/{{ track.stream }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="ytembed"
+></iframe>
+{% endif %}
+
+<b>What should excite you about the {{track.name}} track?</b>
+
+{{track.content}}
+
+<hr>
+
+Need help with your submission? <a href="https://pretalx.com/pycon-au-2020/cfp">Check our CFP for mentorship details</a>.
+
+{% if track.organisers %}
+<hr>
+<h2>Organisers</h2>
+{% for person in track.organisers %}
+{{ m.profile(person) }}
+{% endfor %}
+{% endif %}
+
+
+{% endblock %}

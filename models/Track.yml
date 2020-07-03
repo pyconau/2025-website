@@ -1,0 +1,12 @@
+name: String
+slug: String
+website: String
+
+emoji: String
+color: String
+stream: String
+
+summary: String
+
+organisers: Person[]
+content: Content
