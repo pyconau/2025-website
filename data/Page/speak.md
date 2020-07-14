@@ -3,21 +3,10 @@ title: Speak
 order: 3
 ---
 
-# PyConline AU call for proposals
+# PyConline AU call for proposals has closed
 
-We’d love you to present at the most online PyCon AU ever!
+PyConline AU's call for proposals ended 12 July 11:59pm anywhere on earth and has now closed. Thank you to everybody who took the time to submit a talk this year. We'll have an update soon for when you can expect to hear back from the conference. Stay tuned to our [news announcements](/news), and on [Twitter](https://twitter.com/pyconau) or tune in to our weekly news stream on wednesdays over on [YouTube](https://www.youtube.com/user/PyConAU).
 
-We’re looking for talks on everything Python, open source, and tech-related. If it would be of interest to someone, anyone, in the Python community, it’s of interest to us!
-
-PyConline AU's call for proposals (CFP) is open until <time datetime="2020-07-12T23:59:59.999-1200">**the end of Sunday 12 July, anywhere on earth** (UTC-12)</time>. You can submit to the main conference and [specialist tracks](/program) through the same process.
-
-If you are looking for how to submit a talk, mentoring, or speaker benefits, you will find all of that information in our submission portal. A large button linking to the portal in a calming, brand-appropriate green colour has been placed below for your convenience.
-
-<div class='center-content'>
-    <a href="https://pretalx.com/pycon-au-2020/cfp" class='btn btn-chonk'>
-        Submit to PyCon AU
-    </a>
-</div>
 
 ## CFP review and selection process
 
