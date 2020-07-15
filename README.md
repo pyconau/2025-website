@@ -16,6 +16,18 @@ From there, the [Statik documentation](https://github.com/thanethomson/statik/wi
 
 Deployment is automated, and runs on Netlify; see the `netlify.toml` for details. When you file a pull request against this repo, Netlify will build the site (provided the original branch is also inside this repo; sorry, folks outside the core team). A "check" will come up with the name **deploy/netlify**; click Details next to it to go to the preview for that PR.
 
+## Timezones!
+
+It turns out that, regrettably, the world does not run entirely on the `Australia/Adelaide` timezone. To accommodate those who insist on using whole-hour UTC offsets, all times should be written like this:
+
+```
+<time datetime="2020-07-16T08:30+0930">Thursday 16 July, 8:30am ACST</time>
+```
+
+The site has some JavaScript that will pick this up, and if the user's timezone differs from the one in the timestamp, append the local time. (For instance, they might see _Thursday 16 July, 8:30am ACST (9:00am AEST)_ or _Thursday 16 July, 8:30am ACST (Wed, 7:00pm ET)_.)
+
+This works in HTML and Markdown (since Markdown can have arbitrary HTML in most places).
+
 ## Local development issues
 
 Are you on macOS Catalina and getting hundreds of `API_UNAVAILABLE`/`clang` issues when running `poetry install`?
