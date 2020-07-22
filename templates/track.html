@@ -4,13 +4,17 @@
 <h1 style="color: {{track.color}}">{{track.name}} {{track.emoji}}</h1>
 <i>{{track.summary}}</i>
 <br>
-{% if track.website %}<br>Learn more about the {{track.name}} track at <a href="{{track.website}}">{{track.website}}</a>{% endif %}
-
+{% if track.website %}<br>Learn more about the {{track.name}} track at <a href="{{track.website}}">{{track.website}}</a><br>{% endif %}
+<br>
+<p><i>We are currently reviewing the submissions for the {{track.name}} track.</i></p>
+{% if track.name == "Education" %}
+Are you a high school student who has used Python in a project or class assignment? Are you hacking on something cool in your spare time? We want to hear about it!
 <br>
 <br>
-<p><a href="https://pretalx.com/pycon-au-2020/cfp" class='btn btn-chonk'>Submit a talk for {{track.name}}</a></p>
+<a href="https://forms.gle/F6JhtbFoZhVBzvz16" class='btn btn-chonk'>Submit a talk to the Student Showcase</a></p>
+{% endif %}
 <hr>
-<h2>What should I submit to the {{track.name}} CFP?</h2>
+<h2>Hear more about {{track.name}} from the track organisers</h2>
 
 {% if track.stream %}
 Watch the PyConline AU Stream for {{track.name}}: 

@@ -9,8 +9,6 @@ stream: mPj7TEV56mQ?start=693&end=1206
 summary: "Learn about learning, teach about teaching, and educate about education."
 ---
 
-**[Submit to the Student Showcase!](https://forms.gle/F6JhtbFoZhVBzvz16)**
-
 With the Education track (and the entire event being online this year, this is a great oppourtinuty to get a bunch of voices that would otherwise be really difficult to hear from in an in-person event. 
 
 We are particularly interested in regional teachers and students to submit a talk for this track. 
