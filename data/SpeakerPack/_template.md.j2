@@ -28,3 +28,38 @@ Thank you for speaking at PyConline AU this year! Because we're online, things a
 **Warning:** If you miss these dates, you may not be able to pre-record, and may need to default back to presenting live.
 {%- endif %}
 
+##
+
+{% if type == 'live' %}
+
+## What you need to have set up beforehand
+
+{% if room == 'curlyboi' %}
+
+The AV team will get in touch with you beforehand to run through the requirements for your stream.
+
+{% elif room == 'other' %}
+
+- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup.
+- You'll need a secondary monitor plugged into your computer, **or** a secondary device (such as a spare laptop, phone or tablet, but make sure it's set not to go to sleep!)
+
+{% endif %}
+
+## What will happen on the day
+
+- **Two hours before** your talk, go into the Green Room channel on Venueless, and let the channel know you have arrived for a tech check. The AV team will help check your set-up, and give last minute advice.
+- **10 minutes before** your talk, the Green Room AV team will check you are ready. If you are not, your talk might get skipped!
+{%- if room == 'curlyboi' %}
+
+The AV team will get in touch with you beforehand to provide more information on how your stream will be managed.
+
+{%- elif room == 'other' %}
+- **5 minutes before** your talk, a "virtual curtain" will drop, and you'll be given a link to a live stream. Jump into that link and the MC will make sure you're ready to go.
+- **1 minute before** your talk, the virtual curtain will lift, and the MC will introduce you. (You'll be able to see and hear them on the stream return.)
+- You'll then have your allotted time to present your talk.
+- **5, 2, and 1 minutes before the end** of your talk, the MC will message you in the private stream chat.
+- **When your talk ends**, the MC will re-enter the stream and thank you, and the virtual curtain will drop again. **Talks will not be allowed to run over**, so the MC may have to interrupt you if you don't wrap up in time; to avoid this, make sure you have the stream chat open!
+- **After your talk**, we'd love it if you could head into the hallway channel on Venueless; people will often want to chat to you and ask questions!
+{% endif %}
+
+{% endif %}
