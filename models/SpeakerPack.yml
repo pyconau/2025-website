@@ -1,0 +1,4 @@
+type: String
+room: String
+day: String
+content: Content

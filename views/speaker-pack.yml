@@ -1,0 +1,5 @@
+path:
+  template: /speakers/{{ pack.day }}/{{ pack.room }}/{{ pack.type }}/
+  for-each:
+    pack: session.query(SpeakerPack).all()
+template: speaker-pack
