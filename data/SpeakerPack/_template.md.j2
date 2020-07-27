@@ -20,7 +20,7 @@ Thank you so much for speaking at PyConline AU this year! We know you're super b
 
 {%- if type == 'pre-record' %}
 - You need to tell us you are pre-recording by **15 August**.
-- Your recording (if we are helping you with it) will take place on **22-23 August**.
+- If you have applied and been accepted for an assisted pre-record slot, that will take place on **22-23 August**.
 - Your video file (if you are preparing it yourself) is due in by **23 August**.
 {%- endif %}
 {%- if type == 'live' %}
@@ -47,17 +47,15 @@ Either way, **you need to let us know before 15 August** through Pretalx. If you
 
 ## Technical requirements
 
-{% if type == 'live' and room == 'curlyboi' %}
-
-The stream you're on is getting the white-glove treatment! The AV team will get in touch with you beforehand to run through the requirements for your stream.
-
-{% elif type == 'live' and room == 'other' %}
-
+{% if type == 'live' %}
 - You'll need a webcam and microphone. If you have a webcam built into your laptop it's probably fine, but it's a good idea to plug in an external microphone if at all possible.
-- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup, but you don't have to.
 - You'll need a stable Internet connection. If you know you’ve got Internet issues (i.e. you usually have issues with video conferencing with work colleagues, your wifi drops out a lot, etc), please consider pre-recording instead.
 - You'll need a secondary monitor plugged into your computer, **or** a secondary device (such as a spare laptop, phone or tablet, but make sure it's set not to go to sleep!)
-
+{%- if room == 'curlyboi' %}
+- The stream you're on is a little different from the others&mdash;The AV team will get in touch with you beforehand to run through the requirements for your stream.
+{%- elif room == 'other' %}
+- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup, but you don't have to.
+{% endif %}
 {% elif type == 'pre-record' %}
 
 - Video length: **two minutes shorter** than the duration you selected&mdash;so either **13, 23 or 53 minutes**. It can run a little shorter but it **can not** run longer, even by a second.
@@ -79,7 +77,7 @@ The stream you're on is getting the white-glove treatment! The AV team will get 
 Please also look through our AV team's **quality tips**. They're really important reading, so we've made the button to go read them very big and very green.
 
 <div class='center-content'>
-<a href="https://forms.gle/F6JhtbFoZhVBzvz16" class='btn btn-chonk'>I want to look (and sound) good!</a>
+<a href="https://example.com" class='btn btn-chonk'>I want to look (and sound) good!</a>
 </div>
 
 {% if type == 'pre-record' %}
@@ -103,8 +101,7 @@ Please also look through our AV team's **quality tips**. They're really importan
 - **Two hours before** your talk, go into the **green room chat** on Venueless, and let the channel know you have arrived for a tech check. The AV team will help check your set-up, and give last minute advice.
 - **10 minutes before** your talk, the green room AV team will check you are ready. If you are not, your talk might get skipped!
 {%- if room == 'curlyboi' %}
-
-The AV team will get in touch with you beforehand to provide more information on how your stream will be managed.
+- The AV team will get in touch with you beforehand to provide more information on how your stream will be managed.
 
 {%- elif room == 'other' %}
 - **5 minutes before** your talk, a "virtual curtain" will drop, and you'll be given a link to connect to the studio. When you open that link, you'll be able to see and hear the stream return video feed, and the **backstage chat**.
