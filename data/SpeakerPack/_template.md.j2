@@ -12,7 +12,7 @@ day: {{ day }} # specialist / main
 
 Hello speakers!
 
-Thank you so much for speaking at PyConline AU this year! We know you're super busy getting ready to present, but 
+Thank you so much for speaking at PyConline AU this year! We know you're super busy getting ready to present, but we have a few things we need you to read through!
 
  Because we're online, things are a bit different! We know there's a lot covered, but please read everything here closely.
 
@@ -24,31 +24,55 @@ Thank you so much for speaking at PyConline AU this year! We know you're super b
 - Your video file (if you are preparing it yourself) is due in by **23 August**.
 {%- endif %}
 {%- if type == 'live' %}
-- Rehearsals and tech tests for speakers are on **22-23 August**.
+- Rehearsals and tech tests for speakers are on **22-23 August**. (You'll need to book a slot&mdash;more details will be sent out closer to the date.)
 {%- endif %}
 - Your presentation goes to air {% if day == 'specialist' %}**Friday 4 September**{% elif day == 'main' %}**Saturday 5 September**{% endif %}.
 {%- if type == 'pre-record' %}
 
-**Warning:** If you miss these dates, you may not be able to pre-record, and may need to default back to presenting live.
+**Warning:** If you miss these dates, you may not be able to pre-record! If this happens, we may have to ask that you present live instead.
 {%- endif %}
+
+{% if type == 'pre-record' %}
+
+## Your options for pre-recording
+
+If you want to pre-record, you have two options:
+
+- **Pre-record by yourself**. This is the way to go if you want the best video and audio quality, if you don't want a dodgy Internet connection causing problems, or if you want to do something out of the box with your video.
+- **Apply for a slot to pre-record with our help**. We'll use roughly the same tools as we use on the day, but we'll record the output earlier and play it back. The quality will be the same as a livestream, and your Internet connection will still need to be up to scratch. {% if room != 'curlyboi' %}Limited slots are available, so not everyone that wants to do this will be able to.{% elif day == 'main' %}Limited slots are available for talks not scheduled for the Curlyboi Theatre, so if your talk is not scheduled there, you might not be able to.{% endif %}
+
+Either way, **you need to let us know before 15 August** through Pretalx. If you [edit your accepted submission](https://pretalx.com/pycon-au-2020/me/submissions/), there will be a new question you can use to indicate your preference.
+
+{% endif %}
 
 ## Technical requirements
 
 {% if type == 'live' and room == 'curlyboi' %}
 
-The AV team will get in touch with you beforehand to run through the requirements for your stream.
+The stream you're on is getting the white-glove treatment! The AV team will get in touch with you beforehand to run through the requirements for your stream.
 
 {% elif type == 'live' and room == 'other' %}
 
 - You'll need a webcam and microphone. If you have a webcam built into your laptop it's probably fine, but it's a good idea to plug in an external microphone if at all possible.
-- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup.
+- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup, but you don't have to.
+- You'll need a stable Internet connection. If you know you’ve got Internet issues (i.e. you usually have issues with video conferencing with work colleagues, your wifi drops out a lot, etc), please consider pre-recording instead.
 - You'll need a secondary monitor plugged into your computer, **or** a secondary device (such as a spare laptop, phone or tablet, but make sure it's set not to go to sleep!)
 
 {% elif type == 'pre-record' %}
 
-**TODO** tech specs
-
-Because you are pre-recording, you will need to make your finished video **two minutes shorter** than the duration you selected&mdash;so either **13, 23 or 53 minutes**. It can run a little shorter but it **can not** run longer, even by a second.
+- Video length: **two minutes shorter** than the duration you selected&mdash;so either **13, 23 or 53 minutes**. It can run a little shorter but it **can not** run longer, even by a second.
+- Resolution: {% if room == 'curlyboi' %}1080p (1920x1080){% else %}720p (1280x720){% endif %}
+{%- if day == 'main' %}
+    - **Note**: If you don't know which stream you'll be in yet, note that the Curlyboi Theatre is 1080p, and the other streams are 720p.
+{%- endif %}
+- We can handle format re-conversion, but preference for format is below.
+- We will email out upload details to those who opt-in to this.
+- No video intro or outro sequence needed&mdash;if you include one, it may be edited out.
+- You must be available in the conference Venueless stage during your talk, so you can answer questions!
+- Editing needs to be done by you, and requesting changes after the due date is not possible. The AV team is expecting to have many hours of video to work through so we likely will not have the capacity to do special pre-event edits ourselves.
+{%- if room == 'curlyboi' %}
+- The AV team will be in touch to help out, as we're expecting to help edit some videos for this track specifically.
+{%- endif %}
 
 {% endif %}
 
@@ -57,6 +81,18 @@ Please also look through our AV team's **quality tips**. They're really importan
 <div class='center-content'>
 <a href="https://forms.gle/F6JhtbFoZhVBzvz16" class='btn btn-chonk'>I want to look (and sound) good!</a>
 </div>
+
+{% if type == 'pre-record' %}
+
+### Preferred format
+
+- Format: MP4 H.264 with AAC audio (Handbrake preset “Youtube HQ 1080 or 720”).
+- Video Bitrate: At least 2.5mbit.
+- Audio Bitrate: At least 160kbit, mono or stereo.
+- File size: Under 4GB
+- Filename: DateOfPresentation_TitleOfPresentation_Author.mp4 (i.e. 2020-09-08_MyTalkTitle_RyanVerner.mp4).
+
+{% endif %}
 
 
 {% if type == 'live' %}
@@ -96,9 +132,13 @@ As soon as the curtain drops you can leave the studio. (In fact, you'll be encou
 {% elif type == 'pre-record' %}
 ## On the day
 
-**TODO**
+On the day, **you'll need to be online in Venueless, our community platform** to answer questions during your talk. You don't need to go anywhere special&mdash;just join the room like an ordinary attendee.
 
 {% endif %}
+
+## Video uploads
+
+Some time after the event, if you've given us permission to, we'll upload the video from your talk to YouTube.
 
 ## Conduct and expectations
 
@@ -109,9 +149,19 @@ In particular:
 - Don't include content where you attack or pentest conference networks, conference infrastructure, conference processes, or conference attendees, in any way.
 - If you are talking about past hacks or social engineering, please note clearly that you had informed consent for any system or person affected.
 
+If you're not sure whether 
+
 ## Content warnings
 
-**TODO** words here
+If your talk contains content that you think might be sensitive, distressing or traumatic to some people (even if most people will be fine with it) please add a content warning, which you can do by [editing your accepted talk proposal](https://pretalx.com/pycon-au-2020/me/submissions/) in Pretalx.
+
+Content warnings aren't a moral judgement on your talk, and they won't restrict who is able to watch it. In fact, the opposite is true&mdash;for some of your audience members, if they know something they find distressing is coming up, they'll be better able to handle it than if it's a surprise. That lets them look after their mental health **and** better engage with and learn from your talk!
+
+> This talk contains extensive discussion of the COVID-19 pandemic throughout.
+
+> This talk contains images and brief mentions of bushfires and other natural disasters.
+
+**Content warnings don't exempt you from the code of conduct.** This is for things that comply with the code of conduct, but might be distressing to some people.
 
 ## What to do if something comes up
 
