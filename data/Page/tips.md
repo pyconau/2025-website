@@ -8,7 +8,7 @@ If you decide to buy additional hardware (note COVID is making stock levels chal
 
 By far, the best investment is ensuring audio quality is clear and not echo-y.  **This is more important than video quality.** Using your laptop microphone is OK for short talks or video chat, but the echo will get very fatiguing to listen to for a 20+ minute talk.
 
-In an ideal world; a external USB condenser microphone is your best bet, but you will need to practice with it to ensure you’re getting optimal audio levels, it’s positioned correctly, it doesn’t accidentally pickup your speakers/other sound during your talk, etc.
+In an ideal world; a external USB condenser microphone is your best bet, but you will need to practice with it to ensure you’re getting optimal audio levels, it’s positioned correctly, it doesn’t accidentally pickup your speakers/other sound during your talk, and make sure any gain or volume controls are set so it's loud and clear, without any distortion, even when you're speaking loudly into it.
 
 Many podcasting guides are very useful to read, for example: https://www.buzzsprout.com/blog/mic-technique-podcasting
 
@@ -38,7 +38,7 @@ If you’re feeling particularly creative, you could even consider a more profes
 
 If you can, a wired Internet connection is going to beat the pants of a wireless connection.  Latency/jitter/dropouts (which are more likely to occur on wifi) especially affect video streaming.
 
-Streaming at 720p will require at least 1mbit out, but over 5mbit up is preferred (i.e. a NBN 25/5 connection or higher).   When you are presenting, strong recommendation to ensure nobody else in your household is utilising upload bandwidth (i.e. peer to peer applications).
+Streaming at 720p ideally requires over 2mbit, with a minimum of 1mbit for OK quality. 5mbit or higher is highly recommended (i.e.a NBN 25/5 connection or higher).   When you are presenting, strong recommendation to ensure nobody else in your household is utilising upload bandwidth (i.e. peer to peer applications).
 
 ## Timer, power & second monitor/device
 
