@@ -22,6 +22,7 @@ Thank you so much for speaking at PyConline AU this year! We know you're super b
 - You need to tell us you are pre-recording by **15 August**.
 - If you have applied and been accepted for an assisted pre-record slot, that will take place on **22-23 August**.
 - Your video file (if you are preparing it yourself) is due in by **23 August**.
+- In most cases, we cannot make edits or accept new versions after these dates.
 {%- endif %}
 {%- if type == 'live' %}
 - Rehearsals and tech tests for speakers are on **22-23 August**. (You'll need to book a slot&mdash;more details will be sent out closer to the date.)
@@ -32,26 +33,46 @@ Thank you so much for speaking at PyConline AU this year! We know you're super b
 **Warning:** If you miss these dates, you may not be able to pre-record! If this happens, we may have to ask that you present live instead.
 {%- endif %}
 
+## Updating your talk information
+
+If you need to update your talk information, you can [edit your accepted submission](https://pretalx.com/pycon-au-2020/me/submissions/) on Pretalx.
+
+If you haven't already, we need you to **tick the consent box that says we're allowed to stream your content**, otherwise we can't! You'll also be able to select whether you want to present live or pre-record, and optionally add content warnings if necessary (please read below for more detail on that).
+
+In addition to that, you can make changes to your title, abstract, bio, and so on.
+
+If you don't let us know that you want to pre-record by updating Pretalx before 15 August, we'll assume that you're presenting live.
+
 {% if type == 'pre-record' %}
 
 ## Your options for pre-recording
 
 If you want to pre-record, you have two options:
 
-- **Pre-record by yourself**. This is the way to go if you want the best video and audio quality, if you don't want a dodgy Internet connection causing problems, or if you want to do something out of the box with your video.
+- **Pre-record by yourself**. This is the way to go if you want the best video and audio quality, if you don't want a dodgy Internet connection causing problems, or if you want to do something different and interesting with your video.
 - **Apply for a slot to pre-record with our help**. We'll use roughly the same tools as we use on the day, but we'll record the output earlier and play it back. The quality will be the same as a livestream, and your Internet connection will still need to be up to scratch. {% if room != 'curlyboi' %}Limited slots are available, so not everyone that wants to do this will be able to.{% elif day == 'main' %}Limited slots are available for talks not scheduled for the Curlyboi Theatre, so if your talk is not scheduled there, you might not be able to.{% endif %}
 
-Either way, **you need to let us know before 15 August** through Pretalx. If you [edit your accepted submission](https://pretalx.com/pycon-au-2020/me/submissions/), there will be a new question you can use to indicate your preference.
+Either way, **you need to let us know before 15 August** through Pretalx. If you [edit your accepted submission](https://pretalx.com/pycon-au-2020/me/submissions/), you'll see a question you can use to indicate your preference. (This is *not* the same as the question that you were asked during the CFP process.)
+
+With both options, we encourage you to invest time before your talk to ensure your recording setup is optimal (see below).  Clear audio especially will ensure your video is as engaging as possible, holding people’s attention for the duration of the talk.
+
+### How much help will I get?
+
+Our AV team and volunteers are able to provide tips and advice. However, in most cases we are unable to provide complex support, debug setups, or edit videos for you.
+
+{% if room == 'curlyboi' %}
+Some additional support is available for your stream, however; the AV team will get in touch with you with more details.
+{% endif %}
 
 {% endif %}
 
 ## Technical requirements
 
 {% if type == 'live' %}
-- You'll need a webcam and microphone. If you have a webcam built into your laptop it's probably fine, but it's a good idea to plug in an external microphone if at all possible.
+- You'll need a webcam and microphone. If you have a webcam built into your laptop it might be fine, but it's a good idea to plug in an external microphone if at all possible&mdash;you'll find more detail on our AV tips page linked below.
 - You'll need a stable Internet connection. If you know you’ve got Internet issues (i.e. you usually have issues with video conferencing with work colleagues, your wifi drops out a lot, etc), please consider pre-recording instead.
-- You'll need a secondary monitor plugged into your computer, **or** a secondary device (such as a spare laptop, phone or tablet, but make sure it's set not to go to sleep!)
-- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup, but you don't have to.
+- You'll need a secondary monitor plugged into your computer, **or** a secondary device (such as a spare laptop, phone or tablet, but make sure it's set not to go to sleep!) to display the chat / stream return feed separate to your screen sharing screen.  This is so we can communicate with you during your talk (if there is a problem, or reminders about time).
+- You'll need the latest **Chrome** or **Firefox**. It's also a good idea to have **Skype** or **Zoom** installed, as we can fall back to these as a backup.
 {%- if room == 'curlyboi' %}
 - The stream you're on is a little different from the others&mdash;The AV team will get in touch with you beforehand to run through the requirements for your stream.
 {% endif %}
@@ -76,7 +97,7 @@ Either way, **you need to let us know before 15 August** through Pretalx. If you
 Please also look through our AV team's **quality tips**. They're really important reading, so we've made the button to go read them very big and very green.
 
 <div class='center-content'>
-<a href="https://example.com" class='btn btn-chonk'>I want to look (and sound) good!</a>
+<a href="/tips" class='btn btn-chonk'>I want to look (and sound) good!</a>
 </div>
 
 {% if type == 'pre-record' %}
@@ -101,14 +122,15 @@ We will be holding a tech test and rehearsal session on 22&ndash;23 August, whic
 
 ## On the day, before your talk
 
+Our community platform will be [Venueless](https://venueless.org); that's where all of our speakers and attendees will be gathering. The videos will feed into there from a video streaming system 
+
 - **Two hours before** your talk, go into the **green room chat** on Venueless, and let the channel know you have arrived for a tech check. The AV team will help check your set-up, and give last minute advice.
 - **10 minutes before** your talk, the green room AV team will check you are ready. If you are not, your talk might get skipped!
-{%- if room == 'curlyboi' %}
-- The AV team will get in touch with you beforehand to provide more information on how your stream will be managed.
-
-{%- elif room == 'other' %}
 - **5 minutes before** your talk, a "virtual curtain" will drop, and you'll be given a link to connect to the studio. When you open that link, you'll be able to see and hear the stream return video feed, and the **backstage chat**.
 - **1 minute before** your talk, the virtual curtain will lift, and the MC will introduce you. (You'll see them and hear their voice through the stream return.)
+
+{%- if room == 'curlyboi' %}
+Note that the stream you're on is a little different from the others&mdash;the AV team will get in touch with you beforehand to provide more information on how your stream will be managed.
 {% endif %}
 
 ## During your talk
