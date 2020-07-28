@@ -1,0 +1,10 @@
+path:
+  template: /speakers/{{ pack.day }}/{{ pack.room }}/{{ pack.type }}/
+  for-each:
+    pack: session.query(SpeakerPack).all()
+template: speaker-pack
+context:
+  dynamic:
+    swap_day: session.query(SpeakerPack).filter(SpeakerPack.day!=pack.day, SpeakerPack.room==pack.room, SpeakerPack.type==pack.type).one()
+    swap_room: session.query(SpeakerPack).filter(SpeakerPack.day==pack.day, SpeakerPack.room!=pack.room, SpeakerPack.type==pack.type).one()
+    swap_type: session.query(SpeakerPack).filter(SpeakerPack.day==pack.day, SpeakerPack.room==pack.room, SpeakerPack.type!=pack.type).one()
