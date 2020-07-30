@@ -87,6 +87,8 @@ For video editing, you can swap between a shot like this, a full screen webcam c
 
 ## Software Suggestions
 
+- [PanOpto's free web-based recorder (cross-platform)](https://www.panopto.com/record/)
+    - Easy to use, allows webcam embed (go to settings, enable Capture in HD and Smart Camera), and will give you a WebM locally at the end.
 - [OBS (multi-platform)](https://obsproject.com/)
     - Open source streaming software, but will let you record a video locally (don’t have to stream) and you can embed a Picture-in-Picture webcam view inside of a screen share.  Little more of a learning curve than other software but lots of guides online and relatively intuitive to use.
     - If you’re feeling creative, you can hook this up to an external set of buttons, and change views during your talk (swap between fullscreen camera, screen share, or Picture-in-Picture like above).
@@ -102,6 +104,8 @@ For video editing, you can swap between a shot like this, a full screen webcam c
 
 ## Other Suggestions
 
+- Using an external camera with microphone, screen-sharing, editing later
+    - Recording with an external camera to SD, while simultaneously recording a screen share, and then editing it in a post-linear editor such as Adobe Premiere will net you pretty good results and give you maximum flexibility over editing options, but take a bit of time.
 - Pre-recording your talk during the practice/test days
     - For a small percentage of talks, we can pre-record your entire talk using the streaming infrastructure on the practice/test days: we would like to do this for a handful of talks in any case.  Please let us know.
 - Dedicated capture hardware and post-production
