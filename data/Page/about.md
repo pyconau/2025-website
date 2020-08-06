@@ -11,6 +11,8 @@ More about when, and how, this is all going to work will be announced soon; righ
 
 The rest of this page is about what an in-person PyCon AU is traditionally like. We're trying to keep as much of the essence of as much of this as we can as we move to online.
 
+See also: [the culture of PyCon AU](/culture/).
+
 ## Specialist tracks
 
 Traditionally, the first day of PyCon AU is dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allow for more in-depth talks on the subject.
