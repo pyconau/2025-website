@@ -7,8 +7,7 @@
         <title>{% block title %}PyCon AU 2020{% endblock %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
-    <body>
-        <div id='everything-except-footer'>
+    <body {% block body_props %}{% endblock %}>
         {% block nav %}
         <nav class="{{ nav_class }}">
             <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard_PyConline.svg' %}" /></a>
@@ -20,19 +19,19 @@
                 <li><a href="/conduct">Conduct</a></li>
             </ul>
             <div class="dates">
-                4&ndash;6 September 2020
-                <div class="location">The Internet</div>
+                4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location">The Internet</span>
             </div>
         </nav>
         {% endblock %}
-        {% block content %}
-        <main>
-            {% block main %}
-                <h1>This is some example content!</h1>
-                <p>If you can see this, it probably means our static site generator is broken somehow.</p>
+        <div id="content">
+            {% block content %}
+            <main>
+                {% block main %}
+                    <h1>This is some example content!</h1>
+                    <p>If you can see this, it probably means our static site generator is broken somehow.</p>
+                {% endblock %}
+            </main>
             {% endblock %}
-        </main>
-        {% endblock %}
         </div>
         <footer>
             <section class="sponsor auspice">
