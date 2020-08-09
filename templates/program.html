@@ -1,5 +1,5 @@
 {% extends '_base.html' %}
-
+{% block html_class %}schedule{% endblock %}
 {% block content %}
 {% set first = sessions|min(attribute='start') %}
 {% set first_min = first.start.timestamp()|int // 60 %}

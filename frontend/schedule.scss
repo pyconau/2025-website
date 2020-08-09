@@ -9,12 +9,19 @@
   }
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
 s-schedule-outer {
+  flex: 1;
   display: block;
   @include horizontal {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    writing-mode: vertical-lr;
   }
 }
 
@@ -26,10 +33,11 @@ s-schedule {
     grid-template-rows: auto repeat(calc(var(--day-end) - var(--day-start)), 1fr);
   }
   @include horizontal {
-    height: 80vh;
+    height: 100%;
     width: calc((var(--day-end) - var(--day-start)) * 10px);
     grid-template-rows: 25px repeat(var(--total-tracks), 1fr);
     grid-template-columns: auto repeat(calc(var(--day-end) - var(--day-start)), 1fr);
+    writing-mode: horizontal-tb;
   }
 }
 
@@ -53,6 +61,7 @@ s-item {
     font-size: 13px;
   }
   overflow: hidden;
+  text-overflow: ellipsis;
   line-height: 1em;
 }
 

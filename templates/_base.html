@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="{% block html_class %}{% endblock %}">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="{% asset 'build/index.css' %}" />
@@ -7,7 +7,7 @@
         <title>{% block title %}PyCon AU 2020{% endblock %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
-    <body {% block body_props %}{% endblock %}>
+    <body>
         {% block nav %}
         <nav class="{{ nav_class }}">
             <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard_PyConline.svg' %}" /></a>

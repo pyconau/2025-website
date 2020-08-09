@@ -17,6 +17,14 @@ $desert-sand-headings: #F36B35;
 $red-centre: #E01D43;
 $lorikeet-blue: #5B57A5;
 
+@mixin app-mode {
+    @media (max-width: 767.9999px) {
+        html.schedule & {
+            @content;
+        }
+    }
+}
+
 body {
     font-family: $body-font;
 }
@@ -336,7 +344,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    &.app {
+    @include app-mode {
         height: 100vh;
     }
 }
@@ -345,6 +353,9 @@ body {
 }
 
 footer {
+    @include app-mode {
+        display: none;
+    }
     form {
         --form-colour: #777 !important;
     }
