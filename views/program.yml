@@ -1,0 +1,8 @@
+path: 
+  template: /program/{{ day.0 }}
+  for-each:
+    day: "[('fri', date(2020, 7, 30)), ('sat', date(2020, 7, 31))]"
+template: program
+context:
+  dynamic:
+    sessions: session.query(Session).filter(Session.start >= day[1], Session.start < day[1] + timedelta(1)).all()

@@ -25,12 +25,14 @@
             </div>
         </nav>
         {% endblock %}
+        {% block content %}
         <main>
             {% block main %}
                 <h1>This is some example content!</h1>
                 <p>If you can see this, it probably means our static site generator is broken somehow.</p>
             {% endblock %}
         </main>
+        {% endblock %}
         </div>
         <footer>
             <section class="sponsor auspice">

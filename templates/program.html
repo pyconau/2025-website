@@ -1,0 +1,47 @@
+{% extends '_base.html' %}
+
+{% block content %}
+{% set first = sessions|min(attribute='start') %}
+{% set first_min = first.start.timestamp()|int // 60 %}
+{% set last = sessions|max(attribute='end') %}
+{% set last_min = last.end.timestamp()|int // 60 %}
+
+<h1>
+    {% if day.0 == 'fri' %}Friday, 4 Sep: Specialist tracks
+    {% elif day.0 == 'sat' %}Saturday, 5 Sep: Main conference
+    {% endif %}
+</h1>
+
+<s-schedule-outer>
+<s-schedule style="--day-start: {{ first_min }}; --day-end: {{ last_min }}; --total-tracks: 4;">
+    {% if day.0 == 'fri' %}
+        <s-track style="--track: 1;">Science, Data and Analytics</s-track>
+        <s-track style="--track: 2;">Security and Privacy / DjangoCon AU</s-track>
+        <s-track style="--track: 3;">Education</s-track>
+        <s-track style="--track: 4;">DevOops</s-track>
+    {% elif day.0 == 'sat' %}
+        <s-track style="--track: 1;">Curlyboi Theatre</s-track>
+        <s-track style="--track: 2;">Python 2 Memorial Concert Hall</s-track>
+        <s-track style="--track: 3;">Flip Floperator Auditorium</s-track>
+        <s-track style="--track: 4;">The One, Obvious Room</s-track>
+    {% endif %}
+    {% for session in sessions %}
+    <s-item 
+        style="--start: {{ session.start.timestamp()|int // 60 }}; --end: {{ session.end.timestamp()|int // 60 }}; --track: {{ session.room }};"
+    >
+        {{ session.title }}
+    </s-item>
+    {% endfor %}
+        {% for x in range(first_min, last_min, 60) %}
+            <s-time style="--at: {{ x }}">
+            {% set hr = (x + 570) % 1440 // 60 %}
+            {% if hr > 12 %} {{ hr - 12 }}:00 pm
+            {% elif hr == 12 %} {{ hr }}:00 pm {# WHY IS TIME LIKE THIS #}
+            {% else %} {{ hr }}:00 am
+            {% endif %}
+            </s-time>
+        {% endfor %}
+</s-schedule>
+</s-schedule-outer>
+
+{% endblock %}

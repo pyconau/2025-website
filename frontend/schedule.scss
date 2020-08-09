@@ -1,0 +1,107 @@
+@mixin horizontal {
+  @media (max-width: 767.9999px) {
+    @content;
+  }
+}
+@mixin vertical {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+s-schedule-outer {
+  display: block;
+  @include horizontal {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+s-schedule {
+  display: grid;
+  @include vertical {
+    width: 100%;
+    grid-template-columns: 75px repeat(var(--total-tracks), 1fr);
+    grid-template-rows: auto repeat(calc(var(--day-end) - var(--day-start)), 1fr);
+  }
+  @include horizontal {
+    height: 80vh;
+    width: calc((var(--day-end) - var(--day-start)) * 10px);
+    grid-template-rows: 25px repeat(var(--total-tracks), 1fr);
+    grid-template-columns: auto repeat(calc(var(--day-end) - var(--day-start)), 1fr);
+  }
+}
+
+s-item {
+  background-color: rgba($wattle-leaf, 0.2);
+  border-radius: 5px;
+  padding: 7px;
+  margin: 2px;
+  @include vertical {
+    grid-column-start: calc(var(--track) + 1);
+    grid-column-end: span 1;
+    grid-row-start: calc(var(--start) - var(--day-start) + 2);
+    grid-row-end: calc(var(--end) - var(--day-start) + 2);
+    font-size: 16px;
+  }
+  @include horizontal {
+    grid-row-start: calc(var(--track) + 1);
+    grid-row-end: span 1;
+    grid-column-start: calc(var(--start) - var(--day-start) + 2);
+    grid-column-end: calc(var(--end) - var(--day-start) + 2);
+    font-size: 13px;
+  }
+  overflow: hidden;
+  line-height: 1em;
+}
+
+s-track {
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  font-weight: bold;
+  -webkit-backdrop-filter: blur(4px);
+  @include vertical {
+    grid-row: 1;
+    grid-column: calc(var(--track) + 1);
+  }
+  @include horizontal {
+    grid-column: 1;
+    grid-row: calc(var(--track) + 1);
+    writing-mode: vertical-rl;
+    transform: rotate(0.5turn);
+    font-size: 13px;
+    //text-orientation: sideways;
+  }
+}
+
+s-time, s-now {
+  color: #aaa;
+  padding: 3px;
+  @include vertical {
+    grid-column-start: 1;
+    grid-column-end: calc(var(--total-tracks) + 2);
+    grid-row-start: calc(var(--at) - var(--day-start) + 2);
+    grid-row-end: span 60;
+    border-top: 1px solid #ddd;
+  }
+  @include horizontal {
+    grid-row-start: 1;
+    grid-row-end: calc(var(--total-tracks) + 2);
+    grid-column-start: calc(var(--at) - var(--day-start) + 2);
+    grid-column-end: span 60;
+    border-left: 1px solid #ddd;
+  }
+  z-index: -2;
+}
+
+s-now {
+  color: red;
+  border-top-color: red;
+  z-index: -1;
+}
