@@ -58,7 +58,7 @@ s-item {
     grid-row-end: span 1;
     grid-column-start: calc(var(--start) - var(--day-start) + 2);
     grid-column-end: calc(var(--end) - var(--day-start) + 2);
-    font-size: 13px;
+    font-size: 14px;
   }
   overflow: hidden;
   text-overflow: ellipsis;
