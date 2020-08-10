@@ -6,19 +6,39 @@
 {% set last = sessions|max(attribute='end') %}
 {% set last_min = last.end.timestamp()|int // 60 %}
 
-<h1>
-    {% if day.0 == 'fri' %}Friday, 4 Sep: Specialist tracks
-    {% elif day.0 == 'sat' %}Saturday, 5 Sep: Main conference
-    {% endif %}
-</h1>
+<div class="switcher">
+    <a href="/program/fri/"{% if day.0 == 'fri' %} class='selected'{% endif %}>Friday</a>
+    <a href="/program/sat/"{% if day.0 == 'sat' %} class='selected'{% endif %}>Saturday</a>
+    <a href="/program/sun/" >Sunday</a>
+</div>
 
 <s-schedule-outer>
 <s-schedule style="--day-start: {{ first_min }}; --day-end: {{ last_min }}; --total-tracks: 4;">
     {% if day.0 == 'fri' %}
-        <s-track style="--track: 1;">Science, Data and Analytics</s-track>
-        <s-track style="--track: 2;">Security and Privacy / DjangoCon AU</s-track>
-        <s-track style="--track: 3;">Education</s-track>
-        <s-track style="--track: 4;">DevOops</s-track>
+        <s-track style="--track: 1;">
+            <a href="/program/science-data-and-analytics/">
+                Science, Data and Analytics
+            </a>
+        </s-track>
+        <s-track style="--track: 2;">
+            <a href="/program/security-and-privacy/">
+                Security and Privacy
+            </a>
+            /
+            <a href="/program/djangocon-au/">
+                DjangoCon AU
+            </a>
+        </s-track>
+        <s-track style="--track: 3;">
+            <a href="/program/education/">
+                Education
+            </a>
+        </s-track>
+        <s-track style="--track: 4;">
+            <a href="/program/devoops/">
+                DevOops
+            </a>
+        </s-track>
     {% elif day.0 == 'sat' %}
         <s-track style="--track: 1;">Curlyboi Theatre</s-track>
         <s-track style="--track: 2;">Python 2 Memorial Concert Hall</s-track>

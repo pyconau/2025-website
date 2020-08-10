@@ -114,3 +114,42 @@ s-now {
   border-top-color: red;
   z-index: -1;
 }
+
+.switcher {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border: 2px solid $wattle-leaf;
+  border-radius: 6px;
+  padding: 2px;
+  space-between: 2px;
+  margin-bottom: 20px;
+  @include horizontal {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    border-radius: 4px;
+    margin-right: 2px;
+    font-family: $heading-font;
+    color: $wattle-leaf;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    @include horizontal {
+      font-size: 15px;
+      padding: 3px 6px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: rgba($wattle-leaf, 0.2);
+    }
+    &.selected {
+      background-color: $wattle-leaf;
+      color: white;
+    }
+  }
+}
