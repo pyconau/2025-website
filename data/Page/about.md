@@ -7,6 +7,8 @@ order: 1
 
 PyConline AU 2020 will be held on the Internet, in the Curlyboi Convention Centre.
 
+If you're new to our event, you might also want to read about [the culture of PyCon AU](/culture/).
+
 ## 4 Sep: Specialist tracks
 
 The first day of PyCon AU is dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allow for more in-depth talks on the subject.
