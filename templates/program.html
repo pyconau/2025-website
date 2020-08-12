@@ -64,7 +64,7 @@
     {% endfor %}
         {% for x in range(first_min, last_min, 60) %}
             <s-time style="--at: {{ x }}">
-            {% set hr = (x + 570) % 1440 // 60 %}
+            {% set hr = x % 1440 // 60 %}
             {% if hr > 12 %} {{ hr - 12 }}:00 pm
             {% elif hr == 12 %} {{ hr }}:00 pm {# WHY IS TIME LIKE THIS #}
             {% else %} {{ hr }}:00 am
