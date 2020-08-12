@@ -1,0 +1,20 @@
+title: So what is this time thing anyway?
+start: 2020-09-05 14:00:00+09:30
+end: 2020-09-05 14:15:00+09:30
+room: 4
+abstract: <p>How well do you think you understand time? All kinds of things in our
+  lives rely on having at least a basic understanding of how "time" works. But sometimes
+  you need more than just a basic understanding... so come with me on a brief tour
+  of time.</p>
+description: <p>This is a whirlwind tour of modern timekeeping. From the weird and
+  wonderful timekeeping of astronomers, to what goes into the normal civil time you
+  read on your watch. With fun stops through calendaring, atomic clocks, GPS, space
+  probes, and more along the way! As programmers, we work with dates and times on
+  a regular basis and while most of us will never come across a TAI timestamp, or
+  convert from UTC to TCB, there is a rich history behind our modern timekeeping with
+  all its wonderful acronyms. Regardless of your level of skill or familiarity with
+  timekeeping, I hope you can get something out of this introduction to timekeeping,
+  illustrated with Python where applicable.</p>
+code: DDCVAM
+speakers:
+- RSUKRU

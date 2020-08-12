@@ -1,0 +1,23 @@
+title: The Hitchhiker's Guide to CLIs in Python
+start: 2020-09-05 16:35:00+09:30
+end: 2020-09-05 17:00:00+09:30
+room: 2
+abstract: <p>Command-line applications and interfaces are used by both newcomers and
+  experienced Python developers everyday. But do you know how they came to be? Hop
+  on to this ship as we go through the CLI galaxy and look at its history, explore
+  the CLI anatomy and discover some Python packages that can help us create them.
+  We’ll then emulate one of the most popular CLIs of our time by writing our own CLI
+  using Click, and see how we can package it and publish it on PyPI. Are you ready
+  to travel faster-than-light using this ship’s Infinite Improbability Drive? Carry
+  your towel!</p>
+description: "<p>Command-line applications and interfaces are used by both newcomers\
+  \ and experienced Python developers everyday. But do you know how they came to be?\
+  \ Hop on to this ship as we go through the CLI galaxy and look at its history, explore\
+  \ the CLI anatomy and discover some Python packages that can help us create them.</p>\n\
+  <p>We’ll then emulate one of the most popular CLIs of our time by writing our own\
+  \ CLI using Click, and see how we can package it and publish it on PyPI. Are you\
+  \ ready to travel faster-than-light using this ship’s Infinite Improbability Drive?\
+  \ Carry your towel!</p>"
+code: UFBPBV
+speakers:
+- NR33XU

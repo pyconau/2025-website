@@ -1,0 +1,33 @@
+title: Of Django, PostgreSQL schemas, and your multi-million dollar idea
+start: 2020-09-04 17:45:00+09:30
+end: 2020-09-04 18:10:00+09:30
+room: 2
+abstract: <p>Who in their right mind would pick Django -in 2020- to develop a software
+  as a service? Who would even go as far as using PostgreSQL schemas for doing multi-tenancy?
+  Well, according to the star count of some GitHub repositories on the topic, many!
+  In this talk, we'll cover the major challenges of doing multi-tenancy in Django
+  through PostgreSQL schemas. Come along to discover whether all those people are
+  wrong (or not), and whether you'd be <em>de facto</em> wrong (or not) for taking
+  this path.</p>
+description: "<p>Although rough for the world, 2020 is proving a good year (and decade\
+  \ start) for Django. Boring batteries-included frameworks and established monolith\
+  \ makers are shining again, in a world where the hype-enchantment of JavaScript\
+  \ and micro-everything is starting to wear off and fall into a more mature position\
+  \ of tradeoffs. After 15 years of life, Django continues to prove solid, battle\
+  \ tested, and very capable of major undertakings in the web arena.</p>\n<p>Over\
+  \ the last decade, the competence of the framework has extended to the SaaS world,\
+  \ through a number of packages that have emerged as viable options for making Django\
+  \ multi-tenant. PostgreSQL concept of <em>schemas</em> has opened a new exploration\
+  \ space for multi-tenancy, by combining the power of RDBMS native isolation with\
+  \ the reduced costs of managing a single database.</p>\n<p>However, nothing comes\
+  \ for free. The ease of using PostgreSQL schemas for multi-tenancy in Django comes\
+  \ at the expense of some challenges that must be overcome in the short, medium,\
+  \ and long term, if the project seeks to survive while gracefully escaling to success.</p>\n\
+  <p>In this talk we will cover the major challenges of doing multi-tenancy in Django\
+  \ through PostgreSQL schemas. You will learn the pros and cons of the approach as\
+  \ you move from tutorial-grade projects to massive multi-tenant behemoths. By the\
+  \ end, you will be able to answer whether or not this is going to be a feasible\
+  \ approach for your next multi-million dollar idea.</p>"
+code: CRSJXF
+speakers:
+- EJ8U3E

@@ -1,0 +1,24 @@
+title: Data Science Concepts You Learned in Statistics Class
+start: 2020-09-05 13:35:00+09:30
+end: 2020-09-05 13:50:00+09:30
+room: 3
+abstract: <p>Ever taken a statistics class and wondered whether you were skilled enough
+  for a data science career? This one's for you! Learn about some common statistical
+  methods that you've definitely heard of, which happen to be very common in data
+  science as well. With this talk, I aim to help aspiring data scientists from non-computer
+  science disciplines realize how important and relevant their expertise to data science.</p>
+description: "<p>Starting a career in data science may seem daunting for folks from\
+  \ non-computer science backgrounds. You need to learn how to code, understand machine\
+  \ learning algorithms, maybe even pick up linear algebra. The good news is, for\
+  \ those who have done coursework or projects involving statistics, half of the battle\
+  \ has already been won!</p>\n<p>In this talk, I will discuss common statistical\
+  \ methods that are frequently used in data science: </p>\n<ol>\n<li>generalized\
+  \ linear models, </li>\n<li>principal component analysis</li>\n<li>the beloved box\
+  \ plot! </li>\n</ol>\n<p>I will talk about how their applications in statistics\
+  \ and machine learning differ and show how they can be implemented in Python. With\
+  \ this talk, I aim to help aspiring data scientists from various disciplines (e.g.,\
+  \ social sciences, medicine) realize that their expertise is relevant to data science\
+  \ and hopefully encourage them to pursue careers in this field.</p>"
+code: E33UY9
+speakers:
+- KTA9XQ

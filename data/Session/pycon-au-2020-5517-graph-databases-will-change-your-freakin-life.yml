@@ -1,0 +1,21 @@
+title: Graph Databases will change your (freakin') life
+start: 2020-09-05 14:05:00+09:30
+end: 2020-09-05 14:30:00+09:30
+room: 2
+abstract: <p>This talk will be an introduction and overview of these Graph databases
+  that are so hot right now, and how you can drive them using python.</p>
+description: "<p>Relational and NoSQL DBs have ruled the roost for a couple of decades\
+  \ now, but in real life there's more to data than just tables or key-pairs. Graph\
+  \ DBMS technology has been coming along for the last decade or so and is now quite\
+  \ mature and everyone wants one (just ask a Fortune 500 company). </p>\n<p>I mean:\
+  \ why have a table when you can have a knowledge graph? Why not be able to whip\
+  \ up a recommendations engine (or indeed a fraud detector) in a few minutes?</p>\n\
+  <p>Graph databases store data in Graphs -- that is NOT chart-visualisation nor syntax\
+  \ standard on API layers (NOT a GraphQL talk), but per the paper written by the\
+  \ mathematician Euler in 1736: those data structures which are \"nodes\" connected\
+  \ by \"relationships\".</p>\n<p>This talk will be a primer on what this all means,\
+  \ how they work and when they're a good idea to use. There will also be a demonstration\
+  \ and discussion about how to kick off with graph DBs driven by python.</p>"
+code: A878CA
+speakers:
+- BUWU8Z

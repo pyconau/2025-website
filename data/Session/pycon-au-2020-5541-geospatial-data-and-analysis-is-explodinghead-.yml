@@ -1,0 +1,23 @@
+title: 'geospatial data and analysis is :exploding_head:'
+start: 2020-09-04 16:35:00+09:30
+end: 2020-09-04 17:00:00+09:30
+room: 1
+abstract: "<p>It feels like it should be easy, but its not... you think, \"it shouldn't\
+  \ take that long\", wrong again. \nIt feels like it should be easy, but its not...\
+  \ you think, “it shouldn't take too long“, wrong again.\nThis talk is about some\
+  \ things you should think about/read about/know about as you dive into geospatial\
+  \ data. It will present some tools, videos, websites, etc, which might be useful\
+  \ as you forge your own path on the map of possibilities. Just an overall solid\
+  \ 25 minutes of geo-goodnes... with python!\nThe aim of this talk is to inspire\
+  \ you to cross over to the geospatial side of data if you have not already, to give\
+  \ you some pointers if you are on your way, and to make you laugh/sigh at all the\
+  \ stuff you have had to learn to be where you are if you have been at it for a while.</p>"
+description: "<p>Here is my top level summary:\n- its hard for everyone, you are not\
+  \ alone. \n- snacks:\n  - points, lines and polygons\n  - projections (<em>scream\
+  \ quietly into the void</em>)\n  - WKT\n  - file types\n  - \"simple\" calculations\n\
+  - pantry:\n  - libraries\n  - useful stuff on the internet\n  - quick wins\n  -\
+  \ other software\n  - debugging\n- dinner:\n  - interesting problems\n  - other\
+  \ fun things</p>"
+code: QJTSEP
+speakers:
+- SHVTJB

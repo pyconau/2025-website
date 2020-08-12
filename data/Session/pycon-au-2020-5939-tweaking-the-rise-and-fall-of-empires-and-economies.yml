@@ -1,0 +1,43 @@
+title: Tweaking the rise and fall of empires and economies
+start: 2020-09-04 17:45:00+09:30
+end: 2020-09-04 18:10:00+09:30
+room: 1
+abstract: <p>There exists some beautiful mathematical models of economies and disease
+  that offer insights, for instance, into how our economies rise and fall. Traditionally,
+  exploring these models have involved a lot of specialist mathematical programming.
+  Here we showcase a small python framework that simplifies the programming of these
+  kinds of models by leveraging python libraries such as dash and scipy. The framework
+  exposes a built-in UI that allows an interactive exploration of the reasons why
+  economies might collapse, or why diseases might break out to epidemics.</p>
+description: "&lt;h1&gt;Title: Tweaking the rise and fall of empires and economies&lt;/h1&gt;\n\
+  &lt;h2&gt;Intended Audience&lt;/h2&gt;\n<p>People who want to be exposed to fascinating\
+  \ mathematical models of the world, and who would like to interactively explore\
+  \ them. For those with a bit more scientific background, this talk will show how\
+  \ easy it can be to make these models in python and may encourage researchers to\
+  \ try python as a plausible tool to use.</p>\n&lt;h2&gt;Why I am interested in this?&lt;/h2&gt;\n\
+  <p>I am a data-engineer with a specialisation in data viz. I love exploring the\
+  \ visual impact of powerful models that explain some aspect of our world. As such,\
+  \ I love reading about interesting models, and I am willing to wade into the maths\
+  \ as I was previously a computational biologist who built theoretical biological\
+  \ models. The maths is tricky but I believe that it can be made a lot easier with\
+  \ a good python framework, and so I built one to explore these models. I am pleased\
+  \ with the result, and hope that others might also enjoy playing around with these\
+  \ models too.</p>\n&lt;h2&gt;Outline&lt;/h2&gt;\n<p>1) show examples of beautiful\
+  \ numerical models of the economy\n    a) Peter Turchin's model of empire disintegration\n\
+  \    b) Steve Keen's model of debt-drive collapse in the business cycle\n    c)\
+  \ the standard SIR model of how infectious diseases rips through a population\n\
+  2) show how painful it is to build the models yourself\n    a) brief look at how\
+  \ these models are presented in the literature, standard mathematical nomenclature\n\
+  \    b) show select real world examples of yukky mathematical programming, matlab,\
+  \ fortran, even python\n3) describe the framework that simplifies this\n    a) introduce\
+  \ my pyecon library \n    b) heavy use of string lookup in dictionaries\n    c)\
+  \ translation from math to descriptive variable names\n    d) outsourcing the solver\
+  \ to scipy\n    e) functional abstractions to transform into scipy\n    f) use dash\
+  \ and plotly to expose graphs and controls in a transparent manner &lt;br /&gt;\n\
+  4) contrast the readable code examples of this framework to other examples\n5) demonstrate\
+  \ the built-in interactive UI\n    a) watch how interest rate increases can destroy\
+  \ an economy\n    b) show how empires self-destruct\n    c) show how different kinds\
+  \ of infections rip through a population</p>"
+code: SEZQAL
+speakers:
+- EZXQCD

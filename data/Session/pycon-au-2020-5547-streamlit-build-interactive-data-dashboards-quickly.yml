@@ -1,0 +1,21 @@
+title: Streamlit - Build interactive data dashboards quickly
+start: 2020-09-04 11:00:00+09:30
+end: 2020-09-04 11:25:00+09:30
+room: 1
+abstract: <p>Streamlit is a framework that allows you to build interactive analytical
+  apps very rapidly. It is gaining popularity among data scientists and analysts around
+  the world as it helps them make a data dashboard in Python (you heard it right,
+  no JS required :D) that is elegant and aesthetically pleasing.</p>
+description: <p>Streamlit is a framework that allows you to build interactive analytical
+  apps very rapidly. It is gaining popularity among data scientists and analysts around
+  the world as it helps them make a data dashboard that is elegant and aesthetically
+  pleasing. In my presentation, I’ll briefly state what is Streamlit and how it is
+  super useful for data scientists and analysts. I’ll then go over the basic Streamlit
+  components and examples that demonstrate how easy it is to make an interactive data
+  dashboard in Python. (Yes you heard it right, no JavaScript required :D) By the
+  end of this talk, you’ll know the basics of Streamlit and would be able to build
+  an interactive web application for data visualization and analysis with just a few
+  lines of code in Python.</p>
+code: RL8S3N
+speakers:
+- MYE797

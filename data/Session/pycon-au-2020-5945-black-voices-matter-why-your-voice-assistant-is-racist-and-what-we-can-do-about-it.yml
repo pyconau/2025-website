@@ -1,0 +1,52 @@
+title: 'Black voices matter: Why your voice assistant is racist, and what we can do
+  about it'
+start: 2020-09-05 14:25:00+09:30
+end: 2020-09-05 14:50:00+09:30
+room: 3
+abstract: "<p>By 2025, there will be over 8 billion voice assistants in use. Speech\
+  \ recognition, chatbots, virtual assistants and smart speakers are all types of\
+  \ voice assistant. But as with many other technologies, issues of bias in the intent,\
+  \ design, execution and evolution of voice assistants are evident.</p>\n<p>Many\
+  \ voice assistants today fail to accurately recognise speakers who have accents,\
+  \ or who speak lesser-known languages.  Synthesised voices represent well known\
+  \ languages only. There are a range of reasons for this  - the under-representation\
+  \ of minorities in technology, commercial drivers and under-resourced languages.This\
+  \ talk will take the audience on a tour of these issues, highlighting the open source\
+  \ efforts in the field that provide opportunities to redress this state of affairs.</p>"
+description: "<p>By 2025, there will be over 8 million voice assistants in the world.\
+  \ They are found on your mobile phone, in your home, in your car, and over time,\
+  \ will be embedded in many cyber-physical systems across the world. At the same\
+  \ time, there are over 7000 languages spoken in the world - \"living languages\"\
+  .</p>\n<p>But voice assistants support just a fraction of these languages. Moreover,\
+  \ accents and diversity <em>within</em> a spoken language are not well handled by\
+  \ voice assistants. For example, African American voices are much less likely to\
+  \ be correctly recognised by the speech recognition algorithms used within voice\
+  \ assistants. And as we start to interact with systems using voice, we have a human\
+  \ desire to listen to voices we resonate with. Voices like us. For many people,\
+  \ there are no synthesised voices that reflect their heritage, language, and gender\
+  \ expression.</p>\n<p>There are several techno-social reasons behind this state\
+  \ of affairs.</p>\n<ul>\n<li>\n<p>The intent of a commercial voice assistant is\
+  \ to make money. This drives technical development in certain ways, such as certain\
+  \ languages being seen as more lucrative than others, irrespective of the number\
+  \ of speakers of that language. For example, there is more voice assistant support\
+  \ for Icelandic, a language spoken by 314,000 people, than there is for Kiswahili,\
+  \ a language spoken by over 100,000,000 people in Eastern Africa. Why? Money. </p>\n\
+  </li>\n<li>\n<p>The big tech companies behind voice assistants have typically poor\
+  \ gender and racial diversity in their talent pool. Diversity in developers leads\
+  \ to diversity in development.</p>\n</li>\n<li>\n<p>The data used for training speech\
+  \ recognition and speech synthesis models often has racial and gender biases. These\
+  \ can stem from both selection bias, but also broader systemic issues of inequality,\
+  \ such as the use of voice assistant technology to gather data - and the affordability\
+  \ of both that technology and its pre-requisites, such as internet access.</p>\n\
+  </li>\n<li>\n<p>Many languages are considered \"low resource languages\". This means\
+  \ they often don't have written transcriptions, which are needed to train machine\
+  \ learning models. Those creating transcriptions often face the \"transcription\
+  \ bottleneck\" - a workflow impediment that means the creation of resources consumes\
+  \ significant labour time.</p>\n</li>\n</ul>\n<p>There are many established and\
+  \ emerging open source tools - many in Python - and movements that <em>individually</em>\
+  \ are addressing aspects of this broader techno-social system. <strong>Together</strong>,\
+  \ they can effect change so that <em>everyone, everywhere can be afforded the benefits\
+  \ of voice technology</em>.</p>"
+code: 99XMUR
+speakers:
+- WTKLMV

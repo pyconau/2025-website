@@ -1,0 +1,19 @@
+title: How learning python helped me teach C in tertiary education
+start: 2020-09-04 10:25:00+09:30
+end: 2020-09-04 10:50:00+09:30
+room: 3
+abstract: "<p>Before I went to uni - I had around 8 years of python experience, and\
+  \ so I thought learning C would be trivial, and was excited to move on from C back\
+  \ to python. However, it was much more difficult than I expected! There were areas\
+  \ in C that were super easy to grasp thanks to my python experience, but there were\
+  \ areas that were harder to grasp as a result of of my python experience...</p>\n\
+  <p>Now I'm a tutor for the university teaching C - and I ask the question - is teaching\
+  \ C better than teaching Python for formal CS education?</p>"
+description: "<p>This talk is simply one about my experience of learning c from a\
+  \ python background\n  - what python features helped me understand C better (control\
+  \ flow, algorithm and problem breakdown design, functions, etc)\n  - what C features\
+  \ helped me understand python better (ie pointers in C helped me understand python\
+  \ lists, etc)\n  - how I use my python knowledge to teach C at University</p>"
+code: 73HFNJ
+speakers:
+- DYGRFV

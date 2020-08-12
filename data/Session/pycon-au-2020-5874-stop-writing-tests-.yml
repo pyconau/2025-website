@@ -1,0 +1,35 @@
+title: Stop Writing Tests!
+start: 2020-09-05 11:35:00+09:30
+end: 2020-09-05 12:00:00+09:30
+room: 1
+abstract: "<p>Tests can be helpful: they can find bugs in new code, check for regressions\
+  \ in old code, and clarify precisely what the code is meant to do.  On the other\
+  \ hand, writing tests is often tedious - and it's rare to think of an error when\
+  \ testing that you forgot when writing the code.</p>\n<p>My solution?  Use tools\
+  \ that write tests for you!</p>\n<p>Whether you're a novice Pythonista or gnarled\
+  \ wizard, this talk about property-based fuzzing and code introspection will educate,\
+  \ entertain, and help take your testing to the next level.</p>"
+description: "<p>We often think of manual testing as slower and less effective than\
+  \ automated testing,\nbut most test suites haven't automated that much!  Computers\
+  \ can execute all our \npre-defined tests very quickly - and this is definitely\
+  \ a good thing, especially for \nregression tests - but the tricky parts are still\
+  \ done by humans.</p>\n<p>We select test cases (inputs) and check that the corresponding\
+  \ outputs make sense;\nwe write functions that \"arrange, act, and assert\" for\
+  \ our tests; and we decide -\nor script via CI systems - which tests to execute\
+  \ and when.</p>\n<p>So lets explore some next-generation tools that we could use\
+  \ to automate these \nremaining parts of a testing workflow!</p>\n<p>PROPERTY-BASED\
+  \ TESTING helps you to write more powerful tests by automating selection \nof test\
+  \ cases: instead of listing input-output pairs, you describe the kind of data \n\
+  you want and write a test that passes <em>for all X...</em>.  We'll see a live demo,\
+  \ and \nlearn something about the Python builtins in the process!</p>\n<p>CODE INTROSPECTION,\
+  \ and a handy templating tool, can help write tests for you.\nDo you need to know\
+  \ any more than which code to test, and what properties should hold?</p>\n<p>ADAPTIVE\
+  \ FUZZING tools take CI to its logical conclusion: instead of running a fixed\n\
+  set of tests on each push, they sit on a server and run tests full-time... fine-tuning\n\
+  themselves to find bugs in <em>your</em> project and pulling each new commit as\
+  \ it lands!</p>\n<p>By the end of this talk, you'll know what these three kinds\
+  \ of tools can do - \nand how to get started with automating the <em>rest</em> of\
+  \ your testing tomorrow.</p>"
+code: TCT3GH
+speakers:
+- LFU8AS

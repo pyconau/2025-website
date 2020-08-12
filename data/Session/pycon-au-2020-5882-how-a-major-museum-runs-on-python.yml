@@ -1,0 +1,26 @@
+title: How a major museum runs on Python
+start: 2020-09-05 17:10:00+09:30
+end: 2020-09-05 17:35:00+09:30
+room: 1
+abstract: <p>We built a system for deploying, managing and monitoring hundreds of
+  Internet-of-Things devices in a museum; let us show you why &amp; how.</p>
+description: "<p>ACMI, the Australian Centre for the Moving Image, is the most visited\
+  \ museum of the moving image in the world. In 2019 we closed our doors, to reshape\
+  \ our Federation Square building in order to become more public-facing, and to house\
+  \ a major new permanent exhibition, The Story of the Moving Image. </p>\n<p>As you\
+  \ might imagine, we have a <em>lot</em> of moving image to show, and a lot of fascinating\
+  \ objects to tell people about, all of which can be overwhelming to some audiences.\
+  \ That's why we designed and built a system called The Lens. Every visitor to the\
+  \ museum can pick up a Lens, which they use to collect objects and media to watch\
+  \ and explore in their own time. The Lens depends on a network of hundreds of Raspberry\
+  \ Pi devices to display media and interact with visitors, all running Opensourced\
+  \ Python code. All these devices need to be robust and maintainable in order to\
+  \ survive the 10-year lifespan of the exhibition.</p>\n<p>In this talk, we'll give\
+  \ you a tour of the technology at ACMI, including our Internet-of-Things fleet and\
+  \ management tools, and XOS, the eXperience Operating System, which provides content\
+  \ and configuration to the devices.</p>"
+code: UKZXNT
+speakers:
+- WXSKVQ
+- BNE3JN
+- F9GVUH

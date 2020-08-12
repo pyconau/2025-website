@@ -1,0 +1,26 @@
+title: This Talk Has Been Disabled
+start: 2020-09-05 13:00:00+09:30
+end: 2020-09-05 13:55:00+09:30
+room: 1
+abstract: "<p>Approximately 20% of the world's population has some form of disability.\
+  \  Despite this, the vast majority of software isn't fully accessible.  Making your\
+  \ systems readily usable for everyone is a complex process.  Using good design principles\
+  \ and following the WCAG standards is a starting point, but how can you be sure\
+  \ that you're meeting the guidelines?  And what if your users have access issues\
+  \ that aren't covered by the standards?</p>\n<p>In this talk, we'll learn how to\
+  \ meet a variety of accessibility requirements by breaking down a series of real-world\
+  \ case studies.  We'll look at why it's important to evaluate the accessibility\
+  \ of your software, what goes wrong when assessments don't happen, and how to apply\
+  \ these lessons to design systems that work for everyone.</p>"
+description: "<p>This talk consists of the following sections:</p>\n<ul>\n<li>Introduction\
+  \ and Definitions</li>\n<li>How good design principles can improve accessibility</li>\n\
+  <li>Resources for accessible design</li>\n<li>The benefits and limitations of guidelines</li>\n\
+  <li>Case Study: Designing for visually impaired users</li>\n<li>Case Study: Designing\
+  \ for screen reader users</li>\n<li>Case Study: Safe design for people with photosensitive\
+  \ epilepsy</li>\n<li>Case Study: Conveying information without using colour</li>\n\
+  <li>Case Study: Conveying information without using audio</li>\n<li>Case Study:\
+  \ Accessibility and security of medical devices</li>\n<li>Case Study: Access for\
+  \ disabled people in the tech industry</li>\n<li>Summary and Questions</li>\n</ul>"
+code: 7AVW7C
+speakers:
+- VZ79QQ

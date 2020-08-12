@@ -1,0 +1,44 @@
+title: Publishing well-formed Python packages
+start: 2020-09-05 13:00:00+09:30
+end: 2020-09-05 13:25:00+09:30
+room: 3
+abstract: "<p>Most of us have written python programs. Many have written modules.\
+  \ Some have packaged and uploaded them to servers for distribution. And a significant\
+  \ portion of these packages could be made better.</p>\n<p>I propose a talk expressing\
+  \ the need for these tools and the advantage of using them with a toy python program\
+  \ for <a href=\"https://en.wikipedia.org/wiki/Nim\">Nim</a>.</p>"
+description: "&lt;h4&gt;Why&lt;/h4&gt;\n<p>Most of the well established projects follow\
+  \ some practices and has some mechanism in place to ensure better maintainability.</p>\n\
+  <p>But we can find a good number of packages online which are being developed without\
+  \ an equivalent mechanism.</p>\n<p>In this talk, I will mention some tools, which\
+  \ when used, can lay the foundation for a well formed package.</p>\n&lt;h4&gt;Well-formed\
+  \ package&lt;/h4&gt;\n<p>A package whose source has some structure which makes testing\
+  \ and development more efficient and less error-prone.</p>\n<p>Such a package also\
+  \ makes working with its source a more pleasant experience.</p>\n<p>A well-formed\
+  \ package makes things easier for both the developer and the user.</p>\n<p>But it\
+  \ is easier to get started with a structure than to maintain that form. Which calls\
+  \ for a mechanism to maintain that structure.</p>\n&lt;h4&gt;How&lt;/h4&gt;\n<p>The\
+  \ source code should adopt a style and stick with it. A linting tool like pylint\
+  \ can help with it.\nOr you could use black.</p>\n<p>Use type annotations along\
+  \ with tools like mypy.</p>\n<p>Eliminate unused code with <code>vulture</code>.</p>\n\
+  <p>Add tests to be sure that the different functionalities work as intended using\
+  \ tools like pytest or the built-in unittest.\nThis will be extremely useful to\
+  \ be sure that further modifications do not break existing code.</p>\n<p>Ensure\
+  \ proper test coverage with coverage.py\nAfter all, adding tests isn't everything.\
+  \ One got to make sure it reaches every nook and corner.</p>\n<p>Automate tests\
+  \ with tox, nox, etc.</p>\n<p>Package the project in tune with the future of packaging.\n\
+  setuptools, flit or poetry</p>\n<p>And add some CI/CD.</p>\n<p>Other tools like\
+  \ pre-commit, bumpversion, etc may also be used.</p>\n&lt;h4&gt;Intended audience&lt;/h4&gt;\n\
+  <p>People who create and publish python packages.\nThe presentation is from the\
+  \ package developer's perspective and not exactly about the innards of the different\
+  \ python packaging tools.</p>\n&lt;h4&gt;Pre-requisites&lt;/h4&gt;\n<p>Basic Python\
+  \ programming.\nGit</p>\n&lt;h2&gt;Tentative talk outline&lt;/h2&gt;\n<ul>\n<li>Linting</li>\n\
+  <li>Type checking</li>\n<li>Eliminating dead code</li>\n<li>Tests</li>\n<li>Test\
+  \ coverage</li>\n<li>Test automation</li>\n<li>Packaging</li>\n<li>CI/CD</li>\n\
+  <li>Other tools</li>\n<li>Future of packaging</li>\n</ul>\n&lt;h4&gt;Speaker info\
+  \ (anonymized):&lt;/h4&gt;\n<p>Using Python for 5 years. Interested in text processing.</p>\n\
+  <p>Published a few packages to PyPI using different packaging tools.</p>\n<p>The\
+  \ proposed talk is derived from experience of creating them.</p>"
+code: HWU9J7
+speakers:
+- 7HFFGZ

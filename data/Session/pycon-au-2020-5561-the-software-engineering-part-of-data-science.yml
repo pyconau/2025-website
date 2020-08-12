@@ -1,0 +1,25 @@
+title: The Software Engineering Part of Data Science
+start: 2020-09-04 09:50:00+09:30
+end: 2020-09-04 10:15:00+09:30
+room: 1
+abstract: <p>Data science and software engineering are getting more and more intertwined
+  with each other. But what is the common grounds between the two? How do we define
+  the boundaries of the two disciplines? This talk will discuss the role of python
+  in terms of development process for software engineers working in a data science
+  environment. We will also tackle the different aspects of software engineering in
+  relation to working with a data science oriented team.</p>
+description: "<p>In this session, I will discuss the software engineering side of\
+  \ data science and how python bridges the gap between data science and software\
+  \ engineering.</p>\n<p>Will highlight some of the challenges involved in working\
+  \ with data scientists. Will also demonstrate some sample codes and best practices\
+  \ that shows how to work as a software engineer in a data science company. Lastly,\
+  \ I will discuss how software engineers can shift to a more data science related\
+  \ job like a data engineer.</p>\n<p>Outline:</p>\n<ul>\n<li>Intro: Challenges faced\
+  \ by software engineers in the data science field</li>\n<li>Working with a data\
+  \ science team and how Python bridges the two domains</li>\n<li>Common problems\
+  \ and solutions</li>\n<li>Understanding how to translate data scientist code</li>\n\
+  <li>Performance considerations</li>\n<li>Deployment</li>\n<li>Transitions from software\
+  \ engineering to data science</li>\n</ul>"
+code: BPPLYM
+speakers:
+- WLRBE3

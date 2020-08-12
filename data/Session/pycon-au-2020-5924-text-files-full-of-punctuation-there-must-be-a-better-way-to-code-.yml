@@ -1,0 +1,22 @@
+title: Text files full of punctuation? There must be a better way to code.
+start: 2020-09-05 11:35:00+09:30
+end: 2020-09-05 12:00:00+09:30
+room: 2
+abstract: "<p>As programmers we believe that the true nature of code exists in a text\
+  \ file. A good programmer can construct the magic sequence of characters in their\
+  \ head and their fingers blur as they stream line after line of code into the keyboard\
+  \ without error.</p>\n<p>Is this reality? Not even close. There are many problems\
+  \ with representing and editing code in text and we're so used to them just we don't\
+  \ see it.</p>"
+description: "<p>The vast majority of code is written through some kind of text editor,\
+  \ whether it's notepad, a sophisticated IDE, or a heavily customised Vim environment.\
+  \ These tools mitigate common text editing problems like unclosed brackets and syntax\
+  \ errors, but can't eliminate them completely. </p>\n<p>In this talk we'll explore\
+  \ the underlying nature of code as a tree structure using Python's abstract syntax\
+  \ trees, and we'll compare real world examples of coding interfaces which represent\
+  \ these trees in different ways.</p>\n<p>So much of our thinking and tooling revolves\
+  \ around code being represented as text files that to step outside of this world\
+  \ means re-imagining how version control works and what real programming even is.</p>"
+code: HHPFHW
+speakers:
+- EAEYZM

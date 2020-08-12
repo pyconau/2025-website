@@ -1,0 +1,16 @@
+title: A website controlled Lego Robot using the Raspberry Pi
+start: 2020-09-04 11:00:00+09:30
+end: 2020-09-04 11:25:00+09:30
+room: 3
+abstract: <p>This presentation explores a year 12 Internet of Things project in which
+  students had to design a maze-solving robot that could save victims from a hypothetical
+  fire. The robot was built using Lego but using a Raspberry Pi micro-controller.
+  The Raspberry Pi hosted a Flask web server that interacted with the robot and saved
+  sensor data to an SQLite database. Students had to design and create all components
+  of the project and create an effective web interface to the robot. Some students
+  even enhanced their projects with a voice synthesizer and a Pi Cam to provide a
+  live video stream.</p>
+description: <p>.</p>
+code: TVFCVP
+speakers:
+- Z7PBUX

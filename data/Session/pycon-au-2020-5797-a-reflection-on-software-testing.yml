@@ -1,0 +1,19 @@
+title: A Reflection on Software Testing
+start: 2020-09-05 13:00:00+09:30
+end: 2020-09-05 13:55:00+09:30
+room: 2
+abstract: <p>Software testing can be difficult, complicated and frustrating. In this
+  presentation I will talk about some of the reasons why, and more importantly what
+  we might do to make it easier, simpler and perhaps even satisfying. This talk is
+  for beginners and experienced developers.</p>
+description: "<p>This is an opinionated talk about issues I have observed during my\
+  \ career around software testing, including our conversations about it, but also\
+  \ the many materials produced describing how it should be done. One of my inspirations\
+  \ for this talk is the realisation that in some ways we have lost our way with testing,\
+  \ losing sight of some of the very early wisdom.</p>\n<p>I will talk about some\
+  \ of those conversations we have, the language we use, but I will also present some\
+  \ advice, with concrete examples, of how we all might improve how we approach and\
+  \ implement testing.</p>"
+code: MXZVY8
+speakers:
+- X9YMKN

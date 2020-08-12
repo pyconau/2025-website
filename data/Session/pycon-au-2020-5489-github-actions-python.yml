@@ -1,0 +1,17 @@
+title: GitHub Actions & Python
+start: 2020-09-05 11:35:00+09:30
+end: 2020-09-05 12:00:00+09:30
+room: 3
+abstract: <p>What are GitHub Actions? Why should I use them? How can I make them?</p>
+description: "<p>GitHub Actions are free-to-use, plug &amp; play blocks of continuous\
+  \ integration / continuous delivery (CICD). </p>\n<p>This talk will go into how\
+  \ GitHub actions help me maintain my open source Python packages (Pandas_Alive),\
+  \ and how I released my own GitHub Actions for automating the packaging of Python\
+  \ code to executables with PyInstaller.</p>\n<p>Tutorial blog posts I've written:</p>\n\
+  <p>https://jackmckew.dev/github-actions-for-cicd.html</p>\n<p>https://jackmckew.dev/how-to-make-github-actions.html</p>\n\
+  <p>GitHub Actions I've released:</p>\n<p>https://github.com/marketplace/actions/pyinstaller-windows</p>\n\
+  <p>https://github.com/marketplace/actions/pyinstaller-linux</p>\n<p>https://github.com/marketplace/actions/python-interrogate-check</p>\n\
+  <p>Open source Python projects that GitHub actions help me maintain:</p>\n<p>https://github.com/JackMcKew/pandas_alive</p>"
+code: MRUT7W
+speakers:
+- XLLHAA

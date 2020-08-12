@@ -1,0 +1,20 @@
+title: I don't need friends, I can build my own
+start: 2020-09-05 11:00:00+09:30
+end: 2020-09-05 11:25:00+09:30
+room: 3
+abstract: <p>It’s a Friday night and you’re really hitting it off with the customer
+  service assistant that has popped up in the right hand corner chat window of your
+  web browser. But are they real, or a chatbot? How do you tell?</p>
+description: "<p>Chatbots have become commonplace in our lives. These days, you may\
+  \ find they are largely used as a form of customer service. But how does it make\
+  \ us feel when we know we’re talking to a program? A poor interaction can sour the\
+  \ user’s experience and put them off using a product.</p>\n<p>There is an art to\
+  \ making programmed responses feel natural. It’s not just about replying to our\
+  \ questions with the correct answer. Chatbots need to be programmed with the same\
+  \ abilities humans have to communicate. They need to be able to listen, understand\
+  \ and remember. So where do you start?</p>\n<p>In this talk i’ll cover some of the\
+  \ core concepts behind how web chatbots work, strategies used to train them to feel\
+  \ more human, and some Python tools that you can use to start building your own.</p>"
+code: E9AXJE
+speakers:
+- JS93ST

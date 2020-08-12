@@ -1,0 +1,16 @@
+title: Wearing Your Python, and Making It Sing Too!
+start: 2020-09-05 14:40:00+09:30
+end: 2020-09-05 14:55:00+09:30
+room: 1
+abstract: <p>Wearable technology isn't all fancy smart devices with AR and IoT, come
+  learn how you can transform own garments into an eTextiles project with the Circuit
+  Playground Express and Circuit Python.</p>
+description: "<p>The Circuit Playground Express (cpx) is a palm-sized programmable\
+  \ electronics board packed full of sensors and 10 Neopixel LEDs. It also has a speaker\
+  \ and 7 capacitative touch pads making it perfect for sewing onto fabrics. .</p>\n\
+  <p>In this talk, I will be giving an overview of everything you need to know to\
+  \ get started on your own eTextiles project by taking you through one of my own\
+  \ projects: making a singing curlyboi tote bag.</p>"
+code: 7A9QQF
+speakers:
+- W8WVHW

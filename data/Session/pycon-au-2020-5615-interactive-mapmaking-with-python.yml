@@ -1,0 +1,38 @@
+title: Interactive Mapmaking with Python
+start: 2020-09-04 17:10:00+09:30
+end: 2020-09-04 17:35:00+09:30
+room: 1
+abstract: "<p>Maps can help you tell amazing stories with your data and a lot of datasets\
+  \ we come across have a location component in them. Leveraging location data to\
+  \ create beautiful maps was once a daunting endeavor done only by cartographers\
+  \ with artistic skills but now with a pinch of python and some open-source help\
+  \ we can easily create interactive maps with our data</p>\n<p>GeoDataframes are\
+  \ awesome for working with GIS data in Python as it provides the goodness of pandas\
+  \ for geographic data, So let's use them to create some cool interactive maps</p>"
+description: "<ol>\n<li>Introduction (2 mins)<ul>\n<li>Who am I?</li>\n<li>Setting\
+  \ the expectations</li>\n</ul>\n</li>\n<li>Working with Geodataframes (5 mins) <ul>\n\
+  <li>Reading Spatial data as a GeoDataframe</li>\n<li>The awesomeness of GeoDataframes\
+  \ (An overview of some of the amazing things you can do with a single line of code\
+  \ eg: Spatial joins, Manipulations and transformations)</li>\n<li>Now that we has\
+  \ established our love for geopandas lets map geodataframes </li>\n</ul>\n</li>\n\
+  <li>Let the Mapmaking begin (10 mins)<ul>\n<li>Basic Non-Interactive maps with Geopandas\
+  \ and Matplotlib </li>\n<li>Creating basic interactive maps with Folium, Plotly\
+  \ &amp; Kepler (GeoJSONPlots, Clustermaps, Heatmaps, H3gridmaps)<ul>\n<li>Conforming\
+  \ geodataframes to a format accepted by these libraries (usually JSON or a list\
+  \ of lists)</li>\n<li>Setting the right parameters for different plots </li>\n<li>Jazzing\
+  \ up the maps with additional layers, custom styles, tooltips, popups, colors etc\
+  \ </li>\n<li>Spatiotemporal Maps with Kepler.gl + Jupyter for handling huge datasets\
+  \ with ease</li>\n<li>Can we make it any easier ?</li>\n</ul>\n</li>\n<li>Why can't\
+  \ making interactive maps be as easy as gdf.folium.plot()? </li>\n</ul>\n</li>\n\
+  <li>Enter Geopatra (8 mins)<ul>\n<li>The need for Geopatra (Could it be any Easier\
+  \ and Faster)</li>\n<li>Wrapping up popular mapmaking libraries for GeoDataframes</li>\n\
+  <li>Create interactive maps with just a single line </li>\n<li>Future work and Discussion\
+  \ :)</li>\n</ul>\n</li>\n</ol>\n<p>More Info:</p>\n<p>Normally mapping a geodataframe\
+  \ with folium</p>\n<p><code>import folium\nimport geopandas\nworld = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))\n\
+  m = folium.Map(location = [4,10], zoom_start = 3)\nfolium.GeoJson(world.__geo_interface__).add_to(m)</code></p>\n\
+  <p>With Geopatra all the parameters you set with folium become optional so you don't\
+  \ have to care about folium</p>\n<p><code>import geopatra\nm = world.folium.plot()</code></p>\n\
+  <p>Github: https://github.com/Sangarshanan/geopatra</p>"
+code: DVV7W8
+speakers:
+- 7TZER3

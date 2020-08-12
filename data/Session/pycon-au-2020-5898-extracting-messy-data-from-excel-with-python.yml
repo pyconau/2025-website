@@ -1,0 +1,19 @@
+title: Extracting messy data from Excel with Python
+start: 2020-09-04 13:20:00+09:30
+end: 2020-09-04 13:45:00+09:30
+room: 1
+abstract: <p>Excel is used a lot in businesses and other spheres; however, data in
+  Excel can be messy and hard to extract data from. This talk aims to show how to
+  safely navigate Excel <code>hell</code> and get the data you need.</p>
+description: <p>Remember that Excel data that took you forever to pull data out from?
+  Or those tables that you had to clean again, because you could not access them in
+  the right way ? Or those color codings that mean something but you cannot capture?
+  Or those numbers that are formatted in one way, but show up in another form or are
+  hidden behind another layer of formatting? This talk will show how to use Pandas
+  and Openpyxl, and some other make-life-easy tools to extract data from Excel and
+  proceed to the next phase of our data analysis. Excel is not going anywhere, it
+  is used widely, and sometimes can be a pain.  We can lessen the pain - this talk
+  will show you how.</p>
+code: FAEAH3
+speakers:
+- WVUBZP

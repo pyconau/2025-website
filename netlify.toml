@@ -8,7 +8,6 @@ yarn install &&
 yarn run build &&
 poetry run python speaker-pack-hax.py &&
 mkdir -p data/Session &&
-poetry run python schedule-sync.py &&
 poetry run statik &&
 cp _redirects public/
 """

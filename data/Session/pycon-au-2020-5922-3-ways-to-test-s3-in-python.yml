@@ -1,0 +1,17 @@
+title: 3 ways to test S3 in Python
+start: 2020-09-05 17:10:00+09:30
+end: 2020-09-05 17:35:00+09:30
+room: 2
+abstract: "<p>At some point, every engineer has to decide whether to write tests or\
+  \ ship the feature and move on. Testing code that uses S3 is often overlooked. But\
+  \ think of all the important things your application uses S3 for! Metadata storage,\
+  \ logs, and static file hosting, to name a few.</p>\n<p>Testing code that uses S3\
+  \ is really easy. This talk goes over three ways to test S3 and leaves you with\
+  \ code examples that you can take to your next project.</p>"
+description: "<ul>\n<li>Benefits of testing code that uses S3</li>\n<li>\n<p>In-depth\
+  \ code examples of three ways to test S3:</p>\n</li>\n<li>\n<p>Mock the S3 API using\
+  \ moto</p>\n</li>\n<li>Mock out the S3 API responses using botocore stubs</li>\n\
+  <li>Spin up a LocalStack S3 instance and test against that</li>\n</ul>"
+code: VXXUWE
+speakers:
+- VJG7LK

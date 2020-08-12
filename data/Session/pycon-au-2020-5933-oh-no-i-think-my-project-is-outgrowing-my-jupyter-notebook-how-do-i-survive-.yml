@@ -1,0 +1,24 @@
+title: Oh no! I think my project is outgrowing my Jupyter notebook. How do I survive?
+start: 2020-09-04 11:00:00+09:30
+end: 2020-09-04 11:25:00+09:30
+room: 4
+abstract: "<p>Interactive notebooks, whether Jupyter, google colab, or others are\
+  \ fantastic for lots of things. A range of options to visualise results, advanced\
+  \ markdown use for communicating process and interpretation, and simple to learn\
+  \ for newbies. But they also get a bad rap for encouraging poor programming techniques\
+  \ which make notebook-code hard to reuse.</p>\n<p>As a recent notebook-trained data\
+  \ science bootcamp grad, I’m excited to share what I’ve learned from my move into\
+  \ the real-world of organisational data about the strengths and challenges of notebooks.\
+  \ I’m not an evangelist for notebook lovers or loathers - just someone figuring\
+  \ out how to use tools to make things that work. Hopefully this talk will help you\
+  \ think through the choice to notebook or not more intentionally.</p>"
+description: "<p>An example-focused discussion of the pitfalls and strengths of interactive\
+  \ Python notebooks. Topics up for discussion:\nNamespace pollution - what is it\
+  \ and why do I care?\nSpeed - when might my notebook be holding me back?\nPretty\
+  \ pictures - are there times when even for visuals I might skip the notebook?\n\
+  Transitions - I’m so comfortable using my notebook. How do I change in useful ways\
+  \ without grinding to a halt?\nFunctional combinations - can there be a happy middle\
+  \ ground between notebooks and scripts?</p>"
+code: BAAES3
+speakers:
+- JNGHT3
