@@ -10,7 +10,9 @@
     .details {
         display: flex;
         flex-direction: column;
-        margin-left: 1em;
+        &:not(:first-child) {
+            margin-left: 1em;
+        }
     }
     b {
         font-size: 4 / 3 * 1em;

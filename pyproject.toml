@@ -10,6 +10,7 @@ statik = "^0.23.0"
 sqlalchemy = {version = "*", extras = []}
 "ruamel.yaml" = "^0.16.10"
 parse = "^1.16.0"
+bleach = "^3.1.5"
 
 [tool.poetry.dev-dependencies]
 supervisor = "^4.2.0"

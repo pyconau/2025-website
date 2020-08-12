@@ -1,0 +1,19 @@
+{% extends '_base.html' %}
+{% import '_macros.html' as m %}
+
+{% block main %}
+<h1>{{ session.title }}</h1>
+<div class="time-bar">
+    {{ session.start.strftime('%a %B %d, %I:%M %p')}}&ndash;{{ session.end.strftime('%I:%M %p') }}
+    &bull;
+    <a href="/program/{{ session.start.strftime('%a').lower() }}/">Back to program</a>
+</div>
+
+{{ session.abstract }}
+
+{{ session.description }}
+
+{% for person in session.speakers %}
+{{ m.profile(person, bio=True) }}
+{% endfor %}
+{% endblock %}

@@ -2,5 +2,3 @@ public/
 assets/build/
 data/SpeakerPack/*
 !data/SpeakerPack/_template.md.j2
-# This is temporary since we are using JuliaCon data to test with
-data/Session/*

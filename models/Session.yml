@@ -2,4 +2,7 @@ title: String
 start: DateTime
 end: DateTime
 room: Integer
-presenter: Person[] -> sessions
+speakers: Person[] -> sessions
+abstract: String
+description: String
+code: String

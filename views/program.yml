@@ -1,7 +1,7 @@
 path: 
   template: /program/{{ day.0 }}
   for-each:
-    day: "[('fri', date(2020, 7, 30)), ('sat', date(2020, 7, 31))]"
+    day: "[('fri', date(2020, 9, 4)), ('sat', date(2020, 9, 5))]"
 template: program
 context:
   dynamic:

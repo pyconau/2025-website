@@ -46,11 +46,21 @@
         <s-track style="--track: 4;">The One, Obvious Room</s-track>
     {% endif %}
     {% for session in sessions %}
-    <s-item 
+    <a
+        class="session" 
         style="--start: {{ session.start.timestamp()|int // 60 }}; --end: {{ session.end.timestamp()|int // 60 }}; --track: {{ session.room }};"
+        href='{% url "session", session %}'
     >
+        <p class="time">
+            {{ session.start.strftime('%I:%M')}}&ndash;{{ session.end.strftime('%I:%M') }}
+        </p>
         {{ session.title }}
-    </s-item>
+        <div class="speaker">
+            {% for speaker in session.speakers %}
+                {{ speaker.name }}{% if not loop.last %},{% endif %}
+            {% endfor %}
+        </div>
+    </a>
     {% endfor %}
         {% for x in range(first_min, last_min, 60) %}
             <s-time style="--at: {{ x }}">
