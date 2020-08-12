@@ -15,7 +15,7 @@ As with previous years, we have several types of tickets priced at different lev
 - **Student** tickets are available for anyone enrolled in full or part-time  educational courses at any level. (Where possible, please register using your Australian education institution email address).
 
 <p class='center-content'>
-	<a href='https://pretix.eu/pyconau/online2020/?require_cookie=true' class='btn btn-center btn-chonk'>
+	<a href='https://pretix.eu/pyconau/online2020/' class='btn btn-center btn-chonk'>
 		Get your tickets 'ere!
 	</a>
 </p>
