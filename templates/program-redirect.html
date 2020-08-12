@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        const now = new Date().getTime();
+        if (1599229800000 < now && now < 1599316200000)
+            window.location = '/program/sat/'
+        else if (1599316200000 < now && now < 1599402600000)
+            window.location = '/program/sun/'
+        else
+            window.location = '/program/fri/'
+        </script>
+        <meta http-equiv="refresh" content="0;URL='/program/fri/'" />
+    </head>
+    <body>
+        See <a href="/program/fri/">/program/fri/</a>
+</html>
