@@ -39,4 +39,4 @@ On **Saturday 5 September** we’re running what’s traditionally referred to a
 On **Sunday 6 September**, we’ll be running mentored sprints. The sprints are an opportunity for attendees to contribute back to an open source project. While there are no scheduled talks on the Sunday, the sprints will be run in a way so that both seasoned and first time contributors can participate remotely. We’ll have more to announce on the mentored sprints (and other social activities) "_soon_".
 
 
-To discuss these announcements, please join us for our regular Wednesday evening news stream. The stream will be embedded in this news post and is scheduled for tonight, at 7:30PM ACST 12 August 2020.
+To discuss these announcements, please join us for our regular Wednesday evening news stream. The stream will be embedded in this news post and is scheduled for tonight, at <time datetime="2020-08-12T19:30+09:30">7:30PM ACST 12 August 2020</time>.

@@ -1,3 +1,5 @@
+import {DateTime, LocalZone} from 'luxon'
+
 const FORMATTER_DIFF_DAY = Intl.DateTimeFormat(
   'en-au',
   {
@@ -18,17 +20,19 @@ const FORMATTER_SAME_DAY = Intl.DateTimeFormat(
 )
 
 function onload() {
-  document.querySelectorAll('time').forEach(t => {  
-  // The date constructor will convert to the user's local tz
-  const awareDate = new Date(t.dateTime)
-  // if we strip out the tz and create a new date, and that date matches,
-  // the original date was already local for this user
-  const naiveDate = new Date(t.dateTime.replace(/[+-]\d\d:?\d\d$/, ''))
-  if (awareDate.getTime() == naiveDate.getTime()) return
-  
-  const formatter = awareDate.getDay() == naiveDate.getDay() ? FORMATTER_SAME_DAY : FORMATTER_DIFF_DAY
-  
-  const txt = document.createTextNode(` (${formatter.format(awareDate)})`)
+  document.querySelectorAll('time').forEach(t => {
+  const date = DateTime.fromISO(t.dateTime, {setZone: true})
+  const localDate = date.toLocal()
+  // If the given date is already in the user's TZ, skip it
+  console.log(date.toISO())
+  if (date.offset === localDate.offset) return
+  const formatted = localDate.toLocaleString({
+    weekday: date.weekday === localDate.weekday ? undefined : 'short',
+    hour: 'numeric',
+    minute: localDate.minute === 0 ? undefined : 'numeric',
+    timeZoneName: 'short',
+  })
+  const txt = document.createTextNode(` (${formatted})`)
   t.appendChild(txt)
 })
 }

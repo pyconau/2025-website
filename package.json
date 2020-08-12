@@ -23,6 +23,7 @@
     "sass": "^1.26.10"
   },
   "dependencies": {
+    "luxon": "^1.24.1",
     "reset-css": "^5.0.1",
     "sheng": "^1.0.0"
   }

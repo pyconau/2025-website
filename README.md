@@ -21,12 +21,14 @@ Deployment is automated, and runs on Netlify; see the `netlify.toml` for details
 It turns out that, regrettably, the world does not run entirely on the `Australia/Adelaide` timezone. To accommodate those who insist on using whole-hour UTC offsets, all times should be written like this:
 
 ```
-<time datetime="2020-07-16T08:30+0930">Thursday 16 July, 8:30am ACST</time>
+<time datetime="2020-07-16T08:30+09:30">Thursday 16 July, 8:30am ACST</time>
 ```
 
 The site has some JavaScript that will pick this up, and if the user's timezone differs from the one in the timestamp, append the local time. (For instance, they might see _Thursday 16 July, 8:30am ACST (9:00am AEST)_ or _Thursday 16 July, 8:30am ACST (Wed, 7:00pm ET)_.)
 
 This works in HTML and Markdown (since Markdown can have arbitrary HTML in most places).
+
+Note that the colon between the offset hours and minutes **must be present** (e.g. `+0930` won't work)!
 
 ## Local development issues
 
