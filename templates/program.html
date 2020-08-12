@@ -1,0 +1,77 @@
+{% extends '_base.html' %}
+{% block html_class %}schedule{% endblock %}
+{% block content %}
+{% set first = sessions|min(attribute='start') %}
+{% set first_min = first.start.timestamp()|int // 60 %}
+{% set last = sessions|max(attribute='end') %}
+{% set last_min = last.end.timestamp()|int // 60 %}
+
+<div class="switcher">
+    <a href="/program/fri/"{% if day.0 == 'fri' %} class='selected'{% endif %}>Friday</a>
+    <a href="/program/sat/"{% if day.0 == 'sat' %} class='selected'{% endif %}>Saturday</a>
+    <a href="/program/sun/" >Sunday</a>
+</div>
+
+<s-schedule-outer>
+<s-schedule style="--day-start: {{ first_min }}; --day-end: {{ last_min }}; --total-tracks: 4;">
+    {% if day.0 == 'fri' %}
+        <s-track style="--track: 1;">
+            <a href="/program/science-data-and-analytics/">
+                Science, Data and Analytics
+            </a>
+        </s-track>
+        <s-track style="--track: 2;">
+            <a href="/program/security-and-privacy/">
+                Security and Privacy
+            </a>
+            /
+            <a href="/program/djangocon-au/">
+                DjangoCon AU
+            </a>
+        </s-track>
+        <s-track style="--track: 3;">
+            <a href="/program/education/">
+                Education
+            </a>
+        </s-track>
+        <s-track style="--track: 4;">
+            <a href="/program/devoops/">
+                DevOops
+            </a>
+        </s-track>
+    {% elif day.0 == 'sat' %}
+        <s-track style="--track: 1;">Curlyboi Theatre</s-track>
+        <s-track style="--track: 2;">Python 2 Memorial Concert Hall</s-track>
+        <s-track style="--track: 3;">Flip Floperator Auditorium</s-track>
+        <s-track style="--track: 4;">The One, Obvious Room</s-track>
+    {% endif %}
+    {% for session in sessions %}
+    <a
+        class="session" 
+        style="--start: {{ session.start.timestamp()|int // 60 }}; --end: {{ session.end.timestamp()|int // 60 }}; --track: {{ session.room }};"
+        href='{% url "session", session %}'
+    >
+        <p class="time">
+            {{ session.start.strftime('%I:%M')}}&ndash;{{ session.end.strftime('%I:%M') }}
+        </p>
+        {{ session.title }}
+        <div class="speaker">
+            {% for speaker in session.speakers %}
+                {{ speaker.name }}{% if not loop.last %},{% endif %}
+            {% endfor %}
+        </div>
+    </a>
+    {% endfor %}
+        {% for x in range(first_min, last_min, 60) %}
+            <s-time style="--at: {{ x }}">
+            {% set hr = x % 1440 // 60 %}
+            {% if hr > 12 %} {{ hr - 12 }}:00 pm
+            {% elif hr == 12 %} {{ hr }}:00 pm {# WHY IS TIME LIKE THIS #}
+            {% else %} {{ hr }}:00 am
+            {% endif %}
+            </s-time>
+        {% endfor %}
+</s-schedule>
+</s-schedule-outer>
+
+{% endblock %}

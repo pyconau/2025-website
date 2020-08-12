@@ -15,9 +15,11 @@
 {{ post.content }}
 {%- endmacro %}
 
-{%- macro profile(person) %}
+{%- macro profile(person, bio=False) %}
 <div class="profile">
+    {% if person.has_pic %}
     <img src="{% asset('people/{}.jpg'.format(person.pk)) %}">
+    {% endif %}
     <div class="details">
         <b>{{ person.title or "" }} {{ person.name }}</b>
         <small>
@@ -29,7 +31,12 @@
                 </a>
             {% endif %}
         </small>
+        {% if person.role %}
         <span>{{ person.role }}</span>
+        {% endif %}
+        {% if bio %}
+            {{ person.bio }}
+        {% endif %}
     </div>
 </div>
 {%- endmacro %}

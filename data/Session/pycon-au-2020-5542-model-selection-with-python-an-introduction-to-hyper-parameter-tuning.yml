@@ -1,0 +1,13 @@
+title: 'Model Selection with Python: An Introduction to Hyper Parameter Tuning'
+start: 2020-09-04 14:30:00
+end: 2020-09-04 14:55:00
+room: 1
+abstract: <p>The number of machine learning algorithms available and the options presented
+  for their configuration presents a bewildering array of choices. This talk will
+  discuss strategies and algorithms for making these choices in a principled way.</p>
+description: "<p>We will cover:\n- The Problem of Model Selection.\n- Hyperparameter\
+  \ Tuning\n- The Grid Search algorithm\n- The Random Search Algorithm\n- Bayesian\
+  \ Hyperparameter Tuning\n- Cloud Services for performing hyperparameter tuning.</p>"
+code: LYBU8S
+speakers:
+- EVACPU

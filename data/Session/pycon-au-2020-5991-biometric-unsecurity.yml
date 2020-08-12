@@ -1,0 +1,35 @@
+title: Biometric Unsecurity
+start: 2020-09-04 10:25:00
+end: 2020-09-04 11:20:00
+room: 2
+abstract: "<p>Biometrics are widely regarded by the public, and many developers, as\
+  \ heightened security. Their actual track record tells a very different story. Biometric\
+  \ technologies are systematically making the world a less safe place. We have an\
+  \ obligation to do something about that. And we can.</p>\n<p>In this talk, you'll\
+  \ learn about the breathtaking range of biometrics being tracked and assessed. You'll\
+  \ learn about dangerously wrong conclusions being drawn. You'll learn about spurious\
+  \ underlying premises and untrustworthy training data, and widespread misuses that\
+  \ are determining life and death decisions in government, policing, and health monitoring.</p>\n\
+  <p>Most importantly, you'll learn how to assess these technologies, and avoid contributing\
+  \ ito their development, misuse, and proliferation.</p>"
+description: "&lt;h2&gt;TOPICS:&lt;/h2&gt;\n<p>Categories and examples of biometrics,\
+  \ including lesser-known categories such as affectmetrics and stylometrics.</p>\n\
+  <p>How they're applied to uses far afield from authentication and access control.</p>\n\
+  <p>Discriminatory datasets and outcomes.</p>\n<p>False premises of scientific accuracy.</p>\n\
+  <p>Spurious conclusions being drawn and applied to life and death decision-making.</p>\n\
+  <p>Examples of real-world practices from countries around the world, in which biometrics\
+  \ are being misapplied, misused, and abused by government agencies, police, and\
+  \ individuals.</p>\n<p>Among these: COVID-19 infection control, prison sentencing\
+  \ and probation, social services eligiblity for vulnerable individuals, stalking,\
+  \ immigration and asylum decision-making, bypassing legal constraints and democratic\
+  \ norms, undermining protest movements and political dissent, human rights violations,\
+  \ and ongoing racial and religious genocide in multiple countries.</p>\n<p>Note:\
+  \ examples are drawn from a globally-diverse range of countries.</p>\n&lt;h2&gt;TAKEAWAYS:&lt;/h2&gt;\n\
+  <p>How to find peer-reviewed research of biometrics and related fields such as medicine,\
+  \ physiology, psychology, cognitive science, law, and ethnic studies.</p>\n<p>How\
+  \ to avoid being misled by pseudoscience, discredited training data, unsupported\
+  \ premises, misleading claims, and outdated research.</p>\n<p>Ways to avoid contributing\
+  \ your talents toward making a more dangerous world.</p>"
+code: 9L3NTY
+speakers:
+- JMHSEX

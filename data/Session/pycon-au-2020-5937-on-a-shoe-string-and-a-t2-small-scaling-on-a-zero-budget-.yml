@@ -1,0 +1,16 @@
+title: 'On a shoe-string and a t2.small: scaling on a [zero] budget.'
+start: 2020-09-04 14:30:00
+end: 2020-09-04 14:55:00
+room: 4
+abstract: <p>I have a side project. It's a web app. It got popular.  Uh-oh.</p>
+description: "<p>When you work for a company, you probably have a decent-sized infrastructure\
+  \ budget. And when you're building a Django project, you have a lot of scope for\
+  \ scaling it up: Add more gunicorn workers! Split the async task workers into their\
+  \ own servers! Quadruple the RAM of the database instance! Beef up your Elasticache!</p>\n\
+  <p>Okay, but what if you can't just throw your employers' money at it? What if,\
+  \ to keep your side project affordable, you bought a reserved instance for it just\
+  \ a week before it started to go viral? What if the number of users starts going\
+  \ up 50% per week and... doesn't... stop...</p>\n<p>You're gonna have to get clever.</p>"
+code: CNNG8R
+speakers:
+- KCADCR

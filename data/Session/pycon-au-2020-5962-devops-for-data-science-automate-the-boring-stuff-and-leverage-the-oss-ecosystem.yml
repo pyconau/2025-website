@@ -1,0 +1,33 @@
+title: DevOps for Data Science? - automate the boring stuff and leverage the OSS ecosystem
+start: 2020-09-04 10:25:00
+end: 2020-09-04 10:50:00
+room: 1
+abstract: "<p>Have you ever developed a novel Machine learning model or application\
+  \ just to wait for this to be put in production - sometimes days, weeks or even\
+  \ months? This talk will focus on MLOps and how you can adopt these practises no\
+  \ matter the size of your team to enhance your idea to production workflows.</p>\n\
+  <p>Are you working on Machine Learning or Data Science? Have you ever thought: \"\
+  I am sure this could be automated. Or at least I could be optimising my workflows\
+  \ to make them more efficient but I do not want to do DevOps? If so this talk is\
+  \ for you, we will cover some MLOps tools and approaches to help you make better\
+  \ use of your resources while automating your Data Science workflows and their robustness.</p>"
+description: "<p>Does your work (either research, non-profit or industry-based) depend\
+  \ on Machine learning, Data Science or data-intensive analyses? Have you ever wished\
+  \ you could automate some of the boring stuff while adding extra robustness to your\
+  \ workflows so that you and your team can have greater confidence and work more\
+  \ efficiently?</p>\n<p>In this talk, I will present the concept of MLOps (kind of\
+  \ DevOps for ML scenarios, also referred to as DataOps or AIOps) and how adopting\
+  \ these practices can improve your team's workflows. You will learn how to automate\
+  \ some tasks within the ML lifecycle: from data transformation to model training,\
+  \ testing and validation, and deployment — making your workflows not only more seamless\
+  \ but your entire work more reproducible, reliable, and robust.\nYou do not need\
+  \ to be a DevOps engineer to benefit from these practices, but you can indeed leverage\
+  \ existing open-source tools and platforms to improve your Data Science workflows.\n\
+  For completeness, I'll show a live end to end example, integrating MLOps practices\
+  \ for Machine Learning - from data processing to model training, validation and\
+  \ deployment. I will highlight the essential tips and tricks for each of the involved\
+  \ stages. You will leave the talk with practical recommendations and examples to\
+  \ get you started on adopting MLOps practices.</p>"
+code: WMMVSQ
+speakers:
+- M9T83C

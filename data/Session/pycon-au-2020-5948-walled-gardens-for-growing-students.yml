@@ -1,0 +1,16 @@
+title: Walled gardens for growing students
+start: 2020-09-04 13:20:00
+end: 2020-09-04 13:45:00
+room: 3
+abstract: <p>How can we create environments for students to learn programming skills
+  that allow them to thrive without overwhelming them?</p>
+description: "<p>Creating learning environments for teaching students programming\
+  \ and cyber security skills is hard.\nDo we give them professional software engineering\
+  \  environments? They'll learn something \"real\" but they will likely only understand\
+  \ a fraction of the context.\nDo we use a small, safe educational environment?\n\
+  They'll understand all of the concepts, but they may be hard to translate into practical,\
+  \ open-ended projects and they'll never learn to thrive.</p>\n<p>How can we select\
+  \ or craft environments that give us the best of both worlds?</p>"
+code: RZCSSP
+speakers:
+- 3BWQQK

@@ -1,0 +1,5 @@
+path: /program/sun/
+template: program-sunday
+context:
+    dynamic:
+        page: session.query(Page).filter(Page.pk == 'program-sunday').all()[0]

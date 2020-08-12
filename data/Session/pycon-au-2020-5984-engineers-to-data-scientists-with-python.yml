@@ -1,0 +1,24 @@
+title: Engineers to Data-Scientists with Python
+start: 2020-09-05 11:00:00
+end: 2020-09-05 11:25:00
+room: 4
+abstract: <p>With data-science teams increasingly requiring domain knowledge, transforming
+  a group of domain specific engineers into a functioning data-science team can be
+  a challenge. In this talk we will explore how a team of engineers moved from a tangled
+  MATLAB codebase to a functioning Python data-analysis pipeline, and some of the
+  lessons learned along the way.</p>
+description: "<p>This talk centers around an early stage start-up reaching the scale-up\
+  \ phase of growth and having to move from an ad-hoc collection of MATLAB scripts\
+  \ to a functioning Python analysis pipeline. All while transforming a team of mechanical\
+  \ engineers into a functioning software engineering and data-science team.</p>\n\
+  <p>I will paint a picture of the work we do, and how the product was first created\
+  \ - including the wild selection of technologies, before talking about some of the\
+  \ challenges faced in migrating a large monolithic product to a modular codebase.\
+  \ I’ll discuss some the advantages and pitfalls of using Python, and how we trained\
+  \ non-software engineers to produce quality code.</p>\n<p>The talk has something\
+  \ for everyone, whether you’re a tech-lead responsible for training &amp; developing\
+  \ your team, a business leader in a scaling startup, or a junior engineer thinking\
+  \ about how to improve.</p>"
+code: BAC9R3
+speakers:
+- TBZ7WF

@@ -1,0 +1,30 @@
+title: 'At The Root : Wagtail + Gatsby + GitPod'
+start: 2020-09-05 10:25:00
+end: 2020-09-05 10:50:00
+room: 3
+abstract: <p>Headless Wagtail + GatsbyJS Progressive Web App Generator - in the style
+  of modern static site generations, pre-fetched to provide a speed and performance.
+  Can I build something really cool, quickly? We have the power of two of the most
+  popular frameworks, proven to scale with some of the largest software products in
+  the world.</p>
+description: "<p>Exploring if a GatsbyJS progressive web app generator frontend with\
+  \ a headless Wagtail backend could be a solution for small-sized clients and personal\
+  \ projects when I want to \"whip something up\" quickly without sacrificing design,\
+  \ performance/hosting costs, user or site editor experience (Can I have it all)?\
+  \ Gatsby (https://www.gatsbyjs.org/) is a open source framework based on React.\
+  \ Wagtail (https://wagtail.io/) is a Django CMS with LOTS of cool features for content\
+  \ creators, and \"plays nicely with everything else in your tech stack\" (source:\
+  \ Wagtail) because its built on and easily integrates with all uses of Python. </p>\n\
+  <p>Why? Not only do I enjoy the new and shiny things as a consultant, both Wagtail\
+  \ and GatsbyJS are established frameworks and active communities that put considerable\
+  \ effort in providing a great product with a smooth developer experience. We enjoy\
+  \ the benefits of Django / Wagtail CMS, with a incredibly fast pre-fetched progressive\
+  \ web app with GatsbyJS. The goal is nice, fast and fun. </p>\n<p>I am approaching\
+  \ this talk by walking through how I started out with minimal experience with GatsbyJS\
+  \ or GraphQL, and moderate experience with React and headless Wagtail to creating\
+  \ and deploying (Netlify) this app. I am not an expert in either technology, but\
+  \ was able to quickly navigate getting started as well as identify lots of resources\
+  \ in both communities to build out in a more complex experience.</p>"
+code: KBXD9E
+speakers:
+- LDQPN9

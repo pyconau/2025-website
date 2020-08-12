@@ -1,0 +1,33 @@
+title: 'Programs are a prison: Rethinking the fundamental building blocks of computing
+  interfaces'
+start: 2020-09-05 16:00:00
+end: 2020-09-05 16:25:00
+room: 2
+abstract: <p>Programs, applications, and websites, as the building block of our computing
+  interfaces, create artificial borders that separate data, prevent reuse, and destroy
+  any hope of a truly expressive and programmatic computing environment. We look at
+  how this happened, what alternatives are possible, and how Python can help get us
+  there.</p>
+description: "<p>Think about adding up some numbers in a tabular structure. That's\
+  \ straightforward with Python. But what if that same table is in a web page, or\
+  \ a mobile app, or a PDF? It's right there on the screen, it's probably encoded\
+  \ as a table in the markup. So the data is there. And yet, we can't query it.</p>\n\
+  <p>Maybe if we copy-and-paste it we can query it. Or maybe we can download the page,\
+  \ save it to disk, write code to load the page, parse the table, and dump the data\
+  \ into a database.</p>\n<p>But why should we need to do any of those things? Why\
+  \ can't we just query it directly?</p>\n<p>There's a wall around each app preventing\
+  \ this. A program is in the way, blocking our path to expressiveness and computing\
+  \ freedom. Much like great nations, great software should build bridges, not walls.</p>\n\
+  <p>What would software look like, beyond standalone applications? What would software\
+  \ look like without walls?</p>\n<p>By the end of this talk you'll:</p>\n<ul>\n<li>See\
+  \ why the boundaries of software are much more political than technical</li>\n<li>Know\
+  \ the history of attempts to bridge the application boundary - Smalltalk, Plan 9,\
+  \ naked objects, the semantic web, and see where they succeeded and where they failed</li>\n\
+  <li>See why object-orientation failed to live up the the hype, but why it might\
+  \ yet succeed: What if all the objects within our Python programs could interact\
+  \ more freely?</li>\n<li>Experience some demos and concepts of a computing experience,\
+  \ where we write Python and run code without discrete applications at all.</li>\n\
+  </ul>"
+code: WPHUVM
+speakers:
+- EJ7S8X

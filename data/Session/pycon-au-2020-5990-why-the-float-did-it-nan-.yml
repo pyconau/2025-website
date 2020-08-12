@@ -1,0 +1,23 @@
+title: Why the float did it NaN?
+start: 2020-09-04 12:45:00
+end: 2020-09-04 13:10:00
+room: 1
+abstract: <p>The magic of floating point numbers sometimes bursts. The results are
+  a wall of NaNs, Infs, and other errors, followed by frustrating debugging. We will
+  explore the reasons for floats’ inconvenient behaviour, and ways for avoiding it.</p>
+description: "<p>Floating point numbers are designed to be magic. For most mundane\
+  \ tasks, your calculations ‘just work’, and you are not supposed to think too much\
+  \ about it.</p>\n<p>From time to time though, the magic stops working. The maths\
+  \ that’s correct on a sheet of paper no longer gives the right results when done\
+  \ on a computer. Results of NaN or Inf, division by zero errors, and inaccurate\
+  \ answers have caused great frustration to many.</p>\n<p>To see why this happens,\
+  \ we will look under the hood of floating point numbers. Their structure in memory,\
+  \ and how it affects the accuracy of different operations. This is particularly\
+  \ relevant to data science, which entails lots of number crunching.</p>\n<p>We will\
+  \ see why subtraction is sometimes dangerous, why you should avoid multiplying probabilities,\
+  \ and why you should never invert a matrix. We will explore the tools Python, NumPy,\
+  \ and SciPy give us to avoid these pitfalls, such as LU decomposition and the LogAddExp\
+  \ trick.</p>"
+code: RTT87N
+speakers:
+- BFNXPR

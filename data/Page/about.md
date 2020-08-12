@@ -7,27 +7,28 @@ order: 1
 
 PyConline AU 2020 will be held on the Internet, in the Curlyboi Convention Centre.
 
-More about when, and how, this is all going to work will be announced soon; right now, everything is changing and everyone is trying to figure out how to react to that change, us included.
+If you're new to our event, you might also want to read about [the culture of PyCon AU](/culture/).
 
-The rest of this page is about what an in-person PyCon AU is traditionally like. We're trying to keep as much of the essence of as much of this as we can as we move to online.
+## 4 Sep: Specialist tracks
 
-See also: [the culture of PyCon AU](/culture/).
+The first day of PyCon AU is dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allow for more in-depth talks on the subject.
 
-## Specialist tracks
+This year we will have five fantastic tracks:
 
-Traditionally, the first day of PyCon AU is dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allow for more in-depth talks on the subject.
+* **[DjangoCon Australia](/program/djangocon-au)**: returning for their eighth year, this track is all things Django. Stories and fairy tales about Django, web development in Python, ponies, and unicorns 🦄!
+* **[Security and Privacy](/program/security-and-privacy)**: How (and why) to be safe on the Big, Scary Internet, and avoid being the next headline data breach.
+* **[Education](education)**: Learn about learning, teach about teaching, and educate about education
+* **[Science, Data, & Analytics](/program/science-data-and-analytics)**: Data and number crunching, analysis and visualisation, machine learning, and how those things affect us human beings.
+* **[DevOops: Learning from Failure](/program/devoops)**: as their inaugural PyConline appearance. “Learn from our failures, or teach us about yours”.
 
-## Conference main track
 
-Traditionally, the weekend of PyCon AU is the main conference event. We invite speakers from all backgrounds and levels of knowledge to share their experience and knowledge with our audience.
+## 5 Sep: Conference main track
 
-## Development sprints
+Saturday will be the main conference event of PyCon AU condensed down to a single day. We invite speakers from all backgrounds and levels of knowledge to share their experience and knowledge with our audience.
 
-Following three days of talks, we've previously held space in our venue for two days of Development Sprints (sometimes shortened just to ‘Sprints’)
+## 6 Sep: Development sprints and social events
 
 Development Sprints provide an unstructured location for projects and contributors to work in real time on their projects, or for people to hack about with various things with people with experts in their fields.
-
-The conference would have provided copious amounts of table space, power, and internet connectivity. Since we're now on the Internet, these things are all unfortunately BYO.
 
 ## About PyCon AU
 

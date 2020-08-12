@@ -1,0 +1,28 @@
+title: Cracking open the COVIDSafe
+start: 2020-09-04 09:50:00
+end: 2020-09-04 10:15:00
+room: 2
+abstract: <p>What exactly is contact tracing, and how can Bluetooth help to slow the
+  spread of a pandemic? How can I balance my own privacy with communal health? Can
+  a simple app actually make it safe to go back to the football?</p>
+description: "<p>As health authorities raced against the clock to restrict the spread\
+  \ of the Novel Coronavirus, bringing cities to a standstill, software developers\
+  \ too were racing to build a technological innovation. Their solution was ⁎✧˚₊ an\
+  \ app ༚⁎✧⁺  that would mystically allow you once again to go to the footy, hang\
+  \ out in pubs, return to work, and re-open the economy.</p>\n<p>With the Australian\
+  \ Government running an unprecedented campaign to get as many people as possible\
+  \ to download their particular app, what this app actually does is still widely\
+  \ misunderstood. Furthermore, the app is somehow supposed to be safe and protect\
+  \ your privacy, whilst still being useful enough to track you and provide that information\
+  \ to medical contact tracers. How can that even work?</p>\n<p>In this talk we will:\n\
+  - discover what contact-tracing is and why it is vital to curb the spread of the\
+  \ coronavirus\n- explore how technology can be used to assist in the contact-tracing\
+  \ process\n- analyze the COVIDSafe mobile apps for iOS and Android,\n- discuss why\
+  \ you should, or shouldn’t, install COVIDSafe, and how contact-tracing apps try\
+  \ to balance personal security and privacy with the health needs of the greater\
+  \ community</p>\n<p>Those who attend this talk will learn about bluetooth-assisted\
+  \ contact tracing, exposure notification, and the shiny new new COVID-19 settings\
+  \ on their mobile phone</p>"
+code: URD9ER
+speakers:
+- P9CXX8

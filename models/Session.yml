@@ -1,0 +1,8 @@
+title: String
+start: DateTime
+end: DateTime
+room: Integer
+speakers: Person[] -> sessions
+abstract: String
+description: String
+code: String

@@ -1,0 +1,26 @@
+title: Procedural Generation of Terrain
+start: 2020-09-05 17:10:00
+end: 2020-09-05 17:25:00
+room: 3
+abstract: "<p>In games development and computer graphics, one is sometimes limited\
+  \ when designing assets such as textures, models and level designs by hand. An entirely\
+  \ handcrafted game is limited in content to that which the creator specifically\
+  \ put in. Procedural generation remedies this by using a combination of algorithms\
+  \ and stochastic aspects to programmatically certain kind of data, in this case\
+  \ terrain and game assets, in quantities beyond that which would be possible to\
+  \ design manually</p>\n<p>This talk will cover the process of procedurally generating\
+  \ a landscape using open-simplex noise and adding realism using simulated erosion.</p>"
+description: "<p>Procedural generation is the process of programmatically creating\
+  \ data. Its value is in generating large quantities of similar but not identical\
+  \ assets such as textures and models. This talk will cover the topic of using procedural\
+  \ generation to create a landscape, which will give an illustration of the strengths\
+  \ of procedural generation and ways to overcome its weaknesses.</p>\n<p>More specifically,\
+  \ the topics covered are:\n- using layered opensimplex noise to create a heightmap,\
+  \ as well as an overview of types of noise and the shortcomings of purely noise-based\
+  \ terrain\n- using image processing techniques to add mountain ranges in a manner\
+  \ more consistent with real-world geography than noise alone would allow\n- further\
+  \ enhancing the terrain by converting it from a heightmap to voxels, and then applying\
+  \ an erosion simulation</p>"
+code: KLALFC
+speakers:
+- VEV7NH

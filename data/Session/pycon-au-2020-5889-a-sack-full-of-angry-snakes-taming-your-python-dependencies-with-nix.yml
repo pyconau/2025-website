@@ -1,0 +1,35 @@
+title: 'A sack full of angry snakes: Taming your python dependencies with Nix'
+start: 2020-09-04 13:20:00
+end: 2020-09-04 13:45:00
+room: 4
+abstract: "<p>System Packages, pip install --user, virtualenv and conda. We have never\
+  \ had so many ways to install python packages, and yet it is becoming increasingly\
+  \ hard to tell exactly where all the packages you depend on are coming from and\
+  \ even harder to reproduce the same package setup twice.</p>\n<p>In this talk we'll\
+  \ learn how Nix package manager can provide a complete dependency management solution\
+  \ for python projects. Setting up isolated, reproducible development and build environments\
+  \ can be easy and fun, and can even directly generate incredibly svelte docker images\
+  \ with ease.</p>"
+description: "<p>Scientists, Researchers and Software Engineering projects should\
+  \ be paying attention to the reproducibility of their results. The best way to guarantee\
+  \ that the project you build today will be the same when built next week is to exactly\
+  \ specify your dependency tree. </p>\n<p>Imperative package management approaches\
+  \ (such as apt/pip/conda) provide few assurances that the package version you get\
+  \ today is the same version you'll get tomorrow, or that installing packages in\
+  \ a different order won't change the versions resolved. The problem gets even harder\
+  \ when you want to integrate with native extensions that rely on platform libraries\
+  \ and the ephemeral contents of /usr/share/. </p>\n<p>In this talk I'll discuss\
+  \ how Nix package manager can provide a complete dependency management solution\
+  \ for python projects on Linux and Mac. Nix can install and track exact, reproducible\
+  \ versions of python packages and their transitive dependencies including platform\
+  \ libraries, down to the compiler version that created them. No more guessing why\
+  \ your teammate can trigger a bug that you can't reproduce.</p>\n<p>Nix can use\
+  \ this dependency info to quickly get new teammates up and running with a full development\
+  \ environment, no worries about the setup instructions being out of date or incompatible\
+  \ with their chosen OS flavor. Finally, Nix can build your project in a sealed build\
+  \ environment that prevents your project sneakily including files that haven't been\
+  \ declared as dependencies. You can then confidently deploy these builds as minimal\
+  \ docker images, VM images, or directly via nix package caches.</p>"
+code: USWEYZ
+speakers:
+- 9DA7HW

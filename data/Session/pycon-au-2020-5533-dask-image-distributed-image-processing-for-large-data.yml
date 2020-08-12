@@ -1,0 +1,43 @@
+title: 'dask-image: distributed image processing for large data'
+start: 2020-09-04 13:55:00
+end: 2020-09-04 14:20:00
+room: 1
+abstract: <p>This talk introduces dask-image, a python library for distributed image
+  processing. Targeted towards applications involving large array data too big to
+  fit in memory, dask-image is built on top of numpy, scipy, and dask allowing easy
+  scalability and portability from your laptop to the supercomputing cluster. It is
+  of broad interest for a diverse range of data analysis applications such as video/streaming
+  data, computer vision, and scientific fields including astronomy, microscopy and
+  geosciences. We will provide a general overview of the dask-image library, then
+  discuss mixing and matching with your own custom functions, and present a practical
+  case study of a python image processing pipeline.</p>
+description: "<p>Image datasets are large, and becoming larger. The widely used benchmark\
+  \ dataset COCO (Common Objects in Context) contains 330,000 individual images. The\
+  \ average size of a single entry on the image database EMPIAR is over 1TB, and can\
+  \ easily reach several terabytes.  Even where individual images are small enough\
+  \ to fit in-memory, many existing parallelization methods are difficult to scale\
+  \ seamlessly between a laptop and a supercomputing cluster. For instance, the python\
+  \ multiprocessing module is restricted to a single mode and can't take advantage\
+  \ of multiple compute nodes on a distributed supercomputing cluster.</p>\n<p>We\
+  \ need easy ways to work with large image data. This talk introduces dask-image,\
+  \ a python library for distributed image processing. The target audience are python\
+  \ programmers currently using numpy and scipy with large array data, where the whole\
+  \ dataset cannot fit in memory or is close to that limit. It's for people who want\
+  \ to get started with parallel processing, either because they have large single-image\
+  \ data, or because they want to do batch processing applying the same analysis to\
+  \ many smaller images (sometimes known an embarrassingly parallel problem). The\
+  \ specific image analysis functions provided by dask-image are of broad interest\
+  \ to a diverse range of analysis applications including (but not limited to) video/streaming\
+  \ data, computer vision, and scientific fields including astronomy, microscopy and\
+  \ geosciences.</p>\n<p>Specifically, this talk will cover:\n* An overview of the\
+  \ dask-image library\n    * Lazy image loading\n    * Image pre-processing functionality\
+  \ (convolutions, filters, etc.)\n    * Analysis of segmented images (distributed\
+  \ labeling, and measurements of those label regions)\n* Mixing in your own custom\
+  \ analysis functions (using dask delayed, map_blocks, and map_overlap)\n* A practical\
+  \ case study of a Python image processing pipeline</p>\n<p>dask-image is open source,\
+  \ released under a BSD 3-Clause license, and can be installed using conda or pip.\
+  \ You can find the source code at https://github.com/dask/dask-image and the quickstart\
+  \ guide at https://github.com/dask/dask-examples/blob/master/applications/image-processing.ipynb</p>"
+code: KHULAN
+speakers:
+- HUN8CD

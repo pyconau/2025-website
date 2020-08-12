@@ -1,0 +1,16 @@
+title: Speeding up Your Docker Image Build
+start: 2020-09-05 11:00:00
+end: 2020-09-05 11:25:00
+room: 2
+abstract: <p>Are your Docker builds taking forever? Let’s look at high-level approaches
+  and easy to implement tricks to speed up your build and protect your coding flow
+  from annoying delays.</p>
+description: <p>Are your Docker builds taking forever? Docker can be a valuable part
+  of your tool belt, or a constant source of annoyance. This talk will walk you through
+  frequent sources of slowness when building Docker images for Python projects, and
+  ways how you can avoid or fix them. Let’s speed up an utterly slow Docker build
+  together using the right high-level approach, easy to implement tricks and brand-new
+  Docker features to speed up your build protect your coding flow from annoying delays.</p>
+code: 7FP8AB
+speakers:
+- JYTQVK

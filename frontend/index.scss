@@ -17,6 +17,14 @@ $desert-sand-headings: #F36B35;
 $red-centre: #E01D43;
 $lorikeet-blue: #5B57A5;
 
+@mixin app-mode {
+    @media (max-width: 767.9999px) {
+        html.schedule & {
+            @content;
+        }
+    }
+}
+
 body {
     font-family: $body-font;
 }
@@ -126,10 +134,25 @@ nav {
     font-size: 24px;
 
     display: grid;
-    grid-template: "logo nav dates" auto / max-content auto max-content;
+    grid-template: "logo nav curlyboi" auto 
+                   "dates dates dates" auto / min-content auto 1fr;
+    &.home {
+        grid-template: "nav curlyboi" auto 
+                       "dates dates" auto / auto 1fr;
+    }
+                   
+    &:before {
+        grid-area: curlyboi;
+        content: "";
+        font-size: 1px;
+        background-image: url("Curlyboi.svg");
+        background-size: auto 60%;
+        background-repeat: no-repeat;
+        background-position: center left;
+        margin-left: 20px;
+    }
 
     &.home {
-        grid-template: "nav dates" auto / auto max-content;
         #nav-logo {
             display: none;
         }
@@ -138,20 +161,26 @@ nav {
     
     #nav-logo {
         grid-area: logo;
+        margin: 0;
+        padding: 0;
+        display: flex;
         img {
-            height: 73px;
+            height: calc(1em + 40px);
         }
     }
     
     ul {
         grid-area: nav;
         overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
+        display: flex;
+        flex-direction: row;
     }
     
     li {
         display: inline-block;
-        margin: 20px;
+        padding: 20px;
         a {
             color: inherit;
             text-decoration: none;
@@ -178,34 +207,58 @@ nav {
     .dates {
         grid-area: dates;
         color: $wattle-leaf-headings;
-        margin: 10px 20px;
+        margin: 0 10px;
         text-align: right;
+        font-size: 15px;
         .location {
             font-weight: 400;
         }
     }
+    
+    @media only screen and (max-width: 960px) {
+        grid-template: "logo curlyboi curlyboi" auto
+                       "nav nav dates" auto / min-content 1fr;
+        #nav-logo img {
+            height: 40px;
+        }
+        ul {
+            font-size: 15px;
+            li {
+                padding: 10px;
+            }
+        }
+        .dates {
+            font-size: 12px;
+            margin: 0 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 599px) {
+        grid-template: "logo curlyboi" 1fr
+                       "logo dates" min-content
+                       "nav nav" auto / min-content 1fr;
+        .dates {
+            font-size: 10px;
+        }
+    }
 
-    @media only screen and (max-width: 900px) {
+    /*
+    @media only screen and (max-width: 1160px) {
         grid-template: "logo dates" auto
                         "nav nav" auto / auto auto;
         &.home {
             grid-template: "nav" auto "dates" auto / auto;
         }
         font-size: 20px;
-        img {
-            height: 58px;
-        }
-    }
-    @media only screen and (max-width: 450px) {
-        .dates {
-            font-size: 12px;
-        }
-    }
-    @media only screen and (max-width: 390px) {
-        img {
+        #nav-logo img {
             height: 45px;
         }
+        .dates {
+            font-size: 10px;
+            margin: 10px;
+        }
     }
+    */
 }
 
 .mailing-list-signup-form {
@@ -291,12 +344,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    @include app-mode {
+        height: 100vh;
+    }
 }
-#everything-except-footer {
+#content {
     flex-grow: 1;
 }
 
 footer {
+    @include app-mode {
+        display: none;
+    }
     form {
         --form-colour: #777 !important;
     }
@@ -387,3 +446,5 @@ footer {
     max-width: 250px; 
     margin: 20px; 
 }
+
+@import 'schedule';

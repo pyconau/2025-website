@@ -1,0 +1,24 @@
+title: The art of categorical encoding for Tabular data problems
+start: 2020-09-05 16:00:00
+end: 2020-09-05 16:25:00
+room: 3
+abstract: <p>One of the most important but overlooked aspects of developing a Machine
+  learning model is how the categorical variables have been encoded or represented
+  to the underlying predictive algorithm.An expertise in ability to handle categorical
+  variables can some times be more powerful than using the state of the art Machine
+  learning models.We will learn  some of the best methodologies in the Industry for
+  handling categorical data and will also discuss some quick intuitions on when to
+  try what.</p>
+description: "<p>When developing a predictive machine learning model for a tabular\
+  \ data problem, we are normally inundated with variety of predictive features to\
+  \ try out.The features are a blend of numerical and categorical features.When handling\
+  \ the categorical features normally an analysts defaults to the most convenient\
+  \ method or most documented method on the web or on stack-overflow forums.But this\
+  \ is where there is a high possibility of missing out on significant predictive\
+  \ gain by representing a feature to an algorithm in a format where it adds the most\
+  \ to overall predictive efficiency . </p>\n<p>This talk aims to share a quick overview\
+  \ of categorical encoding techniques and some time-tested intuitions on when to\
+  \ use what.</p>"
+code: M3HPHA
+speakers:
+- CUHZZK

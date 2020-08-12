@@ -1,0 +1,22 @@
+title: Getting Over the Boring Stuff Quicker - Building a Semi-Automated Speech Audio
+  Annotation Tool
+start: 2020-09-05 11:35:00
+end: 2020-09-05 12:00:00
+room: 4
+abstract: "<p>Developing a new deep learning model requires a large amount of data\
+  \ to be collected and annotated. While the process of data collection can be expedited\
+  \ by making use of publicly available data, it can be time consuming to annotate\
+  \ and label the large amounts of data needed to train a high accuracy model.</p>\n\
+  <p>Annotation tools for audio data, especially speech data, are currently very limited.\
+  \ This talk explores the development of a tool that takes a novel ‘semi-automated’\
+  \ approach to speech audio annotation. This new approach streamlines the normally\
+  \ monotonous process of manual annotation, by creating a modular system and graphical\
+  \ interface. It combines manual human annotation with automated annotation that\
+  \ leverages a mixture of technologies, including pre-trained models, existing speech-recognition\
+  \ APIs, and model training-inference loops.</p>\n<p>The talk will discuss the concepts\
+  \ and building blocks of such a semi-automated pipeline for data annotation. A live\
+  \ demo of the annotation interface will be shown.</p>"
+description: <p>.</p>
+code: MQWLLM
+speakers:
+- FX8SQ8

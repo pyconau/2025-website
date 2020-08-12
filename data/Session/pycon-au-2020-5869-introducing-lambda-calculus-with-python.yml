@@ -1,0 +1,21 @@
+title: Introducing Lambda Calculus with Python
+start: 2020-09-05 14:40:00
+end: 2020-09-05 14:55:00
+room: 2
+abstract: <p>This talk introduces the simple concepts of Lambda calculus with hands-on
+  implementation of the application of the Lambda function with Python.  This talk
+  will be helpful to students with background equivalent to undergraduate degrees
+  in mathematics or computer science.</p>
+description: "<p>We will be focusing on untyped lambda calculus and start by the simple\
+  \ definition of a function, that can be implemented with Python lambda. We will\
+  \ then discuss the concepts of <strong>abstraction</strong> and <strong>application</strong>\
+  \ in lambda calculus and then move on to understand what a <strong>substitution</strong>\
+  \ is and how can these be implemented in Python. We will finally study some combinators\
+  \ which are the basic building blocks of combinatory logic, before ending with encoding\
+  \ datatypes in lambda calculus and implementing the same with Python lambda. Datatypes\
+  \ we will be discussing are:</p>\n<ol>\n<li>Boolean values like TRUE and FALSE</li>\n\
+  <li>Logical operators like AND, OR and NOT</li>\n<li>Church Numerals</li>\n<li>Predicates</li>\n\
+  <li>Recursions</li>\n</ol>"
+code: AL8WB3
+speakers:
+- DCJ8DG

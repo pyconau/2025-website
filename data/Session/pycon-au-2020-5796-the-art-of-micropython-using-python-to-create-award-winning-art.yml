@@ -1,0 +1,22 @@
+title: The Art of Micropython- using Python to create award winning art
+start: 2020-09-05 14:05:00
+end: 2020-09-05 14:30:00
+room: 1
+abstract: "<p>In late 2019, my city, City of Whittlesea, Victoria, sought works by\
+  \ local artists on the theme of \"SOS Climate Change”. </p>\n<p>My submission, \"\
+  Natural Sequence or Fabricated\" won the \"People's Choice Award\" and uses MicroPython-powered\
+  \ microcontrollers to create a dynamic sculpture on the theme.</p>\n<p>This talk\
+  \ will take the attendees through solving the problems encountered in building the\
+  \ sculpture.</p>"
+description: "<p>The artwork’s description is: “Using the Fibonacci sequence as the\
+  \ basis for the work, I create a dynamic image of the \"whole\"- an intact and technological\
+  \ world, transitioning through to what appears to be broken and in crisis. The \
+  \ four Fibonacci boards move in a cyclic and synchronous way from an \"S\" to the\
+  \ whole \"O\" back to the \"S\" enhanced with the use of colour LEDs progressing\
+  \ from red to green back to red palette expressing my narrative.”</p>\n<p>This talk\
+  \ will focus on the MicroPython code that synchronises electro-mechanical aspects\
+  \ of the project and how I overcame the specific challenges of keeping a ‘hobby’\
+  \ servo in sync with the LED light sequencing.</p>"
+code: XLL9US
+speakers:
+- 99NH38

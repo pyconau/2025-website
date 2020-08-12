@@ -1,0 +1,29 @@
+title: Your Escape Plan From Numpy + Cython
+start: 2020-09-05 16:00:00
+end: 2020-09-05 16:25:00
+room: 1
+abstract: <p>In this talk, a math equation will be given as a benchmark. Instead of
+  optimizing it with Cython (painful and unpythonic), I will give three Pythonic solutions
+  to accelerate NumPy. At the end, the pros and cons of three solutions will be given
+  as well as some recommendations based on my experience.</p>
+description: "<p>If you've been a data scientist or researcher long enough, you must\
+  \ have encountered a situation where your NumPy code ran quickly on small datasets\
+  \ in a testing environment but performed poorly on real-world datasets (100x larger\
+  \ or more). In this talk, I will introduce three Pythonic solutions to improve NumPy\
+  \ performance drastically without modifying too many codes.</p>\n<p>At the beginning\
+  \ of the talk, a math equation: logsumexp, which is widely used in machine learning,\
+  \ will be illustrated. I will show how it is implemented with pure NumPy and use\
+  \ it as a benchmark so we can compare it to three proposed solutions at the end\
+  \ of the talk.</p>\n<p>Then, three solutions: CuPy, Numba, and Pythran will be presented\
+  \ in separate sections. In each section, I will give a brief introduction to the\
+  \ solution and show how to apply this solution to our benchmark code.</p>\n<p>At\
+  \ the end of the talk, I will compare these solutions from different aspects:</p>\n\
+  &lt;pre&gt;<code>* How much performance is boosted after each solution is applied\n\
+  * Ease to apply on your existing code (including the ease of debugging)\n* Limitations\
+  \ of each solution\n* Which solution should be applied first in given scenarios\n\
+  </code>&lt;/pre&gt;\n<p>Last but not the least, I will show a relatively new but\
+  \ interesting solution: Transonic to the audience so they can give it a try on their\
+  \ side project.</p>"
+code: Y3SXGF
+speakers:
+- LDVDUJ

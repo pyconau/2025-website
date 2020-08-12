@@ -1,0 +1,17 @@
+title: What happens when you run manage.py test / pytest ?
+start: 2020-09-04 16:35:00
+end: 2020-09-04 17:00:00
+room: 2
+abstract: <p>You know what happens inside your test functions, but what machinery
+  operates around that to put the dots (or E's and F's!) on your screen? This talk
+  will open up the internals of both Django's test framework and Pytest to describe
+  the various steps of the test process, and some examples of customzing it.</p>
+description: <p>Testing frameworks do a lot of work for us, so much that they can
+  even appear like magic. But if we go under the hood, we can find better ways of
+  working with them. This talk looks at Django's testing framework and pytest together,
+  so it can show the common features as well as the differences. The general test
+  lifecycle will be examined, from start to finish. We'll then use this knowledge
+  to write an extension, in both frameworks.</p>
+code: DQM9JQ
+speakers:
+- 9QXR3A

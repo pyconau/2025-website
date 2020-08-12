@@ -1,0 +1,17 @@
+title: 'Decoding: programming beyond text files'
+start: 2020-09-05 16:35:00
+end: 2020-09-05 17:00:00
+room: 1
+abstract: "<p>We're used to thinking of source code as text, and thinking of \"coding\"\
+  \ as\nmanipulating source files with text editors, but there are other ways to\n\
+  think about programming.</p>\n<p>What assumptions from 50 years ago are holding\
+  \ us back today?</p>"
+description: "<p>We'll explore the history of typewriters and find homoiconicity where\
+  \ you might not\nbe expecting it.</p>\n<p>We'll talk about structured data and explore\
+  \ the early visions of hypertext.</p>\n<p>We'll look at some specific examples of\
+  \ unusual programming environments \nand consider how a fresh look at these ideas\
+  \ can be applied to modern development.</p>\n<p>And finally we'll consider what\
+  \ a difference this could make to the work of programming.</p>"
+code: LYRJGY
+speakers:
+- JEXXZQ
