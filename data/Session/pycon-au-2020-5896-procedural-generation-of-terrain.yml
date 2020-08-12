@@ -1,6 +1,6 @@
 title: Procedural Generation of Terrain
-start: 2020-09-05 17:10:00+09:30
-end: 2020-09-05 17:25:00+09:30
+start: 2020-09-05 17:10:00
+end: 2020-09-05 17:25:00
 room: 3
 abstract: "<p>In games development and computer graphics, one is sometimes limited\
   \ when designing assets such as textures, models and level designs by hand. An entirely\

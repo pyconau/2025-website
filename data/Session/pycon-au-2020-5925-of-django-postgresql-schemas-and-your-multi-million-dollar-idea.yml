@@ -1,6 +1,6 @@
 title: Of Django, PostgreSQL schemas, and your multi-million dollar idea
-start: 2020-09-04 17:45:00+09:30
-end: 2020-09-04 18:10:00+09:30
+start: 2020-09-04 17:45:00
+end: 2020-09-04 18:10:00
 room: 2
 abstract: <p>Who in their right mind would pick Django -in 2020- to develop a software
   as a service? Who would even go as far as using PostgreSQL schemas for doing multi-tenancy?

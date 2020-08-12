@@ -1,6 +1,6 @@
 title: 3 ways to test S3 in Python
-start: 2020-09-05 17:10:00+09:30
-end: 2020-09-05 17:35:00+09:30
+start: 2020-09-05 17:10:00
+end: 2020-09-05 17:35:00
 room: 2
 abstract: "<p>At some point, every engineer has to decide whether to write tests or\
   \ ship the feature and move on. Testing code that uses S3 is often overlooked. But\

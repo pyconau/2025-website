@@ -1,6 +1,6 @@
 title: How a major museum runs on Python
-start: 2020-09-05 17:10:00+09:30
-end: 2020-09-05 17:35:00+09:30
+start: 2020-09-05 17:10:00
+end: 2020-09-05 17:35:00
 room: 1
 abstract: <p>We built a system for deploying, managing and monitoring hundreds of
   Internet-of-Things devices in a museum; let us show you why &amp; how.</p>

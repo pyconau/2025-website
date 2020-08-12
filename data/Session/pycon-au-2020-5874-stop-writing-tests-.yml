@@ -1,6 +1,6 @@
 title: Stop Writing Tests!
-start: 2020-09-05 11:35:00+09:30
-end: 2020-09-05 12:00:00+09:30
+start: 2020-09-05 11:35:00
+end: 2020-09-05 12:00:00
 room: 1
 abstract: "<p>Tests can be helpful: they can find bugs in new code, check for regressions\
   \ in old code, and clarify precisely what the code is meant to do.  On the other\

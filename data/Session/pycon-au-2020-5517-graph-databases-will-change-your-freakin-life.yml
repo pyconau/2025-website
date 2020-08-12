@@ -1,6 +1,6 @@
 title: Graph Databases will change your (freakin') life
-start: 2020-09-05 14:05:00+09:30
-end: 2020-09-05 14:30:00+09:30
+start: 2020-09-05 14:05:00
+end: 2020-09-05 14:30:00
 room: 2
 abstract: <p>This talk will be an introduction and overview of these Graph databases
   that are so hot right now, and how you can drive them using python.</p>

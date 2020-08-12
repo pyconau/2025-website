@@ -1,6 +1,6 @@
 title: Speeding up Your Docker Image Build
-start: 2020-09-05 11:00:00+09:30
-end: 2020-09-05 11:25:00+09:30
+start: 2020-09-05 11:00:00
+end: 2020-09-05 11:25:00
 room: 2
 abstract: <p>Are your Docker builds taking forever? Let’s look at high-level approaches
   and easy to implement tricks to speed up your build and protect your coding flow

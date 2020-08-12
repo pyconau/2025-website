@@ -1,6 +1,6 @@
 title: Your Escape Plan From Numpy + Cython
-start: 2020-09-05 16:00:00+09:30
-end: 2020-09-05 16:25:00+09:30
+start: 2020-09-05 16:00:00
+end: 2020-09-05 16:25:00
 room: 1
 abstract: <p>In this talk, a math equation will be given as a benchmark. Instead of
   optimizing it with Cython (painful and unpythonic), I will give three Pythonic solutions

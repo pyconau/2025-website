@@ -51,7 +51,7 @@ for day in sched_data["schedule"]["conference"]["days"]:
         for session in room_sched:
             pprint(session)
             with open(f'data/Session/{session["slug"]}.yml', "w") as f:
-                start = dateutil.parser.isoparse(session["date"])
+                start = dateutil.parser.isoparse(session["date"]).replace(tzinfo=None)
                 hr, min_ = parse("{:d}:{:d}", session["duration"])
                 duration = timedelta(hours=hr, minutes=min_)
                 yaml.dump(

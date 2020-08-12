@@ -1,6 +1,6 @@
 title: Build your own data warehouse for personal analytics with SQLite and Datasette
-start: 2020-09-04 16:00:00+09:30
-end: 2020-09-04 16:25:00+09:30
+start: 2020-09-04 16:00:00
+end: 2020-09-04 16:25:00
 room: 1
 abstract: <p>Internet companies collect staggering quantities of data about us - both
   with and without our knowledge. Thanks to Europe's GDPR legislation most companies
