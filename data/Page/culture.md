@@ -16,7 +16,7 @@ It's not taken lightly. It provides a framework in which our event operates, and
 
 ## Everyone is welcome 🏳️‍🌈
 
-All members of society are welcome at our event. We respect pronouns and preferred names. We appreciate all backgrounds, and understand that not everyone is a Python programmer. This conference is still for you. 
+All members of society are welcome at our event. We respect pronouns and preferred names. We use [gender-neutral greetings](https://heyguys.cc/). We appreciate all backgrounds, and understand that not everyone is a Python programmer. This conference is still for you. 
 
 ## We are a programming conference, not a hackercon.
 
