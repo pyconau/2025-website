@@ -20,7 +20,8 @@
   "homepage": "https://github.com/pyconau/2020-website#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "luxon": "^1.24.1",

@@ -1,4 +1,5 @@
 import {DateTime, LocalZone} from 'luxon'
+import backstage from './backstage'
 
 const FORMATTER_DIFF_DAY = Intl.DateTimeFormat(
   'en-au',
@@ -20,6 +21,7 @@ const FORMATTER_SAME_DAY = Intl.DateTimeFormat(
 )
 
 function onload() {
+  backstage()
   document.querySelectorAll('time').forEach(t => {
   const date = DateTime.fromISO(t.dateTime, {setZone: true})
   const localDate = date.toLocal()

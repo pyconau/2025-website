@@ -8,6 +8,11 @@
     &bull;
     <a href="/program/{{ session.start.strftime('%a').lower() }}/">Back to program</a>
 </div>
+<div class="backstage-only">
+    <b>Backstage tools:</b>
+    <a href="https://nextdayvideo.com/tools/countdown-widget/?t={{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/">Countdown timer link</a>
+    <code>https://nextdayvideo.com/tools/countdown-widget/?t={{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/</code>
+</div>
 
 {{ session.abstract }}
 
