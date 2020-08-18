@@ -79,10 +79,22 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
             f,
         )
 
+from PIL import Image
+from io import BytesIO
 
 for speaker in paginate("https://pretalx.com/api/events/pycon-au-2020/speakers/"):
     if speaker["code"] not in seen_speakers:
         continue
+    has_pic = False
+    try:
+        if speaker["avatar"] is not None:
+            im = Image.open(BytesIO(requests.get(speaker["avatar"]).content))
+            im = im.convert("RGB")
+            im.thumbnail((128, 128))
+            im.save(f'assets/people/{speaker["code"]}.jpg')
+            has_pic = True
+    except Exception as e:
+        print(speaker["code"], speaker["avatar"], e)
     with open(f'data/Person/{speaker["code"]}.yml', "w") as f:
         yaml.dump(
             {
@@ -96,6 +108,7 @@ for speaker in paginate("https://pretalx.com/api/events/pycon-au-2020/speakers/"
                     None,
                 ),
                 "bio": parse_markdown(speaker["biography"] or ""),
+                "has_pic": has_pic,
             },
             f,
         )

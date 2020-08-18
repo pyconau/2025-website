@@ -6,3 +6,4 @@ bio: "<p>Simon is the creator of Datasette, an open source tool for exploring an
   \ of the Django web framework. He recently completed the JSK Fellowship program\
   \ at Stanford.</p>\n<p>https://simonwillison.net/ - <a href=\"https://twitter.com/simonw\"\
   >@simonw</a></p>"
+has_pic: true
