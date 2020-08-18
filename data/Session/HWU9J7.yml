@@ -32,7 +32,7 @@ description: "&lt;h4&gt;Why&lt;/h4&gt;\n<p>Most of the well established projects
   <p>People who create and publish python packages.\nThe presentation is from the\
   \ package developer's perspective and not exactly about the innards of the different\
   \ python packaging tools.</p>\n&lt;h4&gt;Pre-requisites&lt;/h4&gt;\n<p>Basic Python\
-  \ programming.\nGit</p>\n&lt;h2&gt;Tentative talk outline&lt;/h2&gt;\n<ul>\n<li>Linting</li>\n\
+  \ programming.\nGit</p>\n<h2>Tentative talk outline</h2>\n<ul>\n<li>Linting</li>\n\
   <li>Type checking</li>\n<li>Eliminating dead code</li>\n<li>Tests</li>\n<li>Test\
   \ coverage</li>\n<li>Test automation</li>\n<li>Packaging</li>\n<li>CI/CD</li>\n\
   <li>Other tools</li>\n<li>Future of packaging</li>\n</ul>\n&lt;h4&gt;Speaker info\

@@ -7,9 +7,9 @@ abstract: "<p>Before I went to uni - I had around 8 years of python experience, 
   \ to python. However, it was much more difficult than I expected! There were areas\
   \ in C that were super easy to grasp thanks to my python experience, but there were\
   \ areas that were harder to grasp as a result of of my python experience...</p>\n\
-  <p>Now I'm a tutor for the university teaching C - and I ask the question - is teaching\
+  <p>Now I'm a tutor for the university teaching C!  I now ask the question - is teaching\
   \ C better than teaching Python for formal CS education?</p>"
-description: "<p>This talk is simply one about my experience of learning c from a\
+description: "<p>This talk is simply one about my experience of learning C from a\
   \ python background\n  - what python features helped me understand C better (control\
   \ flow, algorithm and problem breakdown design, functions, etc)\n  - what C features\
   \ helped me understand python better (ie pointers in C helped me understand python\
