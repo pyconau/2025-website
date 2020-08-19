@@ -45,6 +45,9 @@ s-schedule a.session {
   color: inherit;
   text-decoration: none;
   background-color: rgba($wattle-leaf, 0.2);
+  .backstage &.session-L, .backstage &.session-None {
+    background-color: rgba($wattle-leaf, 0.5);
+  }
   border-radius: 5px;
   padding: 7px;
   margin: 2px;

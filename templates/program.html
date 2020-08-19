@@ -49,7 +49,7 @@
     {% endif %}
     {% for session in sessions %}
     <a
-        class="session" 
+        class="session session-{{ session.type }}" 
         style="--start: {{ session.start.timestamp()|int // 60 }}; --end: {{ session.end.timestamp()|int // 60 }}; --track: {{ session.room }};"
         href='{% url "session", session %}'
     >
