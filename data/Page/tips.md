@@ -1,7 +1,6 @@
 # How to look (and sound) good in your talk
 
-
-[![Tech Tips VideoIMAGE ALT TEXT HERE](https://img.youtube.com/vi/C1TBqdULp4E/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HEREC1TBqdULp4E)
+[![Tech Tips Video](https://img.youtube.com/vi/C1TBqdULp4E/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HEREC1TBqdULp4E)
 
 We've prepared a Tech Tips video: How to get the best from your remote presentation; click above to watch.
 
