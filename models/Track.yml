@@ -9,4 +9,5 @@ stream: String
 summary: String
 
 organisers: Person[]
+sponsor: Sponsor
 content: Content

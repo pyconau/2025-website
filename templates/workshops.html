@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% import '_sponsor_macros.html' as m %}
+{% block main %}
+<a href="/sponsor">&lt; Back to sponsors</a>
+<h1>Sponsor Workshops</h1>
+<p>Keep the learning going by attending one of PyConline AU's sponsor workshops.</p>
+<p>Workshops are run by sponsors, and will teach you more about their products and Python. Registration is free and opt-in.</p>
+<hr>
+{% for w in workshops %}
+{{m.workshop(w)}}
+{% endfor %}
+<hr>
+
+<i>PyConline AU does not share conference attendee details directly with sponsors. Sponsors may choose to collect details on attendees that attend their workshops. Please refer to each workshop for more details.</i>
+
+{% endblock %}
