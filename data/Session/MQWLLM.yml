@@ -3,6 +3,8 @@ title: Getting Over the Boring Stuff Quicker - Building a Semi-Automated Speech 
 start: 2020-09-05 11:35:00
 end: 2020-09-05 12:00:00
 room: 4
+track:
+type: L
 abstract: "<p>Developing a new deep learning model requires a large amount of data\
   \ to be collected and annotated. While the process of data collection can be expedited\
   \ by making use of publicly available data, it can be time consuming to annotate\
@@ -20,4 +22,3 @@ description: <p>.</p>
 code: MQWLLM
 speakers:
 - FX8SQ8
-type: L

@@ -2,6 +2,8 @@ title: Interactive Mapmaking with Python
 start: 2020-09-04 17:10:00
 end: 2020-09-04 17:35:00
 room: 1
+track: science
+type: L
 abstract: "<p>Maps can help you tell amazing stories with your data and a lot of datasets\
   \ we come across have a location component in them. Leveraging location data to\
   \ create beautiful maps was once a daunting endeavor done only by cartographers\
@@ -36,4 +38,3 @@ description: "<ol>\n<li>Introduction (2 mins)<ul>\n<li>Who am I?</li>\n<li>Setti
 code: DVV7W8
 speakers:
 - 7TZER3
-type: L

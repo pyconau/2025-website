@@ -2,6 +2,8 @@ title: This Talk Has Been Disabled
 start: 2020-09-05 13:00:00
 end: 2020-09-05 13:55:00
 room: 1
+track:
+type: P
 abstract: "<p>Approximately 20% of the world's population has some form of disability.\
   \  Despite this, the vast majority of software isn't fully accessible.  Making your\
   \ systems readily usable for everyone is a complex process.  Using good design principles\
@@ -24,4 +26,3 @@ description: "<p>This talk consists of the following sections:</p>\n<ul>\n<li>In
 code: 7AVW7C
 speakers:
 - VZ79QQ
-type: P

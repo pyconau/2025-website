@@ -2,6 +2,8 @@ title: Oops! I Became an Open Source Maintainer! 😱
 start: 2020-09-04 09:15:00
 end: 2020-09-04 10:10:00
 room: 4
+track: devoops
+type: P
 abstract: <p>I consider myself relatively new to the open source world; my first open
   source contribution was in summer of 2016. Pretty soon I found myself being given
   commit rights to other people’s open source projects. Being a new open source maintainer
@@ -12,4 +14,3 @@ description: <p>.</p>
 code: JZW83Q
 speakers:
 - PTGUYZ
-type: P

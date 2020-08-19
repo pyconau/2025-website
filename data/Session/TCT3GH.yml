@@ -2,6 +2,8 @@ title: Stop Writing Tests!
 start: 2020-09-05 11:35:00
 end: 2020-09-05 12:00:00
 room: 1
+track:
+type: L
 abstract: "<p>Tests can be helpful: they can find bugs in new code, check for regressions\
   \ in old code, and clarify precisely what the code is meant to do.  On the other\
   \ hand, writing tests is often tedious - and it's rare to think of an error when\
@@ -33,4 +35,3 @@ description: "<p>We often think of manual testing as slower and less effective t
 code: TCT3GH
 speakers:
 - LFU8AS
-type: L

@@ -2,6 +2,8 @@ title: Under and Dunder - Python secret functions
 start: 2020-09-05 13:35:00
 end: 2020-09-05 13:50:00
 room: 4
+track:
+type: L
 abstract: <p>You may know dunder init (<code>__init__</code>), but how well do you
   know about other Python “magic” functions? Why are dunder functions not accessible?
   in this talk, I am going to show you the secrets of the Dunder functions and what
@@ -19,4 +21,3 @@ description: "<p>At the start, we will be using <code>dir</code> to look into th
 code: VLPJZL
 speakers:
 - 8EGVC9
-type: L

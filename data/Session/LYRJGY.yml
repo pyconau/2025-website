@@ -2,6 +2,8 @@ title: 'Decoding: programming beyond text files'
 start: 2020-09-05 16:35:00
 end: 2020-09-05 17:00:00
 room: 1
+track:
+type: P
 abstract: "<p>We're used to thinking of source code as text, and thinking of \"coding\"\
   \ as\nmanipulating source files with text editors, but there are other ways to\n\
   think about programming.</p>\n<p>What assumptions from 50 years ago are holding\
@@ -15,4 +17,3 @@ description: "<p>We'll explore the history of typewriters and find homoiconicity
 code: LYRJGY
 speakers:
 - JEXXZQ
-type: P

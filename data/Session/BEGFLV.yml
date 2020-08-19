@@ -3,6 +3,8 @@ title: 'Diversifying your dataset is not enough: Expanding the conversation abou
 start: 2020-09-04 09:15:00
 end: 2020-09-04 09:40:00
 room: 1
+track: science
+type: L
 abstract: <p>Using machine learning for medicine as a case study, I'll illustrate
   some of the issues that aren't addressed by simply diversifying your training set,
   and point in the direction of issues beyond just a narrow framing of bias that we
@@ -16,4 +18,3 @@ description: <p>While it's important to consider the diversity of your dataset a
 code: BEGFLV
 speakers:
 - LNJXCD
-type: L

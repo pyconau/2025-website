@@ -2,10 +2,11 @@ title: DjangoCon AU Open
 start: 2020-09-04 15:45:00
 end: 2020-09-04 16:00:00
 room: 2
+track: djangoconau
+type: L
 abstract: <p>DjangoCon AU Open</p>
 description: <p>DjangoCon AU Open</p>
 code: W7XDTK
 speakers:
 - ZDKEP3
 - RQANK3
-type: L

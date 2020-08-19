@@ -2,6 +2,8 @@ title: So what is this time thing anyway?
 start: 2020-09-05 14:05:00
 end: 2020-09-05 14:20:00
 room: 4
+track:
+type: P
 abstract: <p>How well do you think you understand time? All kinds of things in our
   lives rely on having at least a basic understanding of how "time" works. But sometimes
   you need more than just a basic understanding... so come with me on a brief tour
@@ -18,4 +20,3 @@ description: <p>This is a whirlwind tour of modern timekeeping. From the weird a
 code: DDCVAM
 speakers:
 - RSUKRU
-type: P

@@ -64,6 +64,15 @@ session_types = {
     723: "RP",
 }
 
+tracks = {
+    "DevOops": "devoops",
+    "Science, Data & Analytics": "science",
+    "Education": "education",
+    "DjangoCon AU": "djangoconau",
+    "Security & Privacy": "security",
+    "Main Conference": None
+}
+
 seen_speakers = set()
 
 for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
@@ -86,6 +95,8 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
                 "start": start,
                 "end": end,
                 "room": rooms[session["slot"]["room"]["en"]],
+                "track": tracks[session["track"]["en"]],
+                "type": session_types[type_answer_id] if type_answer_id else None,
                 "abstract": parse_markdown(session["abstract"]),
                 "description": parse_markdown(session["description"]),
                 "code": session["code"],

@@ -2,6 +2,8 @@ title: Build your own data warehouse for personal analytics with SQLite and Data
 start: 2020-09-04 16:00:00
 end: 2020-09-04 16:25:00
 room: 1
+track: science
+type: L
 abstract: <p>Internet companies collect staggering quantities of data about us - both
   with and without our knowledge. Thanks to Europe's GDPR legislation most companies
   now let you export your data back out again. But what can you do with it? I'll show
@@ -31,4 +33,3 @@ description: "<p>Many data enthusiasts dream of analyzing their own personal dat
 code: 73UK8X
 speakers:
 - TBWT7Y
-type: L
