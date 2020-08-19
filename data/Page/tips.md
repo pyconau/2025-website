@@ -1,6 +1,11 @@
 # How to look (and sound) good in your talk
 
-[This PDF by Kubecon EU is very useful](https://events.linuxfoundation.org/wp-content/uploads/2020/06/KubeCon_EU_Virtual_2020_WebPresenterDoc_v4.pdf), recommend reading.
+
+[![Tech Tips VideoIMAGE ALT TEXT HERE](https://img.youtube.com/vi/C1TBqdULp4E/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HEREC1TBqdULp4E)
+
+We've prepared a Tech Tips video: How to get the best from your remote presentation; click above to watch.
+
+[This PDF by Kubecon EU is also very useful](https://events.linuxfoundation.org/wp-content/uploads/2020/06/KubeCon_EU_Virtual_2020_WebPresenterDoc_v4.pdf), recommend reading.
 
 If you decide to buy additional hardware (note COVID is making stock levels challenging, order early), please make sure you put the time in to properly test before the event.  It’s unfortunately common to see someone buy an awesome new microphone to have them accidentally not have it set as the active recording audio device during their talk, or not have it placed in front of them correctly.
 
