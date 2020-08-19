@@ -45,5 +45,12 @@ Need help with your submission? <a href="https://pretalx.com/pycon-au-2020/cfp">
 {% endfor %}
 {% endif %}
 
+{% if track.sponsor %}
+<hr>
+<p align="center">
+The {{track.name}} track is proudly sponsored by <a href="{{track.sponsor.url}}">{{track.sponsor.title}}.
+<br>
+<img src='{% asset "sponsor-logos/" + track.sponsor.logo %}' class="sponsorlogo" alt='{{track.sponsor.title}}'></a></p>
+{% endif %}
 
 {% endblock %}

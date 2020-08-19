@@ -7,7 +7,7 @@ color: "#f36b35"
 summary: Data and number crunching, analysis and visualisation, machine learning, and how those things affect us human beings.
 
 stream: mPj7TEV56mQ?start=366&end=693 
-
+sponsor: snowflake
 ---
 
 There are so many directions that this track can take. There is always technical talks about explicit packages, but there's also talks about core concepts like privacy and data security. 
