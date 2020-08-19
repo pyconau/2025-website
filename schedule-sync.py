@@ -57,6 +57,13 @@ rooms = {
     "The One Obvious Room": 4,
 }
 
+session_types = {
+    720: "L",
+    721: "P",
+    722: "RL",
+    723: "RP",
+}
+
 seen_speakers = set()
 
 for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
@@ -65,6 +72,14 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
     with open(f'data/Session/{session["code"]}.yml', "w") as f:
         start = dateutil.parser.isoparse(session["slot"]["start"]).replace(tzinfo=None)
         end = dateutil.parser.isoparse(session["slot"]["end"]).replace(tzinfo=None)
+        try:
+            type_answer_id = next(
+                x["options"][0]["id"]
+                for x in session["answers"]
+                if x["question"]["id"] == 549
+            )
+        except (StopIteration, IndexError):
+            type_answer_id = None
         yaml.dump(
             {
                 "title": session["title"],
@@ -75,6 +90,7 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
                 "description": parse_markdown(session["description"]),
                 "code": session["code"],
                 "speakers": speakers,
+                "type": session_types[type_answer_id] if type_answer_id else None,
             },
             f,
         )

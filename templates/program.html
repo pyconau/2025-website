@@ -55,6 +55,7 @@
     >
         <p class="time">
             {{ session.start.strftime('%I:%M')}}&ndash;{{ session.end.strftime('%I:%M') }}
+            <span class="backstage-only">{{ session.type }}</span>
         </p>
         {{ session.title }}
         <div class="speaker">

@@ -6,3 +6,4 @@ speakers: Person[] -> sessions
 abstract: String
 description: String
 code: String
+type: String
