@@ -1,2 +1,13 @@
 name: Sean Brady
-bio: ''
+pronouns:
+bio: "<p>I am a forensic engineer and I work with business, government and the legal\
+  \ sector to investigate and resolve complex issues that typically require a systems\
+  \ approach.</p>\n<p>I have acted as an expert witness in numerous proceedings involving\
+  \ a wide range of constructed facilities. I am a director of the Society of Construction\
+  \ Law Australia and a member of the Singapore International Mediation Centre's Panel\
+  \ of Experts.</p>\n<p>In 2020 I completed the Brady Review, an investigation into\
+  \ the causes of fatalities in the mining industry in Queensland, Australia. This\
+  \ review analysed 20 years of incident and fatality information, was data driven,\
+  \ and culminated in 11 recommendations for both industry and the regulator on how\
+  \ to lower the fatality and incident rate.</p>"
+has_pic: true

@@ -7,6 +7,7 @@ from pprint import pprint
 from markdown import Markdown
 import bleach
 from os import environ
+import os, os.path
 
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
 
@@ -65,6 +66,9 @@ session_types = {
 }
 
 seen_speakers = set()
+
+for entry in os.listdir("data/Session/"):
+    os.unlink(f"data/Session/{entry}")
 
 for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
     speakers = [x["code"] for x in session["speakers"]]
