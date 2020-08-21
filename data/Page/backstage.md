@@ -18,12 +18,26 @@ As an outline, these are the key dates, times and locations that are important f
 Discord is our ‘back of house’ space. While we’re giving you an early access invitation, the discord will only be active during tech checks, rehearsals and during the conference.
 <p style="float: left; width:40%; padding-right: 1rem; margin: 1rem">![Discord Screenshot](/assets/diagrams/discord.png)</p>
 
+### How do I get in to Discord?
+
+* Redeem your speaker ticket voucher. You'll have an email with the subject *[PyConline AU 2020] Your speaker ticket for PyConline AU 2020*, sent around <time datetime="2020-08-19T23:00:00+0930">Wednesday 19 August, 11pm ACST</time>.
+* At the end of that process, click the link that says *Log me in to the backstage Discord server!*
+
+If you have already redeemed your speaker ticket voucher, instead search your email for an email with the subject *[PyConline AU 2020] Your order*. 
+
+### What do I need to do once I'm in?
+
 There are two important discord settings we’re asking you to enable for PyConline:
 
- * Set your server nickname to your full name (not your gamer tag).  Organisers, AV volunteers and MC’s need to know who you are in discord.
- * Enable notifications just for the conference. Our conference team need to be able to send you notifications if you’re missing from a channel.
+ * **Set your server nickname to your full name** (not your gamer tag).  Organisers, AV volunteers and MC’s need to know who you are in discord.
+ * **Enable notifications just for the conference.** Our conference team need to be able to send you notifications if you’re missing from a channel.
 
 You can set these settings per-server by clicking on the server name in the top left of discord. These won’t affect other servers you use Discord on.
+
+### What do I do if I need Discord help?
+
+* **If you can log in to Discord successfully, and the Discord server is active**, post in the **#help-me** channel.
+* **If you can't get in to Discord**, email [program@pycon.org.au](mailto:program@pycon.org.au).
 
 ## Tech Checks
 By now, you probably have booked your tech check. It is optional but we strongly recommend it - so if you’re still not booked in please check your email for a link on how to book.
