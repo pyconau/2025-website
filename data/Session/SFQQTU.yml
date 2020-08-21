@@ -2,6 +2,8 @@ title: 'Closing Keynote: Drop Your Tools – Does Expertise have a Dark Side?'
 start: 2020-09-05 17:45:00
 end: 2020-09-05 18:40:00
 room: 1
+track:
+type: L
 abstract: "<p>All professionals possess some measure of expertise, and not only is\
   \ this expertise useful, it is usually also necessary to do the job. In general,\
   \ this expertise is viewed as a good thing.</p>\n<p>But what if there is an issue\
@@ -20,4 +22,3 @@ description: "<p>This presentation will discuss how expertise has limitations wh
 code: SFQQTU
 speakers:
 - QRCWQJ
-type: L
