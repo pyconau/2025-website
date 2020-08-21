@@ -2,10 +2,11 @@ title: DjangoCon AU Close
 start: 2020-09-04 18:10:00
 end: 2020-09-04 18:25:00
 room: 2
+track: djangoconau
+type: L
 abstract: <p>DjangoCon AU Close</p>
 description: <p>DjangoCon AU Close</p>
 code: WX33FD
 speakers:
 - ZDKEP3
 - RQANK3
-type: L

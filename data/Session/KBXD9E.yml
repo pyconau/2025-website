@@ -2,6 +2,8 @@ title: 'At The Root : Wagtail + Gatsby + GitPod'
 start: 2020-09-05 10:25:00
 end: 2020-09-05 10:50:00
 room: 3
+track:
+type:
 abstract: <p>Headless Wagtail + GatsbyJS Progressive Web App Generator - in the style
   of modern static site generations, pre-fetched to provide a speed and performance.
   Can I build something really cool, quickly? We have the power of two of the most
@@ -28,4 +30,3 @@ description: "<p>Exploring if a GatsbyJS progressive web app generator frontend 
 code: KBXD9E
 speakers:
 - LDQPN9
-type:

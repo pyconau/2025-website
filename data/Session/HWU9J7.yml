@@ -2,6 +2,8 @@ title: Publishing well-formed Python packages
 start: 2020-09-05 13:00:00
 end: 2020-09-05 13:25:00
 room: 3
+track:
+type: P
 abstract: "<p>Most of us have written python programs. Many have written modules.\
   \ Some have packaged and uploaded them to servers for distribution. And a significant\
   \ portion of these packages could be made better.</p>\n<p>I propose a talk expressing\
@@ -42,4 +44,3 @@ description: "&lt;h4&gt;Why&lt;/h4&gt;\n<p>Most of the well established projects
 code: HWU9J7
 speakers:
 - 7HFFGZ
-type: P

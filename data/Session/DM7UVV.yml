@@ -2,6 +2,8 @@ title: What We Do in the Shadows
 start: 2020-09-04 12:45:00
 end: 2020-09-04 13:10:00
 room: 2
+track: security
+type: P
 abstract: "<p>This talk delves into the psychology of shadow IT, the opportunities\
   \ that can grow out of the corporate underground, and how to get these systems out\
   \ of the shadows and into the light.</p>\n<p>There will also, most likely, be some\
@@ -24,4 +26,3 @@ description: "<p>We've all done it. Setting up a Slack to chat to our colleagues
 code: DM7UVV
 speakers:
 - LMWGWW
-type: P

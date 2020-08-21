@@ -2,6 +2,8 @@ title: Introducing Lambda Calculus with Python
 start: 2020-09-05 14:40:00
 end: 2020-09-05 14:55:00
 room: 2
+track:
+type: L
 abstract: <p>This talk introduces the simple concepts of Lambda calculus with hands-on
   implementation of the application of the Lambda function with Python.  This talk
   will be helpful to students with background equivalent to undergraduate degrees
@@ -19,4 +21,3 @@ description: "<p>We will be focusing on untyped lambda calculus and start by the
 code: AL8WB3
 speakers:
 - DCJ8DG
-type: L

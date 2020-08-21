@@ -3,6 +3,8 @@ title: 'Programs are a prison: Rethinking the fundamental building blocks of com
 start: 2020-09-05 16:00:00
 end: 2020-09-05 16:25:00
 room: 2
+track:
+type: P
 abstract: <p>Programs, applications, and websites, as the building block of our computing
   interfaces, create artificial borders that separate data, prevent reuse, and destroy
   any hope of a truly expressive and programmatic computing environment. We look at
@@ -31,4 +33,3 @@ description: "<p>Think about adding up some numbers in a tabular structure. That
 code: WPHUVM
 speakers:
 - EJ7S8X
-type: P

@@ -2,6 +2,7 @@ title: String
 start: DateTime
 end: DateTime
 room: Integer
+track: String
 speakers: Person[] -> sessions
 abstract: String
 description: String

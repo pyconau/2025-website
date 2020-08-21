@@ -2,6 +2,8 @@ title: What I now know about HAproxied Django DB connections, and wish I'd known
 start: 2020-09-04 13:55:00
 end: 2020-09-04 14:20:00
 room: 4
+track: devoops
+type: P
 abstract: <p>Asynchronous Celery tasks that manipulate a MySQL/Galera database from
   a Django application can produce very interesting behavior when HAProxy is involved.
   This talk discusses these issues, and proposes remedies available to both application
@@ -25,4 +27,3 @@ description: "<p>When you’re running a Django application, the following thing
 code: YZYTMX
 speakers:
 - BPBCDP
-type: P

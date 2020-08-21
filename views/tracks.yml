@@ -3,3 +3,6 @@ path:
   for-each:
     track: session.query(Track).all()
 template: track
+context:
+  dynamic:
+    sessions: session.query(Session).filter(Session.track == track.pk).order_by(Session.start).all()

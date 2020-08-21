@@ -6,36 +6,21 @@
 <br>
 {% if track.website %}<br>Learn more about the {{track.name}} track at <a href="{{track.website}}">{{track.website}}</a><br>{% endif %}
 <br>
-<p><i>We are currently reviewing the submissions for the {{track.name}} track.</i></p>
 {% if track.name == "Education" %}
 Are you a high school student who has used Python in a project or class assignment? Are you hacking on something cool in your spare time? We want to hear about it!
 <br>
 <br>
 <a href="https://forms.gle/F6JhtbFoZhVBzvz16" class='btn btn-chonk'>Submit a talk to the Student Showcase</a></p>
 {% endif %}
-<hr>
-<h2>Hear more about {{track.name}} from the track organisers</h2>
-
-{% if track.stream %}
-Watch the PyConline AU Stream for {{track.name}}: 
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube-nocookie.com/embed/{{ track.stream }}"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    class="ytembed"
-></iframe>
-{% endif %}
-
-<b>What should excite you about the {{track.name}} track?</b>
-
 {{track.content}}
-
 <hr>
 
-Need help with your submission? <a href="https://pretalx.com/pycon-au-2020/cfp">Check our CFP for mentorship details</a>.
+Talks in this track:
+{% for session in sessions %}
+    {% if track.name not in session.title and track.altname not in session.title %}
+    <li><a href="{% url "session", session %}">{{session.title}}</a> by {% for speaker in session.speakers %}{{ speaker.name }}{% if not loop.last %}, {% endif %}{% endfor %}</li>
+    {% endif %}
+{% endfor %}
 
 {% if track.organisers %}
 <hr>
