@@ -3,7 +3,7 @@ on:
   push:
     branches: [ghci]
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/20 * * * *'
 
 jobs:
   check:
