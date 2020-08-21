@@ -4,7 +4,7 @@ level: String
 logo: String
 website: String
 twitter: String
-
+order: Integer
 workshop: Workshop -> sponsor
 
 content: Content
