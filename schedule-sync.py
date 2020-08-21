@@ -71,7 +71,7 @@ tracks = {
     "Education": "education",
     "DjangoCon AU": "djangoconau",
     "Security & Privacy": "security",
-    "Main Conference": None
+    "Main Conference": None,
 }
 
 seen_speakers = set()
@@ -113,13 +113,27 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
 from PIL import Image
 from io import BytesIO
 
+with open("assets/people/_etags.yml") as f:
+    etags = yaml.load(f)
+
 for speaker in paginate("https://pretalx.com/api/events/pycon-au-2020/speakers/"):
     if speaker["code"] not in seen_speakers:
         continue
     has_pic = False
     try:
         if speaker["avatar"] is not None:
-            im = Image.open(BytesIO(requests.get(speaker["avatar"]).content))
+            etag = etags.get(speaker["code"], None)
+            avatar_resp = requests.get(
+                speaker["avatar"],
+                headers={"If-None-Match": etag} if etag is not None else {},
+            )
+            if avatar_resp.status_code == 304:
+                print("ETag match")
+                continue
+            avatar_resp.raise_for_status()
+            if "ETag" in avatar_resp.headers:
+                etags[speaker["code"]] = avatar_resp.headers["ETag"]
+            im = Image.open(BytesIO(avatar_resp.content))
             im = im.convert("RGB")
             im.thumbnail((128, 128))
             im.save(f'assets/people/{speaker["code"]}.jpg')
@@ -144,3 +158,5 @@ for speaker in paginate("https://pretalx.com/api/events/pycon-au-2020/speakers/"
             f,
         )
 
+with open("assets/people/_etags.yml", "w") as f:
+    yaml.dump(etags, f)
