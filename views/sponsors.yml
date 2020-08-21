@@ -3,6 +3,7 @@ context:
   dynamic:
     platinum: session.query(Sponsor).filter_by(level="platinum").all()
     digital: session.query(Sponsor).filter_by(level="digital").all()
+    contributors: session.query(Sponsor).filter_by(level="contributor").all()
     auspice: session.query(Sponsor).filter_by(level="auspice").all()
 template: sponsors
 

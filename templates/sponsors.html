@@ -18,6 +18,12 @@
 <hr>
 Digital sponsorship opportunities still available! Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>
 
+<h1>Contributors{% if contributors | length != 1 %}s{% endif %}</h1>
+<p>We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>. They are directly helping fund our financial assistance efforts for future events: </p>
+{% for s in contributors %}
+<li>{{s.title}}
+{% endfor %}
+
 <h1>Auspice</h1>
 {% for s in auspice %}
 {{m.sponsor(s)}}
