@@ -2,6 +2,8 @@ title: All Hands on Deck – Handling Security Issues
 start: 2020-09-04 14:30:00
 end: 2020-09-04 14:45:00
 room: 2
+track: security
+type: P
 abstract: <p>We live in a world of technology. Unfortunately, the software we build
   has bugs and sometimes vulnerabilities that cause headaches and haunt us at night.
   It is on us as engineers to not make security issues in the first place. But it
@@ -32,4 +34,3 @@ description: "<p>We live in a world of technology and engineering where almost e
 code: U9GBBD
 speakers:
 - RQANK3
-type: P

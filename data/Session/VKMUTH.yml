@@ -2,6 +2,8 @@ title: The worst outage I never caused
 start: 2020-09-04 16:35:00
 end: 2020-09-04 17:00:00
 room: 4
+track: devoops
+type:
 abstract: <p>In 2017 I came one keypress from causing Google's main backbone to largely
   fall off the Internet. This is the story of how we used that incident as a learning
   opportunity, how a lack of buy-in hindered further improvements, and how an existing
@@ -15,4 +17,3 @@ description: <p>In 2017 I came one keypress from causing Google's main backbone 
 code: VKMUTH
 speakers:
 - 7FY7T3
-type:

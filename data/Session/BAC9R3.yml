@@ -2,6 +2,8 @@ title: Engineers to Data-Scientists with Python
 start: 2020-09-05 11:00:00
 end: 2020-09-05 11:25:00
 room: 4
+track:
+type: L
 abstract: <p>With data-science teams increasingly requiring domain knowledge, transforming
   a group of domain specific engineers into a functioning data-science team can be
   a challenge. In this talk we will explore how a team of engineers moved from a tangled
@@ -22,4 +24,3 @@ description: "<p>This talk centers around an early stage start-up reaching the s
 code: BAC9R3
 speakers:
 - TBZ7WF
-type: L

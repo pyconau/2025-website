@@ -2,6 +2,8 @@ title: Walled gardens for growing students
 start: 2020-09-04 13:20:00
 end: 2020-09-04 13:45:00
 room: 3
+track: education
+type: L
 abstract: <p>How can we create environments for students to learn programming skills
   that allow them to thrive without overwhelming them?</p>
 description: "<p>Creating learning environments for teaching students programming\
@@ -14,4 +16,3 @@ description: "<p>Creating learning environments for teaching students programmin
 code: RZCSSP
 speakers:
 - 3BWQQK
-type: L

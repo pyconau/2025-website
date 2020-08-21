@@ -2,6 +2,8 @@ title: I don't need friends, I can build my own
 start: 2020-09-05 11:00:00
 end: 2020-09-05 11:25:00
 room: 3
+track:
+type: L
 abstract: <p>It’s a Friday night and you’re really hitting it off with the customer
   service assistant that has popped up in the right hand corner chat window of your
   web browser. But are they real, or a chatbot? How do you tell?</p>
@@ -18,4 +20,3 @@ description: "<p>Chatbots have become commonplace in our lives. These days, you 
 code: E9AXJE
 speakers:
 - JS93ST
-type: L

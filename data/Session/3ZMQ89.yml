@@ -2,6 +2,8 @@ title: Student Showcase
 start: 2020-09-04 13:55:00
 end: 2020-09-04 14:50:00
 room: 3
+track: education
+type:
 abstract: <p>Placeholder</p>
 description: <p>Placeholder</p>
 code: 3ZMQ89
@@ -9,4 +11,3 @@ speakers:
 - QWZNNB
 - HYXK8D
 - X99XWA
-type:

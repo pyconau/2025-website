@@ -2,6 +2,8 @@ title: Tweaking the rise and fall of empires and economies
 start: 2020-09-04 17:45:00
 end: 2020-09-04 18:10:00
 room: 1
+track: science
+type: L
 abstract: <p>There exists some beautiful mathematical models of economies and disease
   that offer insights, for instance, into how our economies rise and fall. Traditionally,
   exploring these models have involved a lot of specialist mathematical programming.
@@ -41,4 +43,3 @@ description: "&lt;h1&gt;Title: Tweaking the rise and fall of empires and economi
 code: SEZQAL
 speakers:
 - EZXQCD
-type: L

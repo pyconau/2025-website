@@ -2,10 +2,11 @@ title: Acknowledgement of Country / Welcome
 start: 2020-09-05 09:00:00
 end: 2020-09-05 09:15:00
 room: 1
+track:
+type: L
 abstract: <p>Everything you need to know about PyConline.</p>
 description: ''
 code: Q3PJVP
 speakers:
 - GQHDVE
 - VCVVRF
-type: L

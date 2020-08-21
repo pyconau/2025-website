@@ -2,6 +2,8 @@ title: 'geospatial data and analysis is :exploding_head:'
 start: 2020-09-04 09:50:00
 end: 2020-09-04 10:15:00
 room: 1
+track: science
+type: L
 abstract: "<p>It feels like it should be easy, but its not... you think, “it shouldn't\
   \ take too long“, wrong again.\nThis talk is about some things you should think\
   \ about/read about/know about as you dive into geospatial data. It will present\
@@ -20,4 +22,3 @@ description: "<p>Here is my top level summary:\n- its hard for everyone, you are
 code: QJTSEP
 speakers:
 - SHVTJB
-type: L

@@ -2,6 +2,8 @@ title: 'dask-image: distributed image processing for large data'
 start: 2020-09-04 13:55:00
 end: 2020-09-04 14:20:00
 room: 1
+track: science
+type: L
 abstract: <p>This talk introduces dask-image, a python library for distributed image
   processing. Targeted towards applications involving large array data too big to
   fit in memory, dask-image is built on top of numpy, scipy, and dask allowing easy
@@ -41,4 +43,3 @@ description: "<p>Image datasets are large, and becoming larger. The widely used 
 code: KHULAN
 speakers:
 - HUN8CD
-type: L

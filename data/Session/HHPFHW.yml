@@ -2,6 +2,8 @@ title: Text files full of punctuation? There must be a better way to code.
 start: 2020-09-05 11:35:00
 end: 2020-09-05 12:00:00
 room: 2
+track:
+type: L
 abstract: "<p>As programmers we believe that the true nature of code exists in a text\
   \ file. A good programmer can construct the magic sequence of characters in their\
   \ head and their fingers blur as they stream line after line of code into the keyboard\
@@ -20,4 +22,3 @@ description: "<p>The vast majority of code is written through some kind of text 
 code: HHPFHW
 speakers:
 - EAEYZM
-type: L

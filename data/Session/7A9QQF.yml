@@ -2,6 +2,8 @@ title: Wearing Your Python, and Making It Sing Too!
 start: 2020-09-05 14:40:00
 end: 2020-09-05 14:55:00
 room: 1
+track:
+type: L
 abstract: <p>Wearable technology isn't all fancy smart devices with AR and IoT, come
   learn how you can transform own garments into an eTextiles project with the Circuit
   Playground Express and Circuit Python.</p>
@@ -14,4 +16,3 @@ description: "<p>The Circuit Playground Express (cpx) is a palm-sized programmab
 code: 7A9QQF
 speakers:
 - W8WVHW
-type: L

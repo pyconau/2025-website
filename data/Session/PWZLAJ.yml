@@ -2,6 +2,8 @@ title: Python Emergency Remote Teaching
 start: 2020-09-04 09:50:00
 end: 2020-09-04 10:15:00
 room: 3
+track: education
+type: L
 abstract: <p>Online Python programming course offered in response to a COVID-19 pandemic
   lockdown</p>
 description: '<p>During the pandemic lockdown of COVID-19, we found a very different
@@ -13,4 +15,3 @@ description: '<p>During the pandemic lockdown of COVID-19, we found a very diffe
 code: PWZLAJ
 speakers:
 - C838UY
-type: L

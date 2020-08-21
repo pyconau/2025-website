@@ -2,6 +2,8 @@ title: Using Jupyter Notebooks to Empower the Public with Environmental Data
 start: 2020-09-05 16:35:00
 end: 2020-09-05 17:00:00
 room: 3
+track:
+type: P
 abstract: '<p>Our organization, Environmental Data &amp; Governance Initiative, created
   a series of Jupyter Notebooks that allow for customizable reports on emissions,
   inspections, compliance, and enforcement data stored in the US Environmental Protection
@@ -39,4 +41,3 @@ description: "<p>Attendees will learn how to use Jupyter Notebooks and other Pyt
 code: 3EKYA9
 speakers:
 - XU7RQG
-type: P

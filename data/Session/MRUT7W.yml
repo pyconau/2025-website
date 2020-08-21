@@ -2,6 +2,8 @@ title: GitHub Actions & Python
 start: 2020-09-05 11:35:00
 end: 2020-09-05 12:00:00
 room: 3
+track:
+type: L
 abstract: <p>What are GitHub Actions? Why should I use them? How can I make them?</p>
 description: "<p>GitHub Actions are free-to-use, plug &amp; play blocks of continuous\
   \ integration / continuous delivery (CICD). </p>\n<p>This talk will go into how\
@@ -15,4 +17,3 @@ description: "<p>GitHub Actions are free-to-use, plug &amp; play blocks of conti
 code: MRUT7W
 speakers:
 - XLLHAA
-type: L

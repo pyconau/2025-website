@@ -2,6 +2,8 @@ title: Journey into the Deep World of Web Development
 start: 2020-09-04 16:00:00
 end: 2020-09-04 16:25:00
 room: 2
+track: djangoconau
+type: P
 abstract: <p>A story of a construction project manager who fell into the deep world
   of Django and Python</p>
 description: "<p>Are you from a non-tech industry but want to learn web development?\
@@ -16,4 +18,3 @@ description: "<p>Are you from a non-tech industry but want to learn web developm
 code: RMY7LZ
 speakers:
 - 83WTVF
-type: P

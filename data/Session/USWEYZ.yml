@@ -2,6 +2,8 @@ title: 'A sack full of angry snakes: Taming your python dependencies with Nix'
 start: 2020-09-04 13:20:00
 end: 2020-09-04 13:45:00
 room: 4
+track: devoops
+type: L
 abstract: "<p>System Packages, pip install --user, virtualenv and conda. We have never\
   \ had so many ways to install python packages, and yet it is becoming increasingly\
   \ hard to tell exactly where all the packages you depend on are coming from and\
@@ -33,4 +35,3 @@ description: "<p>Scientists, Researchers and Software Engineering projects shoul
 code: USWEYZ
 speakers:
 - 9DA7HW
-type: L
