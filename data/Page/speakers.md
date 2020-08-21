@@ -8,7 +8,7 @@ You have the option of either presenting live or pre-recording. If you haven't d
 If you're presenting in the main conference, but you haven't yet been told which room you're in, start with the "other rooms" option.
 
 ## New!
-Information about our backstage platform (discord), tech-checks, and when to check-in for your talk is available in our [backstage guide for speakers](/backstage). This guidance is for all speakers, and in all channels, specialist tracks, live/pre-recording etc.
+Information about our backstage platform (discord), tech-checks, and when to check-in for your talk is available in our [backstage guide for speakers](/backstage). This guidance is for all speakers, and in all channels, specialist tracks, live/pre-recording etc. [The backstage guide is what you need to read to find out where you need to be for your tech check!](/backstage)
 
 If you've recieved your invitation to register as a speaker and are wondering whats next, this is the page to read. ☝️
 
