@@ -266,6 +266,10 @@ nav {
     */
 }
 
+.lede {
+    font-size: 1.333em;
+}
+
 .mailing-list-signup-form {
     --form-colour: #{$wattle-leaf};
     display: flex;
@@ -454,9 +458,13 @@ footer {
 
 @import 'schedule';
 
-.backstage-only {
-    display: none;
-    .backstage & {
-        display: initial;
+@import 'backstage';
+
+table {
+    td, th {
+        padding: 3px;
+    }
+    th {
+        text-align: left;
     }
 }

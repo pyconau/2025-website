@@ -1,0 +1,33 @@
+.backstage-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+    .time {
+        font-size: 2em;
+    }
+}
+
+.backstage-only {
+    display: none;
+    .backstage & {
+        display: block;
+    }
+}
+.backstage-only-inline {
+    display: none;
+    .backstage & {
+        display: inline;
+    }
+}
+
+.backstage-block {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    & :last-child {
+        margin-bottom: 0;
+    }
+}
