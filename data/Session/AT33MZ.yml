@@ -10,10 +10,10 @@ abstract: <p>Writing good code is hard, especially if the codebase is large. Thi
 description: "<p>Learning a new codebase, returning to an old one, or exploring a\
   \ new part of a system can sometimes be harder than it needs to be. This talk outlines\
   \ tips and tricks for writing code that is both easier to maintain and easier for\
-  \ other people to learn.</p>\n<p>Topics covered will include:\n- Documentation:\
-  \ both written and in-code\n- Structure: how to organise code for readability and\
-  \ easy re-use\n- Expression: how to improve comprehensibility of code\n- Tests:\
-  \ how to maximise their usefulness</p>"
+  \ other people to learn.</p>\n<p>Topics covered will include:</p>\n<ul>\n<li>Documentation:\
+  \ both written and in-code</li>\n<li>Structure: how to organise code for readability\
+  \ and easy re-use</li>\n<li>Expression: how to improve comprehensibility of code</li>\n\
+  <li>Tests: how to maximise their usefulness</li>\n</ul>"
 code: AT33MZ
 speakers:
 - ZZQ9TE
