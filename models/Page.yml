@@ -1,3 +1,4 @@
 title: String
 content: Content
 order: Integer
+path: String

@@ -11,3 +11,15 @@ mkdir -p data/Session &&
 poetry run statik &&
 cp _redirects public/
 """
+
+[[redirects]]
+from = "/schedule/*"
+to = "/program/:splat"
+
+[[redirects]]
+from = "/tips/"
+to = "/speakers/tips/"
+
+[[redirects]]
+from = "/backstage/"
+to = "/speakers/backstage/"

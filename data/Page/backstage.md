@@ -1,14 +1,22 @@
 ---
-pk: speakers/backstage
+path: speakers/backstage
 ---
 
 # Backstage @ PyConline AU
 
-> This page outlines the tools, the tech, and the key moments involved in presenting at PyConline AU 2020. It will likely be updated based on your feedback during tech checks so please check back here closer to the conference for more detail.
+*This page outlines the tools, the tech, and the key moments involved in presenting at PyConline AU 2020. It will likely be updated based on your feedback during tech checks so please check back here closer to the conference for more detail.*
 
-As this page goes live, all speakers will have been invited to register via pretix for their speaker ticket. Upon registering, your ticket will grant you login to Discord which is our ‘back of house’ operations platform for the conference.
+There are three systems you'll have access to throughout the course of the event:
 
-On the day, Discord will be used to communicate with organisers, and as a communications platform for the AV teams. It’s also how you’ll access the links to your tech checks, green room and live presentation ‘stage’.
+* **Discord** is our backstage chat system. It's where coordination between speakers, organisers and the AV team will happen.
+* **Venueless** is our attendee platform. It's where you'll interact with everyone else attending the conference.
+* **StreamYard** is our streaming platform. You'll be given access to this through Discord at the appropriate time, and it's where you'll go when you're live on stream.
+
+You'll gain access to both Discord and Venueless through your ticket! The order confirmation screen has all the links you need to get in.
+
+* **If you haven't redeemed your ticket yet**, look for an email with the subject *[PyConline AU 2020] Your speaker ticket for PyConline AU 2020*, sent around <time datetime="2020-08-19T23:00:00+0930">Wednesday 19 August, 11pm ACST</time>. Then, follow the prompts to redeem your ticket.
+* **If you have redeemed your ticket already**, look for an email with the subject *[PyConline AU 2020] Your order*, sent around the time you redeemed it.
+
 
 As an outline, these are the key dates, times and locations that are important for presenting at the conference.
 
@@ -20,10 +28,9 @@ Discord is our ‘back of house’ space. While we’re giving you an early acce
 
 ### How do I get in to Discord?
 
-* Redeem your speaker ticket voucher. You'll have an email with the subject *[PyConline AU 2020] Your speaker ticket for PyConline AU 2020*, sent around <time datetime="2020-08-19T23:00:00+0930">Wednesday 19 August, 11pm ACST</time>.
 * At the end of that process, click the link that says *Log me in to the backstage Discord server!*
 
-If you have already redeemed your speaker ticket voucher, instead search your email for an email with the subject *[PyConline AU 2020] Your order*. 
+If you have already redeemed your speaker ticket voucher, instead search your email for an email with the subject **. 
 
 ### What do I need to do once I'm in?
 

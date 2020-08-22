@@ -1,6 +1,9 @@
+---
+path: /speakers/tips
+---
 # How to look (and sound) good in your talk
 
-[![Tech Tips Video](https://img.youtube.com/vi/C1TBqdULp4E/0.jpg)](https://www.youtube.com/watch?v=C1TBqdULp4E)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/C1TBqdULp4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We've prepared a Tech Tips video: How to get the best from your remote presentation; click above to watch.
 
