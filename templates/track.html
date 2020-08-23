@@ -2,7 +2,7 @@
 {% import '_macros.html' as m %}
 {% block main %}
 <h1 style="color: {{track.color}}">{{track.name}} {{track.emoji}}</h1>
-<i>{{track.summary}}</i>
+{{track.summary}}
 <br>
 {% if track.website %}<br>Learn more about the {{track.name}} track at <a href="{{track.website}}">{{track.website}}</a><br>{% endif %}
 <br>
