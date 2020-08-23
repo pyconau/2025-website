@@ -10,7 +10,13 @@ abstract: <p>Staircase is a new python package on the data analysis scene, provi
   operations, logical operations allow for sophisticated analysis which may otherwise
   prove challenging or time consuming.  In addition, the package provides functionality
   for univariate analysis, aggregations and compatibility with pandas.Timestamp.</p>
-description: <p>(manual description)</p>
+description: "<p>This talk introduces the Staircase package – a new open source package\
+  \ with applications in data analysis.  It aims to take the audience on a journey\
+  \ from basics to more advanced usage at a comfortable pace.   A tutorial-esque style\
+  \ will be used to introduce fundamentals, followed by four examples abstracted from\
+  \ real world use cases.</p>\n<p>If you work with timestamped data and enjoy a little\
+  \ bit of math, mixed with a terrible sense of humour, then this talk could be right\
+  \ up your alley.</p>"
 code: 3TDS8K
 speakers:
 - 9UXGBU
