@@ -1,4 +1,11 @@
 name: Rachel Thomas
-pronouns:
-bio: <p>A Placeholder Biography That Should Be Replaced</p>
-has_pic: false
+pronouns: she/her
+bio: <p>Rachel Thomas is founding director of the Center for Applied Data Ethics at
+  the University of San Francisco, where she focuses on issues of surveillance, disinformation,
+  bias, and justice in the tech industry. She is also co-founder of fast.ai, where
+  she helped create the most popular free online course on deep learning, bringing
+  people from around the world with diverse and nontraditional backgrounds into AI.
+  Rachel earned her PhD in mathematics at Duke University and previously worked as
+  a data scientist and software engineer. She was selected by Forbes as one of 20
+  Incredible Women in AI.</p>
+has_pic: true

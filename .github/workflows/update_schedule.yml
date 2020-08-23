@@ -1,0 +1,32 @@
+name: Update schedule
+on:
+  push:
+    branches: [ghci]
+  schedule:
+    - cron: '*/20 * * * *'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: pip install poetry
+      - run: poetry install
+      - run: poetry run python schedule-sync.py
+        env:
+          PRETALX_TOKEN: ${{ secrets.PRETALX_TOKEN }}
+      - run: git diff
+      - uses: EndBug/add-and-commit@v4
+        with:
+          add: |
+            assets/people
+            data/Person
+            data/Session
+          author_name: Robot
+          author_email: beep-boop@local
+          message: 'Auto-update of schedule'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

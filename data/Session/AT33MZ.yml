@@ -1,19 +1,19 @@
 title: Making Codebases Easier to Learn and Maintain
-start: 2020-09-05 14:30:00
-end: 2020-09-05 14:55:00
+start: 2020-09-05 14:05:00
+end: 2020-09-05 14:30:00
 room: 4
 track:
-type:
+type: P
 abstract: <p>Writing good code is hard, especially if the codebase is large. This
   talk discusses tips and tricks for writing code that is not only easier to maintain,
   but will also be easier for other people to learn.</p>
 description: "<p>Learning a new codebase, returning to an old one, or exploring a\
   \ new part of a system can sometimes be harder than it needs to be. This talk outlines\
   \ tips and tricks for writing code that is both easier to maintain and easier for\
-  \ other people to learn.</p>\n<p>Topics covered will include:\n- Documentation:\
-  \ both written and in-code\n- Structure: how to organise code for readability and\
-  \ easy re-use\n- Expression: how to improve comprehensibility of code\n- Tests:\
-  \ how to maximise their usefulness</p>"
+  \ other people to learn.</p>\n<p>Topics covered will include:</p>\n<ul>\n<li>Documentation:\
+  \ both written and in-code</li>\n<li>Structure: how to organise code for readability\
+  \ and easy re-use</li>\n<li>Expression: how to improve comprehensibility of code</li>\n\
+  <li>Tests: how to maximise their usefulness</li>\n</ul>"
 code: AT33MZ
 speakers:
 - ZZQ9TE
