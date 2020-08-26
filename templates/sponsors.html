@@ -15,7 +15,7 @@
 {{m.sponsor(s)}}
 {% endfor %}
 
-<h1>Contributors{% if contributors | length != 1 %}s{% endif %}</h1>
+<h1>Contributor{% if contributors | length != 1 %}s{% endif %}</h1>
 <p>We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>. They are directly helping fund our financial assistance efforts for future events: </p>
 {% for s in contributors %}
 <li>{{s.title}}
