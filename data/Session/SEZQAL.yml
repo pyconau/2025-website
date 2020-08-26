@@ -11,17 +11,13 @@ abstract: <p>There exists some beautiful mathematical models of economies and di
   kinds of models by leveraging python libraries such as dash and scipy. The framework
   exposes a built-in UI that allows an interactive exploration of how economies might
   collapse, or diseases break out into epidemics.</p>
-description: "<p>I am a data-engineer with a specialisation in data viz. To help explore\
-  \ these models that explain some aspect of our world, I have built a python framework\
-  \ to simplify and enhance the exploration of these models. The framework provides\
-  \ an instant UI that allows a visual interaction with the model.</p>\n<h2>Outline</h2>\n\
-  <ol>\n<li>Show examples of beautiful numerical models that use differential equations<ol>\n\
-  <li>Peter Turchin's model of empire disintegration</li>\n<li>Steve Keen's model\
-  \ of debt-drive collapse in the business cycle</li>\n<li>Standard SIR model of how\
-  \ infectious diseases rips through a population</li>\n</ol>\n</li>\n<li>Show how\
-  \ painful it is to build the models yourself<ol>\n<li>Brief look at how these models\
-  \ are presented in the literature, standard mathematical nomenclature</li>\n<li>Show\
-  \ select real world examples of yukky mathematical programming, matlab, fortran,\
+description: "<h2>Outline</h2>\n<ol>\n<li>Show examples of beautiful numerical models\
+  \ that use differential equations<ol>\n<li>Peter Turchin's model of empire disintegration</li>\n\
+  <li>Steve Keen's model of debt-drive collapse in the business cycle</li>\n<li>Standard\
+  \ SIR model of how infectious diseases rips through a population</li>\n</ol>\n</li>\n\
+  <li>Show how painful it is to build the models yourself<ol>\n<li>Brief look at how\
+  \ these models are presented in the literature, standard mathematical nomenclature</li>\n\
+  <li>Show select real world examples of yukky mathematical programming, matlab, fortran,\
   \ even python</li>\n</ol>\n</li>\n<li>Describe the framework that simplifies this<ol>\n\
   <li>introduce my modeldrop library </li>\n<li>heavy use of string lookup in dictionaries</li>\n\
   <li>translation from math to descriptive variable names</li>\n<li>outsourcing the\
