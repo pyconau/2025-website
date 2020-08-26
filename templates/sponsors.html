@@ -9,14 +9,11 @@
 {{m.sponsor(s)}}
 {% endfor %}
 <hr>
-{% if platinum | length == 1 %}Platinum sponsorship opportunities still available! Apply to be a Platinum Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>{% endif %}
 
 <h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
 {% for s in digital %}
 {{m.sponsor(s)}}
 {% endfor %}
-<hr>
-Digital sponsorship opportunities still available! Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>
 
 <h1>Contributors{% if contributors | length != 1 %}s{% endif %}</h1>
 <p>We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>. They are directly helping fund our financial assistance efforts for future events: </p>
