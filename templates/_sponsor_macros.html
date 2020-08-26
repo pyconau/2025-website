@@ -1,6 +1,6 @@
 {%- macro sponsor(s) %}
-{% if s.website %}<a href="{{s.website}}">{% endif %}
-<img src='{% asset "sponsor-logos/" + s.logo %}' class="sponsorlogo" alt='{{s.title}}'>{% if s.website %}</a>{% endif %}
+<p align="center">{% if s.website %}<a href="{{s.website}}">{% endif %}
+  <img src='{% asset "sponsor-logos/" + s.logo %}' class="sponsorlogo" alt='{{s.title}}'>{% if s.website %}</a>{% endif %}</p>
 
 {% if s.workshop %}<p>Learn more about {{s.title}} at their <a href="{{ s.workshop.url }}">workshop ↗</a>. <a href="/sponsor/workshops">Learn more about workshops</a>.</p>{%endif%}
 
