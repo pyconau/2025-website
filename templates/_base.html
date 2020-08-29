@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" class="{% block html_class %}{% endblock %}">
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="{% asset 'build/index.css' %}" />
-        <script src="{% asset 'build/index.js' %}" async></script>
-        <title>{% block title %}PyCon AU 2020{% endblock %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-    </head>
-    <body>
-        {% block nav %}
-        <nav class="{{ nav_class }}">
-            <a id='nav-logo' href="/"><img src="{% asset 'Logo_Standard_PyConline.svg' %}" /></a>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/sponsor">Sponsor</a></li>
-                <li><a href="/program">Program</a></li>
-                <li><a href="/attend">Attend</a></li>
-                <li><a href="/conduct">Conduct</a></li>
-            </ul>
-            <div class="dates">
-                4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location">The Internet</span>
-            </div>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% asset 'build/index.css' %}" />
+    <script src="{% asset 'build/index.js' %}" async></script>
+    <title>{% block title %}PyCon AU 2020{% endblock %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    {% block nav %}
+    <nav class="{{ nav_class }}">
+      <a id="nav-logo" href="/"
+        ><img src="{% asset 'Logo_Standard_PyConline.svg' %}"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    {% endblock %}
+    <div id="content">
+      {% block content %}
+      <main>
+        {% block main %}
+        <h1>This is some example content!</h1>
+        <p>
+          If you can see this, it probably means our static site generator is
+          broken somehow.
+        </p>
         {% endblock %}
-        <div id="content">
-            {% block content %}
-            <main>
-                {% block main %}
-                    <h1>This is some example content!</h1>
-                    <p>If you can see this, it probably means our static site generator is broken somehow.</p>
-                {% endblock %}
-            </main>
-            {% endblock %}
-        </div>
-        <footer>
-            <section class="sponsor auspice">
-                <h1>PyCon AU is an event of</h1>
-                <img src='{% asset "sponsor-logos/la.svg" %}' alt='Linux Australia'>
-            </section>
-            <section class="sponsor transitional">
-                <h1>Supported by</h1>
-                <img src='{% asset "sponsor-logos/buildkite.svg" %}' alt='Buildkite'>
-            </section>
-            <section class="signup">
-                <h1>Sign up for announcements</h1>
-                <form method='post' action='https://lists.linux.org.au/mailman/subscribe/pycon-au-announce' class='mailing-list-signup-form'>
-                    <input type='email' name='email' required placeholder='snek@example.com'>
-                    <button type='submit'>
-                      Sign up
-                    </button>
-                </form>
-            </section>
-            <section class="copyright">
-                <b>Contact us:</b> <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br>
-                &copy; 2020, the PyCon AU team
-            </section>
-        </footer>
-    </body>
-    <script type='text/javascript'>
-        if (window.location.hash === "#debug") document.body.classList.add('debug')
-    </script>
+      </main>
+      {% endblock %}
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='{% asset "sponsor-logos/la.svg" %}' alt="Linux Australia" />
+      </section>
+      <section class="sponsor transitional">
+        <h1>Supported by</h1>
+        <img src='{% asset "sponsor-logos/buildkite.svg" %}' alt="Buildkite" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
 </html>

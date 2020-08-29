@@ -144,4 +144,4 @@ organisers or the Linux Australia Council at [council@linux.org.au](mailto:counc
 
 This document is available to be re-used or modified under the terms of the
 Creative Commons Attribution-ShareAlike 3.0 Australia licence, available
-from [CreativeCommons.org](https://creativecommons.org/licenses/by-sa/3.0/au/) 
+from [CreativeCommons.org](https://creativecommons.org/licenses/by-sa/3.0/au/)

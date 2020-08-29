@@ -1,14 +1,11 @@
-{% extends '_base.html' %}
-{% block content %}
+{% extends '_base.html' %} {% block content %}
 
 <div class="switcher">
-    <a href="/program/fri/">Friday</a>
-    <a href="/program/sat/">Saturday</a>
-    <a href="/program/sun/" class='selected'>Sunday</a>
+  <a href="/program/fri/">Friday</a>
+  <a href="/program/sat/">Saturday</a>
+  <a href="/program/sun/" class="selected">Sunday</a>
 </div>
 
-<main>
-    {{ page.content }}
-</main>
+<main>{{ page.content }}</main>
 
 {% endblock %}

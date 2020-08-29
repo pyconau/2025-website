@@ -10,7 +10,7 @@ stream: wiz9Nrh3sds?&start=426&end=755
 
 ---
 
-This is the first year that the DevOops track has been hosted at PyCon AU, and it's all about learning from failure. 
+This is the first year that the DevOops track has been hosted at PyCon AU, and it's all about learning from failure.
 
 A lot of conference talks are about things going right, and
 not a lot are about when things went wrong, which is weird

@@ -31,7 +31,7 @@ Saturday's content is spread across four channels running simultaneously&mdash;a
 * The **Curlyboi Theatre** is our plenary hall, named for PyCon AU's mascot (which you can see slithering across the header of this page). The curlyboi was designed by [Tania Walker](https://taniawalker.com) in her 2018 refresh of the PyCon AU brand and has since become a community favourite.
 * The **Python 2 Memorial Concert Hall** is named in honour of the 2.x release series of the Python language; work on its replacement, Python 3, started in around 2006, but Python 2 reached its end of support in 2020.
 * The **Flip Floperator Auditorium** is named for the obscure flip-flop operator in the Ruby programming language, which was [introduced to the PyCon AU audience and given a shorter, catchier name by Tom Eastman and Merrin Macleod](https://youtu.be/BmWLhVMWC9I?t=783) at PyCon AU 2018.
-* **The One, Obvious Room** refers to one of the [aphorisms that notionally describe the guiding principles of Python](https://www.python.org/dev/peps/pep-0020/): "There should be one&mdash;and preferably only one&mdash;obvious way to do it." The One, Obvious Room is, fittingly, one of the four equally excellent choices available to you. 
+* **The One, Obvious Room** refers to one of the [aphorisms that notionally describe the guiding principles of Python](https://www.python.org/dev/peps/pep-0020/): "There should be one&mdash;and preferably only one&mdash;obvious way to do it." The One, Obvious Room is, fittingly, one of the four equally excellent choices available to you.
 
 ## 6 Sep: Development sprints and social events
 

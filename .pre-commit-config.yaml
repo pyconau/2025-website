@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v3.2.0"
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: "v1.1.9"
+    hooks:
+      - id: forbid-crlf
+        exclude: \.(csv|bat)$
+      - id: forbid-tabs
+        exclude: Makefile|\.bat$
+  - repo: https://github.com/prettier/prettier
+    rev: "2.1.1"
+    hooks:
+      - id: prettier
+        exclude: ^data/|\.html$

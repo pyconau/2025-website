@@ -35,12 +35,12 @@ Note that the colon between the offset hours and minutes **must be present** (e.
 Are you on macOS Catalina and getting hundreds of `API_UNAVAILABLE`/`clang` issues when running `poetry install`?
 
 Try [this tip](https://github.com/gorakhargosh/watchdog/issues/628#issuecomment-581480649):
- 
- * Check how many SDKs you have installed in `/Library/Developer/CommandLineTools/SDKs`. 
- * If you have both `MacOSX10.14.sdk` and `MacOSX10.15.sdk`:
- 
-    ```
-    rm -rf /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
-    ```
-    
- * Then try `poetry install` again.
+
+- Check how many SDKs you have installed in `/Library/Developer/CommandLineTools/SDKs`.
+- If you have both `MacOSX10.14.sdk` and `MacOSX10.15.sdk`:
+
+  ```
+  rm -rf /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
+  ```
+
+- Then try `poetry install` again.

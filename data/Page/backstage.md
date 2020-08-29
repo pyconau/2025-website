@@ -30,7 +30,7 @@ Discord is our ‘back of house’ space. While we’re giving you an early acce
 
 * At the end of that process, click the link that says *Log me in to the backstage Discord server!*
 
-If you have already redeemed your speaker ticket voucher, instead search your email for an email with the subject **. 
+If you have already redeemed your speaker ticket voucher, instead search your email for an email with the subject **.
 
 ### What do I need to do once I'm in?
 
@@ -71,7 +71,7 @@ It’s now 15 minutes before your scheduled session. It’s ok to be nervous but
 
 Here’s what to do:
 
-In discord, make sure you’ve joined the green room for your allocated channel. For example, sessions being presented in the Curlyboi Theatre will have their digital green room in the #greenroom-curlyboi channel in discord. Send a quick message there so the AV team know you’re online.  
+In discord, make sure you’ve joined the green room for your allocated channel. For example, sessions being presented in the Curlyboi Theatre will have their digital green room in the #greenroom-curlyboi channel in discord. Send a quick message there so the AV team know you’re online.
 
 > Hey there team, It’s Sneky McSnekFace ready for the 3:15 session titled “snakes_and_ladders.py” in the Curlyboi Theatre.
 
@@ -102,6 +102,3 @@ Please be mindful of time - your fellow speakers will rely on the 10 minutes bet
 Congratulations! You gave a talk at #PyConlineAU!
 
 Remember to breathe and take some time to decompress. We’d love you to hang out with attendees back in venueless while you watch the next set of talks. If you invited people to ask questions in chat, pop back in to venueless during the 10 minute break and continue that conversation.
-
-
-

@@ -27,7 +27,7 @@ We welcome submissions from everybody, including those:
 
 * who have never given a conference talk before,
 * who are new to Python,
-* who have built interesting things in Python, 
+* who have built interesting things in Python,
 * who have helped build Python, and
 * who have expertise to share with our community from fields outside of Python (and outside of technology).
 

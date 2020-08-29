@@ -2,9 +2,8 @@
 name: Bug report
 about: Spotted a bug? Let us know!
 title: "\U0001F41B"
-labels: ''
-assignees: ''
-
+labels: ""
+assignees: ""
 ---
 
 **Describe the bug**

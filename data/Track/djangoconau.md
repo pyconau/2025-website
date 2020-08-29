@@ -11,4 +11,3 @@ stream: "mPj7TEV56mQ?&start=36&end=366"
 
 
 DjangoCon AU has been running as a mini-conference inside PyCon AU since 2013. Now in it's eighth year, it is the younger sibling conference to DjangoCon Europe, DjangoCon US, and DjangoCon Africa.
-

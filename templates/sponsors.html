@@ -1,43 +1,76 @@
-{% extends '_base.html' %}
-{% import '_sponsor_macros.html' as m %}
-{% block main %}
+{% extends '_base.html' %} {% import '_sponsor_macros.html' as m %} {% block
+main %}
 <h1>Sponsor PyConline AU</h1>
-<p>To find out more about the sponsorship opportunities available, <a href="/assets/prospectus.pdf">download our sponsorship prospectus</a>. Once you've picked a sponsorship opportunity, <a href="mailto:sponsorship@pycon.org.au">get in touch via sponsorship@pycon.org.au</a>.</p>
+<p>
+  To find out more about the sponsorship opportunities available,
+  <a href="/assets/prospectus.pdf">download our sponsorship prospectus</a>. Once
+  you've picked a sponsorship opportunity,
+  <a href="mailto:sponsorship@pycon.org.au"
+    >get in touch via sponsorship@pycon.org.au</a
+  >.
+</p>
 
 <h1>Platinum Sponsor{% if platinum | length != 1 %}s{% endif %}</h1>
-{% for s in platinum %}
-{{m.sponsor(s)}}
-{% endfor %}
-<hr>
+{% for s in platinum %} {{m.sponsor(s)}} {% endfor %}
+<hr />
 
 <h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
-{% for s in digital %}
-{{m.sponsor(s)}}
-{% endfor %}
+{% for s in digital %} {{m.sponsor(s)}} {% endfor %}
 
-
-
-<hr>
+<hr />
 
 <h1>Contributor{% if contributors | length != 1 %}s{% endif %}</h1>
-<p>We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>. They are directly helping fund our financial assistance efforts for future events: </p>
+<p>
+  We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>.
+  They are directly helping fund our financial assistance efforts for future
+  events:
+</p>
 {% for s in contributors %}
-<li>{{s.title}}
-{% endfor %}
+<li>
+  {{s.title}} {% endfor %}
 
-<hr>
-<table><tr><td colspan=2>
-<h1>Video Sponsor</h1></td></tr><tr><td>
-<img src='{% asset "sponsor-logos/buildkite.svg" %}' class='sponsorlogo' alt='buildkite'></td><td style="vertical-align: middle;">
-Buildkite's sponsorship has helped us engage <a href="https://nextdayvideo.com/">Next Day Video</a> for their expertise to ensure all our speakers look and sound amazing. </td></tr>
-<tr><td colspan=2>
-<h1>Infra Sponsor</h1></td></tr><tr><td>
-<img src='{% asset "sponsor-logos/microsoft.png" %}' class='sponsorlogo' alt='microsoft'></td><td style="vertical-align: middle;">Microsoft's sponsorship helps us host our extremely online platform, <a href="https://venueless.org/">Venueless</a>.</td></tr></table>
-<hr>
+  <hr />
+  <table>
+    <tr>
+      <td colspan="2">
+        <h1>Video Sponsor</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img
+          src='{% asset "sponsor-logos/buildkite.svg" %}'
+          class="sponsorlogo"
+          alt="buildkite"
+        />
+      </td>
+      <td style="vertical-align: middle">
+        Buildkite's sponsorship has helped us engage
+        <a href="https://nextdayvideo.com/">Next Day Video</a> for their
+        expertise to ensure all our speakers look and sound amazing.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h1>Infra Sponsor</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img
+          src='{% asset "sponsor-logos/microsoft.png" %}'
+          class="sponsorlogo"
+          alt="microsoft"
+        />
+      </td>
+      <td style="vertical-align: middle">
+        Microsoft's sponsorship helps us host our extremely online platform,
+        <a href="https://venueless.org/">Venueless</a>.
+      </td>
+    </tr>
+  </table>
+  <hr />
 
-<h1>Auspice</h1>
-{% for s in auspice %}
-{{m.sponsor(s)}}
-{% endfor %}
-
-{% endblock %}
+  <h1>Auspice</h1>
+  {% for s in auspice %} {{m.sponsor(s)}} {% endfor %} {% endblock %}
+</li>

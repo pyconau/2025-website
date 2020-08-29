@@ -3,7 +3,7 @@ title: Snowflake
 logo: snowflake.png
 level: digital
 website: https://www.snowflake.com/
-twitter: SnowflakeDB 
+twitter: SnowflakeDB
 workshop: snowflake
 order: 2
 ---

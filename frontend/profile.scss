@@ -1,27 +1,27 @@
 .profile {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    img {
-        width: 75px;
-        height: 75px;
-        border-radius: 1000px;
-        object-fit: cover;
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 1000px;
+    object-fit: cover;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    &:not(:first-child) {
+      margin-left: 1em;
     }
-    .details {
-        display: flex;
-        flex-direction: column;
-        &:not(:first-child) {
-            margin-left: 1em;
-        }
-    }
-    b {
-        font-size: 4 / 3 * 1em;
-    }
+  }
+  b {
+    font-size: 4 / 3 * 1em;
+  }
 }
 
 .profile-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
 }

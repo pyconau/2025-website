@@ -1,21 +1,18 @@
-{%- set nav_class = 'home' -%}
-{% extends '_base.html' %}
-{% import '_macros.html' as m %}
-{% block nav %}
-<header id='header'>
-<img src="{% asset('Logo_Reversed_PyConline.svg') %}" alt="PyCon AU" role="heading" aria-level="1" />
-    <div class="rotated">
-        <article>
-            <h1>Attend the most online PyCon&nbsp;AU&nbsp;ever!</h1>
-            <a href="/attend/">I want a ticket!</a>
-        </article>
-        {{ super() }}
-    </div>
+{%- set nav_class = 'home' -%} {% extends '_base.html' %} {% import
+'_macros.html' as m %} {% block nav %}
+<header id="header">
+  <img
+    src="{% asset('Logo_Reversed_PyConline.svg') %}"
+    alt="PyCon AU"
+    role="heading"
+    aria-level="1"
+  />
+  <div class="rotated">
+    <article>
+      <h1>Attend the most online PyCon&nbsp;AU&nbsp;ever!</h1>
+      <a href="/attend/">I want a ticket!</a>
+    </article>
+    {{ super() }}
+  </div>
 </header>
-{% endblock %}
-
-{% block main %}
-
-{{ m.news(latest_news) }}
-
-{% endblock %}
+{% endblock %} {% block main %} {{ m.news(latest_news) }} {% endblock %}

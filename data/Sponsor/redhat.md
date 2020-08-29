@@ -3,7 +3,7 @@ title: Red Hat
 logo: redhat.png
 level: digital
 website: https://www.redhat.com
-twitter: RedHat 
+twitter: RedHat
 order: 1
 ---
 

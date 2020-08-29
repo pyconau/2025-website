@@ -1,34 +1,24 @@
-{% extends '_base.html' %}
-
-{% block main %}
+{% extends '_base.html' %} {% block main %}
 <h1>Information for speakers</h1>
 <p>
-    This information pack is for speakers that wish to
-    <a href="{% url 'speaker-pack', swap_type %}">
-        {% if pack.type == 'pre-record' %}pre-record
-        {%- elif pack.type == 'live' %}present live
-        {%- endif -%}
-    </a>,
-    and are scheduled in
-    <a href="{% url 'speaker-pack', swap_room %}">
-        {% if pack.day == 'specialist' %}
-            {% if pack.room == 'curlyboi' %}Science, Data and Analytics
-            {%- elif pack.room == 'other' %}DjangoCon Australia, Security and Privacy, Education, or DevOops
-            {%- endif %}
-        {%- elif pack.day == 'main' %}
-            {% if pack.room == 'curlyboi' %}the Curlyboi Theatre
-            {%- elif pack.room == 'other' %}the Python 2 Memorial Concert Hall, or Flip Floperator Auditorium
-            {%- endif %}
-        {%- endif -%}
-    </a>
-    on 
-    <a href="{% url 'speaker-pack', swap_day %}">
-        {% if pack.day == 'specialist' %}
-            Specialist Track day (Friday 4 Sep)
-        {%- elif pack.day == 'main' %}
-            Main Conference day (Saturday 5 Sep)
-        {%- endif -%}
-    </a>.
+  This information pack is for speakers that wish to
+  <a href="{% url 'speaker-pack', swap_type %}">
+    {% if pack.type == 'pre-record' %}pre-record {%- elif pack.type == 'live'
+    %}present live {%- endif -%} </a
+  >, and are scheduled in
+  <a href="{% url 'speaker-pack', swap_room %}">
+    {% if pack.day == 'specialist' %} {% if pack.room == 'curlyboi' %}Science,
+    Data and Analytics {%- elif pack.room == 'other' %}DjangoCon Australia,
+    Security and Privacy, Education, or DevOops {%- endif %} {%- elif pack.day
+    == 'main' %} {% if pack.room == 'curlyboi' %}the Curlyboi Theatre {%- elif
+    pack.room == 'other' %}the Python 2 Memorial Concert Hall, or Flip
+    Floperator Auditorium {%- endif %} {%- endif -%}
+  </a>
+  on
+  <a href="{% url 'speaker-pack', swap_day %}">
+    {% if pack.day == 'specialist' %} Specialist Track day (Friday 4 Sep) {%-
+    elif pack.day == 'main' %} Main Conference day (Saturday 5 Sep) {%- endif
+    -%} </a
+  >.
 </p>
-{{ pack.content }}
-{% endblock %}
+{{ pack.content }} {% endblock %}

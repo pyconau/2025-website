@@ -6,5 +6,3 @@ context:
     contributors: session.query(Sponsor).filter_by(level="contributor").order_by("title").all()
     auspice: session.query(Sponsor).filter_by(level="auspice").all()
 template: sponsors
-
-

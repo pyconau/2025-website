@@ -21,9 +21,9 @@ We’ll have more to share about our (extremely) online conference venue in the 
 To register, head on over to [https://pycon.org.au/attend](https://pycon.org.au/attend) and hit the big green **“register now”** button. It looks a lot like this one:
 
 <p class='center-content'>
-	<a href='https://pretix.eu/pyconau/online2020/?require_cookie=true' class='btn btn-center btn-chonk'>
-		Get your tickets 'ere!
-	</a>
+    <a href='https://pretix.eu/pyconau/online2020/?require_cookie=true' class='btn btn-center btn-chonk'>
+        Get your tickets 'ere!
+    </a>
 </p>
 
 ## Conference Program / Session schedule

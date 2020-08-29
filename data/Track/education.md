@@ -17,4 +17,3 @@ Teaching the basics of software development is hard, so it’s best to get them 
 This was started a few years ago, as shorter pitches presented by students. It doesn't have to be in the classroom, it can be a personal project.
 
 If you want to submit to the Student Showcase, you can submit here: [https://forms.gle/F6JhtbFoZhVBzvz16](https://forms.gle/F6JhtbFoZhVBzvz16)
-

@@ -1,4 +1,4 @@
-path: 
+path:
   template: /program/{{ session.code }}
   for-each:
     session: session.query(Session).all()

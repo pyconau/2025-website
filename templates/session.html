@@ -1,43 +1,46 @@
-{% extends '_base.html' %}
-{% import '_macros.html' as m %}
-
-{% block main %}
+{% extends '_base.html' %} {% import '_macros.html' as m %} {% block main %}
 <h1>{{ session.title }}</h1>
 <div class="time-bar">
-    {{ session.start.strftime('%a %B %d, %I:%M %p')}}&ndash;{{ session.end.strftime('%I:%M %p') }}
-    &bull;
-    <a href="/program/{{ session.start.strftime('%a').lower() }}/">Back to program</a>
+  {{ session.start.strftime('%a %B %d, %I:%M %p')}}&ndash;{{
+  session.end.strftime('%I:%M %p') }} &bull;
+  <a href="/program/{{ session.start.strftime('%a').lower() }}/"
+    >Back to program</a
+  >
 </div>
 <div class="backstage-only backstage-block">
-    <table>
-        <tbody>
-            <tr>
-                <th>Start time</th>
-                <td data-reltime="{{ session.start.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30">{{ session.start.strftime('%H:%M') }}</td>
-            </tr>
-            <tr>
-                <th>End time</th>
-                <td data-reltime="{{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30">{{ session.end.strftime('%H:%M') }}</td>
-            </tr>
-            <tr>
-                <th>Countdown link</th>
-                <td>
-                    <a href="https://nextdayvideo.com/tools/countdown-widget/?t={{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/">
-                        Open timer
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="{{ session.start.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30"
+        >
+          {{ session.start.strftime('%H:%M') }}
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="{{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30"
+        >
+          {{ session.end.strftime('%H:%M') }}
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t={{ session.end.strftime('%Y-%m-%dT%H:%M:%S') }}+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="lede">
-    {{ session.abstract }}
-</div>
+<div class="lede">{{ session.abstract }}</div>
 
-{{ session.description }}
-
-{% for person in session.speakers %}
-{{ m.profile(person, bio=True) }}
-{% endfor %}
-{% endblock %}
+{{ session.description }} {% for person in session.speakers %} {{
+m.profile(person, bio=True) }} {% endfor %} {% endblock %}

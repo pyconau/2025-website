@@ -1,27 +1,45 @@
 {%- macro sponsor(s) %}
-<p align="center">{% if s.website %}<a href="{{s.website}}">{% endif %}
-  <img src='{% asset "sponsor-logos/" + s.logo %}' class="sponsorlogo" alt='{{s.title}}'>{% if s.website %}</a>{% endif %}</p>
+<p align="center">
+  {% if s.website %}<a href="{{s.website}}"
+    >{% endif %}
+    <img
+      src='{% asset "sponsor-logos/" + s.logo %}'
+      class="sponsorlogo"
+      alt="{{s.title}}"
+    />{% if s.website %}</a
+  >{% endif %}
+</p>
 
-{% if s.workshop %}<p>Learn more about {{s.title}} at their <a href="{{ s.workshop.url }}">workshop ↗</a>. <a href="/sponsor/workshops">Learn more about workshops</a>.</p>{%endif%}
+{% if s.workshop %}
+<p>
+  Learn more about {{s.title}} at their
+  <a href="{{ s.workshop.url }}">workshop ↗</a>.
+  <a href="/sponsor/workshops">Learn more about workshops</a>.
+</p>
+{%endif%}
 
 <p>{{s.content}}</p>
 
-{# social engagement links #}
-{% if s.twitter or s.website %}<p>{% endif %}
-{% if s.website %}
-    <a href="{{s.website}}">Visit {{s.website | replace("https://", "") | replace("http://", "") }}</a>
-{% endif %}
-{% if s.twitter and s.website %} | {% endif %}
-{% if s.twitter %}
-    <a href="https://twitter.com/{{s.twitter}}">Follow @{{s.twitter}} on Twitter</a>
-{% endif %}
-{% if s.twitter or s.website %}</p>{% endif %}
-{%- endmacro %}
-
-{%- macro workshop(w) %}
+{# social engagement links #} {% if s.twitter or s.website %}
+<p>
+  {% endif %} {% if s.website %}
+  <a href="{{s.website}}"
+    >Visit {{s.website | replace("https://", "") | replace("http://", "") }}</a
+  >
+  {% endif %} {% if s.twitter and s.website %} | {% endif %} {% if s.twitter %}
+  <a href="https://twitter.com/{{s.twitter}}"
+    >Follow @{{s.twitter}} on Twitter</a
+  >
+  {% endif %} {% if s.twitter or s.website %}
+</p>
+{% endif %} {%- endmacro %} {%- macro workshop(w) %}
 <h2>{{w.title}}, hosted by {% for s in w.sponsor%}{{s.title}}{%endfor%}</h2>
-<h4 style="margin-top:0">{{w.date}}</h4>
-{% for s in w.sponsor %}<img src='{% asset "sponsor-logos/" + s.logo %}' class="sponsorlogo" alt='{{s.title}}'>{%endfor%}
+<h4 style="margin-top: 0">{{w.date}}</h4>
+{% for s in w.sponsor %}<img
+  src='{% asset "sponsor-logos/" + s.logo %}'
+  class="sponsorlogo"
+  alt="{{s.title}}"
+/>{%endfor%}
 <p>{{w.content}}</p>
 <a href="{{w.url}}" target="_blank">Register for this workshop ↗</a>
 {%- endmacro %}
