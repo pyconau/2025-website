@@ -6,7 +6,6 @@ poetry config virtualenvs.in-project true &&
 poetry install &&
 yarn install &&
 yarn run build &&
-poetry run python speaker-pack-hax.py &&
 mkdir -p data/Session &&
 poetry run statik &&
 cp _redirects public/
