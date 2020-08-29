@@ -93,6 +93,12 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
             )
         except (StopIteration, IndexError):
             type_answer_id = None
+        try:
+            cw = next(
+                x["answer"] for x in session["answers"] if x["question"]["id"] == 547
+            )
+        except (StopIteration, IndexError):
+            cw = None
         yaml.dump(
             {
                 "title": session["title"],
@@ -105,7 +111,7 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
                 "description": parse_markdown(session["description"]),
                 "code": session["code"],
                 "speakers": speakers,
-                "type": session_types[type_answer_id] if type_answer_id else None,
+                "cw": parse_markdown(cw) if cw is not None else None,
             },
             f,
         )

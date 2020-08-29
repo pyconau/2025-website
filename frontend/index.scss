@@ -485,3 +485,15 @@ table {
     text-align: left;
   }
 }
+
+.content-warning {
+  background-color: rgba($desert-sand, 0.25);
+  color: darken($desert-sand, 40%);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75em;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  margin: 20px 0;
+}

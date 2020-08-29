@@ -7,6 +7,7 @@
     >Back to program</a
   >
 </div>
+
 <div class="backstage-only backstage-block">
   <table>
     <tbody>
@@ -40,7 +41,16 @@
   </table>
 </div>
 
+{% if session.cw %}
+<div class="content-warning">{{ session.cw }}</div>
+{% endif %}
+
 <div class="lede">{{ session.abstract }}</div>
 
-{{ session.description }} {% for person in session.speakers %} {{
-m.profile(person, bio=True) }} {% endfor %} {% endblock %}
+{{ session.description }}
+
+{% for person in session.speakers %}
+  {{ m.profile(person, bio=True) }}
+{% endfor %}
+
+{% endblock %}
