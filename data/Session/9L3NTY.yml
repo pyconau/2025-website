@@ -3,7 +3,7 @@ start: 2020-09-04 10:25:00
 end: 2020-09-04 11:20:00
 room: 2
 track: security
-type:
+type: L
 abstract: "<p>Biometrics are widely regarded by the public, and many developers, as\
   \ heightened security. Their actual track record tells a very different story. Biometric\
   \ technologies are systematically making the world a less safe place. We have an\
