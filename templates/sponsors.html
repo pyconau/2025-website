@@ -9,14 +9,31 @@
 {{m.sponsor(s)}}
 {% endfor %}
 <hr>
-{% if platinum | length == 1 %}Platinum sponsorship opportunities still available! Apply to be a Platinum Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>{% endif %}
 
 <h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
 {% for s in digital %}
 {{m.sponsor(s)}}
 {% endfor %}
+
+
+
 <hr>
-Digital sponsorship opportunities still available! Apply to be a Digital Sponsor by emailing <a href="mailto:sponsorship@pycon.org.au">sponsorship@pycon.org.au</a>.<hr>
+
+<h1>Contributor{% if contributors | length != 1 %}s{% endif %}</h1>
+<p>We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>. They are directly helping fund our financial assistance efforts for future events: </p>
+{% for s in contributors %}
+<li>{{s.title}}
+{% endfor %}
+
+<hr>
+<table><tr><td colspan=2>
+<h1>Video Sponsor</h1></td></tr><tr><td>
+<img src='{% asset "sponsor-logos/buildkite.svg" %}' class='sponsorlogo' alt='buildkite'></td><td style="vertical-align: middle;">
+Buildkite's sponsorship has helped us engage <a href="https://nextdayvideo.com/">Next Day Video</a> for their expertise to ensure all our speakers look and sound amazing. </td></tr>
+<tr><td colspan=2>
+<h1>Infra Sponsor</h1></td></tr><tr><td>
+<img src='{% asset "sponsor-logos/microsoft.png" %}' class='sponsorlogo' alt='microsoft'></td><td style="vertical-align: middle;">Microsoft's sponsorship helps us host our extremely online platform, <a href="https://venueless.org/">Venueless</a>.</td></tr></table>
+<hr>
 
 <h1>Auspice</h1>
 {% for s in auspice %}

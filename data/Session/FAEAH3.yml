@@ -3,7 +3,7 @@ start: 2020-09-04 13:20:00
 end: 2020-09-04 13:45:00
 room: 1
 track: science
-type: P
+type: L
 abstract: <p>Excel is used a lot in businesses and other spheres; however, sometimes
   data in Excel can be untidy and hard to extract data from. This talk will show you
   how to extract data from spreadsheets using Python.</p>

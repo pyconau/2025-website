@@ -4,7 +4,7 @@ start: 2020-09-05 13:00:00
 end: 2020-09-05 13:25:00
 room: 4
 track:
-type: RL
+type: L
 abstract: <p>In this talk, we will deep dive into the world of Medical Imaging and
   Radiology, in particular. We will soar through the mighty oceans of various kinds
   of diseases and limitations of AI with the prevalent Deep Learning architectures

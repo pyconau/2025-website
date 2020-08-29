@@ -4,17 +4,19 @@ end: 2020-09-05 10:50:00
 room: 4
 track:
 type: P
-abstract: "<p>Staircase is a new python package on the data analysis scene, providing\
-  \ a framework built around the notion of step-functions.  A rich variety of methods,\
-  \ which follow from the algebra of functions, including arithmetic operations, relational\
-  \ operations, logical operations allow for sophisticated analysis which may otherwise\
-  \ prove challenging.  In addition, the package provides functionality for univariate\
-  \ analysis, aggregations and compatibility with pandas.Timestamp.</p>\n<p>The creation\
-  \ of this package was primarily motivated by the need for rapid analysis of timestamped\
-  \ data, but also as an exercise in package development.  In addition to exploring\
-  \ the use of the library, this talk will also reflect on lessons learned along the\
-  \ way.</p>"
-description: <p>(manual description)</p>
+abstract: <p>Staircase is a new python package on the data analysis scene, providing
+  a framework built around the notion of step-functions.  A rich variety of methods,
+  which follow from the algebra of functions, including arithmetic operations, relational
+  operations, logical operations allow for sophisticated analysis which may otherwise
+  prove challenging or time consuming.  In addition, the package provides functionality
+  for univariate analysis, aggregations and compatibility with pandas.Timestamp.</p>
+description: "<p>This talk introduces the Staircase package – a new open source package\
+  \ with applications in data analysis.  It aims to take the audience on a journey\
+  \ from basics to more advanced usage at a comfortable pace.   A tutorial-esque style\
+  \ will be used to introduce fundamentals, followed by four examples abstracted from\
+  \ real world use cases.</p>\n<p>If you work with timestamped data and enjoy a little\
+  \ bit of math, mixed with a terrible sense of humour, then this talk could be right\
+  \ up your alley.</p>"
 code: 3TDS8K
 speakers:
 - 9UXGBU
