@@ -5,11 +5,20 @@
 
 * [Backstage guide](/speakers/backstage/), to find out where you need to go for your tech check, and for on the day!
 * [Tech tips](/speakers/tips/), for tips on your AV setup!
+* [Talk content](/speakers/content/), for information about updating your abstract/bio, and what your talk should contain.
+* [Pre-record info](/speakers/pre-record/), for people submitting pre-recorded talks.
+* [Technical requirents](/speakers/live-tech-reqs/) for presenting live.
 
-## New!
-Information about our backstage platform (discord), tech-checks, and when to check-in for your talk is available in our [backstage guide for speakers](/backstage). This guidance is for all speakers, and in all channels, specialist tracks, live/pre-recording etc. [The backstage guide is what you need to read to find out where you need to be for your tech check!](/backstage)
 
-If you've recieved your invitation to register as a speaker and are wondering whats next, this is the page to read. ☝️
+## Key dates
+
+- <s>You need to tell us you are pre-recording by **15 August**.</s>
+- If you have applied and been accepted for an assisted pre-record slot, that will take place on **22-23 August**.
+- Your video file (if you are preparing it yourself) is due in by **23 August**. In most cases, we cannot make edits or accept new versions after these dates, but you can apply for an extension.
+- Rehearsals and tech tests for speakers are on **22-23 August**. (You'll need to book a slot&mdash;there's a link to do so on your ticket confirmation page.)
+- Your presentation goes to air **Friday 4&ndash;Saturday 5 September**.
+
+**Warning for pre-recorded talks:** If you miss these dates, you may not be able to pre-record! If this happens, we may have to ask that you present live instead.
 
 ## If you are presenting live:
 
