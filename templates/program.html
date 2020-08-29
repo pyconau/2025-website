@@ -15,7 +15,7 @@
 <p class="tz">All times shown in ACST (UTC+09:30). <a href="https://pretalx.com/pycon-au-2020/schedule/export/schedule.ics">iCal</a>, <a href="https://pretalx.com/pycon-au-2020/schedule/export/schedule.json">JSON</a>.</p>
 
 <s-schedule-outer>
-<s-schedule style="--day-start: {{ first_min }}; --day-end: {{ last_min }}; --total-tracks: 4;">
+<s-schedule style="--day-start: {{ first_min }}; --day-end: {{ last_min }}; --total-tracks: 4;" data-start="{{ first.start.isoformat() }}" data-end="{{ last.end.isoformat() }}">
     {% if day.0 == 'fri' %}
         <s-track style="--track: 1;">
             <a href="/program/science-data-and-analytics/">
@@ -53,11 +53,11 @@
         style="--start: {{ session.start.timestamp()|int // 60 }}; --end: {{ session.end.timestamp()|int // 60 }}; --track: {{ session.room }};"
         href='{% url "session", session %}'
     >
-        <p class="time">
+        <p class="time" data-start="{{ session.start.isoformat() }}" data-end="{{ session.end.isoformat() }}">
             {{ session.start.strftime('%I:%M')}}&ndash;{{ session.end.strftime('%I:%M') }}
-            <span class="backstage-only-inline">{{ session.type }}</span>
         </p>
         {{ session.title }}
+        <span class="backstage-only-inline">{{ session.type }}</span>
         <div class="speaker">
             {% for speaker in session.speakers %}
                 {{ speaker.name }}{% if not loop.last %},{% endif %}
@@ -73,6 +73,7 @@
             {% else %} {{ hr }}:00 am
             {% endif %}
             </s-time>
+            <s-time-rule style="--at: {{ x }}"></s-time-rule>
         {% endfor %}
 </s-schedule>
 </s-schedule-outer>

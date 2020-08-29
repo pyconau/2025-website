@@ -29,7 +29,7 @@ s-schedule {
   display: grid;
   @include vertical {
     width: 100%;
-    grid-template-columns: 75px repeat(var(--total-tracks), 1fr);
+    grid-template-columns: auto auto repeat(var(--total-tracks), 1fr);
     grid-template-rows: auto repeat(
         calc(var(--day-end) - var(--day-start)),
         1fr
@@ -38,7 +38,7 @@ s-schedule {
   @include horizontal {
     height: 100%;
     width: calc((var(--day-end) - var(--day-start)) * 5px);
-    grid-template-rows: 25px repeat(var(--total-tracks), 1fr);
+    grid-template-rows: auto auto repeat(var(--total-tracks), 1fr);
     grid-template-columns: auto repeat(
         calc(var(--day-end) - var(--day-start)),
         1fr
@@ -59,14 +59,14 @@ s-schedule a.session {
   padding: 7px;
   margin: 2px;
   @include vertical {
-    grid-column-start: calc(var(--track) + 1);
+    grid-column-start: calc(var(--track) + 2);
     grid-column-end: span 1;
     grid-row-start: calc(var(--start) - var(--day-start) + 2);
     grid-row-end: calc(var(--end) - var(--day-start) + 2);
     font-size: 16px;
   }
   @include horizontal {
-    grid-row-start: calc(var(--track) + 1);
+    grid-row-start: calc(var(--track) + 2);
     grid-row-end: span 1;
     grid-column-start: calc(var(--start) - var(--day-start) + 2);
     grid-column-end: calc(var(--end) - var(--day-start) + 2);
@@ -84,10 +84,14 @@ s-schedule a.session {
     font-size: 0.6em;
     font-weight: bold;
     font-family: $heading-font;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-s-track {
+s-track,
+s-tz-header {
   text-align: center;
   padding: 5px;
   position: sticky;
@@ -99,15 +103,34 @@ s-track {
   -webkit-backdrop-filter: blur(4px);
   @include vertical {
     grid-row: 1;
-    grid-column: calc(var(--track) + 1);
+    grid-column: calc(var(--track) + 2);
   }
   @include horizontal {
     grid-column: 1;
-    grid-row: calc(var(--track) + 1);
+    grid-row: calc(var(--track) + 2);
+  }
+}
+
+s-track {
+  @include horizontal {
     writing-mode: vertical-rl;
     transform: rotate(0.5turn);
     font-size: 13px;
-    //text-orientation: sideways;
+  }
+}
+
+s-tz-header {
+  @include vertical {
+    grid-column: 1;
+    &.local {
+      grid-column: 2;
+    }
+  }
+  @include horizontal {
+    grid-row: 1;
+    &.local {
+      grid-row: 2;
+    }
   }
 }
 
@@ -116,17 +139,37 @@ s-now {
   color: #aaa;
   padding: 3px;
   @include vertical {
-    grid-column-start: 1;
-    grid-column-end: calc(var(--total-tracks) + 2);
+    text-align: center;
+    grid-column: 1;
+    &.local {
+      grid-column: 2;
+    }
     grid-row-start: calc(var(--at) - var(--day-start) + 2);
     grid-row-end: span 60;
+  }
+  @include horizontal {
+    grid-row: 1;
+    &.local {
+      grid-row: 2;
+    }
+    grid-column-start: calc(var(--at) - var(--day-start) + 2);
+    grid-column-end: span 60;
+  }
+  z-index: -2;
+}
+
+s-time-rule,
+s-now-rule {
+  @include vertical {
+    grid-column-start: 1;
+    grid-column-end: calc(var(--total-tracks) + 3);
+    grid-row: calc(var(--at) - var(--day-start) + 2);
     border-top: 1px solid #ddd;
   }
   @include horizontal {
     grid-row-start: 1;
-    grid-row-end: calc(var(--total-tracks) + 2);
-    grid-column-start: calc(var(--at) - var(--day-start) + 2);
-    grid-column-end: span 60;
+    grid-row-end: calc(var(--total-tracks) + 3);
+    grid-column: calc(var(--at) - var(--day-start) + 2);
     border-left: 1px solid #ddd;
   }
   z-index: -2;
