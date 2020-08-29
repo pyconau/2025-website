@@ -1,4 +1,4 @@
 ---
-title: One anonymous sponsor
+title: Five anonymous sponsors
 level: contributor
 ---
