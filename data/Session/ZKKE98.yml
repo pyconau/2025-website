@@ -3,7 +3,7 @@ start: 2020-09-04 10:25:00
 end: 2020-09-04 10:50:00
 room: 4
 track: devoops
-type:
+type: P
 abstract: <p>This talk covers the devops for a data pipeline channeling images from
   a self-hosted Passive Rain Radar in Nairobi to WebApps, Mobile apps and bots in
   Twitter and WhatsApp. The idea was put together in a restaurant and hastily deployed
