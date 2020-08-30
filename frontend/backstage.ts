@@ -37,7 +37,7 @@ function clockTick(output: HTMLElement) {
   output.innerText = now
     .setZone("Australia/Adelaide")
     .toLocaleString(TIME_COMPACT_ADL)
-  setTimeout(clockTick.bind(this, output), 1000 - (now.toMillis() % 1000))
+  setTimeout(clockTick.bind(null, output), 1000 - (now.toMillis() % 1000))
 }
 
 export default function () {
@@ -48,11 +48,14 @@ export default function () {
     localStorage.removeItem("backstage")
   }
 
-  if (localStorage.getItem("backstage") !== null) {
+  if (
+    localStorage.getItem("backstage") !== null ||
+    qs.get("speaker") === "true"
+  ) {
     document.body.classList.add("backstage")
 
     // add backstage bar
-    const bar = backstageBar.content.firstElementChild.cloneNode(
+    const bar = backstageBar.content.firstElementChild!.cloneNode(
       true,
     ) as HTMLElement
     document.body.appendChild(bar)
@@ -61,18 +64,20 @@ export default function () {
     clockTick(time)
 
     // handle any reltime tags
-    document.querySelectorAll("[data-reltime]").forEach((el: HTMLElement) => {
-      const dt = DateTime.fromISO(el.dataset.reltime)
+    ;(document.querySelectorAll("[data-reltime]") as NodeListOf<
+      HTMLElement
+    >).forEach((el) => {
+      const dt = DateTime.fromISO(el.dataset.reltime!)
       console.log(el, dt)
-      const rtt = reltimeSpan.content.firstElementChild.cloneNode(
+      const rtt = reltimeSpan.content.firstElementChild!.cloneNode(
         true,
       ) as HTMLElement
-      rtt.querySelector(".reltime-fixed").innerHTML = `${dt.toLocaleString(
+      rtt.querySelector(".reltime-fixed")!.innerHTML = `${dt.toLocaleString(
         TIME_HRMIN_ADL,
       )} (${dt.toLocaleString(TIME_HRMIN)})`
       const relative = rtt.querySelector(".reltime-relative")
       setInterval(() => {
-        relative.innerHTML = dt.toRelative()
+        relative!.innerHTML = dt.toRelative() || ""
       }, 1000)
       el.textContent = ""
       el.appendChild(rtt)
