@@ -19,7 +19,8 @@ def paginate(url):
     next_url = url
     while next_url:
         res = requests.get(
-            next_url, headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+            next_url,
+            headers={"Authorization": f"Token {PRETALX_TOKEN}"},
         )
         res.raise_for_status()
         data = res.json()
@@ -85,14 +86,12 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
     with open(f'data/Session/{session["code"]}.yml', "w") as f:
         start = dateutil.parser.isoparse(session["slot"]["start"]).replace(tzinfo=None)
         end = dateutil.parser.isoparse(session["slot"]["end"]).replace(tzinfo=None)
-        try:
-            type_answer_id = next(
-                x["options"][0]["id"]
-                for x in session["answers"]
-                if x["question"]["id"] == 549
-            )
-        except (StopIteration, IndexError):
-            type_answer_id = None
+        type_answer_id = (
+            "P"
+            if session["internal_notes"]
+            and "*PREREC:ACCEPT" in session["internal_notes"]
+            else "L"
+        )
         try:
             cw = next(
                 x["answer"] for x in session["answers"] if x["question"]["id"] == 547
@@ -106,7 +105,7 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
                 "end": end,
                 "room": rooms[session["slot"]["room"]["en"]],
                 "track": tracks[session["track"]["en"]],
-                "type": session_types[type_answer_id] if type_answer_id else None,
+                "type": type_answer_id,
                 "abstract": parse_markdown(session["abstract"]),
                 "description": parse_markdown(session["description"]),
                 "code": session["code"],
