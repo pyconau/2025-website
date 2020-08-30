@@ -1,6 +1,8 @@
-import { DateTime, LocalZone } from "luxon"
+import { DateTime, LocalZone, Settings } from "luxon"
 import backstage from "./backstage"
 import program from "./program"
+
+Settings.defaultLocale = "en-AU"
 
 const FORMATTER_DIFF_DAY = Intl.DateTimeFormat("en-au", {
   weekday: "short",
