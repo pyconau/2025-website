@@ -1,6 +1,6 @@
 ---
 title: Virtual Hands-on Python Lab
-date: Septmeber 9 2020, 12:30 ACST
+date: September 9 2020, 12:30 ACST
 url: https://www.snowflake.com/webinar/virtual-hands-on-lab-python/?utm_source=direct-mail&utm_medium=pycon&utm_campaign=pycon
 ---
 
