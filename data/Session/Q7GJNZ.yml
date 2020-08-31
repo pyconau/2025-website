@@ -3,7 +3,7 @@ start: 2020-09-05 11:00:00
 end: 2020-09-05 11:25:00
 room: 1
 track:
-type: L
+type: P
 abstract: "<p>Very often we in our daily usage of Python, we face errors related to\
   \ $PATH, $PYTHONPATH, or other import related errors. A clear understanding of the\
   \ import system helps us to fix these errors properly, and build extensions on top\
