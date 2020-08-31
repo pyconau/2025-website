@@ -3,7 +3,7 @@ start: 2020-09-05 16:35:00
 end: 2020-09-05 17:00:00
 room: 2
 track:
-type: L
+type: P
 abstract: <p>Command-line applications and interfaces are used by both newcomers and
   experienced Python developers everyday. But do you know how they came to be? Hop
   on to this ship as we go through the CLI galaxy and look at its history, explore
