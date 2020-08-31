@@ -1,8 +1,11 @@
 name: Carina C. Zona
 pronouns: she/her
-bio: <p>Carina C. Zona is a developer, advocate, and certified sex educator. She spends
-  a lot of time thinking about the unexpected cultural effects of our decisions as
-  programmers. Carina is also the founder of CallbackWomen, which is on a mission
-  to radically increase gender diversity at the podium of professional programmers’
-  conferences.</p>
+bio: "<p>Carina C. Zona is a developer, advocate, and certified sex educator. She\
+  \ spends a lot of time thinking about the unexpected cultural effects of our decisions\
+  \ as programmers.</p>\n<p>Her talk \"Biometric Unsecurity\" will expand on themes\
+  \ explored in her PyconAu 2015 keynote, \"Consequences of an Insightful Algorithm\"\
+  , to delve into how biometrics and are misunderstood, misrepresented, and misused\
+  \ for a wide range of harms that include human rights abuses.</p>\n<p>Carina is\
+  \ also the founder of CallbackWomen, which is on a mission to radically increase\
+  \ gender diversity at the podium of professional programmers’ conferences.</p>"
 has_pic: true
