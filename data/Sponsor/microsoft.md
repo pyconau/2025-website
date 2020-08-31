@@ -2,8 +2,8 @@
 title: Microsoft
 logo: microsoft.png
 level: digital
-website: https://microsoft.com
-twitter: azureadvocates
+website: https://aka.ms/pyconlineau/azure
+twitter: microsoftaudev
 order: 4
 ---
 

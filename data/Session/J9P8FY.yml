@@ -4,47 +4,20 @@ end: 2020-09-04 09:40:00
 room: 3
 track: education
 type: L
-abstract: "<p>The Girls’ Programming Network has a well tested formula for getting\
-  \ girls to love coding, used around Australia. It involves big events where girls\
-  \ can do hands-on coding and unplugged activities, socialise with each other and\
-  \ meet mentors. It’s all about breaking stereotypes by seeing heaps of girls and\
-  \ women like you, enjoying things alongside you. But when pandemic strikes, is maintaining\
-  \ a community based on connection even possible? We were left wondering if it was\
-  \ even possible to run an online version of GPN that stays true to our values? Would\
-  \ girls even want to sign up to more hours of online learning? </p>\n<p>The answer\
-  \ to all of those questions is yes, we created an online program that rivaled our\
-  \ in person offering. And while we can’t wait to meet up in person again, we’re\
-  \ on a mission to make GPN Online catch on permanently to change the landscape of\
-  \ girls in tech for all girls across Australia.</p>"
-description: "<p>The Girl’s Programming Network has been making girls fall in love\
-  \ with coding for 12 years, in this time we’ve established a tried and tested program\
-  \ that girls love, love to come back to, and love to tell their friends about, which\
-  \ is now used around Australia. But in the face of the pandemic, what were we going\
-  \ to do? With our largest events having over 200 people in attendance, it was clear\
-  \ that our regular offering would be off the table for quite some time. But we simply\
-  \ couldn’t just let the girls in tech dream float idly by until the pandemic was\
-  \ over. </p>\n<p>As with everything else, the only option was to go online and we\
-  \ had to ask ourselves a lot of questions:\n“Can we actually deliver a program that\
-  \ lives up to our values (Fun, Challenge, Social, Aspirational &amp; Relevant, Diverse,\
-  \ Network) in an online format?”, “If we can’t live up to our values should we not\
-  \ run it at all?”, “Will we get the community feeling that makes GPN more than just\
-  \ a lesson?”, “Will girls even want to sign up given they are already doing home\
-  \ schooling?”.</p>\n<p>Through great thought and consultation with our community\
-  \ we orchestrated a model that rivals our in-person offering. I’ll take you through\
-  \ the philosophy, the interwoven tech solution  (composed of Zoom, Slack and Grok\
-  \ Learning), and the tricks and tips that meant we could take outreach online at\
-  \ scale, without losing the interpersonal interactions and community spirit. We’ll\
-  \ take a look together at what the kids said, how we managed to make it “nothing\
-  \ like home schooling”. We even learned something we and you could use in your in-person\
-  \ teaching.</p>\n<p>While we will by no means be getting rid of our in person events\
-  \ forever, the end of COVID definitely won’t be an end of GPN Online. We have big\
-  \ plans for our online model to take GPN to girls of regional and rural Australia.\
-  \  While we have GPN nodes in many cities, even some regional centres already, much\
-  \ of the country is still yet to join the GPN community. With our online model we\
-  \ hope to reach the girls that would never make it to an in person GPN, and to boot\
-  \ strap soon to be in person communities so they can hit the ground running with\
-  \ a critical mass of girls who’ve started and collected online.</p>"
+abstract: <p>Cities have locked down and we have no idea when we’ll be able to host
+  large outreach events in person again. How do we persevere with our mission to get
+  girls involved with tech?  Can we sustain the communities built up over years online
+  and maintain impact and enjoyment?</p>
+description: "<p>The Girls’ Programming Network has a well tested-formula for creating\
+  \ communities of girls and women centred around a passion for coding. But when pandemic\
+  \ strikes, is maintaining communities based around connecting with hundreds of like-minded\
+  \ people even possible? Is it even possible to run an online event that upholds\
+  \ our values? And will kids even want to sign up for more hours of online learning?</p>\n\
+  <p>I’ll take you through how we devised a plan to keep the GPN spirit alive online,\
+  \ with a dynamic schedule of learning, socialising and fun! I’ll show you the tech\
+  \ that made it all possible, tell you the lessons we learnt along the way, and let\
+  \ you in on some of the things we’ll be keeping in the long term.</p>"
 code: J9P8FY
 speakers:
 - TQKR8P
-cw:
+cw: <p>COVID-19</p>
