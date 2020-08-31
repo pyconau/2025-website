@@ -1,4 +1,5 @@
 ---
-title: Five anonymous sponsors
+title: Six anonymous sponsors
 level: contributor
+order: 10
 ---
