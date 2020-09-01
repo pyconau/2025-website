@@ -20,4 +20,10 @@ As with previous years, we have several types of tickets priced at different lev
     </a>
 </p>
 
-We’ll have more to share about our (extremely) online conference venue in the next few weeks. For now, you can expect to receive an invite link to your registered email address closer to the date. If you purchase multiple tickets (e.g. for a team to attend the conference), you’ll be prompted to enter an email address for each attendee so they can receive invite links nearer the time.
+## I've got my ticket! What now?
+
+You'll get an email **the day before the event starts**, which will give you access to the Venueless attendee platform. You'll also be able to access it via your order confirmation email, and if you've lost that you can [request another from the "resend order links" page](https://pretix.eu/pyconau/online2020/resend/).
+
+You don't need any special software&mdash;just any modern Web browser. You'll need a webcam and microphone to voice and video chat with other attendees, but that's optional.
+
+If you purchase multiple tickets (e.g. for a team to attend the conference), you’ll be prompted to enter an email address for each attendee so they can receive invite links.
