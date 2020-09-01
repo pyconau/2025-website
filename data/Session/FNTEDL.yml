@@ -1,0 +1,30 @@
+title: 'Panel Discussion: Ethical AI - From talk to practice'
+start: 2020-09-04 09:15:00
+end: 2020-09-04 09:40:00
+room: 1
+track: science
+type: L
+abstract: <p>In this moderated panel, we'll hear from three experienced data science
+  practitioners on how issues of data privacy, algorithmic bias, and misaligned incentives
+  play out in their professional lives, as well as their perspectives on how we can
+  actively work towards more ethical AI.</p>
+description: "<p>As the fabric of civic infrastructure becomes increasingly digitised\
+  \ and data-driven, and our lives are nudged in the direction of what is presented\
+  \ as optimal many times a day, there is an increasing awareness of the importance\
+  \ of ethical AI. Issues that have been called out in particular are: data privacy,\
+  \ the harm that algorithmic bias can have, and the negative repercussions of unchecked\
+  \ recommendation systems blindly maximising engagement.</p>\n<p>That ethical AI\
+  \ has become part of the discourse of data and AI is a positive sign, but how do\
+  \ we move from just talk? Who is responsible? What can you do about these issues?</p>\n\
+  <p>In this moderated panel, we'll hear from three experienced data science practitioners\
+  \ on how these issues play out in their professional lives, as well as their perspectives\
+  \ on how we can actively work towards more ethical AI. </p>\n<p>We hope this discussion\
+  \ will provide a valuable backdrop upon which to reflect throughout the rest of\
+  \ the day as we cover a range of exciting topics in science, data, and analytics.</p>"
+code: FNTEDL
+speakers:
+- PWXNKT
+- CUKWDN
+- RSPMBK
+- MGHJGP
+cw:
