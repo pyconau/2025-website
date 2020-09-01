@@ -11,8 +11,8 @@ abstract: "<p>At some point, every engineer has to decide whether to write tests
   \ is really easy. This talk goes over three ways to test S3 and leaves you with\
   \ code examples that you can take to your next project.</p>"
 description: "<ul>\n<li>Benefits of testing code that uses S3</li>\n<li>\n<p>In-depth\
-  \ code examples of three ways to test S3:</p>\n</li>\n<li>\n<p>Mock the S3 API using\
-  \ moto</p>\n</li>\n<li>Mock out the S3 API responses using botocore stubs</li>\n\
+  \ code examples of three ways to test S3:</p>\n</li>\n<li>\n<p>Mock out the S3 API\
+  \ responses using botocore stubs</p>\n</li>\n<li>Mock the S3 API using moto</li>\n\
   <li>Spin up a LocalStack S3 instance and test against that</li>\n</ul>"
 code: VXXUWE
 speakers:
