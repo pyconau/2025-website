@@ -22,3 +22,7 @@ to = "/speakers/tips/"
 [[redirects]]
 from = "/backstage/"
 to = "/speakers/backstage/"
+
+[[redirects]]
+from = "/speakers/*"
+to = "/speakers/"
