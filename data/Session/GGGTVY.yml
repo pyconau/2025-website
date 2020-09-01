@@ -3,7 +3,7 @@ start: 2020-09-04 13:20:00
 end: 2020-09-04 13:45:00
 room: 2
 track: security
-type: L
+type: P
 abstract: "<p>The talk begins with introduction to deception technology, deception\
   \ types and methods, deceptive security life cycle. In this talk, we will demonstrate\
   \ the following deception tools implemented using python language:\n• WebTrap (https://github.com/IllusiveNetworks-Labs/WebTrap):\
