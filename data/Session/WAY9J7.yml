@@ -3,7 +3,7 @@ start: 2020-09-05 09:25:00
 end: 2020-09-05 10:05:00
 room: 1
 track:
-type: L
+type: P
 abstract: "<p>This year has felt like we fell into a strange land, full of new rules,\
   \ new dangers, things the wrong size. But unlike Alice on her trip through the looking\
   \ glass, we have company, and we have community. </p>\n<p>Python, more than any\
