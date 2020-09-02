@@ -49,7 +49,6 @@ def parse_markdown(text):
             "h2",
             "h3",
             "s",
-            "strike",
             "del",
             "ins",
         ),
