@@ -26,3 +26,7 @@ to = "/speakers/backstage/"
 [[redirects]]
 from = "/speakers/*"
 to = "/speakers/"
+
+[[redirects]]
+from = "/shirt/"
+to = "https://www.redbubble.com/people/pyconau/shop"
