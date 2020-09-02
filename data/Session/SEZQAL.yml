@@ -4,30 +4,19 @@ end: 2020-09-04 18:10:00
 room: 1
 track: science
 type: L
-abstract: <p>There exists some beautiful mathematical models of economies and disease
-  that offer insights, for instance, into how our economies can crash. Traditionally,
-  exploring these models have involved a lot of specialist mathematical programming.
-  Here we showcase a small python framework that simplifies the programming of these
-  kinds of models by leveraging python libraries such as dash and scipy. The framework
-  exposes a built-in UI that allows an interactive exploration of how economies might
-  collapse, or diseases break out into epidemics.</p>
+abstract: "<p>There exists some beautiful mathematical models of economies and disease\
+  \ that offer insights, for instance, into how our economies can crash. Traditionally,\
+  \ exploring these models have involved a lot of specialist mathematical programming.\
+  \ Here we showcase a small python framework that simplifies the programming of these\
+  \ kinds of models by leveraging python libraries such as dash and scipy. The framework\
+  \ exposes a built-in UI that allows an interactive exploration of how economies\
+  \ might collapse, or diseases break out into epidemics.</p>\n<p>This talk contains\
+  \ discussion of epidemiological modelling of COVID-19, and of measures of violence\
+  \ in a nation state.</p>"
 description: "<h2>Outline</h2>\n<ol>\n<li>Show examples of beautiful numerical models\
-  \ that use differential equations<ol>\n<li>Peter Turchin's model of empire disintegration</li>\n\
-  <li>Steve Keen's model of debt-drive collapse in the business cycle</li>\n<li>Standard\
-  \ SIR model of how infectious diseases rips through a population</li>\n</ol>\n</li>\n\
-  <li>Show how painful it is to build the models yourself<ol>\n<li>Brief look at how\
-  \ these models are presented in the literature, standard mathematical nomenclature</li>\n\
-  <li>Show select real world examples of yukky mathematical programming, matlab, fortran,\
-  \ even python</li>\n</ol>\n</li>\n<li>Describe the framework that simplifies this<ol>\n\
-  <li>introduce my modeldrop library </li>\n<li>heavy use of string lookup in dictionaries</li>\n\
-  <li>translation from math to descriptive variable names</li>\n<li>outsourcing the\
-  \ solver to scipy</li>\n<li>functional abstractions to transform into scipy</li>\n\
-  <li>use dash and plotly to expose graphs and controls in a transparent manner  \
-  \ </li>\n</ol>\n</li>\n<li>Contrast the readable code examples of this framework\
-  \ to other examples</li>\n<li>Demonstrate the built-in interactive UI<ol>\n<li>watch\
-  \ how interest rate increases can destroy an economy</li>\n<li>show how empires\
-  \ self-destruct</li>\n<li>show how different kinds of infections rip through a population</li>\n\
-  </ol>\n</li>\n</ol>"
+  \ that use differential equations</li>\n<li>Show how painful it is to build the\
+  \ models yourself</li>\n<li>Describe a python framework that simplifies this</li>\n\
+  <li>Demonstrate how the built-in interactive UI opens up exploration</li>\n</ol>"
 code: SEZQAL
 speakers:
 - EZXQCD
