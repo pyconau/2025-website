@@ -85,4 +85,23 @@ export default function scheduleInit(schedule: HTMLElement) {
     format: "short",
   })
   schedule.appendChild(localLabel)
+
+  // now marker
+  let nowMarker: HTMLElement | undefined
+  function updateNow() {
+    if (nowMarker && eventEnd.diffNow().milliseconds < 0) {
+      schedule.removeChild(nowMarker)
+      return
+    }
+    const nowMillis = Date.now()
+    if (!nowMarker) {
+      nowMarker = document.createElement("s-now-rule")
+      schedule.appendChild(nowMarker)
+    }
+    nowMarker.style.setProperty("--at", "" + nowMillis / 60_000)
+    window.setTimeout(updateNow, 60_000 - (nowMillis % 60_000))
+  }
+  const timeUntilStart = eventStart.diffNow().milliseconds
+  if (timeUntilStart < 0) updateNow()
+  else window.setTimeout(updateNow, timeUntilStart)
 }
