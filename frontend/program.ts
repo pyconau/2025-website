@@ -47,7 +47,7 @@ export default function scheduleInit(schedule: HTMLElement) {
     newTime.innerText = hour.toLocaleString(HOUR_MARKER)
     const minute = hour.toMillis() / 60_000
     rules.add(minute)
-    newTime.style.setProperty("--at", minute.toFixed(8))
+    newTime.style.setProperty("--at", "" + minute)
     schedule.appendChild(newTime)
     hour = hour.plus({ hours: 1 })
   }
@@ -67,13 +67,13 @@ export default function scheduleInit(schedule: HTMLElement) {
     console.log(hour.toMillis(), minute)
     rules.add(minute)
     newTime.classList.add("local")
-    newTime.style.setProperty("--at", minute.toFixed(8))
+    newTime.style.setProperty("--at", "" + minute)
     schedule.appendChild(newTime)
     hour = hour.plus({ hours: 1 })
   }
   rules.forEach((rule) => {
     const newRule = document.createElement("s-time-rule")
-    newRule.style.setProperty("--at", rule.toFixed(0))
+    newRule.style.setProperty("--at", "" + rule)
     schedule.appendChild(newRule)
   })
   const acstLabel = document.createElement("s-tz-header")
@@ -81,6 +81,8 @@ export default function scheduleInit(schedule: HTMLElement) {
   schedule.appendChild(acstLabel)
   const localLabel = document.createElement("s-tz-header")
   localLabel.classList.add("local")
-  localLabel.innerText = new LocalZone().offsetName(hour, { format: "short" })
+  localLabel.innerText = new LocalZone().offsetName(hour.toMillis(), {
+    format: "short",
+  })
   schedule.appendChild(localLabel)
 }
