@@ -4,12 +4,13 @@ const ZONE = "Australia/Adelaide"
 const TIME_ONLY: DateTimeFormatOptions = {
   hour: "numeric",
   minute: "numeric",
-  dayPeriod: null,
 }
+const TIME_ONLY_DIFF_DAY = { ...TIME_ONLY, weekday: "short" }
 const TIME_ONLY_TZ = { ...TIME_ONLY, timeZoneName: "short" }
 const TIME_ONLY_ACST = { ...TIME_ONLY, timeZone: "Australia/Adelaide" }
 
 const HOUR_MARKER = { hour: "numeric" }
+const HOUR_MARKER_DIFF_DAY = { ...HOUR_MARKER, weekday: "short" }
 
 export default function scheduleInit(schedule: HTMLElement) {
   // Show local times on all time markers
@@ -22,15 +23,13 @@ export default function scheduleInit(schedule: HTMLElement) {
     const end = DateTime.fromISO(time.dataset.end!, {
       zone: ZONE,
     })
+    const startLocal = start.toLocal()
+    const startLocalIsDiffDay = startLocal.weekday !== start.weekday
     time.innerText = `${start.toLocaleString(
       TIME_ONLY_ACST,
-    )}\u2013${end.toLocaleString(
-      TIME_ONLY_ACST,
-    )} (${start
-      .toLocal()
-      .toLocaleString(TIME_ONLY)}\u2013${end
-      .toLocal()
-      .toLocaleString(TIME_ONLY_TZ)})`
+    )}\u2013${end.toLocaleString(TIME_ONLY_ACST)} (${startLocal.toLocaleString(
+      startLocalIsDiffDay ? TIME_ONLY_DIFF_DAY : TIME_ONLY,
+    )}\u2013${end.toLocal().toLocaleString(TIME_ONLY_TZ)})`
     console.log(start, end)
   })
 
@@ -48,7 +47,7 @@ export default function scheduleInit(schedule: HTMLElement) {
     newTime.innerText = hour.toLocaleString(HOUR_MARKER)
     const minute = hour.toMillis() / 60_000
     rules.add(minute)
-    newTime.style.setProperty("--at", minute.toFixed(0))
+    newTime.style.setProperty("--at", minute.toFixed(8))
     schedule.appendChild(newTime)
     hour = hour.plus({ hours: 1 })
   }
@@ -58,11 +57,17 @@ export default function scheduleInit(schedule: HTMLElement) {
   while (hour.diff(eventEnd).milliseconds < 0) {
     console.log(hour.toLocaleString(HOUR_MARKER))
     const newTime = document.createElement("s-time")
-    newTime.innerText = hour.toLocaleString(HOUR_MARKER)
+    const hourHasDifferentDay = hour.weekday !== hour.setZone(ZONE).weekday
+    const label = hour.toLocaleString(
+      hourHasDifferentDay ? HOUR_MARKER_DIFF_DAY : HOUR_MARKER,
+    )
+    console.log(hourHasDifferentDay, label, hour)
+    newTime.innerText = label
     const minute = hour.toMillis() / 60_000
+    console.log(hour.toMillis(), minute)
     rules.add(minute)
     newTime.classList.add("local")
-    newTime.style.setProperty("--at", minute.toFixed(0))
+    newTime.style.setProperty("--at", minute.toFixed(8))
     schedule.appendChild(newTime)
     hour = hour.plus({ hours: 1 })
   }
