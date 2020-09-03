@@ -17,9 +17,9 @@ description: "<p>Relational and NoSQL DBs have ruled the roost for a couple of d
   \ Euler in 1736: those data structures which are \"nodes\" connected by \"relationships\"\
   .</p>\n<p>This talk will be a primer on what this all means, how they work and when\
   \ they're a good idea to use. There will also be a demonstration and discussion\
-  \ about how to kick off with graph DBs driven by python.</p>\n&lt;hr /&gt;\n<p>This\
-  \ talk is aimed towards people who are familiar with conventional databases, but\
-  \ have never used Graph databases before.</p>"
+  \ about how to kick off with graph DBs driven by python, specifically for people\
+  \ who are familiar with conventional databases, but have never used Graph databases\
+  \ before, but might be curious.</p>"
 code: A878CA
 speakers:
 - BUWU8Z
