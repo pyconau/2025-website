@@ -23,41 +23,22 @@ comfortable and included.
 
 We value your participation and appreciate your help in realising this goal.
 
-<!--
 
-TODO when safety team is set up
-
-## Safety team contacts
+## How to make a report
 
 If at any time during the conference you feel unsafe or want to report questionable behaviour, please contact a member of the safety team.
 
-#### Send SMS or Call: 0484 394 239
-Note: **number no longer monitored**, since the conference is now over.
-#### Email: [safety@2019.pycon-au.org](mailto:safety@2019.pycon-au.org)
+You can do that from Venueless, by finding the **Direct messages** section in the left-hand sidebar, clicking the plus icon next to it, and searching for one of the safety team members below. **Each safety team member will have a "Safety" badge next to their name.**
 
-Find any volunteer or organiser (green lanyard or green bandana) who will direct you to one of the following people, who you can also message or email directly.
+* Russell Keith-Magee
+* Eliza Sorensen
+* Ned Letcher
+* Nicky Ringland
+* Tom Eastman
+* Linda McIver
 
-#### Katie Bell
-**Twitter**: [@notsolonecoder](https://twitter.com/notsolonecoder)<br>
-**Email:** katie@katharos.id.au<br>
-**PyConAU Slack:** Katie Bell
+Alternatively, **you can also email [safety@pycon.org.au](mailto:safety@pycon.org.au)**.
 
-#### Lilly Ryan
-**Twitter:** [@attacus_au](https://twitter.com/attacus_au)<br>
-**Email:** lilly@attacus.net<br>
-**PyConAU Slack:** Lilly Ryan
-
-#### Amber Brown ("HawkOwl")
-**Twitter:** [@hawkieowl](https://twitter.com/hawkieowl)<br>
-**Email:** hawkowl@atleastfornow.net<br>
-**PyConAU Slack:** Amber Brown (HawkOwl)
-
-#### maia sauren
-**Twitter:** [@sauramaia](https://twitter.com/sauramaia)<br>
-**Email:** sauramaia@gmail.com<br>
-**PyConAU Slack:** sauramaia
-
--->
 
 ## Be respectful
 
