@@ -1,4 +1,8 @@
 name: Lizzie Silver
 pronouns:
-bio: ''
-has_pic: false
+bio: <p>Dr Lizzie Silver is a data scientist at Silverpond, an AI company based in
+  Melbourne, Australia. She did her PhD at Carnegie Mellon University on methods for
+  learning the structure of causal models. She was a Data Science for Social Good
+  fellow in 2015, served on the Random Hacks of Kindness committee for two years,
+  and is a member of the Campaign to Stop Killer Robots.</p>
+has_pic: true
