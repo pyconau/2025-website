@@ -2,7 +2,7 @@
 title: Planet Innovation
 logo: planetinnovation.png
 level: digital
-website: planetinnovation.com/about/careers
+website: http://planetinnovation.com/about/careers
 twitter: planetinnovate
 order: 5
 ---
