@@ -1,6 +1,6 @@
 title: What happens when you run manage.py test ?
-start: 2020-09-04 16:35:00
-end: 2020-09-04 17:00:00
+start: 2020-09-04 16:35:00+09:30
+end: 2020-09-04 17:00:00+09:30
 room: 2
 track: djangoconau
 type: P
