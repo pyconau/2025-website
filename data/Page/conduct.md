@@ -30,6 +30,7 @@ If at any time during the conference you feel unsafe or want to report questiona
 
 You can do that from Venueless, by finding the **Direct messages** section in the left-hand sidebar, clicking the plus icon next to it, and searching for one of the safety team members below. **Each safety team member will have a "Safety" badge next to their name.**
 
+* Maia Sauren
 * Russell Keith-Magee
 * Eliza Sorensen
 * Ned Letcher

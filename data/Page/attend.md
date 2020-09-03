@@ -22,7 +22,7 @@ As with previous years, we have several types of tickets priced at different lev
 
 ## I've got my ticket! What now?
 
-You'll get an email **the day before the event starts**, which will give you access to the Venueless attendee platform. You'll also be able to access it via your order confirmation email, and if you've lost that you can [request another from the "resend order links" page](https://pretix.eu/pyconau/online2020/resend/).
+You'll be able to access it via your order confirmation email, and if you've lost that you can [request another from the "resend order links" page](https://pretix.eu/pyconau/online2020/resend/).
 
 You don't need any special software&mdash;just any modern Web browser. You'll need a webcam and microphone to voice and video chat with other attendees, but that's optional.
 
