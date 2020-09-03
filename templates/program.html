@@ -2,9 +2,9 @@
 {% block html_class %}schedule{% endblock %}
 {% block content %}
 {% set first = sessions|min(attribute='start') %}
-{% set first_min = first.start.timestamp()|int // 60 + 570 %}
+{% set first_min = first.start.timestamp()|int // 60 %}
 {% set last = sessions|max(attribute='end') %}
-{% set last_min = last.end.timestamp()|int // 60 + 570 %}
+{% set last_min = last.end.timestamp()|int // 60 %}
 
 <div class="switcher">
     <a href="/program/fri/"{% if day.0 == 'fri' %} class='selected'{% endif %}>Friday</a>
@@ -67,7 +67,7 @@
     {% endfor %}
         {% for x in range(first_min, last_min, 60) %}
             <s-time style="--at: {{ x }}">
-            {% set hr = x % 1440 // 60 %}
+            {% set hr = (x + 570) % 1440 // 60 %}
             {% if hr > 12 %} {{ hr - 12 }} pm
             {% elif hr == 12 %} {{ hr }} pm {# WHY IS TIME LIKE THIS #}
             {% else %} {{ hr }} am
