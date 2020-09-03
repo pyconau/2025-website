@@ -56,6 +56,7 @@
         <p class="time" data-start="{{ session.start.isoformat() }}" data-end="{{ session.end.isoformat() }}">
             {{ session.start.strftime('%I:%M')}}&ndash;{{ session.end.strftime('%I:%M') }}
         </p>
+        {{ session.start|pprint }} {{session.start.tzinfo|pprint }}
         {{ session.title }}
         <span class="backstage-only-inline">{{ session.type }}</span>
         <div class="speaker">
