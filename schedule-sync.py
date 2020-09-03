@@ -84,8 +84,8 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
     with open(f'data/Session/{session["code"]}.yml', "w") as f:
-        start = dateutil.parser.isoparse(session["slot"]["start"]).replace(tzinfo=None)
-        end = dateutil.parser.isoparse(session["slot"]["end"]).replace(tzinfo=None)
+        start = dateutil.parser.isoparse(session["slot"]["start"])
+        end = dateutil.parser.isoparse(session["slot"]["end"])
         type_answer_id = (
             "P"
             if session["internal_notes"]

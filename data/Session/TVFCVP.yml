@@ -1,6 +1,6 @@
 title: A website controlled Lego Robot using the Raspberry Pi
-start: 2020-09-04 11:00:00
-end: 2020-09-04 11:25:00
+start: 2020-09-04 11:00:00+09:30
+end: 2020-09-04 11:25:00+09:30
 room: 3
 track: education
 type: L
