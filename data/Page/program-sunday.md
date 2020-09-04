@@ -3,6 +3,18 @@
 
 # Development sprints and social events
 
+Summary (all times ACST, UTC+09:30):
+
+- **Ongoing:** Mentored sprints
+- **11am:** Lightning talks
+- **1pm:** MarioKart 8 Deluxe tournament (150cc GP)
+- **2pm:** Jackbox Games BoF
+- **3pm:** CurlyboiFest
+- **4pm:** MarioKart 8 Deluxe tournament (150cc Battle)
+- **5pm:** Animal Crossing BoF
+
+Oh, and if you want to run a BoF of your own, let us know! Scroll down for more!
+
 <!-- TODO some stuff about regular sprints -->
 
 ## Mentored sprints

@@ -9,6 +9,7 @@
   </head>
   <body>
     {% block nav %}
+    {% if not hide_nav %}
     <nav class="{{ nav_class }}">
       <a id="nav-logo" href="/"
         ><img src="{% asset 'Logo_Standard_PyConline.svg' %}"
@@ -26,6 +27,7 @@
         >
       </div>
     </nav>
+    {% endif %}
     {% endblock %}
     <div id="content">
       {% block content %}
