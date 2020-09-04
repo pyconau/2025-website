@@ -32,46 +32,11 @@ main %}
   {{s.title}} {% endfor %}
 
   <hr />
-  <table>
-    <tr>
-      <td colspan="2">
-        <h1>Video Sponsor</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img
-          src='{% asset "sponsor-logos/buildkite.svg" %}'
-          class="sponsorlogo"
-          alt="buildkite"
-        />
-      </td>
-      <td style="vertical-align: middle">
-        Buildkite's sponsorship has helped us engage
-        <a href="https://nextdayvideo.com/">Next Day Video</a> for their
-        expertise to ensure all our speakers look and sound amazing.
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <h1>Infrastructure Sponsor</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img
-          src='{% asset "sponsor-logos/microsoft.png" %}'
-          class="sponsorlogo"
-          alt="microsoft"
-        />
-      </td>
-      <td style="vertical-align: middle">
-        Microsoft's sponsorship and support helps PyConline AU run online through <a href="https://aka.ms/pyconlineau/azure">Microsoft Azure</a>.
-      </td>
-    </tr>
-  </table>
-  <hr />
 
-  <h1>Auspice</h1>
+<table>
+{% for s in specialsponsor %} {{m.special(s)}} {% endfor %}
+</table>
+
+ <h1>Auspice</h1>
   {% for s in auspice %} {{m.sponsor(s)}} {% endfor %} {% endblock %}
 </li>

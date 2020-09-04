@@ -43,3 +43,23 @@
 <p>{{w.content}}</p>
 <a href="{{w.url}}" target="_blank">Register for this workshop ↗</a>
 {%- endmacro %}
+
+{%- macro special(s) %}
+<tr>
+      <td colspan="2">
+        <h1>{{s.type}}</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <img
+      src='{% asset "sponsor-logos/" + s.logo %}'
+      class="sponsorlogo"
+      alt="{{s.title}}"
+	  />
+      </td>
+      <td style="vertical-align: middle">
+		{{s.content}}
+      </td>
+    </tr> 
+{% endmacro %}
