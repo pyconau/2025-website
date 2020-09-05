@@ -7,6 +7,8 @@ Welcome to PyConline AU! We're glad you're here.
 
 Purchased a ticket and need to know how to join us? Check your order for the "Join online event" link. This will take you to our event hosted on Venueless. 
 
+Following our opening address, our [shirts](/shirt) are now available. 
+
 The conference schedule is slightly shorter this year running over three days instead of five. Like you, we’re also spending a lot of time in front of screens at home and we’ve been extremely mindful to ensure there are scheduled breaks and some time to spend offline as well.
 
 On **Friday 4 September**, our 5 specialist tracks will stream in 4 virtual rooms.  There are 39 sessions for you to choose from on Friday, or pick a single track and stay tuned all day. [Check out the schedule for Friday](/program/fri/)
