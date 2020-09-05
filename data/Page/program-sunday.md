@@ -51,7 +51,6 @@ With the Rube Codeberg competition, we want you to be as elaborate as possible. 
 
 Only one entry per person/per group.
 
-Entries will close two hours before the end of sprints, and will be judged on Venueless from 4pm ACST Sunday.
 **To enter**: participants must commit their entry to Github (so we have timestamps) and flick us the link in the Venueless stage chat.
 
 The winner will get the grand prize of ultimate bragging rights, a fancy certificate you can proudly display in your office, and one of our exclusive PyCon AU 2020 Curlyboi coffee mugs!
