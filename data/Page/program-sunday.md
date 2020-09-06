@@ -44,6 +44,24 @@ To prevent people preparing entries in advance, details about the competition wi
 
 Entries to this competition will be open from the start of the Sunday sprints, and showcased and judged on Venueless from 4pm ACST Sunday in the Curlyboi Theatre.
 
+### Rules
+
+With the Rube Codeberg competition, we want you to be as elaborate as possible. But! There are rules!
+
+**Your Program must**:
+
+* **Print "Hello world!"** on the screen (somehow - we don't care how - doesn't have to be the console) as a result of being executed
+* Be written for this competition (and to prove it, you must **import and use the Beautiful Soup library** in your entry)
+* Be **under 200 lines** (all comments are part of the line count)
+* Be **understandable/easy to parse by humans**
+* Actually **run successfully**
+* Be written in **Python 3**
+* **Abide by the Code of Conduct**, as with all conference activities. This means no malware, no offensive language or imagery, etc
+
+Only one entry per person/per group.
+
+**To enter**: participants must commit their entry to Github (so we have timestamps) and flick us the link in the Venueless stage chat.
+
 The winner will get the grand prize of ultimate bragging rights, a fancy certificate you can proudly display in your office, and one of our exclusive PyCon AU 2020 Curlyboi coffee mugs!
 
 
@@ -52,7 +70,7 @@ The winner will get the grand prize of ultimate bragging rights, a fancy certifi
 PyConline is first and foremost a community conference, and we encourage everyone to join us in numerous social activities throughout the day&mdash;quasi-unofficial mini events known as Birds-of-a-Feather sessions (or BoFs for short). If you have an idea for a BoF session you would like to run, contact the team at [program@pycon.org.au](mailto:program@pycon.org.au).
 
 
-### Lightning Talks
+## Lightning Talks
 
 11am-12:30pm ACST, organised by: Chris Neugebauer
 
@@ -67,7 +85,7 @@ You can talk about any topic, but it should be reasonably interesting to the PyC
 To propose a lightning talk, and for more information, head over to the [Lightning Talk Proposal Form](https://forms.gle/MMHuLirugucBbrS88)
 
 
-### MarioKart 8 Deluxe tournament
+## MarioKart 8 Deluxe tournament
 
 1pm–2pm & 3:30pm–4pm ACST, organised by: Leigh Brenecki
 
