@@ -3,19 +3,26 @@
 
 # Development sprints and social events
 
-Summary (all times ACST, UTC+09:30):
+Summary (all times are in Australian <del>Central</del> Curlyboi Standard Time):
 
-- **9am:** Mentored sprints
-- **11am:** Lightning talks
-- **1pm:** MarioKart 8 Deluxe tournament (150cc GP)
-- **2pm:** Jackbox Games BoF
-- **3pm:** CurlyboiFest
-- **4pm:** MarioKart 8 Deluxe tournament (150cc Battle)
-- **5pm:** Animal Crossing BoF
+- **Ongoing:** Mentored sprints
+- **<time datetime="2020-08-06T11:00+09:30">11am</time>:** Lightning talks
+- **<time datetime="2020-08-06T13:00+09:30">1pm</time>:** MarioKart 8 Deluxe tournament (150cc GP)
+- **<time datetime="2020-08-06T14:00+09:30">2pm</time>:** Jackbox Games BoF
+- **<time datetime="2020-08-06T15:00+09:30">3pm</time>:** Rube Codeberg submissions close
+- **<time datetime="2020-08-06T15:00+09:30">3pm</time>:** CurlyboiFest
+- **<time datetime="2020-08-06T15:30+09:30">3:30pm</time>:** MarioKart 8 Deluxe tournament (150cc Battle)
+- **<time datetime="2020-08-06T16:00+09:30">4pm</time>:** Rube Codeberg competition judging
+- **<time datetime="2020-08-06T17:00+09:30">5pm</time>:** Animal Crossing BoF
+
 
 Oh, and if you want to run a BoF of your own, let us know! Scroll down for more!
 
-<!-- TODO some stuff about regular sprints -->
+## Development sprints
+
+Sprints are where people get together to work on an open source project&mdash;normally around a table, but this year it'll be around a set of voice chats and webcams.
+
+As well as the mentored sprints (below), keep an eye out in **#sprints** for opportunities to help each other out on projects.
 
 ## Mentored sprints
 
@@ -37,11 +44,15 @@ To get started, enter the **sprints-mentoring-coordination** video channel in ve
 
 ## Rube Codeberg competition
 
+Post your Rube Codeberg submissions in [the Rube Codeberg submissions room](https://pyconau.venueless.events/rooms/21846fdb-16fc-46ab-b032-710b4dd0bee6) **before <time datetime="2020-08-06T15:00+09:30">3pm ACST</time>**, and use [the Rube Codeberg discussions room](https://pyconau.venueless.events/rooms/bd1836ab-a8e4-4637-aeff-46738fe13d20) for general discussion!
+
 If you've ever wondered just how egregious your use of Python could be, or how unnecessarily elaborately you could engineer a simple piece of code, we want your entries in our Rube Codeberg competition! Named for the famously complicated machines drawn by American cartoonist Rube Goldberg, the Codeberg competition is a chance for you to showcase your creativity. Everyone is welcome to participate in the competition - or just tune in as the results are announced. You may find you learn a thing or two about how Python ticks along the way.
 
 To prevent people preparing entries in advance, details about the competition will be announced in the conference closing ceremony, and the full set of rules will be posted here at the same time.
 
-Entries to this competition will be open from the start of the Sunday sprints, and showcased and judged on Venueless from **4pm ACST Sunday in the Curlyboi Theatre**.
+
+Entries to this competition will be open from the start of the Sunday sprints, and showcased and judged on Venueless from <time datetime="2020-08-06T16:00+09:30">4pm ACST</time> Sunday in the Curlyboi Theatre.
+
 
 ### Rules
 
@@ -86,12 +97,12 @@ To propose a lightning talk, and for more information, head over to the [Lightni
 
 ## MarioKart 8 Deluxe tournament
 
-1pm–2pm & 4pm–5pm ACST, organised by: Leigh Brenecki
+1pm–2pm & 3:30pm–4pm ACST, organised by: Leigh Brenecki
 
 Drop into the #mk8d channel, where we’ll be holding the following tournaments:
 
 *   1pm: 150cc GP
-*   4pm: 150cc Battle
+*   3:30pm: 150cc Battle
 
 It’s worth keeping an eye on the channel throughout the day, as well—there’s likely to be other, ad-hoc tournaments set up throughout the day if there’s interest.
 
