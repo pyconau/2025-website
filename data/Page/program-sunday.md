@@ -3,19 +3,25 @@
 
 # Development sprints and social events
 
-Summary (all times ACST, UTC+09:30):
+Summary (all times are in Australian <del>Central</del> Curlyboi Standard Time, UTC+09:30):
 
 - **Ongoing:** Mentored sprints
 - **11am:** Lightning talks
 - **1pm:** MarioKart 8 Deluxe tournament (150cc GP)
 - **2pm:** Jackbox Games BoF
+- **3pm:** Rube Codeberg submissions close
 - **3pm:** CurlyboiFest
-- **4pm:** MarioKart 8 Deluxe tournament (150cc Battle)
+- **3:30pm:** MarioKart 8 Deluxe tournament (150cc Battle)
+- **4pm:** Rube Codeberg competition judging
 - **5pm:** Animal Crossing BoF
 
 Oh, and if you want to run a BoF of your own, let us know! Scroll down for more!
 
-<!-- TODO some stuff about regular sprints -->
+## Development sprints
+
+Sprints are where people get together to work on an open source project&mdash;normally around a table, but this year it'll be around a set of voice chats and webcams.
+
+As well as the mentored sprints (below), keep an eye out in **#sprints** for opportunities to help each other out on projects.
 
 ## Mentored sprints
 
@@ -29,6 +35,8 @@ Do you have a project you would like to host during these sprints? Contact [zac@
 
 
 ## Rube Codeberg competition
+
+Post your Rube Codeberg submissions in [the Rube Codeberg submissions room](https://pyconau.venueless.events/rooms/21846fdb-16fc-46ab-b032-710b4dd0bee6) **before 3pm ACST**, and use [the Rube Codeberg discussions room](https://pyconau.venueless.events/rooms/bd1836ab-a8e4-4637-aeff-46738fe13d20) for general discussion!
 
 If you've ever wondered just how egregious your use of Python could be, or how unnecessarily elaborately you could engineer a simple piece of code, we want your entries in our Rube Codeberg competition! Named for the famously complicated machines drawn by American cartoonist Rube Goldberg, the Codeberg competition is a chance for you to showcase your creativity. Everyone is welcome to participate in the competition - or just tune in as the results are announced. You may find you learn a thing or two about how Python ticks along the way.
 
@@ -61,12 +69,12 @@ To propose a lightning talk, and for more information, head over to the [Lightni
 
 ### MarioKart 8 Deluxe tournament
 
-1pm–2pm & 4pm–5pm ACST, organised by: Leigh Brenecki
+1pm–2pm & 3:30pm–4pm ACST, organised by: Leigh Brenecki
 
 Drop into the #mk8d channel, where we’ll be holding the following tournaments:
 
 *   1pm: 150cc GP
-*   4pm: 150cc Battle
+*   3:30pm: 150cc Battle
 
 It’s worth keeping an eye on the channel throughout the day, as well—there’s likely to be other, ad-hoc tournaments set up throughout the day if there’s interest.
 
