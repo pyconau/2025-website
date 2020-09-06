@@ -59,6 +59,7 @@ Entries to this competition will be open from the start of the Sunday sprints, a
 With the Rube Codeberg competition, we want you to be as elaborate as possible. But! There are rules!
 
 **Your Program must**:
+
 * **Print "Hello world!"** on the screen (somehow - we don't care how - doesn't have to be the console) as a result of being executed
 * Be written for this competition (and to prove it, you must **import and use the Beautiful Soup library** in your entry)
 * Be **under 200 lines** (all comments are part of the line count)
