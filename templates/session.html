@@ -45,6 +45,18 @@
 <div class="content-warning">{{ session.cw }}</div>
 {% endif %}
 
+{% if session.youtube_slug %}
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/{{ session.youtube_slug }}"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+{% endif %}
+
 <div class="lede">{{ session.abstract }}</div>
 
 {{ session.description }}

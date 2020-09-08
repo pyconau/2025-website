@@ -77,6 +77,16 @@ tracks = {
 
 seen_speakers = set()
 
+yt_resp = requests.get(
+    "https://veyepar.nextdayvideo.com/main/C/pyconau/S/pyconau_2020.json"
+)
+yt_resp.raise_for_status()
+youtube_slugs = {
+    x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
+    for x in yt_resp.json()
+    if x["host_url"] is not None
+}
+
 for entry in os.listdir("data/Session/"):
     os.unlink(f"data/Session/{entry}")
 
@@ -111,6 +121,7 @@ for session in paginate("https://pretalx.com/api/events/pycon-au-2020/talks/"):
                 "code": session["code"],
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
+                "youtube_slug": youtube_slugs.get(session["code"]),
             },
             f,
         )

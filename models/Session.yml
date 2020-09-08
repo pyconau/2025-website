@@ -9,3 +9,4 @@ description: String
 code: String
 type: String
 cw: String
+youtube_slug: String
