@@ -15,6 +15,7 @@ Summary (all times are in Australian <del>Central</del> Curlyboi Standard Time):
 - **<time datetime="2020-08-06T16:00+09:30">4pm</time>:** Rube Codeberg competition judging
 - **<time datetime="2020-08-06T17:00+09:30">5pm</time>:** Animal Crossing BoF
 
+
 Oh, and if you want to run a BoF of your own, let us know! Scroll down for more!
 
 ## Development sprints
@@ -33,6 +34,13 @@ Bring some enthusiasm, a basic knowledge of `git`, and we'll help you through th
 
 Do you have a project you would like to host during these sprints? Contact [zac@zhd.dev](mailto:zac@zhd.dev)
 
+## Itinerary
+**0900** ACST start
+**0930** ACST project presentations
+**1630** ACST closing presentations
+
+To get started, enter the **sprints-mentoring-coordination** video channel in venueless.
+
 
 ## Rube Codeberg competition
 
@@ -42,7 +50,9 @@ If you've ever wondered just how egregious your use of Python could be, or how u
 
 To prevent people preparing entries in advance, details about the competition will be announced in the conference closing ceremony, and the full set of rules will be posted here at the same time.
 
+
 Entries to this competition will be open from the start of the Sunday sprints, and showcased and judged on Venueless from <time datetime="2020-08-06T16:00+09:30">4pm ACST</time> Sunday in the Curlyboi Theatre.
+
 
 ### Rules
 
@@ -60,10 +70,11 @@ With the Rube Codeberg competition, we want you to be as elaborate as possible. 
 
 Only one entry per person/per group.
 
-**To enter**: participants must commit their entry to Github (so we have timestamps) and flick us the link in the Venueless stage chat.
+**To enter**: participants must commit their entry to Github (so we have timestamps) and flick us the link in the Venueless **Rube Codeberg submissions** channel.
 
 The winner will get the grand prize of ultimate bragging rights, a fancy certificate you can proudly display in your office, and one of our exclusive PyCon AU 2020 Curlyboi coffee mugs!
 
+Questions? head on over to the **Rube Codeberg discussions** channel.
 
 ## Birds-of-a-Feather sessions
 
