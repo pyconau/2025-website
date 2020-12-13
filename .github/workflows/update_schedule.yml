@@ -2,8 +2,8 @@ name: Update schedule
 on:
   push:
     branches: [ghci]
-  schedule:
-    - cron: "*/20 * * * *"
+  #schedule:
+  #  - cron: "*/20 * * * *"
 
 jobs:
   check:
