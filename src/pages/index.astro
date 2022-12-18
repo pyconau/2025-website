@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro'
+import logoReversed from '../imgs/Logo_Reversed.svg'
+import Navigation from '../components/Navigation.astro'
+import MailingListSignup from '../components/MailingListSignup.astro';
+---
+<Base>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExhibitionEvent",
+  "location": "Adelaide Convention Centre",
+  "url": "https://2023.pycon.org.au/",
+  "name": "PyCon AU 2023",
+  "startDate": "2023-08-18",
+  "endDate": "2023-08-22",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "inLanguage": "en-AU"
+}
+</script>
+<header id="header" slot="nav">
+  <img
+    src={logoReversed}
+    alt="PyCon AU"
+    role="heading"
+    aria-level="1"
+  />
+  <div class="rotated">
+    <article>
+      <h1>
+        PyCon AU is back! And we need&nbsp;sponsors!
+      </h1>
+      <a href="/sponsor/">I want to help make it happen!</a>
+    </article>
+    <Navigation logo={false} />
+  </div>
+</header>
+<main>
+  <h1>PyCon AU is back!</h1>
+  <p>
+    PyCon AU 2023 will be held in the <b>Adelaide Convention Centre</b>, on the bank of the Karawirra Parri / Torrens River in Tarndanya / Adelaide between <b>18&ndash;22 August 2023</b>.
+  </p>
+  <p>
+    We'll have lots more information on this website over the coming months, but to find out more as it happens you can subscribe to our mailing list:
+  </p>
+  <MailingListSignup />
+</main>
+</Base>

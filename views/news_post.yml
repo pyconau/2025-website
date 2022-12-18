@@ -1,5 +1,0 @@
-path:
-  template: /news/{{ post.pk }}
-  for-each:
-    post: session.query(News).all()
-template: news_post

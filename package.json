@@ -1,31 +1,27 @@
 {
-  "name": "pyconau-2020-website",
+  "name": "2023-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel watch frontend/index.scss frontend/index.js --no-hmr --out-dir assets/build --public-url /assets/build/",
-    "build": "parcel build frontend/index.scss frontend/index.js --out-dir assets/build --public-url /assets/build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pyconau/2020-website.git"
-  },
+  "keywords": [],
   "author": "",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/pyconau/2020-website/issues"
-  },
-  "homepage": "https://github.com/pyconau/2020-website#readme",
+  "license": "ISC",
   "devDependencies": {
-    "@types/luxon": "^1.26.3",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.8",
-    "typescript": "^4.0.5"
+    "@types/jsdom": "^20.0.1",
+    "astro": "^1.7.1",
+    "prettier": "^2.8.1",
+    "prettier-plugin-astro": "^0.7.0",
+    "sass": "^1.57.0",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "luxon": "^1.26.0",
+    "@astrojs/markdown-remark": "^1.1.3",
+    "@astrojs/mdx": "^0.13.0",
+    "jsdom": "^20.0.3",
+    "luxon": "^3.1.1",
     "reset-css": "^5.0.1",
     "sheng": "^1.0.0"
   }

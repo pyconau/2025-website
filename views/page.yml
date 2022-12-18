@@ -1,5 +1,0 @@
-path:
-  template: /{% if page.path %}{{ page.path }}{% else %}{{ page.pk }}{% endif %}
-  for-each:
-    page: session.query(Page).filter(~Page.pk.in_('about',)).all()
-template: page
