@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro'
 import logoReversed from '../imgs/Logo_Reversed.svg'
 import Navigation from '../components/Navigation.astro'
-import MailingListSignup from '../components/MailingListSignup.astro';
+import MailingListSignup from '../components/MailingListSignup.astro'
+import NoOrphanText from '../components/NoOrphanText.astro'
 ---
 <Base>
 <script type="application/ld+json">
@@ -29,7 +30,11 @@ import MailingListSignup from '../components/MailingListSignup.astro';
   <div class="rotated">
     <article>
       <h1>
-        PyCon AU is back! And we need&nbsp;sponsors!
+        <NoOrphanText>
+          PyCon AU is back! And we need
+          
+          sponsors!
+        </NoOrphanText>
       </h1>
       <a href="/sponsor/">I want to help make it happen!</a>
     </article>

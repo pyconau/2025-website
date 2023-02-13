@@ -1,0 +1,80 @@
+---
+import {JSDOM} from 'jsdom'
+const html = await Astro.slots.render('default')
+const dom = JSDOM.fragment(`<div>${html}</div>`)
+
+enum SearchState {
+	NO_TEXT,
+	WITHIN_FINAL_WORD,
+	DONE
+}
+
+/*
+We want to essentially do a depth-first search, from the end of the
+node tree going backwards, to find the final run of whitespace
+characters that is followed by non-whitespace characters. (That is,
+in the string " a b c ", we want to find the space between "b"
+and "c".)
+
+If that run of characters is something that the browser will collapse
+to a single space, we want to replace it with a non-breaking space.
+Otherwise, we assume that either we are dealing with non-Latin text
+that uses funky spaces, or that the author knew what they were doing
+with regards to using funky spaces, and in either case leave
+it alone.
+
+We naïvely assume that we are not going to encounter any nodes that
+contain text that will not be displayed to the user (e.g. script or
+style elements), and that the currently applied CSS white-space mode
+is 'normal' (since it doesn't really make sense to use this element
+at all otherwise).
+*/
+
+let COLLAPSIBLE_WS = /^([ \t\r\n]+)$/
+
+function descendInto(node: Node, searchState: SearchState): SearchState{
+	if (node.nodeType == 3) {
+		// TEXT_NODE
+		console.log(JSON.stringify(node.textContent))
+		if (searchState == SearchState.NO_TEXT) {
+			let [_, rest, penultimate_wsp, final_text, final_wsp] = node.textContent.match(/^(.*?\S)??(\s*?)(\S*)(\s*)$/s)
+			if (!final_text){
+				// there is no text in this node at all, carry on
+				return SearchState.NO_TEXT
+			}
+			if (!penultimate_wsp){
+				// this node begins part way through the final word
+				return SearchState.WITHIN_FINAL_WORD
+			}
+			// if we get this far, we've found what we want to replace
+			if (COLLAPSIBLE_WS.test(penultimate_wsp)){
+				// only replace if it's collapsible to a single regular space
+				node.textContent = `${rest || ''}\u00a0${final_text}${final_wsp}`
+			}
+			return SearchState.DONE
+		} else {
+			let [_, rest, penultimate_wsp, final_text] = node.textContent.match(/^(.*?\S)??(\s*)(\S*?)$/s)
+			if (!penultimate_wsp) {
+				// if there is no _whitespace_ in this node, carry on
+				return SearchState.WITHIN_FINAL_WORD
+			}
+			// if we get this far, we've found what we want to replace
+			if (COLLAPSIBLE_WS.test(penultimate_wsp)){
+				// only replace if it's collapsible to a single regular space
+				node.textContent = `${rest || ''}\u00a0${final_text}`
+			}
+			return SearchState.DONE
+		}
+	} else {
+		for (let child of [...node.childNodes].reverse()){
+			searchState = descendInto(child, searchState)
+			if (searchState == SearchState.DONE) break
+		}
+		return searchState
+	}
+}
+
+descendInto(dom.firstElementChild, SearchState.NO_TEXT)
+let newHtml = dom.firstElementChild.innerHTML
+---
+<Fragment set:html={newHtml} />
