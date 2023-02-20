@@ -9,7 +9,7 @@ If you haven't joined us for a PyCon AU before, attending PyCon AU may seem a bi
 
 ## We have an enforced code of conduct.
 
-It's not taken lightly. It provides a framework in which our event operates, and all attendees must observe and adhere to it. [Read our code of conduct.](https://2020.pycon.org.au/conduct/)
+It's not taken lightly. It provides a framework in which our event operates, and all attendees must observe and adhere to it. [Read our code of conduct.](/conduct/)
 
 ## Everyone is welcome 🏳️‍🌈
 
