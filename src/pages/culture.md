@@ -1,15 +1,11 @@
 ---
 title: Culture
-layout: '../layouts/Page.astro'
+layout: "../layouts/Page.astro"
 ---
 
 # The Culture of PyCon AU
 
 If you haven't joined us for a PyCon AU before, attending PyCon AU may seem a bit different to other conferences.
-
-For those who have joined us before, we're still the same conference with the same values and culture from our in person events.
-
-Given we're an online event, you may not be able to see many visual indicators of this, so we're outlining some of the important parts here.
 
 ## We have an enforced code of conduct.
 
@@ -47,7 +43,6 @@ The lightning talks from 2018 and 2019 yielded many amazing talks that fed into 
 - Woolworths: reference to the lightning talk ["History and Politics"](https://youtu.be/AJqcxEzRdSY?t=1117), and [reprise](https://youtu.be/q2VmIUaOS9o?t=3623).
 - Tim has too many projects: a recurring talk by [Tim Ansell](https://twitter.com/mithro) in which he invites community contributions to his many projects, including but not limited to some of the hardware used by Next Day Video, the AV team contracted by PyCon AU ([sample lightning talk](https://youtu.be/BmWLhVMWC9I?t=482)).
 - "One minute!": when lightning talks are run in person, our affectionately named 'Lightning Talk Czar' [Christopher Neugebauer](https://twitter.com/chrisjrn) uses [lightningtimer.io](http://lightningtimer.io/) to ensure talks are 5 minutes long. When 60 seconds remain, he often helps the speaker with a verbal queue, an ominous "One minute!".
-
 
 ## We don't do that here.
 
