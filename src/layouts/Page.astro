@@ -1,7 +1,13 @@
 ---
 import Base from './Base.astro'
+export type Props = {
+	content:{
+  title?: string
+  }
+}
+const {title} = (Astro.props as Props).content
 ---
-<Base>
+<Base title={title}>
 	<main>
 		<slot />
 	</main>
