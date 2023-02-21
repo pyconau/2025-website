@@ -26,22 +26,6 @@ const {title} = Astro.props as Props
         <h1>PyCon AU is an event of</h1>
         <img src={sponsorLa} alt="Linux Australia" />
       </section>
-      <section class="signup">
-        <h1>Sign up for announcements</h1>
-        <form
-          method="post"
-          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
-          class="mailing-list-signup-form"
-        >
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="snek@example.com"
-          />
-          <button type="submit">Sign up</button>
-        </form>
-      </section>
       <section class="copyright">
         <b>Contact us:</b>
         <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
