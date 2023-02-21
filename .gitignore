@@ -3,3 +3,4 @@ assets/build/
 data/SpeakerPack/*
 !data/SpeakerPack/_template.md.j2
 node_modules
+dist/
