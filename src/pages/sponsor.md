@@ -1,11 +1,23 @@
 ---
 title: Sponsor
 order: 1
-layout: '../layouts/Page.astro'
+layout: "../layouts/Page.astro"
 ---
 
-# Sponsor PyCon AU
+# PyCon AU Sponsorships
 
-Our sponsor prospectus is coming soon!
+PyCon AU 2023 is an annual conference dedicated to the Python programming language and its ecosystem. The conference brings together Python developers, enthusiasts, and industry professionals from around Australia and the world for three days of talks, tutorials, and networking opportunities, with two days of additional programming sprints focused on practical open source development.
 
-In the meantime, feel free to drop us a line at [sponsor@pycon.org.au](mailto:sponsor@pycon.org.au)!
+As a sponsor, you will have the opportunity to showcase your company and products to a highly engaged audience of Python developers, data scientists, educators, and open-source advocates. Your support will not only contribute to the success of the conference but also to the growth and development of the Python community in Australia and beyond.
+
+In addition to the benefits of exposure and brand recognition, sponsoring PyCon Australia 2023 will provide your company with the opportunity to recruit top talent, demonstrate thought leadership, and build relationships with potential customers and partners. We offer a range of sponsorship packages and can work with you to tailor a package that meets your specific needs and objectives.
+
+Join us for PyCon Australia 2023 and become part of the vibrant and dynamic community of Python developers and enthusiasts! [Get the Prospectus](/files/PyCon%20AU%202023%20Sponsorship%20Prospectus.pdf), or get in touch at sponsor@pycon.org.au.
+
+## Prospectus
+
+We’re excited to announce that the 2023 Pycon AU Sponsorship Prospectus has now been released, with a range of sponsorship tiers available. [Please download the PDF here.](/files/PyCon%20AU%202023%20Sponsorship%20Prospectus.pdf)
+
+## Early Bird Discounts
+
+An Early Bird Discount is now available for selected sponsorship tiers. Get in touch at sponsor@pycon.org.au to find out more! Early Bird sponsorships will **end** on April 16, 2023.
