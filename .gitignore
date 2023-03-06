@@ -1,4 +1,3 @@
-public/
 assets/build/
 data/SpeakerPack/*
 !data/SpeakerPack/_template.md.j2
