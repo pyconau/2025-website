@@ -3,8 +3,11 @@ type ButtonType = 'chonk' | 'smol'
 export type Props = {
   type?: ButtonType
   href: string
+  // ordinarily we'd just use <slot />, but mdx really loves putting stray <p>s in things sooooo
+  label?: string
+  block?: boolean
 }
-const {type, href} = (Astro.props as Props)
+const {type, href, label, block} = (Astro.props as Props)
 ---
 <style lang="scss">
 	@import "../vars.scss";
@@ -18,14 +21,20 @@ const {type, href} = (Astro.props as Props)
 	  padding: 0.3em 1em;
 	  border-radius: 5px;
 	
-	  &.btn-chonk {
+	  &.chonk {
 		font-size: 4em * 1 / 3;
 		border-radius: 5px * 4 / 3;
 	  }
 	
-	  &.btn-smol {
+	  &.smol {
 		font-size: 1em * 3 / 4;
 		border-radius: 5px * 3 / 4;
+	  }
+	  
+	  &.block {
+		  display: block;
+		  width: max-content;
+		  margin: 0 auto 20px auto;
 	  }
 	
 	  &:focus {
@@ -36,8 +45,11 @@ const {type, href} = (Astro.props as Props)
 	  &:hover {
 		background-color: darken($wattle-leaf, 10%);
 	  }
+	  
+	  // I give up, I can't get mdx to stop putting <p> tags everywhere
+	  :global(p) {
+		  margin: 0;
+	  }
 	}
 </style>
-<a class:list={["btn", type]} href={href}>
-	<slot />
-</a>
+<a class:list={["btn", {chonk: type == 'chonk', smol: type == 'smol', block: block}]} href={href}>{label ? label : <slot />}</a>
