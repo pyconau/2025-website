@@ -5,8 +5,9 @@ import sponsorLa from '../imgs/sponsor-logos/la.svg'
 import Navigation from '../components/Navigation.astro'
 export type Props = {
   title?: string
+  navigation?: boolean
 }
-const {title} = Astro.props as Props
+const {title, navigation} = Object.assign({}, {navigation: true}, Astro.props) as Props
 const fullTitle = title ? `${title}—PyCon AU 2023` : 'PyCon AU 2023'
 ---
 
@@ -19,7 +20,7 @@ const fullTitle = title ? `${title}—PyCon AU 2023` : 'PyCon AU 2023'
   </head>
   <body>
     <slot name="nav">
-      <Navigation />
+      {navigation && <Navigation />}
     </slot>
     <slot />
     <footer>

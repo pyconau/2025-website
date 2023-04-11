@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation.astro'
 import MailingListSignup from '../components/MailingListSignup.astro'
 import NoOrphanText from '../components/NoOrphanText.astro'
 ---
-<Base>
+<Base navigation={false}>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,7 +31,7 @@ import NoOrphanText from '../components/NoOrphanText.astro'
     <article>
       <h1>
         <NoOrphanText>
-          Our CFP is now open! Plus, be a part of our new format, PyCon Fair!
+          Our CFP is now open! Plus, a brand new format: PyCon Fair!
         </NoOrphanText>
       </h1>
       <a href="/program/">I want to submit a talk or a stall!</a>
