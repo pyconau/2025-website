@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from "astro:content";
+export type Props = {
+  sponsor: CollectionEntry<'sponsors'>
+}
+const {sponsor} = Astro.props as Props
+const {Content} = await sponsor.render()
+---
+<p id={sponsor.slug}>
+  <a href={sponsor.data.url}>
+	<img
+	  src={`sponsor-logos/${sponsor.data.logo}`}
+	  class="sponsorlogo"
+	  alt={sponsor.name}
+	/></a>
+</p>
+
+<Content />
+
+{/*
+{# social engagement links #} {% if s.twitter or s.website %}
+<p>
+  {% endif %} {% if s.website %}
+  <a href="{{s.website}}" target="_blank"
+	>Visit {{s.website | replace("https://", "") | replace("http://", "") }}</a
+  >
+  {% endif %} {% if s.twitter and s.website %} | {% endif %} {% if s.twitter %}
+  <a href="https://twitter.com/{{s.twitter}}" target="_blank"
+	>Follow @{{s.twitter}} on Twitter</a
+  >{% endif %}
+  {% if s.linkedin %} | <a href="{{s.linkedin}}" target="_blank">Follow {{s.title}} on LinkedIn</a>{%endif%}
+  {% if s.twitter or s.website %}
+</p>
+{% endif %} {%- endmacro %} {%- macro workshop(w) %}
+<h2>{{w.title}}, hosted by {% for s in w.sponsor%}{{s.title}}{%endfor%}</h2>
+<h4 style="margin-top: 0">{{w.date}}</h4>
+{% for s in w.sponsor %}<img
+  src='{% asset "sponsor-logos/" + s.logo %}'
+  class="sponsorlogo"
+  alt="{{s.title}}"
+/>{%endfor%}
+<p>{{w.content}}</p>
+<a href="{{w.url}}" target="_blank">Register for this workshop ↗</a>
+*/}

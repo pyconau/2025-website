@@ -1,0 +1,95 @@
+---
+import { getCollection, getEntryBySlug } from 'astro:content'
+import Base from '../layouts/Base.astro'
+import SponsorListing from '../components/SponsorListing.astro'
+// Get all entries from a collection. Requires the name of the collection as an argument.
+const allSponsors = await getCollection('sponsors')
+const platinum = allSponsors.filter(sponsor => sponsor.data.tier === 'platinum')
+// Get a single entry from a collection. Requires the name of the collection and the entry's slug as arguments.
+const sponsorPage = await getEntryBySlug('pages', 'sponsor')
+const Content = (await sponsorPage.render()).Content
+---
+
+<Base title="Sponsor">
+  <main>
+<h1>PyCon AU sponsors</h1>
+
+<p>PyCon AU is the national conference for developers using the Python Programming Language. Hosted annually since 2010, this event brings the national and international Python community together.</p>
+
+<p>The conference could not run without the generous support of our sponsors. We thank them for their financial commitment, and ongoing support and encouragement to make PyConline AU a special moment for our vibrant developer community.</p>
+
+<p>Your company can become a sponsor too! See the section on <a href="#opportunities">sponsorship opportunities</a> for more.</p>
+
+{/*
+<p>
+  Please take a moment to get to know the 2021 PyConline AU sponsors:<br>
+  {/*
+{% for s in platinum %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
+{% for s in gold %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
+{% for s in digital %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
+
+our <a href="#media">media partners</a>,
+our <a href="#contributors">contributors</a>, 
+and of course <a href="#auspice">Linux Australia</a>!
+</p>
+*/}
+
+{platinum &&
+	<>
+<h2 id='platinum'>Platinum Sponsor{platinum.length !== 1 && 's'}</h1>
+{platinum.map(sponsor => <SponsorListing sponsor={sponsor} />)}
+	</>}
+
+{/*
+{% if gold %}
+<h1>Gold Sponsor{% if gold | length != 1 %}s{% endif %}</h1>
+{% for s in gold %} {{m.sponsor(s)}} {% endfor %}
+<hr />
+{% endif %}
+
+{% if digital %}
+<h1>Digital Sponsor{% if digital | length != 1 %}s{% endif %}</h1>
+{% for s in digital %} {{m.sponsor(s)}} {% endfor %}
+
+<hr />
+{% endif %}
+
+{% if contributors %}
+<a name="contributors"></a>
+<h1>Contributor{% if contributors | length != 1 %}s{% endif %}</h1>
+<p>
+  We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>.
+  They are directly helping fund our financial assistance efforts for future
+  events:
+</p>
+
+<ul class="contributor-sponsors">
+{% for s in contributors %}
+  <li>
+	{{s.title}} {% if s.attribution %}{{s.attribution}}{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<hr />
+{% endif %}
+
+
+<a name="media"></a>
+<table>
+  {% for s in specialsponsor %} {{m.special(s)}} {% endfor %}
+</table>
+
+<h1>Auspice</h1>
+
+<a name="auspice"></a>
+  {% for s in auspice %} {{m.sponsor(s)}} {% endfor %}
+  
+*/}
+
+
+<h1 id='opportunities'>Sponsorship Opportunities</h1>
+
+<Content />
+  </main>
+  </Base>

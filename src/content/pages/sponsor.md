@@ -1,10 +1,6 @@
 ---
 title: Sponsor
-order: 1
-layout: "../layouts/Page.astro"
 ---
-
-# PyCon AU Sponsorships
 
 PyCon AU 2023 is an annual conference dedicated to the Python programming language and its ecosystem. The conference brings together Python developers, enthusiasts, and industry professionals from around Australia and the world for three days of talks, tutorials, and networking opportunities, with two days of additional programming sprints focused on practical open source development.
 
