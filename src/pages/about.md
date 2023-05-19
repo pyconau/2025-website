@@ -1,7 +1,7 @@
 ---
 title: About
 order: 1
-layout: '../layouts/Page.astro'
+layout: "../layouts/Page.astro"
 ---
 
 # About the conference

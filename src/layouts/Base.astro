@@ -1,22 +1,26 @@
 ---
-import './base.scss'
-import logo from '../imgs/logo.svg'
-import sponsorLa from '../imgs/sponsor-logos/la.svg'
-import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
+import "./base.scss"
+import logo from "../imgs/logo.svg"
+import sponsorLa from "../imgs/sponsor-logos/la.svg"
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro"
 export type Props = {
   title?: string
   navigation?: boolean
 }
-const {title, navigation} = Object.assign({}, {navigation: true}, Astro.props) as Props
-const fullTitle = title ? `${title}—PyCon AU 2023` : 'PyCon AU 2023'
+const { title, navigation } = Object.assign(
+  {},
+  { navigation: true },
+  Astro.props,
+) as Props
+const fullTitle = title ? `${title}—PyCon AU 2023` : "PyCon AU 2023"
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="{% block html_class %}{% endblock %}">
   <head>
     <meta charset="utf-8" />
-    <title>{ fullTitle }</title>
+    <title>{fullTitle}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
@@ -24,7 +28,7 @@ const fullTitle = title ? `${title}—PyCon AU 2023` : 'PyCon AU 2023'
       {navigation && <Navigation />}
     </slot>
     <slot />
-      <Footer />
+    <Footer />
   </body>
   <script type="text/javascript">
     if (window.location.hash === "#debug") document.body.classList.add("debug")
