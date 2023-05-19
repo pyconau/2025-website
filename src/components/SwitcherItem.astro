@@ -1,32 +1,33 @@
 ---
-import logoImg from '../imgs/Logo_Standard.svg'
+import logoImg from "../imgs/Logo_Standard.svg"
 export type Props = {
   href: string
   selected?: boolean
 }
-const {href, selected} = Astro.props as Props
+const { href, selected } = Astro.props as Props
 ---
+
 <style lang="scss">
-	@import '../vars.scss';
-	a {
-		border-radius: 4px;
-		margin-right: 2px;
-		font-family: $heading-font;
-		color: $wattle-leaf;
-		font-weight: bold;
-		text-decoration: none;
-		font-size: 20px;
-		padding: 3px 12px;
-		&:last-child {
-		  margin-right: 0;
-		}
-		&:hover {
-		  background-color: rgba($wattle-leaf, 0.2);
-		}
-		&.selected {
-		  background-color: $wattle-leaf;
-		  color: white;
-		}
-	  }
+  @import "../vars.scss";
+  a {
+    border-radius: 4px;
+    margin-right: 2px;
+    font-family: $heading-font;
+    color: $wattle-leaf;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: rgba($wattle-leaf, 0.2);
+    }
+    &.selected {
+      background-color: $wattle-leaf;
+      color: white;
+    }
+  }
 </style>
-<a href={href} class={selected ? 'selected' : null}><slot /></a>
+<a href={href} class={selected ? "selected" : null}><slot /></a>

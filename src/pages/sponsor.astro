@@ -1,26 +1,42 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content'
-import Base from '../layouts/Base.astro'
-import SponsorListing from '../components/SponsorListing.astro'
+import { getCollection, getEntryBySlug } from "astro:content"
+import Base from "../layouts/Base.astro"
+import SponsorListing from "../components/SponsorListing.astro"
 // Get all entries from a collection. Requires the name of the collection as an argument.
-const allSponsors = await getCollection('sponsors')
-const platinum = allSponsors.filter(sponsor => sponsor.data.tier === 'platinum')
-const auspice = allSponsors.find(sponsor => sponsor.data.tier === 'auspice')!
-const sponsorPage = await getEntryBySlug('pages', 'sponsor')
+const allSponsors = await getCollection("sponsors")
+const platinum = allSponsors.filter(
+  (sponsor) => sponsor.data.tier === "platinum",
+)
+const auspice = allSponsors.find((sponsor) => sponsor.data.tier === "auspice")!
+const sponsorPage = await getEntryBySlug("pages", "sponsor")
 const Content = (await sponsorPage.render()).Content
 ---
 
 <Base title="Sponsor">
   <main>
-<h1>PyCon AU sponsors</h1>
+    <h1>PyCon AU sponsors</h1>
 
-<p>PyCon AU is the national conference for developers using the Python Programming Language. Hosted annually since 2010, this event brings the national and international Python community together.</p>
+    <p>
+      PyCon AU is the national conference for developers using the Python
+      Programming Language. Hosted annually since 2010, this event brings the
+      national and international Python community together.
+    </p>
 
-<p>The conference could not run without the generous support of our sponsors. We thank them for their financial commitment, and ongoing support and encouragement to make PyConline AU a special moment for our vibrant developer community.</p>
+    <p>
+      The conference could not run without the generous support of our sponsors.
+      We thank them for their financial commitment, and ongoing support and
+      encouragement to make PyConline AU a special moment for our vibrant
+      developer community.
+    </p>
 
-<p>Your company can become a sponsor too! See the section on <a href="#opportunities">sponsorship opportunities</a> for more.</p>
+    <p>
+      Your company can become a sponsor too! See the section on <a
+        href="#opportunities">sponsorship opportunities</a
+      > for more.
+    </p>
 
-{/*
+    {
+      /*
 <p>
   Please take a moment to get to know the 2021 PyConline AU sponsors:<br>
   {/*
@@ -32,15 +48,22 @@ our <a href="#media">media partners</a>,
 our <a href="#contributors">contributors</a>, 
 and of course <a href="#auspice">Linux Australia</a>!
 </p>
-*/}
+*/
+    }
 
-{platinum &&
-	<>
-<h2 id='platinum'>Platinum Sponsor{platinum.length !== 1 && 's'}</h1>
-{platinum.map(sponsor => <SponsorListing sponsor={sponsor} />)}
-	</>}
+    {
+      platinum && (
+        <>
+          <h2 id="platinum">Platinum Sponsor{platinum.length !== 1 && "s"}</h2>
+          {platinum.map((sponsor) => (
+            <SponsorListing sponsor={sponsor} />
+          ))}
+        </>
+      )
+    }
 
-{/*
+    {
+      /*
 {% if gold %}
 <h1>Gold Sponsor{% if gold | length != 1 %}s{% endif %}</h1>
 {% for s in gold %} {{m.sponsor(s)}} {% endfor %}
@@ -85,13 +108,14 @@ and of course <a href="#auspice">Linux Australia</a>!
 <a name="auspice"></a>
   {% for s in auspice %} {{m.sponsor(s)}} {% endfor %}
   
-*/}
+*/
+    }
 
-<h1 id='auspice'>Auspice</h1>
-<SponsorListing sponsor={auspice} />
+    <h1 id="auspice">Auspice</h1>
+    <SponsorListing sponsor={auspice} />
 
-<h1 id='opportunities'>Sponsorship Opportunities</h1>
+    <h1 id="opportunities">Sponsorship Opportunities</h1>
 
-<Content />
+    <Content />
   </main>
-  </Base>
+</Base>

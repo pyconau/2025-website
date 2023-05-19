@@ -1,25 +1,34 @@
 ---
-import logoImg from '../imgs/Logo_Standard.svg'
+import logoImg from "../imgs/Logo_Standard.svg"
 export type Props = {
   navClass?: string
   logo?: boolean
 }
-const {navClass, logo} = Object.assign({}, {logo: true}, Astro.props as Props)
+const { navClass, logo } = Object.assign(
+  {},
+  { logo: true },
+  Astro.props as Props,
+)
 ---
+
 <nav class={navClass}>
-  { logo && <a id="nav-logo" href="/"
-	><img src={logoImg}
-  /></a> }
+  {
+    logo && (
+      <a id="nav-logo" href="/">
+        <img src={logoImg} />
+      </a>
+    )
+  }
   <ul>
-	<li><a href="/about">About</a></li>
-	<li><a href="/sponsor">Sponsor</a></li>
-	<li><a href="/program">Program</a></li>
-	<li><a href="/attend">Attend</a></li>
-	<li><a href="/conduct">Safety</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/sponsor">Sponsor</a></li>
+    <li><a href="/program">Program</a></li>
+    <li><a href="/attend">Attend</a></li>
+    <li><a href="/conduct">Safety</a></li>
   </ul>
   <div class="dates">
-	18&ndash;22 August 2023&emsp;&bull;&emsp;<span class="location"
-	  >Adelaide Convention Centre</span
-	>
+    18&ndash;22 August 2023&emsp;&bull;&emsp;<span class="location"
+      >Adelaide Convention Centre</span
+    >
   </div>
 </nav>

@@ -1,23 +1,26 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content"
 export type Props = {
-  sponsor: CollectionEntry<'sponsors'>
+  sponsor: CollectionEntry<"sponsors">
 }
-const {sponsor} = Astro.props as Props
-const {Content} = await sponsor.render()
+const { sponsor } = Astro.props as Props
+const { Content } = await sponsor.render()
 ---
+
 <p id={sponsor.slug}>
   <a href={sponsor.data.url}>
-	<img
-	  src={`/sponsor-logos/${sponsor.data.logo}`}
-	  class="sponsorlogo"
-	  alt={sponsor.name}
-	/></a>
+    <img
+      src={`/sponsor-logos/${sponsor.data.logo}`}
+      class="sponsorlogo"
+      alt={sponsor.name}
+    />
+  </a>
 </p>
 
 <Content />
 
-{/*
+{
+  /*
 {# social engagement links #} {% if s.twitter or s.website %}
 <p>
   {% endif %} {% if s.website %}
@@ -41,4 +44,5 @@ const {Content} = await sponsor.render()
 />{%endfor%}
 <p>{{w.content}}</p>
 <a href="{{w.url}}" target="_blank">Register for this workshop ↗</a>
-*/}
+*/
+}
