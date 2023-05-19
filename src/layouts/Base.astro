@@ -3,6 +3,7 @@ import './base.scss'
 import logo from '../imgs/logo.svg'
 import sponsorLa from '../imgs/sponsor-logos/la.svg'
 import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
 export type Props = {
   title?: string
   navigation?: boolean
@@ -23,21 +24,7 @@ const fullTitle = title ? `${title}—PyCon AU 2023` : 'PyCon AU 2023'
       {navigation && <Navigation />}
     </slot>
     <slot />
-    <footer>
-      <section class="sponsor auspice">
-        <h1>PyCon AU is an event of</h1>
-        <img src={sponsorLa} alt="Linux Australia" />
-      </section>
-      <section class="copyright">
-        <b>Contact us:</b>
-        <a href="https://fosstodon.org/@pyconau" rel="me">Mastodon</a>
-        &bull;
-        <a href="https://twitter.com/pyconau">Twitter</a>
-        &bull;
-        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
-        &copy; 2020&ndash;2023, the PyCon AU team
-      </section>
-    </footer>
+      <Footer />
   </body>
   <script type="text/javascript">
     if (window.location.hash === "#debug") document.body.classList.add("debug")

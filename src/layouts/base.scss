@@ -354,67 +354,6 @@ body {
   flex-grow: 1;
 }
 
-footer {
-  @include app-mode {
-    display: none;
-  }
-  form {
-    --form-colour: #777 !important;
-  }
-  display: grid;
-  line-height: 1.3em;
-  margin-top: 100px;
-  color: #777;
-  background-color: #eee;
-  grid-template:
-    "auspice video infra signup"
-    "auspice video infra copyright";
-  grid-template-columns: 1fr 1fr 1fr max-content;
-
-  @media only screen and (max-width: 959px) {
-    grid-template: "auspice" "video" "infra" "signup" "copyright";
-  }
-
-  section {
-    margin: 20px;
-    &.auspice {
-      grid-area: auspice;
-    }
-    &.video {
-      grid-area: video;
-    }
-    &.infra {
-      grid-area: infra;
-    }
-    &.signup {
-      grid-area: signup;
-    }
-    &.copyright {
-      grid-area: copyright;
-      align-self: end;
-    }
-    &.sponsor {
-      h1 {
-        border-bottom: 1px solid #777;
-        padding-bottom: 10px;
-      }
-
-      img {
-        height: 200px;
-        width: calc(100% - 60px);
-        object-fit: contain;
-        margin: 30px;
-      }
-    }
-  }
-  h1 {
-    font-size: 1.25em;
-    font-weight: bold;
-    font-family: $heading-font;
-    margin-bottom: 10px;
-  }
-}
-
 .center-content {
   display: flex;
   justify-content: center;

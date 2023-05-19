@@ -1,0 +1,63 @@
+---
+import { getSponsorsByTier } from "../util"
+const sponsorsByTier = await getSponsorsByTier()
+---
+
+<style lang="scss">
+  @import "../vars";
+  footer {
+    form {
+      --form-colour: #777 !important;
+    }
+    color: #777;
+    background-color: #eee;
+    margin-top: 100px;
+    .sponsor-grid {
+      display: grid;
+      line-height: 1.3em;
+      grid-template-columns: repeat(auto-fit, 150px);
+      justify-content: center;
+      gap: 30px;
+      margin: 0 30px;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+    }
+
+    .copyright {
+      margin: 20px;
+      text-align: center;
+    }
+  }
+</style>
+
+<footer>
+  <section class="sponsor-grid">
+    {
+      sponsorsByTier.map((tier) => (
+        <>
+          {tier.sponsors.map((sponsor) => (
+            <a href={`/sponsor/#${sponsor.slug}`}>
+              <img
+                src={`/sponsor-logos/${sponsor.data.logo}`}
+                alt={sponsor.data.name}
+              />
+            </a>
+          ))}
+        </>
+      ))
+    }
+  </section>
+  <section class="copyright">
+    <b>Contact us:</b>
+    <a href="https://fosstodon.org/@pyconau" rel="me">Mastodon</a>
+    &bull;
+    <a href="https://twitter.com/pyconau">Twitter</a>
+    &bull;
+    <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+    &copy; 2020&ndash;2023, the PyCon AU team
+  </section>
+</footer>

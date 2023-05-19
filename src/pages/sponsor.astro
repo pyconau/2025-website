@@ -5,7 +5,7 @@ import SponsorListing from '../components/SponsorListing.astro'
 // Get all entries from a collection. Requires the name of the collection as an argument.
 const allSponsors = await getCollection('sponsors')
 const platinum = allSponsors.filter(sponsor => sponsor.data.tier === 'platinum')
-// Get a single entry from a collection. Requires the name of the collection and the entry's slug as arguments.
+const auspice = allSponsors.find(sponsor => sponsor.data.tier === 'auspice')!
 const sponsorPage = await getEntryBySlug('pages', 'sponsor')
 const Content = (await sponsorPage.render()).Content
 ---
@@ -87,6 +87,8 @@ and of course <a href="#auspice">Linux Australia</a>!
   
 */}
 
+<h1 id='auspice'>Auspice</h1>
+<SponsorListing sponsor={auspice} />
 
 <h1 id='opportunities'>Sponsorship Opportunities</h1>
 
