@@ -119,12 +119,17 @@ const pagesInSection =
         ul {
           margin-left: 1em;
         }
-        li a {
-          color: $wattle-leaf-headings;
-          text-decoration: none;
-          margin: 10px;
-          display: block;
-          font-size: 15px;
+        li {
+          &.current {
+            font-weight: bold;
+          }
+          a {
+            color: $wattle-leaf-headings;
+            text-decoration: none;
+            margin: 10px 0;
+            display: block;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -170,10 +175,10 @@ const pagesInSection =
         {
           pagesInSection && pagesInSection.length > 1 ? (
             <div class="section-nav">
-              <h1>In this section</h1>
+              <h1>Pages in this section</h1>
               <ul>
                 {pagesInSection.map((page) => (
-                  <li>
+                  <li class={page.id === entry.id ? "current" : null}>
                     <a href={`/${page.slug}`}>{page.data.title}</a>
                   </li>
                 ))}
