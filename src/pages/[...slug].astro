@@ -168,7 +168,7 @@ const pagesInSection =
       <button id="nav-toggle-button">≪</button>
       <div class="scroll-container">
         {
-          pagesInSection && pagesInSection.length > 1 && (
+          pagesInSection && pagesInSection.length > 1 ? (
             <div class="section-nav">
               <h1>In this section</h1>
               <ul>
@@ -179,10 +179,10 @@ const pagesInSection =
                 ))}
               </ul>
             </div>
-          )
+          ) : null
         }
         {
-          nestedHeadings.length && (
+          nestedHeadings.length ? (
             <div class="page-nav">
               <h1>On this page</h1>
               <ul>
@@ -194,7 +194,7 @@ const pagesInSection =
                 ))}
               </ul>
             </div>
-          )
+          ) : null
         }
       </div>
     </div>
