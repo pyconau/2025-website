@@ -1,0 +1,202 @@
+---
+import Base from "../layouts/Base.astro"
+import { getCollection, CollectionEntry } from "astro:content"
+import { nestHeadings, nestedMap } from "../lib"
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages")
+  return pages.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }))
+}
+
+export type Props = {
+  entry: CollectionEntry<"pages">
+}
+const { entry } = Astro.props as Props
+const { Content, headings } = await entry.render()
+const nestedHeadings = nestHeadings(headings)
+
+// other pages in this section
+const collection = await getCollection("pages")
+const sectionPrefix = /^[^\/]+/.exec(entry.slug)?.[0]
+
+const pagesInSection =
+  sectionPrefix &&
+  collection
+    .filter((page) => page.slug.startsWith(sectionPrefix))
+    .sort(
+      (a, b) =>
+        (a.data.order ?? Number.MAX_SAFE_INTEGER) -
+        (b.data.order ?? Number.MAX_SAFE_INTEGER),
+    )
+---
+
+<style lang="scss">
+  @use "sass:math";
+  @import "../vars.scss";
+
+  @mixin enable-scrolling {
+    > .scroll-container {
+      display: block;
+      position: sticky;
+      top: 0px;
+      bottom: 0px;
+      overflow-y: scroll;
+      background-color: white;
+      max-height: 100vh;
+    }
+  }
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr (11 * 20px) (33 * 20px) (11 * 20px) 1fr;
+    grid-template-areas: ". section-nav content page-nav .";
+
+    // LAYOUT and scrolling
+    #nav-toggle-button {
+      display: none;
+    }
+
+    .combined-nav,
+    .scroll-container {
+      display: contents;
+    }
+
+    .page-nav {
+      grid-area: page-nav;
+    }
+
+    .section-nav {
+      grid-area: section-nav;
+    }
+
+    @media only screen and (max-width: (55 * 20px)) {
+      grid-template-columns: 1fr (33 * 20px) (11 * 20px) 1fr;
+      grid-template-rows: min-content min-content 1fr;
+      grid-template-areas: ". content combined-nav .";
+      .combined-nav {
+        display: initial;
+        grid-area: combined-nav;
+        @include enable-scrolling();
+      }
+
+      // STYLING
+      .page-nav,
+      .section-nav {
+        margin-top: 40px !important;
+      }
+
+      .combined-nav {
+        margin-top: 80px;
+      }
+    }
+
+    @media only screen and (max-width: (44 * 20px)) {
+      grid-template-columns: 1fr calc(100vw - 50px) (11 * 20px) 1fr;
+      #nav-toggle-button {
+        display: inline-block;
+      }
+      &.nav-expanded {
+        margin-left: -(11 * 20px);
+        width: calc(100vw + (11 * 20px));
+      }
+    }
+
+    // STYLING
+
+    .page-nav,
+    .section-nav {
+      margin-top: 80px;
+      h1 {
+        font-size: 20px * math.pow(math.div(4, 3), -2);
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      ul {
+        ul {
+          margin-left: 1em;
+        }
+        li a {
+          color: $wattle-leaf-headings;
+          text-decoration: none;
+          margin: 10px;
+          display: block;
+          font-size: 15px;
+        }
+      }
+    }
+
+    main {
+      max-width: min(100%, 33em);
+      box-sizing: border-box;
+      grid-area: content;
+    }
+  }
+
+  #nav-toggle-button {
+    background-color: $wattle-leaf;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+</style>
+<script>
+  let toggleButton = document.getElementById(
+    "nav-toggle-button",
+  ) as HTMLButtonElement
+  let navContainer = document.getElementById("nav-container") as HTMLDivElement
+  toggleButton.addEventListener("click", () => {
+    navContainer.classList.toggle("nav-expanded")
+    if (navContainer.classList.contains("nav-expanded")) {
+      toggleButton.innerText = "≫"
+    } else {
+      toggleButton.innerText = "≪"
+    }
+  })
+</script>
+<Base title={entry.data.title}>
+  <div class="container" id="nav-container">
+    <main>
+      <Content />
+    </main>
+    <div class="combined-nav">
+      <button id="nav-toggle-button">≪</button>
+      <div class="scroll-container">
+        {
+          pagesInSection && pagesInSection.length > 1 && (
+            <div class="section-nav">
+              <h1>In this section</h1>
+              <ul>
+                {pagesInSection.map((page) => (
+                  <li>
+                    <a href={`/${page.slug}`}>{page.data.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+        {
+          nestedHeadings.length && (
+            <div class="page-nav">
+              <h1>On this page</h1>
+              <ul>
+                {nestedMap(nestedHeadings, (heading, children) => (
+                  <li>
+                    <a href={`#${heading.slug}`}>{heading.text}</a>{" "}
+                    {children.length > 0 && <ul>{children}</ul>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</Base>
