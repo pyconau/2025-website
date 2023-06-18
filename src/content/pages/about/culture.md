@@ -1,6 +1,6 @@
 ---
-title: Culture
-layout: "../layouts/Page.astro"
+title: The Culture of PyCon AU
+order: 2
 ---
 
 # The Culture of PyCon AU
