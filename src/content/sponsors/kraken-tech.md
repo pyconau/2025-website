@@ -9,4 +9,4 @@ Part of the UK-based Octopus Energy Group, [Kraken Tech](https://kraken.tech/) i
 
 Kraken has been licensed to support over 30 million accounts and another contracted 10million accounts worldwide, through deals with EDF Energy, Good Energy, E.ON energy and Origin Energy, Ergon and Tokyo Gas. We plan to exceed 100 million accounts on the platform by 2027.
 
-Kraken has around 400-500 developers globally (100 of those in APAC) and despite the challenges the tech industry has been facing, we have continued to grow - if anything we can’t hire enough people! (edited)
+Kraken has around 400-500 developers globally (100 of those in APAC) and despite the challenges the tech industry has been facing, we have continued to grow - if anything we can’t hire enough people!
