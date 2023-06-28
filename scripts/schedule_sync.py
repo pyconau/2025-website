@@ -182,7 +182,7 @@ from io import BytesIO
 
 from PIL import Image
 
-with (PEOPLE_DIR / "_etags.yml").open("r") as f:
+with (CONTENT_DIR / "_people_etags.yml").open("r") as f:
     etags = yaml.load(f)
 
 # etags none? ensure empty
