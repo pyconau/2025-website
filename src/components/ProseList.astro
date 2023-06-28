@@ -1,0 +1,23 @@
+---
+export type Props = {
+    items: any[]
+}
+let { items } = Astro.props as Props
+---
+
+{
+    items.length === 1 ? (
+        items[0]
+    ) : items.length === 2 ? (
+        <>
+            {items[0]} and {items[1]}
+        </>
+    ) : (
+        <>
+            {items.slice(0, items.length - 2).map((item) => (
+                <>{item}, </>
+            ))}{" "}
+            and {items[items.length - 1]}
+        </>
+    )
+}

@@ -1,0 +1,78 @@
+---
+import Profile from "../../components/Profile.astro"
+import Base from "../../layouts/Base.astro"
+import { getCollection, CollectionEntry, getEntry } from "astro:content"
+
+export async function getStaticPaths() {
+    const pages = await getCollection("sessions")
+    return pages.map((entry) => ({
+        params: { sessionId: entry.id },
+        props: { entry },
+    }))
+}
+export type Props = {
+    entry: CollectionEntry<"sessions">
+}
+const { entry } = Astro.props as Props
+const speakers = (
+    await Promise.all(
+        entry.data.speakers.map(
+            async (speakerId) => await getEntry("people", speakerId),
+        ),
+    )
+).filter(((x) => !!x) as <T>(x: T | undefined) => x is T)
+---
+
+<Base title={entry.data.title}>
+    {
+        /*
+<div class="time-bar">
+  {{ session.start.strftime('%a %B %d, %I:%M %p')}}&ndash;{{
+  session.end.strftime('%I:%M %p') }} &bull;
+  <a href="/program/{{ session.start.strftime('%a').lower() }}/"
+    >Back to program</a
+  >
+</div>
+
+
+
+{% endif %}
+
+{% if session.youtube_slug %}
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/{{ session.youtube_slug }}"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+{% endif %}
+
+*/
+    }
+    <main>
+        <h1>{entry.data.title}</h1>
+        {
+            entry.data.cw && (
+                <div class="content-warning">
+                    <b>Content warning:</b>{" "}
+                    <Fragment set:html={entry.data.cw} />
+                </div>
+            )
+        }
+        <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
+        <Fragment set:html={entry.data.description} />
+        {speakers.map((speaker) => <Profile person={speaker} bio />)}
+    </main>
+    {
+        /* 
+{% for person in session.speakers %}
+  {{ m.profile(person, bio=True) }}
+{% endfor %}
+
+{% endblock %}
+*/
+    }
+</Base>
