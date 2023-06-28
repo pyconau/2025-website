@@ -1,0 +1,14 @@
+title: Rust for the Python dev
+abstract: <p>An overview of the growing number of Rust built tools in the Python ecosystem
+  and how you can integrate Rust and Python yourself</p>
+description: <p>Rust is a popular systems programming language that both complements
+  the strengths of and integrates well with Python. Increasingly Rust built tools
+  such as Ruff, Polars, and Pydantic V2 are becoming prominent in the Python ecosystem.
+  This talk with give a quick introduction to Rust for the Python developer - covering
+  some language concepts, learning resources, and quick examples of how you can quickly
+  integrate the two programming languages yourself.</p>
+code: 8BT9NT
+speakers:
+- D8UUB3
+cw:
+youtube_slug:

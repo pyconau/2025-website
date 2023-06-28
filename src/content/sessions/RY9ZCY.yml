@@ -1,0 +1,21 @@
+title: Building 3D Trusted Data Pipelines With Dagster, Dbt, and Duckdb
+abstract: "<p>This talk will demonstrate an example of building trusted data pipelines
+  with 3D packages: Dagster, Dbt, and Duckdb. First, it presents the importance of
+  testing data pipelines from high levels (like tables, relations, …) to low levels
+  (like rows and columns). It then discusses when and what we need to test. After
+  that, I will show how to implement these tests using different Dbt packages, including
+  dbt-audit-helper, dbt-utils, and dbt-expectations.</p>\n<p>Finally, a demo with
+  a complete ELT workflow will be presented. In this demo, Dagster is used as a data
+  pipeline orchestrator, and Dbt is utilized for data transformation with its related
+  testing packages. These transformed pipelines sit on top of Duckdb, which acts as
+  a small data warehouse. This demo is published in a GitHub repository, allowing
+  developers to clone and run the demo independently. </p>\n<p>The talk will help
+  data and analytics engineers build more robust tests for their data pipelines. These
+  trusted data pipelines could enhance the data quality and validation process, reducing
+  the risk of other data issues like data drift for downstream channels.</p>"
+description: ''
+code: RY9ZCY
+speakers:
+- BA8DVU
+cw:
+youtube_slug:

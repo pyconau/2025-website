@@ -1,0 +1,37 @@
+title: Using Python and 19,200 bits/second serial links to manage antennae for the
+  Square Kilometre Array radio telescope in Australia
+abstract: <p>The Australian half of the Square Kilometre Array radio telescope will
+  collect 7.2 Terabits/second of raw data from 131,072 antennae grouped into 512 'stations'
+  with 256 antennae each - but every antenna needs to be connected to a box within
+  a few metres of that antenna, for a DC power supply, and to convert the electrical
+  output to light over optical fibre before it degrades. This talk will describe those
+  boxes, and how they are being monitored and controlled using Python, a 40+ year
+  old communications protocol, and a network of 19,200 bits/second serial links.</p>
+description: "<p>The Australian part of the Square Kilometre Array telescope will
+  have 512 stations in the Murchison region of WA, each a circle of steel mesh on
+  the ground with 256 two-metre tall 'Christmas Tree' antenna. Each station will also
+  have 24 'SMARTboxes' scattered in amongst the antennae, connected to a distribution
+  hub near the station. A SMARTbox needs to provide a little DC power to 10-12 antennae,
+  cut that power within a millisecond or so if there's a short, and convert the analogue
+  electrical signals from the antennae to analogue optical over fibre. It also needs
+  to allow remote, high-level telescope software to monitor the temperatures, voltages,
+  currents, etc, and switch antenna on and off. </p>\n<p>The problem is that the SKA
+  is so sensitive, any signal from space would be completely drowned out by the electrical
+  noise from a CPU, even a microcontroller, or any normal kind of communications cable
+  (wireless links are obviously COMPLETELY ruled out). The Power and Signal Distribution
+  system (PaSD) has been designed to use low-speed microcontrollers inside multiple
+  layers of shielding, communicating via the Modbus protocol over a custom-designed
+  multidrop serial bus. This multidrop bus links all 24 SMARTboxes in a station into
+  the same address space via 19,200 bits/second serial over the same coaxial cables
+  carrying 48V DC to the SMARTboxes. Python code running on a remote server can then
+  address each SMARTbox, manage power to each antenna, and even push new firmware
+  to the boxes. </p>\n<p>In this talk I will describe the PaSD system and its design
+  process, and how I used Python to create simulated SMARTboxes on a simulated multidrop
+  serial link, then used them to validate hardware and firmware prototypes over the
+  last few years. I'll also show live telemetry from a four-SMARTbox system that has
+  been running in the desert at the SKA site for the last year.</p>"
+code: WY9MES
+speakers:
+- 9JGCPM
+cw:
+youtube_slug:

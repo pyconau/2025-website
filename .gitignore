@@ -4,3 +4,4 @@ data/SpeakerPack/*
 node_modules
 dist/
 .astro
+.envrc

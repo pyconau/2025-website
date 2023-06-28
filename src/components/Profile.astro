@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from "astro:content"
+export type Props = {
+  person: CollectionEntry<"people">
+  bio: boolean
+}
+const { person, bio } = Astro.props as Props
+const photo = person.data.has_pic
+  ? `/people/${person.id}.jpg`
+  : "/people/placeholder.jpg"
+---
+
+<style lang="scss">
+  .profile {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 75px;
+      height: 75px;
+      aspect-ratio: 1;
+      border-radius: 1000px;
+      object-fit: cover;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      &:not(:first-child) {
+        margin-left: 1em;
+      }
+    }
+    b {
+      font-size: 4 / 3 * 1em;
+    }
+  }
+
+  .profile-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+  }
+</style>
+
+<div class="profile">
+  <img class="local-border" src={photo} />
+
+  <div class="details">
+    <b>{person.data.name}</b>
+    {
+      person.data.pronouns && (
+        <small>
+          {[person.data.pronouns, person.data.fedi, person.data.twitter]
+            .filter((x) => !!x)
+            .join(" • ")}
+        </small>
+      )
+    }
+    {bio && person.data.bio && <Fragment set:html={person.data.bio} />}
+  </div>
+</div>

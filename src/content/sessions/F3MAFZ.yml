@@ -1,0 +1,22 @@
+title: "In the Long Run We're All Dead: An Economist's Guide to Tech Debt"
+abstract: <p>Tech debt is a familiar concept in most organisations and has been the
+  subject of extensive discussion regarding individual &amp; organisational factors.
+  However, what’s missing is a macro-economic analysis of why tech debt exists and
+  how to combat it. This talk provides that analysis.</p>
+description: '<p>Technical debt is a much-bemoaned aspect of nearly every engineer’s
+  life. How and to what extent to eliminate it has been the subject of much discussion.
+  Is tech debt the result of individual engineers cutting corners? Are the engineers
+  who write this code just incompetent? Are there organisational factors that contribute?
+  If so, what are they? All of these are worthy of discussion, however, there is another
+  factor conspicuously missing from this discussion: macroeconomics, the dismal science.
+  Macroeconomic factors dictate organisational behaviour and have a cascading effect
+  on teams and individuals within organisations. In this talk, I discuss technical
+  debt in the context of the work of institutional economist Hyman Minsky, contextualising
+  tech debt as a form of operating debt organisations take on. Minsky’s theory on
+  this topic provides a compelling analysis of organisations’ borrowing behaviour,
+  and by extension, how tech debt works.</p>'
+code: F3MAFZ
+speakers:
+- FB7A7U
+cw:
+youtube_slug:

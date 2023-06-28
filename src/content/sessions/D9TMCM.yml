@@ -1,0 +1,17 @@
+title: How to build a unit testing library from scratch?
+abstract: "<p>Have you ever used Pytest? Have you ever wondered what happens when
+  you run pytest over your tests folder, create parametrized test cases, or use fixtures?</p>\n
+  <p>In this talk, we will find answers to all these by building our own testing library.\n
+  By the end of this talk, you will have a solid understanding of reverse engineering
+  and how internals of a testing library can be designed</p>"
+description: "<p>This talk will explore how to build a testing library from scratch.
+  </p>\n<ol>\n<li>Introduction to Pytest and its features - 5 mins</li>\n<li>Building
+  Test runners  - 5 mins</li>\n<li>Building a parametrized test case handler - 8 mins</li>\n
+  <li>Building a fixture handler - 8 mins</li>\n<li>End note - 5 mins</li>\n</ol>\n
+  <p>By the end of this talk, you will have a solid understanding of reverse engineering
+  and building a testing library from scratch.</p>"
+code: D9TMCM
+speakers:
+- 9SG3KG
+cw:
+youtube_slug:
