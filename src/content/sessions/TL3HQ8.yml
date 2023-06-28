@@ -1,0 +1,46 @@
+title: Nothing for Us, Without Us; Breaking Unconscious Bias in Building Products
+abstract: "<p>Are we really building products that serve everyone, or just a selected
+  few?</p>\n<p>As developers, we have responsibility to ensure that our products serve
+  everyone, regardless of their background or identity. However, our unconscious bias
+  often creeps into even the most well-intentioned projects and impacts the way we
+  develop products or engage with communities, leading to unintentional exclusions.</p>\n
+  <p>When I first designed a Speech-Text-Analytic app, my focus was to simplify business
+  communication with transcribed audio and valuable insights. However, feedback from
+  the community highlighted it had limitations for diverse users, including those
+  with disabilities who faced inaccurate captions for audio content.</p>\n<p>This
+  wake-up call prompted me to improve accessibility and user-friendliness for marginalized
+  groups. And for the same reason, I'm making proactive steps to cater for the marginalized
+  by integrating a feature that recognizes Nigerian native languages.</p>\n<p>As tech
+  creators, we have the power to create change, but good intentions alone are not
+  enough. This talk will offer strategies to address unconscious bias in product and
+  community building, while avoiding common pitfalls. Attendees will learn to understand
+  diverse needs &amp; experiences for more inclusive environments.</p>"
+description: "<p>In this talk, I'll share my experience developing a Speech-Text-Analytic
+  app and the wake-up call when I realized it didn't serve our diverse user base,
+  such as individuals with disabilities. This experience taught me the importance
+  of considering the needs of all users, even those who may be marginalized or overlooked,
+  and highlighted the impact of unconscious bias on well-intentioned projects.</p>\n
+  <p>The talk will explore actionable strategies to recognize and mitigate unconscious
+  bias in product development and community building, drawing from my personal experience.
+  Attendees will learn how to better understand the needs and experiences of individuals
+  from diverse backgrounds, resulting in more inclusive and supportive environments.
+  My aim is to inspire and empower others to apply these approaches in their own projects
+  and contribute to creating more inclusive communities.</p>\n<p>This talk is open
+  to everyone (No background knowledge needed)!</p>\n<p><strong>Outline</strong></p>\n
+  <p>I. Introduction <strong>[5mins]</strong>\n- Opening statement &amp; Background\n
+  - Importance of considering multiple identities in product development</p>\n<p>II.
+  Unconscious Bias and Inclusive Product Development <strong>[10mins]</strong>\n-
+  Impact of bias on development and engagement\n- Strategies to identify and address
+  unconscious bias in tech\n- Demonstrating inclusive products, including a case study
+  of an accessible Speech-Text-Analytic app</p>\n<p>III. Addressing Intersectionality
+  <strong>[5mins]</strong>\n- Unique challenges faced by underrepresented groups in
+  tech and how to address them\n- Role of open-source in promoting inclusivity; and
+  project examples</p>\n<p>IV. Conclusion <strong>[5mins]</strong>\n- Recap of key
+  points\n- Key takeaway message for the audience: Strategies, Results &amp; Lessons\n
+  - Future directions of tech for promoting sustainability and inclusivity</p>\n<p>V.
+  Q &amp; A Session <strong>[5mins]</strong></p>"
+code: TL3HQ8
+speakers:
+- XZ9GLY
+cw:
+youtube_slug:

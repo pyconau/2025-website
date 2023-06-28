@@ -1,0 +1,20 @@
+name: Peter Aych
+pronouns:
+twitter:
+fedi:
+bio: "<p>Peter has been with AEMO, the Australia Energy Market Operator since soon
+  after market start. The Australian electricity grid has undergone two major transformations:
+  First in the late 1990s when the national market was created, and the states were
+  interconnected. Now the biggest transformation is now underway as we move towards
+  a 100% renewable grid. </p>\n<p>There are many software systems that support the
+  electricity grid and market: Pascal, Fortran, C, Oracle and Java in the early days.
+  Python, JavaScript &amp; Vue, C# &amp; C++ today.</p>\n<p>Peter’s team supports
+  a suite of tools called AMP – The AEMO Modelling Platform – a ‘digital twins’ of
+  the grid used to predict its behavior, design it into the future, and analyze operation
+  faults. </p>\n<p>AMP Features a SQL Server &amp; Python backend running on Windows,
+  with Vue &amp; JavaScript user interface. At the time of writing, we have 25,000
+  lines of Python code, all linted and unit tested with 100% coverage.</p>\n<p>Some
+  of the Pascal code we wrote in the late 90s is still in production delivering value
+  to the industry. We are planning a 20 year or longer life for our Python code so
+  have a somewhat manic focus on quality.</p>"
+has_pic: false

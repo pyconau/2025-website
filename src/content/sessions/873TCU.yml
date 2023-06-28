@@ -1,0 +1,22 @@
+title: 'CountESS: Count-based Experiment Scoring and Statistics'
+abstract: <p>CountESS is a new visual programming toolkit for data processing in bioinformatics.  It
+  aims to make complicated data processing pipelines easy to set up and replicate,
+  but also easy to modify, explore and extend (in Python)</p>
+description: "<p>Bioinformatics is a young field whose gene sequencing technologies
+  are rapidly improving — consequently its need for data processing is increasing
+  too.  At the same time, researchers want to concentrate on research, not on programming,
+  so there is a demand for tools which will enable them to get on with their jobs.</p>\n
+  <p>CountESS attempts to resolve this issue by providing a graphical framework for
+  data processing, allowing processing pipelines to be constructed from a graph of
+  modules. Within this framework, new techniques can be implemented as Python plugins
+  using existing Pandas (etc) libraries.  A simple configuration file format allows
+  data processing to be replicated, modified and applied to new data sets easily.
+  </p>\n<p>We'll look at how CountESS is being used in cancer research and how you
+  can use CountESS in other fields, and/or contribute to its development and expansion.</p>"
+code: 873TCU
+speakers:
+- JEXXZQ
+cw: "<p>This talk will mention cancer and genetic diseases as outcomes of the genetic
+  variations we're studying, but not in detail.</p>\n<p>Details of cell biology may
+  make you feel weird about Eukaryotic life, including yourself.</p>"
+youtube_slug:

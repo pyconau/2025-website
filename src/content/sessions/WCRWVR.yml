@@ -1,0 +1,32 @@
+title: How Python is supporting Australia’s energy transition to 100% renewable
+abstract: "<p>Australia’s electricity grid is transitioning to 100% renewable and
+  the industry’s goal is to be able to run in this configuration by 2025.</p>\n<p>This
+  is a huge engineering and organizational undertaking, and Python is supporting us
+  all the way.</p>\n<p>This talk shall start with an overview of the energy grid as
+  it has been pretty much for a century. We shall look at the physics of electricity
+  and the control systems required to maintain constant, reliable supply.</p>\n<p>Management
+  of the grid involving the movement of large volumes of data from sensors in the
+  field, to centralized data stores. Data is merged with models and used to make operational
+  decision in near real time, to design the grid into the future, and to analyse faults
+  in the past.</p>\n<p>Python is used to support these data flows and models and executes
+  in a high availability environment on servers, as well as on users’ desktops supporting
+  ad hoc analysis.</p>\n<p>With every line of new code, Python becomes more critical
+  to Australia’s energy future.</p>"
+description: "<p>Australia’s electricity grid is transitioning to 100% renewable and
+  the industry’s goal is to be able to run in this configuration by 2025.</p>\n<p>This
+  is a huge engineering and organizational undertaking, and Python is supporting us
+  all the way.</p>\n<p>This talk shall start with an overview of the energy grid as
+  it has been pretty much for a century. We shall look at the physics of electricity
+  and the control systems required to maintain constant, reliable supply.</p>\n<p>Management
+  of the grid involving the movement of large volumes of data from sensors in the
+  field, to centralized data stores. Data is merged with models and used to make operational
+  decision in near real time, to design the grid into the future, and to analyse faults
+  in the past.</p>\n<p>Python is used to support these data flows and models and executes
+  in a high availability environment on servers, as well as on users’ desktops supporting
+  ad hoc analysis.</p>\n<p>With every line of new code, Python becomes more critical
+  to Australia’s energy future.</p>"
+code: WCRWVR
+speakers:
+- 8S3XPK
+cw:
+youtube_slug:

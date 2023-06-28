@@ -1,0 +1,33 @@
+title: One person's Ansible is another's pyinfra.
+abstract: "<p>Have you ever sat there while writing an Ansible playbook and thought
+  to yourself \"Gee, I know how to express what I want in in a programming language,
+  such as Python, but this Domain Specific Language bolted on top of Jinja layered
+  on top of YAML is sure getting me down\", then this may be the talk for you.  Welcome
+  to pyinfra, where your inventories and playbooks look remarkably like Python code,
+  mainly because they are (with some clarification around the \"mainly\").</p>\n<p>In
+  this talk, the presenter (hi!) will show the conversion of one of their Ansible
+  playbooks to pyinfra.  Along the way he will show how relatively straightforward
+  it is to write facts and operations (a cornerstone of most orchestration tools)
+  under pyinfra.</p>"
+description: "<p>Originally, this journey started as a crisis of faith.  I was disheartened
+  by my Ansible playbooks becoming more convoluted as I was introducing more logic
+  into them, and resorting to writing Jinja filters to attempt to simplify and make
+  my playbooks more \"readable\" (with varying degrees of success).\nAlthough not
+  billing itself as a programming language, over time Ansible playbook keywords have
+  acquired the ability to performing selection, looping and even exception handling,
+  which looks pretty languagy to me, and came to the conclusion that if I could write
+  a playbook as a Python program without too much boilerplate, that would be the sweet
+  spot. </p>\n<p>So while searching the orchestration tool space (which is typically
+  inhabited by the likes of Ansible, Puppet, Saltstack and friends), I found https://pyinfra.com/.\
+  \  Even though pyinfra is a \"newcomer\" to this field, its first commit to Github
+  was over 8 years ago, it's on version 2.6.2 (at the time of writing), and its author
+  regularly inflicts production workloads on it and is actively responsive to bug
+  fixes and suggestions.  Although my \"production workload\" these days is much smaller
+  (which is primarily my home lab and VPSes), I find writing playbooks to be a much
+  more straightforward and enjoyable experience, and even debugging has become a lot
+  easier.</p>"
+code: BQXP78
+speakers:
+- JRGRVG
+cw:
+youtube_slug:

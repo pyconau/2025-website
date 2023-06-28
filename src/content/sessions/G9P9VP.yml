@@ -1,0 +1,17 @@
+title: (Probably) a retrospective for Secateur
+abstract: <p>This talk will serve as a retrospective on this little django side project
+  that over the course of it's life grew to 70,000 users, made somewhere around four
+  billion Twitter API calls, and was supported by several in the NZ/AU Python community.</p>
+description: "<p>In 2019 I released Secateur, a tool designed to protect people from
+  online harrassment on Twitter by giving a user the ability to block an attacker
+  and <em>all</em> their followers for a set period of time. Now, in 2023 the new
+  management of Twitter has decided such tools aren't desirable.</p>\n<p>This talk
+  will serve as a retrospective on this little django side project that over the course
+  of it's life grew to 70,000 users, made somewhere around four billion Twitter API
+  calls, and was supported by several in the NZ/AU Python community.</p>\n<p>I might
+  be able to throw in a few tales of weird accused-international espionage, too.</p>"
+code: G9P9VP
+speakers:
+- KCADCR
+cw:
+youtube_slug:

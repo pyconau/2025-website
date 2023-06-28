@@ -1,0 +1,26 @@
+title: Building a biological database with Python
+abstract: <p>This talk is a story of how open-source frameworks make it possible for
+  academics to take on otherwise infeasibly complex projects, which in my case was
+  a new community-driven database for biologists and clinical geneticists.</p>
+description: "<p>Almost ten years ago, a couple of professors got together to discuss
+  the rapid growth of large datasets in their emerging field and concluded that a
+  new database was needed to organize them. They approached me and, emboldened by
+  some exciting talks at PyCon AU, I decided to take on this challenge using the Django
+  web framework.</p>\n<p>Despite being an academic team with minimal web development
+  expertise, we created a database that has become an important resource for biological
+  researchers and clinical geneticists all over the world, helping them understand
+  how differences in our DNA can affect disease.</p>\n<p>This talk will include an
+  introduction to how and why biologists are generating these large datasets. Then
+  I’ll describe the evolution of the project starting with the initial data engineering
+  and database design, and the development of Django-based prototypes and production
+  deployments. Next I’ll discuss how the project survived contact with external users
+  and their data submissions, and why we transitioned the project away from Django
+  to FastAPI.</p>\n<p>Finally, I’ll share my experience maintaining (and trying to
+  find funding for) a public-facing open-source project within academia, as well as
+  make some suggestions for how members of the Python community can get involved with
+  ongoing research projects.</p>"
+code: TX9KTX
+speakers:
+- XLYVCH
+cw: <p>This talk contains brief mentions of cancer research.</p>
+youtube_slug:

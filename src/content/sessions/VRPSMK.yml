@@ -1,0 +1,19 @@
+title: WASM in your wheel?
+abstract: <p>How to publish Python packages containing native code without the hassle
+  of building 27 wheels.</p>
+description: "<p>Publishing Python packages with native code is a challenge. Unlike
+  a pure-Python project which just needs a single wheel, a project with native code
+  needs a wheel for each possible operating system, platform, architecture, etc, most
+  of which you do not have local toolchains for. Tooling does exist for this, but
+  what if there was a way to build a single wheel that does run anywhere?</p>\n<p>WASM
+  allows us to do exactly that. It's not just a technology for the browser or Javascript
+  ecosystem, there are now several high-performance WASM runtimes for Python that
+  allow your Python code to call into WASM binaries.</p>\n<p>In this talk we'll explore
+  the different options available, how to write the interop on both sides (C and Python),
+  and the implementation of this in a Python package that is part of a popular open
+  source Python-ecosystem project.</p>"
+code: VRPSMK
+speakers:
+- LWZSTN
+cw:
+youtube_slug:

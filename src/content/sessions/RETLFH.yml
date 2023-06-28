@@ -1,0 +1,29 @@
+title: Taming the Duck with Type Hints
+abstract: "<p>Python with its flexible typing is amazingly productive - in a short
+  time you can come up\nwith an awesome program.  But as that program ages and grows
+  its like a child with \nuntied shoe laces. Which is where type hints come in - type
+  hints are easy to use, will \nhelp tie up laces and continually check that they
+  don't come undone again.</p>"
+description: "<p>Python is a dynamically duck-typed programming language. This means
+  that an object's\ntype can change at any time (dynamic), and an object's type isn't
+  checked before use - instead\nif the operation works then the the object was close
+  enough (duck typing - it quacked like a duck so it must be a duck!).</p>\n<p>Together
+  dynamic and duck typing help make \nPython a great language to get complicated things
+  up and running quickly. That has made Python a great language to learn as you can
+  quickly become very productive.</p>\n<p>But this strength for easy experimentation
+  can quickly become a weakness as your program grows -\nmistakes with the type of
+  variables and arguments can be really hard to find. In fact, if testing\nisn't thorough
+  enough, its very easy for these type errors to leak into released code.</p>\n<p>Enter
+  Type Hints. These 'hints' can be added at any time (you can add them after the quick\n
+  experimentation stage) to help you in two ways. First, they document to others (and
+  yourself\nin a months time) what types your functions expect, and second, they allow
+  static checking tools like mypy to check that your code honours those type hints.
+  </p>\n<p>This talk explains how types work in python and, using code examples, how
+  easy it is for type errors to creep into code. Then we look at type hints, how easily
+  they can be added to code and how to run tools like 'mypy' to find problems, fix
+  them, and re-check your code as you make changes!</p>"
+code: RETLFH
+speakers:
+- G7QZVW
+cw:
+youtube_slug:

@@ -1,0 +1,19 @@
+title: You can't do that in MicroPython!
+abstract: "<p>MicroPython is <em>great</em> for hobbyists! You can control LEDs and
+  motors, it's so easy! But you wouldn't use it for anything <em>serious</em>. Right?
+  Surely not! It's too slow. You can't use all the features of a micro. It consumes
+  too much power. You don't have control over memory.</p>\n<p>Yeah, nah. You can't
+  do serious embedded work with MicroPython...can you?</p>"
+description: "<p>I've heard all of these arguments - and more! - raised against using
+  MicroPython for professional software development. But, having <em>actually used</em>
+  MicroPython for commercial software development for several years - to build medical
+  devices - I'm here to tell you that you often CAN do that with MicroPython! </p>\n\
+  <p>We'll take an objective look at scenarios where <em>conventional wisdom</em>
+  may suggest that an interpreted language like MicroPython is inappropriate for embedded
+  use. Is there merit to the arguments? Or is it time to improve the way we develop
+  embedded software?</p>"
+code: F7JN7X
+speakers:
+- N9ZZWG
+cw:
+youtube_slug:

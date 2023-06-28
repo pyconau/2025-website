@@ -1,0 +1,22 @@
+title: Refactoring for fun and profit
+abstract: "<p>Ever been in a situation where you've hastily written a bunch of code,
+  just to make something \"work\"?</p>\n<p>Have you then trembled with fear, looking
+  at your single, thousand line file, with global variables, multi parameter functions,
+  and zero classes, not knowing where to start?</p>\n<p>Or do you question why changing
+  your complex code and fixing bugs takes so long?</p>\n<p>Then come and learn about
+  how refactoring can not only be fun and educational, but also profitable!</p>"
+description: "<p>Often in programming projects, we find ourselves building layers
+  and layers on top of a starting idea, without having been able to think about the
+  long term design.</p>\n<p>And that's fine! But unless push comes to shove, we often
+  don't get the time or incentive to sit down and clean it up, especially if it all
+  works.</p>\n<p>In this talk, we'll discuss why you should care about good pythonic
+  code, and how refactoring can not only be profitable, but also a fun and educational
+  experience!</p>\n<p>We'll look at easy to use tools and techniques that Python offers
+  to make the process of refactoring faster and future proof for you.</p>\n<p>And
+  finally, we'll cover some design principles and methodologies for you to keep in
+  mind, alongside understandable real world examples.</p>"
+code: LCM73Z
+speakers:
+- AHET73
+cw:
+youtube_slug:

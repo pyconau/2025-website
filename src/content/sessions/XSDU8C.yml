@@ -1,0 +1,32 @@
+title: FORKS? POOLS? ASYNC? Solving Wordle with Python’s concurrency tools
+abstract: "<p>I’ve played Wordle most days since late 2021. Maybe you have too? One
+  thing I wonder after solving the puzzle for the day is whether I made a bad choice
+  of words. Should I have chosen SMASH, or STASH? Just how lucky was I to solve a
+  puzzle?</p>\n<p>This talk will explore how to implement a Wordle statistics bot
+  using Python's concurrent processing tools. No spoilers, I promise.</p>"
+description: "<p>I’ve played Wordle most days since late 2021. Maybe you have too?
+  One thing I wonder after solving the puzzle for the day is whether I made a bad
+  choice of words. Should I have chosen SMASH, or STASH? Just how lucky was I to solve
+  a puzzle?</p>\n<p>The good news is that writing a bot to solve Wordle — or, if you’d
+  prefer, give a statistical review of how well you played — is quite easy to do,
+  but the first implementation you might write in Python will probably be quite slow:
+  there’s lots of words to choose from, and figuring out which word might be a good
+  guess depends on comparing against a lot of other words.</p>\n<p>The good news is
+  that these sorts of tests are things that can be sped up by parallel processing,
+  and Python has some tools that can help with this.</p>\n<p>In this talk, we’ll discuss
+  a simplified implementation of the algorithm used by the New York Times’ Wordlebot,
+  and then we’ll look at speeding it up using Python’s concurrency tools. We’ll look
+  at making small changes to use the <code>concurrent.futures</code> package, to see
+  the performance difference between thread pools and process pools; we’ll look at
+  what structural changes you might make to use Python’s <code>async</code> functions;
+  and we’ll finish off by looking at the <code>nogil</code> branch of Python to see
+  how this impacts our performance.</p>\n<p>This talk is a fun way to look at how
+  Python performs at concurrent processing tasks, and what future development in Python
+  might have for problems like this one. And while there’ll be a small amount of maths
+  involved, it shouldn’t be enough to scare you off.</p>\n<p>And nothing in this talk
+  will spoil today’s Wordle. Or tomorrow’s. I promise.</p>"
+code: XSDU8C
+speakers:
+- QWCHX7
+cw:
+youtube_slug:

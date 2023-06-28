@@ -1,0 +1,20 @@
+title: Learning to Sketch with Differentiable Rendering
+abstract: <p>Drawing (or rendering) has long been one of the surprising and amazing
+  things computers can do. But what about sketching, are computers any good at it?
+  Differentiable Rendering is a technique borrowed from the field of machine learning
+  that does exactly that! In this talk we will cover how it works and demo what it
+  can do.</p>
+description: <p>Differentiable Rendering is a technique that takes the standard machine
+  learning pipeline and utilizes it to generate images from vector information such
+  as meshes, curves and polygons. The twist is that the "Differentiable" in the name
+  means standard machine learning algorithms such as gradient descent can then be
+  used to <em>learn</em> how a given image can be created from these building blocks!
+  We will cover how to use PyTorch and Python to implement such a renderer with the
+  help of automatic gradients, the principles behind how it works and a few things
+  that it can do, besides covering what could be built on top of it and how it could
+  help artists.</p>
+code: LVHYPD
+speakers:
+- YCFJET
+cw:
+youtube_slug:

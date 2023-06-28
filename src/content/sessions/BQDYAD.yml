@@ -1,0 +1,23 @@
+title: Assurance of Learning Through Testing
+abstract: "<p>Programming education increasingly centres around tools that offer automatic
+  marking of student progress through a set of exercises. Automated marking has become
+  increasingly popular as it allows instructors to provide personalised feedback to
+  students in real-time and is easily scalable to large cohorts. It can also be used
+  to provide instructors with detailed insight into the class progression.</p>\n<p>While
+  this brings many new advantages it also creates new problems. Chief amongst those
+  is the difficulty of marking long, dynamic and interactive programs which places
+  a large burden on educators to develop sophisticated marking systems.</p>\n<p>At
+  the more extreme end of the problem, we may be faced with students who want to take
+  shortcuts such as hard-coding, or using Python’s built-in functionality and third
+  party packages, which may violate the spirit of the exercise. As a result these
+  students may not be achieving learning outcomes.</p>\n<p>In this talk we will discuss
+  and demonstrate practical approaches to the aforementioned problems that all educators
+  can use to simplify marking and to increase their assurance of learning. We will
+  also discuss current limitations that we face and provide recommendations to those
+  wishing to apply these approaches.</p>"
+description: ''
+code: BQDYAD
+speakers:
+- VXBVLZ
+cw:
+youtube_slug:

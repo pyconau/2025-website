@@ -1,0 +1,23 @@
+title: Using Django 4.2's StreamingHttpResponse and HTMX SSE to provide real time
+  notifications
+abstract: <p>Django 4.2 introduces a new way of streaming http responses with an ASGI
+  server. Let's use this with HTMX to build a traditional web application that provides
+  SPA-like real time notifications!</p>
+description: "<p>Traditional web applications rely on the request-response model,
+  and as a result can only display messages and notifications when the user interacts
+  with the page in some, potentially delaying important information. How can we improve
+  on this, to provide some of the responsiveness that has made SPA style applications
+  so popular over the years?</p>\n<p>Luckily, we have some great tools available these
+  days, such as the HTMX library. And in Django 4.2, we can also use a StreamingHttpResponse
+  to send Server Sent Events directly to HTMX to be inserted into the page in real-time.</p>\n
+  <p>In this talk, we'll walk through the background of Server Sent Events and how
+  this feature works, and take a look at an example in a simple Django application,
+  showing how notifications can be streamed from a Django view using StreamingHttpResponse,
+  and rendered on the page in real-time using HTMX.</p>\n<p>We'll also take a look
+  at some of the challenges with this approach, including how to handle removal of
+  notifications, and how to make this scale across multiple web server processes.</p>"
+code: WMBADG
+speakers:
+- KTZNUG
+cw:
+youtube_slug:

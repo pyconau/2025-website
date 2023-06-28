@@ -1,0 +1,34 @@
+title: Using Python to stream media using GStreamer for WebRTC and RTSP applications
+abstract: "<p>Being able to capture, manipulate and present video and audio has become\n
+  much more common and useful over the last few years.  For example, the use\nof the
+  WebRTC standard for teleconferencing and also applying Machine Learning\nfor perceiving
+  situations in the physical world, often using RTSP (network)\ncameras.</p>\n<p>This
+  presentation will aim to bring you up-to-speed quickly with using Python\nprogrammatically
+  to build GStreamer pipelines for use with both RTSP and\nWebRTC applications.</p>"
+description: "<p>The popular GStreamer open-source multimedia framework has existed
+  since 2001, supporting a range of programming languages, most notably C++ and Python.
+  Whilst there is now substantial documentation and tutorials on-line, it can still
+  be challenging to overcome the initial learning curve to build a substantial Python
+  application, something more than just a limited plaything.</p>\n<p>Multimedia is
+  a complex domain due to the sheer number of audio / video standards and supporting
+  libraries.  GStreamer provides a sophisticated framework and a vast collection of
+  plugins that act as sources, filters and sinks for various media formats.  It can
+  be hard to know where to start.</p>\n<p>Fortunately, by focusing on two popular
+  use-cases, RTSP (network) cameras and WebRTC for teleconferencing, this reduces
+  the choices down to something more manageable.  In both cases, the video format
+  can be H.264 (aka MPEG-4 AVC).</p>\n<p>RTSP (network) cameras typically offer a
+  video stream, usually as an RTSP server ... and in most cases they are relatively
+  simple to work with.  Whereas WebRTC deals with all the challenges of securely delivering
+  low-latency video, audio and data (typically chat) channels, between multiple peers
+  (people using web browsers) and navigating through their firewalls.</p>\n<p>This
+  presentation aims to familiarize attendees with an overview of RTSP and WebRTC and
+  how they are supported by GStreamer.  Then, dive into how to build GStreamer pipelines
+  for each use-case ... covering the plugins for data sources, media encoding / decoding
+  and most importantly integration into Python applications to capture and produce
+  images.  Finally, demonstrating a Python development set-up for working with WebRTC
+  applications.</p>"
+code: RKQDK9
+speakers:
+- HU3WCT
+cw:
+youtube_slug:

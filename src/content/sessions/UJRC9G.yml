@@ -1,0 +1,16 @@
+title: Generating Python bindings to C++ libraries
+abstract: <p>Ever wanted to use your favourite C++ libraries in your Python? This
+  talk will discuss different ways of generating bindings to C++ libraries, including
+  the approaches that the RobotPy project has used over many years.</p>
+description: "<p>RobotPy gives over 50 teams of high school students competing in
+  the FIRST Robotics Competition the ability to write robot code in Python.</p>\n
+  <p>This talk will explore different popular solutions generating bindings to C++,
+  including SWIG and pybind11, and introduce some projects that automatically generate
+  binding code, including robotpy-build, RobotPy's own solution to generate pybind11
+  code. We'll also discuss some of the complexities around library dependencies, making
+  sure the bindings feel Pythonic, and publishing to PyPI.</p>"
+code: UJRC9G
+speakers:
+- 37TEMH
+cw:
+youtube_slug:

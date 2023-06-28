@@ -1,0 +1,15 @@
+title: Multi-tenancy strategies with Django+PostgreSQL
+abstract: <p>Most Django sites contain information that effectively needs to be isolated
+  from other users or groups. How can we use Django+Postgres to defend against developer
+  mistakes to ensure private data doesn't leak to the wrong users?</p>
+description: "<p>This talk discusses various strategies for ensuring that data in
+  Django sites is correctly siloed and only visible to users who are intended to be
+  able to access that data.</p>\n<p>Pros and cons of various database strategies and
+  Django/Postgres extensions are discussed, including tenancy denormalisation, database-level
+  enforcement, how to leverage custom Model Managers (and their limitations), incremental
+  adoption, multiple databases/schemas/app servers and non-technical considerations.</p>"
+code: 8EHZDF
+speakers:
+- 8DJWFM
+cw:
+youtube_slug:

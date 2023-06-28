@@ -1,0 +1,30 @@
+title: An introduction to Causal Inference with Python – making accurate estimates
+  of cause and effect from data, using PyWhy and DoWhy
+abstract: <p>Everyone wants to understand why things happen, and what would happen
+  if you did things differently. You’ve probably read that statistics can only tell
+  you if things are correlated, or associated, and this explains nothing about cause
+  and effect. But in fact there’s a process called Causal Inference which does answer
+  these questions, can tell you if A causes B and more importantly, can tell you what
+  would happen, if… This talk will help you to frame and tackle these questions using
+  your data and some popular Python libraries.</p>
+description: "<p>Causal inference is used by statisticians, econometricians, and data
+  scientists to understand cause-and-effect relationships. It seeks to determine the
+  causal impact of a particular treatment or intervention on an outcome of interest,
+  while accounting for potential confounding factors in a principled and accurate
+  way. Causal Inference is often used with historical, observational data, or where
+  it’s unethical, too expensive, or impractical to conduct a randomized controlled
+  trial (RCT). </p>\n<p>Causal inference methods often rely on statistical Machine
+  Learning models and techniques to estimate causal effects. Using these models, hypothetical
+  or counterfactual scenarios can be explored - what would have happened, under different
+  conditions. The models also provide insight into why things happened - and which
+  factors were most responsible. \nPython is one of the most popular languages for
+  Causal Inference. PyWhy is a collection of Open-Source libraries for Causal Inference,
+  including DoWhy and EconML. This talk will explore how to use these tools with your
+  existing data to form and answer Causal questions, and some tips and tricks to help
+  you interpret and validate your results. The content will be aimed at people with
+  basic Python coding experience and doesn’t require any advanced maths.</p>"
+code: CVYXRW
+speakers:
+- MTGWEC
+cw:
+youtube_slug:

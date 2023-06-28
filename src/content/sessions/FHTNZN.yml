@@ -1,0 +1,26 @@
+title: 'Robyn: A fast async Python web framework with a Rust runtime'
+abstract: <p>This talk explores Robyn, a Python web framework that utilizes Rust to
+  achieve high performance while still allowing for easy Python code writing. By examining
+  Robyn's architecture and development, the speaker will discuss how it improves web
+  application performance and provides insights into designing high-performance web
+  frameworks. The talk highlights the growing involvement of Rust in the Python ecosystem
+  and how Robyn is pushing the limits of Python web development.</p>
+description: "<p>With the rise of Rust bindings being used in the Python ecosystem,
+  we know that throughput efficiency is one of the top priority items in the Python
+  ecosystem.</p>\n<p>Inspired by the extensibility and ease of use of the Python Web
+  ecosystem and the increase of performance by using Rust as a core, Robyn was created.
+  </p>\n<p>Robyn is one of the fastest Python web frameworks in the current Python
+  web ecosystem. With a runtime written in Rust, Robyn achieves near-native rust performance
+  while still having the ease of writing Python code. </p>\n<p>This talk will focus
+  on the increased involvement of Rust in the Python ecosystem. It will also demonstrate
+  why Robyn was created, the technical decisions behind Robyn, the increased performance
+  by using the Rust runtime, how to use Robyn to develop web apps, and most importantly,
+  how the community is helping Robyn grow!</p>\n<p>I will briefly demonstrate my experience
+  and challenges of building a community around the project and how it allowed Robyn
+  to ensure a smooth sail even in turbulent situations. I shall also share my future
+  plans for Robyn.</p>"
+code: FHTNZN
+speakers:
+- ZPQUMD
+cw:
+youtube_slug:

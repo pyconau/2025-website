@@ -1,0 +1,20 @@
+title: Faster, Faster! Improving regex performance with atomic grouping, possessive
+  quantifiers and more!
+abstract: "<p>Greedy, Lazy or Possessive? Improving regex performance with atomic
+  grouping, possessive quantifiers and more!</p>\n<p>Regex can be a powerful fuzzy
+  text processing tool. But large data starts to show how regex can be slow. This
+  talk will examine some of the reasons why regex can be slow, and what can be done
+  to improve performance.</p>\n<p>Many of the techniques covered are also applicable
+  in other programming tools that use regex.</p>\n<p>This is <em>not</em> an introduction
+  to regex talk; an understanding of basic regex, and regex in Python, is assumed.</p>"
+description: "<p>Not every trick will work in every case, but by using these techniques
+  some of the performance issues with regex can be addressed. We will start by looking
+  at some simpler techniques can be used, then dive into more advanced techniques.
+  \nWe will look at:\n* how regex gets parsed and processed\n* how to choose quantifiers,
+  character classes and flags for performance\n* whether to be greedy, lazy or possessive
+  (say what?)\n* using the new (3.11+) atomic grouping and possessive quantifiers.</p>"
+code: LQZHTK
+speakers:
+- WCE7JM
+cw:
+youtube_slug:

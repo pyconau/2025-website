@@ -1,0 +1,28 @@
+title: A Recent History of Python Through Stack Overflow Questions and Answers
+abstract: "<p>From Python 0.9's public release in 1991 it has grown to be one of the
+  most\nwidely used programming languages, including prominence in many domains from\n
+  web apps to machine learning. While there is never going to be any single\nexplanation
+  of why or how Python reached this point, Python's past can help\ninform our collective
+  future. In this talk I will introduce a novel Python\ntool for interactive text
+  analytics to tell a recent history of Python, as\nseen through the Python questions
+  and answers on Stack Overflow.</p>"
+description: "<p>If you've searched the web to solve a programming related issue you've\n
+  probably come across Stack Overflow, the programmer focused question and\nanswer
+  site. Stack Overflow questions and answers are contributed by a\ncommunity of users
+  and represent a large body of public and openly licensed\ndata about how Python
+  is used by a particular group of programmers. Stack\nOverflow's high ranking in
+  search results and associated web traffic gives\nthe site prominence for programmers
+  beyond the narrow demographics of\nStack Overflow itself.</p>\n<p>As of writing
+  there are over two million questions tagged <code>Python</code> on Stack\nOverflow
+  - there aren't enough hours in the day to read through that! For\nthis talk I'll
+  introduce an approach to computational text analytics as a\nstarting point for making
+  sense of all of this data. I'll show off a new\nlibrary for interactive text analytics
+  that lets us start tackling data like\nthis with nothing but a laptop. But I'll
+  also show that computing alone isn't\nenough! The human work of analysis and interpretation
+  is needed to come up\nwith something meaningful that is actually grounded in the
+  data.</p>"
+code: HQ8MWD
+speakers:
+- D9UMRR
+cw:
+youtube_slug:

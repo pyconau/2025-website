@@ -1,0 +1,38 @@
+title: Six QA Tools that will make your Python code better
+abstract: "<p>Six QA Tools that will make your Python code better…</p>\n<p>Put simply,
+  they are: Black, iSort, PyLint, MyPy, PyTest and Coverage.</p>\n<p>When used regularly
+  as part of your code – test – commit – push cycle, these tools combine to improve
+  the quality of your Python code. No more will your team argue about trite matters
+  of coding style freeing up their creativity for issues of design that truly matter.</p>"
+description: "<p>Six QA Tools that will make your Python code better…</p>\n<p>Put
+  simply, they are: Black, iSort, PyLint, MyPy, PyTest and Coverage.</p>\n<p>When
+  used regularly as part of your code – test – commit – push cycle, these tools combine
+  to improve the quality of your Python code. No more will your team argue about trite
+  matters of coding style freeing up their creativity for issues of design that truly
+  matter.</p>\n<p>We shall start by looking at some code fragments that contain common
+  bugs that might have been trapped by the linting process.</p>\n<p>Each of the linters
+  brings an implementation overhead. Black and iSort are easy to deploy with their
+  functionality often included in a modern IDE. These tools will change the structure
+  of your code completely removing any white-space noise from your source repo.</p>\n
+  <p>PyLint is a static analysis tool scans for ‘code smells’. PyLint will detect
+  issues in your code like “variable not used”, “variable name does not conform to
+  snake_case” and “too many local variables”</p>\n<p>MyPy checks your code for compatible
+  types and will report issues in code like my_var = 1 + “2” before the code is executed.</p>\n
+  <p>PyTest is a framework that supports writing unit tests for your code and brings
+  many productivity features like test fixtures, and auto created and cleaned up temp
+  folders. To use PyTest well, you will have to structure your code for testability
+  which brings a learning curve. A side benefit is that when your code can be thoroughly
+  exercised by PyTest, it will be easier for a human to maintain.</p>\n<p>Coverage
+  is a tool that watches while your PyTest suite executes, and reports lines of code
+  not exercised by your unit tests.</p>\n<p>Each tool brings a higher cost of use
+  than the previous one. Some can be executed in the IDE. Others on the desktop via
+  a script, and on the build server.</p>\n<p>In our team, we have a strict rule that
+  all code going to prod must have been through all six tools, with 100% of code covered
+  by unit tests.</p>\n<p>This rule will not be appropriate in all circumstances, but
+  if your code is going to last a long time, be worked on by a large team, and carries
+  a high cost in the event of errors, they are worth considering.</p>"
+code: YYGFBE
+speakers:
+- 8S3XPK
+cw:
+youtube_slug:

@@ -1,0 +1,18 @@
+title: 'Swiss Army Django: Small Footprint ETL'
+abstract: <p>A case study of a single-application ETL system to scrape and enrich
+  complex nested data and then expose it via GraphQL and Discord. It will dive into
+  how to use these various async-based libraries together in a small footprint app.</p>
+description: "<p>ETL systems have become commonplace in our world, from tiny personal
+  web scrapers to complex distributed data pipelines. With Django offering a fully
+  async API, new possibilities have opened to simplify the many different microservices
+  into a single Python application that hosts the scrapers, query systems, and administrative
+  interface all in one box. With this comes simplified code and deployment, and many
+  other benefits.</p>\n<p>This talk will cover a case study in building this kind
+  of all-in-one ETL system, the components used, and how they all fit together. This
+  includes both API and web scrapers, GraphQL for querying and streaming, and a Discord
+  interface for notifications and control.</p>"
+code: BKHZML
+speakers:
+- MY7QMZ
+cw:
+youtube_slug:

@@ -1,0 +1,31 @@
+title: The Complexity of Simplicity
+abstract: "<p>Quoth the Zen of Python: “Simple is better than complex”. </p>\n<p>The
+  Python community has long celebrated simplicity as a virtue, but Python has grown,
+  the features that make Python simple in small programs don’t matter as much.</p>\n
+  <p>In this talk, we’ll explore how the Python community used to think about simplicity,
+  how we think about simplicity now that Python is used for ever more complex tasks,
+  and consider whether “simple is better than complex” is advice that Pythonistas
+  can meaningfully follow.</p>"
+description: "<p>Quoth the Zen of Python: “Simple is better than complex”. </p>\n
+  <p>The Python community has long celebrated simplicity as a virtue. For people coming
+  from more complicated languages, an expressive syntax makes it simpler to express
+  complex ideas. For people new to programming, Python’s choice of program structure
+  and built-ins make it simple to learn.</p>\n<p>But Python has grown. Developers
+  are using Python in more mission-critical places, Python codebases are getting bigger,
+  and the features that make Python simple in small programs don’t matter as much.</p>\n
+  <p>It’s little wonder that the Python ecosystem’s relationship with simplicity has
+  changed a lot since the first release of Python 3: Libraries like <code>requests</code>
+  (and lately <code>httpx</code>) focused on simplifying common tasks that the standard
+  library made complex, at the expense of a more complex architecture; type hints
+  added complexity to writing code to prioritise simplicity or testing and maintenance;
+  newer code quality tools like <code>ruff</code> have prioritised simplifying development
+  workflows by using a single complex tool, instead of focusing on simpler tools that
+  serve a single purpose.</p>\n<p>In this talk, we’ll explore how the Python community
+  used to think about simplicity, how we think about simplicity now that Python is
+  used for ever more complex tasks, and consider whether “simple is better than complex”
+  is advice that Pythonistas can meaningfully follow.</p>"
+code: 7EG3JD
+speakers:
+- QWCHX7
+cw:
+youtube_slug:

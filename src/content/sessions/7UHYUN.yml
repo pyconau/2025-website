@@ -1,0 +1,20 @@
+title: Wrapping up the Cruft - Making Wrappers to Hide Complexity
+abstract: "<p>When working with students, the goal is to teach them how to think about
+  systems, logic, and problem solving, not just rote memorisation, or copying boilerplate
+  code from an example.</p>\n<p>This talk is about how writing wrappers around the
+  cruft can help you present your students with an approachable interface to make
+  learning to program easy, fun, and effective.</p>"
+description: "<p>This year and last, we have been working with the Kookaberries, microcomputers
+  produced by the AustSTEM Foundation.</p>\n<p>We’ve used these with great success
+  to teach students of a wide variety of ages.</p>\n<p>To facilitate this, we’ve implemented
+  wrappers around various peripherals, components, and pre-existing libraries. These
+  standardise and simplify the code that the students need to write, so they can solve
+  larger and more interesting problems, and get more excited about the possibilities.</p>\n
+  <p>In this talk, I'll go through what this entails, what the wrappers look like,
+  and what this has enabled our students to do, creating projects far larger and more
+  exciting than previously possible.</p>"
+code: 7UHYUN
+speakers:
+- 8UFZNX
+cw:
+youtube_slug:

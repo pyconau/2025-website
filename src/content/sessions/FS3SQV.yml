@@ -1,0 +1,20 @@
+title: N+1 Problem in Django Rest Framework
+abstract: <p>N+1 problems in Django are not new. Anyone who has worked with Django
+  must have had some interaction with the N+1 problem. Django Rest Framework allows
+  building robust APIs on top of Django. We will explore the N+1 problem in DRF, understand
+  its occurrence in DRF views and serializer fields, and review its performance implications.</p>
+description: "<p>Django and N+1 problems are a match made in heaven. N+1 is a common
+  performance issue encountered in Django projects. Django Rest Framework builds on
+  top of Django and allows the development of highly robust and dynamic APIs for Django
+  apps. Using model serializers, creating a CRUD API with DRF has become simple. The
+  simplicity comes with hidden costs and N+1 is among such costs.\nIn this talk, we
+  will dive into the N+1 problem within the context of Django Rest Framework (DRF),
+  and explore how it can appear on both Views and within the Serializers.</p>\n<p>Outline:\n
+  - Speaker Introduction (2 mins)\n- N+1 problem introduction (5 mins)\n- N+1 on DRF
+  views (7 mins)\n- N+1 on Serializer (8 mins)\n- Detecting &amp; Resolving N+1 problems
+  (5 mins)\n- Closing thoughts (3 mins)</p>"
+code: FS3SQV
+speakers:
+- E3XJKT
+cw:
+youtube_slug:

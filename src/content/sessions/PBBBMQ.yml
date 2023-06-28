@@ -1,0 +1,31 @@
+title: Testing asynchronous applications with FastAPI and pytest
+abstract: <p>Let's discuss testing of <code>FastAPI</code> asynchronous applications.
+  The talk will cover different types of testing mechanisms i.e. unit testing and
+  end-to-end testing using <code>pytest</code>. I will also present some interesting
+  test scenarios from <code>kernelCI-API</code> which is a new backend being developed
+  for <code>KernelCI</code> - a distributed testing system for Linux kernel.</p>
+description: "<p>Calling out all passionate python programmers (and testers of course),
+  even if you have a basic understanding of python syntax and concepts, you are more
+  than welcome to attend this talk. This talk will be helpful to all Pythonistas who
+  are interested to know how to test asynchronous applications with <code>pytest</code>.</p>\n
+  <p>FastAPI is a modern python framework for building RESTful APIs. The talk will
+  begin with a brief introduction to FastAPI and asynchronous programming with it.</p>\n
+  <p>Since real world projects and examples always help better to understand technologies
+  and concepts, I'll take <code>KernelCI</code> as a reference point for the presentation.\n
+  For further context, <code>KernelCI</code> (https://kernelci.org/) is a test system
+  for upstream Linux Kernel. <code>KernelCI-API</code> (source code can be found at
+  https://github.com/kernelci/kernelci-api) is a new backend for <code>KernelCI</code>.
+  Since it is written with FastAPI, I will explain the API designs and tests using
+  it.</p>\n<p>Starting with some simple testing examples from the KernelCI API such
+  as CRUD operations, I will progress towards more advanced test cases including authentication
+  and pub/sub mechanism. For end-to-end tests, I will go through how to write a test
+  pipeline that includes APIs that asynchronously wait for certain operations to take
+  place e.g. listening on a specific channel for messages. In addition to that, the
+  talk will cover some pytest features for managing order and dependencies between
+  tests.</p>\n<p>In the end, I will discuss how to use different testing environments
+  for automating tests.</p>"
+code: PBBBMQ
+speakers:
+- 9YPA33
+cw:
+youtube_slug:

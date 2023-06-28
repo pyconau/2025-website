@@ -1,0 +1,37 @@
+title: Building health software on decentralised health data using Personal Online
+  Datastores
+abstract: "<p>Increasing awareness of personal data stored on centralised servers
+  and individual need to access personal data in a connected world is driving the
+  development of frameworks to support data sovereignty and privacy. The Australian
+  National University’s Software Innovation Institute is collaborating with Gurriny
+  Yealamucka Health Service (Gurriny) in the Yarrabah Indigenous community of North
+  Queensland, Australia, to build privacy focused data infrastructure and associated
+  software applications called the Solid Health System which will provide individuals
+  with storage, ownership, and control over their own health data.  This model is
+  using Social Linked Data (Solid) technology, a decentralised data storage specification
+  for software application development, using open standards mostly developed by the
+  World Wide Web Consortium (W3C). Open source Solid server provides users with a
+  secure online storage space called a personal online datastore (POD) to store their
+  own data with granular control of data sharing using data access control policies
+  to provision a trust-no-one environment. Cross-platform software applications are
+  being developed with the Dart and Flutter framework to interact with PODS on a data
+  pipeline built with Python. </p>\n<p>Indigenous controlled health care clinics such
+  as Gurriny are providing whole of person care, requiring the integrated view of
+  the patient's medical, health, social, and cultural data to better support the patient
+  to manage their health in a complex environment of multiple social determinants
+  impacting health. Using a PODs-based app, the patient can maintain control over
+  their highly personal data, and can access personalised health information that
+  supports a strength rather than deficit-based approach to health care. Health and
+  health-related data are both collected by and shared with the individual enabling
+  patient centred connected data that is required to provide integrated health care
+  services needed for the treatment of chronic diseases. Gurriny will use this PODs-based
+  digital infrastructure to integrate and analyse patient data to provide personalised
+  holistic point-of-care health services and develop the evidence to understand and
+  innovate integrated health care for chronic disease. This presentation will explain
+  how Solid PODs work and outline how to build PODs-based software applications.</p>"
+description: ''
+code: VUZFD9
+speakers:
+- YEJTFV
+cw:
+youtube_slug:

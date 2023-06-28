@@ -1,0 +1,14 @@
+title: Web Development with Flask
+abstract: <p>Do you want to introduce web development to your students but aren't
+  sure where to start? Flask is a quick and easy way to make web applications in Python.
+  Attendees will come away with a Flask template and tutorial to use with students.</p>
+description: <p>Flask is a lightweight web framework that allows students to easily
+  create a working web application with very little boilerplate code. Students can
+  also take advantage of the fact that Python comes bundled with SQLite to create
+  web apps that interact with a database using raw SQL. Come and find out how to get
+  started with Flask in an educational setting.</p>
+code: BDMZVQ
+speakers:
+- XDM3GY
+cw:
+youtube_slug:
