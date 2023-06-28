@@ -205,18 +205,20 @@ for speaker in paginate(
             )
             if avatar_resp.status_code == 304:
                 print("ETag match")
-                continue
-            avatar_resp.raise_for_status()
-            if "ETag" in avatar_resp.headers:
-                etags[speaker["code"]] = avatar_resp.headers["ETag"]
-            im = Image.open(BytesIO(avatar_resp.content))
-            im = im.convert("RGB")
-            im.thumbnail((128, 128))
-            im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'))
-            has_pic = True
+            else:
+                avatar_resp.raise_for_status()
+                if "ETag" in avatar_resp.headers:
+                    etags[speaker["code"]] = avatar_resp.headers["ETag"]
+                im = Image.open(BytesIO(avatar_resp.content))
+                im = im.convert("RGB")
+                im.thumbnail((128, 128))
+                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'))
+                has_pic = True
     except Exception as e:
         print(speaker["code"], speaker["avatar"], e)
-    with (PEOPLE_DIR / f'{speaker["code"]}.yml').open("w") as f:
+
+    speaker_file = PEOPLE_DIR / f'{speaker["code"]}.yml'
+    with speaker_file.open("w") as f:
         yaml.dump(
             {
                 "name": speaker["name"],
@@ -250,5 +252,5 @@ for speaker in paginate(
             f,
         )
 
-with (PEOPLE_DIR / "_etags.yml").open("w") as f:
+with (CONTENT_DIR / "_people_etags.yml").open("w") as f:
     yaml.dump(etags, f)
