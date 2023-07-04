@@ -128,9 +128,6 @@ for session in paginate(
         print("skipping due to tag id")
         continue
 
-    if session["submission_type"]["en"] == "PyCon Fair stall":
-        continue
-
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
