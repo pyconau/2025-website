@@ -4,6 +4,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # TODO: make this workflow run conditional on a commit actually being created
+  workflow_run:
+    workflows: [Update schedule]
+    types: [completed]
 
 permissions:
   contents: read
