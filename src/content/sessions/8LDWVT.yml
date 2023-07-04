@@ -1,4 +1,5 @@
 title: 'Practical Pipelines: A Houseplant Alerting System with ksqlDB'
+track: data
 abstract: "<p>300 Character Elevator Pitch\nBe a better plant parent and build a practical,
   event-driven pipeline with Raspberry Pi and Apache Kafka! Soil moisture readings
   are streamed into Kafka and transformed, driving real-time alerts. Learn how ksqlDB

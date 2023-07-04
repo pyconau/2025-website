@@ -1,4 +1,5 @@
 title: Zero or Hero? - Assessing Pygame Zero in the classroom
+track: education
 abstract: <p>Kids want to code games and I need them to learn the fundamental data
   structures and how to make a user interface. Pygame Zero seems like a gift - the
   UI power of pygame with a simpler format and an implied main loop. In truth there

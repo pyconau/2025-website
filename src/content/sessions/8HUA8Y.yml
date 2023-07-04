@@ -1,4 +1,5 @@
 title: Choosing Wisely - How to Pick the Right Third Party Packages for your Project
+track: djangocon
 abstract: <p>Python has an incredible library of open source packages you can use
   in your own project, but how do you pick the right one? What can happen if you pick
   the <em>wrong</em> one? In this talk, we'll discuss the process of choosing the

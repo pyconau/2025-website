@@ -1,4 +1,5 @@
 title: 'Data Contracts: Consensus as Code'
+track: data
 abstract: "<p>Garbage in, garbage out. We all know that, but it's hard to know what
   to do about it. Documenting everything is well-intentioned, but it's often too detailed
   or too tedious to be effective. So what's the solution?</p>\n<p>Code.</p>\n<p>Using

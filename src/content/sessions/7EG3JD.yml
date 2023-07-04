@@ -1,4 +1,5 @@
 title: The Complexity of Simplicity
+track:
 abstract: "<p>Quoth the Zen of Python: “Simple is better than complex”. </p>\n<p>The
   Python community has long celebrated simplicity as a virtue, but Python has grown,
   the features that make Python simple in small programs don’t matter as much.</p>\n

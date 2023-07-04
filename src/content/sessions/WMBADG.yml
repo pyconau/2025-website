@@ -1,5 +1,6 @@
 title: Using Django 4.2's StreamingHttpResponse and HTMX SSE to provide real time
   notifications
+track: djangocon
 abstract: <p>Django 4.2 introduces a new way of streaming http responses with an ASGI
   server. Let's use this with HTMX to build a traditional web application that provides
   SPA-like real time notifications!</p>

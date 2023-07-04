@@ -1,4 +1,5 @@
 title: Building 3D Trusted Data Pipelines With Dagster, Dbt, and Duckdb
+track: data
 abstract: "<p>This talk will demonstrate an example of building trusted data pipelines
   with 3D packages: Dagster, Dbt, and Duckdb. First, it presents the importance of
   testing data pipelines from high levels (like tables, relations, …) to low levels

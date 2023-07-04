@@ -1,4 +1,5 @@
 title: Taming the Duck with Type Hints
+track:
 abstract: "<p>Python with its flexible typing is amazingly productive - in a short
   time you can come up\nwith an awesome program.  But as that program ages and grows
   its like a child with \nuntied shoe laces. Which is where type hints come in - type

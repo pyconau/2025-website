@@ -1,4 +1,5 @@
 title: (Probably) a retrospective for Secateur
+track:
 abstract: <p>This talk will serve as a retrospective on this little django side project
   that over the course of it's life grew to 70,000 users, made somewhere around four
   billion Twitter API calls, and was supported by several in the NZ/AU Python community.</p>

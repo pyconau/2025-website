@@ -1,5 +1,6 @@
 title: 'Learning FastAPI on hard-mode: getting out lots of the hardest (aw yeah, geo)
   data fast'
+track:
 abstract: "<p><strong>APIs! Async! Type validation! ISO standards! Large geodata!</strong>
   Let’s do it all in python in 2023.</p>\n<p>This will be a tour of FastAPI, Pydantic,
   pyproj and some other interesting modern tooling -- this talk is aimed towards people

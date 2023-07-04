@@ -1,4 +1,5 @@
 title: N+1 Problem in Django Rest Framework
+track: djangocon
 abstract: <p>N+1 problems in Django are not new. Anyone who has worked with Django
   must have had some interaction with the N+1 problem. Django Rest Framework allows
   building robust APIs on top of Django. We will explore the N+1 problem in DRF, understand

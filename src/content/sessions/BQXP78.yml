@@ -1,4 +1,5 @@
 title: One person's Ansible is another's pyinfra.
+track:
 abstract: "<p>Have you ever sat there while writing an Ansible playbook and thought
   to yourself \"Gee, I know how to express what I want in in a programming language,
   such as Python, but this Domain Specific Language bolted on top of Jinja layered

@@ -1,4 +1,5 @@
 title: Multi-tenancy strategies with Django+PostgreSQL
+track: djangocon
 abstract: <p>Most Django sites contain information that effectively needs to be isolated
   from other users or groups. How can we use Django+Postgres to defend against developer
   mistakes to ensure private data doesn't leak to the wrong users?</p>

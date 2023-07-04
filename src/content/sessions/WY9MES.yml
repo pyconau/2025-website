@@ -1,5 +1,6 @@
 title: Using Python and 19,200 bits/second serial links to manage antennae for the
   Square Kilometre Array radio telescope in Australia
+track: ocu
 abstract: <p>The Australian half of the Square Kilometre Array radio telescope will
   collect 7.2 Terabits/second of raw data from 131,072 antennae grouped into 512 'stations'
   with 256 antennae each - but every antenna needs to be connected to a box within

@@ -1,4 +1,5 @@
 title: How to build a cross-platform graphical user interface with Python
+track:
 abstract: "<p>If you need to build a user interface for your Python code, most guides
   will tell you that your only options are to use the command line, or wrap your code
   in a web interface. </p>\n<p>However, there is another option - building a GUI interface.

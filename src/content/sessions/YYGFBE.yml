@@ -1,4 +1,5 @@
 title: Six QA Tools that will make your Python code better
+track:
 abstract: "<p>Six QA Tools that will make your Python code better…</p>\n<p>Put simply,
   they are: Black, iSort, PyLint, MyPy, PyTest and Coverage.</p>\n<p>When used regularly
   as part of your code – test – commit – push cycle, these tools combine to improve

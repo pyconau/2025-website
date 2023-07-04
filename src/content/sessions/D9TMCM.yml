@@ -1,4 +1,5 @@
 title: How to build a unit testing library from scratch?
+track:
 abstract: "<p>Have you ever used Pytest? Have you ever wondered what happens when
   you run pytest over your tests folder, create parametrized test cases, or use fixtures?</p>\n
   <p>In this talk, we will find answers to all these by building our own testing library.\n

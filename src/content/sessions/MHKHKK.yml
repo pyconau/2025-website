@@ -1,4 +1,5 @@
 title: Diagnostics - Seeing Inside Your Application Without Logging
+track: ocu
 abstract: "<p>You know it as the fuel gauge in your car, the blinking lights on your
   modem or the operational status page of your favourite cloud service. It's diagnostics!
   A data efficient technique for seeing how well your system is running in real time.</p>\n

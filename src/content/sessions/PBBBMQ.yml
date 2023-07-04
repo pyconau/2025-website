@@ -1,4 +1,5 @@
 title: Testing asynchronous applications with FastAPI and pytest
+track: ocu
 abstract: <p>Let's discuss testing of <code>FastAPI</code> asynchronous applications.
   The talk will cover different types of testing mechanisms i.e. unit testing and
   end-to-end testing using <code>pytest</code>. I will also present some interesting

@@ -1,4 +1,5 @@
 title: 'CountESS: Count-based Experiment Scoring and Statistics'
+track:
 abstract: <p>CountESS is a new visual programming toolkit for data processing in bioinformatics.  It
   aims to make complicated data processing pipelines easy to set up and replicate,
   but also easy to modify, explore and extend (in Python)</p>

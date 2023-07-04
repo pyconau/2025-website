@@ -1,4 +1,5 @@
 title: 'HttpRequest: An unsung hero of Django'
+track: djangocon
 abstract: <p>We use it in every view, every request, but how much is HttpRequest doing
   for you that you never thought about?</p>
 description: "<p>One of the key strengths of Django is protecting us from the dangerous

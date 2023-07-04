@@ -1,4 +1,5 @@
 title: Learning to Sketch with Differentiable Rendering
+track:
 abstract: <p>Drawing (or rendering) has long been one of the surprising and amazing
   things computers can do. But what about sketching, are computers any good at it?
   Differentiable Rendering is a technique borrowed from the field of machine learning

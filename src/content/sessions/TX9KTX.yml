@@ -1,4 +1,5 @@
 title: Building a biological database with Python
+track: djangocon
 abstract: <p>This talk is a story of how open-source frameworks make it possible for
   academics to take on otherwise infeasibly complex projects, which in my case was
   a new community-driven database for biologists and clinical geneticists.</p>

@@ -1,4 +1,5 @@
 title: The Python 3D Visualisation Landscape
+track: data
 abstract: <p>A survey of packages in the Python ecosystem for real-time 3D rendering
   and data visualisation</p>
 description: <p>This talk will give an overview of the ecosystem for real-time 3D

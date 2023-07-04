@@ -1,4 +1,5 @@
 title: Refactoring for fun and profit
+track:
 abstract: "<p>Ever been in a situation where you've hastily written a bunch of code,
   just to make something \"work\"?</p>\n<p>Have you then trembled with fear, looking
   at your single, thousand line file, with global variables, multi parameter functions,

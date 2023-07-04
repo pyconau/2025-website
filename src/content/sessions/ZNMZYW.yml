@@ -1,5 +1,6 @@
 title: Unpacking the geospatial engineering toolbox – an overview of data science
   techniques for spatial data
+track: data
 abstract: <p>This talk is an introductory dive into the world of spatial data in data
   science. We will discuss how we use python to massage and process objects and buildings'
   shapes and locations, in order to solve problems such as determining accessibility
