@@ -11,11 +11,15 @@ const sponsors = defineCollection({
 const pages = defineCollection({
   schema: z.object({ title: z.string(), order: z.number().optional() }),
 })
+const tracks = defineCollection({
+  schema: z.object({ name: z.string() }),
+})
 const sessions = defineCollection({
   schema: z.object({
     title: z.string(),
     abstract: z.string(),
     description: z.string(),
+    track: z.enum(["ocu", "data", "education", "djangocon"]).nullable(),
     code: z.string(),
     speakers: z.array(z.string()),
     cw: z.string().nullable(),
@@ -38,6 +42,7 @@ const people = defineCollection({
 export const collections = {
   sponsors,
   pages,
+  tracks,
   sessions,
   people,
 }

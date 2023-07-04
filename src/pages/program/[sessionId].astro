@@ -1,6 +1,7 @@
 ---
 import Profile from "../../components/Profile.astro"
 import Base from "../../layouts/Base.astro"
+import Button from "../../components/Button.astro"
 import { getCollection, CollectionEntry, getEntry } from "astro:content"
 
 export async function getStaticPaths() {
@@ -21,7 +22,37 @@ const speakers = (
         ),
     )
 ).filter(((x) => !!x) as <T>(x: T | undefined) => x is T)
+const track = entry.data.track
+    ? await getEntry("tracks", entry.data.track)
+    : null
 ---
+
+<style lang="scss">
+    @use "sass:color";
+    @import "../../vars.scss";
+    main {
+        margin-top: 70px;
+        h1:first-of-type {
+            margin-top: 0.5em;
+        }
+    }
+
+    .cta {
+        background-color: color.scale(
+            $wattle-leaf,
+            $saturation: -30%,
+            $lightness: 90%
+        );
+        color: color.scale($wattle-leaf, $lightness: -50%);
+        border-radius: 5px;
+        padding: 1px;
+        margin: 1em 0;
+
+        p {
+            margin: 10px;
+        }
+    }
+</style>
 
 <Base title={entry.data.title}>
     {
@@ -53,6 +84,7 @@ const speakers = (
 */
     }
     <main>
+        <Button href="/program">&larr; Return to program</Button>
         <h1>{entry.data.title}</h1>
         {
             entry.data.cw && (
@@ -62,7 +94,22 @@ const speakers = (
                 </div>
             )
         }
+        {
+            track && (
+                <p>
+                    Part of the <a href={`/${track.slug}`}>{track.data.name}</a>{" "}
+                    specialist track
+                </p>
+            )
+        }
         <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
+        <div class="cta">
+            <p>
+                See this talk and many more by getting your ticket to PyCon AU
+                now!
+            </p>
+            <Button block href="/attend">I want a ticket!</Button>
+        </div>
         <Fragment set:html={entry.data.description} />
         {speakers.map((speaker) => <Profile person={speaker} bio />)}
     </main>

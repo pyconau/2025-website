@@ -128,6 +128,9 @@ for session in paginate(
         print("skipping due to tag id")
         continue
 
+    if session["submission_type"]["en"] == "PyCon Fair stall":
+        continue
+
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
@@ -160,13 +163,18 @@ for session in paginate(
             ),
             None,
         )
+        track = session["track"]
+        if track is not None:
+            track = tracks[track["en"]]
+        else:
+            print(f"!!! {session['code']} has no track assigned")
         yaml.dump(
             {
                 "title": session["title"],
                 # "start": start,
                 # "end": end,
                 # "room": rooms[session["slot"]["room"]["en"]],
-                # "track": tracks[session["track"]["en"]],
+                "track": track,
                 # "type": type_answer_id,
                 "abstract": parse_markdown(session["abstract"]),
                 "description": parse_markdown(session["description"]),

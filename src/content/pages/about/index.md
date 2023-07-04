@@ -15,7 +15,7 @@ The first day of PyCon AU will be dedicated to specialist tracks. These tracks, 
 
 PyCon AU kicks off with a day for attendees interested in specialist fields. It runs just like a main conference day, any attendees on this day are welcome to attend talks from any or all of the tracks, you can pick and choose and the talk schedules will line up nicely to let you do that.
 
-With four very different tracks there’s something for everyone and each track will have a mix of beginner friendly and in-depth specialist talks. The four tracks are: [DjangoCon AU](/about/tracks/#djangocon-au), [Education](/about/tracks/#education), [Our Connected Universe](/about/tracks/#our-connected-universe), and [All Things Data](/about/tracks/#all-things-data).
+With four very different tracks there’s something for everyone and each track will have a mix of beginner friendly and in-depth specialist talks. The four tracks are: [DjangoCon AU](/djangocon), [Education](/education), [Our Connected Universe](/ocu), and [All Things Data](/data).
 
 Each track is organised by specialists in their field, the talks are selected by the track organisers in coordination with the program committee.
 
