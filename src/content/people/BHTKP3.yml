@@ -5,4 +5,4 @@ fedi:
 bio: <p>Damien started his career as a theoretical physicist researching the Standard
   Model, cosmology, and the possibility of extra dimensions.  He got side tracked
   after creating MicroPython and now works full-time maintaining it.</p>
-has_pic: false
+has_pic: true
