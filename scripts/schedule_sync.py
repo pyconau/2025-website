@@ -124,6 +124,10 @@ for session in paginate(
     #    continue
     print(session["code"])
 
+    # Leave opening and closing sessions out of the schedule for now
+    if session["submission_type"]["en"] == "Opening/Closing":
+        continue
+
     if TAG_IDS_TO_SKIP.intersection(session["tag_ids"]):
         print("skipping due to tag id")
         continue
