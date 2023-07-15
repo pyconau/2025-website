@@ -1,5 +1,9 @@
 title: Zero or Hero? - Assessing Pygame Zero in the classroom
+start: 2023-08-18 11:00:00+09:30
+end: 2023-08-18 11:30:00+09:30
+room: b
 track: education
+type: talk
 abstract: <p>Kids want to code games and I need them to learn the fundamental data
   structures and how to make a user interface. Pygame Zero seems like a gift - the
   UI power of pygame with a simpler format and an implied main loop. In truth there

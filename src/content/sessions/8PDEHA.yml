@@ -1,5 +1,9 @@
 title: Snake Charmers
+start:
+end:
+room:
 track:
+type: stall
 abstract: <p>A chance to mess around with open source musical software and/or hardware</p>
 description: "<p>Ever wished your elite Guitar Hero skills translated into real live
   rockstardom?\nWant to learn something about MIDI and embedded Python?\n(etc, let's

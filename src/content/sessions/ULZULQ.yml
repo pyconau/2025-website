@@ -1,5 +1,9 @@
 title: Blender and 3D Art anyone can make using Python
+start: 2023-08-20 13:30:00+09:30
+end: 2023-08-20 14:00:00+09:30
+room: a
 track:
+type: talk
 abstract: <p>In addition to its role as the scripting language of choice in the 3D
   graphics world, Blender one of the leading 3D art programs is built with Python
   and is packed full of ways you can use Python code to create 3D content both directly

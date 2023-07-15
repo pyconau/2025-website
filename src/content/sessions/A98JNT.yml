@@ -1,5 +1,9 @@
 title: PyCon Fair
+start: 2023-08-20 13:30:00+09:30
+end: 2023-08-20 15:20:00+09:30
+room: e1e2
 track:
+type: special
 abstract: <p>For more information about PyCon Fair, see https://2023.pycon.org.au/about/fair</p>
 description: ''
 code: A98JNT

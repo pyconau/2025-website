@@ -1,6 +1,10 @@
 title: 'Learning FastAPI on hard-mode: getting out lots of the hardest (aw yeah, geo)
   data fast'
+start: 2023-08-19 10:35:00+09:30
+end: 2023-08-19 11:05:00+09:30
+room: e1e2
 track:
+type: talk
 abstract: "<p><strong>APIs! Async! Type validation! ISO standards! Large geodata!</strong>
   Let’s do it all in python in 2023.</p>\n<p>This will be a tour of FastAPI, Pydantic,
   pyproj and some other interesting modern tooling -- this talk is aimed towards people

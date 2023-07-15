@@ -1,5 +1,9 @@
 title: You can't do that in MicroPython!
+start: 2023-08-20 11:55:00+09:30
+end: 2023-08-20 12:25:00+09:30
+room: c
 track:
+type: talk
 abstract: "<p>MicroPython is <em>great</em> for hobbyists! You can control LEDs and
   motors, it's so easy! But you wouldn't use it for anything <em>serious</em>. Right?
   Surely not! It's too slow. You can't use all the features of a micro. It consumes

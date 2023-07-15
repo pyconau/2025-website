@@ -1,5 +1,9 @@
 title: 'Proactive Ops: Event Driven IT Operations'
+start: 2023-08-19 14:50:00+09:30
+end: 2023-08-19 15:20:00+09:30
+room: e1e2
 track:
+type: talk
 abstract: <p>Traditional IT operations is overwhelmingly reactive - humans respond
   to incidents and tickets. There is so much noise! Alerts, tickets, audits, chat
   threads. What if ops could catch the small things before they turn into big problems?

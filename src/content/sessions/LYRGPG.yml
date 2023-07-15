@@ -1,5 +1,9 @@
 title: Simulating Cricket World Cup in Python
+start:
+end:
+room:
 track:
+type: stall
 abstract: "<p>Cricket, with over two billion fanbases worldwide, is the second most
   popular sport after soccer. Unfortunately, like other sporting events, cricket matches
   were heavily affected during the Covid-19 pandemic. To compensate for the lack of

@@ -1,0 +1,25 @@
+title: 'Building Elegant API Contracts: From Zero to Hero'
+start: 2023-08-18 14:30:00+09:30
+end: 2023-08-18 15:00:00+09:30
+room: a
+track: ocu
+type: talk
+abstract: <p>Learn how one can write efficient APIs in Python with high-quality API
+  specifications using Open API and RAML specs to create API contracts and achieve
+  a better experience using the API with more reliable unit tests and increased response
+  consistency, thereby master the art of building robust and scalable APIs.</p>
+description: <p>API is at the core of almost every project, and developers need to
+  know how to build these RESTful APIs which serves multiple channels including microservices,
+  mobile, web et al. Writing an efficient API provides the developers with a cleaner
+  structure, deprecation policies, better unit test coverage, and a great documentation
+  workflow. Learn how one can write efficient APIs with high-quality API specifications
+  using Open API and RAML specs to create API contracts and achieve a better experience
+  using the API with more reliable unit tests and increased response consistency.
+  The audience will understand the architectural constraints which make any web service
+  a perfect RESTful API, Contract-first vs Code-first approach, HTTP concepts along
+  the best practices needed to build an elegant API.</p>
+code: JESERF
+speakers:
+- CHHWUG
+cw:
+youtube_slug:

@@ -1,5 +1,9 @@
 title: One person's Ansible is another's pyinfra.
+start: 2023-08-19 14:10:00+09:30
+end: 2023-08-19 14:40:00+09:30
+room: e1e2
 track:
+type: talk
 abstract: "<p>Have you ever sat there while writing an Ansible playbook and thought
   to yourself \"Gee, I know how to express what I want in in a programming language,
   such as Python, but this Domain Specific Language bolted on top of Jinja layered

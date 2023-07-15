@@ -1,5 +1,9 @@
 title: Web Development with Flask
+start: 2023-08-18 13:50:00+09:30
+end: 2023-08-18 14:20:00+09:30
+room: b
 track: education
+type: talk
 abstract: <p>Do you want to introduce web development to your students but aren't
   sure where to start? Flask is a quick and easy way to make web applications in Python.
   Attendees will come away with a Flask template and tutorial to use with students.</p>

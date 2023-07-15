@@ -1,5 +1,9 @@
 title: h5pydantic, from a Synchrotron through Python to HDF5
+start: 2023-08-19 14:10:00+09:30
+end: 2023-08-19 14:40:00+09:30
+room: c
 track:
+type: talk
 abstract: <p>h5pydantic is a Pydantic based library used to describe the layout of
   HDF5 files using Python models, in a similar way to how SQLAlchemy models are used
   to describe the layout of an SQL database. HDF5 files are structured binary files,

@@ -1,5 +1,9 @@
 title: Ten Years of MicroPython
+start: 2023-08-19 11:15:00+09:30
+end: 2023-08-19 11:45:00+09:30
+room: a
 track:
+type: talk
 abstract: <p>MicroPython started life in early 2013 as an experiment, to see if it
   was possible to shrink a high-level language like Python down enough to run on very
   small devices.  Ten years later MicroPython is a mature open-source project that

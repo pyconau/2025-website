@@ -1,6 +1,10 @@
 title: Unpacking the geospatial engineering toolbox – an overview of data science
   techniques for spatial data
+start: 2023-08-18 10:00:00+09:30
+end: 2023-08-18 10:30:00+09:30
+room: c
 track: data
+type: talk
 abstract: <p>This talk is an introductory dive into the world of spatial data in data
   science. We will discuss how we use python to massage and process objects and buildings'
   shapes and locations, in order to solve problems such as determining accessibility

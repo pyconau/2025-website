@@ -1,5 +1,9 @@
 title: Code Review of Senior Python Engineers
+start: 2023-08-20 14:10:00+09:30
+end: 2023-08-20 14:40:00+09:30
+room: c
 track:
+type: talk
 abstract: "<p>Through various practical experiences and case studies, this talk aims
   to share with professional software engineers the output and expectations of \"\
   seniority\" in code submission (pull-request) and code review at each stage of software

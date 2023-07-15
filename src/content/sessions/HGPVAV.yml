@@ -1,6 +1,10 @@
 title: 'Real-time Map Imagery Manipulation with Python, Slippy Maps, Flask, and Pillow:
   Building Interactive Maps with Dynamic Tiles'
+start: 2023-08-18 12:20:00+09:30
+end: 2023-08-18 12:50:00+09:30
+room: c
 track: data
+type: talk
 abstract: <p>This talk will demonstrate how to build interactive maps with Python,
   using slippy map tiles, Flask, and Pillow. We will create a Flask server to retrieve
   tiles and show how to manipulate them with Pillow, adding filters and overlays to

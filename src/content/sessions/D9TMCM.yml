@@ -1,5 +1,9 @@
 title: How to build a unit testing library from scratch?
+start: 2023-08-20 11:55:00+09:30
+end: 2023-08-20 12:25:00+09:30
+room: a
 track:
+type: talk
 abstract: "<p>Have you ever used Pytest? Have you ever wondered what happens when
   you run pytest over your tests folder, create parametrized test cases, or use fixtures?</p>\n
   <p>In this talk, we will find answers to all these by building our own testing library.\n

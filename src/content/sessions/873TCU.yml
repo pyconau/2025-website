@@ -1,5 +1,9 @@
 title: 'CountESS: Count-based Experiment Scoring and Statistics'
+start: 2023-08-19 11:55:00+09:30
+end: 2023-08-19 12:25:00+09:30
+room: e1e2
 track:
+type: talk
 abstract: <p>CountESS is a new visual programming toolkit for data processing in bioinformatics.  It
   aims to make complicated data processing pipelines easy to set up and replicate,
   but also easy to modify, explore and extend (in Python)</p>

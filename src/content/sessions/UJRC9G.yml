@@ -1,5 +1,9 @@
 title: Generating Python bindings to C++ libraries
+start: 2023-08-20 11:55:00+09:30
+end: 2023-08-20 12:25:00+09:30
+room: e1e2
 track:
+type: talk
 abstract: <p>Ever wanted to use your favourite C++ libraries in your Python? This
   talk will discuss different ways of generating bindings to C++ libraries, including
   the approaches that the RobotPy project has used over many years.</p>

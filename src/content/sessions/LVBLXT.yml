@@ -1,0 +1,15 @@
+title: Conference Opening (Sunday)
+start: 2023-08-20 09:00:00+09:30
+end: 2023-08-20 09:15:00+09:30
+room: c
+track:
+type: open-close
+abstract: <p>Welcome to the last day of PyCon AU!</p>
+description: <p>This is the session where we'll tell you everything you need to know
+  about the conference!</p>
+code: LVBLXT
+speakers:
+- VCVVRF
+- JUWLYN
+cw:
+youtube_slug:

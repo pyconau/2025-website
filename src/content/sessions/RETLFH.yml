@@ -1,5 +1,9 @@
 title: Taming the Duck with Type Hints
+start: 2023-08-20 14:50:00+09:30
+end: 2023-08-20 15:20:00+09:30
+room: b
 track:
+type: talk
 abstract: "<p>Python with its flexible typing is amazingly productive - in a short
   time you can come up\nwith an awesome program.  But as that program ages and grows
   its like a child with \nuntied shoe laces. Which is where type hints come in - type

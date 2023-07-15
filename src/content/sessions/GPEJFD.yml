@@ -1,5 +1,9 @@
 title: 'Demystifying Python AsyncIO: A Real-World Approach'
+start: 2023-08-20 11:55:00+09:30
+end: 2023-08-20 12:25:00+09:30
+room: b
 track:
+type: talk
 abstract: "<p>Maybe it's just me, but I hate stupid examples. I hate reading about
   OOP with animal examples as much as I hate reading about async with the client using
   bare asyncio.sleep statements. Mostly because (considering you won't work for a

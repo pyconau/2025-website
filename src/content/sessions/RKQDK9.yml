@@ -1,5 +1,9 @@
 title: Using Python to stream media using GStreamer for WebRTC and RTSP applications
+start: 2023-08-18 13:50:00+09:30
+end: 2023-08-18 14:20:00+09:30
+room: a
 track: ocu
+type: talk
 abstract: "<p>Being able to capture, manipulate and present video and audio has become\n
   much more common and useful over the last few years.  For example, the use\nof the
   WebRTC standard for teleconferencing and also applying Machine Learning\nfor perceiving

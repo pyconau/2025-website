@@ -1,5 +1,9 @@
 title: 'Practical Pipelines: A Houseplant Alerting System with ksqlDB'
+start: 2023-08-18 16:10:00+09:30
+end: 2023-08-18 16:40:00+09:30
+room: c
 track: data
+type: talk
 abstract: <p>Be a better plant parent and build a practical, event-driven pipeline
   with Raspberry Pi and Apache Kafka! Soil moisture readings are streamed into Kafka
   and transformed, driving real-time alerts. Learn how ksqlDB and Kafka Connect made

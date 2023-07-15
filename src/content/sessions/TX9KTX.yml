@@ -1,5 +1,9 @@
 title: Building a biological database with Python
+start: 2023-08-18 10:00:00+09:30
+end: 2023-08-18 10:30:00+09:30
+room: e1e2
 track: djangocon
+type: talk
 abstract: <p>This talk is a story of how open-source frameworks make it possible for
   academics to take on otherwise infeasibly complex projects, which in my case was
   a new community-driven database for biologists and clinical geneticists.</p>

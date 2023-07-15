@@ -1,6 +1,10 @@
 title: Faster, Faster! Improving regex performance with atomic grouping, possessive
   quantifiers and more!
+start: 2023-08-19 14:50:00+09:30
+end: 2023-08-19 15:20:00+09:30
+room: a
 track:
+type: talk
 abstract: "<p>Greedy, Lazy or Possessive? Improving regex performance with atomic
   grouping, possessive quantifiers and more!</p>\n<p>Regex can be a powerful fuzzy
   text processing tool. But large data starts to show how regex can be slow. This

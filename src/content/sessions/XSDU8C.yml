@@ -1,5 +1,9 @@
 title: FORKS? POOLS? ASYNC? Solving Wordle with Python’s concurrency tools
+start: 2023-08-20 10:35:00+09:30
+end: 2023-08-20 11:05:00+09:30
+room: b
 track:
+type: talk
 abstract: "<p>I’ve played Wordle most days since late 2021. Maybe you have too? One
   thing I wonder after solving the puzzle for the day is whether I made a bad choice
   of words. Should I have chosen SMASH, or STASH? Just how lucky was I to solve a

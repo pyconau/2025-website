@@ -1,5 +1,9 @@
 title: 'The Power of Edge Computing: What it is and Why it Matters?'
+start: 2023-08-19 14:10:00+09:30
+end: 2023-08-19 14:40:00+09:30
+room: a
 track:
+type: talk
 abstract: <p>Edge computing has emerged as an evolving technology that has the potential
   to transform the way we process and store data. In this talk, I will cover what
   exactly is Edge computing, and how does it differ from Cloud computing? Moreover,

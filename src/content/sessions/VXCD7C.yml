@@ -1,5 +1,9 @@
 title: Analysing and sharing genetic data with Python
+start: 2023-08-19 11:15:00+09:30
+end: 2023-08-19 11:45:00+09:30
+room: b
 track:
+type: talk
 abstract: "<p>We give an overview of how Python is used in bioinformatics, focusing
   on high throughput DNA sequencing and clinical genetic variant detection and classification.</p>\n
   <p>We show our Django application, VariantGrid, developed by SA Health, which has

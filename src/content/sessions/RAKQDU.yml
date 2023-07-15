@@ -1,5 +1,9 @@
 title: 'Packaging for serverless: effortless? Doubtless!'
+start: 2023-08-19 13:30:00+09:30
+end: 2023-08-19 14:00:00+09:30
+room: a
 track:
+type: talk
 abstract: "<p>A package-and-deploy pipeline is like plumbing: if it's working, you
   don't notice, but when it's not… you really do, and getting it working can be messy.
   We've tried several approaches for building Python artefacts to run on AWS Lambda,

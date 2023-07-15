@@ -1,5 +1,9 @@
 title: First Timers Session
+start: 2023-08-19 08:25:00+09:30
+end: 2023-08-19 08:45:00+09:30
+room: c
 track:
+type: special
 abstract: <p>Everything you need to know if you've never been to a PyCon AU before.</p>
 description: ''
 code: GP8MPG

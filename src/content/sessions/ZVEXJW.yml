@@ -1,5 +1,9 @@
 title: The Hidden Unity of APIs and Event Streams
+start: 2023-08-18 15:30:00+09:30
+end: 2023-08-18 16:00:00+09:30
+room: a
 track: ocu
+type: talk
 abstract: <p>APIs and events are complementary to each other and are deeply connected
   in the architecture of your domain. Understanding this insight will help you design
   better systems.</p>

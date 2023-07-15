@@ -1,5 +1,9 @@
 title: Fast, accurate, open-source geocoding in Python
+start: 2023-08-19 14:10:00+09:30
+end: 2023-08-19 14:40:00+09:30
+room: b
 track:
+type: talk
 abstract: "<p>Anytime you search for a cafe on Google Maps, you are using a geocoder:
   an algorithm that converts a text input into a standardized output, along with the
   precise geographic coordinates. Mapping points on a journey, linking large customer

@@ -1,5 +1,9 @@
 title: Multi-tenancy strategies with Django+PostgreSQL
+start: 2023-08-18 13:50:00+09:30
+end: 2023-08-18 14:20:00+09:30
+room: e1e2
 track: djangocon
+type: talk
 abstract: <p>Most Django sites contain information that effectively needs to be isolated
   from other users or groups. How can we use Django+Postgres to defend against developer
   mistakes to ensure private data doesn't leak to the wrong users?</p>
