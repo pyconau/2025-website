@@ -1,37 +1,7 @@
 ---
-import ProseList from "../../components/ProseList.astro"
-import Base from "../../layouts/Base.astro"
-import { CollectionEntry, getCollection } from "astro:content"
+import Redirect from "../../components/Redirect.astro"
 
-let sessions = await getCollection("sessions")
-let speakers = new Map<string, CollectionEntry<"people">>(
-    (await getCollection("people")).map((entry) => [entry.id, entry]),
-)
+// TODO: make this page redirect to the current day
 ---
 
-<Base title="Program">
-    <main>
-        <h1>Program</h1>
-        <p>
-            Our full program is coming soon. In the meantime, here's a sneak
-            peek at some of the sessions you can expect to see at PyCon AU!
-        </p>
-        <ul>
-            {
-                sessions.map((session) => (
-                    <li>
-                        <a href={`/program/${session.id}`}>
-                            {session.data.title}
-                        </a>{" "}
-                        by
-                        <ProseList
-                            items={session.data.speakers.map(
-                                (id) => speakers.get(id)?.data.name,
-                            )}
-                        />
-                    </li>
-                ))
-            }
-        </ul>
-    </main>
-</Base>
+<Redirect href="/program/friday/" />

@@ -14,14 +14,14 @@ from parse import parse
 from ruamel.yaml import YAML
 
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
-AEST = dateutil.tz.gettz("Australia/Melbourne")
+ACST = dateutil.tz.gettz("Australia/Adelaide")
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
 PEOPLE_DIR = CONTENT_DIR / "people"
 PUBLIC_DIR = pathlib.Path("../public")
 PEOPLE_IMGS_DIR = PUBLIC_DIR / "people"
 
-TAG_IDS_TO_SKIP = {787}
+TAG_IDS_TO_SKIP = set()
 
 yaml = YAML()
 md = Markdown()
@@ -68,13 +68,10 @@ def parse_markdown(text):
 
 
 rooms = {
-    "Backup Speakers": 0,
-    "Curlyboi Theatre": 1,
-    "Platypus Hall": 2,
-    "Science, Data & Analytics": 1,
-    "DevOops": 2,
-    "Education": 3,
-    "Snakeoil Academy (Security & Privacy)": 4,
+    "Hall A": "a",
+    "Hall B": "b",
+    "Hall C (Plenary)": "c",
+    "Hall E1E2": "e1e2",
 }
 
 tracks = {
@@ -96,6 +93,14 @@ answers = {
 format_answer = {
     1062: "L",  # live
     1063: "P",  # prerecord
+}
+
+types = {
+    "Talk": "talk",
+    "PyCon Fair stall": "stall",
+    "Opening/Closing": "open-close",
+    "Special": "special",
+    "Keynote": "keynote",
 }
 
 seen_speakers = set()
@@ -124,10 +129,6 @@ for session in paginate(
     #    continue
     print(session["code"])
 
-    # Leave opening and closing sessions out of the schedule for now
-    if session["submission_type"]["en"] == "Opening/Closing":
-        continue
-
     if TAG_IDS_TO_SKIP.intersection(session["tag_ids"]):
         print("skipping due to tag id")
         continue
@@ -135,8 +136,12 @@ for session in paginate(
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
-        # start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(AEST)
-        # end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(AEST)
+        if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
+            start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(ACST)
+            end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(ACST)
+        else:
+            start = None
+            end = None
         # type_answer_id = format_answer[next(
         #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
         #    )]
@@ -172,10 +177,13 @@ for session in paginate(
         yaml.dump(
             {
                 "title": session["title"],
-                # "start": start,
-                # "end": end,
-                # "room": rooms[session["slot"]["room"]["en"]],
+                "start": start,
+                "end": end,
+                "room": rooms[session["slot"]["room"]["en"]]
+                if session["slot"] and session["slot"]["room"]
+                else None,
                 "track": track,
+                "type": types[session["submission_type"]["en"]],
                 # "type": type_answer_id,
                 "abstract": parse_markdown(session["abstract"]),
                 "description": parse_markdown(session["description"]),

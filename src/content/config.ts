@@ -1,4 +1,5 @@
 import { z, defineCollection } from "astro:content"
+import { DateTime } from "luxon"
 
 const sponsors = defineCollection({
   schema: z.object({
@@ -24,6 +25,10 @@ const sessions = defineCollection({
     speakers: z.array(z.string()),
     cw: z.string().nullable(),
     youtube_slug: z.string().nullable(),
+    start: z.date().nullable(),
+    end: z.date().nullable(),
+    room: z.enum(["a", "b", "c", "e1e2"]).nullable(),
+    type: z.enum(["talk", "stall", "open-close", "special", "keynote"]),
   }),
   type: "data",
 })

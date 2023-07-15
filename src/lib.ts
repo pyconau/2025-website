@@ -1,3 +1,6 @@
+import type { CollectionEntry } from "astro:content"
+import type { DateTime, Duration, Interval } from "luxon"
+
 type Nested<T> = T & { children: Nested<T>[] }
 export function nestHeadings<T extends { depth: number }>(
   headings: T[],
@@ -29,4 +32,30 @@ export function nestedMap<T, U, F extends (datum: T, children: U[]) => U>(
   func: F,
 ): U[] {
   return data.map((datum) => func(datum, nestedMap(datum.children, func)))
+}
+
+export type ScheduledSession = CollectionEntry<"sessions"> & {
+  data: {
+    start: Exclude<CollectionEntry<"sessions">["data"]["start"], null>
+    end: Exclude<CollectionEntry<"sessions">["data"]["end"], null>
+    room: Exclude<CollectionEntry<"sessions">["data"]["room"], null>
+  }
+}
+
+export function isScheduled(
+  session: CollectionEntry<"sessions">,
+): session is ScheduledSession {
+  return !!session.data.start && !!session.data.end && !!session.data.room
+}
+
+export function* timeSlices(
+  start: DateTime,
+  end: DateTime,
+  duration: Duration,
+) {
+  let value = start
+  while (value <= end) {
+    yield value
+    value = value.plus(duration)
+  }
 }
