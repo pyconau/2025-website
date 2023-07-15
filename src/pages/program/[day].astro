@@ -67,19 +67,16 @@ const speakerNameMap = new Map(
       }
     }
 
-    #content {
-      display: flex;
-      flex-direction: column;
-    }
-
     s-schedule-outer {
-      flex: 1;
       display: block;
       @include horizontal {
         width: 100%;
         overflow-x: auto;
         overflow-y: hidden;
         writing-mode: vertical-lr;
+      }
+      @include vertical {
+        height: 80vh;
       }
     }
 
