@@ -17,9 +17,9 @@ export type Props = {
 }
 const { day } = Astro.props as Props
 const datestamp = {
-  friday: DateTime.fromISO("2023-08-18"),
-  saturday: DateTime.fromISO("2023-08-19"),
-  sunday: DateTime.fromISO("2023-08-20"),
+  friday: DateTime.fromISO("2023-08-18", { zone: "Australia/Adelaide" }),
+  saturday: DateTime.fromISO("2023-08-19", { zone: "Australia/Adelaide" }),
+  sunday: DateTime.fromISO("2023-08-20", { zone: "Australia/Adelaide" }),
 }[day]
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
