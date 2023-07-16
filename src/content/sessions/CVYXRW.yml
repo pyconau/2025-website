@@ -1,8 +1,8 @@
 title: An introduction to Causal Inference with Python – making accurate estimates
   of cause and effect from data, using PyWhy and DoWhy
-start: 2023-08-19 14:50:00+09:30
-end: 2023-08-19 15:20:00+09:30
-room: b
+start: 2023-08-20 11:55:00+09:30
+end: 2023-08-20 12:25:00+09:30
+room: c
 track:
 type: talk
 abstract: <p>Everyone wants to understand why things happen, and what would happen
