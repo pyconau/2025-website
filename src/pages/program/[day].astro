@@ -337,20 +337,6 @@ const speakerNameMap = new Map(
           </s-tba>
         ) : null
       }
-      {/* Sunday TBA sessions */}
-      {
-        day === "sunday" ? (
-          <s-tba
-            style={`--start: ${idx(
-              DateTime.fromISO("2023-08-20T09:15:00+0930"),
-            )}; --end: ${idx(
-              DateTime.fromISO("2023-08-20T10:00:00+0930"),
-            )}; --track: ${roomMap["c"]};`}
-          >
-            To be announced
-          </s-tba>
-        ) : null
-      }
       {
         sessions.map((session) => (
           <a
