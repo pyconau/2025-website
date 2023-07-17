@@ -21,7 +21,7 @@ PEOPLE_DIR = CONTENT_DIR / "people"
 PUBLIC_DIR = pathlib.Path("../public")
 PEOPLE_IMGS_DIR = PUBLIC_DIR / "people"
 
-TAG_IDS_TO_SKIP = set()
+TAG_IDS_TO_SKIP = {798}
 
 yaml = YAML()
 md = Markdown()
