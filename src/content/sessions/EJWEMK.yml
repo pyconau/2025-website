@@ -1,7 +1,7 @@
 title: Specialist Tracks Combined Opening Address
-start:
-end:
-room:
+start: 2023-08-18 09:00:00+09:30
+end: 2023-08-18 09:20:00+09:30
+room: c
 track:
 type: open-close
 abstract: <p>This year, all four special tracks will share a combined opening address!</p>
@@ -12,6 +12,7 @@ speakers:
 - QGHNMW
 - HYXK8D
 - W9N7QG
+- VCVVRF
 - BUPFGJ
 - X99XWA
 - K9ALZS
