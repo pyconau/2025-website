@@ -7,7 +7,7 @@ order: 1
 
 This page contains information for all speakers. _Please make sure you read both this and the [in-person](/speakers/in-person/) or [remote](/speakers/remote/) section as appropriate._
 
-## Talk duration
+## Talk duration and questions
 
 All talks run for **half an hour (30 minutes), including questions**.
 
@@ -24,7 +24,7 @@ Your Session Chair will sit in the front row and give you time warning cards at 
 
 There are 10 minutes between talks for changeover. Please respect this time limit. Once your slot is over, please collect your things and continue any conversations in the hallway, in order to give the next speaker an equal chance to prepare.
 
-## Slide Tips
+## Slide tips
 
 Here are some suggestions for slide design that will help you avoid a few common disappointing situations that presenters can face. (We thank previous PyCon AU organisers for this helpful list).
 
