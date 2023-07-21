@@ -10,4 +10,4 @@ bio: "<p>Christopher Neugebauer is an Australian developer, speaker, and serial 
   on a farm — in Petaluma, California.</p>\n<p>Christopher is also a contributor on
   the open source Pants build system, helping make Python’s testing, correctness,
   and style tools accessible and fast for developers, no matter how big their codebase.</p>"
-has_pic: false
+has_pic: true

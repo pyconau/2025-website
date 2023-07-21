@@ -222,6 +222,7 @@ for speaker in paginate(
             )
             if avatar_resp.status_code == 304:
                 print("ETag match")
+                has_pic = True
             else:
                 avatar_resp.raise_for_status()
                 if "ETag" in avatar_resp.headers:
