@@ -102,25 +102,6 @@ If you have an issue that should involve our Conduct Team, you can contact a mem
 
 If you have an immediate safety concern, please contact venue security, or Emergency Services (000). If you do call Emergency Services remember to let venue security know as well.
 
-## If you need to do a remote talk after all
-
-Sometimes that happens too. There’s still a pandemic on, after all.
-
-Tl;dr If you find yourself unwell or with some kind of last-minute travel emergency right before the conference, contact us as soon as possible at program@pycon.org.au.
-
-[Our conference policy on COVID-19](/safety/covid/) requires you to stay away from the in-person event if you test positive to COVID-19, or you’re displaying symptoms of COVID-19 in ways that are unusual to you.
-
-If this applies to you and you are scheduled to present at our event, please contact us as soon as possible at [program@pycon.org.au](mailto:program@pycon.org.au) and let us know if you need to either:
-
-- Present remotely (pre-recorded and live options available), or
-- Withdraw from presenting.
-
-If you need to present remotely, we will put you in touch with our amazing AV team so that they can be sure that you look and sound top-notch, and know what to do to succeed with a remote presentation. The earlier you can inform us the better, so we can prepare and liaise with you.
-
-If you aren’t well enough to present and you need to withdraw, we’re sorry to hear it, but we know it happens! If this occurs, we will either tap one of our wait-listed speakers to present in that space, or leave the space free so that attendees can attend one of the other talks happening at the same time. Please let us know as soon as possible so we can get things moving.
-
-Please remember that PyCon AU 2023 is a face to face conference, so unless you have already been confirmed as a remote presenter, speaking remotely is by exception only.
-
 ## More information
 
 Please keep reading the section on [in-person presentations](/speakers/in-person/) or [remote presentations](/speakers/remote/) as well.

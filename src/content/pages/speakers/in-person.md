@@ -48,3 +48,22 @@ We will not be making any more schedule changes unless absolutely necessary. If 
 ## Quiet space
 
 Should you need a quiet place to prepare for the talk, meditate, or unwind, we have a room set aside for this purpose. You can find the Quiet Room, Skyway Room 3, marked on our venue map which will be available on the event website closer to the event. Please note that this room is shared with all other conference attendees who may need it, so it is **not** a good place to rehearse your talk.
+
+## If you need to do a remote talk after all
+
+Sometimes that happens too. There’s still a pandemic on, after all.
+
+Tl;dr If you find yourself unwell or with some kind of last-minute travel emergency right before the conference, contact us as soon as possible at program@pycon.org.au.
+
+[Our conference policy on COVID-19](/safety/covid/) requires you to stay away from the in-person event if you test positive to COVID-19, or you’re displaying symptoms of COVID-19 in ways that are unusual to you.
+
+If this applies to you and you are scheduled to present at our event, please contact us as soon as possible at [program@pycon.org.au](mailto:program@pycon.org.au) and let us know if you need to either:
+
+- Present remotely (pre-recorded and live options available), or
+- Withdraw from presenting.
+
+If you need to present remotely, we will put you in touch with our amazing AV team so that they can be sure that you look and sound top-notch, and know what to do to succeed with a remote presentation. The earlier you can inform us the better, so we can prepare and liaise with you.
+
+If you aren’t well enough to present and you need to withdraw, we’re sorry to hear it, but we know it happens! If this occurs, we will either tap one of our wait-listed speakers to present in that space, or leave the space free so that attendees can attend one of the other talks happening at the same time. Please let us know as soon as possible so we can get things moving.
+
+Please remember that PyCon AU 2023 is a face to face conference, so unless you have already been confirmed as a remote presenter, speaking remotely is by exception only.
