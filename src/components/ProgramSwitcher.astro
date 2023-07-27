@@ -1,7 +1,9 @@
 ---
 import Switcher from "./Switcher.astro"
 import SwitcherItem from "./SwitcherItem.astro"
-export type Props = { current: "list" | "friday" | "saturday" | "sunday" }
+export type Props = {
+  current: "list" | "friday" | "saturday" | "sunday" | "sprints"
+}
 const { current } = Astro.props as Props
 ---
 
@@ -17,5 +19,8 @@ const { current } = Astro.props as Props
   </SwitcherItem>
   <SwitcherItem href="/program/sunday/" selected={current === "sunday"}>
     Sunday
+  </SwitcherItem>
+  <SwitcherItem href="/program/sprints/" selected={current === "sprints"}>
+    Monday & Tuesday
   </SwitcherItem>
 </Switcher>
