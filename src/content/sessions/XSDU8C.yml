@@ -1,7 +1,7 @@
 title: FORKS? POOLS? ASYNC? Solving Wordle with Python’s concurrency tools
-start: 2023-08-20 10:35:00+09:30
-end: 2023-08-20 11:05:00+09:30
-room: b
+start: 2023-08-20 11:15:00+09:30
+end: 2023-08-20 11:45:00+09:30
+room: c
 track:
 type: talk
 abstract: "<p>I’ve played Wordle most days since late 2021. Maybe you have too? One
