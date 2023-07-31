@@ -323,20 +323,6 @@ const speakerNameMap = new Map(
         Hall E1E2
         {day === "friday" ? <a href="/djangocon/">DjangoCon AU</a> : null}
       </s-track>
-      {/* Saturday TBA sessions */}
-      {
-        day === "saturday" ? (
-          <s-tba
-            style={`--start: ${idx(
-              DateTime.fromISO("2023-08-19T09:20:00+0930"),
-            )}; --end: ${idx(
-              DateTime.fromISO("2023-08-19T10:05:00+0930"),
-            )}; --track: ${roomMap["c"]};`}
-          >
-            To be announced
-          </s-tba>
-        ) : null
-      }
       {
         sessions.map((session) => (
           <a
