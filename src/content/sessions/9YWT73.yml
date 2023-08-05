@@ -1,7 +1,7 @@
 title: OpenDataCube - Petabyte Scale Satellite Imagery Processing in Python
-start:
-end:
-room:
+start: 2023-08-18 16:10:00+09:30
+end: 2023-08-18 16:40:00+09:30
+room: c
 track: data
 type: talk
 abstract: <p>Imagine performing a basic python API call to load observations of the
