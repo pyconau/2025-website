@@ -1,0 +1,36 @@
+title: OpenDataCube - Petabyte Scale Satellite Imagery Processing in Python
+start: 2023-08-18 16:10:00+09:30
+end: 2023-08-18 16:40:00+09:30
+room: c
+track: data
+type: talk
+abstract: <p>Imagine performing a basic python API call to load observations of the
+  natural environment from any sensor at any part of the spectrum, any where in space-time
+  since we started digitizing this information. This is what opendatacube aspires
+  to do using its signature <strong>datacube.load()</strong> command. This talk will
+  cover some history/ architecture of this project and publicly deployed instance
+  of datacubes where this dream is being implemented a continent at a time.</p>
+description: "<p>In the last decade a large amount of earth observation data has become
+  available from national space agencies and commercial providers in cloud native
+  formats. However accessing this data over space-time windows in a convenient way
+  has become more and more complex as each agency sets up independent data holding
+  patterns and image locations. </p>\n<p>Open Data Cube (ODC) is an open source project
+  that was born from a Geoscience Australia\nprogram, the \"Australian Geoscience
+  Data Cube\". The core code base moved to the Open Data Cube\nopen source project
+  in 2017. The aspires to be always 100% opensource, free for all to use and released
+  under an Apache 2.0 license. OpenDataCube aims to provide a common Python API for
+  array based access of these data holdings. There are infracode aspects for running
+  a scalable ODC instance on the various cloud providers using managed databases and
+  kubernetes clusters as well.</p>\n<p>This talk covers various aspects of OpenDataCube
+  design. Sample environments where OpenDataCube instances have been deployed and
+  typical use-cases for which it is a great fit.\nOpenDataCube overlaps with XArray
+  and Dask in everyday use and some aspects of these libraries are also covered.</p>\n
+  <p>Lastly some enhancement proposals are discussed that could use community contributions
+  at a technical level. Various Australian and international government and private
+  organisations continue to employ core developers. As for any open-source project
+  PR's are welcome from everyone.</p>"
+code: 9YWT73
+speakers:
+- 7RJAVY
+cw:
+youtube_slug:
