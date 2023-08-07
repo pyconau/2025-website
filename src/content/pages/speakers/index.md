@@ -58,7 +58,7 @@ Any actions that make attendees feel unwelcome or unsafe fall under the Code of 
 
 ## Content warnings
 
-If your talk contains content that you think might be sensitive, distressing or traumatic to some people (even if most people will be fine with it) please add a content warning, which you can do by [editing your accepted talk proposal in Pretalx](https://pretalx.com/pycon-au-2020/me/submissions/).
+If your talk contains content that you think might be sensitive, distressing or traumatic to some people (even if most people will be fine with it) please add a content warning, which you can do by [editing your accepted talk proposal in Pretalx](https://pretalx.com/pycon-au-2023/me/submissions/).
 
 Content warnings aren't a moral judgement on your talk, and they won't restrict who is able to watch it. In fact, the opposite is true—for some of your audience members, if they know something they find distressing is coming up, they'll be better able to handle it than if it's a surprise. That lets them look after their mental health and better engage with and learn from your talk!
 
@@ -84,7 +84,7 @@ Your talk information and biography is [up on our website](/program/).
 
 Please take the time to look over your talk entry, and make sure that you are happy with your abstract and biography.
 
-Should you wish to update your biography, profile photo, or abstract, [you can edit them in Pretalx](https://pretalx.com/pycon-au-2020/me/submissions/). Note that the website may take up to an hour to update. If you aren't able to do so, contact [program@pycon.org.au](mailto:program@pycon.org.au).
+Should you wish to update your biography, profile photo, or abstract, [you can edit them in Pretalx](https://pretalx.com/pycon-au-2023/me/submissions/). Note that the website may take up to an hour to update. If you aren't able to do so, contact [program@pycon.org.au](mailto:program@pycon.org.au).
 
 We advise you to send through any changes as soon as possible, ahead of the event, as the organising team will be very busy during the event and will not have time to push website changes outside of egregious errors or emergencies.
 

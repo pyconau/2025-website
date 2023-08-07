@@ -9,7 +9,7 @@ This page contains additional information for remote presentations. _Please make
 
 ## Updating your talk information
 
-If you need to update your talk information, you can [edit your accepted submission on Pretalx](https://pretalx.com/pycon-au-2020/me/submissions/).
+If you need to update your talk information, you can [edit your accepted submission on Pretalx](https://pretalx.com/pycon-au-2023/me/submissions/).
 
 If you haven't already, we need you to tick the consent box that says we're allowed to stream your content, otherwise we can't! You can make changes to your title, abstract, bio, and so on.
 
