@@ -29,6 +29,6 @@ If you need power (Australian standard - 240V AC), please let us know in your su
 
 ## How will the Fair run?
 
-PyCon Fair will run from 1:30pm-3:20pm on the Sunday afternoon, in room E2. Please be there 15 minutes beforehand to set up your stall. You will also have some additional time afterwards to pack up your stall.
+PyCon Fair will run from 1:30pm-3:20pm on the Sunday afternoon, in the foyer outside Hall E. Please be there 15 minutes beforehand to set up your stall. You will also have some additional time afterwards to pack up your stall.
 
 What you do with your stall in that time is largely up to you (see above).
