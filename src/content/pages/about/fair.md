@@ -21,4 +21,14 @@ Show off some cool robotics demos, some interesting visualisations, or even bett
 
 ## How can I submit?
 
-We'll give you details on how to submit your PyCon Fair stall during the opening session. Note that submissions received during the conference won't be provided with an A0 poster (but there will be a pinboard for you if you want to print your own).
+We'll give you details on how to submit your PyCon Fair stall during the opening session.
+
+Note that submissions received during the conference won't be provided with an A0 poster, but there will be a pinboard for you if you want to print and bring your own.
+
+If you need power (Australian standard - 240V AC), please let us know in your submission.
+
+## How will the Fair run?
+
+PyCon Fair will run from 1:30pm-3:20pm on the Sunday afternoon, in the foyer outside Hall E. Please be there 15 minutes beforehand to set up your stall. You will also have some additional time afterwards to pack up your stall.
+
+What you do with your stall in that time is largely up to you (see above).
