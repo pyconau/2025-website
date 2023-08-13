@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Notify discord
-        if: ${{ steps.add-and-commit.outputs.committed }}
+        if: steps.add-and-commit.outputs.committed == 'true'
         uses: th0th/notify-discord@v0.4.1
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
