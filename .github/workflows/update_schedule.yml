@@ -20,6 +20,7 @@ jobs:
           PRETALX_TOKEN: ${{ secrets.PRETALX_TOKEN }}
       - run: git diff
       - uses: EndBug/add-and-commit@v4
+        id: add-and-commit
         with:
           add: |
             public/people
@@ -31,7 +32,11 @@ jobs:
           message: "Auto-update of schedule"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Send Discord notification
-        uses: distributhor/workflow-webhook@v3
+      - name: Notify discord
+        if: ${{ steps.add-and-commit.outputs.committed }}
+        uses: th0th/notify-discord@v0.4.1
         env:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_JOB_NAME: "Update schedule"
+          GITHUB_JOB_STATUS: ${{ job.status }}
