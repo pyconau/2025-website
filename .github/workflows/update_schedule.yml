@@ -31,3 +31,7 @@ jobs:
           message: "Auto-update of schedule"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Send Discord notification
+        uses: distributhor/workflow-webhook@v3
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
