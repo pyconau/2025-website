@@ -7,6 +7,8 @@ const allSponsors = await getCollection("sponsors")
 const platinum = allSponsors.filter(
   (sponsor) => sponsor.data.tier === "platinum",
 )
+
+const track = allSponsors.filter((sponsor) => sponsor.data.tier === "track")!
 const auspice = allSponsors.find((sponsor) => sponsor.data.tier === "auspice")!
 const sponsorPage = await getEntryBySlug("pages", "sponsor")
 const Content = (await sponsorPage.render()).Content
@@ -76,6 +78,24 @@ and of course <a href="#auspice">Linux Australia</a>!
 
 <hr />
 {% endif %}
+*/
+
+    }
+
+    {
+      track && (
+        <>
+          <h2 id="track">Track Sponsor{track.length !== 1 && "s"}</h2>
+          {track.map((sponsor) => (
+            <SponsorListing sponsor={sponsor} />
+          ))}
+        </>
+      )
+    }
+
+    {
+
+/*
 
 {% if contributors %}
 <a name="contributors"></a>

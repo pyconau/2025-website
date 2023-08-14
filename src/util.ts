@@ -1,12 +1,13 @@
 import { getCollection, CollectionEntry } from "astro:content"
 
 type SponsorsByTier = {
-  tier: "platinum" | "auspice"
+  tier: "platinum" | "track" | "auspice"
   sponsors: CollectionEntry<"sponsors">[]
 }[]
 
 const data: SponsorsByTier = [
   { tier: "platinum", sponsors: [] },
+  { tier: "track", sponsors: [] },
   { tier: "auspice", sponsors: [] },
 ]
 let dataIsPopulated = false
