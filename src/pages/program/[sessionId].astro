@@ -3,60 +3,62 @@ import Profile from "../../components/Profile.astro"
 import Base from "../../layouts/Base.astro"
 import Button from "../../components/Button.astro"
 import { getCollection, CollectionEntry, getEntry } from "astro:content"
+import { DateTime } from "luxon"
+import { HALL_NAMES } from "../../lib"
 
 export async function getStaticPaths() {
-    const pages = await getCollection("sessions")
-    return pages.map((entry) => ({
-        params: { sessionId: entry.id },
-        props: { entry },
-    }))
+  const pages = await getCollection("sessions")
+  return pages.map((entry) => ({
+    params: { sessionId: entry.id },
+    props: { entry },
+  }))
 }
 export type Props = {
-    entry: CollectionEntry<"sessions">
+  entry: CollectionEntry<"sessions">
 }
 const { entry } = Astro.props as Props
 const speakers = (
-    await Promise.all(
-        entry.data.speakers.map(
-            async (speakerId) => await getEntry("people", speakerId),
-        ),
-    )
+  await Promise.all(
+    entry.data.speakers.map(
+      async (speakerId) => await getEntry("people", speakerId),
+    ),
+  )
 ).filter(((x) => !!x) as <T>(x: T | undefined) => x is T)
 const track = entry.data.track
-    ? await getEntry("tracks", entry.data.track)
-    : null
+  ? await getEntry("tracks", entry.data.track)
+  : null
 ---
 
 <style lang="scss">
-    @use "sass:color";
-    @import "../../vars.scss";
-    main {
-        margin-top: 70px;
-        h1:first-of-type {
-            margin-top: 0.5em;
-        }
+  @use "sass:color";
+  @import "../../vars.scss";
+  main {
+    margin-top: 70px;
+    h1:first-of-type {
+      margin-top: 0.5em;
     }
+  }
 
-    .cta {
-        background-color: color.scale(
-            $wattle-leaf,
-            $saturation: -30%,
-            $lightness: 90%
-        );
-        color: color.scale($wattle-leaf, $lightness: -50%);
-        border-radius: 5px;
-        padding: 1px;
-        margin: 1em 0;
+  .cta {
+    background-color: color.scale(
+      $wattle-leaf,
+      $saturation: -30%,
+      $lightness: 90%
+    );
+    color: color.scale($wattle-leaf, $lightness: -50%);
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1em 0;
 
-        p {
-            margin: 10px;
-        }
+    p {
+      margin: 10px;
     }
+  }
 </style>
 
 <Base title={entry.data.title}>
-    {
-        /*
+  {
+    /*
 <div class="time-bar">
   {{ session.start.strftime('%a %B %d, %I:%M %p')}}&ndash;{{
   session.end.strftime('%I:%M %p') }} &bull;
@@ -82,44 +84,55 @@ const track = entry.data.track
 {% endif %}
 
 */
-    }
-    <main>
-        <Button href="/program">&larr; Return to program</Button>
-        <h1>{entry.data.title}</h1>
-        {
-            entry.data.cw && (
-                <div class="content-warning">
-                    <b>Content warning:</b>{" "}
-                    <Fragment set:html={entry.data.cw} />
-                </div>
-            )
-        }
-        {
-            track && (
-                <p>
-                    Part of the <a href={`/${track.slug}`}>{track.data.name}</a>{" "}
-                    specialist track
-                </p>
-            )
-        }
-        <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
-        <div class="cta">
-            <p>
-                See this talk and many more by getting your ticket to PyCon AU
-                now!
-            </p>
-            <Button block href="/attend">I want a ticket!</Button>
-        </div>
-        <Fragment set:html={entry.data.description} />
-        {speakers.map((speaker) => <Profile person={speaker} bio />)}
-    </main>
+  }
+  <main>
+    <Button href="/program">&larr; Return to program</Button>
+    <h1>{entry.data.title}</h1>
     {
-        /* 
+      entry.data.start && entry.data.end && entry.data.room ? (
+        /* prettier-ignore */ <div class="time-bar">
+          {DateTime.fromJSDate(entry.data.start).toLocaleString(
+            {weekday: 'long'},
+          )}
+          {DateTime.fromJSDate(entry.data.start).toLocaleString(
+            DateTime.TIME_SIMPLE,
+          )}&ndash;{DateTime.fromJSDate(entry.data.end).toLocaleString(
+            DateTime.TIME_SIMPLE,
+          )}
+          in {HALL_NAMES[entry.data.room]}
+        </div>
+      ) : null
+    }
+    {
+      entry.data.cw && (
+        <div class="content-warning">
+          <b>Content warning:</b> <Fragment set:html={entry.data.cw} />
+        </div>
+      )
+    }
+    {
+      track && (
+        <p>
+          Part of the <a href={`/${track.slug}`}>{track.data.name}</a>{" "}
+          specialist track
+        </p>
+      )
+    }
+    <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
+    <div class="cta">
+      <p>See this talk and many more by getting your ticket to PyCon AU now!</p>
+      <Button block href="/attend">I want a ticket!</Button>
+    </div>
+    <Fragment set:html={entry.data.description} />
+    {speakers.map((speaker) => <Profile person={speaker} bio />)}
+  </main>
+  {
+    /* 
 {% for person in session.speakers %}
   {{ m.profile(person, bio=True) }}
 {% endfor %}
 
 {% endblock %}
 */
-    }
+  }
 </Base>
