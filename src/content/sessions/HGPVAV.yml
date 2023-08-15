@@ -11,20 +11,19 @@ abstract: <p>This talk will demonstrate how to build interactive maps with Pytho
   map images in real-time without needing to regenerate the tiles. Attendees will
   gain insights into building more engaging and dynamic maps, leveraging the power
   of these powerful Python libraries.</p>
-description: "<p>its libraries. It will begin with an introduction to slippy maps,
-  a popular web map architecture that uses pre-rendered image tiles for seamless panning
-  and zooming, and demonstrate how to generate these tiles using GDAL, an open-source
-  geospatial tool. The session will then delve into the manipulation of map images
-  using Pillow, a powerful Python imaging library, with a focus on adding filters
-  and overlays, such as dynamic watermarks, to the tiles in real-time.</p>\n<p>In
-  the subsequent section, the speaker will showcase some practical applications of
-  this technology, including adding watermarks to maps to safeguard data and adjusting
-  the brightness or darkness of imagery to highlight features or improve visibility.
-  Throughout the talk, attendees will learn how to serve maps using a lightweight
-  Flask application, providing a simple way to share maps over the web. By the end
-  of the session, participants will gain a solid understanding of how to create engaging
-  and dynamic maps using Python, slippy maps, Flask, and Pillow, which can be implemented
-  in web applications or data visualisation projects.</p>"
+description: "<p>In this session, we embark on a journey to transform and serve large
+  image datasets seamlessly for web applications.</p>\n<p>Our initial focus will be
+  on converting a substantial image dataset into the Slippy Tiles format. Then after
+  having transformed our data, we'll delve into efficient storage methods, guiding
+  attendees on how to store these tiles in a cloud storage solution, ensuring scalability
+  and ease of access.</p>\n<p>Next, we'll shift our attention to the creation of an
+  API endpoint with Flask. This will allow users to access the stored map tiles seamlessly.
+  But we won’t stop there! We'll enhance this endpoint with powerful functionalities
+  to modify the byte stream data in real-time, opening avenues for dynamic interactions
+  and manipulations.</p>\n<p>By the end of this session, participants will possess
+  the skills to effectively transform large image datasets, store them in the cloud,
+  and serve them through a dynamic API endpoint. This knowledge equips attendees to
+  create more interactive and responsive map-based applications and visualisations.</p>"
 code: HGPVAV
 speakers:
 - BALYAL
