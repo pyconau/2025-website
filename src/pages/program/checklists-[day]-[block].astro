@@ -38,6 +38,9 @@ const timeRange = {
     `2023-08-${dayNum}T15:20+0930/2023-08-${dayNum}T18:00+0930`,
   ),
 }[block]
+const speakerMap = new Map(
+  (await getCollection("people")).map((person) => [person.id, person]),
+)
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
   .map((x) => ({
@@ -46,19 +49,23 @@ const sessions = (await getCollection("sessions"))
       ...x.data,
       start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Adelaide" }),
       end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Adelaide" }),
+      speakers: x.data.speakers.map((speakerId) => speakerMap.get(speakerId)!),
     },
   }))
   .filter((s) => timeRange.contains(s.data.start))
-
-const speakerMap = new Map(
-  (await getCollection("people")).map((person) => [person.id, person]),
-)
 const roomCallsigns = {
   a: "Hall Alpha",
   b: "Hall Bravo",
   c: "Hall Charlie",
   e: "Hall Echo",
 }
+
+const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
+  hall,
+  sessions: sessions
+    .filter((session) => session.data.room == hall)
+    .sort((s1, s2) => s1.data.start.diff(s2.data.start).milliseconds),
+}))
 ---
 
 <!DOCTYPE html>
@@ -84,7 +91,7 @@ const roomCallsigns = {
           }
         }
 
-        ul.checklist li {
+        ul.checklist > li {
           list-style-type: "▢ ";
         }
       }
@@ -92,157 +99,213 @@ const roomCallsigns = {
   </head>
   <body>
     {
-      sessions.map((session) => (
-        <section>
-          <h1>
-            Hall {session.data.room.toUpperCase()} {/* prettier-ignore */}
-            <>
+      sessionsByHall.map((hallInfo) => (
+        <>
+          <section>
+            <h1>
+              Hall {hallInfo.hall.toUpperCase()},
+              {timeRange.start?.toLocaleString({ weekday: "short" })}
+              block {block}
+            </h1>
+            <ul>
+              <li>
+                Call time for <b>room monitor and session chair</b>:
+                {hallInfo.sessions[0]?.data.start
+                  .minus({ minutes: 15 })
+                  .toLocaleString(DateTime.TIME_24_SIMPLE)}
+              </li>
+              <li>
+                Call time for <b>speakers</b>:
+                {hallInfo.sessions[0]?.data.start
+                  .minus({ minutes: 10 })
+                  .toLocaleString(DateTime.TIME_24_SIMPLE)}
+              </li>
+            </ul>
+            <ul class="checklist">
+              <li>Liaise with your AV volunteer for this room</li>
+              <li>Find your session chair</li>
+              {hallInfo.sessions
+                .filter((session) => session.data.type != "open-close")
+                .map((session) =>
+                  session.data.speakers.map((speaker) => (
+                    <>
+                      {/* prettier-ignore */}
+                      <li>
+                    Find speaker
+                    {speaker.data.name} ({session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    session)
+                  </li>
+                    </>
+                  )),
+                )}
+              <li>
+                Inform the duty officer whether everyone is present:
+                <ul>
+                  <li>
+                    If everyone is present: "<b>Duty Officer</b> this is{" "}
+                    <b>{roomCallsigns[hallInfo.hall]}</b>, all block {block}{" "}
+                    speakers accounted for, over"
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          {hallInfo.sessions.map((session) => (
+            <section>
+              <h1>
+                Hall {session.data.room.toUpperCase()} {/* prettier-ignore */}
+                <>
             {session.data.start.toLocaleString({
                 ...DateTime.TIME_24_SIMPLE, 
                 weekday: "short"})}&ndash;{
                 session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)
             }
             </>
-          </h1>
-          <p>
-            <b>Session title:</b> {session.data.title}
-          </p>
-          <div class="x2up">
-            <div>
-              <h2>Speakers</h2>
-              <ul>
-                {session.data.speakers.map((speakerId) => {
-                  let speaker = speakerMap.get(speakerId)
-                  return (
-                    <li>
-                      {speaker?.data.name}{" "}
-                      {speaker?.data.pronouns ? (
-                        <>({speaker.data.pronouns})</>
-                      ) : null}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-            <div>
-              <h2>Timings</h2>
-              <ul>
-                <li>
-                  Session start:
-                  {session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE)}
-                </li>
-                <li>
-                  5min warning:
-                  {session.data.end
-                    .minus({ minutes: 5 })
-                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                </li>
-                <li>
-                  2min warning:
-                  {session.data.end
-                    .minus({ minutes: 2 })
-                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                </li>
-                <li>
-                  1min warning:
-                  {session.data.end
-                    .minus({ minutes: 1 })
-                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                </li>
-                <li>
-                  Session end:
-                  {session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="x2up">
-            <div>
-              <h1>Room Monitor</h1>
+              </h1>
               <p>
-                If you do not have a session chair, complete the{" "}
-                <b>Session chair</b> checklist to the right as well
+                <b>Session title:</b> {session.data.title}
               </p>
-              <ul class="checklist">
-                <li>TODO OTHER ITEMS</li>
-                <li>
-                  Introduce the speaker to your AV operator, and ensure they are
-                  mic'ed up with a headset mic
-                </li>
-                <li>
-                  Ensure the session chair has a handheld mic, so they can do
-                  introductions and facilitate questions
-                </li>
-                {session.data.type != "open-close" ? (
-                  <li>
-                    Prepare {session.data.speakers.length} speaker gift
-                    {session.data.speakers.length > 1 ? "s" : null} for the
-                    session chair
-                  </li>
-                ) : null}
-              </ul>
-            </div>
-            {session.data.type != "open-close" ? (
-              <div>
-                <h1>Session Chair</h1>
-                <ul class="checklist">
-                  <li>Verify the speaker's name, and check pronunciation</li>
-                  <li>Verify the speaker's pronouns</li>
-                  <li>
-                    Ask whether the speaker would like questions, and if so, how
-                  </li>
-                  <li>
-                    <b>When given the signal from AV or your room monitor:</b>{" "}
-                    introduce the speaker on stage
-                  </li>
-                  <li>
-                    Adjust the timings above if needed&mdash;the speaker should
-                    get their full{" "}
-                    {session.data.end
-                      .diff(session.data.start)
-                      .shiftTo("minutes")
-                      .toHuman({ unit: "minutes" })}
-                    , even if they start late
-                  </li>
-                  <li>
-                    Hold up 5, 2, 1, STOP signs, and ensure the speaker has seen
-                    them
-                  </li>
-                  <li>
-                    <b>
-                      If speaker has asked for questions AND there is enough
-                      time:
-                    </b>{" "}
-                    Facilitate questions, ensuring all questions are said into a
-                    microphone
-                  </li>
-                  <li>
-                    <b>When the speaker is finished:</b> Thank the speaker for
-                    their talk, and present them with their speaker gift
-                  </li>
-                  <li>
-                    Tell the audience about the next talk or upcoming break
-                  </li>
-                </ul>
+              <div class="x2up">
+                <div>
+                  <h2>Speakers</h2>
+                  <ul>
+                    {session.data.speakers.map((speaker) => (
+                      <li>
+                        {speaker?.data.name}{" "}
+                        {speaker?.data.pronouns ? (
+                          <>({speaker.data.pronouns})</>
+                        ) : null}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h2>Timings</h2>
+                  <ul>
+                    <li>
+                      Session start:
+                      {session.data.start.toLocaleString(
+                        DateTime.TIME_24_SIMPLE,
+                      )}
+                    </li>
+                    <li>
+                      5min warning:
+                      {session.data.end
+                        .minus({ minutes: 5 })
+                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    </li>
+                    <li>
+                      2min warning:
+                      {session.data.end
+                        .minus({ minutes: 2 })
+                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    </li>
+                    <li>
+                      1min warning:
+                      {session.data.end
+                        .minus({ minutes: 1 })
+                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    </li>
+                    <li>
+                      Session end:
+                      {session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    </li>
+                  </ul>
+                </div>
               </div>
-            ) : null}
-          </div>
-          <h2>If you have problems</h2>
-          <p>
-            Your <b>room monitor</b> can escalate any problems to the duty
-            officer:
-          </p>
-          <ul>
-            <li>
-              By radio (preferred): "<b>Duty Officer</b> this is{" "}
-              <b>{roomCallsigns[session.data.room]}</b>, over"
-            </li>
-            <li>
-              By phone: <b>0424 139 332</b>
-            </li>
-          </ul>
-        </section>
+
+              <div class="x2up">
+                <div>
+                  <h1>Room Monitor</h1>
+                  <p>
+                    If you do not have a session chair, complete the{" "}
+                    <b>Session chair</b> checklist to the right as well
+                  </p>
+                  <ul class="checklist">
+                    <li>
+                      Introduce the speaker to your AV operator, and ensure they
+                      are mic'ed up with a headset mic
+                    </li>
+                    <li>
+                      Ensure the session chair has a handheld mic, so they can
+                      do introductions and facilitate questions
+                    </li>
+                    {session.data.type != "open-close" ? (
+                      <li>
+                        Prepare {session.data.speakers.length} speaker gift
+                        {session.data.speakers.length > 1 ? "s" : null} for the
+                        session chair
+                      </li>
+                    ) : null}
+                  </ul>
+                  <h2>If you have problems</h2>
+                  <p>
+                    Your <b>room monitor</b> can escalate any problems to the
+                    duty officer:
+                  </p>
+                  <ul>
+                    <li>
+                      By radio (preferred): "<b>Duty Officer</b> this is{" "}
+                      <b>{roomCallsigns[session.data.room]}</b>, over"
+                    </li>
+                    <li>
+                      By phone: <b>0424 139 332</b>
+                    </li>
+                  </ul>
+                </div>
+                {session.data.type != "open-close" ? (
+                  <div>
+                    <h1>Session Chair</h1>
+                    <ul class="checklist">
+                      <li>
+                        Verify the speaker's name, and check pronunciation
+                      </li>
+                      <li>Verify the speaker's pronouns</li>
+                      <li>
+                        Ask whether the speaker would like questions, and if so,
+                        how
+                      </li>
+                      <li>
+                        <b>
+                          When given the signal from AV or your room monitor:
+                        </b>{" "}
+                        introduce the speaker on stage
+                      </li>
+                      <li>
+                        Adjust the timings above if needed&mdash;the speaker
+                        should get their full{" "}
+                        {session.data.end
+                          .diff(session.data.start)
+                          .shiftTo("minutes")
+                          .toHuman({ unit: "minutes" })}
+                        , even if they start late
+                      </li>
+                      <li>
+                        Hold up 5, 2, 1, STOP signs, and ensure the speaker has
+                        seen them
+                      </li>
+                      <li>
+                        <b>
+                          If speaker has asked for questions AND there is enough
+                          time:
+                        </b>{" "}
+                        Facilitate questions, ensuring all questions are said
+                        into a microphone
+                      </li>
+                      <li>
+                        <b>When the speaker is finished:</b> Thank the speaker
+                        for their talk, and present them with their speaker gift
+                      </li>
+                      <li>
+                        Tell the audience about the next talk or upcoming break
+                      </li>
+                    </ul>
+                  </div>
+                ) : null}
+              </div>
+            </section>
+          ))}
+        </>
       ))
     }
   </body>
