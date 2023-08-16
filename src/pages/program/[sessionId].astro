@@ -91,12 +91,12 @@ const track = entry.data.track
     {
       entry.data.start && entry.data.end && entry.data.room ? (
         /* prettier-ignore */ <div class="time-bar">
-          {DateTime.fromJSDate(entry.data.start).toLocaleString(
+          {DateTime.fromJSDate(entry.data.start, { zone: "Australia/Adelaide"}).toLocaleString(
             {weekday: 'long'},
           )}
-          {DateTime.fromJSDate(entry.data.start).toLocaleString(
+          {DateTime.fromJSDate(entry.data.start, { zone: "Australia/Adelaide"}).toLocaleString(
             DateTime.TIME_SIMPLE,
-          )}&ndash;{DateTime.fromJSDate(entry.data.end).toLocaleString(
+          )}&ndash;{DateTime.fromJSDate(entry.data.end, { zone: "Australia/Adelaide"}).toLocaleString(
             DateTime.TIME_SIMPLE,
           )}
           in {HALL_NAMES[entry.data.room]}
