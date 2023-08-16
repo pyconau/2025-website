@@ -1,6 +1,12 @@
 name: Liz Holliday
-pronouns:
+pronouns: She/Her
 twitter:
 fedi:
-bio: ''
-has_pic: false
+bio: <p>Holding the host torch for the Melbourne based community of Djangonauts 'MelbDjango',
+  Liz (she/her) hails from Common Code who are known for their elite bunch of Django
+  software engineers. Liz comes from a slightly different background herself, working
+  on national and international festivals and arts events, bringing large scale productions
+  to life in operations, logistics and production. When Liz isn't with technologists
+  or running events, she adventures somewhere off the beaten track, reads deep tech
+  newsletters or gets outside in the garden (forever trying to get basil to not die).</p>
+has_pic: true
