@@ -183,45 +183,50 @@ const roomCallsigns = {
                 ) : null}
               </ul>
             </div>
-            <div>
-              <h1>Session Chair</h1>
-              <ul class="checklist">
-                <li>Verify the speaker's name, and check pronunciation</li>
-                <li>Verify the speaker's pronouns</li>
-                <li>
-                  Ask whether the speaker would like questions, and if so, how
-                </li>
-                <li>
-                  <b>When given the signal from AV or your room monitor:</b>{" "}
-                  introduce the speaker on stage
-                </li>
-                <li>
-                  Adjust the timings above if needed&mdash;the speaker should
-                  get their full{" "}
-                  {session.data.end
-                    .diff(session.data.start)
-                    .shiftTo("minutes")
-                    .toHuman({ unit: "minutes" })}
-                  , even if they start late
-                </li>
-                <li>
-                  Hold up 5, 2, 1, STOP signs, and ensure the speaker has seen
-                  them
-                </li>
-                <li>
-                  <b>
-                    If speaker has asked for questions AND there is enough time:
-                  </b>{" "}
-                  Facilitate questions, ensuring all questions are said into a
-                  microphone
-                </li>
-                <li>
-                  <b>When the speaker is finished:</b> Thank the speaker for
-                  their talk, and present them with their speaker gift
-                </li>
-                <li>Tell the audience about the next talk or upcoming break</li>
-              </ul>
-            </div>
+            {session.data.type != "open-close" ? (
+              <div>
+                <h1>Session Chair</h1>
+                <ul class="checklist">
+                  <li>Verify the speaker's name, and check pronunciation</li>
+                  <li>Verify the speaker's pronouns</li>
+                  <li>
+                    Ask whether the speaker would like questions, and if so, how
+                  </li>
+                  <li>
+                    <b>When given the signal from AV or your room monitor:</b>{" "}
+                    introduce the speaker on stage
+                  </li>
+                  <li>
+                    Adjust the timings above if needed&mdash;the speaker should
+                    get their full{" "}
+                    {session.data.end
+                      .diff(session.data.start)
+                      .shiftTo("minutes")
+                      .toHuman({ unit: "minutes" })}
+                    , even if they start late
+                  </li>
+                  <li>
+                    Hold up 5, 2, 1, STOP signs, and ensure the speaker has seen
+                    them
+                  </li>
+                  <li>
+                    <b>
+                      If speaker has asked for questions AND there is enough
+                      time:
+                    </b>{" "}
+                    Facilitate questions, ensuring all questions are said into a
+                    microphone
+                  </li>
+                  <li>
+                    <b>When the speaker is finished:</b> Thank the speaker for
+                    their talk, and present them with their speaker gift
+                  </li>
+                  <li>
+                    Tell the audience about the next talk or upcoming break
+                  </li>
+                </ul>
+              </div>
+            ) : null}
           </div>
           <h2>If you have problems</h2>
           <p>
