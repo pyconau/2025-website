@@ -1,7 +1,7 @@
 title: 'Swiss Army Django: Small Footprint ETL'
 start: 2023-08-18 16:10:00+09:30
 end: 2023-08-18 16:40:00+09:30
-room: e1e2
+room: e
 track: djangocon
 type: talk
 abstract: <p>A case study of a single-application ETL system to scrape and enrich

@@ -1,7 +1,7 @@
 title: Choosing Wisely - How to Pick the Right Third Party Packages for your Project
 start: 2023-08-18 11:40:00+09:30
 end: 2023-08-18 12:10:00+09:30
-room: e1e2
+room: e
 track: djangocon
 type: talk
 abstract: <p>Python has an incredible library of open source packages you can use

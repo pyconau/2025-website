@@ -44,7 +44,7 @@ const [dayStart, dayEnd] = sessions.reduce<[DateTime, DateTime]>(
 function idx(dt: DateTime): number {
   return Math.floor(dt.toUnixInteger() / (5 * 60))
 }
-const roomMap = { a: 2, b: 3, c: 1, e1e2: 4 }
+const roomMap = { a: 2, b: 3, c: 1, e: 4 }
 const speakerNameMap = new Map(
   (await getCollection("people")).map((person) => [
     person.id,
@@ -320,7 +320,7 @@ const speakerNameMap = new Map(
         {day === "friday" ? <a href="/education/">Education</a> : null}
       </s-track>
       <s-track style="--track: 4;">
-        Hall E1E2
+        Hall E
         {day === "friday" ? <a href="/djangocon/">DjangoCon AU</a> : null}
       </s-track>
       {

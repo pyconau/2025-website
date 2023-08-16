@@ -1,7 +1,7 @@
 title: 'HttpRequest: An unsung hero of Django'
 start: 2023-08-18 11:00:00+09:30
 end: 2023-08-18 11:30:00+09:30
-room: e1e2
+room: e
 track: djangocon
 type: talk
 abstract: <p>We use it in every view, every request, but how much is HttpRequest doing

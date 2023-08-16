@@ -27,7 +27,7 @@ const sessions = defineCollection({
     youtube_slug: z.string().nullable(),
     start: z.date().nullable(),
     end: z.date().nullable(),
-    room: z.enum(["a", "b", "c", "e1e2"]).nullable(),
+    room: z.enum(["a", "b", "c", "e"]).nullable(),
     type: z.enum(["talk", "stall", "open-close", "special", "keynote"]),
   }),
   type: "data",

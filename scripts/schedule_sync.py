@@ -71,7 +71,7 @@ rooms = {
     "Hall A": "a",
     "Hall B": "b",
     "Hall C (Plenary)": "c",
-    "Hall E1E2": "e1e2",
+    "Hall E": "e",
 }
 
 tracks = {

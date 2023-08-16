@@ -64,5 +64,5 @@ export const HALL_NAMES = {
   c: "Hall C",
   a: "Hall A",
   b: "Hall B",
-  e1e2: "Hall E",
+  e: "Hall E",
 }
