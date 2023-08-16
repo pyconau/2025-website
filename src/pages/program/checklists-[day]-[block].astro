@@ -1,0 +1,244 @@
+---
+import { getCollection } from "astro:content"
+import { isScheduled, timeSlices } from "../../lib"
+import { DateTime, Duration, Interval } from "luxon"
+import ProseList from "../../components/ProseList.astro"
+import Base from "../../layouts/Base.astro"
+import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
+
+export async function getStaticPaths() {
+  return ["friday", "saturday", "sunday"].map((day) =>
+    [1, 2, 3, 4].map((block) => ({
+      params: { day, block },
+      props: { day, block },
+    })),
+  )
+}
+export type Props = {
+  day: "friday" | "saturday" | "sunday"
+  block: 1 | 2 | 3 | 4
+}
+const { day, block } = Astro.props as Props
+const dayNum = {
+  friday: 18,
+  saturday: 19,
+  sunday: 20,
+}[day]
+const timeRange = {
+  [1]: Interval.fromISO(
+    `2023-08-${dayNum}T08:00+0930/2023-08-${dayNum}T10:30+0930`,
+  ),
+  [2]: Interval.fromISO(
+    `2023-08-${dayNum}T10:30+0930/2023-08-${dayNum}T13:00+0930`,
+  ),
+  [3]: Interval.fromISO(
+    `2023-08-${dayNum}T13:00+0930/2023-08-${dayNum}T15:20+0930`,
+  ),
+  [4]: Interval.fromISO(
+    `2023-08-${dayNum}T15:20+0930/2023-08-${dayNum}T18:00+0930`,
+  ),
+}[block]
+const sessions = (await getCollection("sessions"))
+  .filter(isScheduled)
+  .map((x) => ({
+    ...x,
+    data: {
+      ...x.data,
+      start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Adelaide" }),
+      end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Adelaide" }),
+    },
+  }))
+  .filter((s) => timeRange.contains(s.data.start))
+
+const speakerMap = new Map(
+  (await getCollection("people")).map((person) => [person.id, person]),
+)
+const roomCallsigns = {
+  a: "Hall Alpha",
+  b: "Hall Bravo",
+  c: "Hall Charlie",
+  e1e2: "Hall Echo",
+}
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style lang="scss">
+      @import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
+      html {
+        font-family: Inter;
+      }
+      section {
+        page-break-after: always;
+        &:last-child {
+          page-break-after: initial;
+        }
+
+        .x2up {
+          display: flex;
+          width: 100%;
+          > div {
+            flex: 1;
+          }
+        }
+
+        ul.checklist li {
+          list-style-type: "▢ ";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {
+      sessions.map((session) => (
+        <section>
+          <h1>
+            Hall {session.data.room.toUpperCase()} {/* prettier-ignore */}
+            <>
+            {session.data.start.toLocaleString({
+                ...DateTime.TIME_24_SIMPLE, 
+                weekday: "short"})}&ndash;{
+                session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)
+            }
+            </>
+          </h1>
+          <p>
+            <b>Session title:</b> {session.data.title}
+          </p>
+          <div class="x2up">
+            <div>
+              <h2>Speakers</h2>
+              <ul>
+                {session.data.speakers.map((speakerId) => {
+                  let speaker = speakerMap.get(speakerId)
+                  return (
+                    <li>
+                      {speaker?.data.name}{" "}
+                      {speaker?.data.pronouns ? (
+                        <>({speaker.data.pronouns})</>
+                      ) : null}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+            <div>
+              <h2>Timings</h2>
+              <ul>
+                <li>
+                  Session start:
+                  {session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE)}
+                </li>
+                <li>
+                  5min warning:
+                  {session.data.end
+                    .minus({ minutes: 5 })
+                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                </li>
+                <li>
+                  2min warning:
+                  {session.data.end
+                    .minus({ minutes: 2 })
+                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                </li>
+                <li>
+                  1min warning:
+                  {session.data.end
+                    .minus({ minutes: 1 })
+                    .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                </li>
+                <li>
+                  Session end:
+                  {session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="x2up">
+            <div>
+              <h1>Room Monitor</h1>
+              <p>
+                If you do not have a session chair, complete the{" "}
+                <b>Session chair</b> checklist to the right as well
+              </p>
+              <ul class="checklist">
+                <li>TODO OTHER ITEMS</li>
+                <li>
+                  Introduce the speaker to your AV operator, and ensure they are
+                  mic'ed up with a headset mic
+                </li>
+                <li>
+                  Ensure the session chair has a handheld mic, so they can do
+                  introductions and facilitate questions
+                </li>
+                {session.data.type != "open-close" ? (
+                  <li>
+                    Prepare {session.data.speakers.length} speaker gift
+                    {session.data.speakers.length > 1 ? "s" : null} for the
+                    session chair
+                  </li>
+                ) : null}
+              </ul>
+            </div>
+            <div>
+              <h1>Session Chair</h1>
+              <ul class="checklist">
+                <li>Verify the speaker's name, and check pronunciation</li>
+                <li>Verify the speaker's pronouns</li>
+                <li>
+                  Ask whether the speaker would like questions, and if so, how
+                </li>
+                <li>
+                  <b>When given the signal from AV or your room monitor:</b>{" "}
+                  introduce the speaker on stage
+                </li>
+                <li>
+                  Adjust the timings above if needed&mdash;the speaker should
+                  get their full{" "}
+                  {session.data.end
+                    .diff(session.data.start)
+                    .shiftTo("minutes")
+                    .toHuman({ unit: "minutes" })}
+                  , even if they start late
+                </li>
+                <li>
+                  Hold up 5, 2, 1, STOP signs, and ensure the speaker has seen
+                  them
+                </li>
+                <li>
+                  <b>
+                    If speaker has asked for questions AND there is enough time:
+                  </b>{" "}
+                  Facilitate questions, ensuring all questions are said into a
+                  microphone
+                </li>
+                <li>
+                  <b>When the speaker is finished:</b> Thank the speaker for
+                  their talk, and present them with their speaker gift
+                </li>
+                <li>Tell the audience about the next talk or upcoming break</li>
+              </ul>
+            </div>
+          </div>
+          <h2>If you have problems</h2>
+          <p>
+            Your <b>room monitor</b> can escalate any problems to the duty
+            officer:
+          </p>
+          <ul>
+            <li>
+              By radio (preferred): "<b>Duty Officer</b> this is{" "}
+              <b>{roomCallsigns[session.data.room]}</b>, over"
+            </li>
+            <li>
+              By phone: <b>0424 139 332</b>
+            </li>
+          </ul>
+        </section>
+      ))
+    }
+  </body>
+</html>

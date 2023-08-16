@@ -14,19 +14,19 @@
   "devDependencies": {
     "@astrojs/mdx": "^0.19.7",
     "@types/jsdom": "^21.1.1",
-    "@types/luxon": "^3.3.0",
-    "astro": "^2.8.3",
-    "prettier": "^3.0.0",
-    "prettier-plugin-astro": "^0.11.0",
-    "rollup": "^3.26.2",
-    "sass": "^1.63.6",
+    "@types/luxon": "^3.3.1",
+    "astro": "^2.10.9",
+    "prettier": "^3.0.2",
+    "prettier-plugin-astro": "^0.11.1",
+    "rollup": "^3.28.0",
+    "sass": "^1.65.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^2.2.1",
     "jsdom": "^22.1.0",
-    "luxon": "^3.3.0",
-    "reset-css": "^5.0.1",
+    "luxon": "^3.4.0",
+    "reset-css": "^5.0.2",
     "sheng": "^1.0.0"
   }
 }
