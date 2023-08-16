@@ -29,6 +29,7 @@ const sessions = defineCollection({
     end: z.date().nullable(),
     room: z.enum(["a", "b", "c", "e"]).nullable(),
     type: z.enum(["talk", "stall", "open-close", "special", "keynote"]),
+    online: z.boolean(),
   }),
   type: "data",
 })

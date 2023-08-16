@@ -126,7 +126,10 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
               <li>Liaise with your AV volunteer for this room</li>
               <li>Find your session chair</li>
               {hallInfo.sessions
-                .filter((session) => session.data.type != "open-close")
+                .filter(
+                  (session) =>
+                    session.data.type != "open-close" && !session.data.online,
+                )
                 .map((session) =>
                   session.data.speakers.map((speaker) => (
                     <>
@@ -142,7 +145,10 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
               <li>
                 Ensure you have
                 {hallInfo.sessions
-                  .filter((session) => session.data.type != "open-close")
+                  .filter(
+                    (session) =>
+                      session.data.type != "open-close" && !session.data.online,
+                  )
                   .reduce(
                     (count, session) => count + session.data.speakers.length,
                     0,
@@ -182,6 +188,9 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
                 <b>Session title:</b> {session.data.title}
                 <br />
                 <b>Session ID:</b> {session.id}
+                <br />
+                <b>Session format:</b>
+                {session.data.online ? "Online" : "In person"}
                 <br />
                 <b>Questions:</b> moderated questions / no questions (circle as
                 appropriate)
@@ -256,7 +265,8 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
                       Ensure the session chair has a handheld mic, so they can
                       do introductions and facilitate questions
                     </li>
-                    {session.data.type != "open-close" ? (
+                    {session.data.type != "open-close" &&
+                    !session.data.online ? (
                       <li>
                         Prepare {session.data.speakers.length} speaker gift
                         {session.data.speakers.length > 1 ? "s" : null} for the
@@ -307,10 +317,12 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
                         , even if they start late
                       </li>
                       <li>Keep an eye on the attendee Discord for questions</li>
-                      <li>
-                        Hold up 5, 2, 1, STOP signs, and ensure the speaker has
-                        seen them
-                      </li>
+                      {session.data.online ? null : (
+                        <li>
+                          Hold up 5, 2, 1, STOP signs, and ensure the speaker
+                          has seen them
+                        </li>
+                      )}
                       <li>
                         <b>
                           If speaker has asked for questions AND there is enough
@@ -321,7 +333,10 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
                       </li>
                       <li>
                         <b>When the speaker is finished:</b> Thank the speaker
-                        for their talk, and present them with their speaker gift
+                        for their talk
+                        {session.data.online
+                          ? null
+                          : "and present them with their speaker gift"}
                       </li>
                       <li>
                         Tell the audience about the next talk or upcoming break

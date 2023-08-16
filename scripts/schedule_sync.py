@@ -88,6 +88,7 @@ answers = {
     "Pronouns": 2461,
     "Twitter": 2455,
     "Fedi": 2506,
+    "Online": 2656,
 }
 
 format_answer = {
@@ -120,7 +121,7 @@ for entry in SESSIONS_DIR.glob("*"):
 
 
 for session in paginate(
-    "https://pretalx.com/api/events/pyconau-2023/submissions/?state=confirmed&questions=2459"
+    "https://pretalx.com/api/events/pyconau-2023/submissions/?state=confirmed&questions=2459,2656"
 ):
     # Do not schedule backups
     # TODO manually add backups if they are unscheduled after the event.
@@ -152,6 +153,17 @@ for session in paginate(
                 if x["question"]["id"] == answers["Content Warning"]
             ),
             None,
+        )
+        online = (
+            next(
+                (
+                    x["answer"]
+                    for x in session["answers"]
+                    if x["question"]["id"] == answers["Online"]
+                ),
+                None,
+            )
+            != "In person in Adelaide"
         )
         twitter = next(
             (
@@ -191,6 +203,7 @@ for session in paginate(
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
                 "youtube_slug": youtube_slugs.get(session["code"]),
+                "online": online,
             },
             f,
         )
