@@ -23,10 +23,10 @@ jobs:
         id: add-and-commit
         with:
           add: |
-            public/people
-            src/content/sessions
-            src/content/people
-            src/content/_people_etags.yml
+           - public/people
+           - src/content/sessions
+           - src/content/people
+           - src/content/_people_etags.yml
           author_name: Robot
           author_email: beep-boop@local
           message: "Auto-update of schedule"
