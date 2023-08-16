@@ -96,11 +96,11 @@ Laptops run out of power, slides go missing, transport runs late, family stuff c
 
 If you’re just unsure and need to clarify something, use the Attendee Discord (details to come) or email [program@pycon.org.au](mailto:program@pycon.org.au).
 
-If you are having an urgent problem relating to conference logistics, please contact us. A 24-hour hotline number will be made available at the event. Less immediate issues can be directed to a Volunteer, A/V Team member, or Organiser, as appropriate.
+If you are having an urgent problem relating to conference logistics, please contact us. You can reach the Duty Officer for the event by calling <b>0424 139 332</b>, but please only call for urgent issues. Less immediate issues can be directed to a Volunteer, A/V Team member, or Organiser, as appropriate.
 
-If you have an issue that should involve our Conduct Team, you can contact a member of the safety team via a 24-hour hotline number will be made available at the event. Less immediate issues of Conduct can be emailed to safety@pycon.org.au. Signs with these details will be around the venue.
+If you have an issue that should involve our Conduct Team, you can contact a member of the safety team as set out on our [Safety page](/safety/). Signs with these details will be around the venue.
 
-If you have an immediate safety concern, please contact venue security, or Emergency Services (000). If you do call Emergency Services remember to let venue security know as well.
+If you have an immediate safety concern, please contact venue security, or Emergency Services (000). If you do call Emergency Services remember to let a team member or venue security know as well.
 
 ## More information
 
