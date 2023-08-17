@@ -1,7 +1,9 @@
 ---
-title: PyCon Fair
+title: DjangoGirls
 order: 3
 ---
+
+# DjangoGirls
 
 DjangoGirls is a free, full day workshop helping you to build your first application using HTML, CSS, Python and Django. People progress through the workshop with the help of a team of mentors.
 
