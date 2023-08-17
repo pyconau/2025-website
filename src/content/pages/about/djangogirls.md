@@ -3,6 +3,8 @@ title: DjangoGirls
 order: 3
 ---
 
+# DjangoGirls
+
 DjangoGirls is a free, full day workshop helping you to build your first application using HTML, CSS, Python and Django. People progress through the workshop with the help of a team of mentors.
 
 During the workshop, attendees follow a tutorial written especially for this purpose. The tutorial is also open sourced and available for free. It covers creating your blog application from scratch, including deployment to Python Anywhere.
