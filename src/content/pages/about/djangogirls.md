@@ -1,5 +1,5 @@
 ---
-title: PyCon Fair
+title: DjangoGirls
 order: 3
 ---
 
