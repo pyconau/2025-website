@@ -20,7 +20,7 @@ description: "<p>Across our system, we have dozens of serverless functions, most
   needs, without maintaining careful lists. We even benefit from these more generally,
   like testing and building non-serverless artefacts too.</p>\n<p>Faster coding, faster
   builds, faster deploys, and faster cold-starts. It's like a working drain: Who doesn’t
-  want that?</p>"
+  want that?</p>\n<p>Code examples at https://github.com/huonw/serverless-effortless</p>"
 code: RAKQDU
 speakers:
 - PGYLJB
