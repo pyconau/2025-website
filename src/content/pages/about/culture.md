@@ -62,6 +62,10 @@ Monty Python has deep roots in the Python programming community, but references 
 
 We also acknowledge that the humour used in this series is not the most inclusive, and so we avoid using such reference where more inclusive and modern references can be made that have the same effect.
 
+### What is 'dunder'? What are 'magic methods'?
+
+In Python, many features are implemented using 'magic methods' or 'dunder methods'. 'Dunder' here is actually a portmaneteu of 'double' and 'under', and describes what 'magic methods' look like, for example, `__str__` is one that can be added to an object to customise what an object looks like when you `print(...)` it out. For more information and a better explanation, watch Josh Cannon's ["Oh the (Methods) You Can (Make): By Dunder Seuss"](https://youtube.com/watch?v=CSpzTx-S8B0) from North Bay Python 2023.
+
 ## If you don't get a reference, ask!
 
 If there's an in-joke or reference you don't get, [ask for it to be added to this list](https://github.com/pyconau/2023-website/issues/new?assignees=&labels=documentation-request&template=documentation-request.md&title=I+have+a+question)!
