@@ -13,7 +13,8 @@ description: "<p>So you want to -- or have to -- present a talk. On stage. In fr
   teaching and learning, some of the basic do's and don'ts, and an easy 8 step plan
   to get you writing your (first? next?!) presentation.</p>"
 code: ABGMQH
-speakers: []
+speakers:
+- ZDKEP3
 cw:
 youtube_slug:
 online: true
