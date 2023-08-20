@@ -44,6 +44,10 @@ The lightning talks from 2018 and 2019 yielded many amazing talks that fed into 
 - Tim has too many projects: a recurring talk by [Tim Ansell](https://twitter.com/mithro) in which he invites community contributions to his many projects, including but not limited to some of the hardware used by Next Day Video, the AV team contracted by PyCon AU ([sample lightning talk](https://youtu.be/BmWLhVMWC9I?t=482)).
 - "One minute!": when lightning talks are run in person, our affectionately named 'Lightning Talk Czar' [Christopher Neugebauer](https://twitter.com/chrisjrn) uses [lightningtimer.io](http://lightningtimer.io/) to ensure talks are 5 minutes long. When 60 seconds remain, he often helps the speaker with a verbal queue, an ominous "One minute!".
 
+### What is 'dunder'? What are 'magic methods'?
+
+In Python, many features are implemented using 'magic methods' or 'dunder methods'. 'Dunder' here is actually a portmaneteu of 'double' and 'under', and describes what 'magic methods' look like, for example, `__str__` is one that can be added to an object to customise what an object looks like when you `print(...)` it out. For more information and a better explanation, watch Josh Cannon's ["Oh the (Methods) You Can (Make): By Dunder Seuss"](https://youtube.com/watch?v=CSpzTx-S8B0) from North Bay Python 2023.
+
 ## We don't do that here.
 
 In-jokes create a sense of community, play a part in setting its tone, as well as being a bit of fun.
@@ -61,10 +65,6 @@ DjangoCon AU, a recurring specialist track at PyCon AU, has often invited progra
 Monty Python has deep roots in the Python programming community, but references to comedy films that are now 37+ years old can leave younger Pythonistas feeling left out.
 
 We also acknowledge that the humour used in this series is not the most inclusive, and so we avoid using such reference where more inclusive and modern references can be made that have the same effect.
-
-### What is 'dunder'? What are 'magic methods'?
-
-In Python, many features are implemented using 'magic methods' or 'dunder methods'. 'Dunder' here is actually a portmaneteu of 'double' and 'under', and describes what 'magic methods' look like, for example, `__str__` is one that can be added to an object to customise what an object looks like when you `print(...)` it out. For more information and a better explanation, watch Josh Cannon's ["Oh the (Methods) You Can (Make): By Dunder Seuss"](https://youtube.com/watch?v=CSpzTx-S8B0) from North Bay Python 2023.
 
 ## If you don't get a reference, ask!
 
