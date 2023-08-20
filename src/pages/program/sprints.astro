@@ -1,6 +1,7 @@
 ---
 import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
 import Base from "../../layouts/Base.astro"
+import mapImg from "../imgs/venue-map.png"
 ---
 
 <Base title="Program">
@@ -27,6 +28,6 @@ import Base from "../../layouts/Base.astro"
       DjangoGirls will be running in Adelaide as part of PyCon AU. Find out more
       on the <a href="/about/djangogirls/">DjangoGirls page</a>.
     </p>
-		<img src="src/imgs/venue-map.png" alt="Venue map with directions to Riverbank rooms">
+		<img src={mapImg} alt="Venue map with directions to Riverbank rooms">
   </main>
 </Base>
