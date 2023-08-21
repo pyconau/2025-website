@@ -46,7 +46,7 @@ The lightning talks from 2018 and 2019 yielded many amazing talks that fed into 
 
 ### What is 'dunder'? What are 'magic methods'?
 
-In Python, many features are implemented using 'magic methods' or 'dunder methods'. 'Dunder' here is actually a portmaneteu of 'double' and 'under', and describes what 'magic methods' look like, for example, `__str__` is one that can be added to an object to customise what an object looks like when you `print(...)` it out. For more information and a better explanation, watch Josh Cannon's ["Oh the (Methods) You Can (Make): By Dunder Seuss"](https://youtube.com/watch?v=CSpzTx-S8B0) from North Bay Python 2023.
+In Python, many features are implemented using 'magic methods' or 'dunder methods'. 'Dunder' here is actually a portmanteau of 'double' and 'under', and describes what 'magic methods' look like, for example, `__str__` is one that can be added to an object to customise what an object looks like when you `print(...)` it out. For more information and a better explanation, watch Josh Cannon's ["Oh the (Methods) You Can (Make): By Dunder Seuss"](https://youtube.com/watch?v=CSpzTx-S8B0) from North Bay Python 2023.
 
 ## We don't do that here.
 
