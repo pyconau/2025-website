@@ -3,15 +3,17 @@ import { getCollection, getEntryBySlug } from "astro:content"
 import Base from "../layouts/Base.astro"
 import SponsorListing from "../components/SponsorListing.astro"
 // Get all entries from a collection. Requires the name of the collection as an argument.
+
 const allSponsors = await getCollection("sponsors")
 const platinum = allSponsors.filter(
   (sponsor) => sponsor.data.tier === "platinum",
 )
 const gold = allSponsors.filter((sponsor) => sponsor.data.tier === "gold")
-const track = allSponsors.filter((sponsor) => sponsor.data.tier === "track")!
+const track = allSponsors.filter((sponsor) => sponsor.data.tier === "track")
 const auspice = allSponsors.find((sponsor) => sponsor.data.tier === "auspice")!
 const sponsorPage = await getEntryBySlug("pages", "sponsor")
 const Content = (await sponsorPage.render()).Content
+
 ---
 
 <Base title="Sponsor">
@@ -54,7 +56,7 @@ and of course <a href="#auspice">Linux Australia</a>!
     }
 
     {
-      platinum && (
+      platinum.length > 0 && (
         <>
           <h2 id="platinum">Platinum Sponsor{platinum.length !== 1 && "s"}</h2>
           {platinum.map((sponsor) => (
@@ -65,9 +67,9 @@ and of course <a href="#auspice">Linux Australia</a>!
     }
 
     {
-      gold && (
+      gold.length > 0 && (
         <>
-          <h2 id="gold">Platinum Sponsor{gold.length !== 1 && "s"}</h2>
+          <h2 id="gold">Gold Sponsor{gold.length !== 1 && "s"}</h2>
           {gold.map((sponsor) => (
             <SponsorListing sponsor={sponsor} />
           ))}
@@ -76,7 +78,7 @@ and of course <a href="#auspice">Linux Australia</a>!
     }
 
     {
-      track && (
+      track.length > 0 && (
         <>
           <h2 id="track">Track Sponsor{track.length !== 1 && "s"}</h2>
           {track.map((sponsor) => (

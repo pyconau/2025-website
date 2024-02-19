@@ -5,23 +5,27 @@ order: 0
 
 # About the conference
 
-PyCon AU 2023 will be held in the Adelaide Convention Centre.
+PyCon AU 2024 will be held at a venue to be announced soon.
 
 If you're new to our event, you might also want to read about [the culture of PyCon AU](/about/culture/).
 
-## 18 Aug: Specialist tracks
+## Specialist tracks
 
 The first day of PyCon AU will be dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allowed for more in-depth talks on the subject.
 
 PyCon AU kicks off with a day for attendees interested in specialist fields. It runs just like a main conference day, any attendees on this day are welcome to attend talks from any or all of the tracks, you can pick and choose and the talk schedules will line up nicely to let you do that.
 
+<!--
+
 With four very different tracks there’s something for everyone and each track will have a mix of beginner friendly and in-depth specialist talks. The four tracks are: [DjangoCon AU](/djangocon), [Education](/education), [Our Connected Universe](/ocu), and [All Things Data](/data).
+
+-->
 
 Each track is organised by specialists in their field, the talks are selected by the track organisers in coordination with the program committee.
 
-## 19–20 Aug: Conference main track
+## Conference main track
 
-This is the core of PyCon AU, as each day kicks off one of our amazing keynote speakers, followed by four tracks of talks on a diverse range of Python related topics. There will be a mix of beginner friendly and advanced talks on both technical and non-technical topics, with four tracks there’ll always be something you’re interested to see.
+This is the core of PyCon AU, as each day kicks off one of our amazing keynote speakers, followed by breakout tracks of talks on a diverse range of Python related topics. There will be a mix of beginner friendly and advanced talks on both technical and non-technical topics, and with multiple tracks there’ll always be something you’re interested to see.
 
 The end of the day brings everyone together again for a hilarious and informative round of lightning talks (submission of lightning talks topics will be open during the conference).
 
@@ -56,6 +60,7 @@ PyCon AU is typically held in two year blocks at the same city, with some variat
 - [2018](https://2018.pycon-au.org), [2019](https://2019.pycon-au.org): Sydney, NSW
 - [2020](https://2020.pycon.org.au), [2021](https://2021.pycon.org.au): The Internet
 - (PyCon AU was not held in 2022)
-- 2023: Adelaide, SA
+- [2023](https://2023.pycon.org.au): Tarntanya/Adelaide, SA
+- 2024: To be announced
 
 Videos from previous years can be watched on the [PyConAU YouTube channel](https://www.youtube.com/user/PyConAU).
