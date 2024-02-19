@@ -29,7 +29,7 @@ This is the core of PyCon AU, as each day kicks off one of our amazing keynote s
 
 The end of the day brings everyone together again for a hilarious and informative round of lightning talks (submission of lightning talks topics will be open during the conference).
 
-## 21–22 Aug: Development sprints and social events
+## Development sprints and social events
 
 Python wouldn’t have gotten to where it is without a welcoming community of developers building cool things together. The development sprints are an open space for people to work on projects with a particular focus on open source projects.
 
