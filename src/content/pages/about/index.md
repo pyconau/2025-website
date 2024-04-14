@@ -55,6 +55,6 @@ PyCon AU is typically held in two year blocks at the same city, with some variat
 - [2020](https://2020.pycon.org.au), [2021](https://2021.pycon.org.au): The Internet
 - (PyCon AU was not held in 2022)
 - [2023](https://2023.pycon.org.au): Tarntanya/Adelaide, SA
-- 2024: Narrm/Melbourne, VIC
+- [2024](https://2024.pycon.org.au): Narrm/Melbourne, VIC
 
 Videos from previous years can be watched on the [PyConAU YouTube channel](https://www.youtube.com/user/PyConAU).
