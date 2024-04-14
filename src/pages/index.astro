@@ -7,47 +7,53 @@ import NoOrphanText from "../components/NoOrphanText.astro"
 ---
 
 <Base navigation={false}>
-  <!--
+  
   <script
     type="application/ld+json"
     set:html={`
       {
         "@context": "https://schema.org",
         "@type": "ExhibitionEvent",
-        "location": "Adelaide Convention Centre",
+        "location": "Melbourne Convention and Exhibition Centre",
         "url": "https://2024.pycon.org.au/",
         "name": "PyCon AU 2024",
-        "startDate": "2023-08-18",
-        "endDate": "2023-08-22",
+        "startDate": "2023-11-22",
+        "endDate": "2023-11-26",
         "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "inLanguage": "en-AU"
       }
     `}
   />
-    -->
+   
   <header id="header" slot="nav">
     <img src={logoReversed} alt="PyCon AU" role="heading" aria-level="1" />
     <div class="rotated">
       <article>
         <h1>
-          <NoOrphanText>We're back in 2024!</NoOrphanText>
+          <NoOrphanText>Our call for Specialist Tracks is now open!</NoOrphanText>
         </h1>
       </article>
       <Navigation logo={false} />
     </div>
   </header>
   <main>
-    <h1>PyCon AU is back!</h1>
+    <h1>PyCon AU is back for 2024!</h1>
     <p>
-      PyCon AU 2024 is going to be announced soon!
+      In 2024, PyCon AU will be held from the <b>22nd to the 26th of November</b> at the <b>Melbourne Convention and Exhibition Centre (MCEC) in Narrm/Melbourne</b>.
+    <p>
+      More details will be announced soon, so stay tuned!
     </p>
+    <h2>Our Call for Specialist Tracks is open!</h2>
+    <p>
+      PyCon AU is looking for specialist track organisers! If you have a topic you'd like to see covered at PyCon AU, please <a href="/program/">read more about what our Specialist Tracks are</a> and submit a proposal! Submissions for the Specialist Tracks close on <b>April 28th, 2024</b>.
+    <h2>Want to sponsor our event?</h2>
     <p>
       We are always looking for <a href="/sponsor/#opportunities">sponsors</a>
        to help us make the conference accessible and affordable.
     </p>
     <p>
-      To find out more as it happens you can follow us on <a
+      To find out more as it happens, you can follow us on <a
         href="https://mastodon.pycon.org.au/@pyconau">Mastodon</a
       > or <a href="https://twitter.com/PyConAU">Twitter</a>, or subscribe to
       our mailing list:

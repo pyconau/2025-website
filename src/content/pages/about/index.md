@@ -5,7 +5,7 @@ order: 0
 
 # About the conference
 
-PyCon AU 2024 will be held at a venue to be announced soon.
+PyCon AU 2024 will be held from 22nd to 26th November at the Melbourne Convention and Exhibition Centre (MCEC) in Narrm/Melbourne, Victoria, Australia.
 
 If you're new to our event, you might also want to read about [the culture of PyCon AU](/about/culture/).
 
@@ -14,12 +14,6 @@ If you're new to our event, you might also want to read about [the culture of Py
 The first day of PyCon AU will be dedicated to specialist tracks. These tracks, also known as ‘miniconfs’, are curated by smaller specialist groups within Python community, and allowed for more in-depth talks on the subject.
 
 PyCon AU kicks off with a day for attendees interested in specialist fields. It runs just like a main conference day, any attendees on this day are welcome to attend talks from any or all of the tracks, you can pick and choose and the talk schedules will line up nicely to let you do that.
-
-<!--
-
-With four very different tracks there’s something for everyone and each track will have a mix of beginner friendly and in-depth specialist talks. The four tracks are: [DjangoCon AU](/djangocon), [Education](/education), [Our Connected Universe](/ocu), and [All Things Data](/data).
-
--->
 
 Each track is organised by specialists in their field, the talks are selected by the track organisers in coordination with the program committee.
 
@@ -61,6 +55,6 @@ PyCon AU is typically held in two year blocks at the same city, with some variat
 - [2020](https://2020.pycon.org.au), [2021](https://2021.pycon.org.au): The Internet
 - (PyCon AU was not held in 2022)
 - [2023](https://2023.pycon.org.au): Tarntanya/Adelaide, SA
-- 2024: To be announced
+- [2024](https://2024.pycon.org.au): Narrm/Melbourne, VIC
 
 Videos from previous years can be watched on the [PyConAU YouTube channel](https://www.youtube.com/user/PyConAU).
