@@ -21,7 +21,7 @@ Our specialist track organisers always do an amazing job, but we want to provide
 Examples of other ideas for specialist tracks include:
 
 - Something specialised within the data and science space, for example geoscience or life sciences
-- GLAM (Galleries, Libraries Archives and Museums)
+- GLAM (Galleries, Libraries, Archives, and Museums)
 - Information security/cybersecurity
 
 If you’ve run a specialist track before, we encourage you to submit ideas again and also to invite new faces as co-organisers. Succession planning and new ideas are always welcome.
