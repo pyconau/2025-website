@@ -4,7 +4,7 @@ title: Sponsor
 
 Join us for PyCon AU 2024 and become part of the vibrant and dynamic community of Python developers and enthusiasts!
 
-[Get the Sponsorship Prospectus](/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20v1.pdf), or get in touch at sponsor@pycon.org.au.
+[Get the Sponsorship Prospectus](/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20v1.pdf), or get in touch at sponsor@pycon.org.au. We can't wait to hear from you!
 
 PyCon AU 2024 is an annual conference dedicated to the Python programming language and its ecosystem. The conference brings together Python developers, enthusiasts, and industry professionals from around Australia and the world for three days of talks, tutorials, and networking opportunities, with two days of additional programming sprints focused on practical open source development.
 
