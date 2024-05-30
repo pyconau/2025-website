@@ -20,7 +20,7 @@ const sessions = defineCollection({
     title: z.string(),
     abstract: z.string(),
     description: z.string(),
-    track: z.enum(["ocu", "data", "education", "djangocon"]).nullable(),
+    track: z.enum(["devoops", "education", "scientific"]).nullable(),
     code: z.string(),
     speakers: z.array(z.string()),
     cw: z.string().nullable(),

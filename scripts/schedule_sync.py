@@ -75,10 +75,9 @@ rooms = {
 }
 
 tracks = {
-    "Our Connected Universe": "ocu",
-    "All Things Data!": "data",
+    "DevOops": "devoops",
     "Education": "education",
-    "DjangoCon AU": "djangocon",
+    "Scientific Python": "scientific",
     "Main Conference": None,
 }
 
