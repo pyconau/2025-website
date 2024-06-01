@@ -50,17 +50,19 @@ This year, PyCon AU is partnering with the [Journal of Open Source Software (JOS
 
 _Academic abstract submission will not increase your chances of having your talk selected for presentation at PyCon AU._ This is intended as a way for participants to further engage with the conference and build their academic track record. If your proposal is accepted as part of the PyCon AU program, we will work with you to handle the JOSS submission, and upon acceptance it will become part of a new PyCon AU collection.
 
-Your academic abstract submission must fulfil basic requirements for publication in JOSS:
-* Your submission must describe open source software ([as defined by OSI](https://opensource.org/osd))
-* Your software must have an obvious research application
-* You must be a major contributor to the software
+Your academic abstract submission must fulfil [basic requirements for publication in JOSS](https://joss.theoj.org/about#submitting):
+
+- Your submission must describe open source software ([as defined by OSI](https://opensource.org/osd))
+- Your software must have an obvious research application
+- You must be a major contributor to the software
 
 Additionally, any submissions must comply with the PyCon AU [Code of Conduct](/conduct), as with their accompanying presentation.
 
 For this academic submission, you must provide:
-* A title
-* Authors names and affiliations of all authors
-* Academic abstract text itself, up to 500 words.
+
+- A title
+- Authors names and affiliations of all authors
+- Academic abstract text itself, up to 500 words.
 
 You do not have to worry about adding references at this stage (although a few key references might help us evaluate the work - we may not have a reviewer on hand who works in your field).
 
@@ -68,7 +70,7 @@ If your proposal moves forward, members of the PyCon AU academic program committ
 
 We will also help with review and editorial tasks to speed up the progress of your submission.
 
-Our goal is to have all PyCon AU papers in press by the time the conference kicks off, but obviously this is subject to many factors.
+Our goal is to have all PyCon AU papers published by the time the conference kicks off, but obviously this is subject to many factors.
 
 Please make sure you provide the names and academic affiliations for all authors on the submission. This is important for us to evaluate conflicts of interest and maintain the integrity of the review process.
 
