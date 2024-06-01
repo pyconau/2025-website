@@ -50,7 +50,7 @@ This year, PyCon AU is partnering with the [Journal of Open Source Software (JOS
 
 _Academic abstract submission will not increase your chances of having your talk selected for presentation at PyCon AU._ This is intended as a way for participants to further engage with the conference and build their academic track record. If your proposal is accepted as part of the PyCon AU program, we will work with you to handle the JOSS submission, and upon acceptance it will become part of a new PyCon AU collection.
 
-Your academic abstract submission must fulfil basic requirements for publication in JOSS:
+Your academic abstract submission must fulfil [basic requirements for publication in JOSS](https://joss.theoj.org/about#submitting):
 
 - Your submission must describe open source software ([as defined by OSI](https://opensource.org/osd))
 - Your software must have an obvious research application
