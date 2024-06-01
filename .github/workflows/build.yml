@@ -29,7 +29,7 @@ jobs:
           node-version: "18.2.x"
       - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.0.2
+          version: 9.1.4
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
