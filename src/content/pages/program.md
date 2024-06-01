@@ -32,7 +32,7 @@ We welcome submissions from everybody, including from those:
 - Who have helped build Python, and
 - Who have expertise to share with our community from fields outside of Python (and outside of technology).
 
-Our CFP process also encompasses submissions to the Specialist Tracks (Education, Scientific Python, and DevOops), so you can submit your talk to the main conference and the Specialist Tracks with one click.
+Our CFP process also encompasses submissions to the Specialist Tracks ([Education](/education), [Scientific Python](/scientific), and [DevOops](/devoops)), so you can submit your talk to the main conference and the Specialist Tracks with one click.
 
 To submit your proposal to one or more of the Specialist Tracks, please tag it with the track names of your choice, which are provided for you in the screens that follow. You can select more than one!
 
@@ -40,7 +40,7 @@ To submit your proposal to one or more of the Specialist Tracks, please tag it w
 
 ## Specialist Tracks
 
-This year we have three specialist tracks you can submit to, in addition to the main conference! Specialist tracks are independently run events held on the first day of PyCon AU: Scientific Python, Education, and DevOops.
+This year we have three specialist tracks you can submit to, in addition to the main conference! Specialist tracks are independently run events held on the first day of PyCon AU: [Scientific Python](/scientific), [Education](/education), and [DevOops](/devoops).
 
 ## _NEW: Academic Abstract Submission_
 
