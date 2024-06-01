@@ -49,6 +49,6 @@ export const collections = {
   sponsors,
   pages,
   tracks,
-  sessions,
-  people,
+  //sessions,
+  //people,
 }

@@ -1,5 +1,5 @@
 ---
-import ProseList from "../components/ProseList.astro"
+//import ProseList from "../components/ProseList.astro"
 import Base from "../layouts/Base.astro"
 import { getCollection, CollectionEntry } from "astro:content"
 
@@ -15,19 +15,21 @@ export type Props = {
 }
 const { entry } = Astro.props as Props
 const { Content } = await entry.render()
-
+/*
 let sessions = (await getCollection("sessions")).filter(
     (session) => session.data.track === entry.slug,
 )
 let speakers = new Map<string, CollectionEntry<"people">>(
     (await getCollection("people")).map((entry) => [entry.id, entry]),
 )
+*/
 ---
 
 <Base title={entry.data.name}>
     <main>
         <h1>{entry.data.name}</h1>
         <Content />
+        {/*
         <h2>Sessions</h2>
         <ul>
             {
@@ -46,5 +48,6 @@ let speakers = new Map<string, CollectionEntry<"people">>(
                 ))
             }
         </ul>
+         */}
     </main>
 </Base>
