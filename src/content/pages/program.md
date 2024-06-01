@@ -70,7 +70,7 @@ If your proposal moves forward, members of the PyCon AU academic program committ
 
 We will also help with review and editorial tasks to speed up the progress of your submission.
 
-Our goal is to have all PyCon AU papers in press by the time the conference kicks off, but obviously this is subject to many factors.
+Our goal is to have all PyCon AU papers published by the time the conference kicks off, but obviously this is subject to many factors.
 
 Please make sure you provide the names and academic affiliations for all authors on the submission. This is important for us to evaluate conflicts of interest and maintain the integrity of the review process.
 
