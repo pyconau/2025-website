@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntryBySlug } from "astro:content"
 import Base from "../layouts/Base.astro"
+import Button from "../components/Button.astro"
 import SponsorListing from "../components/SponsorListing.astro"
 // Get all entries from a collection. Requires the name of the collection as an argument.
 
@@ -34,10 +35,15 @@ const Content = (await sponsorPage.render()).Content
     </p>
 
     <p>
-      Your company can become a sponsor too! See the section on <a
-        href="#opportunities">sponsorship opportunities</a
-      > for more, or <a href="/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20v2.pdf"> download the prospectus </a> straight away!
-    </p>
+    <center>
+      <Button type="chonk" block href="/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20-%20July%20Update.pdf">
+        Download the Sponsorship Prospectus
+      </Button>
+    </center>
+    <p>
+
+    <p><strong>Updated July 2024! </strong> New opportunities &amp; packages have been added &ndash; make sure you have the latest copy!</p>
+
 
     <p>
     Want to talk? Send us an email at <a href="mailto:sponsor@pycon.org.au"> sponsor@pycon.org.au and we'll get in touch.
