@@ -303,7 +303,7 @@ nav {
 }
 
 #covid-quote {
-  font-size: (4/3) * 1em;
+  font-size: calc(4 / 3) * 1em;
   margin-bottom: 2em;
   @media only screen and (min-width: 820px) {
     width: 800px;
