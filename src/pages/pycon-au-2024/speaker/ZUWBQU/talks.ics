@@ -1,0 +1,102 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//ZUWBQU
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-HMWPGH@pretalx.com
+DTSTART;TZID=AEST:20241123T133000
+DTEND;TZID=AEST:20241123T140000
+DESCRIPTION:The last five years have seen a significant increase in the app
+ lication of machine learning to the study of ancient scripts. Applications
+  are broad\, and include recognition via Optical Character Recognition (OC
+ R)\, textual restoration\, palaeographic analysis\, topic modelling\, repr
+ esentation learning\, decipherment and machine translation (Sommerschield 
+ 2023). A large number of ancient language corpora have been digitised in r
+ ecent decades\, supporting this research. However\, while the necessary Un
+ icode blocks for many of these ancient scripts are available\, a number of
+  these data sets are still presented as Romanised transliterations.\n\nIn 
+ response to this situation\, we have created Potnia (https://pypi.org/proj
+ ect/potnia/)\, an open-source Python language library under the Apache 2.0
+  license\, designed to convert such transliterated texts to Unicode. The s
+ ession image accompanying this proposal provides an example of Potnia’s 
+ conversion process\, with a Romanised transliteration of a Linear B text a
+ s the input\, and the Unicode representation of this same text as the outp
+ ut. This conversion is crucial for downstream machine learning tasks\, as 
+ tokenisation in the original Unicode script allows for more accurate repre
+ sentation of linguistic structures and mitigates potential biases introduc
+ ed by transliteration.\n\nPotnia's flexible architecture\, built on Python
+ 's object-oriented principles\, employs string manipulation techniques and
+  regular expressions to handle various complexities inherent in ancient te
+ xts\, such as uncertain readings\, missing elements\, and script-specific 
+ notations. At present\, the library can be used for Linear B texts\, with 
+ functionality for Linear A\, Sumerian and Akkadian soon to follow.\n\nPotn
+ ia's design allows for easy addition of new scripts\, each with its own se
+ t of rules for tokenisation\, regularisation\, and character mapping. This
+  extensibility positions us well for future inclusion of additional script
+ s. To ensure reliability and facilitate open-source contributions\, we've 
+ implemented a comprehensive test suite using pytest\, with test cases defi
+ ned in YAML files for easy expansion. This approach covers key functionali
+ ties across different scripts and simplifies the process of adding new tes
+ t scenarios as the library grows.\n\n<b><em>References</em></b>\nSommersch
+ ield\, T.\, Y. Assael\, J. Pavlopoulos\, V. Stefanak\, A. Senior\, C. Dyer
+ \, J. Bodel\, J. Prag\, I. Androutsopoulos\, and N.D. Freitas. 2023. “Ma
+ chine Learning for Ancient Languages: A Survey.” <em>Computational Lingu
+ istics</em> 49 (3): 1–45. doi:10.1162/coli_a_00481.
+DTSTAMP:20240903T102357Z
+LOCATION:Eureka 2
+SUMMARY:Introducing Potnia: A Python language library for the conversion of
+  ancient texts to Unicode - Emily Tour\, Kabir Manandhar Shrestha
+URL:https://pretalx.com/pycon-au-2024/talk/HMWPGH/
+END:VEVENT
+END:VCALENDAR

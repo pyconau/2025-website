@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//XUNCWK
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-XUNCWK@pretalx.com
+DTSTART;TZID=AEST:20241122T153000
+DTEND;TZID=AEST:20241122T160000
+DESCRIPTION:Live cell imaging is a microscopy technique\, where scientists 
+ can observe dynamics of living cells across time. One such method\, known 
+ as lattice lightsheet microscopy captures these processes at high spatiote
+ mporal detail. However\, current analyses methods do not always capture th
+ e complexities of these feature rich datasets. \nIn this talk\, I will use
+  an example of programmed cell death\, where cells are exposed to differen
+ t drugs. Using python packages\, such as scikit-image and tsfresh\,  I wil
+ l demonstrate how we extract morphological and spatiotemporal features of 
+ cells. We use these features to train a supervised machine learning (ML) m
+ odel to predict which drug treatment the cells were exposed to. \nFurtherm
+ ore\, using explainable AI with Shapley values\, we identify key feature c
+ ombinations that distinguish the cellular response to each drug. This appr
+ oach enables data-driven hypothesis generation\, allowing us to infer unde
+ rlying phenotypes and correlate them to the biological processes.
+DTSTAMP:20240903T102340Z
+LOCATION:Eureka 2
+SUMMARY:Leveraging the Rich Spatiotemporal Features of live cell imaging wi
+ th Machine Learning and AI - Pradeep Rajasekhar
+URL:https://pretalx.com/pycon-au-2024/talk/XUNCWK/
+END:VEVENT
+END:VCALENDAR

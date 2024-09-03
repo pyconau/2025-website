@@ -1,0 +1,79 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//BHTKP3
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-3GPQDE@pretalx.com
+DTSTART;TZID=AEST:20241122T100000
+DTEND;TZID=AEST:20241122T103000
+DESCRIPTION:There are around 6\,200 primary schools around Australia\, and 
+ the curriculum has a requirement to teach Digital Technologies\, which inc
+ ludes a coding portion.  There are many challenges here\, not least which 
+ is enabling the approximately 150\,000 primary school teachers with the sk
+ ills and resources to teach programming to young students.  The AustSTEM f
+ oundation was set up to assist in this area\, and developed a MicroPython 
+ based learning platform\, which consists of a pocket-sized computing devic
+ e that integrates with a web-based coding and teaching environment.  The t
+ eaching material has many hands-on activities\, with connections to nature
+  and science.  In this talk we will discuss this teaching platform\, how i
+ t can help students transition from block-based programming to textual cod
+ ing\, and show some of the successes we have had so far in Australian clas
+ srooms.
+DTSTAMP:20240903T102353Z
+LOCATION:Eureka 3
+SUMMARY:Teaching Digital Technologies in Australian schools with Python and
+  the Kookaberry - Damien George
+URL:https://pretalx.com/pycon-au-2024/talk/3GPQDE/
+END:VEVENT
+END:VCALENDAR

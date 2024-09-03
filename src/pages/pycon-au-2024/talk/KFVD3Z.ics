@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//KFVD3Z
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-KFVD3Z@pretalx.com
+DTSTART;TZID=AEST:20241122T143000
+DTEND;TZID=AEST:20241122T150000
+DESCRIPTION:Teaching is a demanding job that takes away the initiative to l
+ earn or improve in programming skills. I therefore decided to streamline s
+ ome of my assignment marking using Python. The time I spent in developing 
+ the Python scripts could then be offset by the efficiency and accuracy I g
+ ained from the automation. \n\nIn this presentation\, I will demonstrate h
+ ow to populate student details into their individual Excel mark sheets\, c
+ heck marking mistakes\, automate mark adjustment and collect data from ind
+ ividual mark sheets. \n\nWhile the above automation can be achieved using 
+ standard tools offered by Microsoft by putting the programming logic into 
+ Excel formulae or Visual Basic for Application\, I will argue using Python
+  to separate the logic from data is a better approach in terms of programm
+ ing practice and Cybersecurity.
+DTSTAMP:20240903T102341Z
+LOCATION:Eureka 3
+SUMMARY:As a Teacher. I have no Time to learn Programming - Streamline Assi
+ gnment Marking with Python - Haggen So
+URL:https://pretalx.com/pycon-au-2024/talk/KFVD3Z/
+END:VEVENT
+END:VCALENDAR

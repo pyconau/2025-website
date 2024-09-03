@@ -1,0 +1,213 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>From minutes to seconds: Capillary auto-alignment with python and opencv ::  PyCon AU 2024 :: pretalx</title>
+        <meta name="title" content="From minutes to seconds: Capillary auto-alignment with python and opencv  - PyCon AU 2024 pretalx">
+        <meta name="description" content="Samples used for diffraction experiments at the Australian Synchrotron, a research facility in Melbourne, are typically presented as finely ground powders confined inside very thin (1mm or less) glass capillaries. These samples are irradiated with X-rays in order to uncover their atomic crystal structures. Amongst our research areas, we study applications in mining, solar cells, perovskites, hydrogen storage, and geology, where understanding material properties at the atomic level can lead to advancements such as enhancing mineral extraction processes, improving solar cell efficiency, developing better hydrogen storage solutions, and analysing the composition of meteorites.
+
+To ensure good data quality, the capillary needs to rotate precisely around its centre of rotation in front of the X-ray beam. Alignment of the centre of rotation is usually a manual operation that relies on the human eye and expertise to discern that the capillary is straight and stationary while it rotates around its axis; this process can be lengthy, error-prone, and difficult to achieve, especially for non-experts.
+
+In this talk, I will demonstrate how we have united Python, OpenCV, and motion control systems to automate the capillary alignment procedure at the Australian Synchrotron, reducing the time to align a sample from several minutes to just 10 seconds.">
+        <meta name="application-name" content="pretalx">
+        <meta name="generator" content="pretalx">
+        <meta name="keywords" content="PyCon AU 2024, pycon-au-2024, 2024, schedule, talks, cfp, call for papers, conference, submissions, organizer">
+        
+        
+            <meta name="robots" content="index, follow">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#00B159">
+        <meta name="HandheldFriendly" content="True"/>
+        
+    <meta property="thumbnail" content="https://pretalx.com/pycon-au-2024/talk/CQDJ9K/og-image">
+    <meta property="og:image" content="https://pretalx.com/pycon-au-2024/talk/CQDJ9K/og-image">
+
+        <meta property="og:title" content="From minutes to seconds: Capillary auto-alignment with python and opencv PyCon AU 2024">
+        <meta property="og:description" content="Samples used for diffraction experiments at the Australian Synchrotron, a research facility in Melbourne, are typically presented as finely ground powders confined inside very thin (1mm or less) glass capillaries. These samples are irradiated with X-rays in order to uncover their atomic crystal structures. Amongst our research areas, we study applications in mining, solar cells, perovskites, hydrogen storage, and geology, where understanding material properties at the atomic level can lead to advancements such as enhancing mineral extraction processes, improving solar cell efficiency, developing better hydrogen storage solutions, and analysing the composition of meteorites.
+
+To ensure good data quality, the capillary needs to rotate precisely around its centre of rotation in front of the X-ray beam. Alignment of the centre of rotation is usually a manual operation that relies on the human eye and expertise to discern that the capillary is straight and stationary while it rotates around its axis; this process can be lengthy, error-prone, and difficult to achieve, especially for non-experts.
+
+In this talk, I will demonstrate how we have united Python, OpenCV, and motion control systems to automate the capillary alignment procedure at the Australian Synchrotron, reducing the time to align a sample from several minutes to just 10 seconds.">
+        <meta property="og:url" content="http://testserver/pycon-au-2024/talk/CQDJ9K/">
+        <meta property="twitter:card" content="summary">
+
+        
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/common/img/icons/favicon.f79e2b95f18d.ico">
+    <link rel="apple-touch-icon" href="/static/common/img/icons/apple-touch-icon-180x180.9cd0735ee8ec.png">
+
+
+
+        <link rel="stylesheet" type="text/css" href="/static/common/scss/uncompressed.cabbf3759e3e.css" />
+        
+            <link rel="stylesheet" type="text/css" href="/static/vendored/fullcalendar/fullcalendar.min.ba055a2cd2b3.css"/>
+            <link rel="stylesheet" type="text/css" href="/media/pycon-au-2024/cfp.45696e4e6cfb06b9.css"/>
+            <link rel="stylesheet" type="text/css" href="/media/pycon-au-2024/agenda.e6ca9a43c7217ad7.css"/>
+        
+        
+        <script src="/static/CACHE/js/output.8a6c26cce74b.js" defer></script>
+        
+    
+    <link rel="alternate" type="application/json" title="PyCon AU 2024 API" href="https://pretalx.com/api/events/pycon-au-2024/talks/CQDJ9K" />
+
+    
+    <script id="pretalx-messages" data-logged-in="false" src="/pycon-au-2024/schedule/widget/messages.js"></script>
+    <script src="/static/CACHE/js/output.ee3f4ef9d2e8.js" async></script>
+<script src="/static/CACHE/js/output.a5b490466975.js"></script>
+    <link rel="stylesheet" href="/static/CACHE/css/output.07f5ae334b50.css" type="text/css">
+
+
+    </head>
+    <body data-datetimeformat="YYYY-MM-DD HH:mm:ss" data-dateformat="YYYY-MM-DD" data-datetimelocale="en">
+        <div id="top-bg" class="header bg-primary">
+            
+        </div>
+        
+        <div class="container" id="main-container">
+            <header>
+                <h1>
+                    <a href="
+    
+    
+        /pycon-au-2024/schedule/
+    
+">
+                        
+                            PyCon AU 2024
+                        
+                    </a>
+                </h1>
+                <div class="d-flex" id="header-row">
+                    
+                    
+                </div>
+            </header>
+            <div class="card" id="main-card">
+                <main>
+                    
+
+                    
+    
+    
+    <article>
+        
+        <h3 class="talk-title">
+            <div class="heading-with-buttons">
+                <span>
+                    From minutes to seconds: Capillary auto-alignment with python and opencv
+                    <button class="btn btn-xs btn-link d-none" id="fav-button">
+                        <i class="fa fa-star-o d-none" title="Favourite this session"></i>
+                        <i class="fa fa-star d-none" title="Remove this session from your favourites"></i>
+                    </button>
+                </span>
+                <div class="buttons" id="talk-buttons">
+                    
+                        <a class="btn btn-outline-primary" href="/pycon-au-2024/talk/CQDJ9K.ics">
+                            <i class="fa fa-calendar"></i> .ical
+                        </a>
+                    
+                    
+                    
+                </div>
+            </div>
+            <small>
+                
+                    11-22, 16:10–16:40 (Australia/Melbourne), Eureka 2
+                    
+                
+                
+                
+            </small>
+        </h3>
+        <div class="talk row">
+            <div class="talk-content">
+                
+                
+                    <div class="talk-image">
+                        <a href="/media/pycon-au-2024/submissions/CQDJ9K/capillary_spinner_XEldohj.jpg"
+                           data-lightbox="/media/pycon-au-2024/submissions/CQDJ9K/capillary_spinner_XEldohj.jpg">
+                            <img loading="lazy"
+                                 src="/media/pycon-au-2024/submissions/CQDJ9K/capillary_spinner_XEldohj.jpg"
+                                 alt="This session’s header image">
+                        </a>
+                    </div>
+                
+                
+                <section class="abstract">
+                    <p>Samples used for diffraction experiments at the Australian Synchrotron, a research facility in Melbourne, are typically presented as finely ground powders confined inside very thin (1mm or less) glass capillaries. These samples are irradiated with X-rays in order to uncover their atomic crystal structures. Amongst our research areas, we study applications in mining, solar cells, perovskites, hydrogen storage, and geology, where understanding material properties at the atomic level can lead to advancements such as enhancing mineral extraction processes, improving solar cell efficiency, developing better hydrogen storage solutions, and analysing the composition of meteorites.</p>
+<p>To ensure good data quality, the capillary needs to rotate precisely around its centre of rotation in front of the X-ray beam. Alignment of the centre of rotation is usually a manual operation that relies on the human eye and expertise to discern that the capillary is straight and stationary while it rotates around its axis; this process can be lengthy, error-prone, and difficult to achieve, especially for non-experts.</p>
+<p>In this talk, I will demonstrate how we have united Python, OpenCV, and motion control systems to automate the capillary alignment procedure at the Australian Synchrotron, reducing the time to align a sample from several minutes to just 10 seconds.</p>
+                </section>
+                
+                <section class="description">
+                    
+                </section>
+                
+            </section>
+            
+            <section>
+                
+            </section>
+        </div>
+    </div>
+    
+        
+            <div class="pretalx-session">
+                <div class="pretalx-session-time-box avatar">
+                    <a href="/pycon-au-2024/speaker/MSEC3L/">
+                        <div class="avatar-wrapper">
+                            
+                                <img loading="lazy" src="/media/avatars/emily_massahud_pLJtvvo.jpg" alt="The speaker’s profile picture">
+                            
+                        </div>
+                    </a>
+                </div>
+                <div class="pretalx-session-info">
+                    <div class="title">
+                        <a href="/pycon-au-2024/speaker/MSEC3L/">Emily Massahud</a>
+                    </div>
+                    <div class="abstract"><p>I am a Software Engineer at the Australian Synchrotron, working on the scientific computing team. My work focuses on automation of experiments, as well as data processing for the diffraction beamlines.</p></div>
+                    
+                </div>
+            </div>
+        
+    
+    </article>
+
+
+                </main>
+            </div>
+            <footer>
+                
+                    <div id="exporttimestamp" class="text-muted">
+                        
+                        This is a static export generated at 2024-09-03 20:23 AEST
+                    </div>
+                
+                
+
+
+
+    powered by <a href="https://pretalx.com" target="_blank" rel="noopener">pretalx</a>
+
+
+                
+                    ·
+                    <a href="mailto:program@pycon.org.au">Contact us</a>
+                
+                
+                
+                    ·
+                    <a href="/pycon-au-2024/privacy">Privacy</a>
+                
+            </footer>
+        </div>
+    </body>
+</html>

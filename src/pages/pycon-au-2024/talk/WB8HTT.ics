@@ -1,0 +1,93 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//WB8HTT
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-WB8HTT@pretalx.com
+DTSTART;TZID=AEST:20241122T100000
+DTEND;TZID=AEST:20241122T103000
+DESCRIPTION:Verifying\, evaluating or interpreting complex data requires sp
+ ecialist tools and methods. Many data scientists\, programmers and scienti
+ sts will be familiar with some evaluation metrics such as accuracy\, mean 
+ squared error or true positive rate. There are many situations where these
+  scores are insufficient for assessing correctness\, accuracy or suitabili
+ ty of a model or prediction. The challenge of verifying models and predict
+ ions affects most fields of science\, engineering\, and many machine learn
+ ing applications.\n\nThis talk will introduce "scores"\, an open source Py
+ thon package for verifying and evaluating labelled\, n-dimensional (multid
+ imensional) data at any scale. "scores" includes over 50 metrics\, statist
+ ical techniques and data processing tools. The software repository can be 
+ found at https://github.com/nci/scores and the documentation can be found 
+ at https://scores.readthedocs.io/ .\n\nThis talk is suitable for beginner\
+ , intermediate and expert audiences. Developers and data scientists who ar
+ e familiar mainly with tabular data\, such as supported by the pandas libr
+ ary\, may be interested in the additional functionality offered by "scores
+ " (and the xarray library it utilises). For those learning about more adva
+ nced methods\, every metric and statistical test has a companion Jupyter N
+ otebook tutorial. For expert users already familiar with these ideas\, you
+  may be interested in some of the novel scoring methods not commonly found
+  in other packages. \n\nCome to this talk to hear about:\n - The differenc
+ e between tabular data\, n-dimensional data\, and labelled n-dimensional d
+ ata\n - Examples of using a common metric from "scores" on labelled\, n-di
+ mensional data\n - Examples of using "scores" for interrogating data in mu
+ ltiple dimensions\n - Examples of where basic methods overlook important c
+ onsiderations\n - Examples of using some of the more complex metrics in "s
+ cores"
+DTSTAMP:20240903T102344Z
+LOCATION:Eureka 2
+SUMMARY:Verifying and evaluating scientific results with the open source pa
+ ckage "scores" - Tennessee Leeuwenburg
+URL:https://pretalx.com/pycon-au-2024/talk/WB8HTT/
+END:VEVENT
+END:VCALENDAR
