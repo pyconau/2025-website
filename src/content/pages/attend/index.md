@@ -1,5 +1,6 @@
 ---
 title: Attend PyCon AU
+order: 1
 ---
 
 # More details coming soon!
