@@ -25,7 +25,7 @@
         
         <meta property="og:title" content=" PyCon AU 2024">
         <meta property="og:description" content="Schedule, talks and talk submissions for PyCon AU 2024">
-        <meta property="og:url" content="http://testserver/pycon-au-2024/schedule/v/20240903.0/nojs">
+        <meta property="og:url" content="http://testserver/pycon-au-2024/schedule/v/20240903.1/nojs">
         <meta property="twitter:card" content="summary">
 
         
@@ -92,17 +92,6 @@
             </div>
         </div>
         
-            <div class="alert alert-warning m-3">
-                <span>
-                    
-                        You are currently viewing an older schedule version.
-                    
-                    
-                        You can find the current version <a href="/pycon-au-2024/schedule/">here</a>.
-                    
-                </span>
-            </div>
-        
 
         
 
@@ -119,7 +108,7 @@
     </div>
     <div class="header-right">
         
-            <span>Version <a href="/pycon-au-2024/schedule/changelog/">20240903.0</a></span>
+            <span>Version <a href="/pycon-au-2024/schedule/changelog/">20240903.1</a></span>
             <details class="dropdown">
                 <summary class="btn btn-sm btn-outline-info">
                     <i class="fa fa-code"></i><i class="fa fa-caret-down"></i>
@@ -246,6 +235,8 @@
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/ACKK3A/">
+                                
 
                                 
 
@@ -286,11 +277,13 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/ZCKWM3/">
                                 
 
                                 
@@ -332,13 +325,15 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         10:00
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/79HGSW/">
                                 
 
                                 
@@ -381,11 +376,13 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/3GPQDE/">
                                 
 
                                 
@@ -426,11 +423,13 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/WB8HTT/">
                                 
 
                                 
@@ -479,7 +478,7 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -609,6 +608,8 @@
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/MQQJYE/">
+                                
 
                                 
 
@@ -650,11 +651,13 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/NLZQAA/">
                                 
 
                                 
@@ -695,11 +698,13 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/YYN7YH/">
                                 
 
                                 
@@ -740,13 +745,15 @@
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         11:40
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/9MLDVZ/">
                                 
 
                                 
@@ -798,11 +805,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/DQGVLY/">
                                 
 
                                 
@@ -843,11 +852,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/XHTJ3S/">
                                 
 
                                 
@@ -890,13 +901,15 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         12:20
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/WLCHUM/">
                                 
 
                                 
@@ -937,11 +950,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/JV9WT7/">
                                 
 
                                 
@@ -982,11 +997,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/M3KJ3V/">
                                 
 
                                 
@@ -1027,7 +1044,7 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -1157,6 +1174,8 @@ department make them 'prettier'...</p></div>
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/Z3KYJZ/">
+                                
 
                                 
 
@@ -1196,11 +1215,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/7DJWKZ/">
                                 
 
                                 
@@ -1241,13 +1262,63 @@ department make them 'prettier'...</p></div>
 </div>
 
 
+                                </a>
+                            
+                                <div class="bucket-time">
+                                    
+                                </div>
                                 
+                                    <a href="/pycon-au-2024/talk/NUUJAN/">
+                                
+
+                                
+
+
+<div class="pretalx-session"
+     id="NUUJAN"
+     style="--track-color:#00BA1E">
+    <div class="pretalx-session-time-box">
+        
+        <div class="start">13:50</div>
+        <div class="duration">
+            30min
+        </div>
+    </div>
+    <div class="pretalx-session-info">
+        <div class="title">
+            
+                
+                Who tests the testers? Making and testing pipelines
+            
+        </div>
+        
+            <div class="speakers">Evan Kohilas</div>
+        
+        
+            <div class="abstract"><p>You likely have a good pipeline that either runs tests, lints, or deployments for your project.</p>
+<p>But when it comes to changing that pipeline, how sure are you that it works before taking those changes live?</p></div>
+        
+        <div class="bottom-info">
+            <div class="track">
+                DevOops
+            </div>
+            <div class="room">
+                Goldfields Theatre
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         14:30
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/KFVD3Z/">
                                 
 
                                 
@@ -1290,11 +1361,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/XHM7N7/">
                                 
 
                                 
@@ -1336,11 +1409,13 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/3JHULA/">
                                 
 
                                 
@@ -1382,7 +1457,7 @@ department make them 'prettier'...</p></div>
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -1552,6 +1627,8 @@ department make them 'prettier'...</p></div>
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/XUNCWK/">
+                                
 
                                 
 
@@ -1593,13 +1670,15 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         16:10
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/CQDJ9K/">
                                 
 
                                 
@@ -1642,13 +1721,15 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         16:50
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/A78TC9/">
                                 
 
                                 
@@ -1692,7 +1773,7 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                         
                     </div>
@@ -1811,7 +1892,7 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
     <div class="pretalx-session-info">
         <div class="title">
             
-                [placeholder] Keynote (Saturday)
+                Keynote (to be announced) 
             
         </div>
         
@@ -1958,6 +2039,8 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/JD8WMZ/">
+                                
 
                                 
 
@@ -1997,11 +2080,13 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/MW7E7N/">
                                 
 
                                 
@@ -2075,11 +2160,13 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/MBZSKZ/">
                                 
 
                                 
@@ -2120,13 +2207,15 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         11:20
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/Q78MDT/">
                                 
 
                                 
@@ -2167,11 +2256,13 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/TWFSTJ/">
                                 
 
                                 
@@ -2214,13 +2305,15 @@ In this practical talk, we’ll introduce DuckDB, a fast and versatile analytica
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         12:00
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/LGDUVR/">
                                 
 
                                 
@@ -2264,11 +2357,13 @@ In this practical talk, we’ll introduce DuckDB, a fast and versatile analytica
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/ZEKYUW/">
                                 
 
                                 
@@ -2309,7 +2404,7 @@ In this practical talk, we’ll introduce DuckDB, a fast and versatile analytica
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -2439,6 +2534,8 @@ In this practical talk, we’ll introduce DuckDB, a fast and versatile analytica
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/HMWPGH/">
+                                
 
                                 
 
@@ -2483,11 +2580,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/R9ZKZC/">
                                 
 
                                 
@@ -2530,11 +2629,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/CERBXC/">
                                 
 
                                 
@@ -2575,13 +2676,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         14:10
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/9KD9HJ/">
                                 
 
                                 
@@ -2624,11 +2727,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/HFXFLZ/">
                                 
 
                                 
@@ -2670,11 +2775,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/CFS9GH/">
                                 
 
                                 
@@ -2715,13 +2822,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         14:50
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/GF3NJK/">
                                 
 
                                 
@@ -2764,11 +2873,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/8UXYBS/">
                                 
 
                                 
@@ -2809,11 +2920,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/YNDDJR/">
                                 
 
                                 
@@ -2860,7 +2973,7 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -3101,7 +3214,7 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
     <div class="pretalx-session-info">
         <div class="title">
             
-                [placeholder] Keynote (Sunday)
+                Keynote (to be announced)
             
         </div>
         
@@ -3248,6 +3361,8 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/QTWAGZ/">
+                                
 
                                 
 
@@ -3288,11 +3403,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/LYLY7H/">
                                 
 
                                 
@@ -3334,11 +3451,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/8HBU3Z/">
                                 
 
                                 
@@ -3380,13 +3499,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         11:15
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/P7UKEN/">
                                 
 
                                 
@@ -3429,11 +3550,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/9ZRRJY/">
                                 
 
                                 
@@ -3474,11 +3597,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/U3YKPB/">
                                 
 
                                 
@@ -3529,13 +3654,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         11:55
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/DQPW7L/">
                                 
 
                                 
@@ -3576,11 +3703,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/UKJB7J/">
                                 
 
                                 
@@ -3621,11 +3750,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/LALLKX/">
                                 
 
                                 
@@ -3671,7 +3802,7 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
@@ -3801,6 +3932,8 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
                                     
                                 </div>
                                 
+                                    <a href="/pycon-au-2024/talk/C37SMX/">
+                                
 
                                 
 
@@ -3840,11 +3973,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/ZGCQSY/">
                                 
 
                                 
@@ -3885,11 +4020,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/WYZEUQ/">
                                 
 
                                 
@@ -3931,13 +4068,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         14:10
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/MVAF7U/">
                                 
 
                                 
@@ -3978,11 +4117,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/S7E8T7/">
                                 
 
                                 
@@ -4023,11 +4164,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/NFZKYP/">
                                 
 
                                 
@@ -4069,13 +4212,15 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                         14:50
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/UKK9K9/">
                                 
 
                                 
@@ -4116,11 +4261,13 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/B8RJPR/">
                                 
 
                                 
@@ -4163,11 +4310,13 @@ In this presentation, we aim to demonstrate how our database was limiting the co
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     
                                 </div>
+                                
+                                    <a href="/pycon-au-2024/talk/WCUHJ8/">
                                 
 
                                 
@@ -4208,7 +4357,7 @@ In this presentation, we aim to demonstrate how our database was limiting the co
 </div>
 
 
-                                
+                                </a>
                             
                                 <div class="bucket-time">
                                     

@@ -2,7 +2,7 @@
 <!-- Made with love by pretalx v2024.3.0.dev0. -->
 <schedule>
     <generator name="pretalx" version="2024.3.0.dev0" />
-    <version>20240903.0</version>
+    <version>20240903.1</version>
     <conference>
         <title>PyCon AU 2024</title>
         <acronym>pycon-au-2024</acronym>
@@ -198,6 +198,39 @@ While the story and example focus on building a REST client, the concepts presen
 
                 <url>https://pretalx.com/pycon-au-2024/talk/M3KJ3V/</url>
                 <feedback_url>https://pretalx.com/pycon-au-2024/talk/M3KJ3V/feedback/</feedback_url>
+            </event>
+            <event guid='1c0274f5-9537-5687-bd81-4227fa4a9b32' id='53674'>
+                <room>Goldfields Theatre</room>
+                <title>Who tests the testers? Making and testing pipelines</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T13:50:00+11:00</date>
+                <start>13:50</start>
+                <duration>00:30</duration>
+                <abstract>You likely have a good pipeline that either runs tests, lints, or deployments for your project.
+
+But when it comes to changing that pipeline, how sure are you that it works before taking those changes live?</abstract>
+                <slug>pycon-au-2024-53674-who-tests-the-testers-making-and-testing-pipelines</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='1609'>Evan Kohilas</person>
+                </persons>
+                <language>en</language>
+                <description>In this talk, we&apos;ll explore why it doesn&apos;t have to be the case that &quot;there&apos;s no devops for devops&quot;.
+
+We&apos;ll give a quick run down of what pipelines are, and why they should be used, before we give an example where it can be hard to know whether making changes to a gitlab pipeline will fail, and why that can be the case.
+
+Then, we&apos;ll showcase tools that can be used for testing, creating, and simulating pipelines, so you too can setup a system to always be sure that your pipeline changes won&apos;t cause any water damage.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/NUUJAN/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/NUUJAN/feedback/</feedback_url>
             </event>
             <event guid='f01e7586-1ada-56f3-80b8-43bcd5710d4d' id='52777'>
                 <room>Goldfields Theatre</room>

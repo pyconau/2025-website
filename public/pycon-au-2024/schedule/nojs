@@ -108,7 +108,7 @@
     </div>
     <div class="header-right">
         
-            <span>Version <a href="/pycon-au-2024/schedule/changelog/">20240903.0</a></span>
+            <span>Version <a href="/pycon-au-2024/schedule/changelog/">20240903.1</a></span>
             <details class="dropdown">
                 <summary class="btn btn-sm btn-outline-info">
                     <i class="fa fa-code"></i><i class="fa fa-caret-down"></i>
@@ -1266,6 +1266,54 @@ department make them 'prettier'...</p></div>
                             
                                 <div class="bucket-time">
                                     
+                                </div>
+                                
+                                    <a href="/pycon-au-2024/talk/NUUJAN/">
+                                
+
+                                
+
+
+<div class="pretalx-session"
+     id="NUUJAN"
+     style="--track-color:#00BA1E">
+    <div class="pretalx-session-time-box">
+        
+        <div class="start">13:50</div>
+        <div class="duration">
+            30min
+        </div>
+    </div>
+    <div class="pretalx-session-info">
+        <div class="title">
+            
+                
+                Who tests the testers? Making and testing pipelines
+            
+        </div>
+        
+            <div class="speakers">Evan Kohilas</div>
+        
+        
+            <div class="abstract"><p>You likely have a good pipeline that either runs tests, lints, or deployments for your project.</p>
+<p>But when it comes to changing that pipeline, how sure are you that it works before taking those changes live?</p></div>
+        
+        <div class="bottom-info">
+            <div class="track">
+                DevOops
+            </div>
+            <div class="room">
+                Goldfields Theatre
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                                </a>
+                            
+                                <div class="bucket-time">
+                                    
                                         14:30
                                     
                                 </div>
@@ -1844,7 +1892,7 @@ Furthermore, using explainable AI with Shapley values, we identify key feature c
     <div class="pretalx-session-info">
         <div class="title">
             
-                [placeholder] Keynote (Saturday)
+                Keynote (to be announced) 
             
         </div>
         
@@ -3166,7 +3214,7 @@ Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J
     <div class="pretalx-session-info">
         <div class="title">
             
-                [placeholder] Keynote (Sunday)
+                Keynote (to be announced)
             
         </div>
         
@@ -4531,7 +4579,7 @@ In this presentation, we aim to demonstrate how our database was limiting the co
                 
                     <div id="exporttimestamp" class="text-muted">
                         
-                        This is a static export generated at 2024-09-03 20:23 AEST
+                        This is a static export generated at 2024-09-03 23:56 AEST
                     </div>
                 
                 
