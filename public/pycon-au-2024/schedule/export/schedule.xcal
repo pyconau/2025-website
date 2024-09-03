@@ -152,6 +152,34 @@ While the story and example focus on building a REST client, the concepts presen
         
         <vevent>
             <method>PUBLISH</method>
+            <uid>NUUJAN@@pretalx.com</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-NUUJAN</pentabarf:event-slug>
+            <pentabarf:title>Who tests the testers? Making and testing pipelines</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>en</pentabarf:language>
+            <pentabarf:language-code>en</pentabarf:language-code>
+            <dtstart>20241122T135000</dtstart>
+            <dtend>20241122T142000</dtend>
+            <duration>0.03000</duration>
+            <summary>Who tests the testers? Making and testing pipelines</summary>
+            <description>In this talk, we&#x27;ll explore why it doesn&#x27;t have to be the case that &quot;there&#x27;s no devops for devops&quot;.
+
+We&#x27;ll give a quick run down of what pipelines are, and why they should be used, before we give an example where it can be hard to know whether making changes to a gitlab pipeline will fail, and why that can be the case.
+
+Then, we&#x27;ll showcase tools that can be used for testing, creating, and simulating pipelines, so you too can setup a system to always be sure that your pipeline changes won&#x27;t cause any water damage.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://pretalx.com/pycon-au-2024/talk/NUUJAN/</url>
+            <location>Goldfields Theatre</location>
+            
+            <attendee>Evan Kohilas</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
             <uid>XHM7N7@@pretalx.com</uid>
             <pentabarf:event-id></pentabarf:event-id>
             <pentabarf:event-slug>-XHM7N7</pentabarf:event-slug>
