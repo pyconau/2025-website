@@ -1,0 +1,26 @@
+title: Build Your Own IoT! Fun With Python and Raspberry Pi.
+start:
+end:
+room:
+track:
+  en: Education
+abstract: <p>This talk will discuss building a basic streaming data pipeline for IoT
+  applications using Python and Raspberry Pi. Attendees will have the opportunity
+  to learn about Raspberry Pi, Apache Kafka + Kafka Connect, and solar power generation.</p>
+description: "<p>This isn't your grandfather's electronics shop - anyone can collect
+  real-time data with Python! This talk aims to demystify the complex world of data
+  and hardware, with real-world applications for the Western Australian electricity
+  grid.</p>\n<p>With the number of IoT devices expected to reach 29 billion by 2030,
+  the significance of real-time data collection continues to grow. In this session,
+  we will construct a basic microscale/hobby scale data collection system designed
+  to serve as the backbone for an IoT application. Specifically, we will create a
+  system to continuously collect voltage readings from a mini solar panel and record
+  the data for future analysis. The system we develop can be easily adapted for different
+  IoT applications.</p>\n<p>This talk is designed to be conceptual, requiring only
+  a basic understanding of Python and JSON. Whether you’re a beginner, hobbyist, or
+  professional, join us to explore the exciting world of data and IoT!</p>"
+code: Z3KYJZ
+speakers:
+- 7SWEAL
+cw:
+online: true

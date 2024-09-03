@@ -1,0 +1,23 @@
+title: 'Turtles all the way down: Abstractions and when we should use them'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>Abstractions are one of the greatest tools in all of programming. But
+  sometimes we reach for them too often. How do we know when we should use an abstraction,
+  and when we should just use the ones that already exist.</p>
+description: "<p>Abstractions are rife in programming. You might even say they are
+  the way we build meaning into our systems. But often when faced with a problem,
+  we reach for a new container to neatly package it up and make it a solution. Sometimes
+  this works, but most of the time, the problem either immediately leaks out, or over
+  time seeps out into nearby containers, contaminating them along the way.</p>\n<p>This
+  talk is about describing different types of abstraction (helpful and not-so-helpful),
+  what they look like, and how to design a helpful one. In the end you will have a
+  few new ways to think about when and how to create abstractions and possibly a mental
+  guide to building (or not building) your own.</p>"
+code: WCUHJ8
+speakers:
+- 9JG7DV
+cw:
+online: true

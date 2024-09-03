@@ -1,0 +1,39 @@
+title: 'Avocado, Cheese, Grape, Tomato or: How I Used Python to Stop Worrying and
+  Love Emoji in Bioinformatics'
+start:
+end:
+room:
+track:
+  en: Scientific Python
+abstract: "<p>Bioinformatics is the science of understanding and analysing biological
+  information, such as the genetic information contained in DNA. It combines the disciplines
+  of biology, computer science, and mathematics. If this seems daunting, don’t panic,
+  because this talk will focus on two open-source Python packages I have developed,
+  FASTQE and Biomojify, that make common bioinformatics file formats intuitive and
+  accessible…. by using emoji.</p>\n<p>FASTQE simplifies DNA sequencing data analysis
+  by taking numerical quality scores for the data, and summarising them using emoji
+  to quickly convey the good, the bad, and the ugly of sequence data quality. Whether
+  for training, outreach, or debugging, this tool can easily turn unremarkable data
+  quality analysis into an appealing visualisation.</p>\n<p>Biomojify takes the concept
+  further by converting plain text data to use emoji. In DNA, for example, the conventional
+  format represents  individual A, C, G, and T nucleotides as plain text. Biomojify
+  substitutes them with emojis such as avocado, cheese, grape, and tomato. It supports
+  various bioinformatics file formats and supports user defined emoji mapping. It
+  can be used to teach the underlying biological concepts behind bioinformatics data,
+  by simplifying specialised data structures for a general audience. </p>\n<p>Science
+  communication is hard. These tools transform complex bioinformatics data into engaging,
+  emoji-based visualisations, making bioinformatics concepts more accessible and adding
+  an element of fun to scientific education and communication.</p>"
+description: "<p>This presentation will delve into the history and recent exciting
+  developments of FASTQE and Biomojify. I will provide some background information
+  on bioinformatics, and outline new developments such as support for new sequencing
+  technologies and expanded emoji customization options. I will also present examples
+  of teaching resources developed using these tools.</p>\n<p>As a bioinformatician
+  with over a decade of experience and the main developer of these tools, I would
+  love to share my roadmap and encourage more contributors to join these projects.
+  I’m eager to share my love of bioinformatics with the Python community.</p>"
+code: A78TC9
+speakers:
+- HBDX9R
+cw:
+online: true

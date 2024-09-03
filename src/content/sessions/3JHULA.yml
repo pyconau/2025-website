@@ -1,0 +1,31 @@
+title: 'Data Morph: A Cautionary Tale of Summary Statistics'
+start:
+end:
+room:
+track:
+  en: Scientific Python
+abstract: "<p>Statistics do not come intuitively to humans; they always try to find
+  simple ways to describe complex things. Given a complex dataset, they may feel tempted
+  to use simple summary statistics like the mean, median, or standard deviation to
+  describe it. However, these numbers are not a replacement for visualizing the distribution.</p>\n
+  <p>To illustrate this fact, researchers have generated many datasets that are very
+  different visually, but share the same summary statistics. In this talk, I will
+  discuss <em>Data Morph</em>, an open source package that builds on previous research
+  using simulated annealing to perturb an arbitrary input dataset into a variety of
+  shapes, while preserving the mean, standard deviation, and correlation to multiple
+  decimal points. I will showcase how it works, discuss the challenges faced during
+  development, and explore the limitations of this approach.</p>"
+description: <p>This talk introduces <em>Data Morph</em>, a new open source Python
+  package I built that can be used to morph an input dataset of 2D points into select
+  shapes, while preserving the summary statistics to a given number of decimal points
+  through simulated annealing. <em>Data Morph</em> extends research from Autodesk
+  to create the <a 
+  href="https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/pdf/same-stats-different-graphs.pdf">Datasaurus
+  Dozen</a>, and is intended to be used as a teaching tool for illustrating why you
+  can’t rely solely on summary statistics. Come learn how it works and what it took
+  to translate the research into an open-source library.</p>
+code: 3JHULA
+speakers:
+- 9WJJPL
+cw:
+online: true

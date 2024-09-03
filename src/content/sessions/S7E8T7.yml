@@ -1,0 +1,23 @@
+title: 'Three Django Apps in a Trenchcoat: Writing an event management website with
+  not a lot of time'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>Come and hear how I wrote 3 Django apps in a trenchcoat to run a ~300+
+  person scout camp, from making event registration a breeze, to conducting everyone's
+  movements throughout the entire event.</p>
+description: '<p>In the last weekend of April this year, I helped to run Star Trek:
+  Survival (https://startreksurvival.tech), a STEM-focussed, Star Trek-themed scout
+  camp for all ages, 5 to 26 years. This talk will be about the software I wrote,
+  including a registration system, the Star Trek Survival main website, and a system
+  called RadioActiv8, which is used to keep track of where everyone is across the
+  campsite, and send them to activities when there is capacity to do so. All of this
+  was combined into a single project for maximum integration and ease of use.</p>'
+code: S7E8T7
+speakers:
+- CYVHAC
+- QD8GMS
+cw:
+online: true
