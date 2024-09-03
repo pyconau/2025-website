@@ -2,6 +2,7 @@ import os
 import os.path
 import pathlib
 from datetime import timedelta
+from io import BytesIO
 from os import environ
 from pprint import pprint
 
@@ -10,11 +11,12 @@ import dateutil.parser
 import dateutil.tz
 import requests
 from markdown import Markdown
-from parse import parse
+from PIL import Image
 from ruamel.yaml import YAML
 
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
 ACST = dateutil.tz.gettz("Australia/Adelaide")
+AEST = dateutil.tz.gettz("Australia/Melbourne")
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
 PEOPLE_DIR = CONTENT_DIR / "people"
@@ -68,10 +70,9 @@ def parse_markdown(text):
 
 
 rooms = {
-    "Hall A": "a",
-    "Hall B": "b",
-    "Hall C (Plenary)": "c",
-    "Hall E": "e",
+    "Goldfields Theatre": "a",
+    "Eureka 2": "b",
+    "Eureka 3": "c",
 }
 
 tracks = {
@@ -82,45 +83,45 @@ tracks = {
 }
 
 answers = {
-    "Presentation Format": 853,
-    "Content Warning": 2459,
-    "Pronouns": 2461,
-    "Twitter": 2455,
-    "Fedi": 2506,
-    "Online": 2656,
+    "Content Warning": 3747,
+    "Pronouns": 3948,
+    "Twitter": 3950,
+    "Fedi": 3949,
 }
 
-format_answer = {
-    1062: "L",  # live
-    1063: "P",  # prerecord
-}
+# format_answer = {
+#     1062: "L",  # live
+#     1063: "P",  # prerecord
+# }
 
 types = {
     "Talk": "talk",
-    "PyCon Fair stall": "stall",
+    # "PyCon Fair stall": "stall",
     "Opening/Closing": "open-close",
     "Special": "special",
     "Keynote": "keynote",
+    "Waitlist": "waitlist",
+    "Backup": "backup",
 }
 
 seen_speakers = set()
 
-yt_resp = requests.get(
-    "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2021.json"
-)
-yt_resp.raise_for_status()
-youtube_slugs = {
-    x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
-    for x in yt_resp.json()
-    if x["host_url"] is not None
-}
+# yt_resp = requests.get(
+#     "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2021.json"
+# )
+# yt_resp.raise_for_status()
+# youtube_slugs = {
+#     x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
+#     for x in yt_resp.json()
+#     if x["host_url"] is not None
+# }
 
 for entry in SESSIONS_DIR.glob("*"):
     entry.unlink()
 
 
 for session in paginate(
-    "https://pretalx.com/api/events/pyconau-2023/submissions/?state=confirmed&questions=2459,2656"
+    "https://pretalx.com/api/events/pycon-au-2024/submissions/?state=confirmed&questions=3747"
 ):
     # Do not schedule backups
     # TODO manually add backups if they are unscheduled after the event.
@@ -137,8 +138,8 @@ for session in paginate(
     seen_speakers.update(speakers)
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
         if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
-            start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(ACST)
-            end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(ACST)
+            start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(AEST)
+            end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(AEST)
         else:
             start = None
             end = None
@@ -181,10 +182,10 @@ for session in paginate(
             None,
         )
         track = session["track"]
-        if track is not None:
-            track = tracks[track["en"]]
-        else:
-            print(f"!!! {session['code']} has no track assigned")
+        # if track is not None:
+        #     track = tracks[track["en"]]
+        # else:
+        #     print(f"!!! {session['code']} has no track assigned")
         yaml.dump(
             {
                 "title": session["title"],
@@ -194,22 +195,18 @@ for session in paginate(
                 if session["slot"] and session["slot"]["room"]
                 else None,
                 "track": track,
-                "type": types[session["submission_type"]["en"]],
+                # "type": types[session["submission_type"]["en"]],
                 # "type": type_answer_id,
                 "abstract": parse_markdown(session["abstract"]),
                 "description": parse_markdown(session["description"]),
                 "code": session["code"],
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
-                "youtube_slug": youtube_slugs.get(session["code"]),
+                # "youtube_slug": youtube_slugs.get(session["code"]),
                 "online": online,
             },
             f,
         )
-
-from io import BytesIO
-
-from PIL import Image
 
 with (CONTENT_DIR / "_people_etags.yml").open("r") as f:
     etags = yaml.load(f)
@@ -219,7 +216,7 @@ if not etags:
     etags = {}
 
 for speaker in paginate(
-    "https://pretalx.com/api/events/pyconau-2023/speakers/?questions=2461,2455,2506"
+    "https://pretalx.com/api/events/pycon-au-2024/speakers/?questions=3949,3956,395"
 ):
     if speaker["code"] not in seen_speakers:
         continue

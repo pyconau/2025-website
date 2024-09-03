@@ -1,0 +1,29 @@
+title: 'From minutes to seconds: Capillary auto-alignment with python and opencv'
+start:
+end:
+room:
+track:
+  en: Scientific Python
+abstract: "<p>Samples used for diffraction experiments at the Australian Synchrotron,
+  a research facility in Melbourne, are typically presented as finely ground powders
+  confined inside very thin (1mm or less) glass capillaries. These samples are irradiated
+  with X-rays in order to uncover their atomic crystal structures. Amongst our research
+  areas, we study applications in mining, solar cells, perovskites, hydrogen storage,
+  and geology, where understanding material properties at the atomic level can lead
+  to advancements such as enhancing mineral extraction processes, improving solar
+  cell efficiency, developing better hydrogen storage solutions, and analysing the
+  composition of meteorites.</p>\n<p>To ensure good data quality, the capillary needs
+  to rotate precisely around its centre of rotation in front of the X-ray beam. Alignment
+  of the centre of rotation is usually a manual operation that relies on the human
+  eye and expertise to discern that the capillary is straight and stationary while
+  it rotates around its axis; this process can be lengthy, error-prone, and difficult
+  to achieve, especially for non-experts.</p>\n<p>In this talk, I will demonstrate
+  how we have united Python, OpenCV, and motion control systems to automate the capillary
+  alignment procedure at the Australian Synchrotron, reducing the time to align a
+  sample from several minutes to just 10 seconds.</p>"
+description: ''
+code: CQDJ9K
+speakers:
+- MSEC3L
+cw:
+online: true

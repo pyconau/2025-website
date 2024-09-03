@@ -1,0 +1,21 @@
+title: Django, REST and OpenAPI - a gentle introduction
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>Django is an all-parts-included framework that is one of the most popular
+  ways of building a website in Python.  But for many websites that's not enough -
+  we also need a REST-based API with an OpenAPI specification so that other programs
+  can read and work with our data.  This talk will cover the Python packages that
+  can provide these facilities and how to integrate them into your existing website.</p>
+description: "<p>This talk will primarily cover two packages:\n- django-rest-framework,
+  or 'DRF' for short, for providing a REST API\n- drf-spectacular, for providing an
+  OpenAPI schema for that API\nIt will include real world examples for how these things
+  work and attendees can also try out the REST interface and OpenAPI schema the talk
+  is based on.</p>"
+code: C37SMX
+speakers:
+- RB3PZZ
+cw:
+online: true

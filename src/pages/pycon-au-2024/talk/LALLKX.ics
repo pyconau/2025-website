@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//LALLKX
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-LALLKX@pretalx.com
+DTSTART;TZID=AEST:20241124T115500
+DTEND;TZID=AEST:20241124T122500
+DESCRIPTION:Everyone loves package management! Python's packaging systems h
+ ave continued to evolve over the years. Specifications such as environment
+  markers\, custom backends\, and static build configurations have been int
+ roduced. Additionally new package managers like Poetry and Hatch have emer
+ ged.\n\nYet despite the updates\, many projects are still living in the 20
+ 10s - using a setup.py file to specify the build configuration for their p
+ ackage. setup.py is notoriously difficult to learn and a common vector for
+  launching attacks during install.\n\nThis talk will discuss why it's time
+  to move away from using setup.py and how to do it.\n\nWe will see how set
+ up.py is used and abused - from downloading huge datasets (*cough* AI *cou
+ gh*)\, modifying the system\, and most critically how malicious payloads c
+ an be included to execute when setup.py is evaluated. Arbitrary code in se
+ tup.py makes security analysis harder and creates more work for PyPI admin
+ istrators.\n\nThe talk will detail the new (as of 7 years ago) methods of 
+ describing build configurations in pyproject.toml and setup.cfg\, giving e
+ xamples of how to use these methods. The examples will include how to achi
+ eve what once required dynamic code to include data like readme contents\,
+  version numbers and requirements. The limits of pyproject.toml and setup.
+ cfg will also be covered.\n\nFinally\, the talk will outline how moving aw
+ ay from setup.py improves the Python packaging universe\, how it makes lif
+ e easier for ensuring Python security\, and what can be done to drive adop
+ tion of pyproject.toml.
+DTSTAMP:20240903T102340Z
+LOCATION:Goldfields Theatre
+SUMMARY:The perfect setup? Not setup.py! Building packages the right way - 
+ Caleb Brown
+URL:https://pretalx.com/pycon-au-2024/talk/LALLKX/
+END:VEVENT
+END:VCALENDAR

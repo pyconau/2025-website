@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 1055 29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <symbol id="a">
+   <path d="m16.8 6a5 5 0 0 0-5 5v7a11 11 0 0 0 5.5 9.5 11 11 0 0 0 11 0 11 11 0 0 0 5.5-9.5v-7a5 5 0 0 0-5-5 5 5 0 0 0-5 5v7a1 1 0 0 1-0.5 0.9 1 1 0 0 1-1 0 1 1 0 0 1-0.5-0.9v-7a5 5 0 0 0-5-5z"/>
+  </symbol>
+  <symbol id="b">
+   <path d="m4.8-0.0365c-2.77 0-5.02 2.25-5.02 5.02s2.25 5.02 5.02 5.02v0.0199h6.05c0.51 0.02 0.928 0.44 0.948 0.95h10v-0.637c-0.0094-3.92-2.1-7.54-5.5-9.5-1.4-0.809-3.51-0.948-5.51-0.836v-0.0375h-5.99z"/>
+  </symbol>
+  <symbol id="c">
+   <use class="y" transform="matrix(1 0 0 -1 12 29)" xlink:href="#a"/>
+   <use class="o" transform="translate(24)" xlink:href="#a"/>
+   <use class="r" transform="matrix(1 0 0 -1 36 29)" xlink:href="#a"/>
+   <use class="b" transform="translate(48)" xlink:href="#a"/>
+   <use class="g" transform="matrix(1 0 0 -1 60 29)" xlink:href="#a"/>
+   <use class="y" transform="translate(72)" xlink:href="#a"/>
+   <use class="o" transform="matrix(1 0 0 -1 84 29)" xlink:href="#a"/>
+   <use class="r" transform="translate(96)" xlink:href="#a"/>
+   <use class="b" transform="matrix(1 0 0 -1 108 29)" xlink:href="#a"/>
+   <use class="g" transform="translate(120)" xlink:href="#a"/>
+  </symbol>
+ </defs>
+ <style type="text/css">.b { fill:#5b57a6; }.r { fill:#e11d43; } .o { fill:#f3703a; } .y { fill:#ffc519; } .g { fill:#00b25a; }</style>
+ <g class="g">
+  <use xlink:href="#a"/>
+  <use xlink:href="#b"/>
+ </g>
+ <g fill="#fff">
+  <circle cx="5.51" cy="7.04" r="1.25"/>
+  <circle cx="5.51" cy="3.02" r="1.25"/>
+ </g>
+ <use xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 120 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 240 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 360 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 480 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 600 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 720 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 840 0)" xlink:href="#c"/>
+ <use transform="matrix(1 0 0 1 960 0)" xlink:href="#c"/>
+ <g class="g">
+  <use transform="matrix(-1 0 0 1 1246 .0266)" xlink:href="#b"/>
+  <use transform="matrix(1 0 0 1 1080 1.55e-8)" xlink:href="#c"/>
+ </g>
+</svg>

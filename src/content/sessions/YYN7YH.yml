@@ -1,0 +1,28 @@
+title: How Smart is AI? – Real projects to build real understanding
+start:
+end:
+room:
+track:
+  en: Education
+abstract: <p>Chat GPT is all the rage in schools, and everyone is talking about AI,
+  but how do we give students a real understanding of AI’s capabilities and limitations?
+  In this talk I’ll demo how you can get students coding their own projects that explore
+  (free) GPT technologies, integrating their own data sources, and contemplating when
+  AI is the right solution.</p>
+description: "<p>This talk is designed for teachers, students, or anyone new to AI
+  to get a better understanding of what “AI” is, to see the broad range of technologies
+  “AI” can includes, and to demystify all pieces of terminology like GPT, LLMs, and
+  more!</p>\n<p>I’ll demo a light-weight project that you can use to get students
+  leveraging GPT technology through their own code creations. We’ll then add some
+  of our own data to give it specialised knowledge in a technique known as “RAG” (Retrieval
+  Augmented Generation). Through the process of testing out this project we’ll then
+  explore the moments where students can see behind the curtain of what tools like
+  ChatGPT are actually doing, where they fall down and aren’t as “smart” as they seem,
+  and how and when to use AI responsibly. </p>\n<p>This talk will specifically highlight
+  an open-source option for playing with AI in Python so you can get your class coding
+  on these tools for free.</p>"
+code: YYN7YH
+speakers:
+- TQKR8P
+cw:
+online: true

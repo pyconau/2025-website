@@ -1,0 +1,36 @@
+title: Wait, is Wi-Fi just blinking lights?
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>Wi-Fi, the mysterious computer blabber. Have you ever wondered how are
+  computers yapping away from under our noses? What secrets must they hold? In this
+  talk we will cover the magic of Wi-Fi, how it works in detail and we will even get
+  our own wireless communication system going using Python and micro-controllers.</p>
+description: "<p>Wi-Fi systems are complicated beasts with several layers, each solving
+  a little piece of the overall wireless communication puzzle.</p>\n<p>At the most
+  basic level, there are radio frequency transmitters and receivers. Transmitters
+  are little lights that can be turned on and off at several different colors and
+  intensities, but with frequencies so low our eyes can't see. Conversely, receivers
+  are just little 360° cameras, that like our eyes can only see a small spectrum of
+  colors, but again in colors we can't see.</p>\n<p>On top of that, if two computers
+  want to communicate they must plot and agree upon a common scheme for how to blink
+  their own lights, and how to change their colors and intensities so that they know
+  what each other mean when they see specific light patterns. This is not unlike Morse
+  code, but using more ways of conveying information other than just short and long
+  blinks.</p>\n<p>Even though that forms the basis of being able to communicate, there
+  are still several other layers on top, since the scheming computers must also agree
+  on things such as to when to turn off their transmitters so their cameras are not
+  blinded by their own lights as they are trying to listen to their peers, how to
+  identify to whom the messages are going if there are multiple peers, how to secretly
+  encode messages such that only peers in the same network can see it, and how to
+  deliver messages from and to the Internet.</p>\n<p>Using Python and RP2040 microcontrollers,
+  we can build little lights and cameras and implement a fully working version of
+  a wireless communication system, with the extra benefit we can actually watch the
+  lights and see what it looks like when computers are talking.</p>"
+code: 8UXYBS
+speakers:
+- YCFJET
+cw:
+online: true

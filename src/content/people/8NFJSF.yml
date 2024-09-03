@@ -1,0 +1,16 @@
+name: Juan Nunez-Iglesias
+pronouns:
+twitter:
+fedi: '@jni@fosstodon.org'
+bio: <p>I'm a research scientist helping other scientists get insights from their
+  image data using Python. I've been using Python since 2008, and the main scientific
+  Python ecosystem (NumPy, SciPy, &amp; co) since 2010. In 2012, on a whim, I went
+  to my first SciPy (US) conference, and it changed my life! I realised that "open
+  source" didn't mean just posting the code online. It meant actively collaborating
+  on code with other scientists, across vast distances and at different times. Before
+  you could say "import numpy as np", I had joined the scikit-image team, written
+  a paper about it, written a whole book on SciPy (!), spoken at various SciPys and
+  PyConAUs, started new collaborative, open source libraries, and just generally been
+  all-in on Scientific Python. I love this community and what it has done for me,
+  and always try to pay it forward for new folks in our community! 😊</p>
+has_pic: true

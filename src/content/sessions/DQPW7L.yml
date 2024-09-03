@@ -1,0 +1,28 @@
+title: Adding File System context to pathlib
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>Adding file system specific information (e.g. how to match case, whether
+  to follow symlinks) to pathlib Path objects, instead of adding such arguments to
+  methods taking Path objects.</p>
+description: "<p>Pathlib has become the de facto standard to pass file system paths\n
+  around, which is kinda weird as the only real thing it's going go for\nit is a tiny
+  bit of syntactic sugar.</p>\n<p>Paths are a bit of an odd duck, as their literal
+  form is very close to\ntheir object form.</p>\n<p>But there are extra bits of context
+  around a path that matter, such as\nfollowing symlinks, and junctions, how to handle
+  case when matching\nfile names.</p>\n<p>I became interested in the idea of embedding
+  some of this knowledge\ninside the path object, and seeing if that led to a clean
+  up of the\nAPI, can we avoid having all these file system, implementation\nspecific
+  flags in our API, and instead encapsulate them within our\npath objects?</p>\n<p>A
+  lot of work has been done in the last few releases to make pathlib\nextensible,
+  so that paves the way for trying API experiments like\nthis.</p>\n<p>Often when
+  you get an idea, it rattles around in the brain like a\nbuzzing bee. With Python
+  you can throw it up on the \"ideas\" forum and\nget it shot down quickly.</p>\n
+  <p>Or Not..</p>"
+code: DQPW7L
+speakers:
+- ZY7KJB
+cw:
+online: true

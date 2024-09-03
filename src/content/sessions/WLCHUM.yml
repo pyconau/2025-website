@@ -1,0 +1,47 @@
+title: Enhancing Programming Ability with Playful Learning and Karel
+start:
+end:
+room:
+track:
+  en: Education
+abstract: <p>Beginner programmers often struggle to understand and trace program execution,
+  which is worsened by underdeveloped debugging and testing skills. Beginners may
+  also lack confidence or are easily demotivated, which can hinder learning. To assist
+  students in developing these skills and build confidence we created a set of playful
+  programming challenges and competition using Karel the Robot. The Karel system provides
+  a 2D “grid world” where the Karel character can move and interact with its environment.
+  The 2D world is visualised for students so that they can immediately see how their
+  program changes the environment step by step as well as the final program state.
+  This is in contrast to traditional languages where learners must develop and maintain
+  a mental model of the program state. This talk will cover our approach, preliminary
+  results and feedback from students showing an increase in confidence and interest
+  in programming. We will also share how this approach can be applied to other learning
+  contexts.</p>
+description: "<p>Beginner programmers often struggle to understand and trace program
+  execution, which is worsened by underdeveloped debugging and testing skills. Beginners
+  may also lack confidence or are easily demotivated, which can hinder learning. To
+  assist students in developing these skills and build confidence we created a set
+  of playful programming challenges and competition using Karel the Robot.</p>\n<p>Karel
+  the Robot was developed at Stanford to help students learn programming concepts
+  without the burden of syntax and technicalities of a more general language. Karel
+  provides a 2D ‘grid world’ where the Karel character can move and interact with
+  the environment to carry out various tasks, e.g. walk through a maze. This gives
+  students the opportunity for playful experimentation with code, which helps develop
+  their understanding of programming concepts. Furthermore the 2D world is visualised
+  for students so that they can immediately see how their program changes the environment
+  step by step as well as the final program state. Karel makes the code tangible to
+  the students, which  is in contrast to traditional languages where learners must
+  develop and maintain a mental model of the program state.</p>\n<p>Fortunately Karel
+  uses a subset of Python, which allows students to naturally extend their learning
+  to real Python, without learning new syntax. We found that Karel provides a convenient
+  way to implement inductive teaching, which has been shown to enhance student's higher
+  order thinking abilities and strengthen their understanding of concepts when compared
+  to deductive teaching.</p>\n<p>This talk will cover our approach, preliminary results
+  and feedback from students showing an increase in confidence and interest in programming.
+  We will also share how this approach can be applied to other learning contexts.</p>"
+code: WLCHUM
+speakers:
+- VXBVLZ
+- 8NDWMQ
+cw:
+online: true

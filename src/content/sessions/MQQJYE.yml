@@ -1,0 +1,24 @@
+title: Commissioning tools at the Australian Synchrotron, or, how to get a bazillion
+  dollars worth of toys to play nicely together
+start:
+end:
+room:
+track:
+  en: Scientific Python
+abstract: "<p>Discover the innovative work happening at the Australian Synchrotron,
+  where high-energy X-rays support research across Australia and neighbouring countries.
+  The scientific computing team uses Python to connect to hardware, orchestrate experiments,
+  and process data.</p>\n<p>We'll focus on a Python Dash interface developed to commission
+  new positioners and detectors. This interface automatically generates Gaussian statistics.
+  It includes pages for both one positioner and one detector (1D) or two positioners
+  and one detector (2D), and allows users to click on a 2D Gaussian to take horizontal
+  and vertical slices.</p>\n<p>Additionally, we will discuss best programming practices,
+  such as implementing unit tests, maintaining DRY principles, and using linting tools
+  to improve code quality. Good programming practices work beautifully in a scientific
+  environment.  Join us to learn how these techniques can enhance your work with Python.</p>"
+description: ''
+code: MQQJYE
+speakers:
+- JJR3W8
+cw:
+online: true

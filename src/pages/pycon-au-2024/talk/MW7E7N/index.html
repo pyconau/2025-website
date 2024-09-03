@@ -1,0 +1,288 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Making an open source package - lessons learned ::  PyCon AU 2024 :: pretalx</title>
+        <meta name="title" content="Making an open source package - lessons learned  - PyCon AU 2024 pretalx">
+        <meta name="description" content="Making an open source package is pretty hard in 2024. Expectations are high, and there’s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn’t work, what I would do again and what I would do differently.
+
+I developed an open source package called “scores” ( https://github.com/nci/scores , https://scores.readthedocs.io/ ).  This is not a presentation about what “scores” does, but instead covers the lessons I learned. Despite being an experienced software developer and having used lots of open source software, there was still a lot to learn (and a lot to figure out) about open source package maintenance.
+
+Every package is different, but this is what I did and these are the lessons I learned. 
+
+- Technical Matters:
+    - How to lay things out on disk
+    - Configuration files
+    - Automated testing
+    - Type hinting
+    - Linting and other static analysis tools
+    - Code layout and design
+- Documentation:
+    - What documentation to produce
+    - Picking and using a tech stack
+    - Rendering (documentation often renders differently in different locations)
+- Ecosystem Integration:
+    - How to fit in well with the tools around you
+    - Versioning 
+    - Publishing to PyPI
+    - How and what to automate
+    - How to do releases
+- Community Considerations:
+    - Code review standards
+    - Clear presentation of information
+    - Understanding your user base and audience">
+        <meta name="application-name" content="pretalx">
+        <meta name="generator" content="pretalx">
+        <meta name="keywords" content="PyCon AU 2024, pycon-au-2024, 2024, schedule, talks, cfp, call for papers, conference, submissions, organizer">
+        
+        
+            <meta name="robots" content="index, follow">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#00B159">
+        <meta name="HandheldFriendly" content="True"/>
+        
+    <meta property="thumbnail" content="https://pretalx.com/pycon-au-2024/talk/MW7E7N/og-image">
+    <meta property="og:image" content="https://pretalx.com/pycon-au-2024/talk/MW7E7N/og-image">
+
+        <meta property="og:title" content="Making an open source package - lessons learned PyCon AU 2024">
+        <meta property="og:description" content="Making an open source package is pretty hard in 2024. Expectations are high, and there’s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn’t work, what I would do again and what I would do differently.
+
+I developed an open source package called “scores” ( https://github.com/nci/scores , https://scores.readthedocs.io/ ).  This is not a presentation about what “scores” does, but instead covers the lessons I learned. Despite being an experienced software developer and having used lots of open source software, there was still a lot to learn (and a lot to figure out) about open source package maintenance.
+
+Every package is different, but this is what I did and these are the lessons I learned. 
+
+- Technical Matters:
+    - How to lay things out on disk
+    - Configuration files
+    - Automated testing
+    - Type hinting
+    - Linting and other static analysis tools
+    - Code layout and design
+- Documentation:
+    - What documentation to produce
+    - Picking and using a tech stack
+    - Rendering (documentation often renders differently in different locations)
+- Ecosystem Integration:
+    - How to fit in well with the tools around you
+    - Versioning 
+    - Publishing to PyPI
+    - How and what to automate
+    - How to do releases
+- Community Considerations:
+    - Code review standards
+    - Clear presentation of information
+    - Understanding your user base and audience">
+        <meta property="og:url" content="http://testserver/pycon-au-2024/talk/MW7E7N/">
+        <meta property="twitter:card" content="summary">
+
+        
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/common/img/icons/favicon.f79e2b95f18d.ico">
+    <link rel="apple-touch-icon" href="/static/common/img/icons/apple-touch-icon-180x180.9cd0735ee8ec.png">
+
+
+
+        <link rel="stylesheet" type="text/css" href="/static/common/scss/uncompressed.cabbf3759e3e.css" />
+        
+            <link rel="stylesheet" type="text/css" href="/static/vendored/fullcalendar/fullcalendar.min.ba055a2cd2b3.css"/>
+            <link rel="stylesheet" type="text/css" href="/media/pycon-au-2024/cfp.45696e4e6cfb06b9.css"/>
+            <link rel="stylesheet" type="text/css" href="/media/pycon-au-2024/agenda.e6ca9a43c7217ad7.css"/>
+        
+        
+        <script src="/static/CACHE/js/output.8a6c26cce74b.js" defer></script>
+        
+    
+    <link rel="alternate" type="application/json" title="PyCon AU 2024 API" href="https://pretalx.com/api/events/pycon-au-2024/talks/MW7E7N" />
+
+    
+    <script id="pretalx-messages" data-logged-in="false" src="/pycon-au-2024/schedule/widget/messages.js"></script>
+    <script src="/static/CACHE/js/output.ee3f4ef9d2e8.js" async></script>
+<script src="/static/CACHE/js/output.a5b490466975.js"></script>
+    <link rel="stylesheet" href="/static/CACHE/css/output.07f5ae334b50.css" type="text/css">
+
+
+    </head>
+    <body data-datetimeformat="YYYY-MM-DD HH:mm:ss" data-dateformat="YYYY-MM-DD" data-datetimelocale="en">
+        <div id="top-bg" class="header bg-primary">
+            
+        </div>
+        
+        <div class="container" id="main-container">
+            <header>
+                <h1>
+                    <a href="
+    
+    
+        /pycon-au-2024/schedule/
+    
+">
+                        
+                            PyCon AU 2024
+                        
+                    </a>
+                </h1>
+                <div class="d-flex" id="header-row">
+                    
+                    
+                </div>
+            </header>
+            <div class="card" id="main-card">
+                <main>
+                    
+
+                    
+    
+    
+    <article>
+        
+        <h3 class="talk-title">
+            <div class="heading-with-buttons">
+                <span>
+                    Making an open source package - lessons learned
+                    <button class="btn btn-xs btn-link d-none" id="fav-button">
+                        <i class="fa fa-star-o d-none" title="Favourite this session"></i>
+                        <i class="fa fa-star d-none" title="Remove this session from your favourites"></i>
+                    </button>
+                </span>
+                <div class="buttons" id="talk-buttons">
+                    
+                        <a class="btn btn-outline-primary" href="/pycon-au-2024/talk/MW7E7N.ics">
+                            <i class="fa fa-calendar"></i> .ical
+                        </a>
+                    
+                    
+                    
+                </div>
+            </div>
+            <small>
+                
+                    11-23, 10:40–11:10 (Australia/Melbourne), Goldfields Theatre
+                    
+                
+                
+                
+            </small>
+        </h3>
+        <div class="talk row">
+            <div class="talk-content">
+                
+                
+                
+                <section class="abstract">
+                    <p>Making an open source package is pretty hard in 2024. Expectations are high, and there’s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn’t work, what I would do again and what I would do differently.</p>
+<p>I developed an open source package called “scores” ( <a href="https://github.com/nci/scores" rel="nofollow" target="_blank">https://github.com/nci/scores</a> , <a href="https://scores.readthedocs.io/" rel="nofollow" target="_blank">https://scores.readthedocs.io/</a> ).  This is not a presentation about what “scores” does, but instead covers the lessons I learned. Despite being an experienced software developer and having used lots of open source software, there was still a lot to learn (and a lot to figure out) about open source package maintenance.</p>
+<p>Every package is different, but this is what I did and these are the lessons I learned. </p>
+<ul>
+<li>Technical Matters:<ul>
+<li>How to lay things out on disk</li>
+<li>Configuration files</li>
+<li>Automated testing</li>
+<li>Type hinting</li>
+<li>Linting and other static analysis tools</li>
+<li>Code layout and design</li>
+</ul>
+</li>
+<li>Documentation:<ul>
+<li>What documentation to produce</li>
+<li>Picking and using a tech stack</li>
+<li>Rendering (documentation often renders differently in different locations)</li>
+</ul>
+</li>
+<li>Ecosystem Integration:<ul>
+<li>How to fit in well with the tools around you</li>
+<li>Versioning </li>
+<li>Publishing to PyPI</li>
+<li>How and what to automate</li>
+<li>How to do releases</li>
+</ul>
+</li>
+<li>Community Considerations:<ul>
+<li>Code review standards</li>
+<li>Clear presentation of information</li>
+<li>Understanding your user base and audience</li>
+</ul>
+</li>
+</ul>
+                </section>
+                <hr />
+                <section class="description">
+                    <p>Making an open source package is pretty hard in 2024. Expectations are high, and there’s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn’t work, what I would do again and what I would do differently.</p>
+                </section>
+                
+            </section>
+            
+            <section>
+                
+            </section>
+        </div>
+    </div>
+    
+        
+            <div class="pretalx-session">
+                <div class="pretalx-session-time-box avatar">
+                    <a href="/pycon-au-2024/speaker/ZZQ9TE/">
+                        <div class="avatar-wrapper">
+                            
+                                <img loading="lazy" src="/media/avatars/Profile_Photo_Tennessee_Leeuwenburg_JwewX1k.jpg" alt="The speaker’s profile picture">
+                            
+                        </div>
+                    </a>
+                </div>
+                <div class="pretalx-session-info">
+                    <div class="title">
+                        <a href="/pycon-au-2024/speaker/ZZQ9TE/">Tennessee Leeuwenburg</a>
+                    </div>
+                    <div class="abstract"><p>Tennessee Leeuwenburg is a data scientist and software developer with over 20 years of experience. He has an interest in open source software, machine learning, and forecast verification. His current research work includes the development of scientific machine learning models for weather and environmental prediction. For an overview of his recent publications, please visit <a href="https://orcid.org/0009-0008-2024-1967" rel="nofollow" target="_blank">https://orcid.org/0009-0008-2024-1967</a> .</p></div>
+                    
+                        This speaker also appears in:
+                        <ul>
+                            
+                                <li>
+                                    <a href="/pycon-au-2024/talk/WB8HTT/">Verifying and evaluating scientific results with the open source package &quot;scores&quot;</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        
+    
+    </article>
+
+
+                </main>
+            </div>
+            <footer>
+                
+                    <div id="exporttimestamp" class="text-muted">
+                        
+                        This is a static export generated at 2024-09-03 20:23 AEST
+                    </div>
+                
+                
+
+
+
+    powered by <a href="https://pretalx.com" target="_blank" rel="noopener">pretalx</a>
+
+
+                
+                    ·
+                    <a href="mailto:program@pycon.org.au">Contact us</a>
+                
+                
+                
+                    ·
+                    <a href="/pycon-au-2024/privacy">Privacy</a>
+                
+            </footer>
+        </div>
+    </body>
+</html>

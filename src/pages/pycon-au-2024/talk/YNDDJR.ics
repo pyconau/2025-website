@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//YNDDJR
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-YNDDJR@pretalx.com
+DTSTART;TZID=AEST:20241123T145000
+DTEND;TZID=AEST:20241123T152000
+DESCRIPTION:"What's the last common ancestor of a bear and a weasel?"\n"Whi
+ ch animals are more related to pigs than cows?"\n"Are birds reptiles?"\n"A
+ m I a fish?"\n\nWith a recent interest in phylogeny – the science of evo
+ lution\, diversification\, and speciation – these are the kinds of quest
+ ions I've been asking myself. I wanted to find a tool that would let me ex
+ amine the relationships between species and find the answers to these ques
+ tions\, but\, as I looked around I couldn't find anything that did what I 
+ wanted. So I made it myself.\n\nCome with me as I share my journey that le
+ d me to talk to some of Australia's top scientists\, give up on talking to
+  other top scientists\, and accidentally stumble my way into making an act
+ ual contribution to science. Learn why I made this tool\, how I made this 
+ tool\, what stage it's at\, and where you can use it yourself. And maybe l
+ earn some things about life on Earth along the way.\n\nOh\, and to answer 
+ the questions above: dog-bears\, peccaries\, yes\, and yes!
+DTSTAMP:20240903T102350Z
+LOCATION:Eureka 2
+SUMMARY:Walking the Tree of Life – Adventures in Phylogenetics - Jack Rei
+ chelt
+URL:https://pretalx.com/pycon-au-2024/talk/YNDDJR/
+END:VEVENT
+END:VCALENDAR

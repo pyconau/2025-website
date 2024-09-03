@@ -1,0 +1,31 @@
+title: The perfect setup? Not setup.py! Building packages the right way
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>Everyone loves package management! Python's packaging systems have continued
+  to evolve over the years. Specifications such as environment markers, custom backends,
+  and static build configurations have been introduced. Additionally new package managers
+  like Poetry and Hatch have emerged.</p>\n<p>Yet despite the updates, many projects
+  are still living in the 2010s - using a setup.py file to specify the build configuration
+  for their package. setup.py is notoriously difficult to learn and a common vector
+  for launching attacks during install.</p>\n<p>This talk will discuss why it's time
+  to move away from using setup.py and how to do it.</p>\n<p>We will see how setup.py
+  is used and abused - from downloading huge datasets (<em>cough</em> AI <em>cough</em>),
+  modifying the system, and most critically how malicious payloads can be included
+  to execute when setup.py is evaluated. Arbitrary code in setup.py makes security
+  analysis harder and creates more work for PyPI administrators.</p>\n<p>The talk
+  will detail the new (as of 7 years ago) methods of describing build configurations
+  in pyproject.toml and setup.cfg, giving examples of how to use these methods. The
+  examples will include how to achieve what once required dynamic code to include
+  data like readme contents, version numbers and requirements. The limits of pyproject.toml
+  and setup.cfg will also be covered.</p>\n<p>Finally, the talk will outline how moving
+  away from setup.py improves the Python packaging universe, how it makes life easier
+  for ensuring Python security, and what can be done to drive adoption of pyproject.toml.</p>"
+description: ''
+code: LALLKX
+speakers:
+- CGMRAQ
+cw:
+online: true

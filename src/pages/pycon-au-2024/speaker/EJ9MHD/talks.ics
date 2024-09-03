@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//EJ9MHD
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-B8RJPR@pretalx.com
+DTSTART;TZID=AEST:20241124T145000
+DTEND;TZID=AEST:20241124T152000
+DESCRIPTION:Being a fast-paced startup and developing a completely new prod
+ uct in the Space Industry is very challenging\, and moving fast wasn’t j
+ ust a requirement but essential. It's the kind of environment that is hard
+  to think too much ahead\, and for that reason\, our database was created 
+ to address the problems we had at hand. \nAfter a while\, new products and
+  features were required\, and our database couldn't handle all of them. Th
+ at’s when we decided to move our data to a newly designed database insta
+ nce with proper relationships\, able to handle more features\, higher work
+ loads and scalable. During the planning phase\, several approaches were di
+ scussed\, such as creating a script to copy the data and some off-the-shel
+ f software that we thought could handle that for us. However\, the complex
+ ity of implementing those approaches wasn’t feasible with our deadlines 
+ for releasing the new product. So\, we decided to copy the data using Djan
+ go ORM (our product was already using Django)\, the idea was to avoid the 
+ complexity of creating complex SQL Queries to copy data to new tables whil
+ e keeping the data consistency and integrity.\nIn this presentation\, we a
+ im to demonstrate how our database was limiting the company’s scalabilit
+ y and how we fixed those problems by migrating to a new database schema wh
+ ilst maintaining two database instances\, one for internal operations and 
+ the other for customer-facing functions. Moreover\, we show how we did tha
+ t using object-oriented programming in combination with Django’s ORM to 
+ migrate our database without the need to handle complex SQL commands to co
+ py data\, keep relationships\, and create new ones.
+DTSTAMP:20240903T102354Z
+LOCATION:Eureka 2
+SUMMARY:Space Django: Migrating and Redesigning a Database while Hunting fo
+ r Satellites. - Artur Baruchi
+URL:https://pretalx.com/pycon-au-2024/talk/B8RJPR/
+END:VEVENT
+END:VCALENDAR

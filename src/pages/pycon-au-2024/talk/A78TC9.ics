@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//A78TC9
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-A78TC9@pretalx.com
+DTSTART;TZID=AEST:20241122T165000
+DTEND;TZID=AEST:20241122T172000
+DESCRIPTION:Bioinformatics is the science of understanding and analysing bi
+ ological information\, such as the genetic information contained in DNA. I
+ t combines the disciplines of biology\, computer science\, and mathematics
+ . If this seems daunting\, don’t panic\, because this talk will focus on
+  two open-source Python packages I have developed\, FASTQE and Biomojify\,
+  that make common bioinformatics file formats intuitive and accessible….
+  by using emoji.\n\nFASTQE simplifies DNA sequencing data analysis by taki
+ ng numerical quality scores for the data\, and summarising them using emoj
+ i to quickly convey the good\, the bad\, and the ugly of sequence data qua
+ lity. Whether for training\, outreach\, or debugging\, this tool can easil
+ y turn unremarkable data quality analysis into an appealing visualisation.
+ \n\nBiomojify takes the concept further by converting plain text data to u
+ se emoji. In DNA\, for example\, the conventional format represents  indiv
+ idual A\, C\, G\, and T nucleotides as plain text. Biomojify substitutes t
+ hem with emojis such as avocado\, cheese\, grape\, and tomato. It supports
+  various bioinformatics file formats and supports user defined emoji mappi
+ ng. It can be used to teach the underlying biological concepts behind bioi
+ nformatics data\, by simplifying specialised data structures for a general
+  audience. \n\nScience communication is hard. These tools transform comple
+ x bioinformatics data into engaging\, emoji-based visualisations\, making 
+ bioinformatics concepts more accessible and adding an element of fun to sc
+ ientific education and communication.
+DTSTAMP:20240903T102342Z
+LOCATION:Eureka 2
+SUMMARY:Avocado\, Cheese\, Grape\, Tomato or: How I Used Python to Stop Wor
+ rying and Love Emoji in Bioinformatics - Andrew Lonsdale
+URL:https://pretalx.com/pycon-au-2024/talk/A78TC9/
+END:VEVENT
+END:VCALENDAR

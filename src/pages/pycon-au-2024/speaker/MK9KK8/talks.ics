@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//MK9KK8
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-XHTJ3S@pretalx.com
+DTSTART;TZID=AEST:20241122T114000
+DTEND;TZID=AEST:20241122T121000
+DESCRIPTION:In the past decade\, this school has consistently exceeded VCE 
+ expectations in Software Development\, largely due to well-developed resou
+ rces\, consistency in use of programming language (Visual Basic) and progr
+ ession of skills through year 7 to year 12. However\, a gap analysis in th
+ e teaching methodology has highlighted conceptual computational thinking a
+ nd problem-solving skills as a key gap in the current offering. This was a
+ ttributed to the curriculum's skills-based focus and the Covid-era teachin
+ g practice of flipped learning via video tutorials.  \n\nThis has presente
+ d an opportunity to overhaul the teaching methodology to focus on equippin
+ g students with the skills to apply their learning in different contexts. 
+  Some key aspects of this transformation include a more live coding techni
+ que and transitioning to Python as the preferred programming language\, du
+ e to its versatility and future prospects for students.  \n\nWe present th
+ is roadmap which leads to a complete overhaul of our teaching programmes f
+ rom year 7 to year 12\, scaffolding Python across Applied Computing\, STEM
+  projects\, Robotics and Game development over the next 6 months.
+DTSTAMP:20240903T102356Z
+LOCATION:Eureka 3
+SUMMARY:Transitioning from VB to Python – Mapping a 6 month journey - Pra
+ vin vaz\, Carolyn Gekas
+URL:https://pretalx.com/pycon-au-2024/talk/XHTJ3S/
+END:VEVENT
+END:VCALENDAR

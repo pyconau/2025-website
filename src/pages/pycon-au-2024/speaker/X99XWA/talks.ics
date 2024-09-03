@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//X99XWA
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-P7UKEN@pretalx.com
+DTSTART;TZID=AEST:20241124T111500
+DTEND;TZID=AEST:20241124T114500
+DESCRIPTION:How many dependencies does your software project have? How much
+  confidence do you have in them? We sometimes say in open source there is 
+ safety in ‘eyes on the code’\, but with supply chain attacks on the ri
+ se\, who is really watching?\n\nMost software is built with hundreds if no
+ t thousands of direct and transitive dependencies\, and those dependencies
+  change every day. Our analysis shows that up to 20% of PyPI packages chan
+ ge their dependency graphs multiple times per week. Ensuring that each one
+  of these dependencies is trustworthy is a daunting task.\n\nIn this talk\
+ , we will share some stats and stories from building deps.dev. We will loo
+ k at what it means for a project to be healthy\, dig into the complexities
+  of dependency resolution algorithms\, and recommend tools that can make p
+ ractical dependency management possible if not easy.
+DTSTAMP:20240903T102352Z
+LOCATION:Goldfields Theatre
+SUMMARY:Dependency management: the cause of—and solution to—all supply 
+ chain problems - Nicky Ringland
+URL:https://pretalx.com/pycon-au-2024/talk/P7UKEN/
+END:VEVENT
+END:VCALENDAR

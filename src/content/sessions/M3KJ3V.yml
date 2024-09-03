@@ -1,0 +1,26 @@
+title: 'Notes on Over-Engineering: A Project Post-Mortem'
+start:
+end:
+room:
+track:
+  en: DevOops
+abstract: <p>Join me for a retrospective on a reusable Django app for providing shared
+  database multi-tenancy, complete with automatic tenant-specific queryset filtering,
+  automatic tenant selection middleware, REST framework support, and comprehensive
+  test coverage. This app, despite its sophistication, was never used in production.
+  Let's explore why it was ultimately deemed over-engineered and unnecessary, and
+  what lessons we can learn from this experience.</p>
+description: <p>I have a story to share about the pitfalls of over-engineering—a project
+  that resulted in a powerful yet unused Django library for shared database multi-tenancy.
+  This library included automatic tenant-specific querysets, tenant selection middleware,
+  REST framework support, and full test coverage across multiple Python and Django
+  versions. Despite all of its advanced features and the confidence of complete test
+  coverage, it was abandoned before deployment. In this talk, I’ll discuss the journey
+  of this project, from its ambitious beginnings to its eventual demise, highlighting
+  key lessons learned about scope creep, planning pitfalls, and some of the harsh
+  realities of software development.</p>
+code: M3KJ3V
+speakers:
+- RSUKRU
+cw:
+online: true
