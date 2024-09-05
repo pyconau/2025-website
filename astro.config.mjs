@@ -9,4 +9,7 @@ export default defineConfig({
     syntaxHighlight: "prism",
   },
   integrations: [mdx()],
+  redirects: {
+    '/program': '/pycon-au-2024/schedule'
+  }
 })
