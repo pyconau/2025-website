@@ -1,0 +1,23 @@
+title: 'Dependency management: the cause of—and solution to—all supply chain problems'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>How many dependencies does your software project have? How much confidence
+  do you have in them? We sometimes say in open source there is safety in ‘eyes on
+  the code’, but with supply chain attacks on the rise, who is really watching?</p>\n
+  <p>Most software is built with hundreds if not thousands of direct and transitive
+  dependencies, and those dependencies change every day. Our analysis shows that up
+  to 20% of PyPI packages change their dependency graphs multiple times per week.
+  Ensuring that each one of these dependencies is trustworthy is a daunting task.</p>\n
+  <p>In this talk, we will share some stats and stories from building deps.dev. We
+  will look at what it means for a project to be healthy, dig into the complexities
+  of dependency resolution algorithms, and recommend tools that can make practical
+  dependency management possible if not easy.</p>"
+description: ''
+code: P7UKEN
+speakers:
+- X99XWA
+cw:
+online: true

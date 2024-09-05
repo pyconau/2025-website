@@ -1,0 +1,49 @@
+title: 'With Xonsh use Python as your shell: No more switching between shell and Python
+  syntax!'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>Many of us employ shells (like Bash, Zsh or PowerShell) in the terminal
+  to “get admin things done” on our computer. For the actual programming then we switch
+  to Python to “get real things done”.</p>\n<p>But what if you could use Python in
+  your programs <em>and</em> in the terminal? Welcome to Xonsh, a shell and a Python
+  REPL in one. This unique feature helps very much to get all things in the terminal
+  done quicker, safer and to have more fun on the way!</p>"
+description: "<p>In this talk I cover what Xonsh is, how you can use it to simplify
+  your day-to-day work and how I have employed Xonsh to solve some sysadmin problems
+  in a safer way. This talk is aimed at both Python beginners and experts who spend
+  time in the terminal.</p>\n<h3>1. What is Xonsh</h3>\n<p><a href=\"https://xon.sh\"\
+  >Xonsh</a> is A shell in Python -- and Python in a shell. All <a href=\"https://github.com/xonsh/xonsh\"\
+  >open source</a> and cross platform.</p>\n<p>Here I give an overview of the basics:
+  Command execution similar to bash -- All strings are Python strings! -- Access to
+  environment variables &amp; aliases, but in consistent Python syntax -- Loops &amp;
+  control flow as well as know from Python.</p>\n<h3>2. How you can use it</h3>\n
+  <p>Use case for <em>beginners</em>: You are starting out with Python? While writing
+  your code you want to check a construct you are unsure of? Just jump into your shell
+  -- if it is Xonsh! (A hands-on example here.)</p>\n<p>Use case for <em>experts</em>:
+  You know Python inside out? Don't switch to another language with weird syntax when
+  doing shell work -- use Xonsh! (A hands-on example here.)</p>\n<h3>3. What I have
+  done with it</h3>\n<p>I have been working with Xonsh for over 5 years and over this
+  time it has essentially replaced Bash for me. I will give hands-on examples of how
+  it can help you to do everyday tasks.</p>\n<p>For example, I use Xonsh to move,
+  copy or delete files selectively and safely: (1) Assign a globbing result to a Python
+  variable, (2) quickly check that the variable really contains the files you wanted
+  to select, (3) then issue <code>rm @(variable)</code> and you are sure the correct
+  files are deleted.</p>\n<p>I also employ Xonsh for reusable scripts: Need to handle
+  command line parameters? In Xonsh I use simple Python syntax to access and iterate
+  over them -- you can even use high-level Python CLI libraries like Click.</p>\n
+  <h3>4. And more!</h3>\n<p>Customise Xonsh to your heart's content (flexible prompt
+  config and many plugins called \"Xontribs\") -- Search a powerful history -- Ask
+  a very helpful community and a reasonable big user base.</p>\n<p>Finally. we have
+  to talk about some disadvantages Xonsh has: You cannot blindly copy Bash command
+  lines straight from the Internet - And: Xonsh is mature, but not as mature as Bash
+  (rough edges around exception behaviour, etc).</p>\n<p>All in all, Xonsh is a lot
+  of fun and gives us Pythonistas less headaches than switching in the terminal always
+  to Bash or Powershell!</p>"
+code: WYZEUQ
+speakers:
+- BHGMDT
+cw:
+online: true

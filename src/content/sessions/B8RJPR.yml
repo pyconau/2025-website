@@ -1,0 +1,38 @@
+title: 'Space Django: Migrating and Redesigning a Database while Hunting for Satellites.'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>Being a fast-paced startup and developing a completely new product in
+  the Space Industry is very challenging, and moving fast wasn’t just a requirement
+  but essential. It's the kind of environment that is hard to think too much ahead,
+  and for that reason, our database was created to address the problems we had at
+  hand. \nAfter a while, new products and features were required, and our database
+  couldn't handle all of them. That’s when we decided to move our data to a newly
+  designed database instance with proper relationships, able to handle more features,
+  higher workloads and scalable. During the planning phase, several approaches were
+  discussed, such as creating a script to copy the data and some off-the-shelf software
+  that we thought could handle that for us. However, the complexity of implementing
+  those approaches wasn’t feasible with our deadlines for releasing the new product.
+  So, we decided to copy the data using Django ORM (our product was already using
+  Django), the idea was to avoid the complexity of creating complex SQL Queries to
+  copy data to new tables while keeping the data consistency and integrity.\nIn this
+  presentation, we aim to demonstrate how our database was limiting the company’s
+  scalability and how we fixed those problems by migrating to a new database schema
+  whilst maintaining two database instances, one for internal operations and the other
+  for customer-facing functions. Moreover, we show how we did that using object-oriented
+  programming in combination with Django’s ORM to migrate our database without the
+  need to handle complex SQL commands to copy data, keep relationships, and create
+  new ones.</p>"
+description: <p>The presentation has three main goals; (1) show how the database that
+  we had before was limiting the development of new products and, in the medium-term,
+  would be a potential issue to scale; (2) present some of the options we considered
+  and the tradeoffs; (3) the strategy we chose and how we implemented it (main challenges
+  and how the combination of OOP and Django’s ORM actually speed up not only the process
+  but made it easier).</p>
+code: B8RJPR
+speakers:
+- EJ9MHD
+cw:
+online: true

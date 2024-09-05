@@ -1,0 +1,30 @@
+title: 'from seeds import plants: using IoT to grow healthy herbs'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>With the current climate crisis and the rise of households growing their
+  own fruits, vegetables and herbs, the efficient use of potable water is crucial
+  now more than ever. However, the majority of plant watering systems are either manual
+  or time based - that is, they water plants on a pre-defined schedule. This talk
+  will describe a simple automated watering system programmed with micropython and
+  various extensions to the core product to simplify existing features and add new
+  capabilities using various internet of things devices and data analytics tools.</p>
+description: "<p>With the current climate crisis and the rise of households growing
+  their own fruits, vegetables and herbs, the efficient use of potable water is crucial
+  now more than ever. However, the majority of plant watering systems are either manual
+  or time based - that is, they water plants on a pre-defined schedule. </p>\n<p>This
+  talk will:\n- show Core Electronics' plant_io system that was used to grow alfalfa
+  seeds based off soil moisture and give a foundation introduction to the MicroPython
+  code,\n- explore some hardware extensions made to the base system to collect further
+  environmental data based off additional IoT sensors,\n- describe some other software
+  and hardware extensions made to the base system to allow remote monitoring and data
+  analysis, and\n- propose directions for future research.</p>\n<p>This talk would
+  be of interest to people with an interest in horticulture, Internet of Things devices,
+  MicroPython and Raspberry Pi programming as well as data analysts.</p>"
+code: CERBXC
+speakers:
+- DEZCB8
+cw:
+online: true

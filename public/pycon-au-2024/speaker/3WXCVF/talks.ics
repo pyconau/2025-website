@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//3WXCVF
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-QTWAGZ@pretalx.com
+DTSTART;TZID=AEST:20241124T103500
+DTEND;TZID=AEST:20241124T110500
+DESCRIPTION:Dataframes are an abstraction that proven extremely useful for 
+ data analysis in dynamic languages like S\, R\, Python\, and Julia. The Pa
+ ndas package has been dominant in Python for around 15 years but its desig
+ n is now showing its age. There is now a vibrant and messy ecosystem of po
+ tential disruptors to the status quo for data analysis tasks in Python.\n\
+ nThis talk will help you make sense of the mess. It will give you a compre
+ hensive review of the strengths and weaknesses of the challengers\, includ
+ ing Polars\, Ibis\, Vaex\, Modin\, Dask\, and the PySpark Pandas API (form
+ erly known as Koalas). It will also review efforts to unify the PyData lan
+ dscape such as Apache Arrow\, the dataframe interchange protocol\, Narwhal
+ s\, and the Ibis project from the original author of Pandas\, Wes McKinney
+ .
+DTSTAMP:20240903T102356Z
+LOCATION:Eureka 3
+SUMMARY:Better dataframes - Ed Schofield
+URL:https://pretalx.com/pycon-au-2024/talk/QTWAGZ/
+END:VEVENT
+END:VCALENDAR

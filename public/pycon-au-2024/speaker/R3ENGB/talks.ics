@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//pretalx//pretalx.com//pycon-au-2024//R3ENGB
+BEGIN:VTIMEZONE
+TZID:AEST
+BEGIN:STANDARD
+DTSTART:20000326T040000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3;UNTIL=20050326T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20060402T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4;UNTIL=20060401T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20070325T040000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=3;UNTIL=20070324T170000Z
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:STANDARD
+DTSTART:20080406T040000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZNAME:AEST
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000827T030000
+RRULE:FREQ=YEARLY;BYDAY=4SU;BYMONTH=8;UNTIL=20000826T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20011028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10;UNTIL=20071027T170000Z
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+BEGIN:DAYLIGHT
+DTSTART:20081005T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZNAME:AEDT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pretalx-pycon-au-2024-9KD9HJ@pretalx.com
+DTSTART;TZID=AEST:20241123T141000
+DTEND;TZID=AEST:20241123T144000
+DESCRIPTION:How do translations preserve the original meaning\, style\, and
+  sentiment of texts across different languages and cultural contexts? This
+  intriguing question drives our study as we delve into the complexities of
+  translation.\n\nWe examine how sentiment analysis results differ for the 
+ same text in various languages\, aiming to understand the role of language
+  families in these variations. Using natural language processing technique
+ s in Python\, we analyse novels from diverse genres\, time periods\, and c
+ ultural backgrounds to uncover generalisable translation patterns.\n\nOur 
+ study seeks to answer whether translations of words\, ideas\, and societal
+  contexts in novels are influenced by the cultural contexts into which the
+ y are translated. By highlighting the importance of accurate and culturall
+ y relevant translations\, we emphasise how they play a crucial role in pre
+ serving cultural and societal knowledge\, ensuring that the richness of th
+ e original text is maintained across languages.
+DTSTAMP:20240903T135629Z
+LOCATION:Eureka 2
+SUMMARY:Cultural and Linguistic Influences on Translation: A Study of Novel
+ s - Anneysha Sarkar\, Eliz So
+URL:https://pretalx.com/pycon-au-2024/talk/9KD9HJ/
+END:VEVENT
+END:VCALENDAR

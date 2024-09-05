@@ -1,0 +1,17 @@
+title: Django on AWS for chump change
+start:
+end:
+room:
+track:
+  en: DevOops
+abstract: <p>Some cheap and definitely not employer approved ways to run Django on
+  AWS infrastructure on a budget</p>
+description: <p>With the power of AWS and the Cloud Development Framework (CDK) we
+  can spin up cheap infrastructure to host Django on. By leveraging cheap and free
+  tier AWS services while also creating some very questionable resources and code
+  we can scale a Django application down to a user base of 2 or less!</p>
+code: NLZQAA
+speakers:
+- JFJVXW
+cw:
+online: true

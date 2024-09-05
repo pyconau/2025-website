@@ -1,0 +1,2066 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- Made with love by pretalx v2024.3.0.dev0. -->
+<schedule>
+    <generator name="pretalx" version="2024.3.0.dev0" />
+    <version>20240903.1</version>
+    <conference>
+        <title>PyCon AU 2024</title>
+        <acronym>pycon-au-2024</acronym>
+        <start>2024-11-22</start>
+        <end>2024-11-24</end>
+        <days>3</days>
+        <timeslot_duration>00:05</timeslot_duration>
+        <base_url>https://pretalx.com</base_url>
+        
+        <time_zone_name>Australia/Melbourne</time_zone_name>
+        
+        
+        <track name="Main Conference" slug="4870-main-conference"  color="#fc0101" />
+        
+        <track name="Main Conference (waitlist)" slug="5003-main-conference-waitlist"  color="#ff6969" />
+        
+        <track name="Education" slug="4871-education"  color="#ffbf00" />
+        
+        <track name="Education (waitlist)" slug="5004-education-waitlist"  color="#ffe491" />
+        
+        <track name="DevOops" slug="4872-devoops"  color="#00ba1e" />
+        
+        <track name="DevOops (waitlist)" slug="5005-devoops-waitlist"  color="#60d773" />
+        
+        <track name="Scientific Python" slug="4873-scientific-python"  color="#0078a4" />
+        
+        <track name="Scientific Python (waitlist)" slug="5006-scientific-python-waitlist"  color="#4eaccf" />
+        
+    </conference>
+    <day index='1' date='2024-11-22' start='2024-11-22T04:00:00+11:00' end='2024-11-23T03:59:00+11:00'>
+        <room name='Goldfields Theatre' guid='ca871299-987f-53fa-80e8-60519b36cb31'>
+            <event guid='ed823c0f-8cec-5340-8a77-ece07f476685' id='53984'>
+                <room>Goldfields Theatre</room>
+                <title>Why UUIDs are Secretly Incredibly Fascinating</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T09:20:00+11:00</date>
+                <start>09:20</start>
+                <duration>00:30</duration>
+                <abstract>What even is &apos;06462f89-b4ef-7f7d-8000-edda1bba5155&apos; and why should you actually care?
+
+(you should, but &quot;why&quot;?)</abstract>
+                <slug>pycon-au-2024-53984-why-uuids-are-secretly-incredibly-fascinating</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='1352'>Tom Eastman</person>
+                </persons>
+                <language>en</language>
+                <description>UUIDs are used all over the place, but there are a ton of variants. They&apos;re theoretically absolutely unique, and yet dozens of companies and projects abandoned the standard to invent their own identifier schemas instead.
+
+Why is that? and why does someone think they&apos;re interesting enough to talk about at a conference?
+
+Let&apos;s go down this rabbit whole together, today you&apos;ll learn:
+
+- why there were five versions of UUIDs in the original spec
+- which versions are still useful today, and when you should consider using them
+- why, even so, they weren&apos;t considered fit-for-purpose for many situations
+- what&apos;s being done to fix that
+- ~~what&apos;s the difference between UUID and GUID?~~
+
+I&apos;ll bet you&apos;ll find the answers more interesting than you expected to!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/ZCKWM3/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/ZCKWM3/feedback/</feedback_url>
+            </event>
+            <event guid='79bfdbda-f2a1-5242-900b-f1652ee8a592' id='53557'>
+                <room>Goldfields Theatre</room>
+                <title>A Lazy Person&apos;s Guide to Building REST Clients or: How I Learned to Stop Worrying and Love Dunder Overrides</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T10:00:00+11:00</date>
+                <start>10:00</start>
+                <duration>00:30</duration>
+                <abstract>Sick of writing lots of dedicated methods to perform the same tasks? Want to write less code? This talk may be for you! 
+
+REST API&apos;s are ubiquitious, and a very useful way to send and recieve data from various services. However, building them can often feel repetitive and boring. So, because I was lazy, and sick of doing it I decided to override specific dunder methods to write less boiler plate code, and keep myself interested.
+
+Was it easier? Probably not. Did it require less work than a normal implementation? Also probably not. Did it make my code more readable and portable? Definitely not. But it was fun, and I learnt how overriding Python&apos;s magic methods - often called dunders - could be useful. Let me share the lessons I learnt with you and inspire your own ideas.</abstract>
+                <slug>pycon-au-2024-53557-a-lazy-person-s-guide-to-building-rest-clients-or-how-i-learned-to-stop-worrying-and-love-dunder-overrides</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='47097'>Ash Bek</person>
+                </persons>
+                <language>en</language>
+                <description>Early in my Python learning journey I was having to rapidly prototype and implement REST clients for grabbing information. Bored of writing what felt like the same code over and over again, I wanted a more interesting way of solving the problem.
+
+Curious about pythons error handling, and knowing little about magic methods beyond `__init__()`, I stumbled across ways to manipulate attribute access and creation. Spending far to much time diving deeper, I learned how to query REST endpoints without having to define a dedicated method for each call.
+
+Luckily, we can all learn from my abilility to overcomplicate even the simplest tasks. Aimed at users who want to explore class customisation, those who want to add some new problem solving tools to their belt, or anyone wanting to hear how overcomplicating problems can be one of the best learning tools. 
+
+We will touch on:
+- What are magic methods, and how you can start using them.
+- Why reading the Python reference documentation is useful.
+- How to deal with undefined class attributes.
+- Creating and implementing callable objects.
+
+While the story and example focus on building a REST client, the concepts presented can be applied to many problems.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/79HGSW/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/79HGSW/feedback/</feedback_url>
+            </event>
+            <event guid='09a269bb-34b1-57e5-8c20-340838c64767' id='53302'>
+                <room>Goldfields Theatre</room>
+                <title>Django on AWS for chump change</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:00:00+11:00</date>
+                <start>11:00</start>
+                <duration>00:30</duration>
+                <abstract>Some cheap and definitely not employer approved ways to run Django on AWS infrastructure on a budget</abstract>
+                <slug>pycon-au-2024-53302-django-on-aws-for-chump-change</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='46958'>Luke Wiwatowski</person>
+                </persons>
+                <language>en</language>
+                <description>With the power of AWS and the Cloud Development Framework (CDK) we can spin up cheap infrastructure to host Django on. By leveraging cheap and free tier AWS services while also creating some very questionable resources and code we can scale a Django application down to a user base of 2 or less!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/NLZQAA/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/NLZQAA/feedback/</feedback_url>
+            </event>
+            <event guid='fd5d3627-4ee3-5552-aeb3-4555d7c1d2d9' id='52919'>
+                <room>Goldfields Theatre</room>
+                <title>Simplifying Python Web App Operations: Automating K8s Ops with Open Source</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:40:00+11:00</date>
+                <start>11:40</start>
+                <duration>00:30</duration>
+                <abstract>After creating a great web app using Python such as with flask, the next hurdle to production is how to make it available to users and operate it. And not just your app, but also ingress, the database, observability and the list goes on. We will go through your options for simplifying the operations of your web app using open source tooling. This will include using k8s directly, helm charts, IaaC using pulumi and new tooling developed by Canonical using juju. By the end of the talk you will have seen the benefits and drawbacks of each which will help you make an informed decision on which tool best suits your needs!</abstract>
+                <slug>pycon-au-2024-52919-simplifying-python-web-app-operations-automating-k8s-ops-with-open-source</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='44949'>David Andersson</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/DQGVLY/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/DQGVLY/feedback/</feedback_url>
+            </event>
+            <event guid='938b148f-4cee-5089-b664-2f4dfa2fdd7a' id='53974'>
+                <room>Goldfields Theatre</room>
+                <title>Notes on Over-Engineering: A Project Post-Mortem</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T12:20:00+11:00</date>
+                <start>12:20</start>
+                <duration>00:30</duration>
+                <abstract>Join me for a retrospective on a reusable Django app for providing shared database multi-tenancy, complete with automatic tenant-specific queryset filtering, automatic tenant selection middleware, REST framework support, and comprehensive test coverage. This app, despite its sophistication, was never used in production. Let&apos;s explore why it was ultimately deemed over-engineered and unnecessary, and what lessons we can learn from this experience.</abstract>
+                <slug>pycon-au-2024-53974-notes-on-over-engineering-a-project-post-mortem</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='1685'>Sam Bishop</person>
+                </persons>
+                <language>en</language>
+                <description>I have a story to share about the pitfalls of over-engineering&#8212;a project that resulted in a powerful yet unused Django library for shared database multi-tenancy. This library included automatic tenant-specific querysets, tenant selection middleware, REST framework support, and full test coverage across multiple Python and Django versions. Despite all of its advanced features and the confidence of complete test coverage, it was abandoned before deployment. In this talk, I&#8217;ll discuss the journey of this project, from its ambitious beginnings to its eventual demise, highlighting key lessons learned about scope creep, planning pitfalls, and some of the harsh realities of software development.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/M3KJ3V/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/M3KJ3V/feedback/</feedback_url>
+            </event>
+            <event guid='1c0274f5-9537-5687-bd81-4227fa4a9b32' id='53674'>
+                <room>Goldfields Theatre</room>
+                <title>Who tests the testers? Making and testing pipelines</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T13:50:00+11:00</date>
+                <start>13:50</start>
+                <duration>00:30</duration>
+                <abstract>You likely have a good pipeline that either runs tests, lints, or deployments for your project.
+
+But when it comes to changing that pipeline, how sure are you that it works before taking those changes live?</abstract>
+                <slug>pycon-au-2024-53674-who-tests-the-testers-making-and-testing-pipelines</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='1609'>Evan Kohilas</person>
+                </persons>
+                <language>en</language>
+                <description>In this talk, we&apos;ll explore why it doesn&apos;t have to be the case that &quot;there&apos;s no devops for devops&quot;.
+
+We&apos;ll give a quick run down of what pipelines are, and why they should be used, before we give an example where it can be hard to know whether making changes to a gitlab pipeline will fail, and why that can be the case.
+
+Then, we&apos;ll showcase tools that can be used for testing, creating, and simulating pipelines, so you too can setup a system to always be sure that your pipeline changes won&apos;t cause any water damage.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/NUUJAN/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/NUUJAN/feedback/</feedback_url>
+            </event>
+            <event guid='f01e7586-1ada-56f3-80b8-43bcd5710d4d' id='52777'>
+                <room>Goldfields Theatre</room>
+                <title>Coding Competition Software VS Murphy&apos;s Law</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T14:30:00+11:00</date>
+                <start>14:30</start>
+                <duration>00:30</duration>
+                <abstract>Imagine agreeing to develop a full stack web app to host a coding competition for thousands of students. Then standing at a podium in front of a large crowd as your app crashes and you discover that you might be in too deep.
+
+That was my first year of a four year journey of learning to program &quot;properly&quot; and build something robust and useful. The full story includes more spectacular fails, hacking and an eventually an app students loved using to program algorithms that do battle in contests based on game theory. The app is built on React / FastAPI and SQLmodel ORM</abstract>
+                <slug>pycon-au-2024-52777-coding-competition-software-vs-murphy-s-law</slug>
+                <track>DevOops</track>
+                
+                <persons>
+                    <person id='46551'>Sanjin</person>
+                </persons>
+                <language>en</language>
+                <description>Talk sections:
+
+1. Introduction to myself and the Victorian Coding Challenge (5 min)
+2. Journey through 4 platform iterations from Replit and Google sites to AWS / React and FastAPI (10 min)
+3. Stories about hacks, crashes and making a contest that is at least somewhat immune to chatGPT plagiarism. (10 min)
+4. Lessons learned and advice on getting things right with testing and data validation. (5 min)</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/XHM7N7/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/XHM7N7/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 2' guid='555051c2-6250-55cf-9197-948bf9bfff84'>
+            <event guid='f5cf1a85-acd5-5fca-975c-03a1f65e7c63' id='54019'>
+                <room>Eureka 2</room>
+                <title>Causal Discovery in Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T09:20:00+11:00</date>
+                <start>09:20</start>
+                <duration>00:30</duration>
+                <abstract>A review and comparison of software available for causal discovery in Python. Causal discovery means learning &quot;what causes what&quot; from your data. The input is a tabular dataset; the output is a causal graphical model (or a set of potential models) over your features. If feature A affects feature B, there should be an arrow A--&gt;B in the causal graphical model. Causal discovery is useful for hypothesis generation, experiment selection, and for testing our assumptions around causation.
+
+I&apos;ll give a brief intro to causal discovery, then review the following packages: py-tetrad, causal-learn, tigramite, causalnex, and cdt (causal discovery toolbox). The packages have some overlap but different emphases: each one implements at least one algorithm not covered by the other packages, making them useful in different situations. If time permits I&apos;ll finish with a quick demo, showing each package learning a model from the same dataset.</abstract>
+                <slug>pycon-au-2024-54019-causal-discovery-in-python</slug>
+                <track>Scientific Python</track>
+                <logo>/media/pycon-au-2024/submissions/ACKK3A/causal_cat_meme_jty9Bvb.jpg</logo>
+                <persons>
+                    <person id='47339'>Lizzie Silver</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/ACKK3A/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/ACKK3A/feedback/</feedback_url>
+            </event>
+            <event guid='07871c72-c0d8-5796-a363-67e457f6f301' id='53925'>
+                <room>Eureka 2</room>
+                <title>Verifying and evaluating scientific results with the open source package &quot;scores&quot;</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T10:00:00+11:00</date>
+                <start>10:00</start>
+                <duration>00:30</duration>
+                <abstract>Verifying, evaluating or interpreting complex data requires specialist tools and methods. Many data scientists, programmers and scientists will be familiar with some evaluation metrics such as accuracy, mean squared error or true positive rate. There are many situations where these scores are insufficient for assessing correctness, accuracy or suitability of a model or prediction. The challenge of verifying models and predictions affects most fields of science, engineering, and many machine learning applications.
+
+This talk will introduce &quot;scores&quot;, an open source Python package for verifying and evaluating labelled, n-dimensional (multidimensional) data at any scale. &quot;scores&quot; includes over 50 metrics, statistical techniques and data processing tools. The software repository can be found at https://github.com/nci/scores and the documentation can be found at https://scores.readthedocs.io/ .
+
+This talk is suitable for beginner, intermediate and expert audiences. Developers and data scientists who are familiar mainly with tabular data, such as supported by the pandas library, may be interested in the additional functionality offered by &quot;scores&quot; (and the xarray library it utilises). For those learning about more advanced methods, every metric and statistical test has a companion Jupyter Notebook tutorial. For expert users already familiar with these ideas, you may be interested in some of the novel scoring methods not commonly found in other packages. 
+
+Come to this talk to hear about:
+ - The difference between tabular data, n-dimensional data, and labelled n-dimensional data
+ - Examples of using a common metric from &quot;scores&quot; on labelled, n-dimensional data
+ - Examples of using &quot;scores&quot; for interrogating data in multiple dimensions
+ - Examples of where basic methods overlook important considerations
+ - Examples of using some of the more complex metrics in &quot;scores&quot;</abstract>
+                <slug>pycon-au-2024-53925-verifying-and-evaluating-scientific-results-with-the-open-source-package-scores-</slug>
+                <track>Scientific Python</track>
+                
+                <persons>
+                    <person id='1356'>Tennessee Leeuwenburg</person>
+                </persons>
+                <language>en</language>
+                <description>This talk will introduce &quot;scores&quot;, an open source Python package for verifying and evaluating labelled, n-dimensional (multidimensional) data at any scale. &quot;scores&quot; includes over 50 metrics, statistical techniques and data processing tools.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/WB8HTT/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/WB8HTT/feedback/</feedback_url>
+            </event>
+            <event guid='1dafa31d-b173-5aae-9d44-6c4d6f60c2e2' id='53956'>
+                <room>Eureka 2</room>
+                <title>Commissioning tools at the Australian Synchrotron, or, how to get a bazillion dollars worth of toys to play nicely together</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:00:00+11:00</date>
+                <start>11:00</start>
+                <duration>00:30</duration>
+                <abstract>Discover the innovative work happening at the Australian Synchrotron, where high-energy X-rays support research across Australia and neighbouring countries. The scientific computing team uses Python to connect to hardware, orchestrate experiments, and process data.
+
+We&apos;ll focus on a Python Dash interface developed to commission new positioners and detectors. This interface automatically generates Gaussian statistics. It includes pages for both one positioner and one detector (1D) or two positioners and one detector (2D), and allows users to click on a 2D Gaussian to take horizontal and vertical slices.
+
+Additionally, we will discuss best programming practices, such as implementing unit tests, maintaining DRY principles, and using linting tools to improve code quality. Good programming practices work beautifully in a scientific environment.  Join us to learn how these techniques can enhance your work with Python.</abstract>
+                <slug>pycon-au-2024-53956-commissioning-tools-at-the-australian-synchrotron-or-how-to-get-a-bazillion-dollars-worth-of-toys-to-play-nicely-together</slug>
+                <track>Scientific Python</track>
+                <logo>/media/pycon-au-2024/submissions/MQQJYE/Commissioning_Tools_alRjbpn.png</logo>
+                <persons>
+                    <person id='47254'>Mel</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/MQQJYE/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/MQQJYE/feedback/</feedback_url>
+            </event>
+            <event guid='e07daa90-f713-5046-b598-b09c2be5aeb5' id='53359'>
+                <room>Eureka 2</room>
+                <title>Astronomy with Python, for non-astronomers</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:40:00+11:00</date>
+                <start>11:40</start>
+                <duration>00:30</duration>
+                <abstract>Astronomers have been dealing with digital data since the 1980s and online databases 
+since the early 90&apos;s, and now, almost all research astronomers use Python to access and 
+process that data. Most astronomical database are open to the public, and most research
+software tools are either open source, or freely available.  I&apos;ll give an intro, aimed at 
+non-astronomers, to some Python packages (astropy, skyfield) and online research tools.
+
+This talk will give an overview on what tools and databases are available and how to access 
+them. Maybe you&apos;re writing a game, and you want the 3D locations and properties of the 
+nearest 10,000 stars (or extrasolar planets, or galaxies). Maybe you&apos;re building a Solar
+panel that tracks the Sun, or a camera mount that tracks the International Space
+Station. Maybe you&apos;re trying to model shadow lengths and directions in satellite images. Or
+maybe you just want to play around with real telescope images that haven&apos;t had a PR 
+department make them &apos;prettier&apos;...</abstract>
+                <slug>pycon-au-2024-53359-astronomy-with-python-for-non-astronomers</slug>
+                <track>Scientific Python</track>
+                
+                <persons>
+                    <person id='1273'>Andrew Williams</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/9MLDVZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/9MLDVZ/feedback/</feedback_url>
+            </event>
+            <event guid='a0997343-8ba1-55c9-a008-05333a4a3163' id='53803'>
+                <room>Eureka 2</room>
+                <title>Explore, annotate, and analyse multidimensional image data with napari</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T12:20:00+11:00</date>
+                <start>12:20</start>
+                <duration>00:30</duration>
+                <abstract>napari is an n-dimensional image viewer for Python. If you&#8217;ve ever tried `plt.imshow(arr)` and made Matplotlib unhappy because `arr` has more than two dimensions, then napari might be for you! napari will gladly display higher-dimensional arrays by providing sliders to explore additional dimensions. But napari can also: overlay derived data, such as points, segmentations, polygons, surfaces, and more; and annotate and edit these data, using standard data structures like NumPy or Zarr arrays, allowing you to seamlessly weave exploration, computation, and annotation in image analysis.</abstract>
+                <slug>pycon-au-2024-53803-explore-annotate-and-analyse-multidimensional-image-data-with-napari</slug>
+                <track>Scientific Python</track>
+                <logo>/media/pycon-au-2024/submissions/JV9WT7/napari-window_5oz2dQ9_2KmM2rG.png</logo>
+                <persons>
+                    <person id='47257'>Juan Nunez-Iglesias</person><person id='47349'>Draga Doncila Pop</person>
+                </persons>
+                <language>en</language>
+                <description>napari is an n-dimensional image viewer for Python. If you&#8217;ve ever tried `plt.imshow(arr)` and made Matplotlib unhappy because `arr` has more than two dimensions, then napari might be for you!
+
+The napari canvas can be 2D or 3D. When you give napari an array with more dimensions than the canvas, it will automatically create sliders for those additional dimensions, allowing you to rapidly explore your full data, rather than a few sampled slices.
+
+Image analysis and visualisation involves more than images though: feature detection algorithms result in points, segmentation results in label images, annotation results in shapes such as rectangles or polygons, and more. Napari provides layers that can be displayed on top of each other or side by side, allowing users of Scientific Python to gain a rapid understanding of the algorithms they&#8217;re using &#8212; where they work well and where they might go wrong.
+
+Sometimes, image analysis algorithms get you this far, but not quite far enough. In such cases, it&#8217;s useful to manually curate their output, then continue with downstream steps of an analysis. Napari provides editing tools for its layer types, allowing one for example to add missing points to the output of a peak detection algorithm, remove incorrect ones, paint over incorrect parts of a segmentation, or draw polygons around missed objects of interest. The resulting data points are saved in standard Scientific Python data structures, such as NumPy or Zarr arrays.
+
+This design makes it easy to seamlessly weave together image exploration, image computation, processing, and analysis, and data annotation, curation, and editing.
+
+Napari provides a plugin interface, allowing developers to extend napari&#8217;s capabilities, providing users with novel ways to interact with their data. Because napari provides both a library accessible within Python, IPython, and Jupyter, and a standalone executable script, we have found that napari plugins can help collaborators run Python image analysis workflows without needing to launch Python.
+
+In this talk, we&apos;ll introduce napari&#8217;s history, (live) demonstrate the features described above, and discuss current limitations and where we&#8217;re going.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/JV9WT7/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/JV9WT7/feedback/</feedback_url>
+            </event>
+            <event guid='5ce1b123-01c8-5e47-8f83-8fb45bf303cd' id='53938'>
+                <room>Eureka 2</room>
+                <title>From Keyword Chaos to Clarity: Conquering a Complex Systematic Review with Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T13:50:00+11:00</date>
+                <start>13:50</start>
+                <duration>00:30</duration>
+                <abstract>How can you find relevant needles in a haystack of 25,000 academic abstracts when keyword searching is useless? I explore how I used Python to automate my way out of systematic review hell.</abstract>
+                <slug>pycon-au-2024-53938-from-keyword-chaos-to-clarity-conquering-a-complex-systematic-review-with-python</slug>
+                <track>Scientific Python</track>
+                
+                <persons>
+                    <person id='47331'>Edwina Mead</person>
+                </persons>
+                <language>en</language>
+                <description>Systematic reviews are the highest form of scientific evidence &#8211; the ultimate summary of all existing studies. I started my PhD thinking that finding the right papers to read was just matter of using the right keywords. But then I ended up with over 25,000 research papers &#8211; way too many to read or filter with traditional methods. Impossible, right?
+
+Fortunately, I know Python! Come with me on a journey through the challenges of sifting through mountains of research. I dive into how I used Python to automate finding relevant papers for my systematic review, wrestling with PubMed&#8217;s quirky download format, using regular expressions to find all the creative ways people refer to childbirth in the literature, and using LLMs to extract information from the abstracts. I&#8217;ll also explain why &#8220;NOT &#8216;dog&#8217;&#8221; didn&#8217;t work for me.
+
+This talk is for anyone who&#8217;s ever felt lost in a sea of academic papers, or just wants to hear a story of how Python became my secret weapon in the systematic review process.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/7DJWKZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/7DJWKZ/feedback/</feedback_url>
+            </event>
+            <event guid='d658d009-139d-5b52-9c0e-e5bdbf80ac08' id='53016'>
+                <room>Eureka 2</room>
+                <title>Data Morph: A Cautionary Tale of Summary Statistics</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T14:30:00+11:00</date>
+                <start>14:30</start>
+                <duration>00:30</duration>
+                <abstract>Statistics do not come intuitively to humans; they always try to find simple ways to describe complex things. Given a complex dataset, they may feel tempted to use simple summary statistics like the mean, median, or standard deviation to describe it. However, these numbers are not a replacement for visualizing the distribution.
+
+To illustrate this fact, researchers have generated many datasets that are very different visually, but share the same summary statistics. In this talk, I will discuss *Data Morph*, an open source package that builds on previous research using simulated annealing to perturb an arbitrary input dataset into a variety of shapes, while preserving the mean, standard deviation, and correlation to multiple decimal points. I will showcase how it works, discuss the challenges faced during development, and explore the limitations of this approach.</abstract>
+                <slug>pycon-au-2024-53016-data-morph-a-cautionary-tale-of-summary-statistics</slug>
+                <track>Scientific Python</track>
+                <logo>/media/pycon-au-2024/submissions/3JHULA/panda_to_star_b5l5pAI.gif</logo>
+                <persons>
+                    <person id='15572'>Stefanie Molin</person>
+                </persons>
+                <language>en</language>
+                <description>This talk introduces *Data Morph*, a new open source Python package I built that can be used to morph an input dataset of 2D points into select shapes, while preserving the summary statistics to a given number of decimal points through simulated annealing. *Data Morph* extends research from Autodesk to create the [Datasaurus Dozen](https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/pdf/same-stats-different-graphs.pdf), and is intended to be used as a teaching tool for illustrating why you can&#8217;t rely solely on summary statistics. Come learn how it works and what it took to translate the research into an open-source library.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/3JHULA/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/3JHULA/feedback/</feedback_url>
+            </event>
+            <event guid='ac0c506b-6be9-5ab3-8eae-1b2ef1288227' id='54000'>
+                <room>Eureka 2</room>
+                <title>Leveraging the Rich Spatiotemporal Features of live cell imaging with Machine Learning and AI</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T15:30:00+11:00</date>
+                <start>15:30</start>
+                <duration>00:30</duration>
+                <abstract>Live cell imaging is a microscopy technique, where scientists can observe dynamics of living cells across time. One such method, known as lattice lightsheet microscopy captures these processes at high spatiotemporal detail. However, current analyses methods do not always capture the complexities of these feature rich datasets. 
+In this talk, I will use an example of programmed cell death, where cells are exposed to different drugs. Using python packages, such as scikit-image and tsfresh,  I will demonstrate how we extract morphological and spatiotemporal features of cells. We use these features to train a supervised machine learning (ML) model to predict which drug treatment the cells were exposed to. 
+Furthermore, using explainable AI with Shapley values, we identify key feature combinations that distinguish the cellular response to each drug. This approach enables data-driven hypothesis generation, allowing us to infer underlying phenotypes and correlate them to the biological processes.</abstract>
+                <slug>pycon-au-2024-54000-leveraging-the-rich-spatiotemporal-features-of-live-cell-imaging-with-machine-learning-and-ai</slug>
+                <track>Scientific Python</track>
+                
+                <persons>
+                    <person id='47362'>Pradeep Rajasekhar</person>
+                </persons>
+                <language>en</language>
+                <description>Example of the cell death process, called NETosis
+
+https://www.youtube.com/watch?v=SFlcqRajLYE
+
+More details on the technology:
+
+https://www.zeiss.com/microscopy/en/resources/insights-hub/life-sciences/driving-new-discoveries-with-lattice-light-sheet-microscopy-in-an-advanced-core-imaging-facility.html</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/XUNCWK/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/XUNCWK/feedback/</feedback_url>
+            </event>
+            <event guid='6da75501-384f-5857-83e7-4e80f1e83ecc' id='53969'>
+                <room>Eureka 2</room>
+                <title>From minutes to seconds: Capillary auto-alignment with python and opencv</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T16:10:00+11:00</date>
+                <start>16:10</start>
+                <duration>00:30</duration>
+                <abstract>Samples used for diffraction experiments at the Australian Synchrotron, a research facility in Melbourne, are typically presented as finely ground powders confined inside very thin (1mm or less) glass capillaries. These samples are irradiated with X-rays in order to uncover their atomic crystal structures. Amongst our research areas, we study applications in mining, solar cells, perovskites, hydrogen storage, and geology, where understanding material properties at the atomic level can lead to advancements such as enhancing mineral extraction processes, improving solar cell efficiency, developing better hydrogen storage solutions, and analysing the composition of meteorites.
+
+To ensure good data quality, the capillary needs to rotate precisely around its centre of rotation in front of the X-ray beam. Alignment of the centre of rotation is usually a manual operation that relies on the human eye and expertise to discern that the capillary is straight and stationary while it rotates around its axis; this process can be lengthy, error-prone, and difficult to achieve, especially for non-experts.
+
+In this talk, I will demonstrate how we have united Python, OpenCV, and motion control systems to automate the capillary alignment procedure at the Australian Synchrotron, reducing the time to align a sample from several minutes to just 10 seconds.</abstract>
+                <slug>pycon-au-2024-53969-from-minutes-to-seconds-capillary-auto-alignment-with-python-and-opencv</slug>
+                <track>Scientific Python</track>
+                <logo>/media/pycon-au-2024/submissions/CQDJ9K/capillary_spinner_XEldohj.jpg</logo>
+                <persons>
+                    <person id='47340'>Emily Massahud</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/CQDJ9K/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/CQDJ9K/feedback/</feedback_url>
+            </event>
+            <event guid='24711173-6bb2-55ad-aab5-b0df974d77f3' id='51559'>
+                <room>Eureka 2</room>
+                <title>Avocado, Cheese, Grape, Tomato or: How I Used Python to Stop Worrying and Love Emoji in Bioinformatics</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T16:50:00+11:00</date>
+                <start>16:50</start>
+                <duration>00:30</duration>
+                <abstract>Bioinformatics is the science of understanding and analysing biological information, such as the genetic information contained in DNA. It combines the disciplines of biology, computer science, and mathematics. If this seems daunting, don&#8217;t panic, because this talk will focus on two open-source Python packages I have developed, FASTQE and Biomojify, that make common bioinformatics file formats intuitive and accessible&#8230;. by using emoji.
+
+FASTQE simplifies DNA sequencing data analysis by taking numerical quality scores for the data, and summarising them using emoji to quickly convey the good, the bad, and the ugly of sequence data quality. Whether for training, outreach, or debugging, this tool can easily turn unremarkable data quality analysis into an appealing visualisation.
+
+Biomojify takes the concept further by converting plain text data to use emoji. In DNA, for example, the conventional format represents  individual A, C, G, and T nucleotides as plain text. Biomojify substitutes them with emojis such as avocado, cheese, grape, and tomato. It supports various bioinformatics file formats and supports user defined emoji mapping. It can be used to teach the underlying biological concepts behind bioinformatics data, by simplifying specialised data structures for a general audience. 
+
+Science communication is hard. These tools transform complex bioinformatics data into engaging, emoji-based visualisations, making bioinformatics concepts more accessible and adding an element of fun to scientific education and communication.</abstract>
+                <slug>pycon-au-2024-51559-avocado-cheese-grape-tomato-or-how-i-used-python-to-stop-worrying-and-love-emoji-in-bioinformatics</slug>
+                <track>Scientific Python</track>
+                
+                <persons>
+                    <person id='45467'>Andrew Lonsdale</person>
+                </persons>
+                <language>en</language>
+                <description>This presentation will delve into the history and recent exciting developments of FASTQE and Biomojify. I will provide some background information on bioinformatics, and outline new developments such as support for new sequencing technologies and expanded emoji customization options. I will also present examples of teaching resources developed using these tools.
+
+As a bioinformatician with over a decade of experience and the main developer of these tools, I would love to share my roadmap and encourage more contributors to join these projects. I&#8217;m eager to share my love of bioinformatics with the Python community.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/A78TC9/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/A78TC9/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 3' guid='b9261db4-c925-5322-b218-e87a4c5e32a3'>
+            <event guid='c3f58520-8d2f-5421-b867-4d8782845220' id='53995'>
+                <room>Eureka 3</room>
+                <title>Teaching Digital Technologies in Australian schools with Python and the Kookaberry</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T10:00:00+11:00</date>
+                <start>10:00</start>
+                <duration>00:30</duration>
+                <abstract>There are around 6,200 primary schools around Australia, and the curriculum has a requirement to teach Digital Technologies, which includes a coding portion.  There are many challenges here, not least which is enabling the approximately 150,000 primary school teachers with the skills and resources to teach programming to young students.  The AustSTEM foundation was set up to assist in this area, and developed a MicroPython based learning platform, which consists of a pocket-sized computing device that integrates with a web-based coding and teaching environment.  The teaching material has many hands-on activities, with connections to nature and science.  In this talk we will discuss this teaching platform, how it can help students transition from block-based programming to textual coding, and show some of the successes we have had so far in Australian classrooms.</abstract>
+                <slug>pycon-au-2024-53995-teaching-digital-technologies-in-australian-schools-with-python-and-the-kookaberry</slug>
+                <track>Education</track>
+                
+                <persons>
+                    <person id='30530'>Damien George</person>
+                </persons>
+                <language>en</language>
+                <description>The non-for-profit AustSTEM foundation provides access and assistance to STEM learning
+across Australian schools with emphasis on year 5 through to year 7.&#160; AustSTEM has developed
+the Kookaberry learning platform which includes a small microcontroller-based board with
+a screen, buttons, wireless connectivity, and facility to connect many different
+kinds of sensors.&#160; A web-based coding and teaching environment integrates with the
+Kookaberry hardware and allows programming in both the visual Blockly language and Python,
+with very easy transition between the two.&#160; Teachers also have the option to use a Raspberry
+Pi Pico with add-on hardware within this learning platform, making the platform more
+accessible and flexible.
+
+Most programming in primary school is based on visual block-based languages like Scratch.
+The Kookaberry leverages Blockly to provide a way for students to program physical
+hardware (a microcontroller running MicroPython) and interact with the environment through
+sensors such as accelerometers, pressure and moisture sensors and light sensors, and interact using
+LEDs and motors.&#160; They also learn about data logging and visualising results of experiments
+using plots.&#160; This gives students a very hands-on approach to learning to program, which
+helps to cement the learning objectives in the curriculum in real-world applications.
+
+Following on from learning to program in Blockly, the Kookaberry platform allows easy
+transition to program in Python: the Blocks actually convert directly to Python snippets
+and so the students can gradually adapt their existing visual programming skills to
+textual coding in Python.
+
+A big part of teaching students is first of all training teachers, and we will discuss
+some challenges in this area, and how Kookaberry gives the teachers are given a wide range
+of teaching tools so they can adapt the platform to their style.&#160; We will show some lesson
+plans, which aim to attract and engage students of all ages and abilities.
+
+As a bonus, the Kookaberry web-app is itself written in Python, and we will describe some
+technical details of how it all works.
+
+There will be lots of pictures of kids in action!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/3GPQDE/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/3GPQDE/feedback/</feedback_url>
+            </event>
+            <event guid='6022529c-b2b1-5cff-90a3-6508d8e63108' id='53963'>
+                <room>Eureka 3</room>
+                <title>How Smart is AI? &#8211; Real projects to build real understanding</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:00:00+11:00</date>
+                <start>11:00</start>
+                <duration>00:30</duration>
+                <abstract>Chat GPT is all the rage in schools, and everyone is talking about AI, but how do we give students a real understanding of AI&#8217;s capabilities and limitations? In this talk I&#8217;ll demo how you can get students coding their own projects that explore (free) GPT technologies, integrating their own data sources, and contemplating when AI is the right solution.</abstract>
+                <slug>pycon-au-2024-53963-how-smart-is-ai-real-projects-to-build-real-understanding</slug>
+                <track>Education</track>
+                
+                <persons>
+                    <person id='1523'>Renee Noble</person>
+                </persons>
+                <language>en</language>
+                <description>This talk is designed for teachers, students, or anyone new to AI to get a better understanding of what &#8220;AI&#8221; is, to see the broad range of technologies &#8220;AI&#8221; can includes, and to demystify all pieces of terminology like GPT, LLMs, and more!
+
+I&#8217;ll demo a light-weight project that you can use to get students leveraging GPT technology through their own code creations. We&#8217;ll then add some of our own data to give it specialised knowledge in a technique known as &#8220;RAG&#8221; (Retrieval Augmented Generation). Through the process of testing out this project we&#8217;ll then explore the moments where students can see behind the curtain of what tools like ChatGPT are actually doing, where they fall down and aren&#8217;t as &#8220;smart&#8221; as they seem, and how and when to use AI responsibly. 
+
+This talk will specifically highlight an open-source option for playing with AI in Python so you can get your class coding on these tools for free.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/YYN7YH/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/YYN7YH/feedback/</feedback_url>
+            </event>
+            <event guid='5925e1da-61d8-5927-9044-6fe0a6685392' id='53958'>
+                <room>Eureka 3</room>
+                <title>Transitioning from VB to Python &#8211; Mapping a 6 month journey</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T11:40:00+11:00</date>
+                <start>11:40</start>
+                <duration>00:30</duration>
+                <abstract>In the past decade, this school has consistently exceeded VCE expectations in Software Development, largely due to well-developed resources, consistency in use of programming language (Visual Basic) and progression of skills through year 7 to year 12. However, a gap analysis in the teaching methodology has highlighted conceptual computational thinking and problem-solving skills as a key gap in the current offering. This was attributed to the curriculum&apos;s skills-based focus and the Covid-era teaching practice of flipped learning via video tutorials.  
+
+This has presented an opportunity to overhaul the teaching methodology to focus on equipping students with the skills to apply their learning in different contexts.  Some key aspects of this transformation include a more live coding technique and transitioning to Python as the preferred programming language, due to its versatility and future prospects for students.  
+
+We present this roadmap which leads to a complete overhaul of our teaching programmes from year 7 to year 12, scaffolding Python across Applied Computing, STEM projects, Robotics and Game development over the next 6 months.</abstract>
+                <slug>pycon-au-2024-53958-transitioning-from-vb-to-python-mapping-a-6-month-journey</slug>
+                <track>Education</track>
+                
+                <persons>
+                    <person id='46556'>Pravin vaz</person><person id='47336'>Carolyn Gekas</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/XHTJ3S/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/XHTJ3S/feedback/</feedback_url>
+            </event>
+            <event guid='8e4c6eef-fb6f-5c68-8ccf-015962594991' id='53600'>
+                <room>Eureka 3</room>
+                <title>Enhancing Programming Ability with Playful Learning and Karel</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T12:20:00+11:00</date>
+                <start>12:20</start>
+                <duration>00:30</duration>
+                <abstract>Beginner programmers often struggle to understand and trace program execution, which is worsened by underdeveloped debugging and testing skills. Beginners may also lack confidence or are easily demotivated, which can hinder learning. To assist students in developing these skills and build confidence we created a set of playful programming challenges and competition using Karel the Robot. The Karel system provides a 2D &#8220;grid world&#8221; where the Karel character can move and interact with its environment. The 2D world is visualised for students so that they can immediately see how their program changes the environment step by step as well as the final program state. This is in contrast to traditional languages where learners must develop and maintain a mental model of the program state. This talk will cover our approach, preliminary results and feedback from students showing an increase in confidence and interest in programming. We will also share how this approach can be applied to other learning contexts.</abstract>
+                <slug>pycon-au-2024-53600-enhancing-programming-ability-with-playful-learning-and-karel</slug>
+                <track>Education</track>
+                
+                <persons>
+                    <person id='11049'>Stephen Tierney</person><person id='11052'>Alison Wong</person>
+                </persons>
+                <language>en</language>
+                <description>Beginner programmers often struggle to understand and trace program execution, which is worsened by underdeveloped debugging and testing skills. Beginners may also lack confidence or are easily demotivated, which can hinder learning. To assist students in developing these skills and build confidence we created a set of playful programming challenges and competition using Karel the Robot.
+
+Karel the Robot was developed at Stanford to help students learn programming concepts without the burden of syntax and technicalities of a more general language. Karel provides a 2D &#8216;grid world&#8217; where the Karel character can move and interact with the environment to carry out various tasks, e.g. walk through a maze. This gives students the opportunity for playful experimentation with code, which helps develop their understanding of programming concepts. Furthermore the 2D world is visualised for students so that they can immediately see how their program changes the environment step by step as well as the final program state. Karel makes the code tangible to the students, which  is in contrast to traditional languages where learners must develop and maintain a mental model of the program state.
+
+Fortunately Karel uses a subset of Python, which allows students to naturally extend their learning to real Python, without learning new syntax. We found that Karel provides a convenient way to implement inductive teaching, which has been shown to enhance student&apos;s higher order thinking abilities and strengthen their understanding of concepts when compared to deductive teaching.
+
+This talk will cover our approach, preliminary results and feedback from students showing an increase in confidence and interest in programming. We will also share how this approach can be applied to other learning contexts.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/WLCHUM/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/WLCHUM/feedback/</feedback_url>
+            </event>
+            <event guid='ed5d622d-54af-57b4-a0dc-017e4610dcdc' id='53788'>
+                <room>Eureka 3</room>
+                <title>Build Your Own IoT! Fun With Python and Raspberry Pi.</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T13:50:00+11:00</date>
+                <start>13:50</start>
+                <duration>00:30</duration>
+                <abstract>This talk will discuss building a basic streaming data pipeline for IoT applications using Python and Raspberry Pi. Attendees will have the opportunity to learn about Raspberry Pi, Apache Kafka + Kafka Connect, and solar power generation.</abstract>
+                <slug>pycon-au-2024-53788-build-your-own-iot-fun-with-python-and-raspberry-pi-</slug>
+                <track>Education</track>
+                <logo>/media/pycon-au-2024/submissions/Z3KYJZ/python_raspberry_pi_1vIiofo.png</logo>
+                <persons>
+                    <person id='47252'>A.J. Fisher</person>
+                </persons>
+                <language>en</language>
+                <description>This isn&apos;t your grandfather&apos;s electronics shop - anyone can collect real-time data with Python! This talk aims to demystify the complex world of data and hardware, with real-world applications for the Western Australian electricity grid.
+
+With the number of IoT devices expected to reach 29 billion by 2030, the significance of real-time data collection continues to grow. In this session, we will construct a basic microscale/hobby scale data collection system designed to serve as the backbone for an IoT application. Specifically, we will create a system to continuously collect voltage readings from a mini solar panel and record the data for future analysis. The system we develop can be easily adapted for different IoT applications.
+
+This talk is designed to be conceptual, requiring only a basic understanding of Python and JSON. Whether you&#8217;re a beginner, hobbyist, or professional, join us to explore the exciting world of data and IoT!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/Z3KYJZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/Z3KYJZ/feedback/</feedback_url>
+            </event>
+            <event guid='a6486c10-687e-5dd3-bd04-e758102cfff0' id='53251'>
+                <room>Eureka 3</room>
+                <title>As a Teacher. I have no Time to learn Programming - Streamline Assignment Marking with Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-22T14:30:00+11:00</date>
+                <start>14:30</start>
+                <duration>00:30</duration>
+                <abstract>Teaching is a demanding job that takes away the initiative to learn or improve in programming skills. I therefore decided to streamline some of my assignment marking using Python. The time I spent in developing the Python scripts could then be offset by the efficiency and accuracy I gained from the automation. 
+
+In this presentation, I will demonstrate how to populate student details into their individual Excel mark sheets, check marking mistakes, automate mark adjustment and collect data from individual mark sheets. 
+
+While the above automation can be achieved using standard tools offered by Microsoft by putting the programming logic into Excel formulae or Visual Basic for Application, I will argue using Python to separate the logic from data is a better approach in terms of programming practice and Cybersecurity.</abstract>
+                <slug>pycon-au-2024-53251-as-a-teacher-i-have-no-time-to-learn-programming-streamline-assignment-marking-with-python</slug>
+                <track>Education</track>
+                
+                <persons>
+                    <person id='46923'>Haggen So</person>
+                </persons>
+                <language>en</language>
+                <description>This talk is suitable for Python beginners and the set of Python scripts to automate assignment marking was developed in 2020 when I was teaching at the Hong Kong Baptist University. Each student was marked using standard assessment rubrics stored in an Excel spreadsheet. All the marks of a class of students are then stored in a folder of Excel files. I will demonstrate the automation of the following actions using Python libraries related to Excel such as openpyxl and xlwings.
+
+-Create individual student mark sheets with names and other details filled in
+-Check marking mistakes such as missing marks or giving marks above the highest score
+-Adjustment of marks in all mark sheets due to errors made in assignment design, etc.
+-Collect marks from each individual Excel mark sheet
+-Export Excel mark sheets to PDF format for archive purposes
+
+I will also compare the benefits of automating Excel using Python with Excel formulae and Visual Basic for Application by separating programming logic from data. Especially in the light of the Government Cybersecurity initiative &quot;Essential Eight Maturity Model&quot;, Visual Basic for Application should be avoided and Python can be a viable solution.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/KFVD3Z/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/KFVD3Z/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    <day index='2' date='2024-11-23' start='2024-11-23T04:00:00+11:00' end='2024-11-24T03:59:00+11:00'>
+        <room name='Goldfields Theatre' guid='ca871299-987f-53fa-80e8-60519b36cb31'>
+            <event guid='fbdd7198-fd4d-51e8-bf5e-de23baa52cc9' id='53922'>
+                <room>Goldfields Theatre</room>
+                <title>Making an open source package - lessons learned</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T10:40:00+11:00</date>
+                <start>10:40</start>
+                <duration>00:30</duration>
+                <abstract>Making an open source package is pretty hard in 2024. Expectations are high, and there&#8217;s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn&#8217;t work, what I would do again and what I would do differently.
+
+I developed an open source package called &#8220;scores&#8221; ( https://github.com/nci/scores , https://scores.readthedocs.io/ ).  This is not a presentation about what &#8220;scores&#8221; does, but instead covers the lessons I learned. Despite being an experienced software developer and having used lots of open source software, there was still a lot to learn (and a lot to figure out) about open source package maintenance.
+
+Every package is different, but this is what I did and these are the lessons I learned. 
+
+- Technical Matters:
+    - How to lay things out on disk
+    - Configuration files
+    - Automated testing
+    - Type hinting
+    - Linting and other static analysis tools
+    - Code layout and design
+- Documentation:
+    - What documentation to produce
+    - Picking and using a tech stack
+    - Rendering (documentation often renders differently in different locations)
+- Ecosystem Integration:
+    - How to fit in well with the tools around you
+    - Versioning 
+    - Publishing to PyPI
+    - How and what to automate
+    - How to do releases
+- Community Considerations:
+    - Code review standards
+    - Clear presentation of information
+    - Understanding your user base and audience</abstract>
+                <slug>pycon-au-2024-53922-making-an-open-source-package-lessons-learned</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1356'>Tennessee Leeuwenburg</person>
+                </persons>
+                <language>en</language>
+                <description>Making an open source package is pretty hard in 2024. Expectations are high, and there&#8217;s a lot to take into account. I recently developed an open source package. This talk covers what worked, what didn&#8217;t work, what I would do again and what I would do differently.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/MW7E7N/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/MW7E7N/feedback/</feedback_url>
+            </event>
+            <event guid='07bca09c-5979-5b69-9d9d-77446bf9aaab' id='53637'>
+                <room>Goldfields Theatre</room>
+                <title>Serpents and Ducks: wrangling data with Python and DuckDB</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T11:20:00+11:00</date>
+                <start>11:20</start>
+                <duration>00:30</duration>
+                <abstract>Got a billion rows of data in a weird file format? Wishing you could wrangle a dataframe from a geospatial dataset? A bit lost interacting with a remote API? Let&#8217;s wrangle some data with Python and DuckDB. 
+
+DuckDB executes analytical SQL queries without the need for a server. DuckDB features a deep and deceptively simple integration with the Python ecosystem, allowing us to query, wrangle, and output data, alongside all your favourite Python tools.. Its powerful analytical features and rich integrations position DuckDB as an invaluable tool for anyone working with analytical data in Python, helping you solve complex problems with ease and elegance. 
+In this practical talk, we&#8217;ll introduce DuckDB, a fast and versatile analytical database to keep in your data toolkit. We&#8217;ll go through how to use the DuckDB Python client effectively, taking advantage of DuckDB&#8217;s efficient data processing features, as well as its integrations with libraries like Pandas and Ibis.</abstract>
+                <slug>pycon-au-2024-53637-serpents-and-ducks-wrangling-data-with-python-and-duckdb</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47166'>Simon Aubury</person><person id='1662'>Ned Letcher</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/TWFSTJ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/TWFSTJ/feedback/</feedback_url>
+            </event>
+            <event guid='c785b5ac-5d74-5642-b119-b543c71e652e' id='53780'>
+                <room>Goldfields Theatre</room>
+                <title>Performant Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T12:00:00+11:00</date>
+                <start>12:00</start>
+                <duration>00:30</duration>
+                <abstract>An introduction to writing performant Python code - the &quot;what, why, where, when and many how&apos;s&quot; of performance analysis, testing, tools and techniques.</abstract>
+                <slug>pycon-au-2024-53780-performant-python</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47251'>Anna Tisch</person>
+                </persons>
+                <language>en</language>
+                <description>Why, as Python developers, should we care about writing performant code? Python doesn&apos;t have a great reputation when it comes to performance, but this does not need to be the case!
+In this talk we will cover:
+- &lt;b&gt;What do you mean by &apos;Performant&apos;?&lt;/b&gt; We&apos;ll talk briefly about the different metrics that can measure the performance of software, and the history of performance in Python.
+- &lt;b&gt;Why, Where and When?&lt;/b&gt; Performance should be an important consideration in the code we write and distribute, however performance analysis and improvement can be a time-consuming endevour, so we will look at how to identify where this time is best invested, and why.
+- &lt;b&gt;How do I start?&lt;/b&gt; There are many tools available; libraries, IDE extensions, command line tools, and of course, within the Python standard library, so we will explore options and what benefits each provides.
+- &lt;b&gt;How do I find issues?&lt;/b&gt; Trying to improve the performance of code is not like regular debugging - we will look at how to use these tools to identify problem areas in the code by looking through some examples.
+- &lt;b&gt;How do I fix it?&lt;/b&gt; There&apos;s always more than one solution to a performance problem. We&apos;ll look at how our example issues could be mitigated and the pros and cons of varying approaches, including the use of compiled extensions.
+- &lt;b&gt;How do I know when I&apos;m finished?&lt;/b&gt; Is my code performant &lt;i&gt;enough&lt;/i&gt;? Improving performance can be highly iterative, with changes yielding only minor incremental improvements. We will talk about some of the challenges in determining success criteria, and trying to cost estimate performance work.
+
+This talk will touch on some more advanced Python syntax, as well as peeking into how the Python language works, so some basic coding experience is assumed. However, the topics and techniques discussed will be applicable to developers of all levels.
+
+Some things we won&apos;t cover:
+- High-level architecture for high performance systems. This talk will mostly focus on lower-level code structure and syntax.
+- C/Rust extensions will not be covered in detail in this talk, however we will take a look at identifying when an extension could be a good fit to solving performance problems, and the pros and cons of this approach.
+- In this talk we will focus on the execution time of CPU-bound code as the measure of performance, so we won&apos;t discuss other performance metrics, such as memory usage or IO traffic.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/ZEKYUW/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/ZEKYUW/feedback/</feedback_url>
+            </event>
+            <event guid='b9fbabb6-940f-500f-a11b-d12accc32bc3' id='53869'>
+                <room>Goldfields Theatre</room>
+                <title>Let&apos;s make a working implementation of async functions in Python 2.1, also, why you might want to use a more recent version of Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>Often I hear people lamenting that Python has too many features and that older versions of Python were better for that exact reason.
+
+To make those people happy, we&apos;re going to pick apart the features of Python that enable the `async`/`await` syntax, layer by layer, until we happen upon a working implementation of coroutines that will function in Python 2.1.
+
+Somewhere in this talk will be some useful discussions about why recent syntactic developments in Python are a good thing actually, but let&apos;s not lie, you&apos;re reading this abstract for the stunt content. You&apos;ll get what you came for.</abstract>
+                <slug>pycon-au-2024-53869-let-s-make-a-working-implementation-of-async-functions-in-python-2-1-also-why-you-might-want-to-use-a-more-recent-version-of-python</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1616'>Christopher Neugebauer</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/R9ZKZC/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/R9ZKZC/feedback/</feedback_url>
+            </event>
+            <event guid='9526548c-0d22-587e-a16d-852937723b05' id='53013'>
+                <room>Goldfields Theatre</room>
+                <title>What Python Can Learn From Other Languages</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>Python is great! It&apos;s been a mainstay of web development and systems programming for decades and is on the cutting edge of many fields like scientific computing. But there is always more to improve, both in the language itself and how we use it. This talk will look at how ideas and features from other languages like Ruby, Go, and PHP could be used to improve Python!</abstract>
+                <slug>pycon-au-2024-53013-what-python-can-learn-from-other-languages</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1672'>Noah Kantrowitz</person>
+                </persons>
+                <language>en</language>
+                <description>From PHP autolaoders to Goroutines, there&apos;s many features in the world of programming languages that Python lacks. This talk will outline many features from other language communities that could be used both to improve existing codebases and, more deeply, to improve and evolve Python itself.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/CFS9GH/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/CFS9GH/feedback/</feedback_url>
+            </event>
+            <event guid='a543414a-e2ce-5aa5-a4db-45bf59320c5a' id='53911'>
+                <room>Goldfields Theatre</room>
+                <title>Failsafes and Safety Fails: How to crash a train and other lessons for software engineers</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>Software builders and operators have long looked to transport and aviation for lessons in engineering practices and safety. Today, we&#8217;ll turn our attention to the railways as we take 20 years of hindsight to look at the &#8216;Broady runaway&#8217; and what it can teach us. This talk will dive into the ATSB&#8217;s subsequent safety investigation, recommendations and parallels in the software world, offering us critical lessons in complex system design and incident management.
+
+For software engineers, architects, managers and executives this is an opportunity for us to reflect and learn from the past so that we can build more resilient and easier to operate platforms in the future.
+
+Our runaway train is a 3 car electrical multiple unit (EMU) that, in 2003, did the full 17km Broadmeadows to Spencer st run in just 16 minutes, famously without a driver on board. The cause of the runaway and resulting collision with a stationary diesel locomotive has been the talk of many rail enthusiasts ever since, especially since there were no fatalities or serious injuries.</abstract>
+                <slug>pycon-au-2024-53911-failsafes-and-safety-fails-how-to-crash-a-train-and-other-lessons-for-software-engineers</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='32818'>Jack Skinner</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/GF3NJK/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/GF3NJK/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 2' guid='555051c2-6250-55cf-9197-948bf9bfff84'>
+            <event guid='ceca295b-70f7-52a6-99cf-a2b5532eeb4f' id='53704'>
+                <room>Eureka 2</room>
+                <title>AI perceptions of gender</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T10:40:00+11:00</date>
+                <start>10:40</start>
+                <duration>00:30</duration>
+                <abstract>Why does AI perceive gender? Is this something that can be fixed? Should it be fixed? Explore the results of my research encompassing art, AI and gender theory to find out the why and how of gender perception.</abstract>
+                <slug>pycon-au-2024-53704-ai-perceptions-of-gender</slug>
+                <track>Main Conference</track>
+                <logo>/media/pycon-au-2024/submissions/JD8WMZ/IMG_3045_oqaQEKd.jpeg</logo>
+                <persons>
+                    <person id='1547'>J. Rosenbaum</person>
+                </persons>
+                <language>en</language>
+                <description>My PhD subject was AI perceptions of gender. I will take you through my key findings, my artwork projects created to explore this topic and how that research has progressed today in the days of generative AI. I will explore perception theory, gender theory and art all using AI to show why gender is fundamentally misunderstood by machine learning systems and ask the question why are we still letting machines assign gender to us?</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/JD8WMZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/JD8WMZ/feedback/</feedback_url>
+            </event>
+            <event guid='e9abc9b2-8a9c-544d-ba87-efd81c8c4202' id='53874'>
+                <room>Eureka 2</room>
+                <title>Embeddings: How Computers Learned to Read</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T11:20:00+11:00</date>
+                <start>11:20</start>
+                <duration>00:30</duration>
+                <abstract>As large language models take over the world, we&#8217;re now working alongside machines that can read, write and converse &#8211; coding with CoPilot, chatting with ChatGPT and drawing with DALL-E. But how do machines, which fundamentally operate on binary code, achieve such remarkable feats? The answer lies in embeddings. Embeddings allow us to represent complex data - whether it&apos;s text, images, or even abstract concepts - as dense vectors of numbers. In this presentation, we&apos;ll demystify embeddings and give you a practical and intuitive understanding of how they work.</abstract>
+                <slug>pycon-au-2024-53874-embeddings-how-computers-learned-to-read</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47306'>Liam Bluett</person>
+                </persons>
+                <language>en</language>
+                <description>Artificial Intelligence, Large Language Models, and Machine Learning have revolutionized our ability to automate complex tasks that once required significant human time and effort. But how do machines, which fundamentally operate on binary code, achieve such remarkable feats? The answer lies in embeddings - a powerful concept at the heart of modern AI. Embeddings are the bridge between human-understandable information and the numerical language of computers. They allow us to represent complex data - whether it&apos;s text, images, or even abstract concepts - as dense vectors of numbers. In this presentation, we&apos;ll demystify embeddings and give you a practical and intuitive understanding of how they work.
+
+We&apos;ll dive into:  
+1. What are embeddings and how they enable machines to process and understand human language
+2. How you can create your own embeddings or utilise existing embedding models to encode language in Python
+3. How embeddings underpin LLMs 
+
+By the end, you&apos;ll have a solid grasp of this fundamental AI concept and be equipped to start experimenting with embeddings in your own projects.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/Q78MDT/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/Q78MDT/feedback/</feedback_url>
+            </event>
+            <event guid='3873569b-0831-589c-89ff-8360b178d0df' id='53997'>
+                <room>Eureka 2</room>
+                <title>ML ain&#8217;t your only hammer: adding mathematical optimisation to the data scientist&#8217;s toolbox</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T12:00:00+11:00</date>
+                <start>12:00</start>
+                <duration>00:30</duration>
+                <abstract>The purpose of this presentation is to introduce the audience to the field of mathematical optimisation - what it is, how it differs from machine learning, and the types of problems it is best suited to solve.
+
+The first section will provide this context and background - describing the anatomy of an optimisation problem, and what the model building process looks like. We will touch on the characteristics common to optimisation problems seen across multiple industries.
+
+We will then build a simple optimisation model together, demonstrating how the model building process compares to the machine learning approach.
+
+Finally, we will end by exploring some of the most fascinating applications of mathematical optimisation in industry, focussing on the characteristics that the audience can map to challenges that are specific to their own industry.</abstract>
+                <slug>pycon-au-2024-53997-ml-ain-t-your-only-hammer-adding-mathematical-optimisation-to-the-data-scientist-s-toolbox</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='30512'>Dr Jack Simpson</person>
+                </persons>
+                <language>en</language>
+                <description>What do you do if the problem you want to model has little or no clean and available historic data? Or, what if you do have historic data, but things have changed so much that it is no longer possible to use that data to make predictions about the future? On top of that, what if you want your model to incorporate hard constraints that it cannot violate, and these constraints can lead to extremely different modelled outcomes?
+
+Many data scientists would recognise that for these kinds of problems, most machine learning algorithms tend to struggle. However, it is precisely for this reason that the field of mathematical optimisation (MO) was developed. Despite flying relatively under the radar in the data science community, MO plays a critical role solving problems in multiple sectors. The airline industry for example, is so dependent on MO for plane and workforce scheduling, that an entire fleet of planes will be grounded if a bug prevents one of these models solving.
+
+In this presentation, we will introduce the audience to the field of mathematical optimisation, and the types of problems it is exceptionally good at solving. We&#8217;ll build a simple model together, and explore how different the approach is to developing a machine learning model. By the end of this talk, we hope many members of the audience will be able to map MO to a problem they are actively trying to solve, and they will be excited to explore applying this technique.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/LGDUVR/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/LGDUVR/feedback/</feedback_url>
+            </event>
+            <event guid='6b19fd94-006c-53ff-bb8f-25d44e088e60' id='53986'>
+                <room>Eureka 2</room>
+                <title>Introducing Potnia: A Python language library for the conversion of ancient texts to Unicode</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>The last five years have seen a significant increase in the application of machine learning to the study of ancient scripts. Applications are broad, and include recognition via Optical Character Recognition (OCR), textual restoration, palaeographic analysis, topic modelling, representation learning, decipherment and machine translation (Sommerschield 2023). A large number of ancient language corpora have been digitised in recent decades, supporting this research. However, while the necessary Unicode blocks for many of these ancient scripts are available, a number of these data sets are still presented as Romanised transliterations.
+
+In response to this situation, we have created Potnia (https://pypi.org/project/potnia/), an open-source Python language library under the Apache 2.0 license, designed to convert such transliterated texts to Unicode. The session image accompanying this proposal provides an example of Potnia&#8217;s conversion process, with a Romanised transliteration of a Linear B text as the input, and the Unicode representation of this same text as the output. This conversion is crucial for downstream machine learning tasks, as tokenisation in the original Unicode script allows for more accurate representation of linguistic structures and mitigates potential biases introduced by transliteration.
+
+Potnia&apos;s flexible architecture, built on Python&apos;s object-oriented principles, employs string manipulation techniques and regular expressions to handle various complexities inherent in ancient texts, such as uncertain readings, missing elements, and script-specific notations. At present, the library can be used for Linear B texts, with functionality for Linear A, Sumerian and Akkadian soon to follow.
+
+Potnia&apos;s design allows for easy addition of new scripts, each with its own set of rules for tokenisation, regularisation, and character mapping. This extensibility positions us well for future inclusion of additional scripts. To ensure reliability and facilitate open-source contributions, we&apos;ve implemented a comprehensive test suite using pytest, with test cases defined in YAML files for easy expansion. This approach covers key functionalities across different scripts and simplifies the process of adding new test scenarios as the library grows.
+
+&lt;b&gt;&lt;em&gt;References&lt;/em&gt;&lt;/b&gt;
+Sommerschield, T., Y. Assael, J. Pavlopoulos, V. Stefanak, A. Senior, C. Dyer, J. Bodel, J. Prag, I. Androutsopoulos, and N.D. Freitas. 2023. &#8220;Machine Learning for Ancient Languages: A Survey.&#8221; &lt;em&gt;Computational Linguistics&lt;/em&gt; 49 (3): 1&#8211;45. doi:10.1162/coli_a_00481.</abstract>
+                <slug>pycon-au-2024-53986-introducing-potnia-a-python-language-library-for-the-conversion-of-ancient-texts-to-unicode</slug>
+                <track>Main Conference</track>
+                <logo>/media/pycon-au-2024/submissions/HMWPGH/Potnia_SessionImage_sE5a2jq.png</logo>
+                <persons>
+                    <person id='47354'>Emily Tour</person><person id='47361'>Kabir Manandhar Shrestha</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/HMWPGH/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/HMWPGH/feedback/</feedback_url>
+            </event>
+            <event guid='e539021e-d46f-514f-a0e5-b1e22b473f1d' id='53978'>
+                <room>Eureka 2</room>
+                <title>Cultural and Linguistic Influences on Translation: A Study of Novels</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>How do translations preserve the original meaning, style, and sentiment of texts across different languages and cultural contexts? This intriguing question drives our study as we delve into the complexities of translation.
+
+We examine how sentiment analysis results differ for the same text in various languages, aiming to understand the role of language families in these variations. Using natural language processing techniques in Python, we analyse novels from diverse genres, time periods, and cultural backgrounds to uncover generalisable translation patterns.
+
+Our study seeks to answer whether translations of words, ideas, and societal contexts in novels are influenced by the cultural contexts into which they are translated. By highlighting the importance of accurate and culturally relevant translations, we emphasise how they play a crucial role in preserving cultural and societal knowledge, ensuring that the richness of the original text is maintained across languages.</abstract>
+                <slug>pycon-au-2024-53978-cultural-and-linguistic-influences-on-translation-a-study-of-novels</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47345'>Anneysha Sarkar</person><person id='47360'>Eliz So</person>
+                </persons>
+                <language>en</language>
+                <description>Our project aims to find out how closely translations preserve the original meaning and style of text, whether the sentiment expressed in the original text is consistently preserved across different translations, and how sentiment analysis results vary for the same text in different languages. 
+
+As such, we have chosen novels based on different genres and societies, so that we can analyse words in various contexts. We have also chosen our novels based on the languages we are analysing, making sure we include books that are originally written by both languages and other languages. 
+
+In this project, we created several study groups of languages. For instance, we might put English with Mandarin Chinese together, so that we can analyse different language families. In each language group, we will assign source and target language, and find the translation patterns within the group. To generalise translation patterns, we repeated the analyses on multiple books and across multiple language groups. Then, we applied feature extraction to extract semantic, stylistic, syntactic and sentiment features from translations of novels. And lastly, to apply sentiment preservation by applying sentiment analysis and comparative semantic analysis to generalise language features in translation. 
+
+This project is important to us because we are both students from multilingual backgrounds and interact with translations every day. We realised that the same articles translated into different languages may not necessarily bring out the same ideologies or sentiments. Therefore, we are interested in how translation of a text will vary in different contexts, and whether the language family plays a big role in this. We believe this project is important as it can impact how one would understand particular historical, cultural or societal knowledge of a community if not done well. 
+
+We considered the differences in translation styles when translated by different authors, as well as different editing styles. To conquer this, we analysed works from different authors and translators to minimise the impact of stylistic differences.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/9KD9HJ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/9KD9HJ/feedback/</feedback_url>
+            </event>
+            <event guid='8b205200-a3d2-5533-ad31-2fad93ac999c' id='53923'>
+                <room>Eureka 2</room>
+                <title>Walking the Tree of Life &#8211; Adventures in Phylogenetics</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>&quot;What&apos;s the last common ancestor of a bear and a weasel?&quot;
+&quot;Which animals are more related to pigs than cows?&quot;
+&quot;Are birds reptiles?&quot;
+&quot;Am I a fish?&quot;
+
+With a recent interest in phylogeny &#8211; the science of evolution, diversification, and speciation &#8211; these are the kinds of questions I&apos;ve been asking myself. I wanted to find a tool that would let me examine the relationships between species and find the answers to these questions, but, as I looked around I couldn&apos;t find anything that did what I wanted. So I made it myself.
+
+Come with me as I share my journey that led me to talk to some of Australia&apos;s top scientists, give up on talking to other top scientists, and accidentally stumble my way into making an actual contribution to science. Learn why I made this tool, how I made this tool, what stage it&apos;s at, and where you can use it yourself. And maybe learn some things about life on Earth along the way.
+
+Oh, and to answer the questions above: dog-bears, peccaries, yes, and yes!</abstract>
+                <slug>pycon-au-2024-53923-walking-the-tree-of-life-adventures-in-phylogenetics</slug>
+                <track>Main Conference</track>
+                <logo>/media/pycon-au-2024/submissions/YNDDJR/Adventures_in_Phylogenetics_Image_Ojdq4bK.jpg</logo>
+                <persons>
+                    <person id='1684'>Jack Reichelt</person>
+                </persons>
+                <language>en</language>
+                <description>I&apos;ve always been interested in zoology &#8211; my dad has a degree in zoology &#8211; and over the past year or two, I&apos;ve started learning more about phylogeny. Phylogeny is the study of the evolution of species, seeking to understand their common ancestors, when and how they branched, and how closely related various species are.
+
+A common tool in phylogeny is the cladogram, a &quot;tree of life&quot; showing the different relationships between species. Cladograms are a great tool for understanding a family of organisms. However, when I started wanting to explore cladograms myself, I couldn&apos;t find anything that had all the features I wanted. This led me to start building it myself, and as I did so, I started thinking that maybe it was something that scientists and educators might find useful.
+
+And so I dove into the problem with gusto, and built a cladogram tool that could do it all, and is nice and user friendly, and great for students of all ages. In this talk I&apos;ll explain what I wanted it to do, the saga of trying to work out if it already existed, and how I built the tool. I&apos;ll also show you where you can access it to try out yourself and maybe learn something interesting about your favourite animal!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/YNDDJR/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/YNDDJR/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 3' guid='b9261db4-c925-5322-b218-e87a4c5e32a3'>
+            <event guid='ea39c034-b11c-570a-86aa-f53a4f0fd7e9' id='52663'>
+                <room>Eureka 3</room>
+                <title>Where am I? What am I doing? Mobile App development in Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T10:40:00+11:00</date>
+                <start>10:40</start>
+                <duration>00:30</duration>
+                <abstract>A modern mobile phone isn&apos;t just a powerful CPU and display. It&apos;s a collection of incredibly sophisticated portable sensors: multiple cameras, a high resolution GPS, accelerometers and more. In this talk, you&apos;ll learn how to build and run an app on your phone that can access these sensors, using nothing but Python.</abstract>
+                <slug>pycon-au-2024-52663-where-am-i-what-am-i-doing-mobile-app-development-in-python</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1087'>Russell Keith-Magee</person>
+                </persons>
+                <language>en</language>
+                <description>The BeeWare project provides the tools to build a native, cross-platform app for Android and iOS, using nothing but Python. In this talk, you&apos;ll learn how to use the tools provided by BeeWare, including Briefcase to bootstrap and deploy an app; and Toga to build GUI and access platform-native APIs. You&apos;ll learn about how to manage the device permissions required to access hardware; and you&apos;ll get a brief introduction to how you can access APIs for which Toga doesn&apos;t provide a cross platform API.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/MBZSKZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/MBZSKZ/feedback/</feedback_url>
+            </event>
+            <event guid='621657e1-1cf5-51d0-adbf-4140e2a3a3df' id='52338'>
+                <room>Eureka 3</room>
+                <title>from seeds import plants: using IoT to grow healthy herbs</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>With the current climate crisis and the rise of households growing their own fruits, vegetables and herbs, the efficient use of potable water is crucial now more than ever. However, the majority of plant watering systems are either manual or time based - that is, they water plants on a pre-defined schedule. This talk will describe a simple automated watering system programmed with micropython and various extensions to the core product to simplify existing features and add new capabilities using various internet of things devices and data analytics tools.</abstract>
+                <slug>pycon-au-2024-52338-from-seeds-import-plants-using-iot-to-grow-healthy-herbs</slug>
+                <track>Main Conference</track>
+                <logo>/media/pycon-au-2024/submissions/CERBXC/2023-08-09_15.52.01-2_M3j6Y0m.jpeg</logo>
+                <persons>
+                    <person id='1262'>Anthony I. Joseph</person>
+                </persons>
+                <language>en</language>
+                <description>With the current climate crisis and the rise of households growing their own fruits, vegetables and herbs, the efficient use of potable water is crucial now more than ever. However, the majority of plant watering systems are either manual or time based - that is, they water plants on a pre-defined schedule. 
+
+This talk will:
+- show Core Electronics&apos; plant_io system that was used to grow alfalfa seeds based off soil moisture and give a foundation introduction to the MicroPython code,
+- explore some hardware extensions made to the base system to collect further environmental data based off additional IoT sensors,
+- describe some other software and hardware extensions made to the base system to allow remote monitoring and data analysis, and
+- propose directions for future research.
+
+This talk would be of interest to people with an interest in horticulture, Internet of Things devices, MicroPython and Raspberry Pi programming as well as data analysts.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/CERBXC/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/CERBXC/feedback/</feedback_url>
+            </event>
+            <event guid='391bf372-3ebc-5bcc-9fea-7757f8392262' id='53919'>
+                <room>Eureka 3</room>
+                <title>MicroPython: The best bits!</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>MicroPython continues to grow in popularity. But _why_? What is it about this pint-sized version of Python that makes it so darn compelling? What are the best bits of MicroPython? 
+
+Join me in this talk for a whirlwind tour of some of the most exciting features of this modern embedded programming language.</abstract>
+                <slug>pycon-au-2024-53919-micropython-the-best-bits-</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1668'>Matt Trentini</person>
+                </persons>
+                <language>en</language>
+                <description>There&#8217;s no question; C and C++ are the 800 pound gorillas of the embedded domain. But MicroPython provides a high-level language alternative in this space and, in addition to modern syntax, it also provides unique features that can _vastly_ improve the embedded development experience. Which - let&#8217;s be honest! - has _barely improved_ in decades.
+
+So, let&#8217;s take a look at some of those features! 
+
+For starters, there&#8217;s the live REPL. We&#8217;ll look at how to use the REPL and why having an immediate way to interact with your device is an indispensable tool. 
+
+Python&#8217;s `asyncio` is well-supported in MicroPython and, it turns out, is a very good fit for embedded devices. We&#8217;ll look at what makes it such a good fit - and how we can apply libraries like `aioble` and `aiorepl` to accelerate development.
+
+To manage a connection to your MicroPython device, the core team provides the official tool, `mpremote`. We&#8217;ll cover some of the useful features it provides and explain how to integrate them into a workflow that allows rapid development.
+
+Although it&#8217;s a high-level language, MicroPython balances providing access to low-level features in an accessible way. We&#8217;ll briefly touch on using such features as the PIO, RMT, USBDevice and register access. From there we&#8217;ll shift to discuss some of the performance optimisation features such as inline assembly, frozen code and the viper and native emitters.
+
+To wrap up, we&#8217;ll look at how _freakin&#8217; useful_ it is to be able to run MicroPython on x86 (and even in a browser!).
+
+There&#8217;s a lot to cover but these features can really help level-up embedded development!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/HFXFLZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/HFXFLZ/feedback/</feedback_url>
+            </event>
+            <event guid='38efd7a6-3625-52b7-a107-008b40da4aa8' id='53937'>
+                <room>Eureka 3</room>
+                <title>Wait, is Wi-Fi just blinking lights?</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-23T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>Wi-Fi, the mysterious computer blabber. Have you ever wondered how are computers yapping away from under our noses? What secrets must they hold? In this talk we will cover the magic of Wi-Fi, how it works in detail and we will even get our own wireless communication system going using Python and micro-controllers.</abstract>
+                <slug>pycon-au-2024-53937-wait-is-wi-fi-just-blinking-lights-</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='30282'>Felipe Tavares</person>
+                </persons>
+                <language>en</language>
+                <description>Wi-Fi systems are complicated beasts with several layers, each solving a little piece of the overall wireless communication puzzle.
+
+At the most basic level, there are radio frequency transmitters and receivers. Transmitters are little lights that can be turned on and off at several different colors and intensities, but with frequencies so low our eyes can&apos;t see. Conversely, receivers are just little 360&#176; cameras, that like our eyes can only see a small spectrum of colors, but again in colors we can&apos;t see.
+
+On top of that, if two computers want to communicate they must plot and agree upon a common scheme for how to blink their own lights, and how to change their colors and intensities so that they know what each other mean when they see specific light patterns. This is not unlike Morse code, but using more ways of conveying information other than just short and long blinks.
+
+Even though that forms the basis of being able to communicate, there are still several other layers on top, since the scheming computers must also agree on things such as to when to turn off their transmitters so their cameras are not blinded by their own lights as they are trying to listen to their peers, how to identify to whom the messages are going if there are multiple peers, how to secretly encode messages such that only peers in the same network can see it, and how to deliver messages from and to the Internet.
+
+Using Python and RP2040 microcontrollers, we can build little lights and cameras and implement a fully working version of a wireless communication system, with the extra benefit we can actually watch the lights and see what it looks like when computers are talking.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/8UXYBS/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/8UXYBS/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    <day index='3' date='2024-11-24' start='2024-11-24T04:00:00+11:00' end='2024-11-25T03:59:00+11:00'>
+        <room name='Goldfields Theatre' guid='ca871299-987f-53fa-80e8-60519b36cb31'>
+            <event guid='a0b3f29c-d088-5f6e-bc5a-d07a454bcf05' id='53638'>
+                <room>Goldfields Theatre</room>
+                <title>Quantifying Nebraska</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T10:35:00+11:00</date>
+                <start>10:35</start>
+                <duration>00:30</duration>
+                <abstract>[In 2020, xkcd published _Dependency_](https://xkcd.com/2347/), which posited that &quot;all modern digital infrastructure&quot; is ultimately transitively dependent on &quot;a project some random person in Nebraska has been thanklessly maintaining since 2003&quot;.
+
+How can we find these projects and ensure that their maintainers get the thanks and &#8212; more importantly &#8212; the resources they need?</abstract>
+                <slug>pycon-au-2024-53638-quantifying-nebraska</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1229'>Adam Harvey</person>
+                </persons>
+                <language>en</language>
+                <description>(Almost) every Python project depends on packages, which depend on packages, which depend on packages, How do we find the ones that might need our help?
+
+Spoiler alert: there&apos;s no perfect quantification. (At least to my knowledge.)
+
+But given that, how can we use tooling designed for supply chain security &#8212; SBOMs, scorecards, code forge metrics &#8212; and use those to identify the packages that we depend upon that may be at risk, that are load bearing for our projects, and that we might be able to help in ways that are more targeted than just throwing money at the problem?
+
+(Although, also, throwing money at problems can be useful. Just saying.)
+
+There&apos;s lots of talk of making supply chains more secure. Let&apos;s make sure we also make them more sustainable as well.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/LYLY7H/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/LYLY7H/feedback/</feedback_url>
+            </event>
+            <event guid='e099eebb-2de3-59d4-8e94-a6ae89562b35' id='53966'>
+                <room>Goldfields Theatre</room>
+                <title>Dependency management: the cause of&#8212;and solution to&#8212;all supply chain problems</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:15:00+11:00</date>
+                <start>11:15</start>
+                <duration>00:30</duration>
+                <abstract>How many dependencies does your software project have? How much confidence do you have in them? We sometimes say in open source there is safety in &#8216;eyes on the code&#8217;, but with supply chain attacks on the rise, who is really watching?
+
+Most software is built with hundreds if not thousands of direct and transitive dependencies, and those dependencies change every day. Our analysis shows that up to 20% of PyPI packages change their dependency graphs multiple times per week. Ensuring that each one of these dependencies is trustworthy is a daunting task.
+
+In this talk, we will share some stats and stories from building deps.dev. We will look at what it means for a project to be healthy, dig into the complexities of dependency resolution algorithms, and recommend tools that can make practical dependency management possible if not easy.</abstract>
+                <slug>pycon-au-2024-53966-dependency-management-the-cause-of-and-solution-to-all-supply-chain-problems</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1773'>Nicky Ringland</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/P7UKEN/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/P7UKEN/feedback/</feedback_url>
+            </event>
+            <event guid='1029021e-8e95-5f41-b44a-2b534091a04e' id='53875'>
+                <room>Goldfields Theatre</room>
+                <title>The perfect setup? Not setup.py! Building packages the right way</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:55:00+11:00</date>
+                <start>11:55</start>
+                <duration>00:30</duration>
+                <abstract>Everyone loves package management! Python&apos;s packaging systems have continued to evolve over the years. Specifications such as environment markers, custom backends, and static build configurations have been introduced. Additionally new package managers like Poetry and Hatch have emerged.
+
+Yet despite the updates, many projects are still living in the 2010s - using a setup.py file to specify the build configuration for their package. setup.py is notoriously difficult to learn and a common vector for launching attacks during install.
+
+This talk will discuss why it&apos;s time to move away from using setup.py and how to do it.
+
+We will see how setup.py is used and abused - from downloading huge datasets (*cough* AI *cough*), modifying the system, and most critically how malicious payloads can be included to execute when setup.py is evaluated. Arbitrary code in setup.py makes security analysis harder and creates more work for PyPI administrators.
+
+The talk will detail the new (as of 7 years ago) methods of describing build configurations in pyproject.toml and setup.cfg, giving examples of how to use these methods. The examples will include how to achieve what once required dynamic code to include data like readme contents, version numbers and requirements. The limits of pyproject.toml and setup.cfg will also be covered.
+
+Finally, the talk will outline how moving away from setup.py improves the Python packaging universe, how it makes life easier for ensuring Python security, and what can be done to drive adoption of pyproject.toml.</abstract>
+                <slug>pycon-au-2024-53875-the-perfect-setup-not-setup-py-building-packages-the-right-way</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47307'>Caleb Brown</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/LALLKX/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/LALLKX/feedback/</feedback_url>
+            </event>
+            <event guid='88d03df2-444f-5acc-928b-af43fea96d4b' id='52055'>
+                <room>Goldfields Theatre</room>
+                <title>Setting Up Your Python Community for Success: Lessons from the Melbourne Python User Group</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>Discover best practices in managing a meetup which fosters a vibrant open-source ecosystem and maintains engaged membership and volunteers from experiences within the Melbourne Python User Group. Learn best practices for organizing successful meetups, hackathons, and collaborative projects that drive community engagement and innovation.</abstract>
+                <slug>pycon-au-2024-52055-setting-up-your-python-community-for-success-lessons-from-the-melbourne-python-user-group</slug>
+                <track>Main Conference</track>
+                <logo>/media/pycon-au-2024/submissions/ZGCQSY/Melbourne_Python_Talk_Cover_Image_RFALNTB.png</logo>
+                <persons>
+                    <person id='23187'>Renaldi Gondosubroto</person>
+                </persons>
+                <language>en</language>
+                <description>The Melbourne Python User Group has always aimed to be a cornerstone of the local Python community, providing a platform for Python enthusiasts to learn, share, and collaborate. In this session, we will delve into the strategies and practices that have contributed to our group&apos;s success, along with successes from other meetups that have been managed in the past which offer valuable insights for anyone looking to build or enhance their own Python community.
+
+We will begin by exploring the foundational principles of community building, emphasizing the importance of inclusivity, diversity, and continuous learning. Attendees will learn how to create an environment that welcomes newcomers and encourages participation from all skill levels, ensuring a rich and supportive community culture.
+
+Next, we will discuss the logistics of organizing meetups and events. This includes selecting engaging topics, securing knowledgeable speakers, and leveraging various formats such as talks, workshops, and coding sprints. We will share our experiences in coordinating these events, highlighting both successes and challenges, and providing practical tips for smooth execution.
+
+One of the key components of a tech community&apos;s vibrancy is the focus on hackathons and collaborative projects. We will detail the process of planning and running hackathons that inspire creativity and innovation, from ideation to execution. Additionally, we will showcase some of the impactful projects that have emerged from these events, illustrating the potential of collaborative efforts to drive the open-source ecosystem forward.
+
+The session will also cover the importance of fostering connections within the community and beyond. We will share strategies for building partnerships with local tech companies, educational institutions, and other user groups, creating a network of support and resources that benefits all members.
+
+By the end of this session, attendees will have a comprehensive understanding of the best practices for building and sustaining a thriving Python community. They will leave with actionable insights and inspiration to apply these principles within their own contexts, whether they are starting a new user group or looking to revitalize an existing one.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/ZGCQSY/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/ZGCQSY/feedback/</feedback_url>
+            </event>
+            <event guid='ffd2fa5c-5608-50d4-8f07-3c4601ce2804' id='53893'>
+                <room>Goldfields Theatre</room>
+                <title>How we used Python to try and save lives</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>Google Crisis Response saved lives and tried to make the world better. And all of it was in Python.</abstract>
+                <slug>pycon-au-2024-53893-how-we-used-python-to-try-and-save-lives</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47318'>Anthony Baxter</person>
+                </persons>
+                <language>en</language>
+                <description>At one point before Google switched to suck, they let a bunch of us try to save the world. And mapvisage, person finder, crisismap? All in Python (ok there was some JavaScript and even Flash involved). Having your Python on Appengine site embedded on the front page of pretty much every news site on earth? Quite a lot to cope with.
+
+After another time I had to stop building a coffee table to run upstairs to task satellites. As you do on a weekend, get home from IKEA, start assembling and go oops need ask people to point their flying space robot cameras at this bit of the world. Normal weekend.
+
+And I will eventually finish my book.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/MVAF7U/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/MVAF7U/feedback/</feedback_url>
+            </event>
+            <event guid='59ed2fff-21b4-597e-b8db-d9f100ddcd3e' id='53344'>
+                <room>Goldfields Theatre</room>
+                <title>Lowering the Gangplank: How Writing Songs Relates to Templating</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>Templating is awesome! It makes automation easier and takes away a lot of the tedious work required to maintain and build new things. Now, what if I told you that the way we utilise templates is somewhat similar to how songs are written? In this talk I will lower the proverbial gangplank from our templating ship as we cross over into the land of song writing and discover how these two concepts are linked.</abstract>
+                <slug>pycon-au-2024-53344-lowering-the-gangplank-how-writing-songs-relates-to-templating</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='27157'>Chelsea Finnie</person>
+                </persons>
+                <language>en</language>
+                <description>This talk will including me singing live on stage and audience participation will be encouraged!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/UKK9K9/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/UKK9K9/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 2' guid='555051c2-6250-55cf-9197-948bf9bfff84'>
+            <event guid='5f6f0612-77f7-518b-ae91-72e5785cc819' id='53107'>
+                <room>Eureka 2</room>
+                <title>Using Multiple Databases in Django Applications</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T10:35:00+11:00</date>
+                <start>10:35</start>
+                <duration>00:30</duration>
+                <abstract>Over six years ago, three engineers from Sydney started working on an insurtech platform with global ambitions. They chose Django, even though two of them had no prior experience with the framework. Nevertheless, the project became a success, affirming that choosing Django was a great technical decision.
+
+This is a real-life story about the challenges the team faced while scaling the project and changing the database architecture, all while maintaining uninterrupted services for millions of customers. We will cover some of the key technical decisions the team made, how Django supported us in migrating from a single database to a multi-database architecture, and examine the architectural benefits of using multiple databases in data-intensive applications.</abstract>
+                <slug>pycon-au-2024-53107-using-multiple-databases-in-django-applications</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='46782'>Artem Kolesnikov</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/8HBU3Z/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/8HBU3Z/feedback/</feedback_url>
+            </event>
+            <event guid='397085e2-fc98-58b3-869e-63babeac4803' id='53924'>
+                <room>Eureka 2</room>
+                <title>How to confirm that the index you added actually improves query performance</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:15:00+11:00</date>
+                <start>11:15</start>
+                <duration>00:30</duration>
+                <abstract>Database indexes allow us to speed up queries by providing a method to quickly look up data. However, do we always check that they actually improve performance? In this talk, I explain how and why an automatically added database index did not get used by the queries we expected. Together we will go through SQL produced from Django ORM, index structures and generating database query plans to unravel what was actually going on behind the scenes in our queries.</abstract>
+                <slug>pycon-au-2024-53924-how-to-confirm-that-the-index-you-added-actually-improves-query-performance</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='46654'>Suzannah Cooper</person>
+                </persons>
+                <language>en</language>
+                <description>Within my current role on the performance team, it is my responsibility to investigate sources of and solutions to poor database performance within our company&apos;s application. Understanding the how and why of database indexes has been an important part of this, however, my knowledge of database indexes is a relatively recently gained experience. In this talk I aim to share what I have learnt along the way as applied to investigating why an index added in Django was not improving the performance of our database query.
+
+&lt;b&gt;Database Indexes&lt;/b&gt;
+Here, I explain what database indexes are and why we use them. I go through the main ways to add database indexes using Django ORM and migrations. Then, I demonstrate query plans and how to generate the query plans for the SQL queries that are created.
+
+&lt;b&gt;Introducing the example&lt;/b&gt;
+The main way I learnt about indexes was via debugging a particular issue.  I introduce an example where we use django orm to search a partial match on a string field. This partial match did not use the pre-existing index that was already in the table. This example is used to contextualise the rest of the talk.
+
+&lt;b&gt;Django ORM to SQL&lt;/b&gt;
+Django ORM can be a convenience for converting models within code into queries, however, sometimes the queries produced can be less intuitive than expected. I demonstrate the SQL queries produced by the example above and demonstrate why this query using &apos;LIKE&apos; did not get any speed-up by using the indexes already available on this table.
+
+&lt;b&gt;Trigram Indexes&lt;/b&gt;
+I introduce trigram indexes and demonstrate the improvements in query cost for the example above we can gain by adding a trigram index instead.
+
+&lt;b&gt;Repeat the process for changing to case-insensitive search&lt;/b&gt;
+As an extension to this, a new feature request required that the search be case insensitive. I reveal the proposed change to the Django ORM query, the generated SQL and demonstrate how a new index is required if this change is made.
+
+Finally, I will summarise what I have learnt within my adventures in Database index analysis and share some useful resources for further learning in the areas of postgres database performance.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/9ZRRJY/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/9ZRRJY/feedback/</feedback_url>
+            </event>
+            <event guid='53bc010b-fe9b-5769-bf28-6ec080d5e35b' id='53799'>
+                <room>Eureka 2</room>
+                <title>Follow the Postgres brick road: a journey of testing against a real database server</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:55:00+11:00</date>
+                <start>11:55</start>
+                <duration>00:30</duration>
+                <abstract>Tests are good. Code that uses a database is good. Testing code that uses a database is great&#8230; But it&apos;s not so easy to do well. Let&apos;s follow our journey through various pitfalls to make testing against a local PostgreSQL instance informative, reliable and fast, so that we have fewer horrible surprises once code gets to production.</abstract>
+                <slug>pycon-au-2024-53799-follow-the-postgres-brick-road-a-journey-of-testing-against-a-real-database-server</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='30433'>Huon Wilson</person>
+                </persons>
+                <language>en</language>
+                <description>We follow the usual approach for building an application: store data in a database. Our method is SQLAlchemy models in our Python code, and migrations to evolve the schema. 
+
+We also have the usual desire for these applications: they should work, and *continue* to work as we make changes. One key method is automated tests.
+
+Managing both of these at once is surprisingly subtle, but it&apos;s also good to solve: no-one likes having behaviour in production be a surprise because a test made incorrect assumptions about how the database behaves.
+
+I&#8217;ll walk us along our database testing trail, stopping in at attractions like (not) using SQLite, ensuring migrations and models match, efficiently instantiating databases with the right schemas, isolated and parallel execution, and even optimising how each individual tests runs.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/UKJB7J/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/UKJB7J/feedback/</feedback_url>
+            </event>
+            <event guid='34ce3d05-e59c-5a96-bd5b-0435c5e743c6' id='51692'>
+                <room>Eureka 2</room>
+                <title>Django, REST and OpenAPI - a gentle introduction</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>Django is an all-parts-included framework that is one of the most popular ways of building a website in Python.  But for many websites that&apos;s not enough - we also need a REST-based API with an OpenAPI specification so that other programs can read and work with our data.  This talk will cover the Python packages that can provide these facilities and how to integrate them into your existing website.</abstract>
+                <slug>pycon-au-2024-51692-django-rest-and-openapi-a-gentle-introduction</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='5481'>Paul Wayper</person>
+                </persons>
+                <language>en</language>
+                <description>This talk will primarily cover two packages:
+- django-rest-framework, or &apos;DRF&apos; for short, for providing a REST API
+- drf-spectacular, for providing an OpenAPI schema for that API
+It will include real world examples for how these things work and attendees can also try out the REST interface and OpenAPI schema the talk is based on.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/C37SMX/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/C37SMX/feedback/</feedback_url>
+            </event>
+            <event guid='bef5ad2f-b979-5863-8dab-c0923a8469b8' id='53985'>
+                <room>Eureka 2</room>
+                <title>Three Django Apps in a Trenchcoat: Writing an event management website with not a lot of time</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>Come and hear how I wrote 3 Django apps in a trenchcoat to run a ~300+ person scout camp, from making event registration a breeze, to conducting everyone&apos;s movements throughout the entire event.</abstract>
+                <slug>pycon-au-2024-53985-three-django-apps-in-a-trenchcoat-writing-an-event-management-website-with-not-a-lot-of-time</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47352'>Matt Cengia</person><person id='47357'>Luke Byrnes</person>
+                </persons>
+                <language>en</language>
+                <description>In the last weekend of April this year, I helped to run Star Trek: Survival (https://startreksurvival.tech), a STEM-focussed, Star Trek-themed scout camp for all ages, 5 to 26 years. This talk will be about the software I wrote, including a registration system, the Star Trek Survival main website, and a system called RadioActiv8, which is used to keep track of where everyone is across the campsite, and send them to activities when there is capacity to do so. All of this was combined into a single project for maximum integration and ease of use.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/S7E8T7/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/S7E8T7/feedback/</feedback_url>
+            </event>
+            <event guid='d34b8cb3-c5ba-5adb-9881-fd32ca17eea5' id='52080'>
+                <room>Eureka 2</room>
+                <title>Space Django: Migrating and Redesigning a Database while Hunting for Satellites.</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>Being a fast-paced startup and developing a completely new product in the Space Industry is very challenging, and moving fast wasn&#8217;t just a requirement but essential. It&apos;s the kind of environment that is hard to think too much ahead, and for that reason, our database was created to address the problems we had at hand. 
+After a while, new products and features were required, and our database couldn&apos;t handle all of them. That&#8217;s when we decided to move our data to a newly designed database instance with proper relationships, able to handle more features, higher workloads and scalable. During the planning phase, several approaches were discussed, such as creating a script to copy the data and some off-the-shelf software that we thought could handle that for us. However, the complexity of implementing those approaches wasn&#8217;t feasible with our deadlines for releasing the new product. So, we decided to copy the data using Django ORM (our product was already using Django), the idea was to avoid the complexity of creating complex SQL Queries to copy data to new tables while keeping the data consistency and integrity.
+In this presentation, we aim to demonstrate how our database was limiting the company&#8217;s scalability and how we fixed those problems by migrating to a new database schema whilst maintaining two database instances, one for internal operations and the other for customer-facing functions. Moreover, we show how we did that using object-oriented programming in combination with Django&#8217;s ORM to migrate our database without the need to handle complex SQL commands to copy data, keep relationships, and create new ones.</abstract>
+                <slug>pycon-au-2024-52080-space-django-migrating-and-redesigning-a-database-while-hunting-for-satellites-</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='45851'>Artur Baruchi</person>
+                </persons>
+                <language>en</language>
+                <description>The presentation has three main goals; (1) show how the database that we had before was limiting the development of new products and, in the medium-term, would be a potential issue to scale; (2) present some of the options we considered and the tradeoffs; (3) the strategy we chose and how we implemented it (main challenges and how the combination of OOP and Django&#8217;s ORM actually speed up not only the process but made it easier).</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/B8RJPR/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/B8RJPR/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        <room name='Eureka 3' guid='b9261db4-c925-5322-b218-e87a4c5e32a3'>
+            <event guid='8b2e6fbd-71c5-592b-a03a-33943c99ef39' id='53965'>
+                <room>Eureka 3</room>
+                <title>Better dataframes</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T10:35:00+11:00</date>
+                <start>10:35</start>
+                <duration>00:30</duration>
+                <abstract>Dataframes are an abstraction that proven extremely useful for data analysis in dynamic languages like S, R, Python, and Julia. The Pandas package has been dominant in Python for around 15 years but its design is now showing its age. There is now a vibrant and messy ecosystem of potential disruptors to the status quo for data analysis tasks in Python.
+
+This talk will help you make sense of the mess. It will give you a comprehensive review of the strengths and weaknesses of the challengers, including Polars, Ibis, Vaex, Modin, Dask, and the PySpark Pandas API (formerly known as Koalas). It will also review efforts to unify the PyData landscape such as Apache Arrow, the dataframe interchange protocol, Narwhals, and the Ibis project from the original author of Pandas, Wes McKinney.</abstract>
+                <slug>pycon-au-2024-53965-better-dataframes</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='47338'>Ed Schofield</person>
+                </persons>
+                <language>en</language>
+                <description>The talk will provide context and guidance for deciding which dataframe library to choose for your next project. It will also explain the best ways to offer cross-dataframe support in your library code.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/QTWAGZ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/QTWAGZ/feedback/</feedback_url>
+            </event>
+            <event guid='d7649f58-04c2-5a1e-aa70-709d9dc18d71' id='53971'>
+                <room>Eureka 3</room>
+                <title>Rethinking Data Catalogs: The Promise and Pitfalls</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:15:00+11:00</date>
+                <start>11:15</start>
+                <duration>00:30</duration>
+                <abstract>The promise of data catalogs, a single source of truth for your organisation&apos;s data, often clashes with the reality of under-utilised features, redundancy across various data catalog solutions across teams, adoption challenges and a lack of clear strategy.
+
+
+This talk will pose some critical questions concerning current approaches of choosing and implementing data catalogs:
+
+
+- Do you actually need a Data catalog?
+- Are data catalogs becoming just glorified registries without much practical use?
+- Why do organisations find themselves juggling multiple catalogs?
+- Is there a synergy between System Catalog &amp; Data Catalog?
+- How do you identify the right fit and what are the considerations?
+- How to measure success for a data catalog?
+
+We&apos;ll dissect the reasons behind these challenges and share our experience of implementing data catalogs across different organisations.</abstract>
+                <slug>pycon-au-2024-53971-rethinking-data-catalogs-the-promise-and-pitfalls</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='30864'>Harmeet Sokhi</person><person id='47342'>Vishal Srivastava</person>
+                </persons>
+                <language>en</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/U3YKPB/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/U3YKPB/feedback/</feedback_url>
+            </event>
+            <event guid='690298d3-d8bd-5e9c-a667-bb3a494b9ece' id='53014'>
+                <room>Eureka 3</room>
+                <title>Adding File System context to pathlib</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T11:55:00+11:00</date>
+                <start>11:55</start>
+                <duration>00:30</duration>
+                <abstract>Adding file system specific information (e.g. how to match case, whether to follow symlinks) to pathlib Path objects, instead of adding such arguments to methods taking Path objects.</abstract>
+                <slug>pycon-au-2024-53014-adding-file-system-context-to-pathlib</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1631'>Clinton Roy</person>
+                </persons>
+                <language>en</language>
+                <description>Pathlib has become the de facto standard to pass file system paths
+around, which is kinda weird as the only real thing it&apos;s going go for
+it is a tiny bit of syntactic sugar.
+
+Paths are a bit of an odd duck, as their literal form is very close to
+their object form.
+
+But there are extra bits of context around a path that matter, such as
+following symlinks, and junctions, how to handle case when matching
+file names.
+
+I became interested in the idea of embedding some of this knowledge
+inside the path object, and seeing if that led to a clean up of the
+API, can we avoid having all these file system, implementation
+specific flags in our API, and instead encapsulate them within our
+path objects?
+
+A lot of work has been done in the last few releases to make pathlib
+extensible, so that paves the way for trying API experiments like
+this.
+
+Often when you get an idea, it rattles around in the brain like a
+buzzing bee. With Python you can throw it up on the &quot;ideas&quot; forum and
+get it shot down quickly.
+
+Or Not..</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/DQPW7L/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/DQPW7L/feedback/</feedback_url>
+            </event>
+            <event guid='9c6f2dd0-28be-572a-a32d-7f12b3dd1374' id='53929'>
+                <room>Eureka 3</room>
+                <title>With Xonsh use Python as your shell: No more switching between shell and Python syntax!</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T13:30:00+11:00</date>
+                <start>13:30</start>
+                <duration>00:30</duration>
+                <abstract>Many of us employ shells (like Bash, Zsh or PowerShell) in the terminal to &#8220;get admin things done&#8221; on our computer. For the actual programming then we switch to Python to &#8220;get real things done&#8221;.
+
+But what if you could use Python in your programs *and* in the terminal? Welcome to Xonsh, a shell and a Python REPL in one. This unique feature helps very much to get all things in the terminal done quicker, safer and to have more fun on the way!</abstract>
+                <slug>pycon-au-2024-53929-with-xonsh-use-python-as-your-shell-no-more-switching-between-shell-and-python-syntax-</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1632'>Leo Broska</person>
+                </persons>
+                <language>en</language>
+                <description>In this talk I cover what Xonsh is, how you can use it to simplify your day-to-day work and how I have employed Xonsh to solve some sysadmin problems in a safer way. This talk is aimed at both Python beginners and experts who spend time in the terminal.
+
+### 1. What is Xonsh
+
+[Xonsh](https://xon.sh) is A shell in Python -- and Python in a shell. All [open source](https://github.com/xonsh/xonsh) and cross platform.
+
+Here I give an overview of the basics: Command execution similar to bash -- All strings are Python strings! -- Access to environment variables &amp; aliases, but in consistent Python syntax -- Loops &amp; control flow as well as know from Python.
+
+### 2. How you can use it
+
+Use case for *beginners*: You are starting out with Python? While writing your code you want to check a construct you are unsure of? Just jump into your shell -- if it is Xonsh! (A hands-on example here.)
+
+Use case for *experts*: You know Python inside out? Don&apos;t switch to another language with weird syntax when doing shell work -- use Xonsh! (A hands-on example here.)
+
+### 3. What I have done with it
+
+I have been working with Xonsh for over 5 years and over this time it has essentially replaced Bash for me. I will give hands-on examples of how it can help you to do everyday tasks.
+
+For example, I use Xonsh to move, copy or delete files selectively and safely: (1) Assign a globbing result to a Python variable, (2) quickly check that the variable really contains the files you wanted to select, (3) then issue `rm @(variable)` and you are sure the correct files are deleted.
+
+I also employ Xonsh for reusable scripts: Need to handle command line parameters? In Xonsh I use simple Python syntax to access and iterate over them -- you can even use high-level Python CLI libraries like Click.
+
+### 4. And more!
+
+Customise Xonsh to your heart&apos;s content (flexible prompt config and many plugins called &quot;Xontribs&quot;) -- Search a powerful history -- Ask a very helpful community and a reasonable big user base.
+
+Finally. we have to talk about some disadvantages Xonsh has: You cannot blindly copy Bash command lines straight from the Internet - And: Xonsh is mature, but not as mature as Bash (rough edges around exception behaviour, etc).
+
+All in all, Xonsh is a lot of fun and gives us Pythonistas less headaches than switching in the terminal always to Bash or Powershell!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/WYZEUQ/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/WYZEUQ/feedback/</feedback_url>
+            </event>
+            <event guid='de672884-042a-55ee-98d7-797d53ccff90' id='53660'>
+                <room>Eureka 3</room>
+                <title>Time and Time Again</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:10:00+11:00</date>
+                <start>14:10</start>
+                <duration>00:30</duration>
+                <abstract>Time is one of the few forces that remain outside of human control. Attempting to understand it is hard enough, but attempting to make computers understand it is a frequent and common source of errors, especially across different cultures and calendars.
+
+This talk will explore a number of different ways of understanding and expressing the flow of time, as well as common and uncommon edge cases to account for when building software.</abstract>
+                <slug>pycon-au-2024-53660-time-and-time-again</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='1552'>Yaakov</person>
+                </persons>
+                <language>en</language>
+                <description>This talk will occur at a specific location - that is usually easy enough to understand - and also at a specific time and date. What that time and date actually means is part of a large and complex system of rules and exceptions and changes, which is also only understood by specific cultures or valid in specific regions.
+
+These systems can appear to be simple, but failing to get it right can result in anything from cultural insensitivity to a full-on systems failure.
+
+Join us for a look at time itself, in which we will:
+- try to understand what this &quot;time&quot; thing actually is
+- explore different ways that time is represented and communicated
+- understand different calendar systems and how they interact
+- learn how to build more resilient and culturally sensitive computer systems</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/NFZKYP/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/NFZKYP/feedback/</feedback_url>
+            </event>
+            <event guid='8967737a-6478-5fe3-90df-ebaba79edffb' id='53093'>
+                <room>Eureka 3</room>
+                <title>Turtles all the way down: Abstractions and when we should use them</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2024-11-24T14:50:00+11:00</date>
+                <start>14:50</start>
+                <duration>00:30</duration>
+                <abstract>Abstractions are one of the greatest tools in all of programming. But sometimes we reach for them too often. How do we know when we should use an abstraction, and when we should just use the ones that already exist.</abstract>
+                <slug>pycon-au-2024-53093-turtles-all-the-way-down-abstractions-and-when-we-should-use-them</slug>
+                <track>Main Conference</track>
+                
+                <persons>
+                    <person id='46764'>Mark Lakewood</person>
+                </persons>
+                <language>en</language>
+                <description>Abstractions are rife in programming. You might even say they are the way we build meaning into our systems. But often when faced with a problem, we reach for a new container to neatly package it up and make it a solution. Sometimes this works, but most of the time, the problem either immediately leaks out, or over time seeps out into nearby containers, contaminating them along the way.
+
+This talk is about describing different types of abstraction (helpful and not-so-helpful), what they look like, and how to design a helpful one. In the end you will have a few new ways to think about when and how to create abstractions and possibly a mental guide to building (or not building) your own.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://pretalx.com/pycon-au-2024/talk/WCUHJ8/</url>
+                <feedback_url>https://pretalx.com/pycon-au-2024/talk/WCUHJ8/feedback/</feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    
+</schedule>

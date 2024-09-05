@@ -1,0 +1,24 @@
+title: Causal Discovery in Python
+start:
+end:
+room:
+track:
+  en: Scientific Python
+abstract: "<p>A review and comparison of software available for causal discovery in
+  Python. Causal discovery means learning \"what causes what\" from your data. The
+  input is a tabular dataset; the output is a causal graphical model (or a set of
+  potential models) over your features. If feature A affects feature B, there should
+  be an arrow A--&gt;B in the causal graphical model. Causal discovery is useful for
+  hypothesis generation, experiment selection, and for testing our assumptions around
+  causation.</p>\n<p>I'll give a brief intro to causal discovery, then review the
+  following packages: py-tetrad, causal-learn, tigramite, causalnex, and cdt (causal
+  discovery toolbox). The packages have some overlap but different emphases: each
+  one implements at least one algorithm not covered by the other packages, making
+  them useful in different situations. If time permits I'll finish with a quick demo,
+  showing each package learning a model from the same dataset.</p>"
+description: ''
+code: ACKK3A
+speakers:
+- Q7H3M8
+cw:
+online: true

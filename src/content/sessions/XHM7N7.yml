@@ -1,0 +1,25 @@
+title: Coding Competition Software VS Murphy's Law
+start:
+end:
+room:
+track:
+  en: DevOops
+abstract: "<p>Imagine agreeing to develop a full stack web app to host a coding competition
+  for thousands of students. Then standing at a podium in front of a large crowd as
+  your app crashes and you discover that you might be in too deep.</p>\n<p>That was
+  my first year of a four year journey of learning to program \"properly\" and build
+  something robust and useful. The full story includes more spectacular fails, hacking
+  and an eventually an app students loved using to program algorithms that do battle
+  in contests based on game theory. The app is built on React / FastAPI and SQLmodel
+  ORM</p>"
+description: "<p>Talk sections:</p>\n<ol>\n<li>Introduction to myself and the Victorian
+  Coding Challenge (5 min)</li>\n<li>Journey through 4 platform iterations from Replit
+  and Google sites to AWS / React and FastAPI (10 min)</li>\n<li>Stories about hacks,
+  crashes and making a contest that is at least somewhat immune to chatGPT plagiarism.
+  (10 min)</li>\n<li>Lessons learned and advice on getting things right with testing
+  and data validation. (5 min)</li>\n</ol>"
+code: XHM7N7
+speakers:
+- VJPZ7L
+cw:
+online: true

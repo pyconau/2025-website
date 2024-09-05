@@ -1,0 +1,22 @@
+title: Using Multiple Databases in Django Applications
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>Over six years ago, three engineers from Sydney started working on an
+  insurtech platform with global ambitions. They chose Django, even though two of
+  them had no prior experience with the framework. Nevertheless, the project became
+  a success, affirming that choosing Django was a great technical decision.</p>\n
+  <p>This is a real-life story about the challenges the team faced while scaling the
+  project and changing the database architecture, all while maintaining uninterrupted
+  services for millions of customers. We will cover some of the key technical decisions
+  the team made, how Django supported us in migrating from a single database to a
+  multi-database architecture, and examine the architectural benefits of using multiple
+  databases in data-intensive applications.</p>"
+description: ''
+code: 8HBU3Z
+speakers:
+- VQZYV9
+cw:
+online: true

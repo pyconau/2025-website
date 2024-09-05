@@ -1,0 +1,38 @@
+title: "A Lazy Person's Guide to Building REST Clients or: How I Learned to Stop Worrying
+  and Love Dunder Overrides"
+start:
+end:
+room:
+track:
+  en: DevOops
+abstract: "<p>Sick of writing lots of dedicated methods to perform the same tasks?
+  Want to write less code? This talk may be for you! </p>\n<p>REST API's are ubiquitious,
+  and a very useful way to send and recieve data from various services. However, building
+  them can often feel repetitive and boring. So, because I was lazy, and sick of doing
+  it I decided to override specific dunder methods to write less boiler plate code,
+  and keep myself interested.</p>\n<p>Was it easier? Probably not. Did it require
+  less work than a normal implementation? Also probably not. Did it make my code more
+  readable and portable? Definitely not. But it was fun, and I learnt how overriding
+  Python's magic methods - often called dunders - could be useful. Let me share the
+  lessons I learnt with you and inspire your own ideas.</p>"
+description: "<p>Early in my Python learning journey I was having to rapidly prototype
+  and implement REST clients for grabbing information. Bored of writing what felt
+  like the same code over and over again, I wanted a more interesting way of solving
+  the problem.</p>\n<p>Curious about pythons error handling, and knowing little about
+  magic methods beyond <code>__init__()</code>, I stumbled across ways to manipulate
+  attribute access and creation. Spending far to much time diving deeper, I learned
+  how to query REST endpoints without having to define a dedicated method for each
+  call.</p>\n<p>Luckily, we can all learn from my abilility to overcomplicate even
+  the simplest tasks. Aimed at users who want to explore class customisation, those
+  who want to add some new problem solving tools to their belt, or anyone wanting
+  to hear how overcomplicating problems can be one of the best learning tools. </p>\n
+  <p>We will touch on:\n- What are magic methods, and how you can start using them.\n
+  - Why reading the Python reference documentation is useful.\n- How to deal with
+  undefined class attributes.\n- Creating and implementing callable objects.</p>\n
+  <p>While the story and example focus on building a REST client, the concepts presented
+  can be applied to many problems.</p>"
+code: 79HGSW
+speakers:
+- NTEJEK
+cw:
+online: true

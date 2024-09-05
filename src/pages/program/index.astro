@@ -1,0 +1,23 @@
+---
+import Base from "../../layouts/Base.astro"
+---
+
+<Base title="Program">
+    <script type="text/javascript" src="/widgets/schedule.js" async></script>
+    <pretalx-schedule
+      event-url="/pycon-au-2024/"
+      version="20240903.1"
+      locale="en"
+      timezone="Australia/Melbourne"
+      style="--pretalx-clr-primary: #00B159"></pretalx-schedule>
+    <noscript>
+      <div class="alert alert-info m-4">
+        <div></div>
+        <div>
+          To see our schedule, please either enable JavaScript or go <a
+            href="/pycon-au-2024/schedule/nojs">here</a
+          > for our NoJS schedule.
+        </div>
+      </div>
+    </noscript>
+</Base>

@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro"
 import logoReversed from "../imgs/Logo_Reversed.svg"
 import Navigation from "../components/Navigation.astro"
+import Button from "../components/Button.astro"
 import MailingListSignup from "../components/MailingListSignup.astro"
 import NoOrphanText from "../components/NoOrphanText.astro"
 ---
@@ -31,7 +32,7 @@ import NoOrphanText from "../components/NoOrphanText.astro"
     <div class="rotated">
       <article>
         <h1>
-          <NoOrphanText>Our Call for Proposals is now live!</NoOrphanText>
+          <NoOrphanText>Sponsor PyCon AU today!</NoOrphanText>
         </h1>
       </article>
       <Navigation logo={false} />
@@ -44,14 +45,19 @@ import NoOrphanText from "../components/NoOrphanText.astro"
     <p>
       More details will be announced soon, so stay tuned!
     </p>
-    <h2>Want to present at our event?</h2>
+    <h2>Call For Proposals now closed!</h2>
     <p>
-      Our call for proposals is open until Sunday the 21st of July, 2024. See our <a href="/program">program</a> page for full details.
+    Thank you to everyone who submitted a talk during the call for proposals. CFP closed 21 July 2024. We are currently reviewing the submissions and will be in touch with everyone soon.
     </p>
     <h2>Want to sponsor our event?</h2>
     <p>
-      We are always looking for <a href="/sponsor/#opportunities">sponsors</a>
-       to help us make the conference accessible and affordable.
+    <img src="/pyconau-sponsor-image-banner.jpeg" alt="Photo of platinum sponsors' logos advertised at PyCon AU 2023" style="border-radius: 0.5rem;"/>
+      Sponsors are critical to the success of PyCon AU. We're always looking to connect with sponsors and have a range of packages and benefits to suit organisations of all shapes and sizes! To learn more about how sponsors can support the conference, check out our <a href="/sponsor">sponsorships page</a>.
+    <center>
+      <Button type="chonk" block href="/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20-%20July%20Update.pdf">
+        Download the Sponsorship Prospectus
+      </Button>
+    </center>    
     </p>
     <p>
       To find out more as it happens, you can follow us on <a

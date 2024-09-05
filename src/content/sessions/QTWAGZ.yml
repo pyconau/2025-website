@@ -1,0 +1,24 @@
+title: Better dataframes
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: "<p>Dataframes are an abstraction that proven extremely useful for data
+  analysis in dynamic languages like S, R, Python, and Julia. The Pandas package has
+  been dominant in Python for around 15 years but its design is now showing its age.
+  There is now a vibrant and messy ecosystem of potential disruptors to the status
+  quo for data analysis tasks in Python.</p>\n<p>This talk will help you make sense
+  of the mess. It will give you a comprehensive review of the strengths and weaknesses
+  of the challengers, including Polars, Ibis, Vaex, Modin, Dask, and the PySpark Pandas
+  API (formerly known as Koalas). It will also review efforts to unify the PyData
+  landscape such as Apache Arrow, the dataframe interchange protocol, Narwhals, and
+  the Ibis project from the original author of Pandas, Wes McKinney.</p>"
+description: <p>The talk will provide context and guidance for deciding which dataframe
+  library to choose for your next project. It will also explain the best ways to offer
+  cross-dataframe support in your library code.</p>
+code: QTWAGZ
+speakers:
+- 3WXCVF
+cw:
+online: true

@@ -1,0 +1,32 @@
+title: 'Embeddings: How Computers Learned to Read'
+start:
+end:
+room:
+track:
+  en: Main Conference
+abstract: <p>As large language models take over the world, we’re now working alongside
+  machines that can read, write and converse – coding with CoPilot, chatting with
+  ChatGPT and drawing with DALL-E. But how do machines, which fundamentally operate
+  on binary code, achieve such remarkable feats? The answer lies in embeddings. Embeddings
+  allow us to represent complex data - whether it's text, images, or even abstract
+  concepts - as dense vectors of numbers. In this presentation, we'll demystify embeddings
+  and give you a practical and intuitive understanding of how they work.</p>
+description: "<p>Artificial Intelligence, Large Language Models, and Machine Learning
+  have revolutionized our ability to automate complex tasks that once required significant
+  human time and effort. But how do machines, which fundamentally operate on binary
+  code, achieve such remarkable feats? The answer lies in embeddings - a powerful
+  concept at the heart of modern AI. Embeddings are the bridge between human-understandable
+  information and the numerical language of computers. They allow us to represent
+  complex data - whether it's text, images, or even abstract concepts - as dense vectors
+  of numbers. In this presentation, we'll demystify embeddings and give you a practical
+  and intuitive understanding of how they work.</p>\n<p>We'll dive into:&lt;br /&gt;\n
+  1. What are embeddings and how they enable machines to process and understand human
+  language\n2. How you can create your own embeddings or utilise existing embedding
+  models to encode language in Python\n3. How embeddings underpin LLMs </p>\n<p>By
+  the end, you'll have a solid grasp of this fundamental AI concept and be equipped
+  to start experimenting with embeddings in your own projects.</p>"
+code: Q78MDT
+speakers:
+- 7D78ZU
+cw:
+online: true
