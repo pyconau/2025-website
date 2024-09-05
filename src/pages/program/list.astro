@@ -1,0 +1,39 @@
+---
+import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
+import ProseList from "../../components/ProseList.astro"
+import Base from "../../layouts/Base.astro"
+import { CollectionEntry, getCollection } from "astro:content"
+
+let sessions = (await getCollection("sessions")).filter(
+  (session) => session.data.type == "talk",
+)
+let speakers = new Map<string, CollectionEntry<"people">>(
+  (await getCollection("people")).map((entry) => [entry.id, entry]),
+)
+---
+
+<Base title="Program">
+  <ProgramSwitcher current="list" />
+  <main>
+    <h1>All Sessions</h1>
+    <ul>
+      {
+        sessions.map((session) => (
+          <li>
+            <a href={`/program/${session.id}`}>{session.data.title}</a>
+            {session.data.speakers.length ? (
+              <>
+                by
+                <ProseList
+                  items={session.data.speakers.map(
+                    (id) => speakers.get(id)?.data.name,
+                  )}
+                />
+              </>
+            ) : null}
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Base>
