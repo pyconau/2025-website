@@ -5,6 +5,7 @@ import Button from "../../components/Button.astro"
 import { getCollection, CollectionEntry, getEntry } from "astro:content"
 import { DateTime } from "luxon"
 import { HALL_NAMES } from "../../lib"
+import { TICKETS_AVAILABLE } from "../../main_config"
 
 export async function getStaticPaths() {
   const pages = await getCollection("sessions")
@@ -119,10 +120,18 @@ const track = entry.data.track
       )
     }
     <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
-    <div class="cta">
-      <p>See this talk and many more by getting your ticket to PyCon AU now!</p>
-      <Button block href="/attend">I want a ticket!</Button>
-    </div>
+    {
+      TICKETS_AVAILABLE ? (
+        <div class="cta">
+          <p>
+            See this talk and many more by getting your ticket to PyCon AU now!
+          </p>
+          <Button block href="/attend">
+            I want a ticket!
+          </Button>
+        </div>
+      ) : null
+    }
     <Fragment set:html={entry.data.description} />
     {speakers.map((speaker) => <Profile person={speaker} bio />)}
   </main>
