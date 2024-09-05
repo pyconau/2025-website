@@ -1,10 +1,9 @@
 title: 'Three Django Apps in a Trenchcoat: Writing an event management website with
   not a lot of time'
-start:
-end:
-room:
+start: 2024-11-24 14:10:00+11:00
+end: 2024-11-24 14:40:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: <p>Come and hear how I wrote 3 Django apps in a trenchcoat to run a ~300+
   person scout camp, from making event registration a breeze, to conducting everyone's
   movements throughout the entire event.</p>

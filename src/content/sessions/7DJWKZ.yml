@@ -1,10 +1,9 @@
 title: 'From Keyword Chaos to Clarity: Conquering a Complex Systematic Review with
   Python'
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 13:50:00+11:00
+end: 2024-11-22 14:20:00+11:00
+room: eureka2
+track: scientific
 abstract: <p>How can you find relevant needles in a haystack of 25,000 academic abstracts
   when keyword searching is useless? I explore how I used Python to automate my way
   out of systematic review hell.</p>

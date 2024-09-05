@@ -1,9 +1,8 @@
 title: 'Notes on Over-Engineering: A Project Post-Mortem'
-start:
-end:
-room:
-track:
-  en: DevOops
+start: 2024-11-22 12:20:00+11:00
+end: 2024-11-22 12:50:00+11:00
+room: goldfields
+track: devoops
 abstract: <p>Join me for a retrospective on a reusable Django app for providing shared
   database multi-tenancy, complete with automatic tenant-specific queryset filtering,
   automatic tenant selection middleware, REST framework support, and comprehensive

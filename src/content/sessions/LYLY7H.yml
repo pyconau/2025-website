@@ -1,9 +1,8 @@
 title: Quantifying Nebraska
-start:
-end:
-room:
+start: 2024-11-24 10:35:00+11:00
+end: 2024-11-24 11:05:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: "<p><a href=\"https://xkcd.com/2347/\">In 2020, xkcd published <em>Dependency</em></a>,
   which posited that \"all modern digital infrastructure\" is ultimately transitively
   dependent on \"a project some random person in Nebraska has been thanklessly maintaining

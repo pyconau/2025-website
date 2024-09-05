@@ -1,9 +1,8 @@
 title: Explore, annotate, and analyse multidimensional image data with napari
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 12:20:00+11:00
+end: 2024-11-22 12:50:00+11:00
+room: eureka2
+track: scientific
 abstract: '<p>napari is an n-dimensional image viewer for Python. If you’ve ever tried
   <code>plt.imshow(arr)</code> and made Matplotlib unhappy because <code>arr</code>
   has more than two dimensions, then napari might be for you! napari will gladly display

@@ -1,9 +1,8 @@
 title: How to confirm that the index you added actually improves query performance
-start:
-end:
-room:
+start: 2024-11-24 11:15:00+11:00
+end: 2024-11-24 11:45:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: <p>Database indexes allow us to speed up queries by providing a method to
   quickly look up data. However, do we always check that they actually improve performance?
   In this talk, I explain how and why an automatically added database index did not

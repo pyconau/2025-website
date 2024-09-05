@@ -1,9 +1,8 @@
 title: Enhancing Programming Ability with Playful Learning and Karel
-start:
-end:
-room:
-track:
-  en: Education
+start: 2024-11-22 12:20:00+11:00
+end: 2024-11-22 12:50:00+11:00
+room: eureka3
+track: education
 abstract: <p>Beginner programmers often struggle to understand and trace program execution,
   which is worsened by underdeveloped debugging and testing skills. Beginners may
   also lack confidence or are easily demotivated, which can hinder learning. To assist

@@ -1,10 +1,6 @@
-import os
-import os.path
 import pathlib
-from datetime import timedelta
 from io import BytesIO
 from os import environ
-from pprint import pprint
 
 import bleach
 import dateutil.parser
@@ -15,8 +11,21 @@ from PIL import Image
 from ruamel.yaml import YAML
 
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
-ACST = dateutil.tz.gettz("Australia/Adelaide")
-AEST = dateutil.tz.gettz("Australia/Melbourne")
+
+# Per-year configuration
+EVENT_TIMEZONE = dateutil.tz.gettz("Australia/Melbourne")
+ROOMS = {
+    "Goldfields Theatre": "goldfields",
+    "Eureka 2": "eureka2",
+    "Eureka 3": "eureka3",
+}
+TRACKS = {
+    "DevOops": "devoops",
+    "Education": "education",
+    "Scientific Python": "scientific",
+    "Main Conference": None,
+}
+
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
 PEOPLE_DIR = CONTENT_DIR / "people"
@@ -68,19 +77,6 @@ def parse_markdown(text):
         ),
     )
 
-
-rooms = {
-    "Goldfields Theatre": "a",
-    "Eureka 2": "b",
-    "Eureka 3": "c",
-}
-
-tracks = {
-    "DevOops": "devoops",
-    "Education": "education",
-    "Scientific Python": "scientific",
-    "Main Conference": None,
-}
 
 answers = {
     "Content Warning": 3747,
@@ -136,62 +132,71 @@ for session in paginate(
 
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
+    if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
+        start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(
+            EVENT_TIMEZONE
+        )
+        end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(
+            EVENT_TIMEZONE
+        )
+    else:
+        start = None
+        end = None
+    # type_answer_id = format_answer[next(
+    #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
+    #    )]
+    cw = next(
+        (
+            x["answer"]
+            for x in session["answers"]
+            if x["question"]["id"] == answers["Content Warning"]
+        ),
+        None,
+    )
+    online = (
+        next(
+            (
+                x["answer"]
+                for x in session["answers"]
+                if x["question"]["id"] == answers["Online"]
+            ),
+            None,
+        )
+        != "In person in Adelaide"
+    )
+    twitter = next(
+        (
+            x["answer"]
+            for x in session["answers"]
+            if x["question"]["id"] == answers["Twitter"]
+        ),
+        None,
+    )
+    fedi = next(
+        (
+            x["answer"]
+            for x in session["answers"]
+            if x["question"]["id"] == answers["Fedi"]
+        ),
+        None,
+    )
+    track = session["track"]
+    if track is None:
+        print(f"!!! {session['code']} has no track assigned, skipping")
+        continue
+    elif "(waitlist)" in track["en"]:
+        print(f"{session['code']} is waitlisted, skipping")
+        continue
+    else:
+        track = TRACKS[track["en"]]
+
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
-        if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
-            start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(AEST)
-            end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(AEST)
-        else:
-            start = None
-            end = None
-        # type_answer_id = format_answer[next(
-        #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
-        #    )]
-        cw = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Content Warning"]
-            ),
-            None,
-        )
-        online = (
-            next(
-                (
-                    x["answer"]
-                    for x in session["answers"]
-                    if x["question"]["id"] == answers["Online"]
-                ),
-                None,
-            )
-            != "In person in Adelaide"
-        )
-        twitter = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Twitter"]
-            ),
-            None,
-        )
-        fedi = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Fedi"]
-            ),
-            None,
-        )
-        track = session["track"]
-        # if track is not None:
-        #     track = tracks[track["en"]]
-        # else:
-        #     print(f"!!! {session['code']} has no track assigned")
         yaml.dump(
             {
                 "title": session["title"],
                 "start": start,
                 "end": end,
-                "room": rooms[session["slot"]["room"]["en"]]
+                "room": ROOMS[session["slot"]["room"]["en"]]
                 if session["slot"] and session["slot"]["room"]
                 else None,
                 "track": track,

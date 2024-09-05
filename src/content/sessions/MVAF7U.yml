@@ -1,9 +1,8 @@
 title: How we used Python to try and save lives
-start:
-end:
-room:
+start: 2024-11-24 14:10:00+11:00
+end: 2024-11-24 14:40:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: <p>Google Crisis Response saved lives and tried to make the world better.
   And all of it was in Python.</p>
 description: "<p>At one point before Google switched to suck, they let a bunch of

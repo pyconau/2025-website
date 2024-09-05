@@ -1,5 +1,4 @@
 import { z, defineCollection } from "astro:content"
-import { DateTime } from "luxon"
 
 const sponsors = defineCollection({
   schema: z.object({
@@ -24,11 +23,14 @@ const sessions = defineCollection({
     code: z.string(),
     speakers: z.array(z.string()),
     cw: z.string().nullable(),
-    youtube_slug: z.string().nullable(),
+    youtube_slug: z.string().nullable().optional().default(null),
     start: z.date().nullable(),
     end: z.date().nullable(),
-    room: z.enum(["a", "b", "c", "e"]).nullable(),
-    type: z.enum(["talk", "stall", "open-close", "special", "keynote"]),
+    room: z.enum(["goldfields", "eureka2", "eureka3"]).nullable(),
+    type: z
+      .enum(["talk", "stall", "open-close", "special", "keynote"])
+      .optional()
+      .default("talk"),
     online: z.boolean(),
   }),
   type: "data",
@@ -49,6 +51,6 @@ export const collections = {
   sponsors,
   pages,
   tracks,
-  //sessions,
-  //people,
+  sessions,
+  people,
 }
