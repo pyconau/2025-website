@@ -1,14 +1,11 @@
 ---
-import ProgramSwitcher from "../components/ProgramSwitcher.astro"
 import Base from "../layouts/Base.astro"
-import mapImg from "../imgs/venue-map.png"
 ---
 
 <Base title="Program">
-  <ProgramSwitcher current="sprints" />
   <main>
     <h1>Development Sprints</h1>
-		<h3>Riverbank rooms 2 & 3 - 9am-5pm Mon/Tue</h3>
+		<h3>Location to be announced - 9am-5pm Mon/Tue</h3>
     <p>
       Python wouldn’t have gotten to where it is without a welcoming community
       of developers building cool things together. The development sprints are
@@ -23,11 +20,5 @@ import mapImg from "../imgs/venue-map.png"
       provide tables, chairs, wifi, power and a community of supportive
       developers.
     </p>
-    <h2>Monday: DjangoGirls Adelaide</h2>
-    <p>
-      DjangoGirls will be running in Adelaide as part of PyCon AU. Find out more
-      on the <a href="/about/djangogirls/">DjangoGirls page</a>.
-    </p>
-		<img src={mapImg} alt="Venue map with directions to Riverbank rooms">
   </main>
 </Base>
