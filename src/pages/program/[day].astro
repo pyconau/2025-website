@@ -5,6 +5,8 @@ import { DateTime, Duration } from "luxon"
 import ProseList from "../../components/ProseList.astro"
 import Base from "../../layouts/Base.astro"
 import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
+import { CONFERENCE_TZ, ROOM_SLUGS, RoomSlug, SPECIALIST_TRACKS } from "../../main_config"
+import { ROOMS } from "../../main_config"
 
 export async function getStaticPaths() {
   return ["friday", "saturday", "sunday"].map((day) => ({
@@ -17,9 +19,9 @@ export type Props = {
 }
 const { day } = Astro.props as Props
 const datestamp = {
-  friday: DateTime.fromISO("2024-11-22", { zone: "Australia/Melbourne" }),
-  saturday: DateTime.fromISO("2024-11-23", { zone: "Australia/Melbourne" }),
-  sunday: DateTime.fromISO("2024-11-24", { zone: "Australia/Melbourne" }),
+  friday: DateTime.fromISO("2024-11-22", { zone: CONFERENCE_TZ }),
+  saturday: DateTime.fromISO("2024-11-23", { zone: CONFERENCE_TZ }),
+  sunday: DateTime.fromISO("2024-11-24", { zone: CONFERENCE_TZ }),
 }[day]
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
@@ -27,8 +29,8 @@ const sessions = (await getCollection("sessions"))
     ...x,
     data: {
       ...x.data,
-      start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Melbourne" }),
-      end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Melbourne" }),
+      start: DateTime.fromJSDate(x.data.start, { zone: CONFERENCE_TZ }),
+      end: DateTime.fromJSDate(x.data.end, { zone: CONFERENCE_TZ }),
     },
   }))
   .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
@@ -44,13 +46,14 @@ const [dayStart, dayEnd] = sessions.reduce<[DateTime, DateTime]>(
 function idx(dt: DateTime): number {
   return Math.floor(dt.toUnixInteger() / (5 * 60))
 }
-const roomMap = { goldfields: 1, eureka2: 2, eureka3: 3 }
+const roomMap = Object.fromEntries(ROOM_SLUGS.map((slug, i) => [slug, i + 1]))
 const speakerNameMap = new Map(
   (await getCollection("people")).map((person) => [
     person.id,
     person.data.name,
   ]),
 )
+const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.room, track])) as {[k in RoomSlug]: (typeof SPECIALIST_TRACKS)[number] & {room: k}}
 ---
 
 <Base>
@@ -307,18 +310,14 @@ const speakerNameMap = new Map(
       data-start={dayStart.toISO()}
       data-end={dayEnd.toISO()}
     >
-      <s-track style="--track: 1;">
-        Goldfields Theatre
-        {day === "friday" ? <a href="/data/">All Things Data</a> : null}
-      </s-track>
-      <s-track style="--track: 2;">
-        Eureka 2
-        {day === "friday" ? <a href="/scientific/">Scientific Python</a> : null}
-      </s-track>
-      <s-track style="--track: 3;">
-        Eureka 3
-        {day === "friday" ? <a href="/education/">Education</a> : null}
-      </s-track>
+      {
+        ROOMS.map(({ name, slug }, i) => (
+          <s-track style={`--track: ${i + 1};`}>
+            {name}
+            {day === "friday" ? <a href={`/${tracksByRoom[slug].slug}/`}>{tracksByRoom[slug].name}</a> : null}
+          </s-track>
+        ))
+      }
       {
         sessions.map((session) => (
           <a

@@ -1,4 +1,5 @@
 import { z, defineCollection } from "astro:content"
+import { ROOM_SLUGS, SPECIALIST_TRACK_SLUGS } from "../main_config"
 
 const sponsors = defineCollection({
   schema: z.object({
@@ -19,14 +20,14 @@ const sessions = defineCollection({
     title: z.string(),
     abstract: z.string(),
     description: z.string(),
-    track: z.enum(["devoops", "education", "scientific"]).nullable(),
+    track: z.enum(SPECIALIST_TRACK_SLUGS).nullable(),
     code: z.string(),
     speakers: z.array(z.string()),
     cw: z.string().nullable(),
     youtube_slug: z.string().nullable().optional().default(null),
     start: z.date().nullable(),
     end: z.date().nullable(),
-    room: z.enum(["goldfields", "eureka2", "eureka3"]).nullable(),
+    room: z.enum(ROOM_SLUGS).nullable(),
     type: z
       .enum(["talk", "stall", "open-close", "special", "keynote"])
       .optional()
