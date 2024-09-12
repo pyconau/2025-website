@@ -35,7 +35,17 @@ const sessions = (await getCollection("sessions"))
   }))
   .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
 
-const [dayStart, dayEnd] = sessions.reduce<[DateTime, DateTime]>(
+const breaks = (await getCollection('breaks'))  .map((x) => ({
+    ...x,
+    data: {
+      ...x.data,
+      start: DateTime.fromJSDate(x.data.start, { zone: CONFERENCE_TZ }),
+      end: DateTime.fromJSDate(x.data.end, { zone: CONFERENCE_TZ }),
+    },
+  }))
+  .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
+
+const [dayStart, dayEnd] = [...sessions, ...breaks].reduce<[DateTime, DateTime]>(
   ([dayStart, dayEnd], session) => [
     DateTime.min(dayStart, session.data.start).startOf("hour"),
     DateTime.max(dayEnd, session.data.end),
@@ -103,7 +113,7 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
       }
     }
 
-    s-schedule a.session {
+    s-schedule .session {
       z-index: 1;
       color: inherit;
       text-decoration: none;
@@ -294,7 +304,7 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
   }
   <ProgramSwitcher current={day} />
   <p class="tz">
-    All times shown in ACST (UTC+09:30). <a
+    All times shown in AEDT (UTC+11). <a
       href="https://pretalx.com/pyconau-2023/schedule/export/schedule.ics"
       >iCal</a
     >, <a href="https://pretalx.com/pyconau-2023/schedule/export/schedule.json"
@@ -343,6 +353,14 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
               </div>
             ) : null}
           </a>
+        ))}{
+        breaks.map((break_) => (
+        <div
+            class="session"
+            style={`--start: ${idx(break_.data.start)}; --end: ${idx(
+              break_.data.end,
+            )}; --track: ${roomMap[break_.data.room]};`}
+          >{break_.data.description}</div>
         ))
       }
       {

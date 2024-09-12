@@ -36,6 +36,14 @@ const sessions = defineCollection({
   }),
   type: "data",
 })
+const breaks = defineCollection({
+  schema: z.object({
+    room: z.enum(ROOM_SLUGS),
+    start: z.date(),
+    end: z.date(),
+    description: z.string(),
+  }),
+})
 const people = defineCollection({
   schema: z.object({
     name: z.string(),
@@ -53,5 +61,6 @@ export const collections = {
   pages,
   tracks,
   sessions,
+  breaks,
   people,
 }

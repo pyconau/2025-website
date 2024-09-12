@@ -28,6 +28,7 @@ TRACKS = {
 
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
+BREAKS_DIR = CONTENT_DIR / "breaks"
 PEOPLE_DIR = CONTENT_DIR / "people"
 PUBLIC_DIR = pathlib.Path("../public")
 PEOPLE_IMGS_DIR = PUBLIC_DIR / "people"
@@ -212,6 +213,38 @@ for session in paginate(
             },
             f,
         )
+
+BREAKS_DIR.mkdir(exist_ok=True)
+for entry in BREAKS_DIR.glob("*"):
+    entry.unlink()
+
+# If a schedule is published, collect breaks
+schedule = requests.get(
+    "https://pretalx.com/api/events/pycon-au-2024/schedules/latest/",
+    headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+)
+if schedule.ok:
+    for break_ in schedule.json()["breaks"]:
+        # We only want to copy across breaks that aren't actually breaks
+        description = break_["description"]["en"]
+        if "break" in description.lower() or "lunch" in description.lower():
+            continue
+
+        with (
+            BREAKS_DIR / f"{break_['room_id']}-{break_['start'].replace(':','-')}.yml"
+        ).open("w") as f:
+            start = dateutil.parser.isoparse(break_["start"]).astimezone(EVENT_TIMEZONE)
+            end = dateutil.parser.isoparse(break_["end"]).astimezone(EVENT_TIMEZONE)
+            yaml.dump(
+                {
+                    "room": ROOMS[break_["room"]["en"]],
+                    "start": start,
+                    "end": end,
+                    "description": break_["description"]["en"],
+                },
+                f,
+            )
+
 
 with (CONTENT_DIR / "_people_etags.yml").open("r") as f:
     etags = yaml.load(f)
