@@ -6,21 +6,27 @@ export type Props = {
 }
 const { current } = Astro.props as Props
 ---
-
+<style lang="scss">
+  @media only screen and (max-width: 600px){
+    .long-name {
+      display: none;
+    }
+  }
+</style>
 <Switcher>
   <SwitcherItem href="/program/list/" selected={current === "list"}>
     All
   </SwitcherItem>
   <SwitcherItem href="/program/friday/" selected={current === "friday"}>
-    Friday
+    Fri<span class='long-name'>day</span>
   </SwitcherItem>
   <SwitcherItem href="/program/saturday/" selected={current === "saturday"}>
-    Saturday
+    Sat<span class="long-name">urday</span>
   </SwitcherItem>
   <SwitcherItem href="/program/sunday/" selected={current === "sunday"}>
-    Sunday
+    Sun<span class='long-name'>day</span>
   </SwitcherItem>
   <SwitcherItem href="/program/sprints/" selected={current === "sprints"}>
-    Monday & Tuesday
+    Mon<span class="long-name">day</span> & Tue<span class="long-name">sday</span>
   </SwitcherItem>
 </Switcher>
