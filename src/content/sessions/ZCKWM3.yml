@@ -1,9 +1,8 @@
 title: Why UUIDs are Secretly Incredibly Fascinating
-start:
-end:
-room:
-track:
-  en: DevOops
+start: 2024-11-22 09:20:00+11:00
+end: 2024-11-22 09:50:00+11:00
+room: goldfields
+track: devoops
 abstract: "<p>What even is '06462f89-b4ef-7f7d-8000-edda1bba5155' and why should you
   actually care?</p>\n<p>(you should, but \"why\"?)</p>"
 description: "<p>UUIDs are used all over the place, but there are a ton of variants.

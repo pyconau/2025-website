@@ -1,9 +1,8 @@
 title: What Python Can Learn From Other Languages
-start:
-end:
-room:
+start: 2024-11-23 14:10:00+11:00
+end: 2024-11-23 14:40:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: <p>Python is great! It's been a mainstay of web development and systems
   programming for decades and is on the cutting edge of many fields like scientific
   computing. But there is always more to improve, both in the language itself and

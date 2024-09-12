@@ -1,5 +1,5 @@
 import { z, defineCollection } from "astro:content"
-import { DateTime } from "luxon"
+import { ROOM_SLUGS, SPECIALIST_TRACK_SLUGS } from "../main_config"
 
 const sponsors = defineCollection({
   schema: z.object({
@@ -20,16 +20,28 @@ const sessions = defineCollection({
     title: z.string(),
     abstract: z.string(),
     description: z.string(),
-    track: z.enum(["devoops", "education", "scientific"]).nullable(),
+    track: z.enum(SPECIALIST_TRACK_SLUGS).nullable(),
     code: z.string(),
     speakers: z.array(z.string()),
     cw: z.string().nullable(),
-    youtube_slug: z.string().nullable(),
+    youtube_slug: z.string().nullable().optional().default(null),
     start: z.date().nullable(),
     end: z.date().nullable(),
-    room: z.enum(["a", "b", "c", "e"]).nullable(),
-    type: z.enum(["talk", "stall", "open-close", "special", "keynote"]),
+    room: z.enum(ROOM_SLUGS).nullable(),
+    type: z
+      .enum(["talk", "stall", "open-close", "special", "keynote"])
+      .optional()
+      .default("talk"),
     online: z.boolean(),
+  }),
+  type: "data",
+})
+const breaks = defineCollection({
+  schema: z.object({
+    room: z.enum(ROOM_SLUGS),
+    start: z.date(),
+    end: z.date(),
+    description: z.string(),
   }),
   type: "data",
 })
@@ -49,6 +61,7 @@ export const collections = {
   sponsors,
   pages,
   tracks,
-  //sessions,
-  //people,
+  sessions,
+  breaks,
+  people,
 }

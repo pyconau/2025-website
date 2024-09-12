@@ -1,10 +1,9 @@
 title: "A Lazy Person's Guide to Building REST Clients or: How I Learned to Stop Worrying
   and Love Dunder Overrides"
-start:
-end:
-room:
-track:
-  en: DevOops
+start: 2024-11-22 10:00:00+11:00
+end: 2024-11-22 10:30:00+11:00
+room: goldfields
+track: devoops
 abstract: "<p>Sick of writing lots of dedicated methods to perform the same tasks?
   Want to write less code? This talk may be for you! </p>\n<p>REST API's are ubiquitious,
   and a very useful way to send and recieve data from various services. However, building

@@ -1,9 +1,8 @@
 title: 'Serpents and Ducks: wrangling data with Python and DuckDB'
-start:
-end:
-room:
+start: 2024-11-23 11:20:00+11:00
+end: 2024-11-23 11:50:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: "<p>Got a billion rows of data in a weird file format? Wishing you could
   wrangle a dataframe from a geospatial dataset? A bit lost interacting with a remote
   API? Let’s wrangle some data with Python and DuckDB. </p>\n<p>DuckDB executes analytical

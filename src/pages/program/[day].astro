@@ -1,0 +1,396 @@
+---
+import { getCollection } from "astro:content"
+import { isScheduled, timeSlices } from "../../lib"
+import { DateTime, Duration } from "luxon"
+import ProseList from "../../components/ProseList.astro"
+import Base from "../../layouts/Base.astro"
+import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
+import { CONFERENCE_TZ, ROOM_SLUGS, RoomSlug, SPECIALIST_TRACKS } from "../../main_config"
+import { ROOMS } from "../../main_config"
+
+export async function getStaticPaths() {
+  return ["friday", "saturday", "sunday"].map((day) => ({
+    params: { day },
+    props: { day },
+  }))
+}
+export type Props = {
+  day: "friday" | "saturday" | "sunday"
+}
+const { day } = Astro.props as Props
+const datestamp = {
+  friday: DateTime.fromISO("2024-11-22", { zone: CONFERENCE_TZ }),
+  saturday: DateTime.fromISO("2024-11-23", { zone: CONFERENCE_TZ }),
+  sunday: DateTime.fromISO("2024-11-24", { zone: CONFERENCE_TZ }),
+}[day]
+const sessions = (await getCollection("sessions"))
+  .filter(isScheduled)
+  .map((x) => ({
+    ...x,
+    data: {
+      ...x.data,
+      start: DateTime.fromJSDate(x.data.start, { zone: CONFERENCE_TZ }),
+      end: DateTime.fromJSDate(x.data.end, { zone: CONFERENCE_TZ }),
+    },
+  }))
+  .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
+
+const breaks = (await getCollection('breaks'))  .map((x) => ({
+    ...x,
+    data: {
+      ...x.data,
+      start: DateTime.fromJSDate(x.data.start, { zone: CONFERENCE_TZ }),
+      end: DateTime.fromJSDate(x.data.end, { zone: CONFERENCE_TZ }),
+    },
+  }))
+  .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
+
+const [dayStart, dayEnd] = [...sessions, ...breaks].reduce<[DateTime, DateTime]>(
+  ([dayStart, dayEnd], session) => [
+    DateTime.min(dayStart, session.data.start).startOf("hour"),
+    DateTime.max(dayEnd, session.data.end),
+  ],
+  [datestamp.set({ hour: 12 }), datestamp.set({ hour: 12 })],
+)
+
+function idx(dt: DateTime): number {
+  return Math.floor(dt.toUnixInteger() / (5 * 60))
+}
+const roomMap = Object.fromEntries(ROOM_SLUGS.map((slug, i) => [slug, i + 1]))
+const speakerNameMap = new Map(
+  (await getCollection("people")).map((person) => [
+    person.id,
+    person.data.name,
+  ]),
+)
+const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.room, track])) as {[k in RoomSlug]: (typeof SPECIALIST_TRACKS)[number] & {room: k}}
+---
+
+<Base>
+  <style lang="scss">
+    @import "../../vars.scss";
+    @mixin horizontal {
+      @media (max-width: 767.9999px) {
+        @content;
+      }
+    }
+    @mixin vertical {
+      @media (min-width: 768px) {
+        @content;
+      }
+    }
+
+    s-schedule-outer {
+      display: block;
+      @include horizontal {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        writing-mode: vertical-lr;
+        height: 80vh;
+      }
+    }
+
+    s-schedule {
+      display: grid;
+      @include vertical {
+        width: 100%;
+        grid-template-columns: auto auto repeat(var(--total-tracks), 1fr);
+        grid-template-rows: auto repeat(
+            calc(var(--day-end) - var(--day-start)),
+            1fr
+          );
+      }
+      @include horizontal {
+        height: 100%;
+        width: calc((var(--day-end) - var(--day-start)) * 30px);
+        grid-template-rows: auto auto repeat(var(--total-tracks), 1fr);
+        grid-template-columns: auto repeat(
+            calc(var(--day-end) - var(--day-start)),
+            1fr
+          );
+        writing-mode: horizontal-tb;
+      }
+    }
+
+    s-schedule .session {
+      z-index: 1;
+      color: inherit;
+      text-decoration: none;
+      background-color: rgba($wattle-leaf, 0.2);
+      .backstage &.session-L,
+      .backstage &.session-None {
+        background-color: rgba($wattle-leaf, 0.5);
+      }
+      border-radius: 5px;
+      padding: 7px;
+      margin: 2px;
+      @include vertical {
+        grid-column-start: calc(var(--track) + 2);
+        grid-column-end: span 1;
+        grid-row-start: calc(var(--start) - var(--day-start) + 2);
+        grid-row-end: calc(var(--end) - var(--day-start) + 2);
+        font-size: 16px;
+      }
+      @include horizontal {
+        grid-row-start: calc(var(--track) + 2);
+        grid-row-end: span 1;
+        grid-column-start: calc(var(--start) - var(--day-start) + 2);
+        grid-column-end: calc(var(--end) - var(--day-start) + 2);
+        font-size: 14px;
+      }
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1em;
+
+      .speaker {
+        font-size: 0.75em;
+        font-weight: bold;
+      }
+      .time {
+        font-size: 0.6em;
+        font-weight: bold;
+        font-family: $heading-font;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    s-tba {
+      border: 3px dashed #888;
+      border-radius: 5px;
+      padding: 10px;
+      font-style: italic;
+      font-size: 1.5em;
+      text-align: center;
+      color: #888;
+      @include vertical {
+        grid-column-start: calc(var(--track) + 2);
+        grid-column-end: span 1;
+        grid-row-start: calc(var(--start) - var(--day-start) + 2);
+        grid-row-end: calc(var(--end) - var(--day-start) + 2);
+      }
+      @include horizontal {
+        grid-row-start: calc(var(--track) + 2);
+        grid-row-end: span 1;
+        grid-column-start: calc(var(--start) - var(--day-start) + 2);
+        grid-column-end: calc(var(--end) - var(--day-start) + 2);
+      }
+    }
+
+    s-track,
+    s-tz-header {
+      text-align: center;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      font-weight: bold;
+      -webkit-backdrop-filter: blur(4px);
+      @include vertical {
+        grid-row: 1;
+        grid-column: calc(var(--track) + 2);
+      }
+      @include horizontal {
+        grid-column: 1;
+        grid-row: calc(var(--track) + 2);
+      }
+    }
+
+    s-track {
+      @include horizontal {
+        writing-mode: vertical-rl;
+        transform: rotate(0.5turn);
+        font-size: 13px;
+      }
+    }
+
+    s-tz-header {
+      @include vertical {
+        grid-column: 1;
+        &.local {
+          grid-column: 2;
+        }
+      }
+      @include horizontal {
+        grid-row: 1;
+        &.local {
+          grid-row: 2;
+        }
+      }
+    }
+
+    s-time,
+    s-now {
+      color: #aaa;
+      padding: 3px;
+      @include vertical {
+        text-align: center;
+        grid-column: 1;
+        &.local {
+          grid-column: 2;
+        }
+        grid-row-start: calc(var(--at) - var(--day-start) + 2);
+        grid-row-end: span 60;
+      }
+      @include horizontal {
+        grid-row: 1;
+        &.local {
+          grid-row: 2;
+        }
+        grid-column-start: calc(var(--at) - var(--day-start) + 2);
+        grid-column-end: span 60;
+      }
+      z-index: -2;
+    }
+
+    s-time-rule,
+    s-now-rule {
+      @include vertical {
+        grid-column-start: 1;
+        grid-column-end: calc(var(--total-tracks) + 3);
+        grid-row: calc(var(--at) - var(--day-start) + 2);
+      }
+      @include horizontal {
+        grid-row-start: 1;
+        grid-row-end: calc(var(--total-tracks) + 3);
+        grid-column: calc(var(--at) - var(--day-start) + 2);
+      }
+    }
+
+    s-time-rule {
+      @include vertical {
+        border-top: 1px solid #ddd;
+      }
+      @include horizontal {
+        border-left: 1px solid #ddd;
+      }
+      z-index: -2;
+    }
+
+    s-now-rule {
+      @include vertical {
+        border-top: 1px solid rgba($red-centre, 0.7);
+      }
+      @include horizontal {
+        border-left: 1px solid red;
+      }
+      z-index: -1;
+    }
+
+    .tz {
+      text-align: center;
+      font-size: 0.75em;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+
+  {
+    /* 
+<div class="switcher">
+    <a href="/program/all/">All</a>
+    <a href="/program/fri/" {% if day.0 == 'fri' %} class="selected" {% endif %}
+        >Friday</a
+    >
+    <a href="/program/sat/" {% if day.0 == 'sat' %} class="selected" {% endif %}
+        >Saturday</a
+    >
+    <a href="/program/sun/">Sunday</a>
+</div>
+*/
+  }
+  <ProgramSwitcher current={day} />
+  <p class="tz">
+    All times shown in AEDT (UTC+11). <a
+      href="https://pretalx.com/pyconau-2023/schedule/export/schedule.ics"
+      >iCal</a
+    >, <a href="https://pretalx.com/pyconau-2023/schedule/export/schedule.json"
+      >JSON</a
+    >.
+  </p>
+
+  <s-schedule-outer>
+    <s-schedule
+      style={`--day-start: ${idx(dayStart)}; --day-end: ${idx(
+        dayEnd,
+      )}; --total-tracks: 3;`}
+      data-start={dayStart.toISO()}
+      data-end={dayEnd.toISO()}
+    >
+      {
+        ROOMS.map(({ name, slug }, i) => (
+          <s-track style={`--track: ${i + 1};`}>
+            {name}
+            {day === "friday" ? <a href={`/${tracksByRoom[slug].slug}/`}>{tracksByRoom[slug].name}</a> : null}
+          </s-track>
+        ))
+      }
+      {
+        sessions.map((session) => (
+          <a
+            class="session"
+            style={`--start: ${idx(session.data.start)}; --end: ${idx(
+              session.data.end,
+            )}; --track: ${roomMap[session.data.room]};`}
+            href={`/program/${session.id}`}
+          >
+            {/* prettier-ignore */}
+            <p class="time" data-start={session.data.start.toISO()} data-end={session.data.end.toISO()}>
+              {session.data.start.toLocaleString(DateTime.TIME_SIMPLE)}&ndash;{session.data.end.toLocaleString(DateTime.TIME_SIMPLE)}
+            </p>
+            {session.data.title}
+            {/*<span class="backstage-only-inline">({{ session.type }})</span>*/}
+            {session.data.type === "talk" || session.data.type === "keynote" ? (
+              <div class="speaker">
+                <ProseList
+                  items={session.data.speakers.map((id) =>
+                    speakerNameMap.get(id as any),
+                  )}
+                />
+              </div>
+            ) : null}
+          </a>
+        ))}{
+        breaks.map((break_) => (
+        <div
+            class="session"
+            style={`--start: ${idx(break_.data.start)}; --end: ${idx(
+              break_.data.end,
+            )}; --track: ${roomMap[break_.data.room]};`}
+          >{break_.data.description}</div>
+        ))
+      }
+      {
+        /*
+    {% endfor %}
+        {% for x in range(first_min, last_min, 60) %}
+            <s-time style="--at: {{ x }}">
+            {% set hr = (x + 600) % 1440 // 60 %}
+            {% if hr > 12 %} {{ hr - 12 }} pm
+            {% elif hr == 12 %} {{ hr }} pm {# WHY IS TIME LIKE THIS #}
+            {% else %} {{ hr }} am
+            {% endif %}
+            </s-time>
+            <s-time-rule style="--at: {{ x }}"></s-time-rule>
+        {% endfor %}
+        */
+      }
+
+      {
+        [...timeSlices(dayStart, dayEnd, Duration.fromISO("PT30M"))].map(
+          (time) => (
+            <>
+              <s-time style={`--at: ${idx(time)}`}>
+                {time.toLocaleString(DateTime.TIME_SIMPLE)}
+              </s-time>
+              <s-time-rule style={`--at: ${idx(time)}`} />
+            </>
+          ),
+        )
+      }
+    </s-schedule>
+  </s-schedule-outer>
+</Base>

@@ -1,0 +1,17 @@
+---
+import { getCollection, CollectionEntry } from "astro:content"
+import Redirect from "../../../components/Redirect.astro"
+
+export async function getStaticPaths() {
+  const pages = await getCollection("sessions")
+  return pages.map((entry) => ({
+    params: { sessionId: entry.id },
+    props: { entry },
+  }))
+}
+export type Props = {
+  entry: CollectionEntry<"sessions">
+}
+const { entry } = Astro.props as Props
+---
+<Redirect href={`/program/${entry.id}`}></Redirect>

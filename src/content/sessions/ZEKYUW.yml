@@ -1,9 +1,8 @@
 title: Performant Python
-start:
-end:
-room:
+start: 2024-11-23 12:00:00+11:00
+end: 2024-11-23 12:30:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: <p>An introduction to writing performant Python code - the "what, why, where,
   when and many how's" of performance analysis, testing, tools and techniques.</p>
 description: "<p>Why, as Python developers, should we care about writing performant

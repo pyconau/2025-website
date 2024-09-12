@@ -1,9 +1,8 @@
 title: Verifying and evaluating scientific results with the open source package "scores"
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 10:00:00+11:00
+end: 2024-11-22 10:30:00+11:00
+room: eureka2
+track: scientific
 abstract: "<p>Verifying, evaluating or interpreting complex data requires specialist
   tools and methods. Many data scientists, programmers and scientists will be familiar
   with some evaluation metrics such as accuracy, mean squared error or true positive

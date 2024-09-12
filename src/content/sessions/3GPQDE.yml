@@ -1,9 +1,8 @@
 title: Teaching Digital Technologies in Australian schools with Python and the Kookaberry
-start:
-end:
-room:
-track:
-  en: Education
+start: 2024-11-22 10:00:00+11:00
+end: 2024-11-22 10:30:00+11:00
+room: eureka3
+track: education
 abstract: <p>There are around 6,200 primary schools around Australia, and the curriculum
   has a requirement to teach Digital Technologies, which includes a coding portion.  There
   are many challenges here, not least which is enabling the approximately 150,000

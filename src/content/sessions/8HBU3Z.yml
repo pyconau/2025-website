@@ -1,9 +1,8 @@
 title: Using Multiple Databases in Django Applications
-start:
-end:
-room:
+start: 2024-11-24 10:35:00+11:00
+end: 2024-11-24 11:05:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: "<p>Over six years ago, three engineers from Sydney started working on an
   insurtech platform with global ambitions. They chose Django, even though two of
   them had no prior experience with the framework. Nevertheless, the project became
