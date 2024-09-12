@@ -43,6 +43,7 @@ const breaks = defineCollection({
     end: z.date(),
     description: z.string(),
   }),
+  type: "data",
 })
 const people = defineCollection({
   schema: z.object({
