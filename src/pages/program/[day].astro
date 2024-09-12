@@ -80,6 +80,14 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
       }
     }
 
+    @include horizontal {
+      html, body {
+        scroll-snap-type: y proximity;
+        overscroll-behavior-x: contain;
+      }
+    }
+
+
     s-schedule-outer {
       display: block;
       @include horizontal {
@@ -87,7 +95,8 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
         overflow-x: auto;
         overflow-y: hidden;
         writing-mode: vertical-lr;
-        height: 80vh;
+        height: 100vh;
+        scroll-snap-align: center;
       }
     }
 
@@ -289,7 +298,7 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
   </style>
 
   {
-    /* 
+    /*
 <div class="switcher">
     <a href="/program/all/">All</a>
     <a href="/program/fri/" {% if day.0 == 'fri' %} class="selected" {% endif %}
