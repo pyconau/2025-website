@@ -246,6 +246,8 @@ if schedule.ok:
             )
 
 
+PEOPLE_IMGS_DIR.mkdir(exist_ok=True)
+
 with (CONTENT_DIR / "_people_etags.yml").open("r") as f:
     etags = yaml.load(f)
 
@@ -263,6 +265,8 @@ for speaker in paginate(
         if speaker["avatar"] is not None:
             etag = etags.get(speaker["code"], None)
             print(speaker["avatar"])
+            if not speaker["avatar"]:
+                continue
             avatar_resp = requests.get(
                 speaker["avatar"],
                 headers={"If-None-Match": etag} if etag is not None else {},
