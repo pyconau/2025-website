@@ -21,12 +21,12 @@ abstract: "<p>Verifying, evaluating or interpreting complex data requires specia
   methods, every metric and statistical test has a companion Jupyter Notebook tutorial.
   For expert users already familiar with these ideas, you may be interested in some
   of the novel scoring methods not commonly found in other packages. </p>\n<p>Come
-  to this talk to hear about:\n - The difference between tabular data, n-dimensional
-  data, and labelled n-dimensional data\n - Examples of using a common metric from
-  \"scores\" on labelled, n-dimensional data\n - Examples of using \"scores\" for
-  interrogating data in multiple dimensions\n - Examples of where basic methods overlook
-  important considerations\n - Examples of using some of the more complex metrics
-  in \"scores\"</p>"
+  to this talk to hear about:</p>\n<ul>\n<li>The difference between tabular data,
+  n-dimensional data, and labelled n-dimensional data</li>\n<li>Examples of using
+  a common metric from \"scores\" on labelled, n-dimensional data</li>\n<li>Examples
+  of using \"scores\" for interrogating data in multiple dimensions</li>\n<li>Examples
+  of where basic methods overlook important considerations</li>\n<li>Examples of using
+  some of the more complex metrics in \"scores\"</li>\n</ul>"
 description: <p>This talk will introduce "scores", an open source Python package for
   verifying and evaluating labelled, n-dimensional (multidimensional) data at any
   scale. "scores" includes over 50 metrics, statistical techniques and data processing
