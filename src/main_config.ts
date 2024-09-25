@@ -13,15 +13,25 @@ export const SPECIALIST_TRACKS = [
   { slug: "education", name: "Education", room: "eureka3" },
 ] as const
 
+export const SPONSOR_TIERS = [
+  { slug: "gold", name: "Gold Sponsor", plural_name: "Gold Sponsors" },
+  { slug: "standard", name: "Sponsor", plural_name: "Sponsors" },
+  { slug: "auspice", name: "Auspice", plural_name: "Auspices" },
+] as const
+
 // -----
 
 export type RoomSlug = (typeof ROOMS)[number]["slug"]
+export type SponsorTierSlug = (typeof SPONSOR_TIERS)[number]["slug"]
 type ExtractSlug<T extends readonly { slug: any }[]> = {
   [I in keyof T]: T[I]["slug"]
 }
 export const ROOM_SLUGS = ROOMS.map((room) => room.slug) as any as ExtractSlug<
   typeof ROOMS
 >
+export const SPONSOR_TIER_SLUGS = SPONSOR_TIERS.map(
+  (tier) => tier.slug,
+) as any as ExtractSlug<typeof SPONSOR_TIERS>
 export const SPECIALIST_TRACK_SLUGS = SPECIALIST_TRACKS.map(
   (track) => track.slug,
 ) as any as ExtractSlug<typeof SPECIALIST_TRACKS>
