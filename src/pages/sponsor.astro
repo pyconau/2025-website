@@ -3,6 +3,7 @@ import { getCollection, getEntryBySlug } from "astro:content"
 import Base from "../layouts/Base.astro"
 import Button from "../components/Button.astro"
 import SponsorListing from "../components/SponsorListing.astro"
+import { SPONSOR_TIERS } from "../main_config"
 // Get all entries from a collection. Requires the name of the collection as an argument.
 
 const allSponsors = await getCollection("sponsors")
@@ -65,79 +66,17 @@ and of course <a href="#auspice">Linux Australia</a>!
 */
     }
 
-    {
-      platinum.length > 0 && (
-        <>
-          <h2 id="platinum">Platinum Sponsor{platinum.length !== 1 && "s"}</h2>
-          {platinum.map((sponsor) => (
-            <SponsorListing sponsor={sponsor} />
-          ))}
-        </>
-      )
-    }
+    {SPONSOR_TIERS.map(tier => {
+      const sponsors = allSponsors.filter(sponsor => sponsor.data.tier == tier.slug)
+      if (!sponsors.length) return <></>
+      return <>
+      <h2 id={tier.slug}>{sponsors.length === 1 ? tier.name : tier.plural_name}</h2>
+      {sponsors.map(sponsor => <SponsorListing sponsor={sponsor}/>)}
+      </>
+    })}
 
     {
-      gold.length > 0 && (
-        <>
-          <h2 id="gold">Gold Sponsor{gold.length !== 1 && "s"}</h2>
-          {gold.map((sponsor) => (
-            <SponsorListing sponsor={sponsor} />
-          ))}
-        </>
-      )
-    }
-
-    {
-      track.length > 0 && (
-        <>
-          <h2 id="track">Track Sponsor{track.length !== 1 && "s"}</h2>
-          {track.map((sponsor) => (
-            <SponsorListing sponsor={sponsor} />
-          ))}
-        </>
-      )
-    }
-
-    {
-      /*
-
-{% if contributors %}
-<a name="contributors"></a>
-<h1>Contributor{% if contributors | length != 1 %}s{% endif %}</h1>
-<p>
-  We thank everyone who <a href="/attend/">purchased a Contributor ticket</a>.
-  They are directly helping fund our financial assistance efforts for future
-  events:
-</p>
-
-<ul class="contributor-sponsors">
-{% for s in contributors %}
-  <li>
-	{{s.title}} {% if s.attribution %}{{s.attribution}}{% endif %}
-  </li>
-{% endfor %}
-</ul>
-
-<hr />
-{% endif %}
-
-
-<a name="media"></a>
-<table>
-  {% for s in specialsponsor %} {{m.special(s)}} {% endfor %}
-</table>
-
-<h1>Auspice</h1>
-
-<a name="auspice"></a>
-  {% for s in auspice %} {{m.sponsor(s)}} {% endfor %}
-  
-*/
-    }
-
-    <h1 id="auspice">Auspice</h1>
-    <SponsorListing sponsor={auspice} />
-
+      
     <h1 id="opportunities">Sponsorship Opportunities</h1>
 
     <Content />

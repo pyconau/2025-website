@@ -1,16 +1,15 @@
 import { getCollection, CollectionEntry } from "astro:content"
+import { SPONSOR_TIERS, SponsorTierSlug } from "./main_config"
 
 type SponsorsByTier = {
-  tier: "platinum" | "gold" | "track" | "auspice"
+  tier: SponsorTierSlug
   sponsors: CollectionEntry<"sponsors">[]
 }[]
 
-const data: SponsorsByTier = [
-  { tier: "platinum", sponsors: [] },
-  { tier: "gold", sponsors: [] },
-  { tier: "track", sponsors: [] },
-  { tier: "auspice", sponsors: [] },
-]
+const data: SponsorsByTier = SPONSOR_TIERS.map((tier) => ({
+  tier: tier.slug,
+  sponsors: [],
+}))
 let dataIsPopulated = false
 
 export async function getSponsorsByTier(): Promise<SponsorsByTier> {

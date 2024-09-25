@@ -1,12 +1,16 @@
 import { z, defineCollection } from "astro:content"
-import { ROOM_SLUGS, SPECIALIST_TRACK_SLUGS } from "../main_config"
+import {
+  ROOM_SLUGS,
+  SPECIALIST_TRACK_SLUGS,
+  SPONSOR_TIER_SLUGS,
+} from "../main_config"
 
 const sponsors = defineCollection({
   schema: z.object({
     name: z.string(),
     logo: z.string(),
     url: z.string(),
-    tier: z.string(),
+    tier: z.enum(SPONSOR_TIER_SLUGS),
   }),
 })
 const pages = defineCollection({
