@@ -29,6 +29,9 @@ type ExtractSlug<T extends readonly { slug: any }[]> = {
 export const ROOM_SLUGS = ROOMS.map((room) => room.slug) as any as ExtractSlug<
   typeof ROOMS
 >
+export const ROOMS_BY_SLUG = Object.fromEntries(
+  ROOMS.map((room) => [room.slug, room]),
+)
 export const SPONSOR_TIER_SLUGS = SPONSOR_TIERS.map(
   (tier) => tier.slug,
 ) as any as ExtractSlug<typeof SPONSOR_TIERS>
