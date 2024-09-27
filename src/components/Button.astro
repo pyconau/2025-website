@@ -41,6 +41,9 @@ const { type, href, label, block } = Astro.props as Props
     &:focus {
       border: 3px solid $wattle-flower;
       margin: -3px;
+      &.block {
+        margin: -3px auto 17px auto;
+      }
     }
 
     &:hover {
