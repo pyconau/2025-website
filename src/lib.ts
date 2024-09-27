@@ -1,5 +1,6 @@
+import { ContentEntryType } from "astro"
 import type { CollectionEntry } from "astro:content"
-import type { DateTime, Duration, Interval } from "luxon"
+import { DateTime } from "luxon"
 
 type Nested<T> = T & { children: Nested<T>[] }
 export function nestHeadings<T extends { depth: number }>(
@@ -59,3 +60,31 @@ export function* timeSlices(
     value = value.plus(duration)
   }
 }
+
+type ExtractCollectionTypes<T> = T extends CollectionEntry<infer U> ? U : never
+type CollectionTypes = ExtractCollectionTypes<CollectionEntry<"sessions">>
+
+export type LuxonifiedCollectionEntry<C extends CollectionTypes> = Omit<
+  CollectionEntry<C>,
+  "data"
+> & {
+  data: {
+    [K in keyof CollectionEntry<C>["data"]]: CollectionEntry<C>["data"][K] extends Date | null
+      ? DateTime | null
+      : CollectionEntry<C>["data"][K] extends Date
+        ? DateTime
+        : CollectionEntry<C>["data"][K]
+  }
+}
+
+export type LuxonifiedScheduledSession =
+  LuxonifiedCollectionEntry<"sessions"> & {
+    data: {
+      start: Exclude<
+        LuxonifiedCollectionEntry<"sessions">["data"]["start"],
+        null
+      >
+      end: Exclude<LuxonifiedCollectionEntry<"sessions">["data"]["end"], null>
+      room: Exclude<LuxonifiedCollectionEntry<"sessions">["data"]["room"], null>
+    }
+  }
