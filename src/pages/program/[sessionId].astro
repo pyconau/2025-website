@@ -27,6 +27,8 @@ const speakers = (
 const track = entry.data.track
   ? await getEntry("tracks", entry.data.track)
   : null
+
+const daySlug = DateTime.fromJSDate(entry.data.start).weekdayLong?.toLowerCase()
 ---
 
 <style lang="scss">
@@ -86,7 +88,7 @@ const track = entry.data.track
 */
   }
   <main>
-    <Button href="/program">&larr; Return to program</Button>
+    <Button href={`/program/${daySlug}/`}>&larr; Return to program</Button>
     <h1>{entry.data.title}</h1>
     {
       entry.data.start && entry.data.end && entry.data.room ? (
