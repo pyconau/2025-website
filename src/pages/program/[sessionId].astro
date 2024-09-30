@@ -4,8 +4,7 @@ import Base from "../../layouts/Base.astro"
 import Button from "../../components/Button.astro"
 import { getCollection, CollectionEntry, getEntry } from "astro:content"
 import { DateTime } from "luxon"
-import { HALL_NAMES } from "../../lib"
-import { TICKETS_AVAILABLE } from "../../main_config"
+import { ROOMS_BY_SLUG, TICKETS_AVAILABLE } from "../../main_config"
 
 export async function getStaticPaths() {
   const pages = await getCollection("sessions")
@@ -28,6 +27,8 @@ const speakers = (
 const track = entry.data.track
   ? await getEntry("tracks", entry.data.track)
   : null
+
+const daySlug = DateTime.fromJSDate(entry.data.start).weekdayLong?.toLowerCase()
 ---
 
 <style lang="scss">
@@ -87,7 +88,7 @@ const track = entry.data.track
 */
   }
   <main>
-    <Button href="/program">&larr; Return to program</Button>
+    <Button href={`/program/${daySlug}/`}>&larr; Return to program</Button>
     <h1>{entry.data.title}</h1>
     {
       entry.data.start && entry.data.end && entry.data.room ? (
@@ -100,7 +101,7 @@ const track = entry.data.track
           )}&ndash;{DateTime.fromJSDate(entry.data.end, { zone: "Australia/Adelaide"}).toLocaleString(
             DateTime.TIME_SIMPLE,
           )}
-          in {HALL_NAMES[entry.data.room]}
+          in <b>{ROOMS_BY_SLUG[entry.data.room].name}</b>
         </div>
       ) : null
     }

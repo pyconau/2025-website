@@ -2,11 +2,16 @@
 import { getCollection } from "astro:content"
 import { isScheduled, timeSlices } from "../../lib"
 import { DateTime, Duration } from "luxon"
-import ProseList from "../../components/ProseList.astro"
 import Base from "../../layouts/Base.astro"
 import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
-import { CONFERENCE_TZ, ROOM_SLUGS, RoomSlug, SPECIALIST_TRACKS } from "../../main_config"
+import {
+  CONFERENCE_TZ,
+  ROOM_SLUGS,
+  RoomSlug,
+  SPECIALIST_TRACKS,
+} from "../../main_config"
 import { ROOMS } from "../../main_config"
+import Session from "../../components/program/Session.astro"
 
 export async function getStaticPaths() {
   return ["friday", "saturday", "sunday"].map((day) => ({
@@ -35,7 +40,8 @@ const sessions = (await getCollection("sessions"))
   }))
   .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
 
-const breaks = (await getCollection('breaks'))  .map((x) => ({
+const breaks = (await getCollection("breaks"))
+  .map((x) => ({
     ...x,
     data: {
       ...x.data,
@@ -45,7 +51,9 @@ const breaks = (await getCollection('breaks'))  .map((x) => ({
   }))
   .filter((s) => s.data.start.hasSame?.(datestamp, "day"))
 
-const [dayStart, dayEnd] = [...sessions, ...breaks].reduce<[DateTime, DateTime]>(
+const [dayStart, dayEnd] = [...sessions, ...breaks].reduce<
+  [DateTime, DateTime]
+>(
   ([dayStart, dayEnd], session) => [
     DateTime.min(dayStart, session.data.start).startOf("hour"),
     DateTime.max(dayEnd, session.data.end),
@@ -63,30 +71,22 @@ const speakerNameMap = new Map(
     person.data.name,
   ]),
 )
-const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.room, track])) as {[k in RoomSlug]: (typeof SPECIALIST_TRACKS)[number] & {room: k}}
+const tracksByRoom = Object.fromEntries(
+  SPECIALIST_TRACKS.map((track) => [track.room, track]),
+) as { [k in RoomSlug]: (typeof SPECIALIST_TRACKS)[number] & { room: k } }
 ---
 
 <Base>
   <style lang="scss">
     @import "../../vars.scss";
-    @mixin horizontal {
-      @media (max-width: 767.9999px) {
-        @content;
-      }
-    }
-    @mixin vertical {
-      @media (min-width: 768px) {
-        @content;
-      }
-    }
-
+    @import "../../components/program/lib.scss";
     @include horizontal {
-      html, body {
+      html,
+      body {
         scroll-snap-type: y proximity;
         overscroll-behavior-x: contain;
       }
     }
-
 
     s-schedule-outer {
       display: block;
@@ -334,43 +334,33 @@ const tracksByRoom = Object.fromEntries(SPECIALIST_TRACKS.map(track => [track.ro
         ROOMS.map(({ name, slug }, i) => (
           <s-track style={`--track: ${i + 1};`}>
             {name}
-            {day === "friday" ? <a href={`/${tracksByRoom[slug].slug}/`}>{tracksByRoom[slug].name}</a> : null}
+            {day === "friday" ? (
+              <a href={`/${tracksByRoom[slug].slug}/`}>
+                {tracksByRoom[slug].name}
+              </a>
+            ) : null}
           </s-track>
         ))
       }
       {
         sessions.map((session) => (
-          <a
-            class="session"
-            style={`--start: ${idx(session.data.start)}; --end: ${idx(
-              session.data.end,
-            )}; --track: ${roomMap[session.data.room]};`}
-            href={`/program/${session.id}`}
-          >
-            {/* prettier-ignore */}
-            <p class="time" data-start={session.data.start.toISO()} data-end={session.data.end.toISO()}>
-              {session.data.start.toLocaleString(DateTime.TIME_SIMPLE)}&ndash;{session.data.end.toLocaleString(DateTime.TIME_SIMPLE)}
-            </p>
-            {session.data.title}
-            {/*<span class="backstage-only-inline">({{ session.type }})</span>*/}
-            {session.data.type === "talk" || session.data.type === "keynote" ? (
-              <div class="speaker">
-                <ProseList
-                  items={session.data.speakers.map((id) =>
-                    speakerNameMap.get(id as any),
-                  )}
-                />
-              </div>
-            ) : null}
-          </a>
-        ))}{
+          <Session
+            session={session}
+            idx={idx}
+            speakerNameMap={speakerNameMap}
+            roomMap={roomMap}
+          />
+        ))
+      }{
         breaks.map((break_) => (
-        <div
+          <div
             class="session"
             style={`--start: ${idx(break_.data.start)}; --end: ${idx(
               break_.data.end,
             )}; --track: ${roomMap[break_.data.room]};`}
-          >{break_.data.description}</div>
+          >
+            {break_.data.description}
+          </div>
         ))
       }
       {

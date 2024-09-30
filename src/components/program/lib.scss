@@ -1,0 +1,10 @@
+@mixin horizontal {
+    @media (max-width: 767.9999px) {
+      @content;
+    }
+  }
+  @mixin vertical {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
