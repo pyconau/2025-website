@@ -25,6 +25,13 @@ TRACKS = {
     "Scientific Python": "scientific",
     "Main Conference": None,
 }
+# Question IDs
+# Question IDs on the *people* object
+PRONOUN_QUESTION_ID = 3948
+TWITTER_QUESTION_ID = 3950
+FEDIVERSE_QUESTION_ID = 3949
+
+# End per-year configuration
 
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
@@ -81,9 +88,6 @@ def parse_markdown(text):
 
 answers = {
     "Content Warning": 3747,
-    "Pronouns": 3948,
-    "Twitter": 3950,
-    "Fedi": 3949,
 }
 
 # format_answer = {
@@ -125,7 +129,6 @@ for session in paginate(
     # if rooms[session["slot"]["room"]["en"]] == 0:
     #    print("not scheduling backup")
     #    continue
-    print(session["code"])
 
     if TAG_IDS_TO_SKIP.intersection(session["tag_ids"]):
         print("skipping due to tag id")
@@ -151,33 +154,6 @@ for session in paginate(
             x["answer"]
             for x in session["answers"]
             if x["question"]["id"] == answers["Content Warning"]
-        ),
-        None,
-    )
-    online = (
-        next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Online"]
-            ),
-            None,
-        )
-        != "In person in Adelaide"
-    )
-    twitter = next(
-        (
-            x["answer"]
-            for x in session["answers"]
-            if x["question"]["id"] == answers["Twitter"]
-        ),
-        None,
-    )
-    fedi = next(
-        (
-            x["answer"]
-            for x in session["answers"]
-            if x["question"]["id"] == answers["Fedi"]
         ),
         None,
     )
@@ -209,7 +185,6 @@ for session in paginate(
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
                 # "youtube_slug": youtube_slugs.get(session["code"]),
-                "online": online,
             },
             f,
         )
@@ -256,7 +231,7 @@ if not etags:
     etags = {}
 
 for speaker in paginate(
-    "https://pretalx.com/api/events/pycon-au-2024/speakers/?questions=3949,3956,395"
+    f"https://pretalx.com/api/events/pycon-au-2024/speakers/?questions={PRONOUN_QUESTION_ID},{FEDIVERSE_QUESTION_ID},{TWITTER_QUESTION_ID}"
 ):
     if speaker["code"] not in seen_speakers:
         continue
@@ -295,7 +270,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Pronouns"]
+                        if x["question"]["id"] == PRONOUN_QUESTION_ID
                     ),
                     None,
                 ),
@@ -303,7 +278,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Twitter"]
+                        if x["question"]["id"] == TWITTER_QUESTION_ID
                     ),
                     None,
                 ),
@@ -311,7 +286,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Fedi"]
+                        if x["question"]["id"] == FEDIVERSE_QUESTION_ID
                     ),
                     None,
                 ),

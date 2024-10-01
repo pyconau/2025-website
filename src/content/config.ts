@@ -36,7 +36,6 @@ const sessions = defineCollection({
       .enum(["talk", "stall", "open-close", "special", "keynote"])
       .optional()
       .default("talk"),
-    online: z.boolean(),
   }),
   type: "data",
 })
