@@ -255,8 +255,8 @@ for speaker in paginate(
                     etags[speaker["code"]] = avatar_resp.headers["ETag"]
                 im = Image.open(BytesIO(avatar_resp.content))
                 im = im.convert("RGB")
-                im.thumbnail((128, 128))
-                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'))
+                im.thumbnail((225, 225))
+                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'), quality=95)
                 has_pic = True
     except Exception as e:
         print(speaker["code"], speaker["avatar"], e)
