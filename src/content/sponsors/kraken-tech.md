@@ -11,4 +11,3 @@ Kraken has been licensed to support over 54 million accounts worldwide, through 
 
 Kraken has around 500-600 developers globally (150 of those in APAC). We continue to grow with top talent to tackle climate change!
 
-
