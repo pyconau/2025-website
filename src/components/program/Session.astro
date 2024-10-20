@@ -1,0 +1,94 @@
+---
+import { DateTime } from "luxon"
+import { LuxonifiedScheduledSession } from "../../lib"
+import ProseList from "../ProseList.astro"
+
+export type Props = {
+  session: LuxonifiedScheduledSession
+  /// Compatibility param from before this code was factored out. Will be removed eventually.
+  idx: (date: DateTime) => number
+  /// Compatibility param from before this code was factored out. Will be removed eventually.
+  speakerNameMap: Map<string, string>
+  /// Compatibility param from before this code was factored out. Will be removed eventually.
+  roomMap: { [k: string]: number }
+}
+let { session, idx, speakerNameMap, roomMap } = Astro.props
+---
+
+<style lang="scss">
+  @import "../../vars.scss";
+  @import "lib.scss";
+  .session {
+    z-index: 1;
+    color: inherit;
+    text-decoration: none;
+    background-color: rgba($wattle-leaf, 0.2);
+    .backstage &.session-L,
+    .backstage &.session-None {
+      background-color: rgba($wattle-leaf, 0.5);
+    }
+    border-radius: 5px;
+    padding: 7px;
+    margin: 2px;
+    @include vertical {
+      grid-column-start: calc(var(--track) + 2);
+      grid-column-end: span 1;
+      grid-row-start: calc(var(--start) - var(--day-start) + 2);
+      grid-row-end: calc(var(--end) - var(--day-start) + 2);
+      font-size: 16px;
+    }
+    @include horizontal {
+      grid-row-start: calc(var(--track) + 2);
+      grid-row-end: span 1;
+      grid-column-start: calc(var(--start) - var(--day-start) + 2);
+      grid-column-end: calc(var(--end) - var(--day-start) + 2);
+      font-size: 14px;
+    }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1em;
+
+    .speaker {
+      font-size: 0.75em;
+      font-weight: bold;
+    }
+    .time {
+      font-size: 0.6em;
+      font-weight: bold;
+      font-family: $heading-font;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+</style>
+<a
+  class="session"
+  style={`--start: ${idx(session.data.start)}; --end: ${idx(
+    session.data.end,
+  )}; --track: ${roomMap[session.data.room]};`}
+  href={`/program/${session.id}`}
+>
+  <p
+    class="time"
+    data-start={session.data.start.toISO()}
+    data-end={session.data.end.toISO()}
+  >
+    {session.data.start.toLocaleString(DateTime.TIME_SIMPLE)}&ndash;{
+      session.data.end.toLocaleString(DateTime.TIME_SIMPLE)
+    }
+  </p>
+  {session.data.title}
+  {/*<span class="backstage-only-inline">({{ session.type }})</span>*/}
+  {
+    session.data.type === "talk" || session.data.type === "keynote" ? (
+      <div class="speaker">
+        <ProseList
+          items={session.data.speakers.map((id) =>
+            speakerNameMap.get(id as any),
+          )}
+        />
+      </div>
+    ) : null
+  }
+</a>

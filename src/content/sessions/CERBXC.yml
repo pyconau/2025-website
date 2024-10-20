@@ -1,9 +1,8 @@
 title: 'from seeds import plants: using IoT to grow healthy herbs'
-start:
-end:
-room:
+start: 2024-11-23 13:30:00+11:00
+end: 2024-11-23 14:00:00+11:00
+room: eureka3
 track:
-  en: Main Conference
 abstract: <p>With the current climate crisis and the rise of households growing their
   own fruits, vegetables and herbs, the efficient use of potable water is crucial
   now more than ever. However, the majority of plant watering systems are either manual
@@ -27,4 +26,3 @@ code: CERBXC
 speakers:
 - DEZCB8
 cw:
-online: true

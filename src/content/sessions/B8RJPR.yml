@@ -1,9 +1,8 @@
 title: 'Space Django: Migrating and Redesigning a Database while Hunting for Satellites.'
-start:
-end:
-room:
+start: 2024-11-24 14:50:00+11:00
+end: 2024-11-24 15:20:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: "<p>Being a fast-paced startup and developing a completely new product in
   the Space Industry is very challenging, and moving fast wasn’t just a requirement
   but essential. It's the kind of environment that is hard to think too much ahead,
@@ -35,4 +34,3 @@ code: B8RJPR
 speakers:
 - EJ9MHD
 cw:
-online: true

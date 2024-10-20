@@ -1,44 +1,22 @@
 title: How to confirm that the index you added actually improves query performance
-start:
-end:
-room:
+start: 2024-11-24 11:15:00+11:00
+end: 2024-11-24 11:45:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: <p>Database indexes allow us to speed up queries by providing a method to
   quickly look up data. However, do we always check that they actually improve performance?
   In this talk, I explain how and why an automatically added database index did not
   get used by the queries we expected. Together we will go through SQL produced from
   Django ORM, index structures and generating database query plans to unravel what
   was actually going on behind the scenes in our queries.</p>
-description: "<p>Within my current role on the performance team, it is my responsibility
+description: <p>Within my current role on the performance team, it is my responsibility
   to investigate sources of and solutions to poor database performance within our
   company's application. Understanding the how and why of database indexes has been
   an important part of this, however, my knowledge of database indexes is a relatively
   recently gained experience. In this talk I aim to share what I have learnt along
   the way as applied to investigating why an index added in Django was not improving
-  the performance of our database query.</p>\n<p><b>Database Indexes</b>\nHere, I
-  explain what database indexes are and why we use them. I go through the main ways
-  to add database indexes using Django ORM and migrations. Then, I demonstrate query
-  plans and how to generate the query plans for the SQL queries that are created.</p>\n
-  <p><b>Introducing the example</b>\nThe main way I learnt about indexes was via debugging
-  a particular issue.  I introduce an example where we use django orm to search a
-  partial match on a string field. This partial match did not use the pre-existing
-  index that was already in the table. This example is used to contextualise the rest
-  of the talk.</p>\n<p><b>Django ORM to SQL</b>\nDjango ORM can be a convenience for
-  converting models within code into queries, however, sometimes the queries produced
-  can be less intuitive than expected. I demonstrate the SQL queries produced by the
-  example above and demonstrate why this query using 'LIKE' did not get any speed-up
-  by using the indexes already available on this table.</p>\n<p><b>Trigram Indexes</b>\n
-  I introduce trigram indexes and demonstrate the improvements in query cost for the
-  example above we can gain by adding a trigram index instead.</p>\n<p><b>Repeat the
-  process for changing to case-insensitive search</b>\nAs an extension to this, a
-  new feature request required that the search be case insensitive. I reveal the proposed
-  change to the Django ORM query, the generated SQL and demonstrate how a new index
-  is required if this change is made.</p>\n<p>Finally, I will summarise what I have
-  learnt within my adventures in Database index analysis and share some useful resources
-  for further learning in the areas of postgres database performance.</p>"
+  the performance of our database query.</p>
 code: 9ZRRJY
 speakers:
 - WRLNJE
 cw:
-online: true

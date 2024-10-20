@@ -1,9 +1,8 @@
 title: 'Embeddings: How Computers Learned to Read'
-start:
-end:
-room:
+start: 2024-11-23 11:20:00+11:00
+end: 2024-11-23 11:50:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: <p>As large language models take over the world, we’re now working alongside
   machines that can read, write and converse – coding with CoPilot, chatting with
   ChatGPT and drawing with DALL-E. But how do machines, which fundamentally operate
@@ -29,4 +28,3 @@ code: Q78MDT
 speakers:
 - 7D78ZU
 cw:
-online: true

@@ -1,9 +1,8 @@
 title: 'Data Morph: A Cautionary Tale of Summary Statistics'
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 14:30:00+11:00
+end: 2024-11-22 15:00:00+11:00
+room: eureka2
+track: scientific
 abstract: "<p>Statistics do not come intuitively to humans; they always try to find
   simple ways to describe complex things. Given a complex dataset, they may feel tempted
   to use simple summary statistics like the mean, median, or standard deviation to
@@ -28,4 +27,3 @@ code: 3JHULA
 speakers:
 - 9WJJPL
 cw:
-online: true

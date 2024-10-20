@@ -1,9 +1,8 @@
 title: Astronomy with Python, for non-astronomers
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 11:40:00+11:00
+end: 2024-11-22 12:10:00+11:00
+room: eureka2
+track: scientific
 abstract: "<p>Astronomers have been dealing with digital data since the 1980s and
   online databases \nsince the early 90's, and now, almost all research astronomers
   use Python to access and \nprocess that data. Most astronomical database are open
@@ -22,4 +21,3 @@ code: 9MLDVZ
 speakers:
 - 9JGCPM
 cw:
-online: true

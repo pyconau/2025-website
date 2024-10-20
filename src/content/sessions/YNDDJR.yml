@@ -1,9 +1,8 @@
 title: Walking the Tree of Life – Adventures in Phylogenetics
-start:
-end:
-room:
+start: 2024-11-23 14:50:00+11:00
+end: 2024-11-23 15:20:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: "<p>\"What's the last common ancestor of a bear and a weasel?\"\n\"Which
   animals are more related to pigs than cows?\"\n\"Are birds reptiles?\"\n\"Am I a
   fish?\"</p>\n<p>With a recent interest in phylogeny – the science of evolution,
@@ -36,4 +35,3 @@ code: YNDDJR
 speakers:
 - 8UFZNX
 cw:
-online: true

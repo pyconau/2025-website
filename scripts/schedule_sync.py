@@ -1,10 +1,6 @@
-import os
-import os.path
 import pathlib
-from datetime import timedelta
 from io import BytesIO
 from os import environ
-from pprint import pprint
 
 import bleach
 import dateutil.parser
@@ -15,10 +11,31 @@ from PIL import Image
 from ruamel.yaml import YAML
 
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
-ACST = dateutil.tz.gettz("Australia/Adelaide")
-AEST = dateutil.tz.gettz("Australia/Melbourne")
+
+# Per-year configuration
+EVENT_TIMEZONE = dateutil.tz.gettz("Australia/Melbourne")
+ROOMS = {
+    "Goldfields Theatre": "goldfields",
+    "Eureka 2": "eureka2",
+    "Eureka 3": "eureka3",
+}
+TRACKS = {
+    "DevOops": "devoops",
+    "Education": "education",
+    "Scientific Python": "scientific",
+    "Main Conference": None,
+}
+# Question IDs
+# Question IDs on the *people* object
+PRONOUN_QUESTION_ID = 3948
+TWITTER_QUESTION_ID = 3950
+FEDIVERSE_QUESTION_ID = 3949
+
+# End per-year configuration
+
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
+BREAKS_DIR = CONTENT_DIR / "breaks"
 PEOPLE_DIR = CONTENT_DIR / "people"
 PUBLIC_DIR = pathlib.Path("../public")
 PEOPLE_IMGS_DIR = PUBLIC_DIR / "people"
@@ -69,24 +86,8 @@ def parse_markdown(text):
     )
 
 
-rooms = {
-    "Goldfields Theatre": "a",
-    "Eureka 2": "b",
-    "Eureka 3": "c",
-}
-
-tracks = {
-    "DevOops": "devoops",
-    "Education": "education",
-    "Scientific Python": "scientific",
-    "Main Conference": None,
-}
-
 answers = {
     "Content Warning": 3747,
-    "Pronouns": 3948,
-    "Twitter": 3950,
-    "Fedi": 3949,
 }
 
 # format_answer = {
@@ -128,7 +129,6 @@ for session in paginate(
     # if rooms[session["slot"]["room"]["en"]] == 0:
     #    print("not scheduling backup")
     #    continue
-    print(session["code"])
 
     if TAG_IDS_TO_SKIP.intersection(session["tag_ids"]):
         print("skipping due to tag id")
@@ -136,62 +136,44 @@ for session in paginate(
 
     speakers = [x["code"] for x in session["speakers"]]
     seen_speakers.update(speakers)
+    if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
+        start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(
+            EVENT_TIMEZONE
+        )
+        end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(
+            EVENT_TIMEZONE
+        )
+    else:
+        start = None
+        end = None
+    # type_answer_id = format_answer[next(
+    #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
+    #    )]
+    cw = next(
+        (
+            x["answer"]
+            for x in session["answers"]
+            if x["question"]["id"] == answers["Content Warning"]
+        ),
+        None,
+    )
+    track = session["track"]
+    if track is None:
+        print(f"!!! {session['code']} has no track assigned, skipping")
+        continue
+    elif "(waitlist)" in track["en"]:
+        print(f"{session['code']} is waitlisted, skipping")
+        continue
+    else:
+        track = TRACKS[track["en"]]
+
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
-        if session["slot"] and session["slot"]["start"] and session["slot"]["end"]:
-            start = dateutil.parser.isoparse(session["slot"]["start"]).astimezone(AEST)
-            end = dateutil.parser.isoparse(session["slot"]["end"]).astimezone(AEST)
-        else:
-            start = None
-            end = None
-        # type_answer_id = format_answer[next(
-        #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
-        #    )]
-        cw = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Content Warning"]
-            ),
-            None,
-        )
-        online = (
-            next(
-                (
-                    x["answer"]
-                    for x in session["answers"]
-                    if x["question"]["id"] == answers["Online"]
-                ),
-                None,
-            )
-            != "In person in Adelaide"
-        )
-        twitter = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Twitter"]
-            ),
-            None,
-        )
-        fedi = next(
-            (
-                x["answer"]
-                for x in session["answers"]
-                if x["question"]["id"] == answers["Fedi"]
-            ),
-            None,
-        )
-        track = session["track"]
-        # if track is not None:
-        #     track = tracks[track["en"]]
-        # else:
-        #     print(f"!!! {session['code']} has no track assigned")
         yaml.dump(
             {
                 "title": session["title"],
                 "start": start,
                 "end": end,
-                "room": rooms[session["slot"]["room"]["en"]]
+                "room": ROOMS[session["slot"]["room"]["en"]]
                 if session["slot"] and session["slot"]["room"]
                 else None,
                 "track": track,
@@ -203,10 +185,43 @@ for session in paginate(
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
                 # "youtube_slug": youtube_slugs.get(session["code"]),
-                "online": online,
             },
             f,
         )
+
+BREAKS_DIR.mkdir(exist_ok=True)
+for entry in BREAKS_DIR.glob("*"):
+    entry.unlink()
+
+# If a schedule is published, collect breaks
+schedule = requests.get(
+    "https://pretalx.com/api/events/pycon-au-2024/schedules/latest/",
+    headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+)
+if schedule.ok:
+    for break_ in schedule.json()["breaks"]:
+        # We only want to copy across breaks that aren't actually breaks
+        description = break_["description"]["en"]
+        if "break" in description.lower() or "lunch" in description.lower():
+            continue
+
+        with (
+            BREAKS_DIR / f"{break_['room_id']}-{break_['start'].replace(':','-')}.yml"
+        ).open("w") as f:
+            start = dateutil.parser.isoparse(break_["start"]).astimezone(EVENT_TIMEZONE)
+            end = dateutil.parser.isoparse(break_["end"]).astimezone(EVENT_TIMEZONE)
+            yaml.dump(
+                {
+                    "room": ROOMS[break_["room"]["en"]],
+                    "start": start,
+                    "end": end,
+                    "description": break_["description"]["en"],
+                },
+                f,
+            )
+
+
+PEOPLE_IMGS_DIR.mkdir(exist_ok=True)
 
 with (CONTENT_DIR / "_people_etags.yml").open("r") as f:
     etags = yaml.load(f)
@@ -216,7 +231,7 @@ if not etags:
     etags = {}
 
 for speaker in paginate(
-    "https://pretalx.com/api/events/pycon-au-2024/speakers/?questions=3949,3956,395"
+    f"https://pretalx.com/api/events/pycon-au-2024/speakers/?questions={PRONOUN_QUESTION_ID},{FEDIVERSE_QUESTION_ID},{TWITTER_QUESTION_ID}"
 ):
     if speaker["code"] not in seen_speakers:
         continue
@@ -225,6 +240,8 @@ for speaker in paginate(
         if speaker["avatar"] is not None:
             etag = etags.get(speaker["code"], None)
             print(speaker["avatar"])
+            if not speaker["avatar"]:
+                continue
             avatar_resp = requests.get(
                 speaker["avatar"],
                 headers={"If-None-Match": etag} if etag is not None else {},
@@ -238,8 +255,8 @@ for speaker in paginate(
                     etags[speaker["code"]] = avatar_resp.headers["ETag"]
                 im = Image.open(BytesIO(avatar_resp.content))
                 im = im.convert("RGB")
-                im.thumbnail((128, 128))
-                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'))
+                im.thumbnail((225, 225))
+                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'), quality=95)
                 has_pic = True
     except Exception as e:
         print(speaker["code"], speaker["avatar"], e)
@@ -253,7 +270,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Pronouns"]
+                        if x["question"]["id"] == PRONOUN_QUESTION_ID
                     ),
                     None,
                 ),
@@ -261,7 +278,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Twitter"]
+                        if x["question"]["id"] == TWITTER_QUESTION_ID
                     ),
                     None,
                 ),
@@ -269,7 +286,7 @@ for speaker in paginate(
                     (
                         x["answer"]
                         for x in speaker["answers"]
-                        if x["question"]["id"] == answers["Fedi"]
+                        if x["question"]["id"] == FEDIVERSE_QUESTION_ID
                     ),
                     None,
                 ),

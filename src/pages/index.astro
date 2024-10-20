@@ -2,9 +2,12 @@
 import Base from "../layouts/Base.astro"
 import logoReversed from "../imgs/Logo_Reversed.svg"
 import Navigation from "../components/Navigation.astro"
-import Button from "../components/Button.astro"
-import MailingListSignup from "../components/MailingListSignup.astro"
 import NoOrphanText from "../components/NoOrphanText.astro"
+import { getEntryBySlug } from "astro:content"
+
+let entry = await getEntryBySlug('pages', 'index')
+const { Content, headings } = await entry.render()
+
 ---
 
 <Base navigation={false}>
@@ -32,39 +35,14 @@ import NoOrphanText from "../components/NoOrphanText.astro"
     <div class="rotated">
       <article>
         <h1>
-          <NoOrphanText>Sponsor PyCon AU today!</NoOrphanText>
+          <NoOrphanText>Tickets are on sale now!</NoOrphanText>
         </h1>
+        <a href="/attend/">Buy tickets &rarr;</a>
       </article>
       <Navigation logo={false} />
     </div>
   </header>
   <main>
-    <h1>PyCon AU is back for 2024!</h1>
-    <p>
-      In 2024, PyCon AU will be held from the <b>22nd to the 26th of November</b> at the <b>Melbourne Convention and Exhibition Centre (MCEC) in Narrm/Melbourne</b>.
-    <p>
-      More details will be announced soon, so stay tuned!
-    </p>
-    <h2>Call For Proposals now closed!</h2>
-    <p>
-    Thank you to everyone who submitted a talk during the call for proposals. CFP closed 21 July 2024. We are currently reviewing the submissions and will be in touch with everyone soon.
-    </p>
-    <h2>Want to sponsor our event?</h2>
-    <p>
-    <img src="/pyconau-sponsor-image-banner.jpeg" alt="Photo of platinum sponsors' logos advertised at PyCon AU 2023" style="border-radius: 0.5rem;"/>
-      Sponsors are critical to the success of PyCon AU. We're always looking to connect with sponsors and have a range of packages and benefits to suit organisations of all shapes and sizes! To learn more about how sponsors can support the conference, check out our <a href="/sponsor">sponsorships page</a>.
-    <center>
-      <Button type="chonk" block href="/files/PyCon%20AU%202024%20-%20Sponsorship%20Prospectus%20-%20July%20Update.pdf">
-        Download the Sponsorship Prospectus
-      </Button>
-    </center>    
-    </p>
-    <p>
-      To find out more as it happens, you can follow us on <a
-        href="https://mastodon.pycon.org.au/@pyconau">Mastodon</a
-      > or <a href="https://twitter.com/PyConAU">Twitter</a>, or subscribe to
-      our mailing list:
-    </p>
-    <MailingListSignup />
+    <Content />
   </main>
 </Base>

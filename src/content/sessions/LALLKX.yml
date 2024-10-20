@@ -1,9 +1,8 @@
 title: The perfect setup? Not setup.py! Building packages the right way
-start:
-end:
-room:
+start: 2024-11-24 11:55:00+11:00
+end: 2024-11-24 12:25:00+11:00
+room: goldfields
 track:
-  en: Main Conference
 abstract: "<p>Everyone loves package management! Python's packaging systems have continued
   to evolve over the years. Specifications such as environment markers, custom backends,
   and static build configurations have been introduced. Additionally new package managers
@@ -28,4 +27,3 @@ code: LALLKX
 speakers:
 - CGMRAQ
 cw:
-online: true

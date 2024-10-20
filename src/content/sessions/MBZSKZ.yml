@@ -1,9 +1,8 @@
 title: Where am I? What am I doing? Mobile App development in Python
-start:
-end:
-room:
+start: 2024-11-23 10:40:00+11:00
+end: 2024-11-23 11:10:00+11:00
+room: eureka3
 track:
-  en: Main Conference
 abstract: "<p>A modern mobile phone isn't just a powerful CPU and display. It's a
   collection of incredibly sophisticated portable sensors: multiple cameras, a high
   resolution GPS, accelerometers and more. In this talk, you'll learn how to build
@@ -19,4 +18,3 @@ code: MBZSKZ
 speakers:
 - LDFVBH
 cw:
-online: true

@@ -1,10 +1,9 @@
 title: Leveraging the Rich Spatiotemporal Features of live cell imaging with Machine
   Learning and AI
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 15:30:00+11:00
+end: 2024-11-22 16:00:00+11:00
+room: eureka2
+track: scientific
 abstract: "<p>Live cell imaging is a microscopy technique, where scientists can observe
   dynamics of living cells across time. One such method, known as lattice lightsheet
   microscopy captures these processes at high spatiotemporal detail. However, current
@@ -24,4 +23,3 @@ code: XUNCWK
 speakers:
 - HVQBMZ
 cw:
-online: true

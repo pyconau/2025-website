@@ -1,9 +1,8 @@
 title: 'Rethinking Data Catalogs: The Promise and Pitfalls'
-start:
-end:
-room:
+start: 2024-11-24 11:15:00+11:00
+end: 2024-11-24 11:45:00+11:00
+room: eureka3
 track:
-  en: Main Conference
 abstract: "<p>The promise of data catalogs, a single source of truth for your organisation's
   data, often clashes with the reality of under-utilised features, redundancy across
   various data catalog solutions across teams, adoption challenges and a lack of clear
@@ -22,4 +21,3 @@ speakers:
 - 3DCSNN
 - 98HVRZ
 cw:
-online: true

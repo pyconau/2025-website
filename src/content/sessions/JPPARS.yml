@@ -1,0 +1,28 @@
+title: 'Running a Marathon: How to get a PB with Python'
+start: 2024-11-22 15:30:00+11:00
+end: 2024-11-22 16:00:00+11:00
+room: goldfields
+track: devoops
+abstract: <p>Marathon training daunting, but using data, together with some simple
+  python software, can make it slightly less so. In this talk, I will share my own
+  story about how I used python to attempt to take my marathon training to the next
+  level. The talk will explore how to collect and analyze your running data, improve
+  your training plan and potentially even predict race day performance using machine
+  learning tools. I hope to inspire some fellow runners and leave people thinking
+  about how they can use python in their own personal endeavors.</p>
+description: "<p>I recently completed my first marathon, and like many other keen
+  runners/driven software engineers may have done, as soon as I crossed the finish
+  line I started to ask myself how I could do it better next time? </p>\n<p>In this
+  talk, I will walk through possible ways to improve marathon training and performance
+  by integrating python into your training plan. I will explore how data analysis
+  and machine learning can be leveraged to improve your training efficiency and reduce
+  the possibility of injury while running, all while utilizing standard python libraries
+  like pandas, NumPy and maybe even scikit-learn. </p>\n<p>I will use practical examples
+  and anecdotes from my own experiences to discuss how best to use real-time monitoring
+  and feedback to make your own exercise training more insightful and perhaps a bit
+  more interesting. Join me to see how Python can transform your running journey and
+  help you hit your goals!</p>"
+code: JPPARS
+speakers:
+- DXVSSE
+cw:

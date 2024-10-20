@@ -1,9 +1,8 @@
 title: Django, REST and OpenAPI - a gentle introduction
-start:
-end:
-room:
+start: 2024-11-24 13:30:00+11:00
+end: 2024-11-24 14:00:00+11:00
+room: eureka2
 track:
-  en: Main Conference
 abstract: <p>Django is an all-parts-included framework that is one of the most popular
   ways of building a website in Python.  But for many websites that's not enough -
   we also need a REST-based API with an OpenAPI specification so that other programs
@@ -18,4 +17,3 @@ code: C37SMX
 speakers:
 - RB3PZZ
 cw:
-online: true

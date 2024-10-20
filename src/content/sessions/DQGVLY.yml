@@ -1,9 +1,8 @@
 title: 'Simplifying Python Web App Operations: Automating K8s Ops with Open Source'
-start:
-end:
-room:
-track:
-  en: DevOops
+start: 2024-11-22 11:40:00+11:00
+end: 2024-11-22 12:10:00+11:00
+room: goldfields
+track: devoops
 abstract: <p>After creating a great web app using Python such as with flask, the next
   hurdle to production is how to make it available to users and operate it. And not
   just your app, but also ingress, the database, observability and the list goes on.
@@ -17,4 +16,3 @@ code: DQGVLY
 speakers:
 - ATDLZU
 cw:
-online: true

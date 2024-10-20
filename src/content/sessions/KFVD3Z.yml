@@ -1,10 +1,9 @@
 title: As a Teacher. I have no Time to learn Programming - Streamline Assignment Marking
   with Python
-start:
-end:
-room:
-track:
-  en: Education
+start: 2024-11-22 14:30:00+11:00
+end: 2024-11-22 15:00:00+11:00
+room: eureka3
+track: education
 abstract: "<p>Teaching is a demanding job that takes away the initiative to learn
   or improve in programming skills. I therefore decided to streamline some of my assignment
   marking using Python. The time I spent in developing the Python scripts could then
@@ -35,4 +34,3 @@ code: KFVD3Z
 speakers:
 - WREQBQ
 cw:
-online: true

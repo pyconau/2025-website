@@ -10,7 +10,14 @@ const { navClass, logo } = Object.assign(
   Astro.props as Props,
 )
 ---
-
+<style lang="scss">
+  nav {
+    // This does nothing normally, but the schedule page uses scroll snapping to
+    // centre itself when viewed in horizontal-scrolling mode on narrow devices;
+    // this ensures that it's still possible to scroll to the top
+    scroll-snap-align: start;
+  }
+</style>
 <nav class={navClass}>
   {
     logo && (

@@ -1,9 +1,8 @@
 title: Coding Competition Software VS Murphy's Law
-start:
-end:
-room:
-track:
-  en: DevOops
+start: 2024-11-22 14:30:00+11:00
+end: 2024-11-22 15:00:00+11:00
+room: goldfields
+track: devoops
 abstract: "<p>Imagine agreeing to develop a full stack web app to host a coding competition
   for thousands of students. Then standing at a podium in front of a large crowd as
   your app crashes and you discover that you might be in too deep.</p>\n<p>That was
@@ -22,4 +21,3 @@ code: XHM7N7
 speakers:
 - VJPZ7L
 cw:
-online: true

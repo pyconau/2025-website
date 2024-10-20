@@ -1,10 +1,9 @@
 title: 'Avocado, Cheese, Grape, Tomato or: How I Used Python to Stop Worrying and
   Love Emoji in Bioinformatics'
-start:
-end:
-room:
-track:
-  en: Scientific Python
+start: 2024-11-22 16:50:00+11:00
+end: 2024-11-22 17:20:00+11:00
+room: eureka2
+track: scientific
 abstract: "<p>Bioinformatics is the science of understanding and analysing biological
   information, such as the genetic information contained in DNA. It combines the disciplines
   of biology, computer science, and mathematics. If this seems daunting, don’t panic,
@@ -36,4 +35,3 @@ code: A78TC9
 speakers:
 - HBDX9R
 cw:
-online: true

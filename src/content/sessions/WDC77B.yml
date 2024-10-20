@@ -1,0 +1,21 @@
+title: The neglected art of a relevant benchmark and why you need one
+start: 2024-11-24 09:20:00+11:00
+end: 2024-11-24 10:05:00+11:00
+room: goldfields
+track:
+abstract: "<p>Long ago when deep learning was all the rage (circa 2018), you could
+  spend a lot of time and money crunching a lot of data to make a new model and come
+  up with something that was … inconclusively better than what you had had before.
+  Was your model architecture wrong? Could you have picked a better learning rate?
+  Stuck in a local optimum? How to know? </p>\n<p>The best way out of the swamp of
+  confusion was to know what you were shooting for. What was a reasonable limit for
+  how good an answer you could get? So we built benchmarks.  Unfortunately, a lot
+  of teams working with both traditional and generative AI techniques today aren’t
+  using realistic benchmarks to draw a line in the sand and say ‘we’re aiming for
+  this’. </p>\n<p>Let's take a look at why you don't, why you should and how to go
+  about it.</p>"
+description: ''
+code: WDC77B
+speakers:
+- D9TAZL
+cw:
