@@ -14,6 +14,11 @@ export const SPECIALIST_TRACKS = [
 ] as const
 
 export const SPONSOR_TIERS = [
+  {
+    slug: "platinum",
+    name: "Platinum Sponsor",
+    plural_name: "Platinum Sponsors",
+  },
   { slug: "gold", name: "Gold Sponsor", plural_name: "Gold Sponsors" },
   { slug: "standard", name: "Sponsor", plural_name: "Sponsors" },
   { slug: "auspice", name: "Auspice", plural_name: "Auspices" },
