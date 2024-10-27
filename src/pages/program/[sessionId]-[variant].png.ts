@@ -4,10 +4,11 @@ import { join } from "node:path"
 import { tmpdir } from "node:os"
 import { execa } from "execa"
 import { DateTime } from "luxon"
-import { ROOMS_BY_SLUG } from "../../main_config"
+import { CONFERENCE_TZ, ROOMS_BY_SLUG } from "../../main_config"
 
 type Params = {
   sessionId: string
+  variant: "og" | "social"
 }
 
 export async function GET({
@@ -33,7 +34,9 @@ export async function GET({
     title: session.data.title,
     speakers,
     room: ROOMS_BY_SLUG[session.data.room!]?.name,
-    time: DateTime.fromJSDate(session.data.start!).toLocaleString({
+    time: DateTime.fromJSDate(session.data.start!, {
+      zone: CONFERENCE_TZ,
+    }).toLocaleString({
       weekday: "long",
       hour: "numeric",
       minute: "numeric",
@@ -43,10 +46,13 @@ export async function GET({
   let dir = await mkdtemp(join(tmpdir(), "pyconau-2023-typst-"))
   let inputPath = join(dir, "input.typ")
   let inputFile = await open(inputPath, "wx")
+  let typstFile = (
+    { og: "speakerCard.typ", social: "socialCard.typ" } as const
+  )[params.variant]
   await inputFile.close()
   const { stdout } = await execa({
     encoding: "buffer",
-  })`typst compile src/typst/speakerCard.typ - -f png --font-path src/typst/fonts/ --input data=${JSON.stringify(inputData)} --root ../..`
+  })`typst compile src/typst/${typstFile} - -f png --font-path src/typst/fonts/ --input data=${JSON.stringify(inputData)} --root ../..`
   let nonResizableArrayBuffer = new ArrayBuffer(stdout.byteLength)
   let nonResizableArrayBufferView = new Uint8Array(nonResizableArrayBuffer)
   nonResizableArrayBufferView.set(stdout)
@@ -55,7 +61,12 @@ export async function GET({
 
 export async function getStaticPaths(): Promise<{ params: Params }[]> {
   const pages = await getCollection("sessions")
-  return pages.map((entry) => ({
-    params: { sessionId: entry.id },
-  }))
+  return pages.flatMap((entry) =>
+    ["og", "social"].map((variant) => ({
+      params: {
+        sessionId: entry.id,
+        variant,
+      },
+    })),
+  )
 }
