@@ -5,13 +5,11 @@ import Navigation from "../components/Navigation.astro"
 import NoOrphanText from "../components/NoOrphanText.astro"
 import { getEntryBySlug } from "astro:content"
 
-let entry = await getEntryBySlug('pages', 'index')
+let entry = await getEntryBySlug("pages", "index")
 const { Content, headings } = await entry.render()
-
 ---
 
 <Base navigation={false}>
-  
   <script
     type="application/ld+json"
     set:html={`
@@ -29,9 +27,9 @@ const { Content, headings } = await entry.render()
       }
     `}
   />
-   
+
   <header id="header" slot="nav">
-    <img src={logoReversed} alt="PyCon AU" role="heading" aria-level="1" />
+    <img src={logoReversed.src} alt="PyCon AU" role="heading" aria-level="1" />
     <div class="rotated">
       <article>
         <h1>

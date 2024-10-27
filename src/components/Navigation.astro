@@ -10,6 +10,7 @@ const { navClass, logo } = Object.assign(
   Astro.props as Props,
 )
 ---
+
 <style lang="scss">
   nav {
     // This does nothing normally, but the schedule page uses scroll snapping to
@@ -22,7 +23,7 @@ const { navClass, logo } = Object.assign(
   {
     logo && (
       <a id="nav-logo" href="/">
-        <img src={logoImg} />
+        <img src={logoImg.src} />
       </a>
     )
   }
@@ -33,8 +34,9 @@ const { navClass, logo } = Object.assign(
     <li><a href="/attend">Attend</a></li>
     <li><a href="/safety">Safety</a></li>
   </ul>
-  <div class="dates">    
+  <div class="dates">
     22&ndash;26 November 2024&emsp;&bull;&emsp;<span class="location"
-      >Melbourne Convention and Exhibition Centre</span>
+      >Melbourne Convention and Exhibition Centre</span
+    >
   </div>
 </nav>
