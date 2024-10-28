@@ -18,6 +18,8 @@ ROOMS = {
     "Goldfields Theatre": "goldfields",
     "Eureka 2": "eureka2",
     "Eureka 3": "eureka3",
+    "Chancellor 2 at the Grand Chancellor Hotel": "chancellor2",
+    "Chancellor 4 at the Grand Chancellor Hotel": "chancellor4",
 }
 TRACKS = {
     "DevOops": "devoops",
