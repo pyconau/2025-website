@@ -124,7 +124,7 @@ for entry in SESSIONS_DIR.glob("*"):
 
 
 for session in paginate(
-    "https://pretalx.com/api/events/pycon-au-2024/submissions/?state=confirmed&questions=3747"
+    "https://pretalx.com/api/events/pycon-au-2024/submissions/?state=confirmed"
 ):
     # Do not schedule backups
     # TODO manually add backups if they are unscheduled after the event.
