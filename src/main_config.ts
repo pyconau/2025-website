@@ -3,9 +3,11 @@ export const CONFERENCE_TZ = "Australia/Melbourne"
 export const TICKETS_AVAILABLE: boolean = true
 
 export const ROOMS = [
-  { slug: "goldfields", name: "Goldfields Theatre" },
-  { slug: "eureka2", name: "Eureka 2" },
-  { slug: "eureka3", name: "Eureka 3" },
+  { slug: "goldfields", name: "Goldfields Theatre", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "eureka2", name: "Eureka 2", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "eureka3", name: "Eureka 3", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "chancellor2", name: "Chancellor 2 at the Grand Chancellor Hotel", days: ['monday'] },
+  { slug: "chancellor4", name: "Chancellor 4 at the Grand Chancellor Hotel", days: ['monday'] },
 ] as const
 export const SPECIALIST_TRACKS = [
   { slug: "scientific", name: "Scientific Python", room: "eureka2" },
