@@ -14,19 +14,20 @@ import { ROOMS } from "../../main_config"
 import Session from "../../components/program/Session.astro"
 
 export async function getStaticPaths() {
-  return ["friday", "saturday", "sunday"].map((day) => ({
+  return ["friday", "saturday", "sunday", "monday"].map((day) => ({
     params: { day },
     props: { day },
   }))
 }
 export type Props = {
-  day: "friday" | "saturday" | "sunday"
+  day: "friday" | "saturday" | "sunday" | "monday"
 }
 const { day } = Astro.props as Props
 const datestamp = {
   friday: DateTime.fromISO("2024-11-22", { zone: CONFERENCE_TZ }),
   saturday: DateTime.fromISO("2024-11-23", { zone: CONFERENCE_TZ }),
   sunday: DateTime.fromISO("2024-11-24", { zone: CONFERENCE_TZ }),
+  monday: DateTime.fromISO("2024-11-25", { zone: CONFERENCE_TZ }),
 }[day]
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
@@ -64,7 +65,10 @@ const [dayStart, dayEnd] = [...sessions, ...breaks].reduce<
 function idx(dt: DateTime): number {
   return Math.floor(dt.toUnixInteger() / (5 * 60))
 }
-const roomMap = Object.fromEntries(ROOM_SLUGS.map((slug, i) => [slug, i + 1]))
+const TODAYS_ROOMS = ROOMS.filter((room) => room.days.includes(day))
+const roomMap = Object.fromEntries(TODAYS_ROOMS.map((room, i) => [room.slug, i + 1]))
+
+
 const speakerNameMap = new Map(
   (await getCollection("people")).map((person) => [
     person.id,
@@ -315,23 +319,26 @@ const tracksByRoom = Object.fromEntries(
   <ProgramSwitcher current={day} />
   <p class="tz">
     All times shown in AEDT (UTC+11). <a
-      href="https://pretalx.com/pyconau-2023/schedule/export/schedule.ics"
+      href="https://pretalx.com/pycon-au-2024/schedule/export/schedule.ics"
       >iCal</a
-    >, <a href="https://pretalx.com/pyconau-2023/schedule/export/schedule.json"
+    >, <a href="https://pretalx.com/pycon-au-2024/schedule/export/schedule.json"
       >JSON</a
     >.
   </p>
 
   <s-schedule-outer>
-    <s-schedule
-      style={`--day-start: ${idx(dayStart)}; --day-end: ${idx(
-        dayEnd,
-      )}; --total-tracks: 3;`}
-      data-start={dayStart.toISO()}
-      data-end={dayEnd.toISO()}
-    >
+      
+        <s-schedule
+          style={`--day-start: ${idx(dayStart)}; --day-end: ${idx(
+            dayEnd,
+          )}; --total-tracks: ${ROOMS.filter((room) => room.days.includes(day)).length};`}
+          data-start={dayStart.toISO()}
+          data-end={dayEnd.toISO()}
+        >
+      
       {
-        ROOMS.map(({ name, slug }, i) => (
+        
+        ROOMS.filter((room) => room.days.includes(day)).map(({ name, slug }, i) => (
           <s-track style={`--track: ${i + 1};`}>
             {name}
             {day === "friday" ? (
@@ -383,10 +390,10 @@ const tracksByRoom = Object.fromEntries(
         [...timeSlices(dayStart, dayEnd, Duration.fromISO("PT30M"))].map(
           (time) => (
             <>
-              <s-time style={`--at: ${idx(time)}`}>
+              <s-time style={`--at: ${idx(time)}; min-height: 0.25rem;`}>
                 {time.toLocaleString(DateTime.TIME_SIMPLE)}
               </s-time>
-              <s-time-rule style={`--at: ${idx(time)}`} />
+              <s-time-rule style={`--at: ${idx(time)}; min-height: 0.25rem;`} />
             </>
           ),
         )
