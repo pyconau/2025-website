@@ -1,0 +1,30 @@
+title: Fast, highly effective database security using searchable encryption (without
+  the yak shave)
+start:
+end:
+room:
+track:
+abstract: "<p>Is it possible to protect data directly and not just the systems in
+  which it is stored?</p>\n<p>As a security-conscious Pythonista, you know to use
+  parameterised database queries, validate user input, use HTTPS, turn on logging,
+  firewalls, sprinkle some static analysis on the build pipeline, and do periodic
+  penetration testing. </p>\n<p>But beyond that, there’s not much else you can do,
+  right? Could there even be a better way to secure sensitive data without all the
+  pain?</p>\n<p>Encryption-as-access control offers a compelling alternative to data
+  security that is not only more effective but easier to implement reliably than traditional
+  controls.\nMost application security programs are built on the assumption that we
+  can’t protect the data directly, but we can build layers of defences around it to
+  slow adversaries down.</p>\n<p>Searchable, encryption-in-use on the other hand,\
+  \  protects data directly while retaining virtually all query functionality.. Recent
+  advancements finally make it fast and flexible enough for use in everyday systems
+  sans yak shaving..</p>\n<p>In this talk, attendees will learn:</p>\n<ul>\n<li>Why
+  many of the traditional approaches to encryption no longer make sense in 2024</li>\n
+  <li>What modern encryption techniques exist for protecting data in your Python applications
+  while keeping it searchable</li>\n<li>What tools you can use today in Python to
+  apply these techniques</li>\n<li>What the performance, security, and usability tradeoffs
+  are for these approaches</li>\n<li>How (not) to shave a yak</li>\n</ul>"
+description: ''
+code: WUFFRB
+speakers:
+- GDHJCV
+cw:

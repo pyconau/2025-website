@@ -16,9 +16,13 @@ abstract: "<p>You’ve got sensitive customer data you need to protect in your P
   data vault built using Python and PostgreSQL\n * The cryptography fundamentals you
   need to pay attention to, and the ones you don’t\n * Plus: how quantum safety should
   affect how you encrypt data today</p>"
-description: ''
+description: "<p>One of the best ways to understand a system is to break it and rebuild
+  it. That is what we’re going to do in this session.</p>\n<p>In this workshop you’ll
+  learn:</p>\n<p>How to secure, break, and then re-secure an encrypted data vault
+  built using Python and PostgreSQL\nThe cryptography fundamentals you need to pay
+  attention to, and the ones you don’t\nPlus: how quantum safety should affect how
+  you encrypt data today</p>"
 code: HBB3ST
 speakers:
-- PB9BKD
-- KWK79M
+- GDHJCV
 cw:
