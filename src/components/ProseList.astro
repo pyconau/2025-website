@@ -6,7 +6,9 @@ let { items } = Astro.props as Props
 ---
 
 {
-    items.length === 1 ? (
+    items.length === 0 ? (
+        ""
+    ) : items.length === 1 ? (
         items[0]
     ) : items.length === 2 ? (
         <>
