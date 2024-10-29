@@ -20,7 +20,7 @@ export async function GET({
 }) {
   let session = (await getEntry("sessions", params.sessionId))!
   let speakers = await Promise.all(
-    session?.data.speakers.map(async (speakerId) => {
+    session?.data?.speakers.map(async (speakerId) => {
       let speaker = (await getEntry("people", speakerId))!
       return {
         name: speaker.data.name,
