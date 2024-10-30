@@ -1,9 +1,21 @@
-title: MongoDB talk
+title: 'Switching to MongoDB: The challenges of translating database schemas'
 start:
 end:
 room:
 track:
-abstract: <p>Please fill in this section</p>
+abstract: "<p>Let’s get this out of the way: This talk isn’t about convincing you
+  to move to MongoDB. Migrating an existing app from an SQL database to MongoDB is
+  not exactly easy!</p>\n<p>An application built on top of a typical relational database
+  will have been built around the patterns and constraints of that way of thinking
+  and MongoDB has a different way of thinking about data modelling. Translating the
+  data model to work well with MongoDB requires an understanding of the context and
+  usage patterns of the data.</p>\n<p>This presents a challenge for building migration
+  tools. We want to make it as easy as possible for developers to migrate to MongoDB,
+  but we also need to give developers control and flexibility to make decisions about
+  how their data will be translated into a MongoDB schema. The result involves a surprising
+  amount of thoughtful UX design for a database migration tool! This talk explores
+  the steps and challenges of migrating relational data to MongoDB and the tools we’ve
+  built to help give developers control over this process.</p>"
 description: <p>Please fill in this section</p>
 code: LGSHE8
 speakers:
