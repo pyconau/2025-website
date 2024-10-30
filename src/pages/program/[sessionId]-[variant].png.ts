@@ -61,7 +61,7 @@ export async function GET({
 
 export async function getStaticPaths(): Promise<{ params: Params }[]> {
   const pages = await getCollection("sessions")
-  return pages.flatMap((entry) =>
+  return pages.filter((entry) => entry.data.speakers.length > 0 && entry.data.room !== null).flatMap((entry) =>
     ["og", "social"].map((variant) => ({
       params: {
         sessionId: entry.id,
