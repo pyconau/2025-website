@@ -3,19 +3,19 @@ start:
 end:
 room:
 track:
-abstract: "<p>Let’s get this out of the way: This talk isn’t about convincing you
-  to move to MongoDB. Migrating an existing app from an SQL database to MongoDB is
-  not exactly easy!</p>\n<p>An application built on top of a typical relational database
-  will have been built around the patterns and constraints of that way of thinking
-  and MongoDB has a different way of thinking about data modelling. Translating the
-  data model to work well with MongoDB requires an understanding of the context and
-  usage patterns of the data.</p>\n<p>This presents a challenge for building migration
-  tools. We want to make it as easy as possible for developers to migrate to MongoDB,
-  but we also need to give developers control and flexibility to make decisions about
-  how their data will be translated into a MongoDB schema. The result involves a surprising
-  amount of thoughtful UX design for a database migration tool! This talk explores
-  the steps and challenges of migrating relational data to MongoDB and the tools we’ve
-  built to help give developers control over this process.</p>"
+abstract: "<p>So you’ve decided you want to use MongoDB! For a brand new app, your
+  data model will grow and evolve with your app, but what if you already have data
+  in another database that you want to transition away from?</p>\n<p>An application
+  that was built on a relational database will have been built with the patterns and
+  constraints of a relational model and SQL queries. The MongoDB document model is
+  a different way of thinking about data modeling, with a different set of advantages
+  and limitations. Adapting an application’s data model to work well with MongoDB
+  is a fun challenge! It needs to be done with an understanding of the data’s context
+  and usage patterns.</p>\n<p>This talk isn’t about whether or not you should switch
+  to MongoDB, instead we’ll focus on the practicalities of the migration process and
+  the challenges of transforming data from a relational world to a MongoDB document-model.
+  As part of this we’ll see the tools we’ve built to give developers insight into
+  their current database and provide flexibility and control over the migration process.</p>"
 description: <p>Please fill in this section</p>
 code: LGSHE8
 speakers:
