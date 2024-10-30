@@ -2,5 +2,13 @@ name: Katie Bell
 pronouns:
 twitter:
 fedi:
-bio: <p>Staff Software Engineer, MongoDB</p>
+bio: "<p>Katie is currently working as a Staff Engineer at MongoDB, developing tools
+  that help developers migrate data from other databases to MongoDB. </p>\n<p>Before
+  joining MongoDB, she spent a few years as a freelance developer and General Assembly
+  bootcamp instructor. Her contract work covered a wide range of applications from
+  a startup platform for selling limited-release sneakers, to an automated bidding
+  system for renewables on the Australian energy market. </p>\n<p>Her background in
+  a variety of SQL and NoSQL databases comes from Campaign Monitor where she was engineering
+  productivity lead and SRE across a SQLServer and Cassandra system, and from Google
+  as a Software Engineer and later a Site Reliability Engineer.</p>"
 has_pic: true
