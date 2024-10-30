@@ -50,6 +50,10 @@ main {
     background-color: rgba(255, 239, 97, 0.4);
     padding: -3px 3px;
   }
+
+  #purchase-button-container + p {
+    margin-top: 1.25rem;
+  }
 }
 
 $logo-w-ratio: 3.577;

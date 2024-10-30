@@ -1,14 +1,28 @@
 ---
 import Button from "./Button.astro"
+
+export type Props = {
+  cta: string
+  
+}
+let { cta } = Astro.props
+
 ---
 
 <p>
     <center id="purchase-button-container">
         <Button type="chonk" href="https://pretix.eu/pyconau/2024/">
-            Get your tickets now!
+            { cta ?? 'Get your tickets now!'}
         </Button>
     </center>
 </p>
+
+<style lang="scss">
+  @import "../vars.scss";
+    #purchase-button-container + p {
+        margin-top: 1.25rem;
+    }
+</style>
 
 <script>
     // Use a campaign URL if the viewer came from social media.
