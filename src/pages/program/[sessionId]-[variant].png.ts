@@ -20,7 +20,7 @@ export async function GET({
 }) {
   let session = (await getEntry("sessions", params.sessionId))!
   let speakers = await Promise.all(
-    session?.data?.speakers.map(async (speakerId) => {
+    session?.data.speakers.map(async (speakerId) => {
       let speaker = (await getEntry("people", speakerId))!
       return {
         name: speaker.data.name,
@@ -61,7 +61,7 @@ export async function GET({
 
 export async function getStaticPaths(): Promise<{ params: Params }[]> {
   const pages = await getCollection("sessions")
-  return pages.flatMap((entry) =>
+  return pages.filter((entry) => entry.data.speakers.length > 0).flatMap((entry) =>
     ["og", "social"].map((variant) => ({
       params: {
         sessionId: entry.id,
