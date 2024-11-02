@@ -1,8 +1,8 @@
 title: Fast, highly effective database security using searchable encryption (without
   the yak shave)
-start:
-end:
-room:
+start: 2024-11-23 12:00:00+11:00
+end: 2024-11-23 12:30:00+11:00
+room: eureka3
 track:
 abstract: "<p>Is it possible to protect data directly and not just the systems in
   which it is stored?</p>\n<p>As a security-conscious Pythonista, you know to use

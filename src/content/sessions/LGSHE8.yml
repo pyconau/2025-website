@@ -1,7 +1,7 @@
 title: 'Switching to MongoDB: The challenges of translating database schemas'
-start:
-end:
-room:
+start: 2024-11-23 11:20:00+11:00
+end: 2024-11-23 11:50:00+11:00
+room: eureka3
 track:
 abstract: "<p>So you’ve decided you want to use MongoDB! For a brand new app, your
   data model will grow and evolve with your app, but what if you already have data

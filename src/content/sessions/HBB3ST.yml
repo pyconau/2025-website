@@ -2,7 +2,7 @@ title: How to secure, break, and re-secure an encrypted data vault using Python 
   PostgreSQL
 start: 2024-11-25 13:30:00+11:00
 end: 2024-11-25 15:30:00+11:00
-room: chancellor2
+room: chancellor4
 track:
 abstract: "<p>You’ve got sensitive customer data you need to protect in your Python
   web service.</p>\n<p>You’ve done all the right things to secure it — using SQLAlchemy
