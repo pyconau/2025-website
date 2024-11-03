@@ -3,10 +3,10 @@ start: 2024-11-23 11:20:00+11:00
 end: 2024-11-23 11:50:00+11:00
 room: eureka3
 track:
-abstract: <p>So you’ve decided you want to use MongoDB! For a brand new app, your
-  data model will grow and evolve with your app, but what if you already have data
-  in another database that you want to transition away from?</p>
-description: "<p>An application that was built on a relational database will have
+abstract: <p>So you’ve decided you want to use MongoDB!</p>
+description: "<p>For a brand new app, your data model will grow and evolve with your
+  app, but what if you already have data in another database that you want to transition
+  away from?</p>\n<p>An application that was built on a relational database will have
   been built with the patterns and constraints of a relational model and SQL queries.
   The MongoDB document model is a different way of thinking about data modeling, with
   a different set of advantages and limitations. Adapting an application’s data model
