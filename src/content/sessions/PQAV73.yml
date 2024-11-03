@@ -4,21 +4,22 @@ start: 2024-11-25 09:30:00+11:00
 end: 2024-11-25 12:30:00+11:00
 room: chancellor4
 track:
-abstract: "<p>In this workshop, we will build a ChatBot based on Retrieval Augmented
+abstract: <p>In this workshop, we will build a ChatBot based on Retrieval Augmented
   Generation (RAG). The ChatBot will leverage MongoDB Atlas, embedding models, Large
   Language Models (LLMs) to generate contextualized answers and textual content in
-  accordance to users’ queries based on publicly available sources.</p>\n<p>In this
-  hands-on workshop, attendees will:\n * Learn the foundations of Retrieval Augmented
-  Generation (RAG), such as chunking, embedding, and semantic search\n * Perform semantic
-  search queries against a MongoDB Atlas collection \n * Build a simple RAG system
-  using MongoDB Atlas and open-source LLMs</p>\n<p>Add memory to the RAG application\n
-  * In addition to these goals, the lab also offers more advanced content that covers:\n
-  * Combining pre-filtering with vector search\n * Adding re-ranking to the RAG application\n
-  * Stream responses from the RAG application</p>\n<p>Attendees will be provided with
-  all the resources required to successfully execute the hands-on portions of the
-  workshop, including a GitHub repository consisting of notebook templates with pseudocode.
-  Attendees will replace the pseudocode with their own code during the workshop.</p>"
-description: <p>This workshop will be facilitated by experts from MongoDB</p>
+  accordance to users’ queries based on publicly available sources.</p>
+description: "<p>In this hands-on workshop, attendees will:</p>\n<ul>\n<li>Learn the
+  foundations of Retrieval Augmented Generation (RAG), such as chunking, embedding,
+  and semantic search</li>\n<li>Perform semantic search queries against a MongoDB
+  Atlas collection </li>\n<li>Build a simple RAG system using MongoDB Atlas and open-source
+  LLMs</li>\n</ul>\n<p>Add memory to the RAG application:</p>\n<ul>\n<li>In addition
+  to these goals, the lab also offers more advanced content that covers:</li>\n<li>Combining
+  pre-filtering with vector search</li>\n<li>Adding re-ranking to the RAG application</li>\n
+  <li>Stream responses from the RAG application</li>\n</ul>\n<p>Attendees will be
+  provided with all the resources required to successfully execute the hands-on portions
+  of the workshop, including a GitHub repository consisting of notebook templates
+  with pseudocode. Attendees will replace the pseudocode with their own code during
+  the workshop.</p>"
 code: PQAV73
 speakers:
 - LNJKAN
