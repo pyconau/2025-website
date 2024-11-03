@@ -11,17 +11,12 @@ abstract: "<p>You’ve got sensitive customer data you need to protect in your P
   SQLAlchemy’s StringEncryptedType to encrypt each row of data with AES.</p>\n<p>But
   you have a lingering feeling that it’s all not quite enough. So how do you shake
   that feeling?</p>\n<p>One of the best ways to understand a system is to break it
-  and rebuild it. That is what we’re going to do in this session.</p>\n<p>In this
-  workshop you’ll learn:\n * How to secure, break, and then re-secure an encrypted
-  data vault built using Python and PostgreSQL\n * The cryptography fundamentals you
-  need to pay attention to, and the ones you don’t\n * Plus: how quantum safety should
-  affect how you encrypt data today</p>"
-description: "<p>One of the best ways to understand a system is to break it and rebuild
-  it. That is what we’re going to do in this session.</p>\n<p>In this workshop you’ll
-  learn:</p>\n<p>How to secure, break, and then re-secure an encrypted data vault
-  built using Python and PostgreSQL\nThe cryptography fundamentals you need to pay
-  attention to, and the ones you don’t\nPlus: how quantum safety should affect how
-  you encrypt data today</p>"
+  and rebuild it. That is what we’re going to do in this session.</p>"
+description: "<p>In this workshop you’ll learn:</p>\n<ul>\n<li>How to secure, break,
+  and then re-secure an encrypted data vault built using Python and PostgreSQL</li>\n
+  <li>The cryptography fundamentals you need to pay attention to, and the ones you
+  don’t</li>\n<li>Plus: how quantum safety should affect how you encrypt data today</li>\n\
+  </ul>"
 code: HBB3ST
 speakers:
 - GDHJCV
