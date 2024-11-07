@@ -21,15 +21,15 @@ description: "<p>This talk is suitable for Python beginners and the set of Pytho
   rubrics stored in an Excel spreadsheet. All the marks of a class of students are
   then stored in a folder of Excel files. I will demonstrate the automation of the
   following actions using Python libraries related to Excel such as openpyxl and xlwings.</p>\n
-  <p>-Create individual student mark sheets with names and other details filled in\n
-  -Check marking mistakes such as missing marks or giving marks above the highest
-  score\n-Adjustment of marks in all mark sheets due to errors made in assignment
-  design, etc.\n-Collect marks from each individual Excel mark sheet\n-Export Excel
-  mark sheets to PDF format for archive purposes</p>\n<p>I will also compare the benefits
-  of automating Excel using Python with Excel formulae and Visual Basic for Application
-  by separating programming logic from data. Especially in the light of the Government
-  Cybersecurity initiative \"Essential Eight Maturity Model\", Visual Basic for Application
-  should be avoided and Python can be a viable solution.</p>"
+  <p>-Create individual student mark sheets with names and other details filled in</p>\n
+  <p>-Check marking mistakes such as missing marks or giving marks above the highest
+  score</p>\n<p>-Adjustment of marks in all mark sheets due to errors made in assignment
+  design, etc.</p>\n<p>-Collect marks from each individual Excel mark sheet</p>\n
+  <p>-Export Excel mark sheets to PDF format for archive purposes</p>\n<p>I will also
+  compare the benefits of automating Excel using Python with Excel formulae and Visual
+  Basic for Application by separating programming logic from data. Especially in the
+  light of the Government Cybersecurity initiative \"Essential Eight Maturity Model\"\
+  , Visual Basic for Application should be avoided and Python can be a viable solution.</p>"
 code: KFVD3Z
 speakers:
 - WREQBQ
