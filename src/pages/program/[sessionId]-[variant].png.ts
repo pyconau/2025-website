@@ -18,10 +18,12 @@ export async function GET({
   params: Params
   request: Request
 }) {
+  console.log(params, request)
   let session = (await getEntry("sessions", params.sessionId))!
   let speakers = await Promise.all(
     session?.data.speakers.map(async (speakerId) => {
       let speaker = (await getEntry("people", speakerId))!
+      console.log(speakerId, speaker)
       return {
         name: speaker.data.name,
         image: speaker.data.has_pic
@@ -30,6 +32,7 @@ export async function GET({
       }
     }),
   )
+  console.log(session, speakers)
   let inputData = {
     title: session.data.title,
     speakers,
@@ -64,12 +67,16 @@ export async function GET({
 
 export async function getStaticPaths(): Promise<{ params: Params }[]> {
   const pages = await getCollection("sessions")
-  return pages.filter((entry) => entry.data.speakers.length > 0 && entry.data.room !== null).flatMap((entry) =>
-    ["og", "social", "video"].map((variant) => ({
-      params: {
-        sessionId: entry.id,
-        variant,
-      },
-    })),
-  )
+  return pages
+    .filter(
+      (entry) => entry.data.speakers.length > 0 && entry.data.room !== null,
+    )
+    .flatMap((entry) =>
+      ["og", "social","video"].map((variant) => ({
+        params: {
+          sessionId: entry.id,
+          variant,
+        },
+      })),
+    )
 }
