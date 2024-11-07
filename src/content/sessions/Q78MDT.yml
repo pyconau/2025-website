@@ -21,9 +21,9 @@ description: "<p>Artificial Intelligence, Large Language Models, and Machine Lea
   and intuitive understanding of how they work.</p>\n<p>We'll dive into:&lt;br /&gt;\n
   1. What are embeddings and how they enable machines to process and understand human
   language\n2. How you can create your own embeddings or utilise existing embedding
-  models to encode language in Python\n3. How embeddings underpin LLMs </p>\n<p>By
-  the end, you'll have a solid grasp of this fundamental AI concept and be equipped
-  to start experimenting with embeddings in your own projects.</p>"
+  models to encode language in Python\n3. Applications for embeddings</p>\n<p>By the
+  end, you'll have a solid grasp of this fundamental AI concept and be equipped to
+  start experimenting with embeddings in your own projects.</p>"
 code: Q78MDT
 speakers:
 - 7D78ZU
