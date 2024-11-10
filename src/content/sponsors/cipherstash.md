@@ -2,7 +2,7 @@
 name: Cipherstash
 logo: Logo-Landscape-Colour-on-White.jpg
 url: https://cipherstash.com
-tier: standard
+tier: gold
 ---
 
 CipherStash helps Python devs encrypt sensitive data, without sacrificing performance or usability. With CipherStash you can index and search encrypted data in PostgreSQL with SQL. 
