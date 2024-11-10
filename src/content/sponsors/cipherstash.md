@@ -1,6 +1,6 @@
 ---
 name: Cipherstash
-logo: cipherstash.png
+logo: Logo-Landscape-Colour-on-White.jpg
 url: https://cipherstash.com
 tier: standard
 ---
