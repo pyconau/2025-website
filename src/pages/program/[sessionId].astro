@@ -99,11 +99,11 @@ const daySlug = DateTime.fromJSDate(entry.data.start, {
     {
       entry.data.start && entry.data.end && entry.data.room ? (
         /* prettier-ignore */ <div class="time-bar">
-          {DateTime.fromJSDate(entry.data.start, { zone: "Australia/Adelaide"}).toLocaleString(
+          {DateTime.fromJSDate(entry.data.start, { zone: "Australia/Melbourne"}).toLocaleString(
             {weekday: 'long'},
-          )}&nbsp;{DateTime.fromJSDate(entry.data.start, { zone: "Australia/Adelaide"}).toLocaleString(
+          )}&nbsp;{DateTime.fromJSDate(entry.data.start, { zone: "Australia/Melbourne"}).toLocaleString(
             DateTime.TIME_SIMPLE,
-          )}&ndash;{DateTime.fromJSDate(entry.data.end, { zone: "Australia/Adelaide"}).toLocaleString(
+          )}&ndash;{DateTime.fromJSDate(entry.data.end, { zone: "Australia/Melbourne"}).toLocaleString(
             DateTime.TIME_SIMPLE,
           )}
           in <b>{ROOMS_BY_SLUG[entry.data.room].name}</b>
