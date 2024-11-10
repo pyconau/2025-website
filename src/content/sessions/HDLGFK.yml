@@ -1,0 +1,23 @@
+title: 'Projit: An Open Source Python Tool for Decoupled Data Science'
+start:
+end:
+room:
+track: scientific
+abstract: "<p>Data science projects occupy an unsual space between coding/hacking
+  and methodologically rigorous experimentation. They require careful discipline to
+  prevent problems like target leakage, over-fitting or p-hacking. Typically, data
+  scientists use custom workflows, or proprietary cloud systems to automate and standardise
+  certain elements like management of data sets, scripts, model artefacts and results.
+  The result is a general absence of both standardisation and easy migration of processes
+  for flexible and repeatable data science work.</p>\n<p>In this talk we will outline
+  a light weight open source python package that can be used to manage project meta-data
+  in a way that allows easy sharing, migration and collaboration for data scientists
+  working in the python ecosystem. We will discuss some of the design principles,
+  inspired by a combination of the UNIX command line and the git source control utility.
+  We will then demonstrate basic usage of the package with examples from scientific
+  research papers it has been used for.</p>\n<p>https://pypi.org/project/projit/</p>"
+description: ''
+code: HDLGFK
+speakers:
+- KUL77T
+cw:
