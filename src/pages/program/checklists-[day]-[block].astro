@@ -7,7 +7,7 @@ import Base from "../../layouts/Base.astro"
 import ProgramSwitcher from "../../components/ProgramSwitcher.astro"
 
 export async function getStaticPaths() {
-  return ["friday", "saturday", "sunday"].map((day) =>
+  return ["friday", "saturday", "sunday"].flatMap((day) =>
     [1, 2, 3, 4].map((block) => ({
       params: { day, block },
       props: { day, block },
@@ -20,22 +20,22 @@ export type Props = {
 }
 const { day, block } = Astro.props as Props
 const dayNum = {
-  friday: 18,
-  saturday: 19,
-  sunday: 20,
+  friday: 22,
+  saturday: 23,
+  sunday: 24,
 }[day]
 const timeRange = {
   [1]: Interval.fromISO(
-    `2023-08-${dayNum}T08:00+0930/2023-08-${dayNum}T10:30+0930`,
+    `2024-11-${dayNum}T08:00+1100/2024-11-${dayNum}T10:30+1100`,
   ),
   [2]: Interval.fromISO(
-    `2023-08-${dayNum}T10:30+0930/2023-08-${dayNum}T13:00+0930`,
+    `2024-11-${dayNum}T10:30+1100/2024-11-${dayNum}T13:00+1100`,
   ),
   [3]: Interval.fromISO(
-    `2023-08-${dayNum}T13:00+0930/2023-08-${dayNum}T15:20+0930`,
+    `2024-11-${dayNum}T13:00+1100/2024-11-${dayNum}T15:20+1100`,
   ),
   [4]: Interval.fromISO(
-    `2023-08-${dayNum}T15:20+0930/2023-08-${dayNum}T18:00+0930`,
+    `2024-11-${dayNum}T15:20+1100/2024-11-${dayNum}T18:00+1100`,
   ),
 }[block]
 const speakerMap = new Map(
@@ -47,20 +47,19 @@ const sessions = (await getCollection("sessions"))
     ...x,
     data: {
       ...x.data,
-      start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Adelaide" }),
-      end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Adelaide" }),
+      start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Melbourne" }),
+      end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Melbourne" }),
       speakers: x.data.speakers.map((speakerId) => speakerMap.get(speakerId)!),
     },
   }))
   .filter((s) => timeRange.contains(s.data.start))
 const roomCallsigns = {
-  a: "Hall Alpha",
-  b: "Hall Bravo",
-  c: "Hall Charlie",
-  e: "Hall Echo",
+  goldfields: "Goldfields Theatre",
+  eureka2: "Eureka 2",
+  eureka3: "Eureka 3",
 }
 
-const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
+const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall) => ({
   hall,
   sessions: sessions
     .filter((session) => session.data.room == hall)
@@ -109,7 +108,7 @@ const sessionsByHall = (["c", "a", "b", "e"] as const).map((hall) => ({
   </head>
   <body>
     {
-      sessionsByHall.map((hallInfo) => (
+      sessionsByHall.filter(hallInfo => hallInfo.sessions.length > 0).map((hallInfo) => (
         <>
           <section>
             <h1>
