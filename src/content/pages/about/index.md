@@ -23,6 +23,13 @@ This is the core of PyCon AU, as each day kicks off one of our amazing keynote s
 
 The end of the day brings everyone together again for a hilarious and informative round of lightning talks (submission of lightning talks topics will be open during the conference).
 
+## Workshops
+Workshops on Monday 25 November are free to attend, made possible through support of the presenting sponsors.
+
+Workshops are new in 2024 and are deep dive, hands on learning experiences facilitated by experts from the sponsoring organisation.  It's important that you register for each workshops to secure your seat.
+
+Learn more about [registering for workshops](/attend).
+
 ## Development sprints and social events
 
 Python wouldn’t have gotten to where it is without a welcoming community of developers building cool things together. The development sprints are an open space for people to work on projects with a particular focus on open source projects.
