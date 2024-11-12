@@ -7,18 +7,17 @@ track:
 abstract: "<p>Software builders and operators have long looked to transport and aviation
   for lessons in engineering practices and safety. Today, we’ll turn our attention
   to the railways as we take 20 years of hindsight to look at the ‘Broady runaway’
-  and what it can teach us. This talk will dive into the ATSB’s subsequent safety
-  investigation, recommendations and parallels in the software world, offering us
-  critical lessons in complex system design and incident management.</p>\n<p>For software
-  engineers, architects, managers and executives this is an opportunity for us to
-  reflect and learn from the past so that we can build more resilient and easier to
-  operate platforms in the future.</p>\n<p>Our runaway train is a 3 car electrical
-  multiple unit (EMU) that, in 2003, did the full 17km Broadmeadows to Spencer st
-  run in just 16 minutes, famously without a driver on board. The cause of the runaway
-  and resulting collision with a stationary diesel locomotive has been the talk of
-  many rail enthusiasts ever since, especially since there were no fatalities or serious
-  injuries.</p>"
-description: ''
+  and what it can teach us.</p>\n<p>This talk will dive into the ATSB’s subsequent
+  safety investigation, recommendations and parallels in the software world, offering
+  us critical lessons in complex system design and incident management.</p>"
+description: "<p>For software engineers, architects, managers and executives this
+  is an opportunity for us to reflect and learn from the past so that we can build
+  more resilient and easier to operate platforms in the future.</p>\n<p>Our runaway
+  train is a 3 car electrical multiple unit (EMU) that, in 2003, did the full 17km
+  Broadmeadows to Spencer st run in just 16 minutes, famously without a driver on
+  board. The cause of the runaway and resulting collision with a stationary diesel
+  locomotive has been the talk of many rail enthusiasts ever since, especially since
+  there were no fatalities or serious injuries.</p>"
 code: GF3NJK
 speakers:
 - PB9BKD
