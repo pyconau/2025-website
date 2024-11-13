@@ -13,11 +13,9 @@ This covers quite a few topics, so please read it closely.
 
 If you’re left with any questions after you have read this information, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) and we will do our best to help you out.
 
-Kind regards,
-
-Maia Sauren and Elena Williams
-
 PyCon AU 2024 Program Co-Chairs
+
+Many thanks to @Daisylb for all her work and dedication on [https://2024.pycon.org.au/program/](https://2024.pycon.org.au/program/)
 
 
 [Things all presenters should know](#things-all-presenters-should-know)
