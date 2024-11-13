@@ -2,7 +2,7 @@ title: "A Lazy Person's Guide to Building REST Clients or: How I Learned to Stop
   and Love Dunder Overrides"
 start: 2024-11-22 10:00:00+11:00
 end: 2024-11-22 10:30:00+11:00
-room: goldfields
+room: eureka2
 track: devoops
 abstract: "<p>Sick of writing lots of dedicated methods to perform the same tasks?
   Want to write less code? This talk may be for you! </p>\n<p>REST API's are ubiquitious,

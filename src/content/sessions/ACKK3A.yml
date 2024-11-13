@@ -1,7 +1,7 @@
 title: Causal Discovery in Python
 start: 2024-11-22 09:20:00+11:00
 end: 2024-11-22 09:50:00+11:00
-room: eureka2
+room: goldfields
 track: scientific
 abstract: "<p>A review and comparison of software available for causal discovery in
   Python. Causal discovery means learning \"what causes what\" from your data. The

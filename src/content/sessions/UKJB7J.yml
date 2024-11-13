@@ -2,7 +2,7 @@ title: 'Follow the Postgres brick road: a journey of testing against a real data
   server'
 start: 2024-11-24 11:55:00+11:00
 end: 2024-11-24 12:25:00+11:00
-room: eureka2
+room: eureka3
 track:
 abstract: <p>Tests are good. Code that uses a database is good. Testing code that
   uses a database is great… But it's not so easy to do well. Let's follow our journey

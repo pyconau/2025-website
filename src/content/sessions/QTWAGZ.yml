@@ -1,7 +1,7 @@
 title: Better dataframes
 start: 2024-11-24 10:35:00+11:00
 end: 2024-11-24 11:05:00+11:00
-room: eureka3
+room: eureka2
 track:
 abstract: "<p>Dataframes are an abstraction that proven extremely useful for data
   analysis in dynamic languages like S, R, Python, and Julia. The Pandas package has
