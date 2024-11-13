@@ -10,8 +10,8 @@ export const ROOMS = [
   { slug: "chancellor4", name: "Chancellor 4 at the Grand Chancellor Hotel", days: ['monday'] },
 ] as const
 export const SPECIALIST_TRACKS = [
-  { slug: "scientific", name: "Scientific Python", room: "eureka2" },
-  { slug: "devoops", name: "DevOops", room: "goldfields" },
+  { slug: "scientific", name: "Scientific Python", room: "goldfields" },
+  { slug: "devoops", name: "DevOops", room: "eureka2" },
   { slug: "education", name: "Education", room: "eureka3" },
 ] as const
 
