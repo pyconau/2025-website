@@ -143,10 +143,9 @@ PyCon AU has no formal dress code, with the exception that you can’t wear thin
 
 Some speakers choose to wear something casual that they feel comfortable in, others choose to wear something formal, yet others choose to wear something attention-grabbing and vivid that expresses who they are. All of those choices are valid and encouraged!
 
-However, we use lavalier (or lapel) microphones, which are small clip-on microphones that are attached to a “beltpack” (which contains a battery and transmitter) via a cable. Because of this:
+However, we use over-ear (or DPA) microphones, which are small microphones which fit around your ear, attached to a “beltpack” (which contains a battery and transmitter) via a cable. Because of this:
 
 * You need somewhere to put the “beltpack”, like a belt or a pocket. **This is particularly important if you’re wearing a dress or skirt or an outfit without pockets.**
-* You need somewhere on your chest that you can clip the microphone to. (T-shirts are usually fine, as is the collar or lapel of most other garments.)
 * You need to be able to put on and take off the microphone comfortably in public. (We can route the cable over or under clothing, and you can put the microphone on yourself with our AV team’s guidance, but we don’t have dressing rooms for you to “mic up” in.)
 
 ## Display Resolution
