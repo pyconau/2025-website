@@ -103,6 +103,8 @@ types = {
     "Opening/Closing": "open-close",
     "Special": "special",
     "Keynote": "keynote",
+    "Education Keynote": "keynote",
+    "Flash talk": "flash-talk",
     "Waitlist": "waitlist",
     "Backup": "backup",
 }
