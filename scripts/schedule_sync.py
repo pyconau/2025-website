@@ -244,24 +244,23 @@ for speaker in paginate(
         if speaker["avatar"] is not None:
             etag = etags.get(speaker["code"], None)
             print(speaker["avatar"])
-            if not speaker["avatar"]:
-                continue
-            avatar_resp = requests.get(
-                speaker["avatar"],
-                headers={"If-None-Match": etag} if etag is not None else {},
-            )
-            if avatar_resp.status_code == 304:
-                print("ETag match")
-                has_pic = True
-            else:
-                avatar_resp.raise_for_status()
-                if "ETag" in avatar_resp.headers:
-                    etags[speaker["code"]] = avatar_resp.headers["ETag"]
-                im = Image.open(BytesIO(avatar_resp.content))
-                im = im.convert("RGB")
-                im.thumbnail((225, 225))
-                im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'), quality=95)
-                has_pic = True
+            if speaker["avatar"]:
+                avatar_resp = requests.get(
+                    speaker["avatar"],
+                    headers={"If-None-Match": etag} if etag is not None else {},
+                )
+                if avatar_resp.status_code == 304:
+                    print("ETag match")
+                    has_pic = True
+                else:
+                    avatar_resp.raise_for_status()
+                    if "ETag" in avatar_resp.headers:
+                        etags[speaker["code"]] = avatar_resp.headers["ETag"]
+                    im = Image.open(BytesIO(avatar_resp.content))
+                    im = im.convert("RGB")
+                    im.thumbnail((225, 225))
+                    im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'), quality=95)
+                    has_pic = True
     except Exception as e:
         print(speaker["code"], speaker["avatar"], e)
 
