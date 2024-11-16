@@ -1,7 +1,7 @@
 title: Who tests the testers? Making and testing pipelines
 start: 2024-11-22 13:50:00+11:00
 end: 2024-11-22 14:20:00+11:00
-room: eureka2
+room: eureka3
 track: devoops
 abstract: "<p>You likely have a good pipeline that either runs tests, lints, or deployments
   for your project.</p>\n<p>But when it comes to changing that pipeline, how sure

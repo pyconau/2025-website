@@ -1,7 +1,7 @@
 title: Django on AWS for chump change
 start: 2024-11-22 11:00:00+11:00
 end: 2024-11-22 11:30:00+11:00
-room: eureka2
+room: eureka3
 track: devoops
 abstract: <p>Some cheap and definitely not employer approved ways to run Django on
   AWS infrastructure on a budget</p>
