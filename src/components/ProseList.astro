@@ -16,7 +16,7 @@ let { items } = Astro.props as Props
         </>
     ) : (
         <>
-            {items.slice(0, items.length - 2).map((item) => (
+            {items.slice(0, items.length - 1).map((item) => (
                 <>{item}, </>
             ))}{" "}
             and {items[items.length - 1]}
