@@ -3,8 +3,9 @@ start: 2024-11-24 15:50:00+11:00
 end: 2024-11-24 16:50:00+11:00
 room: goldfields
 track:
-abstract: <p>Lightning talks - Sunday</p>
+abstract: <p>Like regular talks, but shorter! And on a Sunday!</p>
 description: ''
 code: 9T7WAQ
-speakers: []
+speakers:
+- QWCHX7
 cw:
