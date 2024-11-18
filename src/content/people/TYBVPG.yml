@@ -1,6 +1,8 @@
-name: Adam
+name: Adam Graham
 pronouns:
 twitter:
 fedi:
-bio: ''
-has_pic: false
+bio: <p>Data scientist/air quality consultant with Environmental Technologies &amp;
+  Analytics. Bird nerd, former biologist, trained stats enthusiast. Bad but enthusiastic
+  python programmer - I still think Rmarkdown blows Jupyter out of the water.</p>
+has_pic: true
