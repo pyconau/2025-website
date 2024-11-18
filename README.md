@@ -6,6 +6,8 @@ Yes, we're fully aware of the irony of building the website for a Python confere
 
 ## Installing and running
 
+This website depends on Typst; check out their [install instructions](https://github.com/typst/typst?tab=readme-ov-file#installation) for that.
+
 You'll need to install Node.js (which you can usually get from your friendly local system package manager) and [PNPM](https://pnpm.io/installation). Then, run:
 
 ```shell
