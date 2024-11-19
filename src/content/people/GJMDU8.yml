@@ -2,5 +2,21 @@ name: Paige Martin
 pronouns:
 twitter:
 fedi:
-bio: <p>Bio</p>
-has_pic: false
+bio: "<p>Paige leads the User Training team at ACCESS-NRI and is working to build
+  a comprehensive and impactful training framework for ACCESS-NRI tools to ensure
+  that they are useful to the Australian climate modelling community. She enjoys engaging
+  with users and supporting community-driven action around open-source, scientific
+  tooling.</p>\n<p>Paige is passionate about the idea of open science – that every
+  step of our science should be made accessible and transparent to all. She has extensive
+  experience in leading international capacity sharing activities, led the computing
+  portion of a West African oceanography summer school (www.coessing.org) for many
+  years, and has also been an organizer and mentor for Ocean Hack-week.</p>\n<p>Paige
+  has also been heavily involved in open science-related communities. She is a steering
+  committee member of Pangeo – a community for big data geoscience – and OSSci – a
+  community at the intersection of science and open-source software.</p>\n<p>Paige
+  was awarded a PhD in Physical Oceanography from the University of Michigan, and
+  a postdoc in Climate Data Science at Columbia University. She previously worked
+  as a Support Scientist at NASA.</p>\n<p>When not behind a computer, Paige enjoys
+  standing on her hands, doing partner acrobatics and aerial arts, performing in musical
+  theater, and taking nature walks to look for birds.</p>"
+has_pic: true
