@@ -6,17 +6,17 @@ track: devoops
 abstract: "<p>A whole session of back to back 5 minute talks!</p>\n<p>They're a fun
   way to end the day, where speakers (like you!) can present about <em>almost</em>
   anything, and have the audience learn, laugh, and have a good time 😊</p>"
-description: "<p>⚡️ Being in the DevOops track, these lightning talks will be themed!\n
-  - We'll encourage submission of talks about <strong>learning from failure</strong>,
-  and speaking about what things you were wrong about and have learned from.\n- We'll
-  also cater to talks that are reasonably <strong>interesting to the audience of DevOops</strong>
-  PyCon AU</p>\n<p>📢 Want to present a lightning talk?</p>\n<p>❗️ Things to know:\n
-  - Each talk cannot be <strong>more than 5 minutes</strong>. We will <em>strictly</em>
-  keep time.\n- Generally, <strong>we won't accept ad talks</strong> - this includes
-  hiring announcements or sales pitches.\n- Your talk <strong>MUST</strong> meet the
-  standards set by the <a href=\"https://2024.pycon.org.au/safety\">PyCon AU Code
-  of Conduct</a></p>\n<p>❓ Sounds intriguing?\nWe'll share a link for submissions
-  on Friday 9AM AEDT, here and throughout the rest of the conference!</p>"
+description: "<p>⚡️ Being in the DevOops track, these lightning talks will be themed!</p>\n\
+  <ul>\n<li>We'll encourage submission of talks about <strong>learning from failure</strong>,
+  and speaking about what things you were wrong about and have learned from.</li>\n\
+  <li>We'll also cater to talks that are reasonably <strong>interesting to the audience
+  of DevOops</strong> PyCon AU</li>\n</ul>\n<p>📢 Want to present a lightning talk?</p>\n
+  <p>❗️ Things to know:</p>\n<ul>\n<li>Each talk cannot be <strong>more than 5 minutes</strong>.
+  We will <em>strictly</em> keep time.</li>\n<li>Generally, <strong>we won't accept
+  ad talks</strong> - this includes hiring announcements or sales pitches.</li>\n
+  <li>Your talk <strong>MUST</strong> meet the standards set by the <a href=\"https://2024.pycon.org.au/safety\"\
+  >PyCon AU Code of Conduct</a></li>\n</ul>\n<p>❓ Sounds intriguing?\nWe'll share
+  a link for submissions on Friday 9AM AEDT, here and throughout the rest of the conference!</p>"
 code: 3FTVHV
 speakers:
 - AHET73
