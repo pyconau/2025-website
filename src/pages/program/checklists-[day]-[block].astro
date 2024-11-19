@@ -41,14 +41,15 @@ const timeRange = {
 const speakerMap = new Map(
   (await getCollection("people")).map((person) => [person.id, person]),
 )
+const timeZone = "Australia/Melbourne"
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
   .map((x) => ({
     ...x,
     data: {
       ...x.data,
-      start: DateTime.fromJSDate(x.data.start, { zone: "Australia/Melbourne" }),
-      end: DateTime.fromJSDate(x.data.end, { zone: "Australia/Melbourne" }),
+      start: DateTime.fromJSDate(x.data.start, { zone: timeZone }),
+      end: DateTime.fromJSDate(x.data.end, { zone: timeZone }),
       speakers: x.data.speakers.map((speakerId) => speakerMap.get(speakerId)!),
     },
   }))
@@ -113,7 +114,7 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
           <section>
             <h1>
               Hall {hallInfo.hall.toUpperCase()},
-              {timeRange.start?.toLocaleString({ weekday: "short" })}
+              {timeRange.start?.toLocaleString({ weekday: "short", timeZone: timeZone })}
               block {block}
             </h1>
             <ul>
@@ -121,13 +122,13 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
                 Call time for <b>room monitor and session chair</b>:
                 {hallInfo.sessions[0]?.data.start
                   .minus({ minutes: 15 })
-                  .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                  .toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
               </li>
               <li>
                 Call time for <b>speakers</b>:
                 {hallInfo.sessions[0]?.data.start
                   .minus({ minutes: 10 })
-                  .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                  .toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
               </li>
             </ul>
             <ul class="checklist">
@@ -144,7 +145,7 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
                       {/* prettier-ignore */}
                       <li>
                     Find speaker
-                    {speaker.data.name} ({session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE)}
+                    {speaker.data.name} ({session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
                     session)
                   </li>
                     </>
@@ -169,7 +170,7 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
                   ).length
                 }
                 thank-you cards labelled "{hallInfo.hall.toUpperCase()}
-                {timeRange.start?.toLocaleString({ weekday: "short" })}
+                {timeRange.start?.toLocaleString({ weekday: "short", timeZone: timeZone })}
                 {block}"
               </li>
               <li>
@@ -196,8 +197,8 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
                 <>
             {session.data.start.toLocaleString({
                 ...DateTime.TIME_24_SIMPLE, 
-                weekday: "short"})}&ndash;{
-                session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)
+                weekday: "short", timeZone: timeZone})}&ndash;{
+                session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})
             }
             </>
               </h1>
@@ -238,6 +239,7 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
                       Session start:
                       {session.data.start.toLocaleString(
                         DateTime.TIME_24_SIMPLE,
+                        { timeZone: timeZone }
                       )}
                     </li>
                     <li>
