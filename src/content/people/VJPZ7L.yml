@@ -1,6 +1,11 @@
-name: Sanjin
+name: Sanjin Dedic
 pronouns:
 twitter:
 fedi:
-bio: ''
-has_pic: false
+bio: <p>Sanjin is a former computing teacher and an avid fan of Python since 2014.
+  He has a background in developing programming courses and small educational applications
+  for use in schools. As one of the creators of the Victorian Coding Challenge, Sanjin
+  has been building and maintaining a coding competition platform that has hosted
+  quiz-style events, Capture The Flag challenges, and in 2024, agent-based challenges
+  where students program agents to compete in challenges based on game theory.</p>
+has_pic: true
