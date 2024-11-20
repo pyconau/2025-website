@@ -18,12 +18,12 @@ description: "<p>Artificial Intelligence, Large Language Models, and Machine Lea
   information and the numerical language of computers. They allow us to represent
   complex data - whether it's text, images, or even abstract concepts - as dense vectors
   of numbers. In this presentation, we'll demystify embeddings and give you a practical
-  and intuitive understanding of how they work.</p>\n<p>We'll dive into:&lt;br /&gt;\n
-  1. What are embeddings and how they enable machines to process and understand human
-  language\n2. How you can create your own embeddings or utilise existing embedding
-  models to encode language in Python\n3. Applications for embeddings</p>\n<p>By the
-  end, you'll have a solid grasp of this fundamental AI concept and be equipped to
-  start experimenting with embeddings in your own projects.</p>"
+  and intuitive understanding of how they work.</p>\n<p>We'll dive into:\n1. What
+  are embeddings and how they enable machines to process and understand human language\n
+  2. How you can create your own embeddings or utilise existing embedding models to
+  encode language in Python\n3. Applications for embeddings</p>\n<p>By the end, you'll
+  have a solid grasp of this fundamental AI concept and be equipped to start experimenting
+  with embeddings in your own projects.</p>"
 code: Q78MDT
 speakers:
 - 7D78ZU
