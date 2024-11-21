@@ -55,7 +55,7 @@ Your Session Chair will sit in the front row and give you time warning cards at 
 
 There are 10 minutes between talks for changeover. Please respect this time limit. Once your slot is over, please collect your things and continue any conversations in the hallway, in order to give the next speaker an equal chance to prepare.
 
-* We have a single flash talk of 5 minutes as part of the Scientific Python Specialist Track this year - this talk is part of the academic publishing process we trialed this year. More information about that is here.
+* We have a single flash talk of 5 minutes as part of the Scientific Python Specialist Track this year - this talk is part of the academic publishing process we trialed this year. More information about that is [here](https://2024.pycon.org.au/attend/academic-publication/).
 
 ## Slide Tips
 
