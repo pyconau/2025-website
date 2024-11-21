@@ -8,13 +8,24 @@ const { Content } = await sponsor.render()
 ---
 
 <p id={sponsor.slug}>
-  <a href={sponsor.data.url}>
-    <img
-      src={`/sponsor-logos/${sponsor.data.logo}`}
-      class="sponsorlogo"
-      alt={sponsor.name}
-    />
-  </a>
+  {
+    sponsor.data.url ? (
+      <a href={sponsor.data.url}>
+        <img
+          src={`/sponsor-logos/${sponsor.data.logo}`}
+          class="sponsorlogo"
+          alt={sponsor.name}
+        />
+      </a>
+    ) : (
+      <img
+        src={`/sponsor-logos/${sponsor.data.logo}`}
+        class="sponsorlogo"
+        alt={sponsor.name}
+      />
+    )
+  }
+  
 </p>
 
 <Content />
