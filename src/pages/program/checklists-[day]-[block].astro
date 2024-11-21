@@ -60,12 +60,14 @@ const roomCallsigns = {
   eureka3: "Eureka 3",
 }
 
-const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall) => ({
-  hall,
-  sessions: sessions
-    .filter((session) => session.data.room == hall)
-    .sort((s1, s2) => s1.data.start.diff(s2.data.start).milliseconds),
-}))
+const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map(
+  (hall) => ({
+    hall,
+    sessions: sessions
+      .filter((session) => session.data.room == hall)
+      .sort((s1, s2) => s1.data.start.diff(s2.data.start).milliseconds),
+  }),
+)
 ---
 
 <!DOCTYPE html>
@@ -109,280 +111,287 @@ const sessionsByHall = (["goldfields", "eureka2", "eureka3"] as const).map((hall
   </head>
   <body>
     {
-      sessionsByHall.filter(hallInfo => hallInfo.sessions.length > 0).map((hallInfo) => (
-        <>
-          <section>
-            <h1>
-              Hall {hallInfo.hall.toUpperCase()},
-              {timeRange.start?.toLocaleString({ weekday: "short", timeZone: timeZone })}
-              block {block}
-            </h1>
-            <ul>
-              <li>
-                Call time for <b>room monitor and session chair</b>:
-                {hallInfo.sessions[0]?.data.start
-                  .minus({ minutes: 15 })
-                  .toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
-              </li>
-              <li>
-                Call time for <b>speakers</b>:
-                {hallInfo.sessions[0]?.data.start
-                  .minus({ minutes: 10 })
-                  .toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
-              </li>
-            </ul>
-            <ul class="checklist">
-              <li>Liaise with your AV volunteer for this room</li>
-              <li>Find your session chair</li>
-              {hallInfo.sessions
-                .filter(
-                  (session) =>
-                    session.data.type != "open-close" && !session.data.online,
-                )
-                .map((session) =>
-                  session.data.speakers.map((speaker) => (
-                    <>
-                      {/* prettier-ignore */}
-                      <li>
-                    Find speaker
-                    {speaker.data.name} ({session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
-                    session)
-                  </li>
-                    </>
-                  )),
-                )}
-              <li>
-                Ensure you have
+      sessionsByHall
+        .filter((hallInfo) => hallInfo.sessions.length > 0)
+        .map((hallInfo) => (
+          <>
+            <section>
+              <h1>
+                Hall {hallInfo.hall.toUpperCase()},
+                {timeRange.start?.toLocaleString({
+                  weekday: "short",
+                  timeZone: timeZone,
+                })}
+                block {block}
+              </h1>
+              <ul>
+                <li>
+                  Call time for <b>room monitor and session chair</b>:
+                  {hallInfo.sessions[0]?.data.start
+                    .minus({ minutes: 15 })
+                    .toLocaleString(DateTime.TIME_24_SIMPLE, {
+                      timeZone: timeZone,
+                    })}
+                </li>
+                <li>
+                  Call time for <b>speakers</b>:
+                  {hallInfo.sessions[0]?.data.start
+                    .minus({ minutes: 10 })
+                    .toLocaleString(DateTime.TIME_24_SIMPLE, {
+                      timeZone: timeZone,
+                    })}
+                </li>
+              </ul>
+              <ul class="checklist">
+                <li>Liaise with your AV volunteer for this room</li>
+                <li>Find your session chair</li>
                 {hallInfo.sessions
                   .filter(
                     (session) =>
                       session.data.type != "open-close" && !session.data.online,
                   )
-                  .reduce(
-                    (count, session) => count + session.data.speakers.length,
-                    0,
+                  .map((session) =>
+                    session.data.speakers.map((speaker) => (
+                      <>
+                        {/* prettier-ignore */}
+                        <li>
+                    Find speaker
+                    {speaker.data.name} ({session.data.start.toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})}
+                    session)
+                  </li>
+                      </>
+                    )),
                   )}
-                speaker gifts and
-                {
-                  hallInfo.sessions.filter(
-                    (session) =>
-                      session.data.type != "open-close" && !session.data.online,
-                  ).length
-                }
-                thank-you cards labelled "{hallInfo.hall.toUpperCase()}
-                {timeRange.start?.toLocaleString({ weekday: "short", timeZone: timeZone })}
-                {block}"
-              </li>
-              <li>
-                Inform the duty officer whether everyone is present:
-                <ul>
-                  <li>
-                    If everyone is present: "<b>Duty Officer</b> this is{" "}
-                    <b>{roomCallsigns[hallInfo.hall]}</b>, all block {block}{" "}
-                    speakers accounted for, over"
-                  </li>
-                  <li>
-                    If people are missing, call up ("<b>Duty Officer</b> this is{" "}
-                    <b>{roomCallsigns[hallInfo.hall]}</b>, over"), wait for an
-                    acknowledgement, <b>and then</b> tell us who is missing
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-          {hallInfo.sessions.map((session) => (
-            <section>
-              <h1>
-                Hall {session.data.room.toUpperCase()} {/* prettier-ignore */}
-                <>
+                <li>
+                  Ensure you have
+                  {hallInfo.sessions
+                    .filter(
+                      (session) =>
+                        session.data.type != "open-close" &&
+                        !session.data.online,
+                    )
+                    .reduce(
+                      (count, session) => count + session.data.speakers.length,
+                      0,
+                    )}
+                  speaker gifts
+                </li>
+                <li>
+                  Inform the duty officer whether everyone is present:
+                  <ul>
+                    <li>
+                      If everyone is present: "<b>Duty Officer</b> this is{" "}
+                      <b>{roomCallsigns[hallInfo.hall]}</b>, all block {block}{" "}
+                      speakers accounted for, over"
+                    </li>
+                    <li>
+                      If people are missing, call up ("<b>Duty Officer</b> this
+                      is <b>{roomCallsigns[hallInfo.hall]}</b>, over"), wait for
+                      an acknowledgement, <b>and then</b> tell us who is missing
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            {hallInfo.sessions.map((session) => (
+              <section>
+                <h1>
+                  Hall {session.data.room.toUpperCase()} {/* prettier-ignore */}
+                  <>
             {session.data.start.toLocaleString({
                 ...DateTime.TIME_24_SIMPLE, 
                 weekday: "short", timeZone: timeZone})}&ndash;{
                 session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE, {timeZone: timeZone})
             }
             </>
-              </h1>
-              <p>
-                <b>Session title:</b> {session.data.title}
-                <br />
-                <b>Session ID:</b> {session.id}
-                <br />
-                <b>Session format:</b>
-                {session.data.online ? "Online" : "In person"}
-                <br />
-                <b>Questions:</b> moderated questions / no questions (circle as
-                appropriate)
-              </p>
-              <div class="x2up">
-                <div>
-                  <h2>Speakers</h2>
-                  <ul>
-                    {session.data.speakers.map((speaker) => (
-                      <li>
-                        {speaker?.data.name}{" "}
-                        {speaker?.data.pronouns ? (
-                          <>({speaker.data.pronouns})</>
-                        ) : null}
-                      </li>
-                    ))}
-                  </ul>
-                  <p>
-                    <b>Speakers must not run over time.</b> If a speaker runs
-                    over time by more than 60 seconds, the session chair will
-                    need to politely stop the talk.
-                  </p>
-                </div>
-                <div>
-                  <h2>Timings</h2>
-                  <ul>
-                    <li>
-                      Session start:
-                      {session.data.start.toLocaleString(
-                        DateTime.TIME_24_SIMPLE,
-                        { timeZone: timeZone }
-                      )}
-                    </li>
-                    <li>
-                      5min warning:
-                      {session.data.end
-                        .minus({ minutes: 5 })
-                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                    </li>
-                    <li>
-                      2min warning:
-                      {session.data.end
-                        .minus({ minutes: 2 })
-                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                    </li>
-                    <li>
-                      1min warning:
-                      {session.data.end
-                        .minus({ minutes: 1 })
-                        .toLocaleString(DateTime.TIME_24_SIMPLE)}
-                    </li>
-                    <li>
-                      Session end:
-                      {session.data.end.toLocaleString(DateTime.TIME_24_SIMPLE)}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="x2up">
-                <div>
-                  <h1>Room Monitor</h1>
-                  <p>
-                    If you do not have a session chair, complete the{" "}
-                    <b>Session chair</b> checklist to the right as well
-                  </p>
-                  <ul class="checklist">
-                    <li>
-                      Introduce the speaker to your AV operator, and ensure they
-                      are mic'ed up with a headset mic. If needed, ask the speaker 
-                      to remove their lanyard, earrings, and anything else that 
-                      might interfere with the microphone wire. 
-                    </li>
-                    <li>
-                      Ensure the session chair has a handheld mic, so they can
-                      do introductions and facilitate questions
-                    </li>
-                    {session.data.type != "open-close" &&
-                    !session.data.online ? (
-                      <li>
-                        Prepare {session.data.speakers.length} speaker gift
-                        {session.data.speakers.length > 1 ? "s" : null} and
-                        **the correct** thank you card for the session chair
-                      </li>
-                    ) : null}
-                  </ul>
-                  <h2>If you have problems</h2>
-                  <p>
-                    Your <b>room monitor</b> can escalate any problems to the
-                    duty officer:
-                  </p>
-                  <ul>
-                    <li>
-                      By radio (preferred): "<b>Duty Officer</b> this is{" "}
-                      <b>{roomCallsigns[session.data.room]}</b>, over"
-                    </li>
-                    <li>
-                      By phone: <b>0424 139 332</b>
-                    </li>
-                  </ul>
-                </div>
-                {session.data.type != "open-close" ? (
+                </h1>
+                <p>
+                  <b>Session title:</b> {session.data.title}
+                  <br />
+                  <b>Session ID:</b> {session.id}
+                  <br />
+                  <b>Session format:</b>
+                  {session.data.online ? "Online" : "In person"}
+                  <br />
+                  <b>Questions:</b> moderated questions / no questions (circle
+                  as appropriate)
+                </p>
+                <div class="x2up">
                   <div>
-                    <h1>Session Chair</h1>
+                    <h2>Speakers</h2>
+                    <ul>
+                      {session.data.speakers.map((speaker) => (
+                        <li>
+                          {speaker?.data.name}{" "}
+                          {speaker?.data.pronouns ? (
+                            <>({speaker.data.pronouns})</>
+                          ) : null}
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
+                      <b>Speakers must not run over time.</b> If a speaker runs
+                      over time by more than 60 seconds, the session chair will
+                      need to politely stop the talk.
+                    </p>
+                  </div>
+                  <div>
+                    <h2>Timings</h2>
+                    <ul>
+                      <li>
+                        Session start:
+                        {session.data.start.toLocaleString(
+                          DateTime.TIME_24_SIMPLE,
+                          { timeZone: timeZone },
+                        )}
+                      </li>
+                      <li>
+                        5min warning:
+                        {session.data.end
+                          .minus({ minutes: 5 })
+                          .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                      </li>
+                      <li>
+                        2min warning:
+                        {session.data.end
+                          .minus({ minutes: 2 })
+                          .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                      </li>
+                      <li>
+                        1min warning:
+                        {session.data.end
+                          .minus({ minutes: 1 })
+                          .toLocaleString(DateTime.TIME_24_SIMPLE)}
+                      </li>
+                      <li>
+                        Session end:
+                        {session.data.end.toLocaleString(
+                          DateTime.TIME_24_SIMPLE,
+                        )}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="x2up">
+                  <div>
+                    <h1>Room Monitor</h1>
+                    <p>
+                      If you do not have a session chair, complete the{" "}
+                      <b>Session chair</b> checklist to the right as well
+                    </p>
                     <ul class="checklist">
                       <li>
-                        Verify the speaker's name, and check pronunciation
-                      </li>
-                      <li>Verify the speaker's pronouns</li>
-                      <li>
-                        Ask whether the speaker would like questions, and if so,
-                        how
-                      </li>
-                      <li>
-                        Ask the speaker to remove their lanyard, earrings, and 
-                        anything else that may interfere with the microphone wire 
-                        before it is put on
+                        Introduce the speaker to your AV operator, and ensure
+                        they are mic'ed up with a headset mic. If needed, ask
+                        the speaker to remove their lanyard, earrings, and
+                        anything else that might interfere with the microphone
+                        wire.
                       </li>
                       <li>
-                        <b>
-                          When the speaker is ready, but not before
-                          {/* prettier-ignore */}
-                          <>
+                        Ensure the session chair has a handheld mic, so they can
+                        do introductions and facilitate questions
+                      </li>
+                      {session.data.type != "open-close" &&
+                      !session.data.online ? (
+                        <li>
+                          Prepare {session.data.speakers.length} speaker gift
+                          {session.data.speakers.length > 1 ? "s" : null} for
+                          the session chair
+                        </li>
+                      ) : null}
+                    </ul>
+                    <h2>If you have problems</h2>
+                    <p>
+                      Your <b>room monitor</b> can escalate any problems to the
+                      duty officer:
+                    </p>
+                    <ul>
+                      <li>
+                        By radio (preferred): "<b>Duty Officer</b> this is{" "}
+                        <b>{roomCallsigns[session.data.room]}</b>, over"
+                      </li>
+                      <li>
+                        By phone: <b>0424 139 332</b>
+                      </li>
+                    </ul>
+                  </div>
+                  {session.data.type != "open-close" ? (
+                    <div>
+                      <h1>Session Chair</h1>
+                      <ul class="checklist">
+                        <li>
+                          Verify the speaker's name, and check pronunciation
+                        </li>
+                        <li>Verify the speaker's pronouns</li>
+                        <li>
+                          Ask whether the speaker would like questions, and if
+                          so, how
+                        </li>
+                        <li>
+                          Ask the speaker to remove their lanyard, earrings, and
+                          anything else that may interfere with the microphone
+                          wire before it is put on
+                        </li>
+                        <li>
+                          <b>
+                            When the speaker is ready, but not before
+                            {/* prettier-ignore */}
+                            <>
                           {session.data.start.toLocaleString(
                             DateTime.TIME_24_SIMPLE,
                           )}:
                           </>
-                        </b>
-                        Signal AV to start the recording and play the stinger.
-                        Then, once the stinger has played, introduce the speaker
-                        on stage
-                      </li>
-                      <li>
-                        Adjust the timings above if needed&mdash;the speaker
-                        should get their full{" "}
-                        {session.data.end
-                          .diff(session.data.start)
-                          .shiftTo("minutes")
-                          .toHuman({ unit: "minutes" })}
-                        , even if they start late
-                      </li>
-                      <li>Keep an eye on the attendee Discord for questions</li>
-                      {session.data.online ? null : (
-                        <li>
-                          Hold up 5, 2, 1, STOP signs, and ensure the speaker
-                          has seen them
+                          </b>
+                          Signal AV to start the recording and play the stinger.
+                          Then, once the stinger has played, introduce the
+                          speaker on stage
                         </li>
-                      )}
-                      <li>
-                        <b>
-                          If speaker has asked for questions AND there is enough
-                          time:
-                        </b>{" "}
-                        Facilitate questions, ensuring all questions are said
-                        into a microphone
-                      </li>
-                      <li>
-                        <b>When the speaker is finished:</b> Thank the speaker
-                        for their talk
-                        {session.data.online
-                          ? null
-                          : "and present them with their speaker gift and thank-you card"}
-                      </li>
-                      <li>
-                        Tell the audience about the next talk or upcoming break
-                      </li>
-                    </ul>
-                  </div>
-                ) : null}
-              </div>
-            </section>
-          ))}
-        </>
-      ))
+                        <li>
+                          Adjust the timings above if needed&mdash;the speaker
+                          should get their full{" "}
+                          {session.data.end
+                            .diff(session.data.start)
+                            .shiftTo("minutes")
+                            .toHuman({ unit: "minutes" })}
+                          , even if they start late
+                        </li>
+                        <li>
+                          Keep an eye on the attendee Discord for questions
+                        </li>
+                        {session.data.online ? null : (
+                          <li>
+                            Hold up 5, 2, 1, STOP signs, and ensure the speaker
+                            has seen them
+                          </li>
+                        )}
+                        <li>
+                          <b>
+                            If speaker has asked for questions AND there is
+                            enough time:
+                          </b>{" "}
+                          Facilitate questions, ensuring all questions are said
+                          into a microphone
+                        </li>
+                        <li>
+                          <b>When the speaker is finished:</b> Thank the speaker
+                          for their talk
+                          {session.data.online
+                            ? null
+                            : "and present them with their speaker gift"}
+                        </li>
+                        <li>
+                          Tell the audience about the next talk or upcoming
+                          break
+                        </li>
+                      </ul>
+                    </div>
+                  ) : null}
+                </div>
+              </section>
+            ))}
+          </>
+        ))
     }
   </body>
 </html>
