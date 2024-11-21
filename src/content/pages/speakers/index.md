@@ -39,7 +39,7 @@ Many thanks to @Daisylb for all her work and dedication on [https://2024.pycon.o
 
 ## Talk Duration
 
-**All talks run for half an hour (30 minutes)*, including questions. **
+**All talks run for half an hour (30 minutes)*, including questions.**
 
 It is your choice whether to allow time for questions inside your time slot. Often, speakers who choose to take questions will allow 5 minutes for questions.
 
