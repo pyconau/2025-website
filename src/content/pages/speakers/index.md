@@ -49,7 +49,7 @@ You have two choices for taking questions for your talk:
 
 
 * **No questions** - (default) you can use the whole 30 minutes for your talk. If people have questions they can find you afterwards.
-* **Curated questions **- your Session Chair will stand next to the microphone and moderate questions (e.g. by stepping in if someone makes a comment instead of asking a question), including passing the microphone to audience members.
+* **Curated questions** - your Session Chair will stand next to the microphone and moderate questions (e.g. by stepping in if someone makes a comment instead of asking a question), including passing the microphone to audience members.
 
 Your Session Chair will sit in the front row and give you time warning cards at 5, 2, and 1 minutes remaining, and STOP when you have hit your time (e.g. at 25 minutes if you want 5 minutes for questions). Please speak with your Session Chair before your talk about any preferences you have.
 
@@ -98,7 +98,7 @@ Some examples of content warnings:
 * This talk contains extensive discussion of the COVID-19 pandemic throughout.
 * This talk contains images and brief mentions of bushfires and other natural disasters.
 
-**Content warnings don't exempt you from the code of conduct. **Instead, content warnings are used for things that comply with the code of conduct, but might be distressing to some people.
+**Content warnings don't exempt you from the code of conduct.** Instead, content warnings are used for things that comply with the code of conduct, but might be distressing to some people.
 
 ## Talk Recording
 
@@ -168,6 +168,6 @@ If you have special requirements beyond this, please get in touch in advance wit
 
 Please make sure you know when and where your talk is scheduled. Please check the [schedule](https://2024.pycon.org.au/program/) to confirm the day, time, and room for which your talk is scheduled. **Please note previous emails indicated your talk time in ACDT (Adelaide time) instead of AEDT (Melbourne time) (oops!).**
 
-We have just made a round of final schedule changes and will not be making any more= unless absolutely necessary. If any changes affect you, we will let you know as soon as possible. Again, if you have concerns or need to change something, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au)** **as soon as possible.
+We have just made a round of final schedule changes and will not be making any more unless absolutely necessary. If any changes affect you, we will let you know as soon as possible. Again, if you have concerns or need to change something, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) as soon as possible.
 
 **It is essential that you arrive in your talk room in the break before your talk** to ‘check in’ with and meet your Session Chair and A/V team. This will give you time to look at the layout of your room, assess the space, etc.
