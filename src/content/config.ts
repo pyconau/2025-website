@@ -9,7 +9,7 @@ const sponsors = defineCollection({
   schema: z.object({
     name: z.string(),
     logo: z.string(),
-    url: z.string(),
+    url: z.string().nullable().optional(),
     tier: z.enum(SPONSOR_TIER_SLUGS),
   }),
 })
