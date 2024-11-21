@@ -15,7 +15,7 @@ PRETALX_TOKEN = environ["PRETALX_TOKEN"]
 # Per-year configuration
 EVENT_TIMEZONE = dateutil.tz.gettz("Australia/Melbourne")
 ROOMS = {
-    "Goldfields Theatre": "goldfields",
+    "Door 12 / Goldfields Theatre": "goldfields",
     "Eureka 2": "eureka2",
     "Eureka 3": "eureka3",
     "Chancellor 2 at the Grand Chancellor Hotel": "chancellor2",
