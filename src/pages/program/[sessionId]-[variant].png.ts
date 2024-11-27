@@ -8,7 +8,7 @@ import { CONFERENCE_TZ, ROOMS_BY_SLUG } from "../../main_config"
 
 type Params = {
   sessionId: string
-  variant: "og" | "social"
+  variant: "og" | "social" | "video"
 }
 
 export async function GET({
@@ -47,7 +47,10 @@ export async function GET({
   let inputPath = join(dir, "input.typ")
   let inputFile = await open(inputPath, "wx")
   let typstFile = (
-    { og: "speakerCard.typ", social: "socialCard.typ" } as const
+    { og: "speakerCard.typ", 
+      social: "socialCard.typ",
+      video: "videoTitle.typ"
+    } as const
   )[params.variant]
   await inputFile.close()
   const { stdout } = await execa({
@@ -62,7 +65,7 @@ export async function GET({
 export async function getStaticPaths(): Promise<{ params: Params }[]> {
   const pages = await getCollection("sessions")
   return pages.filter((entry) => entry.data.speakers.length > 0 && entry.data.room !== null).flatMap((entry) =>
-    ["og", "social"].map((variant) => ({
+    ["og", "social", "video"].map((variant) => ({
       params: {
         sessionId: entry.id,
         variant,
