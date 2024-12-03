@@ -9,10 +9,10 @@ abstract: "<p>Dataframes are an abstraction that proven extremely useful for dat
   There is now a vibrant and messy ecosystem of potential disruptors to the status
   quo for data analysis tasks in Python.</p>\n<p>This talk will help you make sense
   of the mess. It will give you a comprehensive review of the strengths and weaknesses
-  of the challengers, including Polars, Ibis, Vaex, Modin, Dask, and the PySpark Pandas
+  of the challengers, including Polars, Ibis, Modin, Dask, and the PySpark Pandas
   API (formerly known as Koalas). It will also review efforts to unify the PyData
   landscape such as Apache Arrow, the dataframe interchange protocol, Narwhals, and
-  the Ibis project from the original author of Pandas, Wes McKinney.</p>"
+  the Ibis project started by Wes McKinney, the original author of Pandas.</p>"
 description: <p>The talk will provide context and guidance for deciding which dataframe
   library to choose for your next project. It will also explain the best ways to offer
   cross-dataframe support in your library code.</p>
