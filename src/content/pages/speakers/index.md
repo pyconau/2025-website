@@ -154,7 +154,7 @@ We use a **16:9 ratio** on all displays with 1080p resolution (1920 x 1080).
 
 You will present from your own laptop; we do not collect slides to load onto a lectern computer (if this is not possible, let us know in advance).  You will have a confidence monitor but it will display what is on the projector, not your speaker notes (if you have them, they will display on your laptop screen).
 
-**All** rooms will **only** have HDMI connectors. If you need an adapter to output HDMI, **please bring it with you (especially if you are a Mac user and/or need USB-C connectors)**. We strongly recommend you bring the power adapter for your device, too.
+**All** rooms will **only** have HDMI connectors. If you need an adapter to output HDMI, i.e. your laptop only has USB-C ports, **please bring your tested laptop-specific HDMI adapter with you**.  The AV team has spare adapters, but HDMI USB-C adapters are not universal and some laptops only work with their proprietary adapters.  We strongly recommend you bring the power adapter for your device, too.
 
 There will also be an audio connector (3.5mm headphone/mini-jack). If you are intending on playing audio, please let the A/V team know when setting up for your talk so they can test sound levels before you start.
 
