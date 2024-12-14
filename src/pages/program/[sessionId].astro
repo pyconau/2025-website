@@ -35,6 +35,8 @@ const track = entry.data.track
 const daySlug = DateTime.fromJSDate(entry.data.start, {
   zone: CONFERENCE_TZ,
 }).weekdayLong?.toLowerCase()
+
+const youtube_embed_url = "https://www.youtube-nocookie.com/embed/" + entry.data.youtube_slug
 ---
 
 <style lang="scss">
@@ -79,18 +81,6 @@ const daySlug = DateTime.fromJSDate(entry.data.start, {
 
 {% endif %}
 
-{% if session.youtube_slug %}
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube-nocookie.com/embed/{{ session.youtube_slug }}"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  class="ytembed"
-></iframe>
-{% endif %}
-
 */
   }
   <main>
@@ -125,6 +115,19 @@ const daySlug = DateTime.fromJSDate(entry.data.start, {
         </p>
       )
     }
+    { entry.data.youtube_slug && (
+      <iframe
+        width="560"
+        height="315"
+        src={youtube_embed_url}
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="ytembed"
+      ></iframe>
+      )
+    }
+
     <div class="lede"><Fragment set:html={entry.data.abstract} /></div>
     {
       TICKETS_AVAILABLE ? (
