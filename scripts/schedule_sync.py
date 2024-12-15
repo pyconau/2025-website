@@ -111,15 +111,15 @@ types = {
 
 seen_speakers = set()
 
-# yt_resp = requests.get(
-#     "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2021.json"
-# )
-# yt_resp.raise_for_status()
-# youtube_slugs = {
-#     x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
-#     for x in yt_resp.json()
-#     if x["host_url"] is not None
-# }
+yt_resp = requests.get(
+    "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2024.json"
+)
+yt_resp.raise_for_status()
+youtube_slugs = {
+    x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
+    for x in yt_resp.json()
+    if x["host_url"] is not None
+}
 
 for entry in SESSIONS_DIR.glob("*"):
     entry.unlink()
@@ -188,7 +188,7 @@ for session in paginate(
                 "code": session["code"],
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
-                # "youtube_slug": youtube_slugs.get(session["code"]),
+                "youtube_slug": youtube_slugs.get(session["code"]),
             },
             f,
         )
