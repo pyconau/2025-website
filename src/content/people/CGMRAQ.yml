@@ -1,9 +1,0 @@
-name: Caleb Brown
-pronouns:
-twitter: '@calebbrown'
-fedi:
-bio: <p>Caleb is a Senior Software Engineer working for Google's Open Source Security
-  Team. At Google he contributes to deps.dev and maintains a <a href="https://github.com/ossf/malicious-packages">repository
-  of malicious package reports</a> for open source packages. Caleb has been using
-  Python for over 15 years, starting with build Django sites at publishing company.</p>
-has_pic: false
