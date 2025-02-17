@@ -13,11 +13,11 @@ const { title, navigation, ogImagePath } = Object.assign(
   { navigation: true },
   Astro.props,
 ) as Props
-const fullTitle = title ? `${title}—PyCon AU 2024` : "PyCon AU 2024"
+const fullTitle = title ? `${title}—PyCon AU 2025` : "PyCon AU 2025"
 
 const ogAbsoluteUrl = new URL(
   ogImagePath ?? (og as any as string),
-  "https://2024.pycon.org.au/",
+  "https://2025.pycon.org.au/",
 )
 ---
 

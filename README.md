@@ -1,4 +1,4 @@
-# PyCon AU 2024 website
+# PyCon AU 2025 website
 
 This website is built with [Astro](https://astro.build).
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "schedule-sync"
-version = "0.2024.0"
+version = "0.2025.0"
 description = ""
 authors = ["Daisy Leigh Brenecki <daisy@daisy.wtf>", "elena williams <git@elena.net.au>"]
 

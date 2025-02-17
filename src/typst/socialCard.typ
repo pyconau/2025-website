@@ -59,9 +59,9 @@
     block(
       inset: 24pt,
       {
-        par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[Join me at PyCon AU 2024 for])
+        par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[Join me at PyCon AU 2025 for])
         text(size: baseSize, font: "Catamaran", weight: 700)[#data.title]
-        par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[PyCon AU will be at the Melbourne Convention and Exhibition Centre on 22–26 November 2024.])
+        par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[PyCon AU will be returning to Melbourne in 2025 - details to be announced soon!])
       }
     )
   })),
