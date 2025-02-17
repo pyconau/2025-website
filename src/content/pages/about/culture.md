@@ -68,4 +68,4 @@ We also acknowledge that the humour used in this series is not the most inclusiv
 
 ## If you don't get a reference, ask!
 
-If there's an in-joke or reference you don't get, [ask for it to be added to this list](https://github.com/pyconau/2024-website/issues/new?assignees=&labels=documentation-request&template=documentation-request.md&title=I+have+a+question)!
+If there's an in-joke or reference you don't get, [ask for it to be added to this list](https://github.com/pyconau/2025-website/issues/new?assignees=&labels=documentation-request&template=documentation-request.md&title=I+have+a+question)!

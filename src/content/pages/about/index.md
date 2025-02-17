@@ -5,7 +5,7 @@ order: 0
 
 # About the conference
 
-PyCon AU 2024 will be held from 22nd to 26th November at the Melbourne Convention and Exhibition Centre (MCEC) in Narrm/Melbourne, Victoria, Australia.
+PyCon AU 2025 will be returning to Melbourne in 2025. Dates and location will be announced "soon".
 
 If you're new to our event, you might also want to read about [the culture of PyCon AU](/about/culture/).
 
@@ -24,9 +24,9 @@ This is the core of PyCon AU, as each day kicks off one of our amazing keynote s
 The end of the day brings everyone together again for a hilarious and informative round of lightning talks (submission of lightning talks topics will be open during the conference).
 
 ## Workshops
-Workshops on Monday 25 November are free to attend, made possible through support of the presenting sponsors.
+Workshops will be free to attend, made possible through support of the presenting sponsors.
 
-Workshops are new in 2024 and are deep dive, hands on learning experiences facilitated by experts from the sponsoring organisation.  It's important that you register for each workshops to secure your seat.
+Workshops are deep dive, hands on learning experiences facilitated by experts from the sponsoring organisation.  It's important that you register for each workshops to secure your seat - in 2024 workshops sold out!
 
 Learn more about [registering for workshops](/attend).
 

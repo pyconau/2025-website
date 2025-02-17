@@ -10,6 +10,6 @@ export default defineConfig({
   },
   integrations: [mdx()],
   redirects: {
-    "/pycon-au-2024/schedule": "/program",
+    // "/pycon-au-2024/schedule": "/program",
   },
 })
