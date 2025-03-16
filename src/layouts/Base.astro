@@ -17,7 +17,7 @@ const { title, navigation, ogImagePath } = Object.assign(
 const fullTitle = title ? `${title}—PyCon AU 2025` : "PyCon AU 2025"
 
 const ogAbsoluteUrl = new URL(
-  ogImagePath ?? (og as any as string),
+  ogImagePath ?? og.src,
   "https://2025.pycon.org.au/",
 )
 ---
