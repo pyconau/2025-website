@@ -1,5 +1,7 @@
 {
   "extends": "astro/tsconfigs/strictest",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
     // Enable top-level await, and other modern ESM features.
     "target": "ESNext",
