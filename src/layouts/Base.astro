@@ -1,6 +1,7 @@
 ---
 import "./base.scss"
 import og from "../imgs/og.png"
+import favicon from "../imgs/favicon.ico"
 import Navigation from "../components/Navigation.astro"
 import Footer from "../components/Footer.astro"
 export type Props = {
@@ -16,7 +17,7 @@ const { title, navigation, ogImagePath } = Object.assign(
 const fullTitle = title ? `${title}—PyCon AU 2025` : "PyCon AU 2025"
 
 const ogAbsoluteUrl = new URL(
-  ogImagePath ?? (og as any as string),
+  ogImagePath ?? og.src,
   "https://2025.pycon.org.au/",
 )
 ---
@@ -35,7 +36,7 @@ const ogAbsoluteUrl = new URL(
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/static/common/img/icons/favicon.ico"
+      href={favicon}
     />
     <script>
       // Record where the visitor came from.
