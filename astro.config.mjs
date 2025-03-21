@@ -9,6 +9,10 @@ export default defineConfig({
     syntaxHighlight: "prism",
   },
   integrations: [mdx()],
+  legacy: {
+    // https://docs.astro.build/en/guides/upgrade-to/v5/#legacy-v20-content-collections-api
+    collections: true,
+  },
   redirects: {
     // "/pycon-au-2024/schedule": "/program",
   },
