@@ -5,7 +5,7 @@ order: 0
 
 # About the conference
 
-PyCon AU 2025 will be returning to Melbourne in 2025. Dates and location will be announced "soon".
+PyCon AU 2025 will be held from Friday 12th to Tuesday 16th September at Pullman Melbourne on the Park, in Narrm/Melbourne, Victoria, Australia.
 
 If you're new to our event, you might also want to read about [the culture of PyCon AU](/about/culture/).
 
@@ -22,13 +22,6 @@ Each track is organised by specialists in their field, the talks are selected by
 This is the core of PyCon AU, as each day kicks off one of our amazing keynote speakers, followed by breakout tracks of talks on a diverse range of Python related topics. There will be a mix of beginner friendly and advanced talks on both technical and non-technical topics, and with multiple tracks there’ll always be something you’re interested to see.
 
 The end of the day brings everyone together again for a hilarious and informative round of lightning talks (submission of lightning talks topics will be open during the conference).
-
-## Workshops
-Workshops will be free to attend, made possible through support of the presenting sponsors.
-
-Workshops are deep dive, hands on learning experiences facilitated by experts from the sponsoring organisation.  It's important that you register for each workshops to secure your seat - in 2024 workshops sold out!
-
-Learn more about [registering for workshops](/attend).
 
 ## Development sprints and social events
 
