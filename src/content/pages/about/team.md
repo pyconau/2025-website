@@ -12,6 +12,7 @@ PyCon AU is only possible because of the incredible effort of a team of voluntee
 <!-- Ordering: Conference Director, then Assistant Directors alphabetically, then all other members alphabetically -->
 
 - **Peter Hall**, Conference Director
+- **Evan Kohilas**, Assistant Director
 - **Jack Skinner**, Business Development
 - **Nic Crouch**, Sponsorship Coordinator
 - **Kalila Lin**, Social Media Coordinator
