@@ -8,11 +8,14 @@ Our call for proposals for talks will come later in the year. Right now, though,
 
 ## Specialist Track Call for Proposals
 
-PyCon AU 2025 will run in Melbourne from 12 to 16 November. We are looking for expressions of interest from people willing to run specialist tracks!
+PyCon AU 2025 will run in Melbourne from 12 to 16 September. We are looking for expressions of interest from people willing to run specialist tracks!
 
-Specialist tracks run on the Friday of PyCon AU. This year, that will be Friday 12th November, 2025. Each track is centred around a central theme, with a schedule selected by independent organisers.
+Specialist tracks run on the Friday of PyCon AU. This year, that will be Friday 12th September, 2025. Each track is centred around a central theme, with a schedule selected by independent organisers.
 
-In 2023, we had tracks on [Scientific Python](https://2024.pycon.org.au/scientific/), [Education](https://2024.pycon.org.au/education), and [DevOops](https://2024.pycon.org.au/devoops/).
+In 2024, we had tracks on:
+- [Scientific Python](https://2024.pycon.org.au/scientific/)
+- [Education](https://2024.pycon.org.au/education)
+- [DevOops](https://2024.pycon.org.au/devoops/)
 
 In 2025, we have space for three specialist tracks.
 
@@ -21,8 +24,7 @@ Our specialist track organisers always do an amazing job, but we want to provide
 Examples of other ideas for specialist tracks include:
 
 - DjangoCon
-- Something specialised within the data and science space, for example geoscience or life sciences
-- GLAM (Galleries, Libraries, Archives, and Museums)
+- Something specialised within tech trends & recent innovations, for example Artificial Intelligence
 - Information security/cybersecurity
 - APIs (Application Programming Interfaces)
 
