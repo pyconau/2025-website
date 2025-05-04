@@ -4,11 +4,11 @@ title: Program
 
 # Program
 
-Our call for proposals for talks will come later in the year. Right now, though, you can [apply to run a PyCon AU Specialist Track](#how-to-apply)! Submissions for Specialist Track proposals will close on MONTH DAY, 2025.
+Our call for proposals for talks will come later in the year. Right now, though, you can [apply to run a PyCon AU Specialist Track](#how-to-apply)! Submissions for Specialist Track proposals will close on the 10th of May, 2025.
 
 ## Specialist Track Call for Proposals
 
-PyCon AU 2025 will run in Melbourne from 12 to 16 September. We are looking for expressions of interest from people willing to run specialist tracks!
+PyCon AU 2025 will run in Melbourne from the 12th to 16th of September, 2025. We are looking for expressions of interest from people willing to run specialist tracks!
 
 Specialist tracks run on the Friday of PyCon AU. This year, that will be Friday 12th September, 2025. Each track is centred around a central theme, with a schedule selected by independent organisers.
 
@@ -50,7 +50,7 @@ It is also important to note that as a specialist track organiser, you’ll be a
 
 ## How to apply
 
-To propose a track, please email us at [program@pycon.org.au](mailto:program@pycon.org.au) before the end of **WEEKDAY, MONTH DAYth, 2025** [anywhere on earth (UTC−12)](https://en.wikipedia.org/wiki/Anywhere_on_Earth), and provide us the following information:
+To propose a track, please email us at [program@pycon.org.au](mailto:program@pycon.org.au) before the end of **Saturday, the 10th of May, 2025** [anywhere on earth (UTC−12)](https://en.wikipedia.org/wiki/Anywhere_on_Earth), and provide us the following information:
 
 - What is the focus of the track?
 - Who will be running the track (including contact details)? You must have at least two organisers.
@@ -60,4 +60,4 @@ To propose a track, please email us at [program@pycon.org.au](mailto:program@pyc
 
 We’ll acknowledge your proposal as soon as possible once we receive it. We’ll be in touch if we have any further questions or need any clarification.
 
-([Anywhere on earth](https://en.wikipedia.org/wiki/Anywhere_on_Earth) means that this CFP is still open while the current date is DAYth MONTH, 2025 in any time zone.)
+([Anywhere on earth](https://en.wikipedia.org/wiki/Anywhere_on_Earth) means that this CFP is still open while the current date is the 10th of May, 2025 in any time zone.)
