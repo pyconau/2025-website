@@ -74,16 +74,10 @@ header {
 
   img {
     height: calc(var(--logo-h));
-    .debug & {
-      border: 1px solid magenta;
-    }
   }
   .rotated {
     transform-origin: calc(var(--logo-h) * #{$logo-w-ratio}) top;
     transform: rotate(-5deg);
-    .debug & {
-      border: 1px solid magenta;
-    }
   }
   nav {
     background-color: white;
