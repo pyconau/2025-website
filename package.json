@@ -1,15 +1,14 @@
 {
   "name": "2025-website",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "start": "astro dev",
-    "build": "astro build"
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@astrojs/mdx": "^4.2.0",
