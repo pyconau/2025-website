@@ -4,6 +4,7 @@ import logoReversed from "../imgs/Logo_Reversed.svg"
 import Navigation from "../components/Navigation.astro"
 import NoOrphanText from "../components/NoOrphanText.astro"
 import { getEntryBySlug } from "astro:content"
+import conferenceImage from "../imgs/og.png"
 
 let entry = await getEntryBySlug("pages", "index")
 const { Content, headings } = await entry.render()
@@ -12,7 +13,7 @@ const { Content, headings } = await entry.render()
 <Base navigation={false}>
   <script
     type="application/ld+json"
-    set:html={`
+    set:html={JSON.stringify(
       {
         "@context": "https://schema.org",
         "@type": "Event",
@@ -30,13 +31,14 @@ const { Content, headings } = await entry.render()
         },
         "url": "https://2025.pycon.org.au/",
         "name": "PyCon AU 2025",
+        "image": conferenceImage.src,
         "startDate": "2025-09-12",
         "endDate": "2025-09-16",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
-        "inLanguage": "en-AU"
+        "inLanguage": "en-AU",
       }
-    `}
+    )}
   />
 
   <header id="header" slot="nav">
