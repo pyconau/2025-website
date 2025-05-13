@@ -16,7 +16,18 @@ const { Content, headings } = await entry.render()
       {
         "@context": "https://schema.org",
         "@type": "Event",
-        "location": "Pullman Melbourne On The Park",
+        "location": {
+          "@type": "Place",
+          "name": "Pullman Melbourne On The Park",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "192 Wellington Parade",
+            "addressLocality": "East Melbourne",
+            "postalCode": "3002",
+            "addressRegion": "VIC",
+            "addressCountry": "AU"
+          }
+        },
         "url": "https://2025.pycon.org.au/",
         "name": "PyCon AU 2025",
         "startDate": "2025-09-12",
