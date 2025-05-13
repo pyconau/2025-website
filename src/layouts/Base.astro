@@ -23,7 +23,7 @@ const ogAbsoluteUrl = new URL(
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="{% block html_class %}{% endblock %}">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>{fullTitle}</title>
@@ -53,7 +53,4 @@ const ogAbsoluteUrl = new URL(
     <slot />
     <Footer />
   </body>
-  <script type="text/javascript">
-    if (window.location.hash === "#debug") document.body.classList.add("debug")
-  </script>
 </html>
