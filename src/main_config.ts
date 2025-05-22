@@ -12,8 +12,8 @@ export const ROOMS = [
 export const SPECIALIST_TRACKS = [
   { slug: "scientific", name: "Scientific Python", room: "goldfields" },
   { slug: "education", name: "Education", room: "eureka2" },
-  { slug: "devoops", name: "DevOops", room: "eureka3" },
- 
+  { slug: "data-ai", name: "Data & AI", room: "eureka3" },
+
 ] as const
 
 export const SPONSOR_TIERS = [
