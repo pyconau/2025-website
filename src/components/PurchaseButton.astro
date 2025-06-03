@@ -11,7 +11,7 @@ let { cta } = Astro.props
 
 <p>
     <center id="purchase-button-container">
-        <Button type="chonk" href="https://pretix.eu/pyconau/2024/">
+        <Button type="chonk" href="https://pretix.eu/pyconau/2025/">
             { cta ?? 'Get your tickets now!'}
         </Button>
     </center>
@@ -30,12 +30,12 @@ let { cta } = Astro.props
     console.log(referrer)
     if (referrer) {
         const campaignUrl = {
-            // Twitter
-            tw: "https://pretix.eu/pyconau/2024/c/V6nsZVR5k/",
+            // Bluesky
+            bs: "https://pretix.eu/pyconau/2025/c/dEmlitN5f/",
             // LinkedIn
-            li: "https://pretix.eu/pyconau/2024/c/Z4m7ctrPC/",
+            li: "https://pretix.eu/pyconau/2025/c/0GrtKiHqn/",
             // Fediverse
-            fv: "https://pretix.eu/pyconau/2024/c/1mPdQLtHo/",
+            fv: "https://pretix.eu/pyconau/2025/c/NcQ4jxIpO/",
 
         }[referrer]
         if (campaignUrl) {
