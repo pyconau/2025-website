@@ -13,28 +13,32 @@ from ruamel.yaml import YAML
 PRETALX_TOKEN = environ["PRETALX_TOKEN"]
 
 # Per-year configuration
+PRETALX_EVENT_SHORT_FORM = "pycon-au-2025"
 EVENT_TIMEZONE = dateutil.tz.gettz("Australia/Melbourne")
 ROOMS = {
-    "Door 12 / Goldfields Theatre": "goldfields",
-    "Eureka 2": "eureka2",
-    "Eureka 3": "eureka3",
-    "Chancellor 2 at the Grand Chancellor Hotel": "chancellor2",
-    "Chancellor 4 at the Grand Chancellor Hotel": "chancellor4",
+    "Ballroom 1": "ballroom1",
+    "Ballroom 2": "ballroom2",
+    "Ballroom 3": "ballroom3",
 }
 TRACKS = {
-    "DevOops": "devoops",
+    "Data & AI": "ai",
     "Education": "education",
     "Scientific Python": "scientific",
     "Main Conference": None,
 }
 # Question IDs
-# Question IDs on the *people* object
-PRONOUN_QUESTION_ID = 3948
-TWITTER_QUESTION_ID = 3950
-FEDIVERSE_QUESTION_ID = 3949
+CONTENT_WARNING_QUESTION_ID = 5326
+PRONOUNS_QUESTION_ID = 5332
+BLUESKY_QUESTION_ID = 5329
+FEDIVERSE_QUESTION_ID = 5328
+
+TAG_IDS_TO_SKIP = {1679}
+
+NDV_JSON = "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2025.json"
 
 # End per-year configuration
 
+PRETALX_BASE_URL = f"https://pretalx.com/api/events/{PRETALX_EVENT_SHORT_FORM}"
 CONTENT_DIR = pathlib.Path("../src/content")
 SESSIONS_DIR = CONTENT_DIR / "sessions"
 BREAKS_DIR = CONTENT_DIR / "breaks"
@@ -42,18 +46,19 @@ PEOPLE_DIR = CONTENT_DIR / "people"
 PUBLIC_DIR = pathlib.Path("../public")
 PEOPLE_IMGS_DIR = PUBLIC_DIR / "people"
 
-TAG_IDS_TO_SKIP = {798}
-
 yaml = YAML()
 md = Markdown()
 
 
-def paginate(url):
+def paginate(url, pretalx_version="LEGACY"):
     next_url = url
     while next_url:
         res = requests.get(
             next_url,
-            headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+            headers={
+                "Authorization": f"Token {PRETALX_TOKEN}",
+                "Pretalx-Version": pretalx_version,
+            },
         )
         res.raise_for_status()
         data = res.json()
@@ -87,6 +92,24 @@ def parse_markdown(text):
         ),
     )
 
+def get_answer(question_id, speaker_code=None, submission_code=None):
+    if speaker_code:
+        response = requests.get(
+            f"{PRETALX_BASE_URL}/answers/?person={speaker_code}&question={question_id}",
+            headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+        )
+    elif submission_code:
+        response = requests.get(
+            f"{PRETALX_BASE_URL}/answers/?submission={submission_code}&question={question_id}",
+            headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+        )
+    else:
+        raise Exception("Need a code to get an answer")
+    if response.ok:
+        data = response.json()
+        if data["count"] > 0:
+            return data["results"][0]["answer"]
+    return None
 
 answers = {
     "Content Warning": 3747,
@@ -111,23 +134,24 @@ types = {
 
 seen_speakers = set()
 
-yt_resp = requests.get(
-    "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2024.json"
-)
-yt_resp.raise_for_status()
-youtube_slugs = {
-    x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
-    for x in yt_resp.json()
-    if x["host_url"] is not None
-}
+yt_resp = requests.get(NDV_JSON)
+if yt_resp.ok:
+    youtube_slugs = {
+        x["conf_key"]: x["host_url"].rsplit("/", 1)[1]
+        for x in yt_resp.json()
+        if x["host_url"] is not None
+    }
+else:
+    youtube_slugs = {}
 
 for entry in SESSIONS_DIR.glob("*"):
     entry.unlink()
 
 
 for session in paginate(
-    "https://pretalx.com/api/events/pycon-au-2024/submissions/?state=confirmed"
+    f"{PRETALX_BASE_URL}/submissions/?state=confirmed"
 ):
+    print(f"session {session['code']}")
     # Do not schedule backups
     # TODO manually add backups if they are unscheduled after the event.
     # if rooms[session["slot"]["room"]["en"]] == 0:
@@ -153,14 +177,7 @@ for session in paginate(
     # type_answer_id = format_answer[next(
     #        x["options"][0]["id"] for x in session["answers"] if x["question"]["id"] == answers["Presentation Format"]
     #    )]
-    cw = next(
-        (
-            x["answer"]
-            for x in session["answers"]
-            if x["question"]["id"] == answers["Content Warning"]
-        ),
-        None,
-    )
+    cw = get_answer(CONTENT_WARNING_QUESTION_ID, submission_code=session['code'])
     track = session["track"]
     if track is None:
         print(f"!!! {session['code']} has no track assigned, skipping")
@@ -199,7 +216,7 @@ for entry in BREAKS_DIR.glob("*"):
 
 # If a schedule is published, collect breaks
 schedule = requests.get(
-    "https://pretalx.com/api/events/pycon-au-2024/schedules/latest/",
+    f"{PRETALX_BASE_URL}/schedules/latest/",
     headers={"Authorization": f"Token {PRETALX_TOKEN}"},
 )
 if schedule.ok:
@@ -235,18 +252,19 @@ if not etags:
     etags = {}
 
 for speaker in paginate(
-    f"https://pretalx.com/api/events/pycon-au-2024/speakers/?questions={PRONOUN_QUESTION_ID},{FEDIVERSE_QUESTION_ID},{TWITTER_QUESTION_ID}"
+    f"{PRETALX_BASE_URL}/speakers/",
+    pretalx_version='v1'
 ):
     if speaker["code"] not in seen_speakers:
         continue
+    print(f"speaker {speaker['code']}")
     has_pic = False
     try:
-        if speaker["avatar"] is not None:
+        if speaker["avatar_url"] is not None:
             etag = etags.get(speaker["code"], None)
-            print(speaker["avatar"])
-            if speaker["avatar"]:
+            if speaker["avatar_url"]:
                 avatar_resp = requests.get(
-                    speaker["avatar"],
+                    speaker["avatar_url"],
                     headers={"If-None-Match": etag} if etag is not None else {},
                 )
                 if avatar_resp.status_code == 304:
@@ -262,37 +280,16 @@ for speaker in paginate(
                     im.save(str(PEOPLE_IMGS_DIR / f'{speaker["code"]}.jpg'), quality=95)
                     has_pic = True
     except Exception as e:
-        print(speaker["code"], speaker["avatar"], e)
+        print(speaker["code"], speaker["avatar_url"], e)
 
     speaker_file = PEOPLE_DIR / f'{speaker["code"]}.yml'
     with speaker_file.open("w") as f:
         yaml.dump(
             {
                 "name": speaker["name"],
-                "pronouns": next(
-                    (
-                        x["answer"]
-                        for x in speaker["answers"]
-                        if x["question"]["id"] == PRONOUN_QUESTION_ID
-                    ),
-                    None,
-                ),
-                "twitter": next(
-                    (
-                        x["answer"]
-                        for x in speaker["answers"]
-                        if x["question"]["id"] == TWITTER_QUESTION_ID
-                    ),
-                    None,
-                ),
-                "fedi": next(
-                    (
-                        x["answer"]
-                        for x in speaker["answers"]
-                        if x["question"]["id"] == FEDIVERSE_QUESTION_ID
-                    ),
-                    None,
-                ),
+                "pronouns": get_answer(PRONOUNS_QUESTION_ID, speaker_code=speaker["code"]),
+                "bluesky": get_answer(BLUESKY_QUESTION_ID, speaker_code=speaker["code"]),
+                "fedi": get_answer(FEDIVERSE_QUESTION_ID, speaker_code=speaker["code"]),
                 "bio": parse_markdown(speaker["biography"] or ""),
                 "has_pic": has_pic,
             },
