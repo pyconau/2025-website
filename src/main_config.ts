@@ -3,16 +3,15 @@ export const CONFERENCE_TZ = "Australia/Melbourne"
 export const TICKETS_AVAILABLE: boolean = false
 
 export const ROOMS = [
-  { slug: "goldfields", name: "Door 12 / Goldfields Theatre", days: ['friday', 'saturday', 'sunday'] },
-  { slug: "eureka2", name: "Eureka 2", days: ['friday', 'saturday', 'sunday'] },
-  { slug: "eureka3", name: "Eureka 3", days: ['friday', 'saturday', 'sunday'] },
-  { slug: "chancellor2", name: "Chancellor 2 at the Grand Chancellor Hotel", days: ['monday'] },
-  { slug: "chancellor4", name: "Chancellor 4 at the Grand Chancellor Hotel", days: ['monday'] },
+  { slug: "ballroom1", name: "Ballroom 1", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "ballroom2", name: "Ballroom 2", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "ballroom3", name: "Ballroom 3", days: ['friday', 'saturday', 'sunday'] },
+  { slug: "juniorballroom", name: "Junior Ballroom", days: ['monday'] },
 ] as const
 export const SPECIALIST_TRACKS = [
-  { slug: "scientific", name: "Scientific Python", room: "goldfields" },
-  { slug: "education", name: "Education", room: "eureka2" },
-  { slug: "data-ai", name: "Data & AI", room: "eureka3" },
+  { slug: "scientific", name: "Scientific Python", room: "ballroom2" },
+  { slug: "education", name: "Education", room: "ballroom3" },
+  { slug: "data-ai", name: "Data & AI", room: "ballroom1" },
 
 ] as const
 
