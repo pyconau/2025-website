@@ -4,6 +4,7 @@ import logoReversed from "../imgs/Logo_Reversed.svg"
 import Navigation from "../components/Navigation.astro"
 import NoOrphanText from "../components/NoOrphanText.astro"
 import { getEntryBySlug } from "astro:content"
+import conferenceImage from "../imgs/og.png"
 
 let entry = await getEntryBySlug("pages", "index")
 const { Content, headings } = await entry.render()
@@ -12,20 +13,40 @@ const { Content, headings } = await entry.render()
 <Base navigation={false}>
   <script
     type="application/ld+json"
-    set:html={`
+    set:html={JSON.stringify(
       {
         "@context": "https://schema.org",
-        "@type": "ExhibitionEvent",
-        "location": "Pullman Melbourne On The Park",
+        "@type": "Event",
+        "location": {
+          "@type": "Place",
+          "name": "Pullman Melbourne On The Park",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "192 Wellington Parade",
+            "addressLocality": "East Melbourne",
+            "postalCode": "3002",
+            "addressRegion": "VIC",
+            "addressCountry": "AU"
+          }
+        },
         "url": "https://2025.pycon.org.au/",
         "name": "PyCon AU 2025",
+        "description": "PyCon AU is Australia’s peak Python conference.",
+        "image": conferenceImage.src,
         "startDate": "2025-09-12",
         "endDate": "2025-09-16",
-        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
-        "inLanguage": "en-AU"
+        "inLanguage": "en-AU",
+        "offers": [
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "url": "https://2025.pycon.org.au/attend",
+          }
+        ],
       }
-    `}
+    )}
   />
 
   <header id="header" slot="nav">
