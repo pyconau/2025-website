@@ -14,20 +14,21 @@ import { ROOMS } from "../../main_config"
 import Session from "../../components/program/Session.astro"
 
 export async function getStaticPaths() {
-  return ["friday", "saturday", "sunday", "monday"].map((day) => ({
+  return ["friday", "saturday", "sunday", "monday", "tuesday"].map((day) => ({
     params: { day },
     props: { day },
   }))
 }
 export type Props = {
-  day: "friday" | "saturday" | "sunday" | "monday"
+  day: "friday" | "saturday" | "sunday" | "monday" | "tuesday"
 }
 const { day } = Astro.props as Props
 const datestamp = {
-  friday: DateTime.fromISO("2024-11-22", { zone: CONFERENCE_TZ }),
-  saturday: DateTime.fromISO("2024-11-23", { zone: CONFERENCE_TZ }),
-  sunday: DateTime.fromISO("2024-11-24", { zone: CONFERENCE_TZ }),
-  monday: DateTime.fromISO("2024-11-25", { zone: CONFERENCE_TZ }),
+  friday: DateTime.fromISO("2025-09-12", { zone: CONFERENCE_TZ }),
+  saturday: DateTime.fromISO("2025-09-13", { zone: CONFERENCE_TZ }),
+  sunday: DateTime.fromISO("2025-09-14", { zone: CONFERENCE_TZ }),
+  monday: DateTime.fromISO("2025-09-15", { zone: CONFERENCE_TZ }),
+  tuesday: DateTime.fromISO("2025-09-16", { zone: CONFERENCE_TZ }),
 }[day]
 const sessions = (await getCollection("sessions"))
   .filter(isScheduled)
@@ -318,7 +319,7 @@ const tracksByRoom = Object.fromEntries(
   }
   <ProgramSwitcher current={day} />
   <p class="tz">
-    All times shown in AEDT (UTC+11). <a href="https://pretalx.com/pycon-au-2024/schedule/export/schedule.json"
+    All times shown in AEST (UTC+10). <a href="https://pretalx.com/pycon-au-2025/schedule/export/schedule.json"
       >JSON</a
     >.
   </p>

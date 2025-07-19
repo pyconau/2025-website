@@ -6,7 +6,8 @@ export const ROOMS = [
   { slug: "ballroom1", name: "Ballroom 1", days: ['friday', 'saturday', 'sunday'] },
   { slug: "ballroom2", name: "Ballroom 2", days: ['friday', 'saturday', 'sunday'] },
   { slug: "ballroom3", name: "Ballroom 3", days: ['friday', 'saturday', 'sunday'] },
-  { slug: "juniorballroom", name: "Junior Ballroom", days: ['monday'] },
+  { slug: "juniorballroom", name: "Junior Ballroom", days: ['monday', 'tuesday'] },
+  { slug: "stradbroke", name: "Stradbroke Room", days: ['monday', 'tuesday'] },
 ] as const
 export const SPECIALIST_TRACKS = [
   { slug: "scientific", name: "Scientific Python", room: "ballroom2" },

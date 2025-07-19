@@ -21,7 +21,7 @@ ROOMS = {
     "Ballroom 3": "ballroom3",
 }
 TRACKS = {
-    "Data & AI": "ai",
+    "Data & AI": "data-ai",
     "Education": "education",
     "Scientific Python": "scientific",
     "Main Conference": None,
