@@ -1,0 +1,19 @@
+title: 'Catching them all: teaching fundamental OOP concepts with Pokemon'
+start: 2025-09-12 11:00:00+10:00
+end: 2025-09-12 11:30:00+10:00
+room: ballroom3
+track: education
+abstract: "<p>Object-oriented programming can feel impossibly abstract to students,
+  and demoralising to the teacher facing a class of blank stares, until you bring
+  in Pikachu. This presentation shows how Pokemon naturally demonstrates every OOP
+  concept we might struggle to teach, from basic classes to inheritance.</p>\n<p>Instead
+  of the standard \"Car\" and \"Animal\" examples, students work through boiler plate
+  code to predict, debug and eventually create classes and objects, to design and
+  build battle systems. </p>\n<p>You'll see student work samples, and walk away with
+  some different ideas on approaching teaching with OOP.</p>"
+description: ''
+code: XXXRFG
+speakers:
+- 7UBZ9U
+cw:
+youtube_slug:

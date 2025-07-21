@@ -1,0 +1,45 @@
+title: Going with the flow? Apache Airflow for operational-quality scientific workflows
+start: 2025-09-12 10:00:00+10:00
+end: 2025-09-12 10:30:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>In this session we will share our experience of using Apache Airflow
+  to build production scientific modelling workflows. This will draw on our work at
+  the Australian Bureau of Meteorology on multiple projects which updated existing
+  services to use Airflow – the eReefs water quantity and quality modelling and Seasonal
+  Streamflow Forecasting services. </p>\n<p>Why invest effort to learn and then apply
+  the Airflow framework to manage your scientific workflows? In our years of experience,
+  building workflows around apps for scientific analysis that are both operational-quality,
+  and are also enjoyable and productive to work with for scientific developers, has
+  been something of a persistent pain-point. </p>\n<p>As scientific developers, if
+  you roll your own workflow management system from the ground up then you retain
+  control and can use all your favourite Python tools - but over time it can often
+  result in a combination of scripts, cron and/or Jenkins jobs that is hard to maintain.
+  You’ll also be short of features you need in an operational-quality system like
+  good logging, error handling, and a pleasant monitoring web UI for non-developers
+  (e.g. application support teams) to use. All the above is exacerbated when effective
+  task parallelisation is a goal. On the other hand, applying off-the-shelf general
+  business IT workflow management apps to scientific modelling use-cases can result
+  in cumbersome systems that are difficult to update and involve a lot of duplication.</p>\n
+  <p>Enter Apache Airflow - an open-source workflow manager written in Python with
+  workflow Directed Acyclic Graphs (DAGs) defined directly in Python code. We’ll give
+  examples illustrated from our project work of updating existing systems to run in
+  an Airflow framework with a goal to enable greater automation, scalability and quality
+  control. These include: </p>\n<ul>\n<li>Challenges faced getting started with Airflow
+  for our small project teams – including tips for setting up development instances
+  of Airflow’s scheduler and workflow backends. </li>\n<li>Summaries of how we used
+  the different Airflow “Operators” to invoke program code – including trade-offs
+  between tight and loose coupling, and how this interacts with the use of Conda for
+  managing complex scientific software stacks. </li>\n<li>Our experience of using
+  Airflow’s workflow parallelisation effectively for chunking up work. </li>\n<li>Experience
+  from different deployment options – both to AWS cloud containers, and locally-managed
+  Virtual Machines. </li>\n</ul>\n<p>We'll finish with reflecting on key lessons learnt,
+  and ideas for further improvement in scientific software workflow management.</p>"
+description: ''
+code: 3SBETY
+speakers:
+- VE9TZ7
+- 999PRP
+- UFWMHG
+cw:
+youtube_slug:

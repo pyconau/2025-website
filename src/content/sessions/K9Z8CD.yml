@@ -1,0 +1,38 @@
+title: Think like a Performance Engineer
+start: 2025-09-14 10:40:00+10:00
+end: 2025-09-14 11:10:00+10:00
+room: ballroom2
+track:
+abstract: "<p>Every software system can benefit from being \"faster\". </p>\n<p>But
+  what does “faster” mean, exactly? How do we get to “faster”? If everyone is trying
+  to build performant systems, then why are so many of them <em>so slow</em>? </p>\n\
+  <p>Let's talk about the fundamentals of performance engineering, and how to use
+  them design and build systems that feel \"faster\" - even when that's not quite
+  what you thought.</p>"
+description: "<p>This talk will examine the fundamentals of performance engineering
+  and optimisation: \n•   What do we mean by “faster”, or “performant”? Why do they
+  mean different things to different people? </p>\n<p>•   What core trade-offs do
+  we make (consciously or unconsciously) when designing and optimising systems? Why
+  do systems feel slow? Are the engineers just bad, or are there potentially good
+  reasons?</p>\n<p>•   How do we tell what’s important? How can we tell when we’ve
+  done enough? What are the conversations we can have as a team at the start of a
+  project that will save us pain down the line?</p>\n<p>•   Which core principles
+  of computing do you need to understand to write fast and efficient code?</p>\n<p>•\
+  \   How can we access those concepts from Python?</p>\n<p>We’ll use Python-based
+  examples to demonstrate these concepts, and you’ll also learn about some of the
+  improvements that have been made in recent PEPs and Python releases, which make
+  it easier than ever to write performant code. </p>\n<p>While this talk is primarily
+  drawn from experience building data processing pipelines, the concepts and principles
+  of performance are universally applicable across the entire Python and software
+  development ecosystem. You should attend this talk if you’re interested in designing
+  and building performant software and systems, and it will contain content relevant
+  to individual contributors of all levels. </p>\n<p>You’ll leave this talk with an
+  improved way to discuss performance with your fellow engineers, product managers,
+  project teams, and management. Not only that, but you’ll learn concrete techniques
+  for making your code run faster and more efficiently, regardless of what that means
+  for your team.</p>"
+code: K9Z8CD
+speakers:
+- N3NQGU
+cw:
+youtube_slug:

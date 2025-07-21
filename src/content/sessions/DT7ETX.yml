@@ -1,0 +1,31 @@
+title: 'Reinforcement Learning with Quantum Algorithms: Simulating Nematode Behaviour'
+start: 2025-09-14 14:50:00+10:00
+end: 2025-09-14 15:20:00+10:00
+room: ballroom2
+track:
+abstract: <p>What happens when you combine quantum computing, neuroscience, and reinforcement
+  learning—all in Python? This talk explores how parameterized quantum circuits can
+  be used as “brains” for agents inspired by the nematode C. elegans, and how these
+  agents learn to navigate their world using reinforcement learning. We’ll see how
+  quantum and classical approaches compare, and what this means for the future of
+  AI and quantum machine learning.</p>
+description: "<p>Can quantum computing help us build smarter, more efficient learning
+  agents? In this talk, we’ll dive into a Python project that simulates the behaviour
+  of the nematode C. elegans using reinforcement learning—once with a classical neural
+  network, and once with a quantum circuit as the agent’s brain.</p>\n<p>We’ll cover:</p>\n
+  <ul>\n<li>The neuroscience inspiration: why C. elegans is a model organism for both
+  biology and AI.</li>\n<li>How to encode sensory features and actions for both quantum
+  and classical agents.</li>\n<li>The basics of variational quantum algorithms and
+  how parameterized quantum circuits can be trained using reinforcement learning.</li>\n
+  <li>How Python (with Qiskit and PyTorch) enables rapid prototyping and benchmarking
+  of these agents.</li>\n<li>What we learn from comparing quantum and classical brains:
+  learning speed, sample efficiency, and emergent behaviours.</li>\n<li>Live demos
+  and visualizations of agents learning to solve mazes and perform chemotaxis.</li>\n
+  </ul>\n<p>Whether you’re a quantum enthusiast, ML practitioner, or just curious
+  about the intersection of biology and AI, you’ll leave with new ideas and practical
+  tools for exploring these fields in Python.</p>"
+code: DT7ETX
+speakers:
+- 3RETGW
+cw:
+youtube_slug:

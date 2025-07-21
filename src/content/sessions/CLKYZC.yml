@@ -1,0 +1,31 @@
+title: What’s in a Name? – Fuzzy Matching Techniques for Proper Nouns
+start: 2025-09-12 15:10:00+10:00
+end: 2025-09-12 15:40:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>Free form data entry is a realm that is simply begging for data that
+  you’ll never be able to crossmatch. Whether it’s typos, using obscure initialisations,
+  or deciding that “name” sometimes means “full name” and sometimes means “nickname
+  of the day” your data is never going to be a perfect match. And let me tell you,
+  those problems are multiplied if some of that data is entered by children!</p>\n
+  <p>I’ll take you through the techniques from edit distance to generative AI (and
+  combinations thereof) I have used to match up proper nouns ranging from people’s
+  names to schools and see how some techniques work for people and not for places,
+  and vice versa. I’ll show you how it is working in practice to help track event
+  participants over the course of a single workshop day and ultimately over the course
+  of their journey through our community.</p>"
+description: "<p>I have a problem. I have masses of free-form textual data that captures
+  the participation of members of a community in our events over many, many years!
+  This data includes things like student names, school names, and other proper nouns
+  – things that might have many interpretations of a “correct” answer or “good enough”
+  answer, and things that kids and their parents certainly have different thoughts
+  on. </p>\n<p>I needed to get to the bottom of fuzzy matching of proper nouns and
+  to work out what combinations of different algorithmic and AI techniques worked
+  best for different types of nouns. So come with me on this journey of typos, nicknames,
+  and how this non-Sydney-schooled Pythonista was able to figure out which schools
+  “Spats”, “Tech”, and “Cathedral” actually were.</p>"
+code: CLKYZC
+speakers:
+- TQKR8P
+cw:
+youtube_slug:

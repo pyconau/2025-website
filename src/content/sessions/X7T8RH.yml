@@ -1,0 +1,41 @@
+title: Multi Cluster GPU Allocation for AI Research
+start: 2025-09-13 13:30:00+10:00
+end: 2025-09-13 14:00:00+10:00
+room: ballroom1
+track:
+abstract: "<p>As the LLMs and generative models become more and more complex, one
+  can't simply train them on CPU, or a single GPU cluster, this requires the use of
+  multiple GPUs but managing those can be complicated.GPU partitioning in the cloud
+  is perceived to be a complicated, resource-consuming process that is worth the exclusive
+  involvement of narrowly focused teams or large enterprises. So this talk explores
+  why GPU partitioning is necessary for running Python AI workloads and how it can
+  be done efficiently using open source tooling.</p>\n<p>The talk will cover about
+  some common myths: that this has something to do with advanced hardware configurations
+  or prohibitive costs, on systems likeKubernetes</p>\n<p>In this talk, we will illustrate
+  how modern frameworks like NVIDIA MIG with vCluster effectively enable seamless
+  sharing of GPUs across different teams, leading to more efficient resource utilization,
+  higher throughput, and broader accessibility for workloads like LLM finetuning and
+  inference. The talk aims to inspire developers, engineers to understand the key
+  techniques for efficient GPU scheduling and sharing of resources across multiple
+  GPU Clusters with open source platform tooling like vCluster.</p>"
+description: "<p>As the LLMs and generative models become more and more complex, one
+  can't simply train them on CPU, or a single GPU cluster, this requires the use of
+  multiple GPUs but managing those can be complicated.GPU partitioning in the cloud
+  is perceived to be a complicated, resource-consuming process that is worth the exclusive
+  involvement of narrowly focused teams or large enterprises. So this talk explores
+  why GPU partitioning is necessary for running Python AI workloads and how it can
+  be done efficiently using open source tooling.</p>\n<p>The talk will cover about
+  some common myths: that this has something to do with advanced hardware configurations
+  or prohibitive costs, on systems likeKubernetes</p>\n<p>In this talk, we will illustrate
+  how modern frameworks like NVIDIA MIG with vCluster effectively enable seamless
+  sharing of GPUs across different teams, leading to more efficient resource utilization,
+  higher throughput, and broader accessibility for workloads like LLM finetuning and
+  inference. The talk aims to inspire developers, engineers to understand the key
+  techniques for efficient GPU scheduling and sharing of resources across multiple
+  GPU Clusters with open source platform tooling like vCluster.</p>"
+code: X7T8RH
+speakers:
+- T9TYF8
+- FCUK7B
+cw:
+youtube_slug:

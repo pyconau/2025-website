@@ -1,0 +1,26 @@
+title: Capturing Flags with Microbits
+start: 2025-09-12 11:40:00+10:00
+end: 2025-09-12 12:10:00+10:00
+room: ballroom3
+track: education
+abstract: "<p>After a number of my Year 10 students entered a capture the flag cybersecurity
+  competition they had a sudden burst of enthusiasm for the topic. Networking and
+  cybersecurity, being parts of the national curriculum, are things that I should
+  probably be teaching anyway so when it came to delivering this unit I figured I'd
+  capture their enthusiam by running my assessment as a capture the flag. This seemed
+  like a good idea at the time, but as it turns out CTFs take quite a bit of effort
+  - and getting a system like the micro:bit to reliably immitate a network a bit of
+  work. Also creating a scenario where students don't just troll each other in the
+  middle of an exam when... also figuring out how to stop them cheating when their
+  communication is open... also figuring out a way to teach them everything they needed
+  to know in order to even approach the task... also how do I learn all this stuff
+  first?</p>\n<p>Join me as I go through the five weeks I spent learning, delivering
+  and then assessing cybersecruity things.\nI'll be overviewing what I had to teach
+  to get them ready, what I had to code on the micro:bits to make any of this work,
+  and ultimately ask: how effective is it to run a capture the flag using Micro:bits.</p>"
+description: ''
+code: H7SEQT
+speakers:
+- ZCZAPX
+cw:
+youtube_slug:

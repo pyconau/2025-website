@@ -1,0 +1,27 @@
+title: Who_Dunnit.xlsx – Teaching Python through Data Investigation
+start: 2025-09-12 12:20:00+10:00
+end: 2025-09-12 12:50:00+10:00
+room: ballroom3
+track: education
+abstract: "<p>Shock horror! Banana, the beloved science class Python has been released!
+  But how? And more importantly... who did it? The clues are hidden in a collection
+  of spreadsheets, but we’ll need something a little more powerful than VLOOKUP to
+  solve this slippery case.</p>\n<p>Using Python in Excel (or Jupyter notebooks if
+  you prefer!) will help us close the book on the tale of the missing snake while
+  sneaking in real-world coding, logic, and data wrangling. Learn about the mystery
+  I’ve crafted and how you can get your own students coding with this (or your own)
+  data adventure!</p>"
+description: "<p>For new coders jumping into an IDE might seem like a big step, but
+  could the familiar sight of a spreadsheet help learners get on board?</p>\n<p>In
+  this session, I’ll share a snake-themed who-dunnit puzzle I created to help learners
+  become confident data detectives. You’ll get a look at the dataset, the step-by-step
+  activity, and the Python concepts it covers. Whether you’re teaching teenagers,
+  professionals, or coding-curious adults, this activity is all about making Python
+  fun, relevant, and just a little bit dramatic.</p>\n<p>Take home my data set or
+  get some tips to make up your own so you too can sneak a snake into the sheets for
+  your own class.</p>"
+code: 37HNHZ
+speakers:
+- TQKR8P
+cw:
+youtube_slug:

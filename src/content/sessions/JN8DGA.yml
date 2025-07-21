@@ -1,0 +1,19 @@
+title: Escape the Python - Ten years of Australia's best Escape Rooms
+start: 2025-09-13 12:00:00+10:00
+end: 2025-09-13 12:30:00+10:00
+room: ballroom2
+track:
+abstract: <p>Cubescape is a tiny company based in Melbourne that designs, builds,
+  and operates Escape Rooms. Our rooms are full of technology and robotics, and run
+  a mini-operating system across a network of Raspberry Pis all running python code
+  with a heavy dose of asyncio. Starting with Python 3.3 and Debian 8 back in 2014
+  we've kept our oldest games running for ten years and will be launching our latest
+  game this year with the same codebase, compatibly migrated to 3.11 and Debian 12.
+  This talk will dive into our codebase to show how and why we did things the way
+  we did, and some lessons learned from keeping a commercial project alive this long.</p>
+description: ''
+code: JN8DGA
+speakers:
+- SLMRZY
+cw:
+youtube_slug:

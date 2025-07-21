@@ -1,0 +1,23 @@
+title: I learned everything about the match statement so you don't have to
+start: 2025-09-13 14:10:00+10:00
+end: 2025-09-13 14:40:00+10:00
+room: ballroom3
+track:
+abstract: <p>Python has match statements now. What are they? Why are they? How do
+  they work? Discovering the true power of Python's structural pattern matching has
+  made my classes more powerful than ever! Want to learn this power? Then come to
+  my talk! It promises to inform, engage and entertain with real world  worked examples,
+  arcane facts, and interactive questions.</p>
+description: <p>Most of the Python devs I know just don't get the match statement.
+  They're great at ifs. They know their elses. Surely the match statement is just
+  those but… rearranged a bit? I thought like this once. But then I saw the light!
+  Have you ever been working in a project with a dozen different classes, each with
+  eighteen different attributes and fifteen different methods? No? Just me? Well you
+  can check all of those in a single match statement, with no ands in sight, and with
+  easy readability! Don't believe me? Come and be amazed! This talk will be accessible
+  to novices and still interesting for the more experienced.</p>
+code: FB7ECA
+speakers:
+- V8CC7B
+cw:
+youtube_slug:

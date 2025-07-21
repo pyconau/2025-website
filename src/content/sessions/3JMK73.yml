@@ -1,0 +1,26 @@
+title: 'The Duck and the DataFrame: A Data Engineer’s Journey with DuckDB'
+start: 2025-09-12 10:00:00+10:00
+end: 2025-09-12 10:30:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>I’ve used pandas for years, but as my data grew, my local workflows
+  started to slow down. Joins got sluggish, memory errors showed up, and simple tasks
+  became harder to manage. That’s when I found DuckDB, a fast, in-process SQL engine
+  that brought the speed and flexibility I was missing.</p>\n<p>This talk isn’t about
+  replacing pandas. It’s about knowing when to reach for something different. I’ll
+  share how DuckDB helped streamline my workflow, with real examples, side-by-side
+  comparisons, and a quick intro to DuckLake, a SQL-based Lakehouse format that fits
+  naturally into modern Python analytics.</p>"
+description: "<p>This talk picks up where that shift began. I’ll walk through the
+  challenges I hit with pandas and how DuckDB gradually became a core part of my workflow.
+  We’ll explore how it handles real data tasks, complements existing tools, and helps
+  simplify analysis. You’ll also see how local-first tools like DuckDB and DuckLake
+  can streamline data work without needing extra infrastructure.</p>\n<p>By the end
+  of the session, you’ll:\n- Recognize where pandas starts to struggle and why it’s
+  okay to want more\n- See how DuckDB can supercharge your workflow without changing
+  everything\n- Leave with real-world tips for faster analytics with no cluster required</p>"
+code: 3JMK73
+speakers:
+- MNFLRN
+cw:
+youtube_slug:

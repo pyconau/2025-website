@@ -1,0 +1,25 @@
+title: 'Reducing the "Oops Factor": Pipelines for a Secure Python Development Lifecycle'
+start: 2025-09-14 14:50:00+10:00
+end: 2025-09-14 15:20:00+10:00
+room: ballroom1
+track:
+abstract: <p>The cyber threat landscape is vast, deep and ever-changing. Short of
+  retraining as cybersecurity professionals, How can we, as python developers do our
+  part to help keep ourselves, our customers and our data safe? In this talk, we'll
+  look at the current threat landscape, the ways developers commonly fall short, and
+  just how simple it can be to drastically reduce the "oops factor" of our Python
+  development lifecycle.</p>
+description: "<p>Extremely clear, practical and easily actionable advice for how everyday
+  Python developers can improve the security posture of their projects today.</p>\n\
+  <p>We'll step through common risk factors, looking at examples of high profile failures
+  including: credential leakage, PyPI and supply chain security and how SAST (static
+  analysis security testing) can help identify common bugs - many of which have been
+  on the OWASP top 10 since the very beginning.</p>\n<p>As we go, we'll build up our
+  own swiss-cheese model of risks and explore Python tooling that we can add to our
+  DevSecOps pipeline to improve our security posture.</p>\n<p>The key takeaways is
+  just how easily we can all score some easy wins with little effort.</p>"
+code: SPFDLZ
+speakers:
+- 9JRZ8S
+cw:
+youtube_slug:

@@ -1,0 +1,27 @@
+title: 'MCP for dummies: Feed more context to LLM'
+start: 2025-09-14 12:00:00+10:00
+end: 2025-09-14 12:30:00+10:00
+room: ballroom1
+track:
+abstract: "<p>Providing the right context to large language models is challenging.
+  Every integration—whether accessing local files, connecting to Google Calendar,
+  or querying internal databases—requires custom work. Each tool connection becomes
+  a separate, manual effort. This is where MCP comes in. Model Context Protocol (MCP),
+  in simple terms, is a universal adapter for AI models that need external context.
+  It standardizes how context is passed to models, making it easier to build and manage
+  these connections.</p>\n<p>My talk will not only focus on how to get started with
+  MCP, but I will also outline how to build MCP Agents using your own MCP Server tools
+  and the MCP Client UI with Streamlit. At the end of my talk, we will also discuss
+  the security issues associated with MCP and how one can mitigrate those.</p>"
+description: "<p>Outline of my talk- breakdown of the 30 minutes:\n- Issues with Large
+  language models and discuss the pain points for the need of MCP (3 min)\n- What
+  is MCP in basic words (2 min)\n- How does MCP work?- Architecture breakdown? (5
+  min)\n- Need of MCP - Is it overhyped? Share the experience of working with MCP
+  (5 min)\n- Use MCP as a tool in the Agentic Workflow (4-5 minutes)\n- Security concerns
+  and Migration (5-6 minutes)\n- Show a simple code snippet in the end on how to use
+  MCP and Agno Agent (5 min)\n- QA (2 min)</p>"
+code: D8DNXQ
+speakers:
+- XVM8TR
+cw:
+youtube_slug:

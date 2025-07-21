@@ -1,0 +1,27 @@
+title: Unarchiving vulnerabilities and avoiding tar-pits
+start: 2025-09-14 13:30:00+10:00
+end: 2025-09-14 14:00:00+10:00
+room: ballroom1
+track:
+abstract: "<p>I found some vulnerabilities in Python's standard library, and now you've
+  all had to upgrade your Python. Sorry, not sorry.</p>\n<p>My day job is focused
+  on open source and software supply chain security. This has made me curious - how
+  trustworthy even are the core technologies our ecosystems are built on - like 46
+  year old archiving formats?</p>\n<p>So after I read a vulnerability report that
+  exploited symlinks in TAR files, I wondered whether Python suffered the same problem.
+  I started poking around and ended up finding an arbitrary write path traversal in
+  Python's standard library.</p>\n<p>This talk will provide a detailed look at this
+  vulnerability and demonstrate how it can be exploited by an attacker to compromise
+  an exposed system.</p>\n<p>I’ll also discuss how these vulnerabilities demonstrate
+  key security challenges facing developers while building their projects. The challenges
+  range from the different incentives between libraries and their applications, the
+  limits of abstractions, and the difficulties of hardening legacy code.</p>\n<p>With
+  movement towards more regulation, like the EU's Cyber Resilience Act, and more interest
+  in improving software security, appreciating these security challenges can help
+  developers focus more on building exciting projects than mitigating vulnerabilities.</p>"
+description: ''
+code: LQD9GH
+speakers:
+- CGMRAQ
+cw:
+youtube_slug:

@@ -1,0 +1,36 @@
+title: Scaling Security Anomaly Detection in Enterprise Knowledge Base with Dask
+start: 2025-09-12 16:10:00+10:00
+end: 2025-09-12 16:40:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>Detecting misconfigured permissions and sensitive data leaks across
+  enterprise knowledge base platforms like SharePoint, Confluence and Google Drive
+  demands analysing massive volumes of document metadata - permissions, user identities,
+  groups, and organisational structures. This challenge rapidly becomes overwhelming
+  at scale due to the terabytes of data involved.</p>\n<p>In this talk, I'll share
+  our practical experience building a data pipeline in Python to tackle anomaly detection
+  at scale using Dask, a flexible, open-source Python library that enables parallel
+  computing and scales data processing workloads seamlessly from a single machine
+  to distributed clusters.\nOur pipeline ingests raw metadata from knowledge base
+  APIs, transforms it into canonical CSV datasets, and applies a combination of unsupervised
+  machine learning techniques (e.g. NMF/SVD), rule-based logic, and sensitive-data-pattern
+  detection. Results are translated back into structured formats (jsonl), to publish
+  actionable security alerts for our clients.</p>\n<p>Dask’s familiar pythonic API
+  let us scale beyond single-node limits and handle large, I/O-heavy computations.
+  We'll highlight some key Dask concepts we relied on.</p>\n<p>However, scaling up
+  wasn’t without challenges: we faced numerous performance bottlenecks and memory
+  management issues, including out-of-memory (OOM) errors and task graph stalls.\n
+  I’ll walk through the key strategies we developed to overcome these challenges,
+  including custom loaders to better manage memory usage and mitigate issues caused
+  by handling large volumes of files. We’ll cover how we used strategic repartitioning
+  to rebalance workloads, and selectively persisted intermediate results to avoid
+  redundant computation. Finally, we’ll explore how the Dask dashboard helped us pinpoint
+  bottlenecks and debug stalled graphs in production.</p>\n<p>Attendees will leave
+  with practical insights and effective debugging techniques they can apply to scale
+  their own data workloads with Dask.</p>"
+description: ''
+code: WUSRTK
+speakers:
+- AU8GQD
+cw:
+youtube_slug:

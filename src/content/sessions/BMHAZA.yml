@@ -1,0 +1,34 @@
+title: A case study on building our first LLM feature – how to balance speed + quality
+start: 2025-09-12 11:00:00+10:00
+end: 2025-09-12 11:30:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>We’re all building AI features now – or will be soon. But working with
+  teams who are building with LLMs brings its own challenges – namely: How can we
+  bring in the latest research, consider AI ethics, and consider the cost of different
+  models without blowing past delivery dates. Not to mention making sure that the
+  features we build will be stable, reliable, and maintainable in the future. </p>\n
+  <p>In this talk, I’ll share a case study of how we built our first LLM feature.
+  In 1 month, we did everything from running experiments, developing evaluation methods,
+  assessing the risks, and considering ethical concerns to build the feature. Specifically,
+  over this period we did a literature review, consultation with academic experts,
+  data labelling, model experimentation, a cost assessment, and finally, all the ML
+  engineering to launch it into production. The outcome: &lt;1% extreme misclassification
+  and zero hallucinations.</p>\n<p>In this talk, we’ll share our approach to building
+  LLM features – how we partnered with academia (without being delayed by their timelines),
+  what tooling we used, and how we made the cost and money tradeoffs to keep business
+  stakeholders happy. As one example, we’ll share how important evaluation data was
+  for building our features, because it helped us improve our definitions and revealed
+  gender differences in how people perceive feedback. We’ll share the principles we
+  used when balancing rigorous, robust practices with cost and timeline considerations.
+  Finally, we’ll share which frameworks actually helped us make the right calls, avoid
+  expensive do-overs, and navigate the AI ethics side as well.\nYou'll walk away with
+  hands-on tools for leading the AI conversation within your own organization – including
+  how to identify ethical issues early, address them efficiently, and still deliver
+  on time and on budget.</p>"
+description: ''
+code: BMHAZA
+speakers:
+- HZKXKG
+cw:
+youtube_slug:

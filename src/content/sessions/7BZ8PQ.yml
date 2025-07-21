@@ -1,0 +1,31 @@
+title: 'On the Fly and On the Flight: Scientific Data Analysis Beyond the Beamline'
+start: 2025-09-12 11:40:00+10:00
+end: 2025-09-12 12:10:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>At synchrotron facilities, researchers use high-energy X-rays to uncover
+  the structure and chemistry of materials — from batteries to biological systems.
+  These experiments generate vast amounts of complex, high-dimensional data, and scientists
+  need flexible tools, interactive exploration, and smart automation to make sense
+  of it all. In this talk, we present a Python-based data processing suite designed
+  to support X-ray spectroscopy workflows: from generating immediate data products
+  to inform critical decisions during limited beamtime, to in-depth reprocessing off-site
+  — or even offline.</p>\n<p>The suite is built around a processing library that uses
+  <code>xarray</code> for intuitive multi-dimensional data handling and provides reproducible,
+  transparent analysis pipelines via command-line tools and Jupyter notebooks for
+  coding-affine users. It also includes a <code>PyQt</code>-based desktop GUI that
+  enables domain scientists to interactively explore their data and fine-tune processing
+  steps without the need for prior programming experience.</p>\n<p>We'll explore how
+  Python libraries like <code>xarray</code>, <code>pyqtgraph</code>, and <code>typer</code>
+  take the processing of raw experimental data from low-level wrangling in multiple
+  dimensions to high-level exploration in intuitive interfaces. By providing different
+  levels of balance between automation and user control we enable scientists with
+  all levels of programming experience to create insightful datasets — whether they're
+  at the beamline, back at their home institution, or already on the plane to the
+  next conference.</p>"
+description: ''
+code: 7BZ8PQ
+speakers:
+- ZQWNFE
+cw:
+youtube_slug:

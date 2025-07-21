@@ -1,0 +1,30 @@
+title: 'Needle in the Haystack: Applied ML for Inspections of Power Infrastructure'
+start: 2025-09-12 11:40:00+10:00
+end: 2025-09-12 12:10:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>What do you do when you’ve captured millions of aerial images across
+  thousands of kilometers and want to find the handful of problems that could take
+  out a state’s power supply? This talk explores how we built a full-stack system
+  — combining machine learning, Django, and self hosted infrastructure — to identify
+  critical anomalies in Australia’s electricity transmission network. </p>\n<p>You’ll
+  learn how we perform image processing at scale, reducing an overwhelming data problem
+  into a handful of insights that matter and how we present these results to users.</p>"
+description: "<p>Many of Australia’s overhead transmission lines are aging, and targeted
+  maintenance is crucial to prevent failures. At scale, this means analysing millions
+  of high-resolution images to detect rare and subtle issues. This talk walks through
+  a real-world application that uses Machine Learning and Django to turn this data
+  problem into something manageable, finding the needles in the haystack.</p>\n<p>We’ll
+  look at:\n    •   How aerial inspection imagery is processed using machine learning
+  pipelines\n    •   How we host and manage large volumes of images (~400 TB)\n  \
+  \  •   The architecture of a Django-based web portal that turns model outputs into
+  customer-facing insights\n    •   How we render dashboards, data tables, and generate
+  structured PDF reports\n    •   Lessons learned from managing complexity, performance,
+  and usability at scale</p>\n<p>This is a practical and technical talk, best suited
+  to software engineers, data practitioners, and ML engineers interested in building
+  end-to-end systems using Python.</p>"
+code: NXFGLG
+speakers:
+- ZYNFEG
+cw:
+youtube_slug:

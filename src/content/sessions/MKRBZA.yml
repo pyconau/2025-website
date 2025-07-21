@@ -1,0 +1,26 @@
+title: 'Pipe-ifying Python: The how and why of interpreter hacking'
+start: 2025-09-13 14:50:00+10:00
+end: 2025-09-13 15:20:00+10:00
+room: ballroom3
+track:
+abstract: "<p>Have you ever thought about adding a feature to the Python language
+  itself?</p>\n<p>If you have, or just want to learn a bit about how Python works
+  under the hood, we will step through the story of adding a small feature to a fork
+  of Python, learning about compilers and interpreters along the way!</p>"
+description: "<p>In languages such as OCaml and Elixir, a pipe operator (<code>|&gt;</code>)
+  can be used to thread the return value of a function through to the argument of
+  the next, to reduce nesting and improve readability: it lets you turn <code>x |&gt;
+  f(a, b)</code> into <code>f(a, b, x)</code>. Frustrated by the lack of such an operator
+  in Python, and armed with some previous experience in compilers, I started a side
+  project to fix the problem myself! </p>\n<p>In this talk I will step through the
+  story of how and why I added this feature to a fork of Python I've nicknamed 'Pypethon'.
+  We will explore some of the internal workings of the Cpython interpreter, focusing
+  on lexing, parsing and the abstract syntax tree. We will also explore why you might
+  want to make changes to the interpreter, the design challenges you can face when
+  adding new language features, as well as potential tradeoffs. No experience in compilers
+  required!</p>"
+code: MKRBZA
+speakers:
+- U7ZMWY
+cw:
+youtube_slug:

@@ -1,0 +1,52 @@
+title: 'Hierarchical Clustering: Finding the awkward reunions'
+start: 2025-09-12 12:20:00+10:00
+end: 2025-09-12 12:50:00+10:00
+room: ballroom1
+track: data-ai
+abstract: <p>Networks have in recent years emerged as an invaluable tool for describing
+  and quantifying complex systems in many branches of science. Recent studies suggest
+  that networks often exhibit hierarchical organization, where vertices divide into
+  groups that further subdivide into groups of groups, and so forth over multiple
+  scales. Here we present a general technique for inferring hierarchical structure
+  from network data and demonstrate that the existence of hierarchy can simultaneously
+  explain and quantitatively reproduce many commonly observed topological properties
+  of networks(Eg Terrorist Networks), such as right-skewed degree distributions, high
+  clustering coefficients, and short path lengths. We further show that knowledge
+  of hierarchical structure can be used to predict missing connections in partially
+  known networks with high accuracy, and for more general network structures than
+  competing techniques. Taken together, our results suggest that hierarchy is a central
+  organizing principle of complex networks, capable of offering insight into many
+  network phenomena</p>
+description: "<p>A great deal of recent work has been devoted to the study of clustering
+  and community structure in networks. Hierarchical structure goes beyond simple clustering,
+  however, by explicitly including organization at all scales in a network simultaneously.
+  Conventionally, hierarchical structure is represented by a tree or dendrogram in
+  which closely related pairs of vertices have lowest common ancestors that are lower
+  in the tree than those of more distantly related pairs—. We expect the probability
+  of a connection between two vertices to depend on their degree of relatedness. Structure
+  of this type can be modeled mathematically using a probabilistic approach in which
+  we endow each internal node r of the dendrogram with a probability pr and then connect
+  each pair of vertices for whom r is the lowest common ancestor independently with
+  probability pr  This model, which we call a hierarchical random graph, is similar
+  in spirit (although different in realization) to the tree-based models used in some
+  studies of network search and navigation . Like most work on community structure,
+  it assumes that communities at each level of organization are disjoint. Overlapping
+  communities have occasionally been studied  and could be represented using a more
+  elaborate probabilistic model, but as we discuss below the present model already
+  captures many of the structural features of interest.</p>\n<p>Given a dendrogram
+  and a set of probabilities pr, the hierarchical random graph model allows us to
+  generate artificial networks with a specified hierarchical structure, a procedure
+  that might be useful in certain situations. Our goal here, however, is a different
+  one. We would like to detect and analyze the hierarchical structure, if any, of
+  networks in the real world. We accomplish this by fitting the hierarchical model
+  to observed network data using the tools of statistical inference, combining a maximum
+  likelihood approach  with a Monte Carlo 2 sampling algorithm on the space of all
+  possible dendrograms. This technique allows us to sample hierarchical random graphs
+  with probability proportional to the likelihood that they generate the observed
+  network. To obtain the results described below we combine information from a large
+  number of such samples, each of which is a reasonably likely model of the data.</p>"
+code: 8PM8L9
+speakers:
+- 8JDAFU
+cw:
+youtube_slug:

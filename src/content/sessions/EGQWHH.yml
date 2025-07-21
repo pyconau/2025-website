@@ -1,0 +1,31 @@
+title: 'Tips and tricks: data science prototype into production'
+start: 2025-09-14 10:40:00+10:00
+end: 2025-09-14 11:10:00+10:00
+room: ballroom1
+track:
+abstract: "<p>This is an overview of the tips and tricks I learned while bringing
+  a mathematical optimization model from concept to prototype to production.\nAt its
+  core, the math model is a multi-dimensional knapsack problem, with tens of thousands
+  of items moving between warehouses with up to a hundred user-defined constraints.
+  The model is solved with Google's OR-Tools and is deployed to AWS Lambda.\nSome
+  of the important ideas I want to share are how to build a test suite to ensure that
+  a model of this type is internally consistent and how to handle errors-as-data for
+  your end users. I also learned a really nice way to configure logging in python.</p>"
+description: "<p>I learned some things about structuring my data science model. These
+  things are kind of neat, and definitely worth sharing. \nThe test suite for an optimization
+  model needs to ensure internal consistency of the model - so each constraint type
+  is tested in two different ways, once for evaluation and once for optimization.
+  If the individual constraints are consistent, then user requests with multiple constraints
+  have fewer sources of failure. Also, when checking my test coverage reports I discovered
+  the joys of branch testing.\nTo communicate errors as data back to end users, I
+  created a simple InformativeError data model, and included it as an attribute on
+  every response. So the dashboard application will always have a consistent way to
+  display fatal and non-fatal errors back to the user.\nFinally, when building a logging
+  framework, I discovered how to output structured JSON logs, and I have a dictionary
+  config that specifies different filters for logging from the CLI, from Jupyter and
+  from lambda.</p>"
+code: EGQWHH
+speakers:
+- L3CAKQ
+cw:
+youtube_slug:

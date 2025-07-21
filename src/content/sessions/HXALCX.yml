@@ -1,0 +1,26 @@
+title: Developer-friendly jobs across time zones when "out of hours" no longer exists
+start: 2025-09-13 14:10:00+10:00
+end: 2025-09-13 14:40:00+10:00
+room: ballroom2
+track:
+abstract: "<p>Kraken Technologies ships over 100 versions of code per day across 25
+  environments in more than 10 countries with new versions being kicked off to deploy
+  upon merge into master.</p>\n<p>We want to be able to run jobs across all of our
+  various environments without slowing down developers (by blocking deployments) or
+  having an impact on clients during their operating hours (outages or performance
+  degradation). </p>\n<p>But how do you run jobs out of hours when there are no time
+  zones that are out of hours for everyone? In this talk, I will introduce the Housekeeping
+  Framework, our internal solution to this problem, developed with the aim to allow
+  developers to:\n- Easily deploy code that runs across all environments\n- Specify
+  only certain hours it can run in (in the local time of its environment)\n- Easily
+  see when the status of the jobs\n- Not require manual changes across 25+ environments</p>"
+description: <p>This talk will present the context that the housekeeping framework
+  was developed within, then dig into how the framework was structured and developed
+  using Python. Additionally, we will reflect on the experience of writing a framework
+  and how important "developer friendly" tooling has been in encouraging adoption
+  of the Housekeeping Framework within Kraken.</p>
+code: HXALCX
+speakers:
+- WRLNJE
+cw:
+youtube_slug:

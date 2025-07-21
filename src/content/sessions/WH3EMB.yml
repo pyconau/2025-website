@@ -1,0 +1,35 @@
+title: Falsehoods Programmers Believe About Reality
+start: 2025-09-14 10:40:00+10:00
+end: 2025-09-14 11:10:00+10:00
+room: ballroom3
+track:
+abstract: "<p>\"In the beginning, the Universe was created. This has made many people
+  very angry and has been widely regarded as a bad move.\" - Douglas Adams</p>\n<p>Computers,
+  despite a frankly alarming amount of hype, are not good at nuance. They are usually
+  fast, occasionally obedient, and capable of storing quite a lot of cat pictures,
+  but when asked to represent something as slippery as \"a person\" or \"Tuesday\"\
+  , things begin to get weird.</p>\n<p>Human beings remain the most reliable mediums
+  for intepreting reality in a format that can machines can parse. Regrettably, reality
+  is complex. We make heavy use of abstractions to handle this complexity, but if
+  you ask any seasoned developer about designing systems to handle names, time, geography,
+  or a thousand other \"standards\", you will be met with either a thousand-yard stare
+  or a wild, keening noise. If no group chat can agree on whether cereal is a soup,
+  how can we tell a computer what to do?</p>\n<p>Apart from the difficulty of agreeing
+  on categories, reality's refusal to be abstracted neatly can lead to system inaccuracies,
+  poor user experiences, security vulnerabilities, and the amplification of social
+  harms. But given our industry, our systems of government, and (quite often) our
+  sense of self are built on top of the very same kind of abstractions, how can we
+  do better in the systems we are responsible for?</p>\n<p>In this talk, we will look
+  at some of the most common ways that our systems and data models frequently do not
+  match reality, explore approaches to handling reality gracefully, and consider how
+  to anticipate flaws in those models and minimise harmful outcomes. This will be
+  an introduction to the topic for some, a refresher for others, and possibly a useful
+  thing to show that one boss with unrealistic expectations.</p>\n<p>Attendees will
+  leave with a better understanding of how and when to make effective use of abstractions
+  in systems, and probably an existential headache.</p>"
+description: ''
+code: WH3EMB
+speakers:
+- EFKHVF
+cw:
+youtube_slug:

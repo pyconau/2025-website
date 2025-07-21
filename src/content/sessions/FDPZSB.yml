@@ -1,0 +1,30 @@
+title: Takeaways from teaching Python in college
+start: 2025-09-12 15:10:00+10:00
+end: 2025-09-12 15:40:00+10:00
+room: ballroom3
+track: education
+abstract: "<p>After over a decade of teaching application development, I became a
+  teacher in a local college a few years ago. Over 12 months, I taught open-source
+  programming languages, including Python, alongside frameworks and content management
+  systems, to various student cohorts. This session will share takeaways from that
+  experience.</p>\n<p>The goal of the presentation is to explore the current link
+  between the open-source community and academia, examine certain educational institution
+  stigmas, and improve how we, as a community, present Python to teachers and students.</p>"
+description: "<p>Teaching Python and other open-source technologies in a college has
+  provided interesting insights into the challenges and opportunities within academic
+  programming education. This session delves into the practical realities of bridging
+  the gap between industry best practices and traditional pedagogical approaches.</p>\n
+  <p>I will cover the impact of AI (the good and the ugly) on student learning, address
+  open-source indifference, discuss proprietary software vendor dominance, point out
+  the importance of quality documentation, highlight the value of student reflection
+  on real-life projects, and examine how different content and context can profoundly
+  change student perception of technology.</p>\n<p>This session is designed for educators,
+  open-source contributors, curriculum developers, and anyone passionate about the
+  next generation of Python developers. Join me to discuss how together we can refine
+  our approach to teaching Python, ensuring students are not just learning a language,
+  but embracing a powerful ecosystem and a collaborative mindset.</p>"
+code: FDPZSB
+speakers:
+- WMYBPS
+cw:
+youtube_slug:

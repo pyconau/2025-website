@@ -1,0 +1,20 @@
+title: Found Font Family
+start: 2025-09-14 11:20:00+10:00
+end: 2025-09-14 11:50:00+10:00
+room: ballroom3
+track:
+abstract: "<p>It's impossible to do software without the power of fonts and text rendering.
+  They underpin the terminal we use to run our code, the browsers we use to run our
+  web apps and the emails we get paid too much to write.</p>\n<p>But for many they
+  are a black box of standards and code that seems to effortlessly click together,
+  until they don't. This talk explores how this works from font file structures, internationalization
+  issues and font stack management. Finally we use the knowledge we've gained together
+  to poke at some non standard use cases for fonts which pull back the curtain to
+  show a font file for what it is, arbitrary instructions on how to render a shape
+  on the screen. Cats are involved.</p>"
+description: ''
+code: XSXJYT
+speakers:
+- 3WAAEV
+cw:
+youtube_slug:

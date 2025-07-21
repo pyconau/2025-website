@@ -1,0 +1,48 @@
+title: 'Modernizing Legacy: Wrapping a 25+ Year Computational Fluid Dynamics Codebase'
+start: 2025-09-12 11:00:00+10:00
+end: 2025-09-12 11:30:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>Water quality modeling plays a crucial role in managing aquatic ecosystems.
+  Those models are based on Computational Fluid Dynamics (CFD), the science of using
+  numerical analysis and data structures to solve many processes influencing fluid
+  behavior. CFD requires many complex mathematical representations through various
+  ODE and DPE solvers, and has traditionally been written in Fortran or C++, mostly
+  for their speed in doing massively parallel computations, such as handling array
+  operations and object-oriented features. As such, those codebases have a long-standing
+  legacy in scientific computing, and many established CFD codes are written in them.
+  However, as time goes on, we witness the popularity of a new generation of codebases
+  such as Python, which stems from its simplicity, versatility, and strong community.
+  Extensive libraries and frameworks make Python a popular choice for many developers
+  and scientists alike. It is, however, not a preferred language for core CFD code
+  due to performance limitations and its difficulties with parallelization. </p>\n
+  <p>This talk explores modernizing a <strong>25+ year-old C++ CFD model</strong>,
+  essential for <strong>simulating lake conditions</strong>, particularly for <strong>predicting
+  temperature variations</strong> and <strong>algal bloom dynamics</strong>, by wrapping
+  it with <a href=\"https://github.com/csiro-hydroinformatics/c-interop\">C-interop</a>
+  for seamless Python interoperability.  </p>\n<p>Beyond integration, we leverage
+  <a href=\"https://optuna.org/\">Optuna</a>, a powerful hyperparameter optimization
+  framework, to fine-tune models efficiently, transitioning from manual parameter
+  tuning on a laptop to a <strong>distributed, scalable workflow</strong> powered
+  by <a href=\"https://distributed.dask.org/en/stable/\">Dask Distributed</a> and
+  <a href=\"https://jupyterhub.readthedocs.io/en/stable/\">JupyterHub</a>. This transformation
+  enables automated hyperparameter optimization across <strong>many lakes in Australia</strong>,
+  helping researchers <strong>investigate trends in tuning parameters</strong> and
+  derive deeper environmental insights.</p>"
+description: "<h3>Attendees will gain insights into:</h3>\n<ul>\n<li><strong>Wrapping
+  legacy C++ water quality models</strong> with Moirai for Python-driven analysis.</li>\n
+  <li><strong>Automating and scaling hyperparameter tuning</strong> using Optuna across
+  multiple lake ecosystems.</li>\n<li><strong>Utilizing Dask Distributed and JupyterHub</strong>
+  to accelerate environmental simulations.</li>\n<li><strong>Extracting insights from
+  hyperparameter trends</strong> to refine large-scale water quality predictions.\
+  \  </li>\n</ul>\n<p>For researchers, engineers, and data scientists working in <strong>environmental
+  modeling</strong>, this session provides practical strategies for <strong>modernizing
+  legacy systems</strong>, <strong>scaling model optimization</strong>, and <strong>enhancing
+  predictive accuracy</strong> without sacrificing scientific integrity.</p>"
+code: 8SKZRV
+speakers:
+- 7RJAVY
+- 7DQBLU
+- QVAYK3
+cw:
+youtube_slug:

@@ -1,0 +1,41 @@
+title: Escape from Tutorial Hell
+start: 2025-09-13 14:10:00+10:00
+end: 2025-09-13 14:40:00+10:00
+room: ballroom1
+track:
+abstract: "<p>When you're learning to code, no matter what the language, you learn
+  small components: write a function to do something, create a class to do other things,
+  add a user interface component and so on.</p>\n<p>Then you get out into the real
+  world and there's nobody telling you what components to write. You know how to code,
+  but you don't know how to develop. So you do more courses and tutorials, watch more
+  videos and read more documentation. But you still don't know how to take that extra
+  step and apply your knowledge to develop an entire project. You're stuck in <strong>tutorial
+  hell</strong>!</p>\n<p>I'm going to go beyond the code and show you how to design,
+  structure, and document your projects. I'll also show you how you can use AI to
+  help.</p>\n<p>These problems and their solutions will apply to every language and
+  development environment you'll use through your career, whether or not you're using
+  Python. By the end, I hope I will have given you some tools to help you escape from
+  tutorial hell and start developing your own projects.</p>"
+description: "<p>One of the problems you need to solve to escape from tutorial hell
+  is working out what code to write. Before you write a single line of code, step
+  away from the computer and design your project. What exactly is it going to do?
+  What platforms does it need to run on? What technologies will you use to build it?
+  With these decisions made, you can break down the project into smaller parts that
+  you already know how to do.</p>\n<p>Project structure is fundamental to reading
+  and maintaining your project. Over the life span of any development project, the
+  code will be read - by you or by other developers - far more often than it is written
+  or edited. Logical file structures and consistently formatted code make it easier
+  to find the code you need. Naming is considered one of the great problems of programming
+  but using good names for your files, classes, functions and variables makes your
+  code more usable and more readable.</p>\n<p>Documentation is crucial for any project,
+  whether you're working alone or in a team. First, I'll look at strategies for discovering
+  and reading official documentation. Then I'll talk about documenting your own code.
+  I'll also discuss strategies for keeping your knowledge up to date.</p>\n<p>AI is
+  a powerful tool that can help you write or improve code. I'll talk about ways to
+  improve the results that AI gives you and discuss some of the pros and cons of using
+  AI in your teaching, learning, and development process.</p>"
+code: LUJHMM
+speakers:
+- 9L8UEL
+cw:
+youtube_slug:

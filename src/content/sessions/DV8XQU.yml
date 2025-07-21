@@ -1,0 +1,29 @@
+title: High altitude balloon imagery decoding in the browser with C, JS, and Python
+start: 2025-09-12 16:50:00+10:00
+end: 2025-09-12 17:20:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>WebHorus and WebWenet are entirely browser based implementations of
+  the Horus and Wenet radio demodulators which are commonly used for receiving amateur
+  high altitude balloon telemetry and imagery. By producing web versions of these
+  tools, it has significantly lowered the barrier of entry to set up a receiver. It's
+  even possible to receive on a mobile phone connected to a USB software defined radio!</p>\n\
+  <p>We'll be running through how we compiled the C applications into Python modules,
+  built the Python modules for WebAssembly and finally how they are called from JavaScript.
+  No server involved. Packaged into a progressive web app that even works offline.</p>"
+description: "<p>Python is quickly becoming my favourite web programming language
+  while HTML and PWAs are becoming my favourite way of distributing Python applications.
+  Historically, a lot of the amateur balloon tooling has been based around compiling
+  C apps, piping a bunch of binaries into each other, and hoping for the best. More
+  recently, Project Horus has been moving to using Python to orchestrate the applications
+  and in some places building Python libraries to interface with the C code.</p>\n
+  <p>What started as a joking \"what if\" turned into an entirely usable web application.
+  First, harnessing the Python CFFI library to make Python modules for the C apps.
+  Then by using Pyodide to bring these into WebAssembly, we've been able to get users
+  decoding balloon data in their web browser, without them compiling or installing
+  any apps.</p>"
+code: DV8XQU
+speakers:
+- PYYPRP
+cw:
+youtube_slug:

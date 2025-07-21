@@ -1,0 +1,38 @@
+title: 'Building with Multiple Languages: A Python-First Approach'
+start: 2025-09-13 11:20:00+10:00
+end: 2025-09-13 11:50:00+10:00
+room: ballroom3
+track:
+abstract: "<p>Python is slow for certain tasks. That's not news. The usual response
+  is to either accept the performance hit or rewrite everything in another language.
+  There's a third option: use Python as the control centre and delegate specific tasks
+  to languages that excel at them.</p>\n<p>This talk provides practical patterns for
+  building polyglot applications. I'll show JavaScript handling real-time web interfaces,
+  Rust rendering data visualisations, and C++ accelerating numerical computations—all
+  orchestrated by Python. Through different short live demos and visual explanations,
+  you'll learn when and how to integrate other languages without sacrificing Python's
+  strengths, resulting in applications that are both fast and maintainable.</p>"
+description: "<p>This talk presents three real-world scenarios where Python acts as
+  the glue between specialized languages. We'll start by walking through the architecture
+  of a data dashboard where JavaScript manages UI interactions while Python handles
+  backend analytics. Using WebSockets and FastAPI, you'll see how to create responsive
+  interfaces that leverage Python's data science libraries without the lag. Next,
+  we'll generate scientific visualizations that render large datasets in real-time,
+  with Rust handling the rendering pipeline while Python manages data processing and
+  provides a familiar API. The demo shows interactive plots processing a significant
+  amount of data points smoothly. Finally, we'll accelerate a climate model's core
+  calculations by 100x, where C++ handles the intensive matrix operations while Python
+  manages data I/O, preprocessing, and visualization. Modern tools like pybind11 make
+  these integrations straightforward.</p>\n<p>The presentation uses animated diagrams
+  to show data flow between languages and includes live demonstrations of each integration.
+  You'll learn to identify performance bottlenecks that justify polyglot solutions,
+  understand modern binding tools (PyO3 for Rust, pybind11 for C++, WebSockets for
+  JavaScript), and apply architectural patterns that keep complexity manageable. All
+  examples come from production systems I've built or worked on. Attendees will leave
+  with working code examples and a blueprint for building polyglot applications that
+  enhance rather than complicate their Python projects.</p>"
+code: LASUCM
+speakers:
+- VCBQLA
+cw:
+youtube_slug:

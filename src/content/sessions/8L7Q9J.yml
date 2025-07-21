@@ -1,0 +1,126 @@
+title: Keeping Creativity the Focus in Visual Effects and Animation
+start: 2025-09-14 14:10:00+10:00
+end: 2025-09-14 14:40:00+10:00
+room: ballroom3
+track:
+abstract: <p>This talk will go into detail about how Python is used as the glue to
+  transfer data between applications, and by extension, between artists; and how we
+  use it to allow artists to spend more time creating and less time worrying about
+  technology and associated problems. This talk requires virtually no technical understanding
+  of Python, and will present only a small amount of code -- it is intended for people
+  who are interested in receiving a glimpse "behind the curtain" to the technology
+  used in the production of CG and VFX in content of all shapes and sizes, and seeing
+  how Python is a core part of that. Attendees will leave with, not only an understanding
+  of how Python is utilised in the Visual Effects industry, but with a better understanding
+  of how Visual Effects and CG is produced in general.</p>
+description: "<p>I am a Technical Director at a small Animation and Visual Effects
+  studio, and I am responsible for maintaining our studio's \"Pipeline\" -- a collection
+  of custom Python scripts and libraries that we use to transfer data between our
+  digital content creation tools, and within these tools to ensure that each artist's
+  workflow remains consistent and keeps their focus on creativity -- chiefly -- by
+  eliminating the questions \"where should I save this file?\", \"what format should
+  it be\", and \"what should I call it?\". </p>\n<ol>\n<li>What is a pipeline?</li>\n
+  <li>A definition: an overloaded term with two meanings -- it is, at once, the broad
+  term for the workflow of steps that happens from the client brief, to the delivery
+  of final files; and the colloquial term for the code that wraps the applications
+  that we use to produce the work during the workflow -- code that is written in Python.</li>\n
+  <li>I will provide an overview of the \"broader, workflow\" version of the pipeline,
+  with its myriad steps (conform, tracking, clean up / matte paint, layout, modelling,
+  rigging, look development, animation, simulation / fx, lighting, render, compositing,
+  delivery)</li>\n<li>\n<p>I will show an animation (a 4 second loop of a CG character
+  waving a flag) that I'll use as an example to explain our workflow, and detail the
+  major steps involved in creating it -- animation, lighting, and compositing. The
+  character already existed as part of our library, so we just needed to make the
+  flag asset and then run it through these few steps of the pipeline in order to finalise
+  it.</p>\n</li>\n<li>\n<p>How do you build a pipeline?</p>\n</li>\n<li>Pipeline code
+  is maintained by a team of Pipeline TDs -- in our case, that's a team of one. I
+  started building it from scratch over five years ago, and have been maintaining
+  it ever since.</li>\n<li>Every studio's pipeline is different, as each visual effects
+  team is unique. Most pipelines are custom, regardless of the size of the studio
+  (e.g. Industrial Light and Magic with over 1000 artists, Rising Sun Pictures with
+  over 200 artists, and where I work with fewer than 10 -- we all wrote our pipelines
+  from scratch internally). As such, the requirements of the pipeline change from
+  studio to studio.</li>\n<li>All of our projects are different – we do more than
+  just tv shows and movies – and so our pipeline needs to account for that. Not all
+  of our projects follow the aforementioned linear workflow that larger studios are
+  sometimes forced to, and as such this introduces flexibility in the design and development
+  of our pipeline. We built ours to ensure that any one of our applications is capable
+  of exporting information in a way that any other application is capable of importing
+  – giving us greater options of how to approach a given project based on the creative
+  brief.</li>\n<li>Every pipeline, across every studio, is built on Python, as that's
+  the language that Visual Effects studios, world-wide, have agreed to use. There
+  is a set of guidelines called the \"VFX Reference Platform\" that dictates what
+  versions of various softwares that studios and software developers should be aiming
+  to support. As of 2025, Python 3.11.x is the target release. </li>\n<li>\n<p>For
+  us, all of our projects have a discrete directory structure on network storage that
+  is accessible by all workstations and by the render farm. I have written tools that
+  understand this structure and know where different file types should be saved, based
+  on the step of the pipeline that the artist is operating in. </p>\n</li>\n<li>\n
+  <p>The pipeline, in action.</p>\n</li>\n<li>Each process of saving, rendering, and
+  publishing all use custom interfaces, ensuring that the file is stored in the expected
+  place, with the expected name, and with incremental version numbers. The naming
+  convention is consistent across all applications.</li>\n<li>Using the animation
+  example outlined above, I will explain the process of how the animator creates a
+  new scene, and how they save and publish their animation data to the next step in
+  the workflow -- lighting. Then, we'll take the same approach and explain how the
+  lighting artist creates a scene and then saves it and submits it to the render farm
+  (a centralised compute cluster designed for high intensity tasks like rendering
+  and simulation), then publishes it to the next step in the workflow -- compositing.
+  As you'd expect, they create a scene, submit it to the farm, and then provide the
+  output from that to their producer to deliver.</li>\n<li>Each step in this process
+  is iterative -- i.e. animation takes a few goes to get right, and so we end up with
+  multiple versions of the same animation, improved over time. The tools we use take
+  this into account and allow the artists to \"version up\" each time they publish
+  their work to be reviewed, eventually ending at the version that the supervisor
+  and producer approve. This version is published to the downstream artist.</li>\n
+  <li>\n<p>With a consistent directory structure, this ensures that it becomes simple
+  to simply say, for example, \"grab the version 7 lighting render for shot 10\",
+  and the compositor knows <em>exactly</em> where to look and what files to import
+  into their scene.</p>\n</li>\n<li>\n<p>Freedom vs Restriction in the Creative Industries.</p>\n
+  </li>\n<li>As a small team, we need something flexible enough to be worked around
+  when required, but structured enough to operate with minimal interference. \"Sensible
+  defaults\" is my solution to that. By default, everything is configured automatically
+  to save files in the correct place, using the correct name. This eliminates the
+  mental load on artists as, instead of thinking about how they should be naming files
+  (and potentially getting it wrong), they simply provide a few key pieces of information
+  about what they're working on and the code generates the correct file path and name
+  automatically.</li>\n<li>There is a fine line between \"making things easier\" and
+  \"making things limiting\". Part of being a Technical Director is making these decisions
+  -- we need to ensure that things are regimented enough that we can automate the
+  more human-error prone parts of the workflow, but flexible enough to be able to
+  \"hack around it\" when we're up against a deadline. Sometimes the correct thing
+  to do in a given situation is \"throw out the rules\", to ensure that a project
+  is delivered on time. There is very little in our pipeline that cannot be circumvented
+  -- that is by design.</li>\n<li>\n<p>The larger the team, however, the more regimented
+  the pipeline needs to be -- if someone <em>can</em> break something, they will,
+  and the more people there are in the team, the more likely you'll have someone break
+  something, intentionally or otherwise. We're lucky, as a small team, as when we
+  need to break the rules, we can very easily communicate that with each other --
+  in a crew of hundreds, where you're not sure who your downstream artist is, and
+  whether they're in the same building (or country) as you; that's much harder.</p>\n
+  </li>\n<li>\n<p>The Final Product</p>\n</li>\n<li>The beauty of working in Visual
+  Effects and Animation is that, once the project is finished, it's over -- it's archived
+  and put to tape. There's no ongoing maintenance, and there's no real need for future-proofing.
+  At worst, we restore an archive and the files are a bit messy because the team got
+  a bit overwhelmed at the end and started saving things in strange places. We're
+  lucky that, once a project is done, we start a fresh one, and everything is clean
+  again. For us, this timeframe is typically single-digit weeks. For bigger studios,
+  this can be months. But it's not a website that needs to be operational for years,
+  or a piece of software that needs to be operational for decades. We can afford the
+  flexibility.</li>\n<li>The pipeline, however, is a piece of software that needs
+  to be operational for a long time -- it does need constant maintenance and improvements;
+  and it doesn't get discarded or archived at the end of a project. During each project,
+  I mentally go through all of the things that happened during that project and make
+  a list of what could have worked better, what broke, what got in the way, and what
+  worked really well. Luckily, I'm also a Technical Artist as well as a Pipeline TD,
+  so I get to experience first-hand all of the things that go wrong, and so that puts
+  me in a good position to figure out how to solve them for everyone else.</li>\n
+  <li>Between projects, it is my responsibility to make improvements and changes so
+  that, when the next project begins, it can perform smoother than the last so that
+  the artists involved have even fewer technical things to worry about, and they can
+  focus entirely on their creative passions.</li>\n</ol>"
+code: 8L7Q9J
+speakers:
+- C8T9XL
+cw: <p>This talk contains transgender imagery</p>
+youtube_slug:

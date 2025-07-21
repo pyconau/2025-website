@@ -1,0 +1,28 @@
+title: 'Beyond Vibes: Building Evals for Generative AI'
+start: 2025-09-12 14:30:00+10:00
+end: 2025-09-12 15:00:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>AI can draft product descriptions, handle customer support, and create
+  impressive summaries, yet in production we still struggle to answer a basic question:
+  is this output measurably any good? Traditional accuracy metrics fall short when
+  your LLM needs to write <em>engaging</em> content or your image model is expected
+  to produce <em>aesthetic</em> results. And checking outputs manually? That doesn't
+  scale. </p>\n<p>This talk is a friendly introduction to building evaluation loops
+  that work for GenAI models. We'll explore everyday examples such as grading LLM
+  summaries and judging whether chatbot responses help or frustrate, showing why deterministic
+  metrics fail for open-ended outputs. From there, we outline a three-part approach
+  combining simple metrics for quick first-pass evaluation, human-preference samples
+  for nuance, and repeatable tests that run with every model change.</p>\n<p>To ground
+  these ideas, we'll walk through a real project that turns elevation data into high-quality
+  Swiss-style relief maps. The domain may seem niche, but the lessons learned of balancing
+  automation with human judgment, tracking non-deterministic outputs, and iterating
+  quickly without drowning in data, apply to every project. You’ll leave with a mental
+  checklist and a starter toolkit for proving that your GenAI output is getting better,
+  not just different.</p>"
+description: ''
+code: E3KDGD
+speakers:
+- BSSLH3
+cw:
+youtube_slug:

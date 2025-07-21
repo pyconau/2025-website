@@ -1,0 +1,24 @@
+title: Taking wheels mobile
+start: 2025-09-13 12:00:00+10:00
+end: 2025-09-13 12:30:00+10:00
+room: ballroom3
+track:
+abstract: <p>One of the big features added in Python 3.13 is Tier 3 support for iOS
+  and Android as platforms. This means you can now run Python code that uses the standard
+  library on mobile devices without modification. However, most interesting projects
+  also use code from PyPI... so how do you get <em>that</em> code to run on iOS and
+  Android? How do you even produce a wheel in the first place?</p>
+description: "<p>In this talk, you'll learn about the eccentricities of iOS and Android
+  as Python platforms, and what is involved in generating Python wheels that can be
+  used for iOS and Android. You'll be introduced to cibuildwheel, a tool that can
+  dramatically simplify the process of building wheels; and how to configure cibuildwheel
+  to build iOS and Android wheels. Lastly, you'll be shown how to add these wheels
+  to your own projects while you wait for official versions to be published.</p>\n
+  <p>Although this talk is presented primarily for the benefit of people who may want
+  to add iOS and Android Python support to a package, it also serves as an introduction
+  (or refresher on recent changes in standards) to Python packaging for desktop platforms.</p>"
+code: SQUT77
+speakers:
+- LDFVBH
+cw:
+youtube_slug:

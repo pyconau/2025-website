@@ -1,0 +1,38 @@
+title: 'From Matlab to Lambda: Transforming Structural Engineering Research Tools'
+start: 2025-09-12 12:20:00+10:00
+end: 2025-09-12 12:50:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>When academic engineering tools remain trapped in Matlab while the industry
+  relies on Excel, Python offers a unique opportunity to bridge this computational
+  divide. While academic software packages for the efficient design of light-gauge
+  steel have been available for several years, they effectively require highly specialised
+  expertise to use and understand—challenging the material’s adoption beyond highly
+  specialised buildings. This talk presents a case study of transforming CUFSM, a
+  trusted but highly technical Matlab package for the finite strip analysis of light-gauge
+  steel, into pyCUFSM—a performant and open-source Python implementation deployable
+  to AWS Lambda.</p>\n<p>The migration revealed and addressed several key scientific
+  Python challenges. Moving from Matlab’s matrix-oriented syntax to idiomatic Python
+  required not only converting every index from 1-based to 0-based, but also careful
+  architectural decisions around NumPy array handling and SciPy linear algebra operations.
+  Performance bottlenecks were addressed through strategic use of Cython compilation
+  and aggressive pre-allocation and reuse of data structures, achieving a p90 duration
+  of 3.9 seconds for real-world usage. </p>\n<p>However, technical performance alone
+  wasn’t sufficient. In regulated industries where engineers face personal liability
+  for design failures, trust and transparency are paramount. Not only must the interpretation
+  of inputs and outputs not leave any doubt, but the calculations themselves must
+  be validatable by the user - without having to read or understand code. By coupling
+  this Python analysis package with a React-based frontend, a calculator was developed
+  which requires only 4 inputs, shows all intermediate steps with full rendered equations,
+  and still allows access to advanced parameters for those who want it. Extensively
+  validated, such an implementation is showing significant gains in adoption by the
+  wider structural engineering community. The final system demonstrates how Python's
+  strengths—from scientific libraries to cloud deployment—can bring academic innovation
+  into wider use in regulated industries where reliability, ease of use, and user
+  trust are essential.</p>"
+description: ''
+code: 8DZTCP
+speakers:
+- 3J3L8B
+cw:
+youtube_slug:

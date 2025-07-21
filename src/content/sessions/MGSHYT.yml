@@ -1,0 +1,21 @@
+title: My AI is slow. Make it faster!
+start: 2025-09-14 12:00:00+10:00
+end: 2025-09-14 12:30:00+10:00
+room: ballroom2
+track:
+abstract: <p>If there's anything that AI is known for, it's not speed. Other than
+  throw more GPU's at the problem, what can you do to make AI models run faster? In
+  this talk, you'll learn about AI model performance, what impacts it and what you
+  can do to improve it.</p>
+description: "<p>This talk is for developers working with or building AI models. In
+  this talk, you'll learn about what impacts the performance of AI and how to think
+  about your requirements for speed versus quality.\nAfter attending this talk, you'll
+  know how to benchmark AI models and understand more about configuring models and
+  picking the right model for the job. \nThis talk is not target at AI/ML experts,
+  we will cover some newer technical concepts like semantic model routing but it will
+  be fully explained.</p>"
+code: MGSHYT
+speakers:
+- FVC9YV
+cw:
+youtube_slug:

@@ -1,0 +1,20 @@
+title: 'Beyond the Hype: Using AI Coding Agents Today'
+start: 2025-09-13 11:20:00+10:00
+end: 2025-09-13 11:50:00+10:00
+room: ballroom1
+track:
+abstract: "<p>There is a lot of hype swirling around about AI coding. But there are
+  many sceptical developers who have tried AI coding tools and found them rubbish.</p>\n
+  <p>This talk aims to move beyond the hype and focus on AI coding best practices
+  as technology stands today. These tips are applicable for developers who write code
+  everyday and people who haven’t written a single line of code. Don't expect to become
+  a 10x developer overnight. But with the right habits, you might get 10% more productive
+  and a lot less frustrated.</p>\n<p>Note this talk will focus on using CLI-based
+  coding agents (e.g. Claude Code), rather than AI auto-completers in IDEs (e.g. GitHub
+  Copilot, Cursor).</p>"
+description: ''
+code: K8P3ZT
+speakers:
+- TLK9CR
+cw:
+youtube_slug:

@@ -1,0 +1,51 @@
+title: 'Big Brains, Small Targets: Whole-Brain Image Analysis with Python'
+start: 2025-09-12 09:20:00+10:00
+end: 2025-09-12 09:50:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>How do you reproducibly identify and count individual neurons in a brain
+  region that’s tiny, diffuse, and surrounded by lookalike regions, especially when
+  each 3D brain image is multiple terabytes in size?</p>\n<p>This talk explores this
+  very question by diving into the development of a Python-based, end-to-end pipeline
+  for analysing whole mouse brains imaged using light-sheet fluorescence microscopy.
+  The goal is to quantify the number of individual dopaminergic neurons in the substantia
+  nigra pars compacta (SNpc), a small but clinically significant midbrain region implicated
+  in Parkinson’s disease.</p>\n<p>Built entirely with open-source Python tools, the
+  workflow combines brainreg (from the BrainGlobe ecosystem) for atlas-based registration,
+  dask for scalable image processing, and a custom-trained Cellpose model for 3D cell
+  segmentation. To address the complexity of region extraction and alignment uncertainty,
+  the pipeline includes parameter sweeps, pre-processing optimisation, and quantitative
+  evaluation using expert-labelled ground truth masks.</p>\n<p>This talk will also
+  highlight how the integration of multiple Python open-source packages supports scalable,
+  reproducible neuroimaging analysis, from parallel execution on HPC clusters to image
+  registration and deep learning-based segmentation pipelines, as well as quantitative
+  methods for assessing alignment fidelity.</p>"
+description: "<p>Recent advancements in microscopy have revolutionised medical research
+  by enabling imaging of whole organs at incredible resolution. In the world of neuroscience,
+  this means that capturing entire mouse brains in 3D at cellular detail is now possible,
+  and with this level of resolution, each dataset can easily reach multiple terabytes
+  in size. While these rich images hold immense potential for understanding brain
+  function and disease, extracting meaningful biological insights (such as counting
+  specific neurons in tiny, diffuse regions like the substantia nigra pars compacta
+  (SNpc)) poses significant computational and analytical challenges.</p>\n<p>One of
+  the toughest problems is accurately defining and extracting these small brain regions.
+  The SNpc is surrounded by anatomically similar areas with overlapping cell types,
+  making registration and segmentation highly sensitive to small errors. Misalignment
+  or imprecise region extraction can lead to inaccurate cell counts, which risks compromising
+  the biological conclusions drawn from the data.</p>\n<p>To tackle these issues,
+  an end-to-end Python pipeline combining atlas registration with the BrainGlobe ecosystem,
+  scalable image processing using dask, and a custom-trained Cellpose deep learning
+  model for 3D cell segmentation was developed. This workflow incorporates extensive
+  parameter sweeps, preprocessing optimisations, and validation against expert-annotated
+  ground truth masks using image similarity metrics to better understand and quantify
+  the uncertainties in region extraction.</p>\n<p>Despite these advances, assessing
+  and improving region accuracy remains an ongoing challenge. This talk will share
+  insights into the complexities of large-scale neuroimaging analysis and highlight
+  that while Python provides a powerful toolkit, the problem of reliable, reproducible
+  extraction of tiny, complex brain regions is far from solved, representing an active
+  area of research and development in the world of bioimage analysis.</p>"
+code: JSAEAZ
+speakers:
+- HLLFLF
+cw:
+youtube_slug:

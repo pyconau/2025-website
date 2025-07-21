@@ -1,0 +1,33 @@
+title: Myths developers believe about open source security
+start: 2025-09-14 14:10:00+10:00
+end: 2025-09-14 14:40:00+10:00
+room: ballroom1
+track:
+abstract: "<p>Number 5 will shock you!\nForget what you think you know about robust
+  dependency graphs, the security gains of living at Head, and those supposedly solid
+  requirements.txt. We'll get down to the nitty-gritty of open source security, giving
+  you real-world large-scale insights to understanding common misconceptions across
+  programming ecosystems. </p>\n<p>While it’s true that there is only one dependency
+  graph<em> (</em>for you) (*right now) it’s not always understood what impact this
+  can have at an ecosystem level.</p>\n<p>We’ve got ecosystem level stats on just
+  how many PURLs map to multiple different packages, dependency graph shifts that
+  happen faster than you can type git commit, and some surprises with Git (im)mutability!
+  </p>\n<p>We will talk about vulnerabilities in your transitive dependencies, understanding
+  what even ARE your dependencies, and trying to identify what that one (*for certain
+  values of one) CVE you were supposedly affected by actually is. (Not to mention
+  what, if anything, you can do about it.)</p>\n<p>You’ll leave this talk with a better
+  understanding of open source edge cases and just how common they are. You’ll be
+  shocked, amazed, horrified, and hopefully a little optimistic about the state of
+  open source security and your place within it.</p>"
+description: "<p>We all make assumptions about our builds and dependencies, but those
+  can lead to misunderstandings and surprises. We aim to test these assumptions by
+  highlighting unexpected things we’ve learned from analysing the world’s open source
+  code, leading to a common understanding of what makes this space so complex and
+  ambiguous. </p>\n<p>This talk will cover information about Python as well as many
+  other programming environments.</p>"
+code: GVEQKY
+speakers:
+- X99XWA
+- MCES8F
+cw:
+youtube_slug:

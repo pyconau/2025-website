@@ -1,0 +1,32 @@
+title: 'The Streamlit Experiment: building web dashboards with Yr 10-12'
+start: 2025-09-12 13:50:00+10:00
+end: 2025-09-12 14:20:00+10:00
+room: ballroom3
+track: education
+abstract: <p>Frustrated at the inevitable paralysis of "which GUI library will my
+  students hate the least", excited about the possibilities of a new toy in Streamlit
+  and  drunk on the power of having recently learned about Github Codespaces, our
+  intrepid educator ventured out on a journey of discovery and (mis)adventure. Would
+  interactive data dashboards be the key to unlocking engagement? Would students ever
+  learn to commit their work? Would the tiniest little technical snag derail entire
+  lessons?</p>
+description: "<p>Streamlit is a rapid development environment designed primarily for
+  data scientists to build quick, interactive web apps to showcase their wares. It
+  is great at getting applications online with relatively little fuss - an approach
+  that makes it a fun candidate for building students' coding skills in an environment
+  that provides some quick reward for effort. </p>\n<p>I gave this a go with a group
+  of Year 10 students in a digital technology elective with a group with wildly varying
+  engagement and Python skills and think I learned enough for it to be worth sharing
+  the results. Since trying this in 2024 with Year 10 I have used the same tool for
+  a Year 12 VCE Data Analytics class with additional insights I'd love to share with
+  you. </p>\n<p>This presentation will discuss Streamlit and some benefits that might
+  make it work well for the secondary classroom environment; some of the pedagogical
+  and technical obstacles that popped up (and you might be able to avoid) as well
+  as some broader discussion on just trying things out in the classroom. I'll also
+  cover the use of Github Classroom and Codespaces as a way of getting Streamlit running
+  for students.</p>"
+code: YDLKXT
+speakers:
+- YCZ7MN
+cw:
+youtube_slug:

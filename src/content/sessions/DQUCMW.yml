@@ -1,0 +1,28 @@
+title: 'Object-Oriented Oncology: Making Sense of Complex Patient Journeys'
+start: 2025-09-12 14:30:00+10:00
+end: 2025-09-12 15:00:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>Clinical data harmonisation efforts are an extraordinarily powerful
+  tool in the world of observational research. When your data model is designed to
+  do everything, however, there is a necessary trade-off in design principles. The
+  requirement to support every possible use-case across all clinical domains means
+  that they can tend to favour flexibility over clarity, storing events, measurements,
+  treatments, and outcomes in highly normalised, loosely typed schemas. For domain
+  experts like oncology researchers or clinicians, this makes even basic questions
+  (say, “what happened to this patient, when, and why?”) frustratingly opaque.</p>\n
+  <p>Using Python’s ORM paradigm, we created a more intuitive, opinionated view of
+  oncology data. By surfacing richly connected objects like CancerPatient, CancerDiagnosis,
+  Regimen, or Cycle, we move away from brittle SQL scripts and toward a model that
+  reflects how clinical experts already think. These ORM-backed tools not only support
+  reproducible ETL and visualisation workflows, but also allow non-developers to explore
+  complex patient journeys in a hands-on, object-based way. We’re building out a library
+  of reusable object maps that encode domain knowledge directly, letting researchers
+  focus on clinical questions and not worry about the nuanced query logic.</p>"
+description: ''
+code: DQUCMW
+speakers:
+- MXXP3Q
+- ESNB3X
+cw: <p>This talk contains detailed descriptions of the experience of people with cancer.</p>
+youtube_slug:

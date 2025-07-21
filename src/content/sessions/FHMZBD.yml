@@ -1,0 +1,33 @@
+title: The Birdwatcher’s Guide to Optimised Tabular Data Pipelines
+start: 2025-09-14 11:20:00+10:00
+end: 2025-09-14 11:50:00+10:00
+room: ballroom2
+track:
+abstract: "<p>Sometimes you inherit a clunky pipeline. Sometimes an LLM writes one
+  for you. Either way, you’re stuck with something slow, memory-hungry, and hard to
+  scale.</p>\n<p>This talk is about what happens next — how to turn a naive tabular
+  data pipeline into something fast, efficient, and scalable. You’ll get a guided
+  tour through a zoo of optimization techniques: reducing algorithmic complexity,
+  minimizing memory usage, improving I/O throughput, and swapping in Polars — a fast,
+  Rust-based DataFrame library — in place of Pandas (for reasons beyond just hype).
+  By walking through a real-world example step by step, you’ll see how each change
+  makes an impact — and come away with a sharper eye for spotting similar bottlenecks
+  or inefficiencies in your own pipelines.</p>\n<p>The walkthrough is grounded in
+  a real-world ML feature engineering task from the aviation industry. But in the
+  spirit of spring, we’ll swap baggage belts for bird feeders — and reframe the problem
+  through a birdwatcher’s lens, not by tracking airport operations, but by counting
+  sparrows and mynas visiting my backyard feeder.</p>"
+description: '<p>This talk walks through how we made a slow, memory-hungry feature
+  engineering pipeline radically (~50×) faster and more memory-efficient using a range
+  of optimization techniques. We’ll start with a naive baseline — the kind of code
+  you might get from an LLM: nested loops, written in Pandas, reading and writing
+  CSVs. From there, we’ll iterate step by step, showing how each change impacts performance,
+  using concise code snippets, Polars syntax, and real metrics. The goal isn’t to
+  go deep on any one technique, but to give you a broad, practical map of the optimization
+  landscape — and a better feel for spotting and fixing slow, clunky pipelines in
+  the wild.</p>'
+code: FHMZBD
+speakers:
+- LAS3LX
+cw:
+youtube_slug:

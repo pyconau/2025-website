@@ -1,0 +1,26 @@
+title: 'A Chronicle of Digital Transformation : From Kitchen Chaos to Kubernetes'
+start: 2025-09-14 13:30:00+10:00
+end: 2025-09-14 14:00:00+10:00
+room: ballroom2
+track:
+abstract: <p>Discover how non-IT employees led a digital transformation at one of
+  Australia’s leading food and hospitality service providers—progressing from paper
+  forms to spreadsheets, then from no-code tools to a full-stack platform built with
+  Python, Django, Docker, and Kubernetes. Told from the perspective of insiders directly
+  involved in the change, this talk shares the stories behind key transformation initiatives,
+  their challenges, and how we navigated them.</p>
+description: "<p>This talk shares the journey of digital transformation in a traditional,
+  paper-heavy business—told by those who experienced the frustration firsthand and
+  then became part of the solution.</p>\n<p>We’ll take you through several real initiatives
+  we helped deliver, from early automation efforts using spreadsheets and scripts,
+  to building a scalable cloud-native platform.</p>\n<p>This is not a technical deep
+  dive — it's a behind-the-scenes look at what it takes to modernise operations in
+  a non-tech environment, while staying grounded in doing the right thing for people,
+  process, and platform.</p>\n<p>Whether you're a developer working in a traditional
+  industry or someone trying to push transformation from the inside, this story will
+  be relatable, honest, and maybe even a little fun.</p>"
+code: CTLQK3
+speakers:
+- 8MX3DS
+cw:
+youtube_slug:

@@ -1,0 +1,21 @@
+title: 'Life Beyond Pandas: Workflows with DuckDB, Daft, Polaris, and Datafusion'
+start: 2025-09-12 09:20:00+10:00
+end: 2025-09-12 09:50:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>In this talk, we’ll explore four modern data engines ; Daft, DuckDB,
+  Polaris, and DataFusion, that offer varying levels of out-of-core execution. These
+  engines allow you to work with datasets larger than memory without the need to rewrite
+  everything for a distributed system.</p>\n<p>They’re fast, expressive, and, above
+  all, Pythonic—though SQL support might still be the deciding factor for many workflows.</p>\n
+  <p>Rather than comparing which engine is best (they’re all open source, and good
+  ideas tend to spread quickly), this talk will highlight exciting recent developments.
+  We’ll showcase, for example, how one workload saw a 2× performance boost in under
+  a year, and how open table formats are bringing cloud data warehouse capabilities
+  to local Python workflows.</p>"
+description: ''
+code: ECVWJU
+speakers:
+- DHTAY8
+cw:
+youtube_slug:

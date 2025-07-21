@@ -1,0 +1,33 @@
+title: 'PyEarthTools: Machine learning for Earth system science'
+start: 2025-09-12 16:10:00+10:00
+end: 2025-09-12 16:40:00+10:00
+room: ballroom2
+track: scientific
+abstract: "<p>Models based on physical processes and equations of motion have been
+  built, over decades, to model the physical structure and composition of the ocean,
+  atmosphere, and land surface.  Other scientific models have been built to process
+  very complex, high-dimensional data from instruments such as satellites and radar
+  into simpler data products such as images and surface field estimates. These models
+  are often computationally intensive.</p>\n<p>Prior to around 2022, the complexity
+  of many of these tasks was seen as infeasible for machine learning systems. In the
+  years since, deep neural networks have achieved state-of-the-art performance across
+  the types of models described above. </p>\n<p>PyEarthTools is an open-source, Python
+  software framework that supports the development of machine learning models, big
+  and small, for Earth system science. See https://pyearthtools.readthedocs.io/en/latest/
+  .</p>\n<p>PyEarthTools contains modules for:\n- Loading and indexing Earth system
+  data into Xarray;\n- Processing and normalising Earth system data for machine learning;\n
+  - Defining machine learning (ML) models;\n- Training ML models and managing experiments;
+  and\n- Evaluating ML models.</p>\n<p>Come to this talk to learn how to:\n- Get started
+  with machine learning for Earth system science\n- Learn about the PyEarthTools framework
+  and how to build re-usable ML pipelines\n- Catch the science bug and try out some
+  simple projects\n- Train your own weather models from scratch</p>\n<p>This talk
+  is suitable for beginners through to professional scientists and data scientists.</p>\n
+  <p>PyEarthTools was initially developed by the Bureau of Meteorology (Australia),
+  and now also has developers from the National Institute of Water and Atmospheric
+  Research (New Zealand), and the Met Office (United Kingdom).</p>"
+description: ''
+code: L7AWTU
+speakers:
+- ZZQ9TE
+cw:
+youtube_slug:

@@ -1,0 +1,27 @@
+title: 'Python Beep-Bops: A Computer Music Concert'
+start: 2025-09-14 13:30:00+10:00
+end: 2025-09-14 14:00:00+10:00
+room: ballroom3
+track:
+abstract: "<p>In this presentation, we will demonstrate how we use Python as a bridge
+  to facilitate a live music concert. Using computer vision techniques with libraries
+  such as OpenCV and MediaPipe, we detect various animal plushies – including koalas,
+  whales, otters, octopuses, and Blåhaj – each mapped to their own unique sonic identities.
+  </p>\n<p>The position and movement of these plushies in space are tracked to control
+  sound parameters such as panning, pitch, reverb level, and tempo modulation, thereby
+  creating a playful, gesture-based system for musical expression, blending tangible
+  interaction with digital sound synthesis. </p>\n<p>We will walk through how we’ve
+  applied Python for both networking (via OSC) and computer vision, and share why
+  Python’s readability and strong ecosystem made it the perfect fit for fast prototyping
+  and real-time control. We’ll also touch on our creative process, including mapping
+  physical toys to digital instruments, and ensuring smooth, latency-free performance.
+  </p>\n<p>The presentation will close with a five-minute interactive concert, where
+  the audience will experience how plushie placement and movement generate evolving
+  soundscapes in real time. We hope to inspire others to explore Python as a tool
+  not just for logic and data, but also for creative expression.</p>"
+description: ''
+code: KWY9AQ
+speakers:
+- R3ENGB
+cw:
+youtube_slug:

@@ -1,0 +1,33 @@
+title: Pinchy the bestest boi
+start: 2025-09-14 14:50:00+10:00
+end: 2025-09-14 15:20:00+10:00
+room: ballroom3
+track:
+abstract: "<p>Have you ever wondered if life would be better with a robot scorpion
+  by your side? Now’s your chance to find out! Meet Pinchy — a Raspberry Pi-powered,
+  fully autonomous, and undeniably eye-catching robot companion.</p>\n<p>In this talk,
+  you’ll learn how Pinchy maps its environment and navigates with ease using SLAM
+  algorithms and computer vision. We’ll also dive into the efficient design inspired
+  by real scorpions, blending biology with engineering.</p>\n<p>Whether you're into
+  robotics, Python, or just want to see a cool scorpion skitter across the stage,
+  come say hi to Pinchy this PyCon!</p>"
+description: "<p>I'm currently still in high school, but I discovered my passion for
+  robotics early on in my tech journey. When I first got my hands on a robotics kit,
+  I surprised myself by putting down my phone just to keep working on my project outside
+  of class — which, at the time, felt like a major breakthrough.</p>\n<p>That spark
+  turned into a full-blown obsession. Over the past two years, I’ve spent more than
+  700 hours developing my own robot companion: Pinchy. Along the way, I’ve gone through
+  countless prototypes and design revisions — starting with foam-core legs and evolving
+  into a fully custom 3D-printed chassis modeled after a real scorpion.</p>\n<p>In
+  this talk, I’ll walk you through the journey of building Pinchy — from design challenges
+  to unexpected breakthroughs — and dive into the technical details behind its fully
+  autonomous navigation using Computer Vision and SLAM (Simultaneous Localization
+  and Mapping). I’ll cover how it perceives and maps its environment, how its walking
+  gait is controlled, and how all the systems come together on a Raspberry Pi platform.
+  We’ll finish with a look at what’s next — including my future plans to take over
+  the world, one robot scorpion at a time.</p>"
+code: GAEB9V
+speakers:
+- Y98KAJ
+cw:
+youtube_slug:

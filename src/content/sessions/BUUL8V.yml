@@ -1,0 +1,20 @@
+title: The Primordial Code
+start: 2025-09-13 10:40:00+10:00
+end: 2025-09-13 11:10:00+10:00
+room: ballroom3
+track:
+abstract: <p>You, by which I mean all the Eukaryotes in the audience, are running
+  on an operating system a couple of billion years old. Every cell in your body is
+  full of primordial libraries, monkey patches, self-modifying code, viral hacks and
+  even containers embedding a different operating system.  This talk is all about
+  the freakish parallels between cell biology and computer architecture, and will
+  leave you less confident than ever that your seemingly complex life is anything
+  more than a molecule's way of making more molecules.</p>
+description: <p>A fun talk intended to get the audience thinking about what programmers
+  can learn from biology and biologists can learn from computer science, and to remind
+  you that no matter how weird technology gets, nature has us all beat.</p>
+code: BUUL8V
+speakers:
+- JEXXZQ
+cw: <p>Brief mention of viruses and genetic diseases; nothing gruesome.</p>
+youtube_slug:

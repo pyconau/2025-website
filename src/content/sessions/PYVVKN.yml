@@ -1,0 +1,26 @@
+title: 'Time Series Analysis in Python: Easy Tools for Scientific Insight'
+start: 2025-09-12 13:50:00+10:00
+end: 2025-09-12 14:20:00+10:00
+room: ballroom2
+track: scientific
+abstract: <p>Time series data is everywhere. Across industries such as environmental
+  monitoring, financial market analysis, power and energy systems, and scientific
+  discovery, organisations rely on analysing large volumes of complex time series
+  data to make smart and informed decisions that help keep the world running smoothly.
+  Two of the most critical tasks in time series analysis are Time Series Classification
+  and Time Series Forecasting. Python’s data science ecosystem for time series analysis
+  has grown significantly in recent years. In this talk, we will introduce the modern
+  landscape of time series tools available in Python. We will demonstrate the usability,
+  algorithmic diversity, and interface design of libraries such as Sktime, Aeon, and
+  Nixtla (NeuralForecast, MLForecast). These libraries will serve as examples to show
+  how easy they are to use, what kinds of algorithms they provide, and how their application
+  programming interfaces are structured to support efficient and intuitive development.
+  Whether your goal is to classify environmental patterns or forecast future trends,
+  these tools can simplify and accelerate your time series analysis workflow.</p>
+description: ''
+code: PYVVKN
+speakers:
+- XKH7S8
+- MCGKUK
+cw:
+youtube_slug:

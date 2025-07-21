@@ -1,0 +1,21 @@
+title: An EV trip planner for Australia
+start: 2025-09-13 10:40:00+10:00
+end: 2025-09-13 11:10:00+10:00
+room: ballroom2
+track:
+abstract: "<p>EVs are transforming transport, while Australia has unique resilience
+  requirements for our beloved road trips. Could I build an app with data &amp; AI
+  to help more Aussies electrify their rides?</p>\n<p>Come on a journey through operations
+  research, spatial data, graphs and more, prototyping with python, streamlit and
+  a host of useful libraries and open data services. Follow the winding road of development
+  as we encounter and resolve challenges.</p>\n<p>We'll also explore the applicability
+  of this approach to related problems in EV network and fleet planning. I hope you'll
+  leave full of charge for your next data-driven adventure.</p>"
+description: "<p>You can try out the app at https://trippler.streamlit.app/</p>\n
+  <p>This talk will set the scene and tell the overall story of development, but can
+  also go the extra mile and read about the development process at https://safetydave.net/category/electric-vehicles/</p>"
+code: VMXZYP
+speakers:
+- 3C7EAA
+cw:
+youtube_slug:
