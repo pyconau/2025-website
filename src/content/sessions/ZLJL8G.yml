@@ -3,9 +3,20 @@ start: 2025-09-12 17:20:00+10:00
 end: 2025-09-12 17:40:00+10:00
 room: ballroom1
 track: data-ai
-abstract: <p>Thanks for coming to the Data &amp; AI track!</p>
-description: ''
+abstract: <p>The Data &amp; AI specialist track is all about the technology, skills,
+  and practices that engineers, data scientists, and researchers need when building
+  effective and reliable solutions that involve data and leverage different flavours
+  of machine learning and automation. We’re excited to hear talks that cover a wide
+  range of topics relating to data science, data engineering, ML engineering, and
+  modern artificial intelligence.</p>
+description: "<p>At the end of the day we’ll recap our highlights, insights and key
+  takeaways. The track ‘close’ helps us tie a ribbon around our full program of talks.
+  We’ll see where the conversation takes us, and will conclude at or before 5:40pm.</p>\n
+  <p>But wait! As one door closes (on the specialist tracks) another one opens! Stick
+  around at PyCon AU for the main conference on Saturday and Sunday!</p>"
 code: ZLJL8G
-speakers: []
+speakers:
+- N3NQGU
+- PB9BKD
 cw:
 youtube_slug:

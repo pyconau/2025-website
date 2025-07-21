@@ -6,6 +6,7 @@ track:
 abstract: <p>Everything you need to know if you've never been to a PyCon AU before.</p>
 description: ''
 code: MXPDUX
-speakers: []
+speakers:
+- JYUNEP
 cw:
 youtube_slug:

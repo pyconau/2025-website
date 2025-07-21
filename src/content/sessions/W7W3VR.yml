@@ -6,6 +6,7 @@ track:
 abstract: <p>Welcome to Saturday!</p>
 description: ''
 code: W7W3VR
-speakers: []
+speakers:
+- JYUNEP
 cw:
 youtube_slug:

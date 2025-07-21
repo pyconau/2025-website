@@ -6,6 +6,7 @@ track:
 abstract: <p>Thank you for coming to PyCon AU 2025!</p>
 description: ''
 code: AMLK87
-speakers: []
+speakers:
+- JYUNEP
 cw:
 youtube_slug:

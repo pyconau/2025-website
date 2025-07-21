@@ -6,6 +6,7 @@ track:
 abstract: <p>Thank you for coming to Saturday!</p>
 description: ''
 code: PHUBLT
-speakers: []
+speakers:
+- JYUNEP
 cw:
 youtube_slug:
