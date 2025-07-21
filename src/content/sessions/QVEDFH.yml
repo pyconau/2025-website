@@ -3,9 +3,21 @@ start: 2025-09-12 09:00:00+10:00
 end: 2025-09-12 09:20:00+10:00
 room: ballroom1
 track: data-ai
-abstract: <p>Welcome to the Data &amp; AI track!</p>
-description: ''
+abstract: <p>The Data &amp; AI specialist track is all about the technology, skills,
+  and practices that engineers, data scientists, and researchers need when building
+  effective and reliable solutions that involve data and leverage different flavours
+  of machine learning and automation. We’re excited to hear talks that cover a wide
+  range of topics relating to data science, data engineering, ML engineering, and
+  modern artificial intelligence.</p>
+description: "<p>During the track opening we’ll cover some important details about
+  PyCon AU and the specialist track day.</p>\n<ul>\n<li>Housekeeping and important
+  need to know</li>\n<li>Quick introduction to our speakers &amp; sessions for the
+  specialist track</li>\n</ul>\n<p>We run a friendly and informal culture here at
+  Data &amp; AI, so sit back, relax, and kick off the day with that last minute coffee.
+  We’re looking forward to a day full of exciting and enthralling talks ahead.</p>"
 code: QVEDFH
-speakers: []
+speakers:
+- N3NQGU
+- PB9BKD
 cw:
 youtube_slug:
