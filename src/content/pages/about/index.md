@@ -39,7 +39,7 @@ PyCon AU informs the country’s Python developers with presentations, tutorials
 
 PyCon AU is a labour of love, run independently of commercial interests by an all-volunteer team. The legal and financial structure is provided by Linux Australia Inc., a not-for-profit body registered under the _Associations Incorporation Act (NSW) 2009_.
 
-We also operate our program selection and sponsorship processes with a very strict "editorial firewall". Sponsors and other commercial organisations don't get a say in what talks we select or other editorial decisions we make, none of the talks on our program paid money to be there, and anything that happens on our stages that _does_ come from a sponsor is clearly communicated as such.
+We also operate our program selection and sponsorship processes with a clear "editorial firewall". Sponsors and other commercial organisations don't get a say in what talks we select or other editorial decisions we make and anything that happens on our stages that _does_ come from a sponsor is clearly communicated as such.
 
 All of this lets us run an engaging, high-quality event, while offering ticket prices far more accessible than many other commercial events of a similar size.
 
