@@ -1,6 +1,8 @@
 name: Update schedule
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "22 */2 * * *"
 jobs:
   check:
     runs-on: ubuntu-latest
