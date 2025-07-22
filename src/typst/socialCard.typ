@@ -53,14 +53,14 @@
 #block(height: 100%)[
 #grid(
   columns: if data.showPhotos {(1fr, 200pt)} else {(1fr)},
-  rows: (75pt, 1fr, 100pt, 80pt),
+  rows: (75pt, 1fr, 100pt),
   //stroke: black,
   grid.cell(x: 0, y: 1, colspan: if data.showPhotos {2} else {1}, align: horizon, fillSpace(baseSize => {
     block(
       inset: 24pt,
       {
         par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[Join me at PyCon AU 2025 for])
-        text(size: baseSize, font: "Catamaran", weight: 700)[#data.title]
+        par(leading: 0.9em, text(size: baseSize, font: "Catamaran", weight: 700)[#data.title])
         par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[PyCon AU will be returning to Melbourne in 2025 - details to be announced soon!])
       }
     )
