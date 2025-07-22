@@ -61,7 +61,6 @@
       {
         par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[Join me at PyCon AU 2025 for])
         par(leading: 0.9em, text(size: baseSize, font: "Catamaran", weight: 700)[#data.title])
-        par(spacing: 1em, text(size: baseSize * 0.6, weight: 400)[PyCon AU will be returning to Melbourne in 2025 - details to be announced soon!])
       }
     )
   })),
