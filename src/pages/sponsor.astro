@@ -4,6 +4,7 @@ import Base from "../layouts/Base.astro"
 import Button from "../components/Button.astro"
 import SponsorListing from "../components/SponsorListing.astro"
 import { SPONSOR_TIERS } from "../main_config"
+import { Content as ContributorsContent } from "../content/_contributors.md"
 // Get all entries from a collection. Requires the name of the collection as an argument.
 
 const allSponsors = await getCollection("sponsors")
@@ -43,28 +44,28 @@ const Content = (await sponsorPage.render()).Content
     </center>
     <p>
 
-    { /*<p><strong>Updated October 2024! </strong> New opportunities &amp; packages have been added &ndash; make sure you have the latest copy!</p>*/ }
-
-
     <p>
     Want to talk? Send us an email at <a href="mailto:sponsor@pycon.org.au"> sponsor@pycon.org.au </a> and we'll get in touch.
     </p>
 
+<!--
     {
-      /*
+      
 <p>
   Please take a moment to get to know the 2021 PyConline AU sponsors:<br>
-  {/*
+  
+/*
 {% for s in platinum %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
 {% for s in gold %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
 {% for s in digital %}<a href="#{{s.pk}}">{{s.title}}</a>, {% endfor %}
-
+*/
 our <a href="#media">media partners</a>,
 our <a href="#contributors">contributors</a>, 
 and of course <a href="#auspice">Linux Australia</a>!
 </p>
-*/
+
     }
+    -->
 
     {SPONSOR_TIERS.map(tier => {
       const sponsors = allSponsors.filter(sponsor => sponsor.data.tier == tier.slug)
@@ -75,7 +76,7 @@ and of course <a href="#auspice">Linux Australia</a>!
       </>
     })}
 
-    {
+    <ContributorsContent />
       
     <h1 id="opportunities">Sponsorship Opportunities</h1>
 
