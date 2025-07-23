@@ -3,22 +3,20 @@ start: 2025-09-14 13:30:00+10:00
 end: 2025-09-14 14:00:00+10:00
 room: ballroom2
 track:
-abstract: <p>Discover how non-IT employees led a digital transformation at one of
-  Australia’s leading food and hospitality service providers—progressing from paper
-  forms to spreadsheets, then from no-code tools to a full-stack platform built with
-  Python, Django, Docker, and Kubernetes. Told from the perspective of insiders directly
-  involved in the change, this talk shares the stories behind key transformation initiatives,
-  their challenges, and how we navigated them.</p>
-description: "<p>This talk shares the journey of digital transformation in a traditional,
-  paper-heavy business—told by those who experienced the frustration firsthand and
-  then became part of the solution.</p>\n<p>We’ll take you through several real initiatives
-  we helped deliver, from early automation efforts using spreadsheets and scripts,
-  to building a scalable cloud-native platform.</p>\n<p>This is not a technical deep
-  dive — it's a behind-the-scenes look at what it takes to modernise operations in
-  a non-tech environment, while staying grounded in doing the right thing for people,
-  process, and platform.</p>\n<p>Whether you're a developer working in a traditional
-  industry or someone trying to push transformation from the inside, this story will
-  be relatable, honest, and maybe even a little fun.</p>"
+abstract: <p>How do you lead digital transformation when your starting point is paper,
+  pens, and a patchwork of spreadsheets? In this session, I share how business users
+  helped drive real change at one of Australia’s largest food and hospitality service
+  providers—progressing from manual paperwork to a cloud-native platform powered by
+  Python, Django, Docker, and Kubernetes.</p>
+description: "<p>I’ll take you behind the scenes of digital transformation in a traditional,
+  paper-heavy business—sharing first-hand experiences from those who faced the frustrations
+  and became part of the solution. Along the way, I’ll highlight real initiatives
+  delivered: from early automation with spreadsheets and scripts, to building a scalable,
+  modern platform.</p>\n<p>Rather than a technical deep dive, this talk offers an
+  honest look at what it takes to modernise operations in a non-tech environment—while
+  always focusing on people, process, and platform.</p>\n<p>Whether you’re a developer
+  in a traditional industry or someone championing transformation from within, you’ll
+  find this story relatable, candid, and maybe even a little fun.</p>"
 code: CTLQK3
 speakers:
 - 8MX3DS
