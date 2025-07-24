@@ -4,7 +4,7 @@ end: 2025-09-12 09:50:00+10:00
 room: ballroom1
 track: data-ai
 abstract: "<p>In this talk, we’ll explore four modern data engines ; Daft, DuckDB,
-  Polaris, and DataFusion, that offer varying levels of out-of-core execution. These
+  Polars, and DataFusion, that offer varying levels of out-of-core execution. These
   engines allow you to work with datasets larger than memory without the need to rewrite
   everything for a distributed system.</p>\n<p>They’re fast, expressive, and, above
   all, Pythonic—though SQL support might still be the deciding factor for many workflows.</p>\n
