@@ -13,6 +13,8 @@ jobs:
       build-required: ${{ steps.add-and-commit.outputs.pushed }}
     steps:
       - uses: actions/checkout@v4
+      - name: Install poetry
+        run: pipx install poetry
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -20,7 +22,6 @@ jobs:
           cache-dependency-path: scripts/poetry.lock
       - run: |
           cd scripts
-          pip install poetry
           poetry install
           poetry run python schedule_sync.py
         env:
