@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       build-required: ${{ steps.add-and-commit.outputs.pushed }}
+      build-sha: ${{ steps.add-and-commit.outputs.commit_long_sha }}
     steps:
       - uses: actions/checkout@v4
       - name: Install poetry
@@ -48,3 +49,5 @@ jobs:
     needs: check
     if: ${{ needs.check.outputs.build-required == 'true' }}
     uses: ./.github/workflows/build.yml
+    with:
+      sha: ${{ needs.check.outputs.build-sha }}

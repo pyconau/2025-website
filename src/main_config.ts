@@ -1,6 +1,6 @@
 /// Whether or not tickets are on sale.
 export const CONFERENCE_TZ = "Australia/Melbourne"
-export const TICKETS_AVAILABLE: boolean = false
+export const TICKETS_AVAILABLE: boolean = true
 
 export const ROOMS = [
   { slug: "ballroom1", name: "Ballroom 1", days: ['friday', 'saturday', 'sunday'] },

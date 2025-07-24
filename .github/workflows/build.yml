@@ -5,6 +5,9 @@ on:
       - main
   workflow_dispatch:
   workflow_call:
+    inputs:
+      sha:
+        type: string
 
 permissions:
   contents: read
@@ -21,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
       - uses: typst-community/setup-typst@v3
       - uses: actions/setup-node@v4
         with:
