@@ -9,6 +9,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    outputs:
+      build-required: ${{ steps.add-and-commit.outputs.pushed }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -22,7 +24,7 @@ jobs:
         env:
           PRETALX_TOKEN: ${{ secrets.PRETALX_TOKEN }}
       - run: git diff
-      - uses: EndBug/add-and-commit@v5.3.0
+      - uses: EndBug/add-and-commit@v9
         id: add-and-commit
         with:
           add: 'public/people src/content/sessions src/content/people src/content/_people_etags.yml'
@@ -39,3 +41,7 @@ jobs:
       #     GITHUB_ACTOR: ${{ github.actor }}
       #     GITHUB_JOB_NAME: "Update schedule"
       #     GITHUB_JOB_STATUS: ${{ job.status }}
+  build:
+    needs: check
+    if: ${{ needs.check.outputs.build-required == 'true' }}
+    uses: ./.github/workflows/build.yml
