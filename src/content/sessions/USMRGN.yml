@@ -1,0 +1,27 @@
+title: 'Data Structures: A learning journey'
+start: 2025-09-12 14:30:00+10:00
+end: 2025-09-12 15:00:00+10:00
+room: ballroom3
+track: education
+abstract: <p>Follow my journey from drowning in the world of data structures to understanding
+  through implementation. Skip Lists... What are they? Why are they? And how do they
+  work? These are all questions I sought to answer after I discovered them in the
+  wild. Come and find out why I think writing your data structures from scratch might
+  be the best way to understand them.</p>
+description: <p>As an intern, I frequently come across things I don't really understand
+  - one of these things was a Skip List. After my boss tried to explain what it was
+  several times and I googled it, I was still super lost. Around the same time, I
+  was in a class at my uni called Data Structures and Algorithms. The first assignment
+  for this class was to recreate a hash set from scratch with all its capabilities
+  in C++, and I found that it really deepened my understanding, so I planned to use
+  this idea to understand how Skip Lists work and why they are useful. My first step
+  was to make a linked list Class, as this was something I already deeply understood,
+  and then I could use this object as the basis for other data structures. Next, I
+  recreated my assignment, building off my linked list so that I could practice how
+  this may work in Python. Then I felt ready to finally make a Skip List and understand
+  why my boss wanted to use it in his code.</p>
+code: USMRGN
+speakers:
+- PZJFV8
+cw:
+youtube_slug:
