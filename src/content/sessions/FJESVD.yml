@@ -2,7 +2,7 @@ title: 'Building Production-Ready MCP Servers: From Protocol to Patterns'
 start: 2025-09-12 13:50:00+10:00
 end: 2025-09-12 14:20:00+10:00
 room: ballroom1
-track: data-ai
+track:
 abstract: <p>The Model Context Protocol (MCP) is an open standard for connecting AI
   assistants to the systems where data lives, including content repositories, business
   tools, and development environments. This talk explores practical implementation
