@@ -10,10 +10,10 @@ abstract: "<p>Every software system can benefit from being \"faster\". </p>\n<p>
   them design and build systems that feel \"faster\" - even when that's not quite
   what you thought.</p>"
 description: "<p>This talk will examine the fundamentals of performance engineering
-  and optimisation: \n•   What do we mean by “faster”, or “performant”? Why do they
-  mean different things to different people? </p>\n<p>•   What core trade-offs do
-  we make (consciously or unconsciously) when designing and optimising systems? Why
-  do systems feel slow? Are the engineers just bad, or are there potentially good
+  and optimisation: </p>\n<p>•   What do we mean by “faster”, or “performant”? Why
+  do they mean different things to different people? </p>\n<p>•   What core trade-offs
+  do we make (consciously or unconsciously) when designing and optimising systems?
+  Why do systems feel slow? Are the engineers just bad, or are there potentially good
   reasons?</p>\n<p>•   How do we tell what’s important? How can we tell when we’ve
   done enough? What are the conversations we can have as a team at the start of a
   project that will save us pain down the line?</p>\n<p>•   Which core principles
