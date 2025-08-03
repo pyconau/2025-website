@@ -1,11 +1,18 @@
-title: Saturday Keynote (Watch This Space!)
+title: 'Ethics in AI: Building Fair and Just Intelligence Systems'
 start: 2025-09-13 09:20:00+10:00
 end: 2025-09-13 10:10:00+10:00
 room: ballroom3
 track:
-abstract: <p>An amazing keynote!</p>
+abstract: <p>AI systems increasingly make life-changing decisions about healthcare,
+  employment, criminal justice, and financial services, but often perpetuate systemic
+  discrimination against marginalized communities. Through real-world examples this
+  talk examines how bias enters AI through biased data, algorithmic design, and deployment
+  feedback loops. Attendees will learn a practical three-phase framework for building
+  anti-oppressive AI systems and leave with concrete tools for identifying bias, implementing
+  fairness metrics, and advocating for ethical AI practices in their organizations.</p>
 description: ''
 code: ZKJQAP
-speakers: []
+speakers:
+- BCDL99
 cw:
 youtube_slug:
