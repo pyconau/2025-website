@@ -1,7 +1,7 @@
 title: 'Reinforcement Learning with Quantum Algorithms: Simulating Nematode Behaviour'
 start: 2025-09-14 14:50:00+10:00
 end: 2025-09-14 15:20:00+10:00
-room: ballroom2
+room: ballroom1
 track:
 abstract: <p>What happens when you combine quantum computing, neuroscience, and reinforcement
   learning—all in Python? This talk explores how parameterized quantum circuits can

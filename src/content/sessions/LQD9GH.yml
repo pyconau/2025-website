@@ -1,7 +1,7 @@
 title: Unarchiving vulnerabilities and avoiding tar-pits
 start: 2025-09-14 13:30:00+10:00
 end: 2025-09-14 14:00:00+10:00
-room: ballroom1
+room: ballroom2
 track:
 abstract: "<p>I found some vulnerabilities in Python's standard library, and now you've
   all had to upgrade your Python. Sorry, not sorry.</p>\n<p>My day job is focused
