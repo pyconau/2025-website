@@ -25,6 +25,7 @@ TRACKS = {
     "Education": "education",
     "Scientific Python": "scientific",
     "Main Conference": None,
+    "Development Sprints": None
 }
 # Question IDs
 CONTENT_WARNING_QUESTION_ID = 5326
