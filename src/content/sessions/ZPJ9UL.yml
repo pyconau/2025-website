@@ -1,0 +1,20 @@
+title: How to build your own MCP powered GenAI Agents
+start: 2025-09-15 13:30:00+10:00
+end: 2025-09-15 16:30:00+10:00
+room: juniorballroom
+track:
+abstract: <p>In this workshop we will learn two ways to build AI Agents on AWS. We
+  will learn how to create an agent with the Amazon Strands SDK that is model agnostic,
+  creating a sample application as we go. We will also explore alternate ways we can
+  create agents within Amazon Bedrock and how in each case we can connect to an MCP
+  server and use its tools.</p>
+description: "<p>Don't know what some of these terms are? No problem! As we will also
+  have a 20 min intro into everything you will do in the workshop.</p>\n<p><strong>DON'T
+  FORGET TO BRING YOUR LAPTOP! 😉</strong></p>\n<h3>How to register</h3>\n<p><strong>IMPORTANT</strong>:
+  Workshops are free to attend, but you must be registered to each session. You can
+  register a new \"Just the workshops\" ticket at https://pretix.eu/pyconau/2025.</p>"
+code: ZPJ9UL
+speakers:
+- MSK3HR
+cw:
+youtube_slug:
