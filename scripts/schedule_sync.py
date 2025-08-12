@@ -20,6 +20,7 @@ ROOMS = {
     "Ballroom 2": "ballroom2",
     "Ballroom 3": "ballroom3",
     "Junior Ballroom": "juniorballroom",
+    "Stradbroke Room": "stradbrokeroom",
 }
 TRACKS = {
     "Data & AI": "data-ai",
