@@ -26,7 +26,10 @@ const { current } = Astro.props as Props
   <SwitcherItem href="/program/sunday/" selected={current === "sunday"}>
     Sun<span class='long-name'>day</span>
   </SwitcherItem>
+  <SwitcherItem href="/program/monday/" selected={current === "monday"}>
+    Mon<span class='long-name'>day</span>
+  </SwitcherItem>
   <SwitcherItem href="/program/sprints/" selected={current === "sprints"}>
-    Mon<span class='long-name'>day</span> & Tue<span class='long-name'>sday</span>
+    Tue<span class='long-name'>sday</span>
   </SwitcherItem>
 </Switcher>
