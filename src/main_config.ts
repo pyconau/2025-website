@@ -24,6 +24,7 @@ export const SPONSOR_TIERS = [
   },
   { slug: "gold", name: "Gold Sponsor", plural_name: "Gold Sponsors" },
   { slug: "standard", name: "Sponsor", plural_name: "Sponsors" },
+  { slug: "digital", name: "Digital", plural_name: "Digital Sponsors" },
   { slug: "startup", name: "Startups", plural_name: "Startups @ PyCon AU" },
   { slug: "auspice", name: "Auspice", plural_name: "Auspices" },
 ] as const
