@@ -15,22 +15,28 @@ const sponsorsByTier = await getSponsorsByTier()
     padding-top: 50px;
     padding-bottom: 50px;
     .sponsor-grid {
-      display: grid;
-      line-height: 1.3em;
-      grid-template-columns: repeat(auto-fit, 150px);
+
+      gap: 3rem;
+
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin: 0 30px;
+      align-items: center;
+
+      line-height: 1.3em;
+      justify-content: center;
+      
+      margin: 0 5rem;
 
       img {
-        width: 100%;
-        aspect-ratio: 1;
+        height: 5rem;;
+        width: auto;
         object-fit: contain;
       }
     }
 
     .copyright {
-      margin: 20px;
+      margin: 40px;
       text-align: center;
     }
   }
