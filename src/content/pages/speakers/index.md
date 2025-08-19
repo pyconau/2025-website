@@ -3,7 +3,7 @@ title: Speaker pack
 order: 1
 ---
 
-# Speaker Pack 2024
+# Speaker Pack 2025
 
 Hello Speakers!
 
@@ -13,9 +13,9 @@ This covers quite a few topics, so please read it closely.
 
 If you’re left with any questions after you have read this information, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) and we will do our best to help you out.
 
-PyCon AU 2024 Program Co-Chairs
+PyCon AU 2025 Program Co-Chairs
 
-Many thanks to @Daisylb for all her work and dedication on [https://2024.pycon.org.au/program/](https://2024.pycon.org.au/program/)
+Many thanks to Benno for all his work and dedication on [https://2025.pycon.org.au/program/](https://2025.pycon.org.au/program/)
 
 
 [Things all presenters should know](#things-all-presenters-should-know)
@@ -55,7 +55,7 @@ Your Session Chair will sit in the front row and give you time warning cards at 
 
 There are 10 minutes between talks for changeover. Please respect this time limit. Once your slot is over, please collect your things and continue any conversations in the hallway, in order to give the next speaker an equal chance to prepare.
 
-* We have a single flash talk of 5 minutes as part of the Scientific Python Specialist Track this year - this talk is part of the academic publishing process we trialed this year. More information about that is [here](https://2024.pycon.org.au/attend/academic-publication/).
+
 
 ## Slide Tips
 
@@ -77,7 +77,7 @@ More helpful hints can be found in the Writing Slides section of [VM Brasseur’
 
 ## Conduct and Expectations
 
-Please ensure your talk content and slides comply with our [code of conduct](https://2024.pycon.org.au/safety/). This includes your own behaviour as well as anything you endorse or encourage.
+Please ensure your talk content and slides comply with our [code of conduct](https://2025.pycon.org.au/safety/). This includes your own behaviour as well as anything you endorse or encourage.
 
 In particular:
 
@@ -85,11 +85,11 @@ In particular:
 * If you are talking about past hacks or social engineering, you must have had informed consent for any system or person affected, and you must clearly indicate that this was the case.
 * If you're not sure whether something you want to present complies with the code of conduct, or you want more information, contact [program@pycon.org.au](mailto:program@pycon.org.au).
 
-Any actions that make attendees feel unwelcome or unsafe fall under the Code of Conduct. There's more information on our [Code of Conduct page](https://2024.pycon.org.au/safety/).
+Any actions that make attendees feel unwelcome or unsafe fall under the Code of Conduct. There's more information on our [Code of Conduct page](https://2025.pycon.org.au/safety/).
 
 ## Content warnings
 
-If your talk contains content that you think might be sensitive, distressing or traumatic to some people (even if most people will be fine with it) please add a content warning, which you can do by [editing your accepted talk proposal in Pretalx](https://pretalx.com/pycon-au-2024/me/submissions/).
+If your talk contains content that you think might be sensitive, distressing or traumatic to some people (even if most people will be fine with it) please add a content warning, which you can do by [editing your accepted talk proposal in Pretalx](https://pretalx.com/pycon-au-2025/me/submissions/).
 
 Content warnings aren't a moral judgement on your talk, and they won't restrict who is able to watch it. In fact, the opposite is true—for some of your audience members, if they know something they find distressing is coming up, they'll be better able to handle it than if it's a surprise. That lets them look after their mental health and better engage with and learn from your talk!
 
@@ -110,7 +110,7 @@ We will publish these talks under a [CC BY-NC-SA 4.0](https://creativecommons.or
 
 ## Your Published Talk Details
 
-Your talk information and biography is [up on our website](https://2024.pycon.org.au/program/).
+Your talk information and biography is [up on our website](https://2025.pycon.org.au/program/).
 
 Please take the time to look over your talk entry, and make sure that you are happy with your abstract and biography.
 
@@ -166,7 +166,7 @@ If you have special requirements beyond this, please get in touch in advance wit
 
 ## Arrive Early
 
-Please make sure you know when and where your talk is scheduled. Please check the [schedule](https://2024.pycon.org.au/program/) to confirm the day, time, and room for which your talk is scheduled. **Please note previous emails indicated your talk time in ACDT (Adelaide time) instead of AEDT (Melbourne time) (oops!).**
+Please make sure you know when and where your talk is scheduled. Please check the [schedule](https://2025.pycon.org.au/program/) to confirm the day, time, and room for which your talk is scheduled. **Please note previous emails indicated your talk time in ACDT (Adelaide time) instead of AEDT (Melbourne time) (oops!).**
 
 We have just made a round of final schedule changes and will not be making any more unless absolutely necessary. If any changes affect you, we will let you know as soon as possible. Again, if you have concerns or need to change something, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) as soon as possible.
 
