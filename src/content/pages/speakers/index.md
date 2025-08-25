@@ -120,7 +120,7 @@ We advise you to send through any changes as soon as possible, ahead of the even
 
 ## What To Do If Something Comes Up
 
-Sometimes things happen! Laptops run out of power, slides go missing, transport runs late, family stuff comes up, physical or mental health problems can occur. If anything comes up at any point, please let Maia and Elena (our Program Chairs) or one of the other conference organisers know. We have an experienced organising team who can help with a broad range of questions, issues, or concerns. The sooner you let us know if there is a problem, the sooner we can work with you to achieve the best possible outcome.
+Sometimes things happen! Laptops run out of power, slides go missing, transport runs late, family stuff comes up, physical or mental health problems can occur. If anything comes up at any point, please let us know ASAP (e.g. emailing program@pycon.org.au or speaking with an organiser at the registration desk). We have an experienced organising team who can help with a broad range of questions, issues, or concerns. The sooner you let us know if there is a problem, the sooner we can work with you to achieve the best possible outcome.
 
 If you’re just unsure and need to clarify something, use the Attendee Discord (details to come) or email [program@pycon.org.au](mailto:program@pycon.org.au).
 
@@ -133,7 +133,7 @@ If you have an immediate safety concern, please contact venue Security, or Emerg
 
 # Presenting
 
-Please note PyCon AU 2024 is an in-person event only, we cannot accommodate remote presentations. 
+Please note PyCon AU 2025 is an in-person event only. We have not made provisions for remote presentations.
 
 ## What should I wear?
 
@@ -162,12 +162,14 @@ If you have special requirements beyond this, please get in touch in advance wit
 
 ## Testing Your Laptop
 
-**It is recommended that you test your laptop before your talk.** A test setup will be available in the AV room, which is Organiser Office 6. This will be similar to the podium setup, allowing you to plug your laptop in and check that it works for video and audio. You can find this room on the Northern Concourse, opposite Entrance Door 15, near the main entrance to the venue. It will be marked on the venue map, which will be on the event website closer to the event. A helpful volunteer can direct you if you become lost.
+**It is recommended that you test your laptop before your talk.** A test setup will be available. We'll update this page with the specific location once floorplans are finalised (or you can ask for directions at the registration desk). This will be similar to the podium setup, allowing you to plug your laptop in and check that it works for video and audio. You can find this room on the Northern Concourse, opposite Entrance Door 15, near the main entrance to the venue. It will be marked on the venue map, which will be on the event website closer to the event. A helpful volunteer can direct you if you become lost.
 
 ## Arrive Early
 
-Please make sure you know when and where your talk is scheduled. Please check the [schedule](https://2025.pycon.org.au/program/) to confirm the day, time, and room for which your talk is scheduled. **Please note previous emails indicated your talk time in ACDT (Adelaide time) instead of AEDT (Melbourne time) (oops!).**
+Please make sure you know when and where your talk is scheduled. Please check the [schedule](https://2025.pycon.org.au/program/) to confirm the day, time, and room for which your talk is scheduled.
 
-We have just made a round of final schedule changes and will not be making any more unless absolutely necessary. If any changes affect you, we will let you know as soon as possible. Again, if you have concerns or need to change something, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) as soon as possible.
+The schedule may change slightly between now and when the conference starts - but we'll try and reduce changes as much as possible. If any changes affect you, we will let you know as soon as possible. Again, if you have concerns or need to change something, please contact us at [program@pycon.org.au](mailto:program@pycon.org.au) as soon as possible.
 
-**It is essential that you arrive in your talk room in the break before your talk** to ‘check in’ with and meet your Session Chair and A/V team. This will give you time to look at the layout of your room, assess the space, etc.
+We understand not all presenters can attend all days of the conference. If you intend to register on-the-day of your session, please let us know ahead of time, and then arrive early to collect your badge. We start to worry when speakers haven't yet collected their badge each day, and we'd love to know you're on-site and ready to present!
+
+**It is essential that you arrive in your talk room in the meal break before your talk** to ‘check in’ with and meet your Session Chair and A/V team. This will give you time to look at the layout of your room, assess the space, etc. For example: after morning tea there is generally a block of three sessions - we ask all three presenters to 'check in' to their room before morning tea ends. And where possible, please stay in or near your room to avoid being distracted elsewhere and missing your talk slot. If you have not checked into your room in time we may cancel your talk and encourage attendees to see other sessions (to respect their time at PyCon AU). 
