@@ -1,0 +1,20 @@
+title: 'Args: Amazing or Approaching?'
+start:
+end:
+room:
+track:
+abstract: "<p>From default args, to <code>**kwargs</code>, and everything in-between,
+  Python's comprehensive argument system lends itself to some of the most effective
+  code, through encouraging readability, reuse, and easy refactoring.</p>\n<p>But
+  is that really true? Why, and why not?\nWhat could we learn from other languages?\n
+  And what else could lie in their future?</p>"
+description: "<p>In this session, we'll give a rundown of Python's comprehensive function
+  argument system and how its features allow for safety, conciseness, and expressiveness
+  (whether you're calling or writing functions).</p>\n<p>We'll then give examples
+  for where that system lacks, where it could bite you, and give suggestions for what
+  more could be done on Python code to fix those limitations.</p>"
+code: B38QTB
+speakers:
+- AHET73
+cw:
+youtube_slug:
