@@ -1,0 +1,18 @@
+title: Scaling Python-Powered Machine Learning with Snowflake's Data Cloud
+start: 2025-09-13 11:20:00+10:00
+end: 2025-09-13 11:50:00+10:00
+room: ballroom2
+track:
+abstract: <p>Discover how Snowflake's AI Data Cloud revolutionizes Python-powered
+  machine learning at scale. Learn how Snow Pandas brings familiar pandas operations
+  to massive datasets for scalable data engineering, explore advanced feature engineering
+  with Snowflake ML's distributed processing capabilities, and witness distributed
+  ML training. Build millions of models in parallel across partitions with popular
+  libraries like scikit-learn, XGBoost etc — all seamlessly integrated for enterprise-grade
+  MLOps.</p>
+description: ''
+code: QU97S8
+speakers:
+- ASHBPB
+cw:
+youtube_slug:
