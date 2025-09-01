@@ -1,0 +1,22 @@
+title: 'Taking Back the Streets: NaviLens and the Fight for Open Navigation'
+start: 2025-09-12 13:50:00+10:00
+end: 2025-09-12 14:20:00+10:00
+room: ballroom1
+track: data-ai
+abstract: "<p>NaviLens is a for-profit service that provides navigational data resolution,
+  based on ddTags placed around the environment. The tags are designed so that they
+  can be quickly scanned with a mobile device while at a much greater distance than
+  QR codes or while moving. The main use case of NaviLens is to improve navigation
+  for those with visual impairments. </p>\n<p>This system is now in use on trams in
+  Melbourne, Australia. I argue that while this is a step in the right direction for
+  accessibility, it also grants monopolistic control of the “physical namespace” to
+  a profit seeking entity.</p>\n<p>This talk will explore the technology behind Navilens
+  and the social issues around its adoption. I'll demonstrate a path to a free and
+  open alternative using Python and the community dataset that was started during
+  PyCon AU 2024.</p>"
+description: ''
+code: 9CB8US
+speakers:
+- VXBVLZ
+cw:
+youtube_slug:
