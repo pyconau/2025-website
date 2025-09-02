@@ -1,10 +1,34 @@
-title: '[watch this space!]'
+title: 'Your datasets, under your control: Introducing the Mozilla Data Collective'
 start: 2025-09-14 14:10:00+10:00
 end: 2025-09-14 14:40:00+10:00
 room: ballroom1
 track:
-abstract: <p>This talk is about a project currently under embargo. Come back soon
-  to find out more!</p>
+abstract: "<p>You're probably familiar with Mozilla's Common Voice project - a crowd-sourced,
+  collective effort that's provided speech data in over 300 languages to help democratise
+  voice technologies and make speech recognition work better for more people.</p>\n
+  <p>Now, we're delighted to introduce a sister platform to Common Voice - the <a
+  href=\"https://datacollective.mozillafoundation.org\">Mozilla Data Collective</a>.
+  </p>\n<h2>The Problem</h2>\n<p>AI has a data crisis. We're running out of quality
+  training data because the entire web has already been harvested by crawlers to train
+  AI models  — leading to the \"Token Crisis\". What’s left? Synthetic data generated
+  en masse - that’s bland, generic and unrepresentative of the world’s diversity.
+  This data is also problematic for training models, as it can lead to model collapse.
+  Meanwhile, quality datasets from diverse contributors sit unused in silos.</p>\n
+  <h2>The Solution</h2>\n<p>Mozilla Data Collective is a platform in the truest sense.
+  It’s yours to stand on, and make of it what you will. Mozilla Data Collective works
+  by allowing you to share your data, retain ownership of it, and control who uses
+  it. Upload datasets from research, community collections or specialised corpora.
+  Set your terms - who uses it, for what purpose, and what you get in return. Keep
+  control by tracking who’s using your datasets. </p>\n<h2>Why It Matters</h2>\n<p>Our
+  vision is to encourage the creation of safe, responsible AI that works for <em>everyone</em>
+  - by helping communities to share authentic, ethical and diverse data - a stark
+  contrast to models built by indiscriminately scraping the web and reproducing or
+  synthesising its Anglocentric, white, male biases.</p>\n<p>We want people and organisations
+  - like you - to be able to create, curate and control your data, rather than have
+  it harvested and scraped without your knowledge or consent.</p>\n&lt;hr /&gt;\n
+  <p>Join Kathy Reid as she walks you through why better AI requires better data -
+  and why better data requires collective, collaborative, co-created approaches: Mozilla
+  Data Collective.</p>"
 description: ''
 code: ZFWMZ7
 speakers:
