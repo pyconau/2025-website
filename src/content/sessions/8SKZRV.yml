@@ -7,7 +7,7 @@ abstract: "<p>Water quality modeling plays a crucial role in managing aquatic ec
   Those models are based on Computational Fluid Dynamics (CFD), the science of using
   numerical analysis and data structures to solve many processes influencing fluid
   behavior. CFD requires many complex mathematical representations through various
-  ODE and DPE solvers, and has traditionally been written in Fortran or C++, mostly
+  ODEs and PDEs solvers, and has traditionally been written in Fortran or C++, mostly
   for their speed in doing massively parallel computations, such as handling array
   operations and object-oriented features. As such, those codebases have a long-standing
   legacy in scientific computing, and many established CFD codes are written in them.
