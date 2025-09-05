@@ -2,23 +2,24 @@ name: Duy Nguyen
 pronouns: Dr
 bluesky:
 fedi:
-bio: "<p>Dr Duy Nguyen is currently an Scientist in the <a href=\"https://en.wikipedia.org/wiki/CSIRO\"\
-  >CSIRO</a> <a href=\"https://www.csiro.au/en/about/people/business-units/environment\"\
-  >Environment Research Unit</a>, with expertise in <strong>Environmental Fluid Dynamics,
-  turbulence modelling, numerical methods, and water quality modelling</strong>. His
-  research involves hydrodynamic and water quality modelling of oceans, lakes, and
-  rivers, combined with emerging satellite and hyperspectral and multispectral imagery
-  technologies, and in situ and remote sensing of water quantity and quality. At CSIRO,
-  Duy is the Lead of the Water Quality Modelling Package at the <a href=\"https://research.csiro.au/aquawatch/about/\"\
+bio: "<p>Dr Duy Nguyen is a computational modeller and currently an Environmental
+  Scientist in the <a href=\"https://en.wikipedia.org/wiki/CSIRO\">CSIRO</a> <a href=\"\
+  https://www.csiro.au/en/about/people/business-units/environment\">Environment Research
+  Unit</a>, with expertise in fluid dynamics and turbulence modelling, particularly
+  in rivers, lakes, estuaries, and air–sea interactions. His research spans stratified
+  flows, turbulence processes, physical oceanography, and marine atmospheric boundary
+  layers. More recently, his work has focused on water quality modelling to support
+  management of inland waters and provide early warning of harmful events, including
+  fish kills, blackwater, algal blooms, and sediment transport, using a combination
+  of process-based and data-driven approaches.</p>\n<p>At CSIRO, Duy is the Lead of
+  the Water Quality Modelling Package at the <a href=\"https://research.csiro.au/aquawatch/about/\"\
   >CSIRO AquaWatch Program</a> and the <a href=\"https://research.csiro.au/dwl/\"
   >Digital Water &amp; Landscapes Program</a>, where the team integrates process-based,
   AI/ML, and large data streams from remote sensing to model and forecast water quality
-  and quantity. Duy also leads the Vietnam AquaWatch pilot, where the team is building
-  a monitoring and forecasting water quality system for the inland aquaculture.</p>\n
-  <p>Duy is serving as chair of several associations, including the CSIRO Australia
-  National Early-Mid Research Career Committee, the Group on Earth Observation AquaWatch
-  Early Career Society, and was a committee member of the Early-Mid Career Research
-  at the Australasian Fluid Mechanics Society. Duy has won several awards from universities
-  and governments, including in research, teaching, and education, as well as in services
-  and social engagements.</p>"
+  and quantity. His goal is to provide effective, science-informed solutions to address
+  pressing water security challenges in Australia and beyond. Duy also leads the Vietnam
+  AquaWatch pilot, where the team is building a monitoring and forecasting water quality
+  system for the inland aquaculture. He has won several national and international
+  awards from universities and governments in research, teaching, and education, as
+  well as in services and social engagements.</p>"
 has_pic: true
