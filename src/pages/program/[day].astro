@@ -170,6 +170,16 @@ const tracksByRoom = Object.fromEntries(
         text-overflow: ellipsis;
       }
     }
+    s-schedule .session.plenary {
+      @include vertical {
+        grid-column-start: 3;
+        grid-column-end: span 3;
+      }
+      @include horizontal {
+        grid-row-start: 3;
+        grid-row-end: span 3;
+      }
+    }
 
     s-tba {
       border: 3px dashed #888;
@@ -359,7 +369,7 @@ const tracksByRoom = Object.fromEntries(
       }{
         breaks.map((break_) => (
           <div
-            class="session"
+            class="session plenary"
             style={`--start: ${idx(break_.data.start)}; --end: ${idx(
               break_.data.end,
             )}; --track: ${roomMap[break_.data.room]};`}
