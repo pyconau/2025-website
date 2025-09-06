@@ -86,5 +86,6 @@ export type LuxonifiedScheduledSession =
       >
       end: Exclude<LuxonifiedCollectionEntry<"sessions">["data"]["end"], null>
       room: Exclude<LuxonifiedCollectionEntry<"sessions">["data"]["room"], null>
+      plenary: boolean
     }
   }
