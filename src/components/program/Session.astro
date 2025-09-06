@@ -1,6 +1,6 @@
 ---
 import { DateTime } from "luxon"
-import { LuxonifiedScheduledSession } from "../../lib"
+import type { LuxonifiedScheduledSession } from "../../lib"
 import ProseList from "../ProseList.astro"
 
 export type Props = {
@@ -13,7 +13,10 @@ export type Props = {
   roomMap: { [k: string]: number }
 }
 let { session, idx, speakerNameMap, roomMap } = Astro.props
-
+let classes = ["session"]
+if (session.data.plenary) {
+  classes.push("plenary")
+}
 ---
 
 <style lang="scss">
@@ -62,9 +65,19 @@ let { session, idx, speakerNameMap, roomMap } = Astro.props
       text-overflow: ellipsis;
     }
   }
+  .session.plenary {
+    @include vertical {
+      grid-column-start: 3;
+      grid-column-end: span 3;
+    }
+    @include horizontal {
+      grid-row-start: 3;
+      grid-row-end: span 3;
+    }
+  }
 </style>
 <a
-  class="session"
+  class:list={classes}
   style={`--start: ${idx(session.data.start)}; --end: ${idx(
     session.data.end,
   )}; --track: ${roomMap[session.data.room]};`}

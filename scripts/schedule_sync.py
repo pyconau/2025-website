@@ -36,6 +36,7 @@ BLUESKY_QUESTION_ID = 5329
 FEDIVERSE_QUESTION_ID = 5328
 
 TAG_IDS_TO_SKIP = {1679}
+PLENARY_TAG = 1799
 
 NDV_JSON = "https://portal.nextdayvideo.com.au/main/C/pyconau/S/pyconau_2025.json"
 
@@ -192,8 +193,7 @@ for session in paginate(
         track = TRACKS[track["en"]]
 
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
-        yaml.dump(
-            {
+        session_data = {
                 "title": session["title"],
                 "start": start,
                 "end": end,
@@ -209,7 +209,11 @@ for session in paginate(
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
                 "youtube_slug": youtube_slugs.get(session["code"]),
-            },
+        }
+        if PLENARY_TAG in session["tag_ids"]:
+            session_data["plenary"] = True
+        yaml.dump(
+            session_data,
             f,
         )
 
@@ -222,7 +226,7 @@ schedule = requests.get(
     f"{PRETALX_BASE_URL}/schedules/latest/",
     headers={"Authorization": f"Token {PRETALX_TOKEN}"},
 )
-if schedule.ok:
+if schedule.ok and "breaks" in schedule.json():
     for break_ in schedule.json()["breaks"]:
         # We only want to copy across breaks that aren't actually breaks
         description = break_["description"]["en"]
