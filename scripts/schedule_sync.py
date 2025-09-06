@@ -224,7 +224,10 @@ for entry in BREAKS_DIR.glob("*"):
 # If a schedule is published, collect breaks
 schedule = requests.get(
     f"{PRETALX_BASE_URL}/schedules/latest/",
-    headers={"Authorization": f"Token {PRETALX_TOKEN}"},
+    headers={
+        "Authorization": f"Token {PRETALX_TOKEN}",
+        "Pretalx-Version": "LEGACY",
+    },
 )
 if schedule.ok and "breaks" in schedule.json():
     for break_ in schedule.json()["breaks"]:
