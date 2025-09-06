@@ -193,8 +193,7 @@ for session in paginate(
         track = TRACKS[track["en"]]
 
     with (SESSIONS_DIR / f'{session["code"]}.yml').open("w") as f:
-        yaml.dump(
-            {
+        session_data = {
                 "title": session["title"],
                 "start": start,
                 "end": end,
@@ -210,8 +209,11 @@ for session in paginate(
                 "speakers": speakers,
                 "cw": parse_markdown(cw) if cw is not None else None,
                 "youtube_slug": youtube_slugs.get(session["code"]),
-                "plenary": PLENARY_TAG in session["tag_ids"],
-            },
+        }
+        if PLENARY_TAG in session["tag_ids"]:
+            session_data["plenary"] = True
+        yaml.dump(
+            session_data,
             f,
         )
 
