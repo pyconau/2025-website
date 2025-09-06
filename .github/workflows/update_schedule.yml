@@ -31,7 +31,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         id: add-and-commit
         with:
-          add: 'public/people src/content/sessions src/content/people src/content/_people_etags.yml'
+          add: 'public/people src/content/sessions src/content/people src/content/_people_etags.yml src/content/breaks'
           author_name: Robot
           author_email: beep-boop@local
           message: "Auto-update of schedule"
