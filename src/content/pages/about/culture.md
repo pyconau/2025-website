@@ -33,7 +33,7 @@ This is an easter egg in Python itself, where if you type "import this" you get 
 
 ### curlyboi
 
-curlyboi is our multicoloured snake graphic, lovingly designed by [Tania Walker](http://taniawalker.com/pyconau/) as part of our conference branding redesign in 2018. The name originates from the meme: "Who would win: (computer reference) or one curly boi (a right parenthesis)".
+curlyboi is our multicoloured snake graphic, lovingly designed by [Tania Walker](https://web.archive.org/web/20241208043134/http://taniawalker.com/pyconau/) as part of our conference branding redesign in 2018. The name originates from the meme: "Who would win: (computer reference) or one curly boi (a right parenthesis)".
 
 ### Lightning talk references
 
