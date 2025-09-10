@@ -1,0 +1,25 @@
+title: 'Sustaining Open Source Software: Tools for Change'
+start: 2025-09-14 13:30:00+10:00
+end: 2025-09-14 14:00:00+10:00
+room: ballroom3
+track:
+abstract: "<p>How can we sustain open source software?</p>\n<p>As multiple companies
+  re-license their projects to move away from open source, and maintainers everywhere
+  are getting burnt out, it’s time to rethink how to make open source sustainable.</p>\n
+  <p>We present a checklist for assessing the health of an open source project to
+  see if it might be at risk, and what to do about it.</p>\n<p>You’ll learn some approaches
+  for setting up an open source project for long-term success, and some other ideas
+  about how we might keep this thing we all love alive.</p>"
+description: "<p>For the last 10 to 15 years, open source software has been dominated
+  by a bunch of VC-funded startups writing software and giving it away for free.</p>\n
+  <p>That was, probably, a really silly thing for most of them to do. Why did they
+  do it? And what might we do differently?</p>\n<p>Learn how to recognise the economic
+  structures that lead to decisions that are unhelpful for open source sustainability.
+  Learn how to design a project structure that gives provides the best chance at being
+  sustainable. Learn how to diagnose the problems in your own projects before they
+  hit crisis point. Most importantly: learn what changes to make and how to make them.</p>"
+code: A7XZLS
+speakers:
+- CABYUD
+cw:
+youtube_slug:
