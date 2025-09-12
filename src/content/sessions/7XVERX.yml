@@ -1,0 +1,29 @@
+title: The Death of Consequences
+start: 2025-09-14 10:40:00+10:00
+end: 2025-09-14 11:10:00+10:00
+room: ballroom2
+track:
+abstract: "<p>The Golden Era of Open Source, in whose late stages we currently exist,
+  has been defined by early decisions to release code with no expectations around
+  who uses our code, and what happens when people abuse the gift they’ve been gifted.
+  Little thought was given to what consequences an extractive or abusive party would
+  face.</p>\n<p>Today, we’ve allowed maintainer burnout to take hold in community
+  and volunteer-led projects (with disastrous consequences, see for example xz), and
+  we’re seeing mass rejection of attempts by corporations to impose consequences on
+  those who seek to continue extractive behaviour (see for example Hashicorp’s rapid
+  demise as an independent entity).</p>\n<p>This contrasts to some of the earlier
+  eras in Free and Open Source Software, which were defined by social contracts with
+  consequences for those who chose not to follow them, most notably (but not entirely)
+  those informed by the concept of Copyleft.</p>\n<p>By choosing not to define consequences
+  for disobeying the social contract of Open Source, the broader ecosystem has chosen
+  consequences for us. In this talk, I’ll look at some points of inflection through
+  the history of Open Source where our movement collectively decided imposing consequences,
+  the (in retrospect) highly predictable results of those decisions, and what we could
+  have decided instead. I’ll also talk a bit about how we might want to think about
+  consequences in the future.</p>"
+description: ''
+code: 7XVERX
+speakers:
+- QWCHX7
+cw:
+youtube_slug:
