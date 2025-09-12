@@ -180,14 +180,10 @@ const sessionsByHall = (["ballroom1", "ballroom2", "ballroom3"] as const).map(
                   Inform the duty officer whether everyone is present:
                   <ul>
                     <li>
-                      If everyone is present: "<b>Duty Officer</b> this is{" "}
-                      <b>{roomCallsigns[hallInfo.hall]}</b>, all block {block}{" "}
-                      speakers accounted for, over"
+                      If everyone is present: Post in #speaker-role "All speakers for room {hallInfo.hall} are here"
                     </li>
                     <li>
-                      If people are missing, call up ("<b>Duty Officer</b> this
-                      is <b>{roomCallsigns[hallInfo.hall]}</b>, over"), wait for
-                      an acknowledgement, <b>and then</b> tell us who is missing
+                      If people are missing: Post in #speaker-role "Speakers missing for room {hallInfo.hall}: [names]"
                     </li>
                   </ul>
                 </li>
@@ -308,11 +304,10 @@ const sessionsByHall = (["ballroom1", "ballroom2", "ballroom3"] as const).map(
                     </p>
                     <ul>
                       <li>
-                        By radio (preferred): "<b>Duty Officer</b> this is{" "}
-                        <b>{roomCallsigns[session.data.room]}</b>, over"
+                        By discord (preferred): PROBLEM IN <b>{roomCallsigns[session.data.room]}</b> [details]"
                       </li>
                       <li>
-                        By phone: <b>0424 139 332</b>
+                        By phone: <b>0424 139 332</b>. Use if urgent.
                       </li>
                     </ul>
                   </div>
@@ -382,7 +377,7 @@ const sessionsByHall = (["ballroom1", "ballroom2", "ballroom3"] as const).map(
                         </li>
                         <li>
                           Tell the audience about the next talk or upcoming
-                          break
+                          break. <b>Remind people that masks are required in the mask zone.</b>
                         </li>
                       </ul>
                     </div>
