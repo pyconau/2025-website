@@ -142,9 +142,14 @@ const sessionsByHall = (["ballroom1", "ballroom2", "ballroom3"] as const).map(
                     })}
                 </li>
               </ul>
+              <div>
+                <h1>Room Monitor</h1>
+              </div>
               <ul class="checklist">
                 <li>Liaise with your AV volunteer for this room</li>
+                <li>Post in #speaker-role that you are present in {hallInfo.hall}</li>
                 <li>Find your session chair</li>
+                <li>Post in #speaker-role that you have found the session chair for {hallInfo.hall}</li>
                 {hallInfo.sessions
                   .filter(
                     (session) =>
