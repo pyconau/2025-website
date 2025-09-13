@@ -406,6 +406,42 @@ const tracksByRoom = Object.fromEntries(
           ),
         )
       }
+      <s-now-rule style={`display: none; min-height: 0.25rem;`}></s-now-rule>
     </s-schedule>
+    <script>
+      function refreshNowRule() {
+        const scheduleContainer = document.querySelector(
+          "s-schedule",
+        )! as HTMLElement
+
+        const nowRuleElement = document.querySelector(
+          "s-now-rule",
+        )! as HTMLElement
+
+        const time = Date.now()
+        const timeIdx = Math.floor(time / (5 * 60 * 1000))
+
+        const dayStart = parseInt(
+          scheduleContainer.style.getPropertyValue("--day-start"),
+        )
+        const dayEnd = parseInt(
+          scheduleContainer.style.getPropertyValue("--day-end"),
+        )
+
+        if (timeIdx > dayStart && timeIdx < dayEnd) {
+          nowRuleElement.style.setProperty("display", "block")
+          nowRuleElement.style.setProperty("--at", timeIdx.toString())
+        } else {
+          nowRuleElement.style.setProperty("display", "none")
+        }
+
+        setTimeout(
+          refreshNowRule,
+          60000, // one minute
+        )
+      }
+
+      setTimeout(refreshNowRule, 0)
+    </script>
   </s-schedule-outer>
 </Base>
