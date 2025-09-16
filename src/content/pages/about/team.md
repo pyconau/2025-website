@@ -13,8 +13,10 @@ PyCon AU is only possible because of the incredible effort of a team of voluntee
 
 - **Peter Hall**, Conference Director
 - **Evan Kohilas**, Assistant Director
-- **Jack Skinner**, Business Development
-- **Nic Crouch**, Sponsorship Coordinator
+- **Rhydwyn McGuire**, Assistant Director
+- **Benno Rice**, Program Chair
+- **Izy Hogan**, Volunteers Coordinator
+- **Jack Skinner**, Partnerships and Sponsorships
 - **Kalila Lin**, Social Media Coordinator
 - **Neill Cox**, Treasurer
 
