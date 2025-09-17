@@ -5,7 +5,7 @@ order: 0
 
 # About the conference
 
-PyCon AU 2025 will be held from Friday 12th to Tuesday 16th September at Pullman Melbourne on the Park, in Narrm/Melbourne, Victoria, Australia.
+PyCon AU 2025 was held from Friday 12th to Tuesday 16th September at Pullman Melbourne on the Park, in Narrm/Melbourne, Victoria, Australia.
 
 If you're new to our event, you might also want to read about [the culture of PyCon AU](/about/culture/).
 
