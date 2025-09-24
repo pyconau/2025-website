@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "22 */2 * * *"
+  # schedule:
+  #   - cron: "22 */2 * * *"
 jobs:
   check:
     runs-on: ubuntu-latest
