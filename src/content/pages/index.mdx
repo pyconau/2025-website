@@ -4,12 +4,20 @@ title: Home
 
 import Button from "../../components/Button.astro"
 import MailingListSignup from "../../components/MailingListSignup.astro"
+import ImageGrid from "../../components/ImageGrid.astro"
 
 # PyCon AU, Australia's peak Python conference
 
 In 2025, PyCon AU was held from **Friday the 12th to Tuesday the 16th of September** at **Pullman Melbourne On The Park** in Narrm/Melbourne.
 
 Keynotes from [Dr. Arwen Griffioen](/program/ZKJQAP/), [Larene Le Gassick](/program/DVTWWU/), and other talks from [our program](/program/list/) are available on the [PyCon AU YouTube channel](https://www.youtube.com/user/PyConAU).
+
+<ImageGrid images={[
+  { src: "/media/youtube_promo.png", alt: "Watch PyCon AU 2025 talks on YouTube", link: "https://www.youtube.com/playlist?list=PLs4CJRBY5F1LRkAAUwbqHNGPBlxDkrz-3", openInNewTab: true },
+  { src: "/media/keynote_1.png", alt: "Ethics in AI: Building Fair and Just Intelligence Systems", link: "/program/ZKJQAP/", openInNewTab: false },
+  { src: "/media/keynote_2.png", alt: "You are welcome in this world", link: "/program/DVTWWU/", openInNewTab: false },
+  { src: "/media/2026_promo.png", alt: "Register early for PyCon AU 2026", link: "https://2026.pycon.org.au/?utm_source=referral&utm_medium=2025_website&utm_campaign=earlybird", openInNewTab: true }
+]} />
 
 Thank you to everyone who made PyCon AU 2025 an amazing event by volunteering, sponsoring, speaking, or attending. We couldn't have done this without YOU.
 

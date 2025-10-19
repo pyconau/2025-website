@@ -1,0 +1,100 @@
+---
+interface Props {
+  images: Array<{
+    src: string;
+    alt: string;
+    link?: string;
+    openInNewTab?: boolean;
+  }>;
+}
+
+const { images } = Astro.props;
+---
+
+<style lang="scss">
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 2rem 0;
+    max-width: 800px;
+  }
+
+  .image-item {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 0px;
+      transition: transform 0.3s ease;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    // Top-left item
+    &:nth-child(1) {
+      border-radius: 1rem 0 0 0;
+      img {
+        border-radius: 1rem 0 0 0;
+      }
+    }
+
+    // Top-right item
+    &:nth-child(2) {
+      border-radius: 0 1rem 0 0;
+      img {
+        border-radius: 0 1rem 0 0;
+      }
+    }
+
+    // Bottom-left item
+    &:nth-child(3) {
+      border-radius: 0 0 0 1rem;
+      img {
+        border-radius: 0 0 0 1rem;
+      }
+    }
+
+    // Bottom-right item
+    &:nth-child(4) {
+      border-radius: 0 0 1rem 0;
+      img {
+        border-radius: 0 0 1rem 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+</style>
+
+<div class="image-grid">
+  {images.map((image) => (
+    <div class="image-item">
+      {image.link ? (
+        <a
+          href={image.link}
+          target={image.openInNewTab ? "_blank" : undefined}
+          rel={image.openInNewTab ? "noopener noreferrer" : undefined}
+        >
+          <img src={image.src} alt={image.alt} />
+        </a>
+      ) : (
+        <img src={image.src} alt={image.alt} />
+      )}
+    </div>
+  ))}
+</div>
